@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'JetstarHappy';
+  src: url('./webfonts/happy/JetstarHappy.eot');
+  src: url('./webfonts/happy/JetstarHappy.eot?#iefix') format('embedded-opentype'),
+       url('./webfonts/happy/JetstarHappy.woff') format('woff'),
+       url('./webfonts/happy/JetstarHappy.ttf') format('truetype'),
+       url('./webfonts/happy/JetstarHappy.svg#JetstarHappy') format('svg');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'JetstarHappy';
+  src: url('./webfonts/happy/JetstarHappyBold.eot');
+  src: url('./webfonts/happy/JetstarHappyBold.eot?#iefix') format('embedded-opentype'),
+       url('./webfonts/happy/JetstarHappyBold.woff') format('woff'),
+       url('./webfonts/happy/JetstarHappyBold.ttf') format('truetype'),
+       url('./webfonts/happy/JetstarHappyBold.svg#JetstarHappyBold') format('svg');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'JetstarHappy';
+  src: url('./webfonts/happy/JetstarHappyHeavy.eot');
+  src: url('./webfonts/happy/JetstarHappyHeavy.eot?#iefix') format('embedded-opentype'),
+       url('./webfonts/happy/JetstarHappyHeavy.woff') format('woff'),
+       url('./webfonts/happy/JetstarHappyHeavy.ttf') format('truetype'),
+       url('./webfonts/happy/JetstarHappyHeavy.svg#JetstarHappyHeavy') format('svg');
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}
+
+
+@font-face {
+  font-family: 'JetstarHappy';
+  src: url('./webfonts/happy/JetstarHappyLIght.eot');
+  src: url('./webfonts/happy/JetstarHappyLIght.eot?#iefix') format('embedded-opentype'),
+       url('./webfonts/happy/JetstarHappyLIght.woff') format('woff'),
+       url('./webfonts/happy/JetstarHappyLIght.ttf') format('truetype'),
+       url('./webfonts/happy/JetstarHappyLIght.svg#JetstarHappyLIght') format('svg');
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
