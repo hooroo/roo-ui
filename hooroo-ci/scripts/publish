@@ -1,1 +1,1 @@
-yarn lerna publish --skip-git --conventional-commits --yes
+yarn lerna publish --conventional-commits --yes
