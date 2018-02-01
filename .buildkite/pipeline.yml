@@ -6,7 +6,7 @@ steps:
     agents:
       ci-env: production
   - label: ':storybook: Deploy'
-    command: ./hooroo-ci/scripts/deploy
+    command: ./hooroo-ci/scripts/storybook
     env:
       BUILDKITE_FIG_CONTAINER: app
     agents:
