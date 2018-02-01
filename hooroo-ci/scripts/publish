@@ -1,1 +1,1 @@
-echo 'publish'
+yarn lerna publish --skip-git --skip-npm --conventional-commits
