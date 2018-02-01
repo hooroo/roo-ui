@@ -4,6 +4,5 @@ git config --global user.email "$BUILDKITE_BUILD_CREATOR_EMAIL"
 git config --global user.name "$BUILDKITE_BUILD_CREATOR"
 
 git checkout master
-git reset --hard origin/master
-yarn lerna publish --conventional-commits --yes
+yarn lerna publish --conventional-commits --yes --registry=https://registry.npmjs.org/
 git push origin master
