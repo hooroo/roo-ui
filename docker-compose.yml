@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    image: 730011650125.dkr.ecr.ap-southeast-2.amazonaws.com/hooroo-base-node-8.2.1:stable
+    volumes:
+      - .:/application
+    working_dir: /application
+    environment:
+      NODE_USE_YARN: 'true'
+      APP_NAME:
