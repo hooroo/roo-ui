@@ -9,3 +9,4 @@ services:
     environment:
       NODE_USE_YARN: 'true'
       APP_NAME:
+      NPM_TOKEN:
