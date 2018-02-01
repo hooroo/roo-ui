@@ -1,1 +1,5 @@
+#!/bin/bash -eu
+
+git checkout master
 yarn lerna publish --conventional-commits --yes
+git push origin master
