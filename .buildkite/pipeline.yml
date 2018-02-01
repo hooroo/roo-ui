@@ -1,4 +1,11 @@
 steps:
+  - label: ':eslint: Lint'
+    command: ./hooroo-ci/scripts/lint
+    env:
+      BUILDKITE_FIG_CONTAINER: app
+    agents:
+      ci-env: production
+  - wait
   - label: ':npm: Publish'
     command: ./hooroo-ci/scripts/publish
     env:
