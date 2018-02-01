@@ -4,11 +4,17 @@
   "repository": "git@github.com:hooroo/roo-ui.git",
   "author": "Hooroo",
   "scripts": {
+    "lint": "eslint .",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.11",
     "babel-core": "^6.26.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
     "lerna": "^2.8.0"
   },
   "dependencies": {

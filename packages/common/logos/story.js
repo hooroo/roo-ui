@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { qantas, jetstar } from './assets';
+import { qantas, jetstar } from '.';
 
 storiesOf('Logos', module)
   .add('Qantas', () => (
-    <img src={qantas} height="100" />
+    <img alt="Qantas" src={qantas} height="100" />
   ))
   .add('Jetstar', () => (
-    <img src={jetstar} height="100" />
+    <img alt="Jetstar" src={jetstar} height="100" />
   ));
