@@ -1,1 +1,1 @@
-echo 'storybook'
+yarn deploy-storybook
