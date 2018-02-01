@@ -1,5 +1,7 @@
 #!/bin/bash -eu
 
+echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+
 git config --global user.email "$BUILDKITE_BUILD_CREATOR_EMAIL"
 git config --global user.name "$BUILDKITE_BUILD_CREATOR"
 
