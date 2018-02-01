@@ -1,2 +1,7 @@
-export qantas from './qantas.svg';
-export jetstar from './jetstar.svg';
+import qantas from './qantas.svg';
+import jetstar from './jetstar.svg';
+
+export {
+  qantas,
+  jetstar,
+};
