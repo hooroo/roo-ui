@@ -3,7 +3,16 @@
   "version": "0.1.0",
   "repository": "git@github.com:hooroo/roo-ui.git",
   "author": "Hooroo",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
   "devDependencies": {
+    "@storybook/react": "^3.3.11",
+    "babel-core": "^6.26.0",
     "lerna": "^2.8.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }

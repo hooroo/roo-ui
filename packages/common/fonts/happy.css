@@ -37,11 +37,11 @@
 
 @font-face {
   font-family: 'JetstarHappy';
-  src: url('./webfonts/happy/JetstarHappyLIght.eot');
-  src: url('./webfonts/happy/JetstarHappyLIght.eot?#iefix') format('embedded-opentype'),
-       url('./webfonts/happy/JetstarHappyLIght.woff') format('woff'),
-       url('./webfonts/happy/JetstarHappyLIght.ttf') format('truetype'),
-       url('./webfonts/happy/JetstarHappyLIght.svg#JetstarHappyLIght') format('svg');
+  src: url('./webfonts/happy/JetstarHappyLight.eot');
+  src: url('./webfonts/happy/JetstarHappyLight.eot?#iefix') format('embedded-opentype'),
+       url('./webfonts/happy/JetstarHappyLight.woff') format('woff'),
+       url('./webfonts/happy/JetstarHappyLight.ttf') format('truetype'),
+       url('./webfonts/happy/JetstarHappyLight.svg#JetstarHappyLight') format('svg');
   font-style: normal;
   font-weight: 200;
   text-rendering: optimizeLegibility;

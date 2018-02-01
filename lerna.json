@@ -1,8 +1,7 @@
 {
   "lerna": "2.8.0",
   "packages": [
-    "components/*",
-    "common/*"
+    "packages/*",
   ],
   "version": "0.0.0"
 }

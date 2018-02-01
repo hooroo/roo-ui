@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'QantasCiutadella';
-  src: url('./webfonts/ciutadella/QantasCiutadellaRegular.eot');
-  src: url('./webfonts/ciutadella/QantasCiutadellaRegular.eot?#iefix') format('embedded-opentype'),
-       url('./webfonts/ciutadella/QantasCiutadellaRegular.woff2') format('woff2'),
+  src: url('./webfonts/ciutadella/QantasCiutadellaRegular.woff2') format('woff2'),
        url('./webfonts/ciutadella/QantasCiutadellaRegular.woff') format('woff'),
        url('./webfonts/ciutadella/QantasCiutadellaRegular.ttf') format('truetype'),
        url('./webfonts/ciutadella/QantasCiutadellaRegular.svg#font') format('svg');
@@ -13,9 +11,7 @@
 
 @font-face {
   font-family: 'QantasCiutadella';
-  src: url('./webfonts/ciutadella/QantasCiutadellaMedium.eot');
-  src: url('./webfonts/ciutadella/QantasCiutadellaMedium.eot?#iefix') format('embedded-opentype'),
-       url('./webfonts/ciutadella/QantasCiutadellaMedium.woff2') format('woff2'),
+  src: url('./webfonts/ciutadella/QantasCiutadellaMedium.woff2') format('woff2'),
        url('./webfonts/ciutadella/QantasCiutadellaMedium.woff') format('woff'),
        url('./webfonts/ciutadella/QantasCiutadellaMedium.ttf') format('truetype'),
        url('./webfonts/ciutadella/QantasCiutadellaMedium.svg#font') format('svg');
