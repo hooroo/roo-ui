@@ -5,10 +5,12 @@
   "author": "Hooroo <support@hooroo.com>",
   "scripts": {
     "lint": "eslint .",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.11",
+    "@storybook/storybook-deployer": "^2.2.0",
     "babel-core": "^6.26.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
