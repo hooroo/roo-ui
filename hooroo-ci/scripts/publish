@@ -3,6 +3,6 @@
 git config --global user.email "$BUILDKITE_BUILD_CREATOR_EMAIL"
 git config --global user.name "$BUILDKITE_BUILD_CREATOR"
 
-git pull origin master && git checkout master
+git fetch origin master && git checkout master
 yarn lerna publish --conventional-commits --yes
 git push origin master
