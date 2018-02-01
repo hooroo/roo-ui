@@ -1,0 +1,13 @@
+steps:
+  - label: ':npm: Publish'
+    command: ./hooroo-ci/scripts/publish
+    env:
+      BUILDKITE_FIG_CONTAINER: app
+    agents:
+      ci-env: production
+  - label: ':storybook: Deploy'
+    command: ./hooroo-ci/scripts/deploy
+    env:
+      BUILDKITE_FIG_CONTAINER: app
+    agents:
+      ci-env: production
