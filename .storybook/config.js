@@ -1,3 +1,6 @@
+import '@roo-ui/fonts/ciutadella.css';
+import './storybook.css';
+
 import { configure, addDecorator } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs/react';
 import { setOptions } from '@storybook/addon-options';
