@@ -1,11 +1,18 @@
 import React from 'react';
+import invert from 'lodash/invert';
 import { storiesOf } from '@storybook/react';
-import { qantas, jetstar } from '.';
+import { withDocs } from 'storybook-readme';
+import { select } from '@storybook/addon-knobs/react';
+
+import * as logos from '.';
+import README from './README.md';
 
 storiesOf('Logos', module)
-  .add('Qantas', () => (
-    <img alt="Qantas" src={qantas} height="100" />
-  ))
-  .add('Jetstar', () => (
-    <img alt="Jetstar" src={jetstar} height="100" />
+  .addDecorator(withDocs(README))
+  .add('default', () => (
+    <img
+      src={select('Logo', invert(logos), Object.values(logos)[0])}
+      height="100"
+      alt=""
+    />
   ));
