@@ -1,10 +1,4 @@
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.StoryPreview-1 {
-  font-family: 'QantasCiutadella', sans-serif;
+body, [class^='StoryPreview'] {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

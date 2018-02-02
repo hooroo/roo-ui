@@ -7,7 +7,7 @@ const Button = styled.button.attrs({
 })`
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  font-family: inherit;
+  font-family: 'QantasCiutadella', sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: bold;
