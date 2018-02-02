@@ -1,10 +1,22 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { select } from '@storybook/addon-knobs/react';
 import { withDocs } from 'storybook-readme';
 import startCase from 'lodash/startCase';
+import map from 'lodash/map';
 
 import { Icon, qantasPaths, jetstarPaths } from './src';
 import README from './README.md';
+
+const paths = {
+  qantas: qantasPaths,
+  jetstar: jetstarPaths,
+};
+
+const options = {
+  qantas: 'Qantas',
+  jetstar: 'Jetstar',
+};
 
 const wrapperStyles = {
   display: 'flex',
@@ -21,22 +33,12 @@ const iconStyles = {
 
 storiesOf('Icons', module)
   .addDecorator(withDocs(README))
-  .add('Jetstar kitchen sink', () => (
+  .add('default', () => (
     <div style={wrapperStyles}>
-      {Object.keys(jetstarPaths).map(name => (
-        <div key={name} style={iconStyles}>
-          <Icon name={name} path={jetstarPaths[name]} key={name} size="5rem" />
-          <p>{startCase(name)}</p>
-        </div>
-      ))}
-    </div>
-  ))
-  .add('Qantas kitchen sink', () => (
-    <div style={wrapperStyles}>
-      {Object.keys(qantasPaths).map(name => (
-        <div key={name} style={iconStyles}>
-          <Icon name={name} path={qantasPaths[name]} key={name} size="5rem" />
-          <p>{startCase(name)}</p>
+      {map(paths[select('Brand', options, 'qantas')], (path, name) => (
+        <div style={iconStyles}>
+          <Icon key={name} name={name} path={path} size="2.5rem" />
+          <p>{ startCase(name) }</p>
         </div>
       ))}
     </div>
