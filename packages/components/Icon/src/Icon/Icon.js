@@ -1,19 +1,17 @@
 import React from 'react';
-import startCase from 'lodash/startCase';
 import { string, number, oneOfType } from 'prop-types';
 
 const Icon = ({
-  name, path, title, size, fill, width, height, ...props
+  path, title, size, fill, width, height, ...props
 }) => (
   <svg
     {...props}
     width={width || size}
     height={height || size}
     fill={fill}
-    data-id={`icon-${name}`}
     viewBox="0 0 36 36"
   >
-    <title>{title || `${startCase(name)} icon`}</title>
+    {title && <title>{title}</title>}
     <path d={path} />
   </svg>
 );
