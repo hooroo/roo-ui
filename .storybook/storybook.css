@@ -1,0 +1,9 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table {
+  display: table !important;
+  table-layout: auto !important;
+}

@@ -30,6 +30,7 @@ storiesOf('Fonts', module)
         Caridea, to smaller species of either group, or to only the marine
         species.
       </p>
+
       <p>Under the broader definition, shrimp may be synonymous with prawn,
         covering stalk-eyed swimming crustaceans with long narrow muscular tails
         (abdomens), long whiskers (antennae), and slender legs.
