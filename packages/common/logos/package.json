@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/logos",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "index": "index.js",
   "publishConfig": {
     "access": "public"
