@@ -12,7 +12,7 @@ $ yarn add @roo-ui/fonts
 
 ```js
 // index.js
-import './ciutadella.css';
+import '@roo-ui/fonts/ciutadella.css';
 ```
 
 ```css
