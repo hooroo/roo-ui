@@ -56,6 +56,102 @@ $ lerna exec -- <command>
 $ lerna exec -- rm -rf ./node_modules
 ```
 
+## Creating new packages
+
+New packages can be created by adding a subdirectory under `components` or `packages`.
+
+Every package should contain the following:
+
+- **package.json**
+
+  Every package should define at least a `name` (scoped to `@roo-ui`), an initial version number (`0.0.0`), and `publishConfig`:
+
+  ```json
+  {
+    "name": "@roo-ui/example",
+    "version": "0.0.0",
+    "publishConfig": {
+      "access": "public"
+    }
+  }
+  ```
+
+- **README.md**
+
+  The README should detail installation, usage, and available properties or arguments.
+
+  ```md
+  # Example
+
+  <!-- STORY -->
+
+  ## Installation
+
+  \`\`\`
+  $ yarn add @roo-ui/example
+  \`\`\`
+
+  ## Example
+
+  <Usage example>
+
+  ## [Properties|Arguments]
+
+  [Optional description of component properties or function arguments]
+  ```
+
+- **story.js** (optional)
+
+The package will be automatically published, and a `CHANGELOG.md` generated, in [Buildkite](https://buildkite.com/hooroo/roo-ui).
+
+### React component packages
+
+React component packages
+
+#### Styling
+
+TODO
+
+### Utility packages
+
+Utility packages contain utility functions, configuration, etc. They are housed in the `packages` directory, and export one or many constants or functions from a single entry point.
+
+Utility packages should define a script to compile the Javascript source with [Babel](http://babeljs.io), and a `main` property pointing at the compiled entry point:
+
+```json
+{
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist --copy-files"
+  }
+}
+```
+
+### CSS packages
+
+CSS packages contain only CSS and assets consumed by the CSS (fonts, images, etc.). They are housed in the `packages` directory, and expose one or more CSS files in the root of the package.
+
+For packages that expose a single CSS file, define the file as the `main` property in `package.json`:
+
+```json
+{
+  "name": "@roo-ui/example",
+  "main": "index.css"
+}
+```
+
+The CSS file can be imported with the package name:
+
+```js
+import '@roo-ui/example';
+```
+
+Omit the `main` property for packages exposing multiple CSS files. The CSS files can be imported with the package name, and path to the file:
+
+```js
+import '@roo-ui/example/specificFile.css';
+```
+
 ## Merging
 
 Version bumps and change logs are automatically generated in [Buildkite](https://buildkite.com/hooroo/roo-ui) based on [Conventional Commits](https://conventionalcommits.org). When merging, squash your branch onto `master` and write a commit message while doing so.
