@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/hooroo/roo-ui/compare/v0.2.0...v0.3.0) (2018-03-01)
+
+
+### Features
+
+* **Logo:** add more logos ([#5](https://github.com/hooroo/roo-ui/issues/5)) ([e22287f](https://github.com/hooroo/roo-ui/commit/e22287f))
+
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/hooroo/roo-ui/compare/v0.1.1...v0.2.0) (2018-03-01)
 
