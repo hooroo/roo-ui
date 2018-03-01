@@ -1,12 +1,13 @@
 import qantas from './qantas.svg';
 import jetstar from './jetstar.svg';
-import tripadvisor from './tripadvisor.svg';
-import tripadvisorOwl from './tripadvisor-owl.svg';
-
+import tripAdvisor from './trip-advisor.svg';
+import tripAdvisorOwl from './trip-advisor-owl.svg';
+import oneworld from './oneworld.svg';
 
 export {
   qantas,
   jetstar,
-  tripadvisor,
-  tripadvisorOwl,
+  tripAdvisor,
+  tripAdvisorOwl,
+  oneworld,
 };
