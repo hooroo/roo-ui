@@ -58,7 +58,7 @@ $ lerna exec -- rm -rf ./node_modules
 
 ## Creating new packages
 
-New packages can be created by adding a subdirectory under `components` or `packages`.
+New packages can be created by adding a subdirectory under `components` or `packages`. The package will be automatically published and a `CHANGELOG.md` will be generated once your branch is merged.
 
 Every package should contain the following:
 
@@ -78,18 +78,18 @@ Every package should contain the following:
 
 - **README.md**
 
-  The README should detail installation, usage, and available properties or arguments.
+  The README should detail installation, usage, and available properties or arguments:
 
-  ```md
+  ````md
   # Example
 
   <!-- STORY -->
 
   ## Installation
 
-  \`\`\`
+  ```
   $ yarn add @roo-ui/example
-  \`\`\`
+  ```
 
   ## Example
 
@@ -98,11 +98,30 @@ Every package should contain the following:
   ## [Properties|Arguments]
 
   [Optional description of component properties or function arguments]
-  ```
+  ````
 
 - **story.js** (optional)
 
-The package will be automatically published, and a `CHANGELOG.md` generated, in [Buildkite](https://buildkite.com/hooroo/roo-ui).
+  Where appropiate, a Storybook story should be added to demonstrate the component or package. Use [storybook-knobs](https://github.com/storybooks/storybook/tree/master/addons/knobs) to allow props to be manipulated, and ensure the README is displayed alongside with story with [storybook-readme](https://github.com/tuchk4/storybook-readme):
+
+  ```js
+  import React from 'react';
+  import { storiesOf } from '@storybook/react';
+  import { withDocs } from 'storybook-readme';
+  import { text, boolean } from '@storybook/addon-knobs/react';
+
+  import Example from './src';
+  import README from './README.md';
+
+  storiesOf('Example', module)
+    .addDecorator(withDocs(README))
+    .add('default', () => (
+      <Example large={boolean('Large', false)}>
+        {text('Children', 'Hello world')}
+      </Example>
+    ));
+
+  ```
 
 ### React component packages
 
