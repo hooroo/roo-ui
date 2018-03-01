@@ -1,5 +1,14 @@
 # Contributing to roo-ui
 
+- [Setup](#setup)
+- [Workflow](#workflow)
+- [Creating new packages](#packages)
+  - [React component packages](#packages-react)
+  - [Utility packages](#packages-utility)
+  - [CSS packages](#packages-css)
+- [Merging](#merging)
+
+<a name="setup"></a>
 ## Setup
 
 1. Install the version of [Node.js](https://nodejs.org/en/) specified in `.nvmrc`.
@@ -18,6 +27,7 @@
     $ yarn lerna bootstrap
     ```
 
+<a name="workflow"></a>
 ## Workflow
 
 Start the development environment ([Storybook](http://storybook.js.org)):
@@ -56,6 +66,7 @@ $ lerna exec -- <command>
 $ lerna exec -- rm -rf ./node_modules
 ```
 
+<a name="packages"></a>
 ## Creating new packages
 
 New packages can be created by adding a subdirectory under `components` or `packages`. The package will be automatically published and a `CHANGELOG.md` will be generated once your branch is merged.
@@ -120,9 +131,9 @@ Every package should contain the following:
         {text('Children', 'Hello world')}
       </Example>
     ));
-
   ```
 
+<a name="packages-react"></a>
 ### React component packages
 
 React component packages
@@ -131,6 +142,7 @@ React component packages
 
 TODO
 
+<a name="packages-utility"></a>
 ### Utility packages
 
 Utility packages contain utility functions, configuration, etc. They are housed in the `packages` directory, and export one or many constants or functions from a single entry point.
@@ -146,6 +158,7 @@ Utility packages should define a script to compile the Javascript source with [B
 }
 ```
 
+<a name="packages-css"></a>
 ### CSS packages
 
 CSS packages contain only CSS and assets consumed by the CSS (fonts, images, etc.). They are housed in the `packages` directory, and expose one or more CSS files in the root of the package.
@@ -171,6 +184,7 @@ Omit the `main` property for packages exposing multiple CSS files. The CSS files
 import '@roo-ui/example/specificFile.css';
 ```
 
+<a name="packages-merging"></a>
 ## Merging
 
 Version bumps and change logs are automatically generated in [Buildkite](https://buildkite.com/hooroo/roo-ui) based on [Conventional Commits](https://conventionalcommits.org). When merging, squash your branch onto `master` and write a commit message while doing so.
