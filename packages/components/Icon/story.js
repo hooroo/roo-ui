@@ -38,7 +38,7 @@ storiesOf('Icons', module)
       {map(paths[select('Brand', options, 'qantas')], (path, name) => (
         <div style={iconStyles}>
           <Icon key={name} path={path} size="2.5rem" />
-          <p>{ startCase(name) }</p>
+          <p>{startCase(name)}</p>
         </div>
       ))}
     </div>
