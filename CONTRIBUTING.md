@@ -20,7 +20,15 @@ The commit contains the following structural elements:
 2. **feat:** a commit of the _type_ `feat` introduces a new feature to the codebase (this correlates with [`MINOR`](http://semver.org/#summary) in semantic versioning).
 3. **BREAKING CHANGE:** a commit that has the text `BREAKING CHANGE:` at the beginning of its optional body or footer section introduces a breaking API change (correlating with [`MAJOR`](http://semver.org/#summary) in semantic versioning). A breaking change can be part of either a `fix:` or `feat:` _type_ commit.
 
-A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis, e.g., `feat(logos): add qantas logo`.
+A scope may be provided to a commit's type, to provide additional contextual information and is contained within parenthesis.
+
+For example:
+
+```
+feat(logos): add new qantas logo
+
+BREAKING CHANGE: the kangaroo has been replaced with a shrimp
+```
 
 Commit _types_ other than `fix:` and `feat:` are allowed:
 
