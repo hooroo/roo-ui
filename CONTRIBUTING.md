@@ -3,7 +3,7 @@
 - [Setup](#setup)
 - [Workflow](#workflow)
 - [Creating new packages](#packages)
-  - [React component packages](#packages-react)
+  - [Component packages](#packages-component)
   - [Utility packages](#packages-utility)
   - [CSS packages](#packages-css)
 - [Merging](#merging)
@@ -134,13 +134,37 @@ Every package should contain the following:
   ```
 
 <a name="packages-react"></a>
-### React component packages
+### Component packages
 
-React component packages
+Component packages are housed in the `components` directory. They export one or more React components from a single entry point.
+
+Component packages should define a script to compile the Javascript source with [Babel](http://babeljs.io), a `main` property pointing at the compiled entry point, and should define `react`, `react-dom`, and `prop-types` as peer dependencies:
+
+```json
+{
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
+```
 
 #### Styling
 
-TODO
+Component packages that require styling should be styled with [styled-components](http://styled-components.com), which should be added as a peer dependency:
+
+```json
+{
+  "peerDependencies": {
+    "styled-components": "^3.1.5"
+  }
+}
+```
 
 <a name="packages-utility"></a>
 ### Utility packages
