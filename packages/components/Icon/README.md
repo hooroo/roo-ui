@@ -30,4 +30,4 @@ export default <Icon name={name} path={jetstarPaths} size="5rem" />;
 
 ## Adding icons
 
-Export an icon from a artboard that is 36x36px and add the path to the brands paths file.
+Export an icon from an artboard that is 36x36px and add the path to the brand's paths file.
