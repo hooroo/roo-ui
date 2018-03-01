@@ -1,5 +1,61 @@
 # Contributing to roo-ui
 
+## Setup
+
+1. Install the version of [Node.js](https://nodejs.org/en/) specified in `.nvmrc`.
+
+2. Install [Yarn](https://yarnpkg.com/en/docs/install).
+
+3. After cloning the project, install the dependencies:
+
+    ```sh
+    $ yarn
+    ```
+
+4. Bootstrap packages, installing their dependencies and linking cross-dependencies:
+
+    ```sh
+    $ yarn lerna bootstrap
+    ```
+
+## Workflow
+
+Start the development environment ([Storybook](http://storybook.js.org)):
+
+```sh
+$ yarn storybook
+```
+
+Run tests with [Jest](https://facebook.github.io/jest/):
+
+```sh
+$ yarn test
+```
+
+Lint code with [ESLint](http://eslint.org):
+
+```sh
+$ yarn lint
+```
+
+Run a script in each package:
+
+```sh
+$ lerna run <script>
+
+# Build all packages
+$ lerna run build
+```
+
+Run an arbitrary command in each package:
+
+```sh
+$ lerna exec -- <command>
+
+# Remove node_modules directories from all packages
+$ lerna exec -- rm -rf ./node_modules
+```
+
 ## Merging
 
 Version bumps and change logs are automatically generated in [Buildkite](https://buildkite.com/hooroo/roo-ui) based on [Conventional Commits](https://conventionalcommits.org). When merging, squash your branch onto `master` and write a commit message while doing so.
