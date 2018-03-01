@@ -18,14 +18,14 @@ export default <Icon name={name} path={jetstarPaths} size="5rem" />;
 
 ## Properties
 
-| Name       | Description    | Type   | Default | Required? |
-|:-----------|:---------------|:-------|:--------|:----------|
-| `path`     | path           | `string` |       | ✔︎         |
-| `fill`     | color          | `string` |       |           |
-| `title`    | A11Y title     | `string` |       |           |
-| `size`     | size           | `string` |       |  ︎         |
-| `width`    | width          | `string` |       |           |
-| `height`   | height         | `string` |       | ︎          |
+| Name     | Description | Type     | Default | Required? |
+|----------|-------------|----------|---------|-----------|
+| `path`   | path        | `string` |         | ✔︎         |
+| `fill`   | color       | `string` |         |           |
+| `title`  | A11Y title  | `string` |         |           |
+| `size`   | size        | `string` |         | ︎          |
+| `width`  | width       | `string` |         |           |
+| `height` | height      | `string` |         | ︎          |
 
 
 
