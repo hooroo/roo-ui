@@ -46,7 +46,7 @@ Some of roo-ui's components and packages require Webpack loaders to be configure
 
 Configure [file-loader](https://github.com/webpack-contrib/file-loader) to load images, fonts, etc.:
 
-```
+```js
 {
   test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
   use: ['file-loader'],
@@ -59,7 +59,7 @@ Also consider configuring [url-loader](https://github.com/webpack-contrib/url-lo
 
 Configure [style-loader](https://github.com/webpack-contrib/style-loader) and [css-loader](https://github.com/webpack-contrib/css-loader) to load CSS:
 
-```
+```js
 {
   test: /\.css$/,
   use: ['style-loader', 'css-loader'],
