@@ -70,4 +70,4 @@ Also consider configuring [postcss-loader](https://github.com/postcss/postcss-lo
 
 ## Contributing
 
-Refer to [CONTRIBUTNG.md](./CONTRIBUTNG.md) for instructions on adding new packages, or improving existing packages.
+Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on adding new packages, or improving existing packages.
