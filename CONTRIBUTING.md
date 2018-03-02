@@ -69,7 +69,7 @@ $ lerna exec -- rm -rf ./node_modules
 <a name="packages"></a>
 ## Creating new packages
 
-New packages can be created by adding a subdirectory under `components` or `packages`. The package will be automatically published and a `CHANGELOG.md` will be generated once your branch is merged.
+New packages can be created by adding a subdirectory under `packages/components` or `packages/common`. The package will be automatically published and a `CHANGELOG.md` will be generated once your branch is merged.
 
 Every package should contain the following:
 
@@ -136,7 +136,7 @@ Every package should contain the following:
 <a name="packages-react"></a>
 ### Component packages
 
-Component packages are housed in the `components` directory. They export one or more React components from a single entry point.
+Component packages are housed in the `packages/components` directory. They export one or more React components from a single entry point.
 
 Component packages should define a script to compile the Javascript source with [Babel](http://babeljs.io), a `main` property pointing at the compiled entry point, and should define `react`, `react-dom`, and `prop-types` as peer dependencies:
 
@@ -169,7 +169,7 @@ Component packages that require styling should be styled with [styled-components
 <a name="packages-utility"></a>
 ### Utility packages
 
-Utility packages contain utility functions, configuration, etc. They are housed in the `packages` directory, and export one or many constants or functions from a single entry point.
+Utility packages contain utility functions, configuration, etc. They are housed in the `packages/common` directory, and export one or many constants or functions from a single entry point.
 
 Utility packages should define a script to compile the Javascript source with [Babel](http://babeljs.io), and a `main` property pointing at the compiled entry point:
 
@@ -185,7 +185,7 @@ Utility packages should define a script to compile the Javascript source with [B
 <a name="packages-css"></a>
 ### CSS packages
 
-CSS packages contain only CSS and assets consumed by the CSS (fonts, images, etc.). They are housed in the `packages` directory, and expose one or more CSS files in the root of the package.
+CSS packages contain only CSS and assets consumed by the CSS (fonts, images, etc.). They are housed in the `packages/common` directory, and expose one or more CSS files in the root of the package.
 
 For packages that expose a single CSS file, define the file as the `main` property in `package.json`:
 
