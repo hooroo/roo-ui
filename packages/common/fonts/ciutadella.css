@@ -15,7 +15,7 @@
        url('./webfonts/ciutadella/QantasCiutadellaMedium.woff') format('woff'),
        url('./webfonts/ciutadella/QantasCiutadellaMedium.ttf') format('truetype'),
        url('./webfonts/ciutadella/QantasCiutadellaMedium.svg#font') format('svg');
-  font-style: bold;
+  font-style: normal;
   font-weight: 600;
   text-rendering: optimizeLegibility;
 }
