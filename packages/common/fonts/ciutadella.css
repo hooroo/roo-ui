@@ -5,7 +5,7 @@
        url('./webfonts/ciutadella/QantasCiutadellaRegular.ttf') format('truetype'),
        url('./webfonts/ciutadella/QantasCiutadellaRegular.svg#font') format('svg');
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
 }
 
@@ -15,7 +15,7 @@
        url('./webfonts/ciutadella/QantasCiutadellaMedium.woff') format('woff'),
        url('./webfonts/ciutadella/QantasCiutadellaMedium.ttf') format('truetype'),
        url('./webfonts/ciutadella/QantasCiutadellaMedium.svg#font') format('svg');
-  font-style: bold;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
 }
