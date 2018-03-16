@@ -4,6 +4,7 @@ import './storybook.css';
 import { configure, addDecorator } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs/react';
 import { setOptions } from '@storybook/addon-options';
+import withTheme from './withTheme';
 
 setOptions({
   name: '🦐 Roo UI',
@@ -16,6 +17,7 @@ function loadStories() {
   req.keys().forEach((filename) => req(filename))
 }
 
+addDecorator(withTheme);
 addDecorator(withKnobs);
 
 configure(loadStories, module);
