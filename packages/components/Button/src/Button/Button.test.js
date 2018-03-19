@@ -1,10 +1,21 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
+import { qantas } from '@roo-ui/themes';
 import Button from '.';
 
 describe('<Button />', () => {
-  it('renders exactly', () => {
-    expect(shallow(<Button>Hello world</Button>)).toMatchSnapshot();
+  let props;
+  let wrapper;
+
+  beforeEach(() => {
+    props = {
+      theme: qantas,
+    };
+    wrapper = shallow(<Button {...props}>Hello world</Button>);
+  });
+
+  it('renders correctly', () => {
+    expect(wrapper).toMatchSnapshot();
   });
 });
