@@ -40,7 +40,7 @@ $ npm install --save react react-dom prop-types styled-components
 
 ### Theme provider
 
-In the root of your app, render a `<ThemeProvider />`, and pass it either the Qantas or Jetstar333  theme:
+In the root of your app, render a `<ThemeProvider />`, and pass it either the Qantas or Jetstar theme:
 
 ```jsx
 import { ThemeProvider } from 'styled-components';
