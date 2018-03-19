@@ -22,7 +22,7 @@ To see what packages are available, check out [roo-ui's storybook](http://hooroo
 
 ### Peer dependencies
 
-Most of roo-ui's components require `react`, `react-dom`, `prop-types`, and `styled-components`.
+Most of roo-ui's components require `react`, `react-dom`, `prop-types`, `styled-components`, and `glamour`.
 
 Install peer dependencies with Yarn:
 
@@ -37,6 +37,33 @@ $ npm install --save react react-dom prop-types styled-components
 ```
 
 ## Setup
+
+### Theme provider
+
+In the root of your app, render a `<ThemeProvider />`, and pass it either the Qantas or Jetstar333  theme:
+
+```jsx
+import { ThemeProvider } from 'styled-components';
+import { qantas } from '@roo-ui/themes';
+
+export default (
+  <ThemeProvider theme={qantas}>
+    <App />
+  </ThemeProvider>
+);
+```
+
+### Fonts
+
+Import the appropriate font for your theme:
+
+```js
+// Qantas
+import '@roo-ui/fonts/ciutadella.css';
+
+// Jetstar
+import '@roo-ui/fonts/happy.css';
+```
 
 ### Webpack
 
