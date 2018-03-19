@@ -1,4 +1,40 @@
 export default {
-  name: 'jetstar',
-  fontFamily: 'JetstarHappy, sans-serif',
+  fonts: {
+    primary: 'JetstarHappy, sans-serif',
+  },
+  textSizes: {
+    xs: '14px',
+    sm: '16px',
+    base: '18px',
+    lg: '22px',
+    xl: '26px',
+    xxl: '30px',
+    xxxl: '34px',
+    xxxxl: '46px',
+  },
+  tracking: {
+    normal: '0',
+    wide: '0.125rem',
+  },
+  borderRadius: {
+    default: '4px',
+    rounded: '1000px',
+  },
+  colors: {
+    white: '#ffffff',
+    black: '#28262b',
+    primary: '#ff5115',
+    secondary: '#0692fc',
+    tertiary: '#fda108',
+    link: '#248dc0',
+    focus: '#126b98',
+    hover: '#126b98',
+    linesGrey: '#d5d6d7',
+    backgroundGrey: '#f4f4f4',
+    textGrey: '#696a6c',
+    infoBackground: '#e2f6ff',
+    infoBorder: '#0692fc',
+    errorBackground: '#fff6b5',
+    errorBorder: '#ffcf70',
+  },
 };

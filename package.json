@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@roo-ui/fonts": "^0.0.2",
-    "@roo-ui/themes": "^0.0.0",
+    "@roo-ui/themes": "^0.0.1",
     "@storybook/addon-knobs": "^3.3.11",
     "@storybook/addon-options": "^3.3.11",
     "@storybook/react": "^3.3.11",
@@ -28,6 +28,7 @@
     "jest": "^22.1.4",
     "lerna": "^2.8.0",
     "lodash": "^4.17.4",
+    "polished": "^1.9.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

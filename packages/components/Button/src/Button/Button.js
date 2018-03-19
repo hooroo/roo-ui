@@ -1,25 +1,26 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
+import { darken } from 'polished';
 
-const Button = styled.button.attrs({
-  color: props => (props.primary ? '#E40000' : '#323232'),
-  hoverColor: props => (props.primary ? '#BA0000' : '#555555'),
-})`
+const color = props => (props.primary ? props.theme.colors.primary : props.theme.colors.black);
+const hoverColor = props => darken(0.1, color(props));
+
+const Button = styled.button`
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  font-family: 'QantasCiutadella', sans-serif;
-  font-size: 1rem;
+  font-family: ${props => props.theme.fonts.primary};
+  font-size: ${props => props.theme.textSizes.sm};
   font-style: normal;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: ${props => props.theme.tracking.wide};
   line-height: normal;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  background-color: ${props => props.color};
-  border: 2px solid ${props => props.color};
-  border-radius: 4px;
+  color: ${props => props.theme.colors.white};
+  background-color: ${color};
+  border: 2px solid ${color};
+  border-radius: ${props => props.theme.borderRadius.default};
   outline: 0;
   transition: 200ms ease-in;
   cursor: pointer;
@@ -31,16 +32,16 @@ const Button = styled.button.attrs({
 
   &:focus:not([disabled]),
   &:hover:not([disabled]) {
-    background-color: ${props => props.hoverColor};
-    border-color: ${props => props.hoverColor};
+    background-color: ${hoverColor};
+    border-color: ${hoverColor};
 
     ${props => props.outlined && css`
-      color: ${props.hoverColor};
+      color: ${hoverColor};
     `}
   }
 
   ${props => props.outlined && css`
-    color: ${props.color};
+    color: ${color};
     background-color: transparent;
 
     &:focus:not([disabled]),
@@ -50,7 +51,7 @@ const Button = styled.button.attrs({
   `}
 
   ${props => props.rounded && css`
-    border-radius: 1000px;
+    border-radius: ${props.theme.borderRadius.rounded};
   `}
 `;
 
