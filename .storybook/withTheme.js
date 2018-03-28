@@ -5,7 +5,6 @@ import * as themes from '@roo-ui/themes';
 
 const selectedTheme = () => select('Theme', {
   qantas: 'Qantas',
-  jetstar: 'Jetstar'
 }, 'qantas')
 
 export default story => (

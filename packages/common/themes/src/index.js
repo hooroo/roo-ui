@@ -1,7 +1,5 @@
 import qantas from './qantas';
-import jetstar from './jetstar';
 
 export {
-  qantas,
-  jetstar,
+  qantas, // eslint-disable-line import/prefer-default-export
 };
