@@ -1,3 +1,4 @@
+import 'normalize.css/normalize.css';
 import '@roo-ui/fonts/ciutadella.css';
 import './storybook.css';
 
