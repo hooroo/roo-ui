@@ -49,7 +49,7 @@ export default Button.extend`
     box-shadow: ${themeGet('shadows.focus')};
   }
 
-  &:hover {
+  &:hover:not([disabled]) {
     background-color: ${hoverBackground};
   }
 
@@ -67,7 +67,7 @@ export default Button.extend`
     color: ${background};
     border-color: ${background};
 
-    &:hover {
+    &:hover:not([disabled]) {
       background-color: transparent;
       color: ${hoverBackground};
       border-color: ${hoverBackground};
