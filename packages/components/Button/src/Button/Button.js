@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
 
-const color = props => (props.primary ? props.theme.colors.primary : props.theme.colors.black);
+const color = props => (props.primary
+  ? props.theme.colors.primary
+  : props.theme.colors.black);
 const hoverColor = props => darken(0.1, color(props));
 
 const Button = styled.button`
