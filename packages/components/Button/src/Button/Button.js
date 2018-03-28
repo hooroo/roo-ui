@@ -1,33 +1,27 @@
 import system from 'system-components';
 import { css } from 'styled-components';
 import { themeGet, complexStyle } from 'styled-system';
+import { darken } from 'polished';
 
-const outlined = (props) => {
+const background = (props) => {
   const styles = complexStyle({
     prop: 'buttonStyle',
     key: 'buttons',
   })(props);
 
-  return props.outlined && css`
-    background-color: transparent;
-    color: ${styles.backgroundColor};
-    border-color: ${styles.backgroundColor};
-
-    &:hover {
-      background-color: transparent;
-      color: ${styles['&:hover'].backgroundColor};
-      border-color: ${styles['&:hover'].backgroundColor};
-    }
-  `;
+  return props.bg
+    ? themeGet(`colors.${props.bg}`, props.bg)(props)
+    : styles.backgroundColor;
 };
 
-const rounded = props => props.rounded && css`
-  border-radius: ${themeGet('radii.rounded')};
-`;
+const hoverBackground = props => darken(0.1, background(props));
 
 const Button = system({
   is: 'button',
   buttonStyle: 'default',
+  boxShadow: null,
+  color: null,
+  bg: null,
   border: 2,
   borderColor: 'transparent',
   borderRadius: 'default',
@@ -41,9 +35,6 @@ const Button = system({
 });
 
 export default Button.extend`
-  ${outlined}
-  ${rounded}
-
   font-family: ${themeGet('fontFamily')};
   transition: ${themeGet('transitions.default')};
   display: inline-block;
@@ -55,11 +46,31 @@ export default Button.extend`
   text-transform: uppercase;
 
   &:focus {
-    ${themeGet('focus')};
+    box-shadow: ${themeGet('shadows.focus')};
+  }
+
+  &:hover {
+    background-color: ${hoverBackground};
   }
 
   &[disabled] {
     opacity: 0.7;
     cursor: not-allowed;
   }
+
+  ${props => props.rounded && css`
+    border-radius: ${themeGet('radii.rounded')};
+  `}
+
+  ${props => props.outlined && css`
+    background-color: transparent;
+    color: ${background};
+    border-color: ${background};
+
+    &:hover {
+      background-color: transparent;
+      color: ${hoverBackground};
+      border-color: ${hoverBackground};
+    }
+  `}
 `;

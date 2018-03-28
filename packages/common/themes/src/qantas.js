@@ -1,4 +1,3 @@
-import { darken } from 'polished';
 
 export const colors = {
   brand: {
@@ -45,7 +44,6 @@ const radii = {
 
 export default {
   colors,
-  focus: `box-shadow: 0 0 0 2px ${colors.secondary};`,
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 12, 16, 24, 32, 64, 128, 256, 512],
   borders,
@@ -53,6 +51,7 @@ export default {
   shadows: {
     none: 0,
     default: '0 1px 1px 0 rgba(0, 0, 0, 0.1)',
+    focus: `0 0 0 2px ${colors.secondary};`,
   },
   transitions: {
     default: '200ms ease-in',
@@ -86,16 +85,10 @@ export default {
     default: {
       color: 'white',
       backgroundColor: colors.grey[1],
-      '&:hover': {
-        backgroundColor: darken(0.1, colors.grey[1]),
-      },
     },
     primary: {
       color: 'white',
       backgroundColor: colors.brand.primary,
-      '&:hover': {
-        backgroundColor: darken(0.1, colors.brand.primary),
-      },
     },
   },
 };
