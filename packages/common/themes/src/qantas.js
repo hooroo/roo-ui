@@ -45,6 +45,7 @@ const radii = {
 
 export default {
   colors,
+  focus: `box-shadow: 0 0 0 2px ${colors.secondary};`,
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 12, 16, 24, 32, 64, 128, 256, 512],
   borders,

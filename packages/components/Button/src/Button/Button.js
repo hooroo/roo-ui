@@ -54,6 +54,10 @@ export default Button.extend`
   text-decoration: none;
   text-transform: uppercase;
 
+  &:focus {
+    ${themeGet('focus')};
+  }
+
   &[disabled] {
     opacity: 0.7;
     cursor: not-allowed;
