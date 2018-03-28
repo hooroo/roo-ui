@@ -1,72 +1,61 @@
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import { darken } from 'polished';
+import system from 'system-components';
+import { css } from 'styled-components';
+import { themeGet, complexStyle } from 'styled-system';
 
-const color = props => (props.primary
-  ? props.theme.colors.primary
-  : props.theme.colors.black);
-const hoverColor = props => darken(0.1, color(props));
+const outlined = (props) => {
+  const styles = complexStyle({
+    prop: 'buttonStyle',
+    key: 'buttons',
+  })(props);
 
-const Button = styled.button`
+  return props.outlined && css`
+    background-color: transparent;
+    color: ${styles.backgroundColor};
+    border-color: ${styles.backgroundColor};
+
+    &:hover {
+      background-color: transparent;
+      color: ${styles['&:hover'].backgroundColor};
+      border-color: ${styles['&:hover'].backgroundColor};
+    }
+  `;
+};
+
+const rounded = props => props.rounded && css`
+  border-radius: ${themeGet('radii.rounded')};
+`;
+
+const Button = system({
+  is: 'button',
+  buttonStyle: 'default',
+  border: 2,
+  borderColor: 'transparent',
+  borderRadius: 'default',
+  fontSize: 'sm',
+  fontWeight: 'bold',
+  letterSpacing: 'wide',
+  lineHeight: 'normal',
+  px: 5,
+  py: 3,
+  m: 0,
+});
+
+export default Button.extend`
+  ${outlined}
+  ${rounded}
+
+  font-family: ${themeGet('fontFamily')};
+  transition: ${themeGet('transitions.default')};
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-family: ${props => props.theme.fonts.primary};
-  font-size: ${props => props.theme.textSizes.sm};
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: ${props => props.theme.tracking.wide};
-  line-height: normal;
+  cursor: pointer;
+  outline: 0;
+  appearance: none;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: ${props => props.theme.colors.white};
-  background-color: ${color};
-  border: 2px solid ${color};
-  border-radius: ${props => props.theme.borderRadius.default};
-  outline: 0;
-  transition: 200ms ease-in;
-  cursor: pointer;
 
   &[disabled] {
     opacity: 0.7;
     cursor: not-allowed;
   }
-
-  &:focus:not([disabled]),
-  &:hover:not([disabled]) {
-    background-color: ${hoverColor};
-    border-color: ${hoverColor};
-
-    ${props => props.outlined && css`
-      color: ${hoverColor};
-    `}
-  }
-
-  ${props => props.outlined && css`
-    color: ${color};
-    background-color: transparent;
-
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: transparent;
-    }
-  `}
-
-  ${props => props.rounded && css`
-    border-radius: ${props.theme.borderRadius.rounded};
-  `}
 `;
-
-Button.defaultProps = {
-  primary: false,
-  outlined: false,
-  rounded: false,
-};
-
-Button.propTypes = {
-  primary: PropTypes.bool,
-  outlined: PropTypes.bool,
-  rounded: PropTypes.bool,
-};
-
-export default Button;
