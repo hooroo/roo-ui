@@ -6,9 +6,9 @@ const Button = styled.button.attrs({
   hoverColor: props => (props.primary ? '#BA0000' : '#555555'),
 })`
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 1.2rem 2.4rem;
   font-family: 'QantasCiutadella', sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 2px;
