@@ -25,10 +25,10 @@ const wrapperStyles = {
 
 const iconStyles = {
   textAlign: 'center',
-  padding: '1.5rem',
-  width: '10rem',
+  padding: '2.4rem',
+  width: '16rem',
   justifyContent: 'flex-start',
-  fontSize: '1.25rem',
+  fontSize: '2rem',
 };
 
 const labelStyles = {
@@ -41,7 +41,7 @@ storiesOf('Icons', module)
     <div style={wrapperStyles}>
       {map(paths[select('Brand', options, 'qantas')], (path, name) => (
         <div style={iconStyles}>
-          <Icon key={name} path={path} size="2.5rem" />
+          <Icon key={name} path={path} size="4rem" />
           <p style={labelStyles}>{startCase(name)}</p>
         </div>
       ))}

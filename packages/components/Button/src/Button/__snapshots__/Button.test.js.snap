@@ -24,7 +24,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "Hello world",
-      "className": "sc-bdVaJa eBWPyP",
+      "className": "sc-bdVaJa jVWmIr",
       "color": "#323232",
       "hoverColor": "#555555",
     },
@@ -39,7 +39,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "Hello world",
-        "className": "sc-bdVaJa eBWPyP",
+        "className": "sc-bdVaJa jVWmIr",
         "color": "#323232",
         "hoverColor": "#555555",
       },
