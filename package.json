@@ -3,6 +3,10 @@
   "repository": "git@github.com:hooroo/roo-ui.git",
   "author": "Hooroo <support@hooroo.com>",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/**/*"
+  ],
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
@@ -10,8 +14,6 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
-    "@roo-ui/fonts": "^0.0.2",
-    "@roo-ui/themes": "^0.0.1",
     "@storybook/addon-knobs": "^3.3.11",
     "@storybook/addon-options": "^3.3.11",
     "@storybook/react": "^3.3.11",

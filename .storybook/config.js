@@ -1,5 +1,5 @@
 import 'normalize.css/normalize.css';
-import '@roo-ui/fonts/ciutadella.css';
+import '../packages/common/fonts/ciutadella.css';
 import './storybook.css';
 
 import { configure, addDecorator } from '@storybook/react';

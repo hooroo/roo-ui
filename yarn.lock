@@ -10,10 +10,6 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@roo-ui/fonts@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@roo-ui/fonts/-/fonts-0.0.2.tgz#d76c119c6b0549090793849318a15f8fde69bf51"
-
 "@storybook/addon-actions@^3.3.11":
   version "3.3.11"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.11.tgz#158a64f01c97fcf6922e7a370c6519d216544bcd"
