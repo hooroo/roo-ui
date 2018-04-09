@@ -11,9 +11,14 @@ $ yarn add @roo-ui/button
 ## Example
 
 ```jsx
-import Button from '@roo-ui/button';
+import Button, { OutlineButton } from '@roo-ui/button';
 
-export default <Button>Hello world</Button>;
+export default (
+  <Fragment>
+    <Button>Hello world</Button>
+    <OutlineButton>Hello world</OutlineButton>
+  </Fragment>
+);
 ```
 
 ## Properties
