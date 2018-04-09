@@ -1,47 +1,31 @@
-import system from 'system-components';
-import { css } from 'styled-components';
-import { themeGet, complexStyle } from 'styled-system';
+import styled, { css } from 'styled-components';
+import tag from 'clean-tag';
+import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
 
-// Get background color from bg prop, or from button style prop
-const getBackground = (props) => {
-  const styles = complexStyle({
-    prop: 'buttonStyle',
-    key: 'buttons',
-  })(props);
-
-  return props.bg
-    ? themeGet(`colors.${props.bg}`, props.bg)(props)
-    : styles.backgroundColor;
-};
-
-const Button = system({
-  is: 'button',
-  buttonStyle: 'default',
-  boxShadow: null,
-  color: null,
-  bg: null,
-  border: 2,
-  borderColor: 'transparent',
-  borderRadius: 'default',
-  fontSize: 'sm',
-  fontWeight: 'bold',
-  letterSpacing: 'wide',
-  lineHeight: 'normal',
-  px: 5,
-  py: 3,
-  m: 0,
-});
-
-export default Button.extend`
-  font-family: ${themeGet('fontFamily')};
-  transition: ${themeGet('transitions.default')};
+const Button = styled(tag.button)`
   display: inline-block;
-  cursor: pointer;
-  outline: 0;
-  appearance: none;
+  margin: 0;
+  padding: ${themeGet('space.3')} ${themeGet('space.5')};
+  font-family: ${themeGet('fontFamily')};
+  font-size: ${themeGet('fontSizes.sm')};
+  font-weight: ${themeGet('fontWeights.bold')};
+  letter-spacing: ${themeGet('letterSpacings.wide')};
+  line-height: ${themeGet('lineHeights.wide')};
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border: ${themeGet('borders.2')};
+  border-color: transparent;
+  border-radius: ${themeGet('radii.default')};
+  outline: 0;
+  transition: ${themeGet('transitions.default')};
+  cursor: pointer;
+  appearance: none;
+
+  ${space}
+  ${color}
+  ${boxShadow}
+  ${buttonStyle}
 
   &:focus {
     box-shadow: ${themeGet('shadows.focus')};
@@ -55,19 +39,10 @@ export default Button.extend`
   ${props => props.rounded && css`
     border-radius: ${themeGet('radii.rounded')};
   `}
-
-  ${props => props.outlined && css`
-    transition: none;
-    background-color: transparent;
-    border-color: ${getBackground};
-
-    &:not(:hover), &:disabled {
-      color: ${getBackground};
-    }
-
-    &:hover:not(:disabled) {
-      background-color: ${getBackground};
-      border-color: ${getBackground};
-    }
-  `}
 `;
+
+Button.defaultProps = {
+  buttonStyle: 'default',
+};
+
+export default Button;

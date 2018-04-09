@@ -23,5 +23,4 @@ export default <Button>Hello world</Button>;
 | `children` | button content        | `node` | -       | ✔︎         |
 | `primary`  | use the primary color | `bool` | false   | -         |
 | `rounded`  | use a rounded border  | `bool` | false   | -         |
-| `outlined` | outlined button       | `bool` | false   | -         |
 | `disabled` | disable the button    | `bool` | false   | -         |

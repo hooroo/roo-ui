@@ -16,12 +16,12 @@ To see what packages are available, check out [roo-ui's storybook](http://hooroo
 
 ### Peer dependencies
 
-Most of roo-ui's components require `react`, `react-dom`, `prop-types`, `styled-components`, `styled-system`, `system-components`, and `glamour`.
+Most of roo-ui's components require `react`, `react-dom`, `prop-types`, `styled-components`, `styled-system`, and `glamour`.
 
 Install peer dependencies with Yarn or npm:
 
 ```sh
-$ yarn add react react-dom prop-types styled-components styled-system system-components glamour
+$ yarn add react react-dom prop-types styled-components styled-system glamour
 ```
 
 ## Setup
