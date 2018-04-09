@@ -66,7 +66,7 @@ export default {
     xl: 26,
     xxl: 30,
     xxxl: 34,
-    xxxxxl: 46,
+    xxxxl: 46,
   },
   lineHeights: {
     tight: 1,
