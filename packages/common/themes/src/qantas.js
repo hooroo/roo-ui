@@ -1,4 +1,4 @@
-import { darken } from 'polished';
+import { darken, rem } from 'polished';
 
 export const colors = {
   brand: {
@@ -46,7 +46,19 @@ const radii = {
 export default {
   colors,
   breakpoints: ['40em', '52em', '64em'],
-  space: [0, 4, 8, 12, 16, 24, 32, 64, 128, 256, 512],
+  space: [
+    rem(0),
+    rem(4),
+    rem(8),
+    rem(12),
+    rem(16),
+    rem(24),
+    rem(32),
+    rem(64),
+    rem(128),
+    rem(256),
+    rem(512),
+  ],
   borders,
   radii,
   shadows: {
@@ -59,15 +71,15 @@ export default {
   },
   fontFamily: 'QantasCiutadella, sans-serif',
   fontSizes: {
-    xxs: 12,
-    xs: 14,
-    sm: 16,
-    base: 18,
-    lg: 22,
-    xl: 26,
-    xxl: 30,
-    xxxl: 34,
-    xxxxl: 46,
+    xxs: rem(12),
+    xs: rem(14),
+    sm: rem(16),
+    base: rem(18),
+    lg: rem(22),
+    xl: rem(26),
+    xxl: rem(30),
+    xxxl: rem(34),
+    xxxxl: rem(46),
   },
   lineHeights: {
     tight: 1,
