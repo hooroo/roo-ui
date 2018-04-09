@@ -1,9 +1,9 @@
 import system from 'system-components';
 import { css } from 'styled-components';
 import { themeGet, complexStyle } from 'styled-system';
-import { darken } from 'polished';
 
-const background = (props) => {
+// Get background color from bg prop, or from button style prop
+const getBackground = (props) => {
   const styles = complexStyle({
     prop: 'buttonStyle',
     key: 'buttons',
@@ -13,8 +13,6 @@ const background = (props) => {
     ? themeGet(`colors.${props.bg}`, props.bg)(props)
     : styles.backgroundColor;
 };
-
-const hoverBackground = props => darken(0.1, background(props));
 
 const Button = system({
   is: 'button',
@@ -49,10 +47,6 @@ export default Button.extend`
     box-shadow: ${themeGet('shadows.focus')};
   }
 
-  &:hover:not([disabled]) {
-    background-color: ${hoverBackground};
-  }
-
   &[disabled] {
     opacity: 0.7;
     cursor: not-allowed;
@@ -63,14 +57,17 @@ export default Button.extend`
   `}
 
   ${props => props.outlined && css`
+    transition: none;
     background-color: transparent;
-    color: ${background};
-    border-color: ${background};
+    border-color: ${getBackground};
 
-    &:hover:not([disabled]) {
-      background-color: transparent;
-      color: ${hoverBackground};
-      border-color: ${hoverBackground};
+    &:not(:hover) {
+      color: ${getBackground};
+    }
+
+    &:hover {
+      background-color: ${getBackground};
+      border-color: ${getBackground};
     }
   `}
 `;

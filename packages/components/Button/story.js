@@ -10,8 +10,8 @@ storiesOf('Button', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Button
-      outlined={boolean('Outlined', false)}
       primary={boolean('Primary', false)}
+      outlined={boolean('Outlined', false)}
       rounded={boolean('Rounded', false)}
       disabled={boolean('Disabled', false)}
     >

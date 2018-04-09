@@ -1,3 +1,5 @@
+import { darken } from 'polished';
+
 export const colors = {
   brand: {
     primary: '#e40000',
@@ -84,10 +86,16 @@ export default {
     default: {
       color: 'white',
       backgroundColor: colors.grey[1],
+      '&:hover': {
+        backgroundColor: darken(0.1, colors.grey[1]),
+      },
     },
     primary: {
       color: 'white',
       backgroundColor: colors.brand.primary,
+      '&:hover': {
+        backgroundColor: darken(0.1, colors.brand.primary),
+      },
     },
   },
 };
