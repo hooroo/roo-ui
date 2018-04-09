@@ -86,14 +86,14 @@ export default {
     default: {
       color: 'white',
       backgroundColor: colors.grey[1],
-      '&:hover': {
+      '&:hover:not(:disabled)': {
         backgroundColor: darken(0.1, colors.grey[1]),
       },
     },
     primary: {
       color: 'white',
       backgroundColor: colors.brand.primary,
-      '&:hover': {
+      '&:hover:not(:disabled)': {
         backgroundColor: darken(0.1, colors.brand.primary),
       },
     },

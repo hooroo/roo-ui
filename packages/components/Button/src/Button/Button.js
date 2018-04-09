@@ -61,11 +61,11 @@ export default Button.extend`
     background-color: transparent;
     border-color: ${getBackground};
 
-    &:not(:hover) {
+    &:not(:hover), &:disabled {
       color: ${getBackground};
     }
 
-    &:hover {
+    &:hover:not(:disabled) {
       background-color: ${getBackground};
       border-color: ${getBackground};
     }
