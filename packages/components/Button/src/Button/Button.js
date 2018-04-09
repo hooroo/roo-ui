@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components';
+import { darken } from 'polished';
 import tag from 'clean-tag';
 import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
+
+const getBackground = props =>
+  color(props).backgroundColor || buttonStyle(props).backgroundColor;
 
 const Button = styled(tag.button)`
   display: inline-block;
@@ -22,16 +26,20 @@ const Button = styled(tag.button)`
   cursor: pointer;
   appearance: none;
 
+  ${buttonStyle}
   ${space}
   ${color}
   ${boxShadow}
-  ${buttonStyle}
+
+  &:hover:not(:disabled) {
+    background-color: ${props => darken(0.1, getBackground(props))};
+  }
 
   &:focus {
     box-shadow: ${themeGet('shadows.focus')};
   }
 
-  &[disabled] {
+  &:disabled {
     opacity: 0.7;
     cursor: not-allowed;
   }

@@ -1,4 +1,4 @@
-import { darken, rem } from 'polished';
+import { rem } from 'polished';
 
 export const colors = {
   brand: {
@@ -98,16 +98,10 @@ export default {
     default: {
       color: 'white',
       backgroundColor: colors.grey[1],
-      '&:hover:not(:disabled)': {
-        backgroundColor: darken(0.1, colors.grey[1]),
-      },
     },
     primary: {
       color: 'white',
       backgroundColor: colors.brand.primary,
-      '&:hover:not(:disabled)': {
-        backgroundColor: darken(0.1, colors.brand.primary),
-      },
     },
   },
 };

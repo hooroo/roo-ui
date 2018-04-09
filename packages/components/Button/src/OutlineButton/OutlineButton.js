@@ -1,9 +1,8 @@
-import { themeGet, buttonStyle } from 'styled-system';
+import { color, buttonStyle } from 'styled-system';
 import Button from '..';
 
-const getBackground = props => (props.bg
-  ? themeGet(`colors.${props.bg}`, props.bg)(props)
-  : buttonStyle(props).backgroundColor);
+const getBackground = props =>
+  color(props).backgroundColor || buttonStyle(props).backgroundColor;
 
 export default Button.extend`
   background-color: transparent;
