@@ -45,7 +45,7 @@ const radii = {
 
 export default {
   colors,
-  breakpoints: ['40em', '52em', '64em'],
+  breakpoints: ['40rem', '52rem', '64rem'],
   space: [
     rem('0px'),
     rem('4px'),
