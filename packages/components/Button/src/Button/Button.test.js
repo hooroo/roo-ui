@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { qantas } from '@roo-ui/themes';
+import { shallowWithTheme } from '@roo-ui/test-utils';
 
 import Button from '.';
 
@@ -9,7 +10,7 @@ describe('<Button />', () => {
 
   beforeEach(() => {
     props = {};
-    wrapper = shallow(<Button {...props}>Hello world</Button>);
+    wrapper = shallowWithTheme(<Button {...props}>Hello world</Button>, qantas);
   });
 
   it('renders correctly', () => {

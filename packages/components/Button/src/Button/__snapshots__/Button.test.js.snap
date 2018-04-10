@@ -1,9 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  font-family: QantasCiutadella,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.125em;
+  -moz-letter-spacing: 0.125em;
+  -ms-letter-spacing: 0.125em;
+  letter-spacing: 0.125em;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: white;
+  background-color: #323232;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: #181818;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0 2px undefined;
+}
+
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 <Clean.button
   buttonStyle="default"
-  className="sc-bdVaJa dtkpao"
+  className="c0"
 >
   Hello world
 </Clean.button>
