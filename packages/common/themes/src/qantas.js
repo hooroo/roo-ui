@@ -1,6 +1,6 @@
 import { rem } from 'polished';
 
-export const colors = {
+const colors = {
   brand: {
     primary: '#e40000',
     secondary: '#8de2e0',
