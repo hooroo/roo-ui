@@ -1,19 +1,37 @@
 import React from 'react';
-import { qantas } from '@roo-ui/themes';
+import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
 
 import Button from '.';
 
 describe('<Button />', () => {
-  let props;
   let wrapper;
 
   beforeEach(() => {
-    props = {};
-    wrapper = shallowWithTheme(<Button {...props}>Hello world</Button>, qantas);
+    wrapper = shallowWithTheme(<Button rounded>Hello world</Button>, theme);
   });
 
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('primary', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(<Button primary>Hello world</Button>, theme);
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('rounded', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(<Button rounded>Hello world</Button>, theme);
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
   });
 });
