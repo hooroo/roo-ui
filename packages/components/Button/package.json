@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/button",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
@@ -9,8 +9,8 @@
     "build": "babel src -d dist"
   },
   "devDependencies": {
-    "@roo-ui/themes": "^0.0.1",
-    "@roo-ui/test-utils": "^0.0.1"
+    "@roo-ui/test-utils": "^0.4.0",
+    "@roo-ui/themes": "^0.4.0"
   },
   "peerDependencies": {
     "polished": "^1.9.2",
