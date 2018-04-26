@@ -12,7 +12,7 @@ Each package and component in roo-ui is available as a package on npm, and can b
 $ yarn add @roo-ui/<package-name>
 ```
 
-To see what packages are available, check out [roo-ui's storybook](http://hooroo.github.io/roo-ui/), or browse [packages](./packages) or [components](./components).
+To see what packages are available, check out [roo-ui's storybook](http://hooroo.github.io/roo-ui/), or browse [packages](./packages).
 
 ### Peer dependencies
 
