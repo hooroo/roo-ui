@@ -138,7 +138,7 @@ Every package should contain the following:
 
 Component packages are housed in the `packages/components` directory. They export one or more React components from a single entry point.
 
-Component packages should define a script to compile the Javascript source with [Babel](http://babeljs.io), a `main` property pointing at the compiled entry point, and should define `react`, `react-dom`, and `prop-types` as peer dependencies:
+Component packages should define a script to compile the Javascript source with [Babel](http://babeljs.io), a `main` property pointing at the compiled entry point, and should define `react` and `react-dom` as peer dependencies:
 
 ```json
 {
@@ -147,7 +147,6 @@ Component packages should define a script to compile the Javascript source with 
     "build": "babel src -d dist"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
@@ -156,15 +155,18 @@ Component packages should define a script to compile the Javascript source with 
 
 #### Styling
 
-Component packages that require styling should be styled with [styled-components](http://styled-components.com), which should be added as a peer dependency:
+Component packages that require styling should be styled with [styled-components](http://styled-components.com) and [styled-system](https://github.com/jxnblk/styled-system) which should be added as a peer dependencies:
 
 ```json
 {
   "peerDependencies": {
-    "styled-components": "^3.1.5"
+    "styled-components": "^3.1.5",
+    "styled-system": "^2.2.1"
   }
 }
 ```
+
+Use styled-system to ensure components make full use of theming; allowing easy customization while remaining true to brand guidelines.
 
 <a name="packages-utility"></a>
 ### Utility packages

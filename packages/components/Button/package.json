@@ -8,10 +8,15 @@
   "scripts": {
     "build": "babel src -d dist"
   },
+  "devDependencies": {
+    "@roo-ui/themes": "^0.0.1",
+    "@roo-ui/test-utils": "^0.0.1"
+  },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
+    "polished": "^1.9.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "styled-components": "^3.1.5"
+    "styled-components": "^3.1.5",
+    "styled-system": "^2.2.1"
   }
 }

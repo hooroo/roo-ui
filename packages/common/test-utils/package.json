@@ -1,0 +1,11 @@
+{
+  "name": "@roo-ui/test-utils",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "babel src -d dist --copy-files"
+  }
+}

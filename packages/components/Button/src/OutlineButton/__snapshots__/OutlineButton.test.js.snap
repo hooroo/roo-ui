@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> primary renders correctly 1`] = `
+exports[`<OutlineButton /> primary renders correctly 1`] = `
 .c0 {
   display: inline-block;
   margin: 0;
@@ -28,6 +28,10 @@ exports[`<Button /> primary renders correctly 1`] = `
   appearance: none;
   color: white;
   background-color: #e40000;
+  background-color: transparent;
+  border-color: #e40000;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .c0:hover:not(:disabled) {
@@ -43,6 +47,16 @@ exports[`<Button /> primary renders correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c0:not(:hover),
+.c0:disabled {
+  color: #e40000;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: #e40000;
+  border-color: #e40000;
+}
+
 <Clean.button
   buttonStyle="default"
   className="c0"
@@ -52,7 +66,7 @@ exports[`<Button /> primary renders correctly 1`] = `
 </Clean.button>
 `;
 
-exports[`<Button /> renders correctly 1`] = `
+exports[`<OutlineButton /> renders correctly 1`] = `
 .c0 {
   display: inline-block;
   margin: 0;
@@ -81,6 +95,10 @@ exports[`<Button /> renders correctly 1`] = `
   color: white;
   background-color: #323232;
   border-radius: 1000px;
+  background-color: transparent;
+  border-color: #323232;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .c0:hover:not(:disabled) {
@@ -94,6 +112,16 @@ exports[`<Button /> renders correctly 1`] = `
 .c0:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.c0:not(:hover),
+.c0:disabled {
+  color: #323232;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: #323232;
+  border-color: #323232;
 }
 
 <Clean.button
@@ -105,7 +133,7 @@ exports[`<Button /> renders correctly 1`] = `
 </Clean.button>
 `;
 
-exports[`<Button /> rounded renders correctly 1`] = `
+exports[`<OutlineButton /> rounded renders correctly 1`] = `
 .c0 {
   display: inline-block;
   margin: 0;
@@ -134,6 +162,10 @@ exports[`<Button /> rounded renders correctly 1`] = `
   color: white;
   background-color: #323232;
   border-radius: 1000px;
+  background-color: transparent;
+  border-color: #323232;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .c0:hover:not(:disabled) {
@@ -147,6 +179,16 @@ exports[`<Button /> rounded renders correctly 1`] = `
 .c0:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.c0:not(:hover),
+.c0:disabled {
+  color: #323232;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: #323232;
+  border-color: #323232;
 }
 
 <Clean.button

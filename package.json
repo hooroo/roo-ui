@@ -3,6 +3,10 @@
   "repository": "git@github.com:hooroo/roo-ui.git",
   "author": "Hooroo <support@hooroo.com>",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/**/*"
+  ],
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
@@ -10,28 +14,35 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
-    "@roo-ui/fonts": "^0.0.2",
     "@storybook/addon-knobs": "^3.3.11",
     "@storybook/addon-options": "^3.3.11",
+    "@storybook/addons": "^3.4.0",
     "@storybook/react": "^3.3.11",
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-airbnb": "^2.4.0",
+    "babel-runtime": "^6.26.0",
+    "clean-tag": "^1.0.4",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.1.4",
+    "jest-styled-components": "^5.0.1",
     "lerna": "^2.8.0",
     "lodash": "^4.17.4",
+    "normalize.css": "^8.0.0",
+    "polished": "^1.9.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "storybook-readme": "^3.2.0",
-    "styled-components": "^3.1.5"
+    "styled-components": "^3.1.5",
+    "styled-system": "^2.2.1"
   }
 }

@@ -1,69 +1,56 @@
-import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
+import { darken } from 'polished';
+import tag from 'clean-tag';
+import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
 
-const Button = styled.button.attrs({
-  color: props => (props.primary ? '#E40000' : '#323232'),
-  hoverColor: props => (props.primary ? '#BA0000' : '#555555'),
-})`
+const getBackground = props =>
+  color(props).backgroundColor || buttonStyle(props).backgroundColor;
+
+const Button = styled(tag.button)`
   display: inline-block;
-  padding: 1.2rem 2.4rem;
-  font-family: 'QantasCiutadella', sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 2px;
-  line-height: normal;
+  margin: 0;
+  padding: ${themeGet('space.3')} ${themeGet('space.5')};
+  font-family: ${themeGet('fontFamily')};
+  font-size: ${themeGet('fontSizes.sm')};
+  font-weight: ${themeGet('fontWeights.bold')};
+  letter-spacing: ${themeGet('letterSpacings.wide')};
+  line-height: ${themeGet('lineHeights.wide')};
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  background-color: ${props => props.color};
-  border: 2px solid ${props => props.color};
-  border-radius: 4px;
+  border: ${themeGet('borders.2')};
+  border-color: transparent;
+  border-radius: ${themeGet('radii.default')};
   outline: 0;
-  transition: 200ms ease-in;
+  transition: ${themeGet('transitions.default')};
   cursor: pointer;
+  appearance: none;
 
-  &[disabled] {
+  ${buttonStyle}
+  ${space}
+  ${color}
+  ${boxShadow}
+
+  &:hover:not(:disabled) {
+    background-color: ${props => darken(0.1, getBackground(props))};
+  }
+
+  &:focus {
+    box-shadow: ${themeGet('shadows.focus')};
+  }
+
+  &:disabled {
     opacity: 0.7;
     cursor: not-allowed;
   }
 
-  &:focus:not([disabled]),
-  &:hover:not([disabled]) {
-    background-color: ${props => props.hoverColor};
-    border-color: ${props => props.hoverColor};
-
-    ${props => props.outlined && css`
-      color: ${props.hoverColor};
-    `}
-  }
-
-  ${props => props.outlined && css`
-    color: ${props.color};
-    background-color: transparent;
-
-    &:focus:not([disabled]),
-    &:hover:not([disabled]) {
-      background-color: transparent;
-    }
-  `}
-
   ${props => props.rounded && css`
-    border-radius: 1000px;
+    border-radius: ${themeGet('radii.rounded')};
   `}
 `;
 
 Button.defaultProps = {
-  primary: false,
-  outlined: false,
-  rounded: false,
-};
-
-Button.propTypes = {
-  primary: PropTypes.bool,
-  outlined: PropTypes.bool,
-  rounded: PropTypes.bool,
+  buttonStyle: 'default',
 };
 
 export default Button;

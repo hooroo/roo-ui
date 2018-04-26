@@ -7,4 +7,3 @@ export {
   qantasPaths,
   jetstarPaths,
 };
-
