@@ -1,23 +1,20 @@
-# Button
+# OutlineButton
 
 <!-- STORY -->
 
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/button
+$ yarn add @roo-ui/components
 ```
 
 ## Example
 
 ```jsx
-import Button, { OutlineButton } from '@roo-ui/button';
+import { OutlineButton } from '@roo-ui/components';
 
 export default (
-  <Fragment>
-    <Button>Hello world</Button>
-    <OutlineButton>Hello world</OutlineButton>
-  </Fragment>
+  <OutlineButton>Hello world</OutlineButton>
 );
 ```
 
