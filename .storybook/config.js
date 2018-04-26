@@ -3,7 +3,7 @@ import { withKnobs } from '@storybook/addon-knobs/react';
 import { setOptions } from '@storybook/addon-options';
 
 import 'normalize.css/normalize.css';
-import '../packages/common/fonts/ciutadella.css';
+import '../packages/fonts/ciutadella.css';
 import './storybook.css';
 
 import withTheme from './withTheme';
