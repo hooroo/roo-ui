@@ -1,5 +1,5 @@
 import { color, buttonStyle } from 'styled-system';
-import Button from '..';
+import Button from '../Button';
 
 const getBackground = props =>
   color(props).backgroundColor || buttonStyle(props).backgroundColor;

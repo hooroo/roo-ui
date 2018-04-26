@@ -1,6 +1,6 @@
 {
-  "name": "@roo-ui/test-utils",
-  "version": "0.4.0",
+  "name": "@roo-ui/themes",
+  "version": "0.4.1",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
