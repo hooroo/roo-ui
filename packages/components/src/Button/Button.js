@@ -11,7 +11,6 @@ const Button = styled(tag.button)`
   display: inline-block;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.5')};
-  font-family: ${themeGet('fontFamily')};
   font-size: ${themeGet('fontSizes.sm')};
   font-weight: ${themeGet('fontWeights.bold')};
   letter-spacing: ${themeGet('letterSpacings.wide')};
