@@ -9,7 +9,7 @@ import './storybook.css';
 import withTheme from './withTheme';
 
 setOptions({
-  name: '🦐 Roo UI',
+  name: 'Roo UI',
   addonPanelInRight: true,
   hierarchyRootSeparator: /\|/,
 });
