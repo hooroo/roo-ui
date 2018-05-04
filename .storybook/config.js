@@ -14,7 +14,7 @@ setOptions({
   hierarchyRootSeparator: /\|/,
 });
 
-const req = require.context('../packages', true, /story.js$/);
+const req = require.context('../packages', true, /^((?!dist).)*.story\.js$/);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
