@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 import { darken } from 'polished';
 import tag from 'clean-tag';
 import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
@@ -51,6 +52,15 @@ const Button = styled(tag.button)`
 
 Button.defaultProps = {
   buttonStyle: 'default',
+};
+
+Button.propTypes = {
+  ...buttonStyle.propTypes,
+  ...space.propTypes,
+  ...color.propTypes,
+  ...boxShadow.propTypes,
+  primary: PropTypes.bool,
+  rounded: PropTypes.bool,
 };
 
 export default Button;
