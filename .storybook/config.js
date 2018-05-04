@@ -11,6 +11,7 @@ import withTheme from './withTheme';
 setOptions({
   name: '🦐 Roo UI',
   addonPanelInRight: true,
+  hierarchyRootSeparator: /\|/,
 });
 
 const req = require.context('../packages', true, /story.js$/);
