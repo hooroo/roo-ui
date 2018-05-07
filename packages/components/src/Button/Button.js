@@ -14,7 +14,7 @@ const Button = styled(tag.button)`
   font-size: ${themeGet('fontSizes.sm')};
   font-weight: ${themeGet('fontWeights.bold')};
   letter-spacing: ${themeGet('letterSpacings.wide')};
-  line-height: ${themeGet('lineHeights.wide')};
+  line-height: ${themeGet('lineHeights.normal')};
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
