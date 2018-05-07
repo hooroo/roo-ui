@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { text } from '@storybook/addon-knobs/react';
 
 import Box from './Box';
 import README from './README.md';
