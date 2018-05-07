@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { space, themeGet } from 'styled-system';
+import tag from 'clean-tag';
 
-const Input = styled.input`
+const Input = styled(tag.input)`
   display: block;
   width: 100%;
   margin: 0;
