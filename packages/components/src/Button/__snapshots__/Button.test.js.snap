@@ -11,6 +11,7 @@ exports[`<Button /> primary renders correctly 1`] = `
   -moz-letter-spacing: 0.125em;
   -ms-letter-spacing: 0.125em;
   letter-spacing: 0.125em;
+  line-height: 1.35;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -62,6 +63,7 @@ exports[`<Button /> renders correctly 1`] = `
   -moz-letter-spacing: 0.125em;
   -ms-letter-spacing: 0.125em;
   letter-spacing: 0.125em;
+  line-height: 1.35;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -78,7 +80,6 @@ exports[`<Button /> renders correctly 1`] = `
   appearance: none;
   color: white;
   background-color: #323232;
-  border-radius: 1000px;
 }
 
 .c0:hover:not(:disabled) {
@@ -97,7 +98,6 @@ exports[`<Button /> renders correctly 1`] = `
 <Clean.button
   buttonStyle="default"
   className="c0"
-  rounded={true}
 >
   Hello world
 </Clean.button>
@@ -114,6 +114,7 @@ exports[`<Button /> rounded renders correctly 1`] = `
   -moz-letter-spacing: 0.125em;
   -ms-letter-spacing: 0.125em;
   letter-spacing: 0.125em;
+  line-height: 1.35;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
