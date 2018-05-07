@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> hidden renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin: 0rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #323232;
+  font-weight: 600;
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<label
+  className="c0"
+  color="grey.1"
+  fontSize="xs"
+  fontWeight="bold"
+  hidden={true}
+>
+  Hello world
+</label>
+`;
+
+exports[`<Button /> primary renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin: 0rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #323232;
+  font-weight: 600;
+}
+
+<label
+  className="c0"
+  color="grey.1"
+  fontSize="xs"
+  fontWeight="bold"
+  hidden={false}
+>
+  Hello world
+</label>
+`;
+
+exports[`<Button /> renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin: 0rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #323232;
+  font-weight: 600;
+}
+
+<label
+  className="c0"
+  color="grey.1"
+  fontSize="xs"
+  fontWeight="bold"
+  hidden={false}
+>
+  Hello world
+</label>
+`;
+
+exports[`<Button /> rounded renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin: 0rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #323232;
+  font-weight: 600;
+}
+
+<label
+  className="c0"
+  color="grey.1"
+  fontSize="xs"
+  fontWeight="bold"
+  hidden={false}
+>
+  Hello world
+</label>
+`;
+
+exports[`<Label /> hidden renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin: 0rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #323232;
+  font-weight: 600;
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+<label
+  className="c0"
+  color="grey.1"
+  fontSize="xs"
+  fontWeight="bold"
+  hidden={true}
+>
+  Hello world
+</label>
+`;
+
+exports[`<Label /> renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin: 0rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #323232;
+  font-weight: 600;
+}
+
+<label
+  className="c0"
+  color="grey.1"
+  fontSize="xs"
+  fontWeight="bold"
+  hidden={false}
+>
+  Hello world
+</label>
+`;
