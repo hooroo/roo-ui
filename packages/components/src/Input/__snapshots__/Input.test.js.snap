@@ -10,7 +10,7 @@ exports[`<Input /> renders correctly 1`] = `
   line-height: 1.35;
   color: #323232;
   border: 2px solid;
-  border-color: #dadada;
+  border-color: #DADADA;
   outline: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -22,19 +22,19 @@ exports[`<Input /> renders correctly 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #7b7b7b;
+  color: #7B7B7B;
 }
 
 .c0::-moz-placeholder {
-  color: #7b7b7b;
+  color: #7B7B7B;
 }
 
 .c0:-ms-input-placeholder {
-  color: #7b7b7b;
+  color: #7B7B7B;
 }
 
 .c0::placeholder {
-  color: #7b7b7b;
+  color: #7B7B7B;
 }
 
 .c0::-ms-clear {
