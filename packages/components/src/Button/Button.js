@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 import { darken } from 'polished';
 import tag from 'clean-tag';
 import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
@@ -10,11 +11,10 @@ const Button = styled(tag.button)`
   display: inline-block;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.5')};
-  font-family: ${themeGet('fontFamily')};
   font-size: ${themeGet('fontSizes.sm')};
   font-weight: ${themeGet('fontWeights.bold')};
   letter-spacing: ${themeGet('letterSpacings.wide')};
-  line-height: ${themeGet('lineHeights.wide')};
+  line-height: ${themeGet('lineHeights.normal')};
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -51,6 +51,15 @@ const Button = styled(tag.button)`
 
 Button.defaultProps = {
   buttonStyle: 'default',
+};
+
+Button.propTypes = {
+  ...buttonStyle.propTypes,
+  ...space.propTypes,
+  ...color.propTypes,
+  ...boxShadow.propTypes,
+  primary: PropTypes.bool,
+  rounded: PropTypes.bool,
 };
 
 export default Button;

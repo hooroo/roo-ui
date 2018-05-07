@@ -1,15 +1,9 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import { select } from '@storybook/addon-knobs/react';
 
-import * as themes from '../packages/themes/src';
-
-const selectedTheme = () => select('Theme', {
-  qantas: 'Qantas',
-}, 'qantas');
+import { ThemeProvider, qantas } from '../packages/themes/src';
 
 export default story => (
-  <ThemeProvider theme={themes[selectedTheme()]}>
+  <ThemeProvider theme={qantas}>
     {story()}
   </ThemeProvider>
 );

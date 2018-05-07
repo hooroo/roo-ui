@@ -59,6 +59,9 @@ export default {
     rem('256px'),
     rem('512px'),
   ],
+  maxWidths: {
+    default: rem('1280px'),
+  },
   borders,
   radii,
   shadows: {

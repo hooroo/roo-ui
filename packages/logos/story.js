@@ -7,7 +7,7 @@ import { select } from '@storybook/addon-knobs/react';
 import * as logos from './src';
 import README from './README.md';
 
-storiesOf('Logos', module)
+storiesOf('Foundations|Logos', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <img

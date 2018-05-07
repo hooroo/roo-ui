@@ -35,7 +35,7 @@ const labelStyles = {
   fontFamily: 'QantasCiutadella',
 };
 
-storiesOf('Icons', module)
+storiesOf('Components|Icon', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <div style={wrapperStyles}>
