@@ -31,8 +31,7 @@ $ yarn add react react-dom prop-types styled-components styled-system glamour
 In the root of your app, render a `<ThemeProvider />`, and pass it a theme:
 
 ```js
-import { ThemeProvider } from 'styled-components';
-import { qantas } from '@roo-ui/themes';
+import { ThemeProvider, qantas } from '@roo-ui/themes';
 
 export default (
   <ThemeProvider theme={qantas}>
@@ -51,7 +50,7 @@ import '@roo-ui/fonts/ciutadella.css';
 
 ### `normalize.css`
 
-Install [`normalize.css`](http://necolas.github.io/normalize.css  ) and import it to normalize default browser styles:
+Install [`normalize.css`](http://necolas.github.io/normalize.css) and import it to normalize default browser styles:
 
 ```sh
 yarn add normalize.css
