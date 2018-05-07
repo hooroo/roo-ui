@@ -10,7 +10,7 @@ $ yarn add @roo-ui/components
 
 ## Example
 
-```jsx
+```js
 import { Button } from '@roo-ui/components';
 
 export default (

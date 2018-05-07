@@ -12,7 +12,7 @@ $ yarn add @roo-ui/test-utils
 
 Shallow render (with [Enzyme](http://airbnb.io/enzyme/)) a component along with theme context.
 
-```jsx
+```js
 import { shallowWithTheme } from '@roo-ui/test-utils';
 import { qantas as theme } from '@roo-ui/themes';
 

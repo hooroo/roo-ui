@@ -30,7 +30,7 @@ $ yarn add react react-dom prop-types styled-components styled-system glamour
 
 In the root of your app, render a `<ThemeProvider />`, and pass it a theme:
 
-```jsx
+```js
 import { ThemeProvider } from 'styled-components';
 import { qantas } from '@roo-ui/themes';
 

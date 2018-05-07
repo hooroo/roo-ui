@@ -8,7 +8,7 @@ $ yarn add @roo-ui/themes
 
 ## Example
 
-```jsx
+```js
 import { ThemeProvider } from 'styled-components';
 import { qantas } from '@roo-ui/themes';
 
