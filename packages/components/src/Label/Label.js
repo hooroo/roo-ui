@@ -1,16 +1,20 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { hideVisually } from 'polished';
-import { space, fontSize, fontWeight, color } from 'styled-system';
+import { themeGet, space, fontSize, fontWeight, color } from 'styled-system';
+import tag from 'clean-tag';
 
-const Label = styled.label`
+const Label = styled(tag.label)`
   display: block;
   width: 100%;
+  line-height: ${themeGet('lineHeights.normal')};
 
   ${props => props.hidden && hideVisually()}
 
   ${space}
+  ${fontSize}
   ${color}
+  ${fontWeight}
 `;
 
 Label.propTypes = {
@@ -25,7 +29,6 @@ Label.defaultProps = {
   fontSize: 'xs',
   fontWeight: 'bold',
   color: 'grey.1',
-  lineHeight: 'loose',
   m: 0,
   mb: 3,
   hidden: false,
