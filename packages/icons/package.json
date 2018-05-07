@@ -1,0 +1,16 @@
+{
+  "name": "@roo-ui/icons",
+  "version": "0.0.0",
+  "main": "paths.json",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node ./parseIcons.js"
+  },
+  "devDependencies": {
+    "glob": "^7.1.2",
+    "svgi": "^1.1.0",
+    "svgo": "^1.0.5"
+  }
+}
