@@ -24,6 +24,7 @@
     "babel-core": "^6.26.0",
     "babel-preset-airbnb": "^2.4.0",
     "babel-runtime": "^6.26.0",
+    "clean-element": "^1.0.0",
     "clean-tag": "^1.0.4",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",

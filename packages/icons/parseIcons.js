@@ -6,7 +6,7 @@ const last = require('lodash/last');
 const glob = require('glob');
 
 const srcDir = 'src/**/*.svg';
-const filepath = 'paths.json';
+const filepath = 'dist/paths.json';
 
 const writeFile = data => fs.writeFileSync(filepath, JSON.stringify(data));
 
