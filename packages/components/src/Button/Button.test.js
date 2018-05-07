@@ -8,7 +8,7 @@ describe('<Button />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Button rounded>Hello world</Button>, theme);
+    wrapper = shallowWithTheme(<Button>Hello world</Button>, theme);
   });
 
   it('renders correctly', () => {
