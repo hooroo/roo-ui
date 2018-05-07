@@ -5,7 +5,6 @@ exports[`<Button /> primary renders correctly 1`] = `
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.5rem;
-  font-family: QantasCiutadella,sans-serif;
   font-size: 1rem;
   font-weight: 600;
   -webkit-letter-spacing: 0.125em;
@@ -57,7 +56,6 @@ exports[`<Button /> renders correctly 1`] = `
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.5rem;
-  font-family: QantasCiutadella,sans-serif;
   font-size: 1rem;
   font-weight: 600;
   -webkit-letter-spacing: 0.125em;
@@ -110,7 +108,6 @@ exports[`<Button /> rounded renders correctly 1`] = `
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.5rem;
-  font-family: QantasCiutadella,sans-serif;
   font-size: 1rem;
   font-weight: 600;
   -webkit-letter-spacing: 0.125em;
