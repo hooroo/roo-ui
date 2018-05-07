@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> renders correctly 1`] = `
+.c0 {
+  color: #323232;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+<Clean.p
+  className="c0"
+  color="grey.1"
+  fontSize="base"
+  fontWeight="normal"
+  lineHeight="loose"
+  m={0}
+  mb={2}
+>
+  Hello world
+</Clean.p>
+`;
