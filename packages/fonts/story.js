@@ -17,7 +17,7 @@ const fonts = {
   JetstarHappy: 'Jetstar Happy',
 };
 
-storiesOf('Fonts', module)
+storiesOf('Foundations|Fonts', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <div style={{ ...styles, fontFamily: select('Font', fonts, Object.keys(fonts)[0]) }}>

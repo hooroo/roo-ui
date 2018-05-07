@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> renders correctly 1`] = `
+.c0 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+}
+
+<Clean.div
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "fontSize",
+      "f",
+      "color",
+      "bg",
+      "fontFamily",
+      "font",
+      "textAlign",
+      "align",
+      "lineHeight",
+      "fontWeight",
+      "letterSpacing",
+      "display",
+      "maxWidth",
+      "minWidth",
+      "height",
+      "maxHeight",
+      "minHeight",
+      "size",
+      "ratio",
+      "alignItems",
+      "alignContent",
+      "justifyContent",
+      "justify",
+      "flexWrap",
+      "wrap",
+      "flexBasis",
+      "flexDirection",
+      "flex",
+      "justifySelf",
+      "alignSelf",
+      "order",
+      "gridGap",
+      "gridColumnGap",
+      "gridRowGap",
+      "gridColumn",
+      "gridRow",
+      "gridAutoFlow",
+      "gridAutoColumns",
+      "gridAutoRows",
+      "gridTemplateColumns",
+      "gridTemplateRows",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "borderRadius",
+      "boxShadow",
+      "background",
+      "backgroundImage",
+      "bgImage",
+      "backgroundSize",
+      "bgSize",
+      "backgroundPosition",
+      "bgPosition",
+      "backgroundRepeat",
+      "bgRepeat",
+      "position",
+      "zIndex",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "hover",
+      "focus",
+      "active",
+      "disabledStyle",
+      "textStyle",
+      "colors",
+      "buttonStyle",
+      "borderWidth",
+    ]
+  }
+  className="c0"
+  is="div"
+  maxWidth="default"
+>
+  Hello world
+</Clean.div>
+`;

@@ -10,7 +10,7 @@ $ yarn add @roo-ui/components
 
 ## Example
 
-```jsx
+```js
 import { OutlineButton } from '@roo-ui/components';
 
 export default (
@@ -22,7 +22,6 @@ export default (
 
 | Name       | Description           | Type   | Default | Required? |
 |:-----------|:----------------------|:-------|:--------|:----------|
-| `children` | button content        | `node` | -       | ✔︎         |
 | `primary`  | use the primary color | `bool` | false   | -         |
 | `rounded`  | use a rounded border  | `bool` | false   | -         |
 | `disabled` | disable the button    | `bool` | false   | -         |

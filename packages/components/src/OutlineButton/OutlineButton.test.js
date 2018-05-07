@@ -9,7 +9,7 @@ describe('<OutlineButton />', () => {
 
   beforeEach(() => {
     wrapper = shallowWithTheme(
-      <OutlineButton rounded>Hello world</OutlineButton>,
+      <OutlineButton>Hello world</OutlineButton>,
       theme,
     );
   });

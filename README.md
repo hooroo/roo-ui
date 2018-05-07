@@ -16,12 +16,12 @@ To see what packages are available, check out [roo-ui's storybook](http://hooroo
 
 ### Peer dependencies
 
-Most of roo-ui's components require `react`, `react-dom`, `prop-types`, `styled-components`, `styled-system`, and `glamour`.
+Most of roo-ui's components require `react`, `react-dom`, `prop-types`, `styled-components`, `styled-system`, and `polished`.
 
 Install peer dependencies with Yarn or npm:
 
 ```sh
-$ yarn add react react-dom prop-types styled-components styled-system glamour
+$ yarn add react react-dom prop-types styled-components styled-system polished
 ```
 
 ## Setup
@@ -30,9 +30,8 @@ $ yarn add react react-dom prop-types styled-components styled-system glamour
 
 In the root of your app, render a `<ThemeProvider />`, and pass it a theme:
 
-```jsx
-import { ThemeProvider } from 'styled-components';
-import { qantas } from '@roo-ui/themes';
+```js
+import { ThemeProvider, qantas } from '@roo-ui/themes';
 
 export default (
   <ThemeProvider theme={qantas}>
@@ -51,7 +50,7 @@ import '@roo-ui/fonts/ciutadella.css';
 
 ### `normalize.css`
 
-Install [`normalize.css`](http://necolas.github.io/normalize.css  ) and import it to normalize default browser styles:
+Install [`normalize.css`](http://necolas.github.io/normalize.css) and import it to normalize default browser styles:
 
 ```sh
 yarn add normalize.css
