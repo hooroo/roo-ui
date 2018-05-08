@@ -49,10 +49,6 @@ const Button = styled(tag.button)`
   `}
 `;
 
-Button.defaultProps = {
-  buttonStyle: 'default',
-};
-
 Button.propTypes = {
   ...buttonStyle.propTypes,
   ...space.propTypes,
@@ -60,6 +56,11 @@ Button.propTypes = {
   ...boxShadow.propTypes,
   primary: PropTypes.bool,
   rounded: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  buttonStyle: 'default',
+  blacklist: Object.keys(Button.propTypes),
 };
 
 export default Button;
