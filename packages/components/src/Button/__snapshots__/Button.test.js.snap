@@ -44,6 +44,30 @@ exports[`<Button /> primary renders correctly 1`] = `
 }
 
 <Clean.button
+  blacklist={
+    Array [
+      "buttonStyle",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "color",
+      "bg",
+      "boxShadow",
+      "primary",
+      "rounded",
+    ]
+  }
   buttonStyle="default"
   className="c0"
   primary={true}
@@ -96,6 +120,30 @@ exports[`<Button /> renders correctly 1`] = `
 }
 
 <Clean.button
+  blacklist={
+    Array [
+      "buttonStyle",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "color",
+      "bg",
+      "boxShadow",
+      "primary",
+      "rounded",
+    ]
+  }
   buttonStyle="default"
   className="c0"
 >
@@ -148,6 +196,30 @@ exports[`<Button /> rounded renders correctly 1`] = `
 }
 
 <Clean.button
+  blacklist={
+    Array [
+      "buttonStyle",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "color",
+      "bg",
+      "boxShadow",
+      "primary",
+      "rounded",
+    ]
+  }
   buttonStyle="default"
   className="c0"
   rounded={true}
