@@ -27,7 +27,7 @@ exports[`<Button /> primary renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   color: white;
-  background-color: #e40000;
+  background-color: #E40000;
 }
 
 .c0:hover:not(:disabled) {

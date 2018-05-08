@@ -27,9 +27,9 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   color: white;
-  background-color: #e40000;
+  background-color: #E40000;
   background-color: transparent;
-  border-color: #e40000;
+  border-color: #E40000;
   -webkit-transition: none;
   transition: none;
 }
@@ -49,12 +49,12 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
 
 .c0:not(:hover),
 .c0:disabled {
-  color: #e40000;
+  color: #E40000;
 }
 
 .c0:hover:not(:disabled) {
-  background-color: #e40000;
-  border-color: #e40000;
+  background-color: #E40000;
+  border-color: #E40000;
 }
 
 <Clean.button

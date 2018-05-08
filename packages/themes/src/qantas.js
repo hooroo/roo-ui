@@ -2,46 +2,30 @@ import { rem } from 'polished';
 
 const colors = {
   brand: {
-    primary: '#e40000',
-    secondary: '#8de2e0',
+    primary: '#E40000',
+    secondary: '#8DE2E0',
     tertiary: '#D20000',
     quaternary: '#F9F3E9',
   },
   ui: {
-    link: '#e00e00',
+    link: '#E00E00',
     linkHover: '#870000',
-    info: '#8de2e0',
-    infoBackground: '#bff4f2',
-    error: '#ed710b',
-    errorBackground: '#fcebcd',
-    success: '#35a509',
+    info: '#8DE2E0',
+    infoBackground: '#BFF4F2',
+    error: '#ED710B',
+    errorBackground: '#FCEBCD',
+    success: '#35A509',
     successBackground: '#DEF2DE',
   },
   grey: [
-    '#161616',
     '#323232',
-    '#555555',
     '#666666',
-    '#7B7B7B',
     '#DADADA',
     '#F4F5F6',
-    '#F5F5F5',
-    '#FFFFFF',
   ],
+  white: '#FFFFFF',
 };
 
-const borders = [
-  0,
-  '1px solid',
-  '2px solid',
-  '3px solid',
-];
-
-const radii = {
-  none: 0,
-  default: '4px',
-  rounded: '1000px',
-};
 
 export default {
   colors,
@@ -62,8 +46,17 @@ export default {
   maxWidths: {
     default: rem('1280px'),
   },
-  borders,
-  radii,
+  borders: [
+    0,
+    '1px solid',
+    '2px solid',
+    '3px solid',
+  ],
+  radii: {
+    none: 0,
+    default: '4px',
+    rounded: '1000px',
+  },
   shadows: {
     none: 0,
     default: '0 1px 1px 0 rgba(0, 0, 0, 0.1)',
@@ -99,7 +92,7 @@ export default {
   buttons: {
     default: {
       color: 'white',
-      backgroundColor: colors.grey[1],
+      backgroundColor: colors.grey[0],
     },
     primary: {
       color: 'white',
