@@ -10,6 +10,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "postinstall": "yarn lerna run prepublish",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },

@@ -1,4 +1,3 @@
 #!/bin/bash -eu
 
-yarn lerna run build
 yarn test
