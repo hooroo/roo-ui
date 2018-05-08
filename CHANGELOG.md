@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/hooroo/roo-ui/compare/v0.5.4...v0.6.0) (2018-05-08)
+
+
+### Features
+
+* add qantas group and qantas tail logos ([#16](https://github.com/hooroo/roo-ui/issues/16)) ([3e17cef](https://github.com/hooroo/roo-ui/commit/3e17cef))
+
+
+
+
 <a name="0.5.4"></a>
 ## [0.5.4](https://github.com/hooroo/roo-ui/compare/v0.5.2...v0.5.4) (2018-05-08)
 
