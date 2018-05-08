@@ -144,7 +144,7 @@ Component packages should define a script to compile the Javascript source with 
 {
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src -d dist"
+    "prepublish": "babel src -d dist"
   },
   "peerDependencies": {
     "react": "^16.2.0",
@@ -179,7 +179,7 @@ Utility packages should define a script to compile the Javascript source with [B
 {
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src -d dist --copy-files"
+    "prepublish": "babel src -d dist --copy-files"
   }
 }
 ```
