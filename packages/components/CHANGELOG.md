@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.4"></a>
+## [0.5.4](https://github.com/hooroo/roo-ui/compare/v0.5.2...v0.5.4) (2018-05-08)
+
+
+### Bug Fixes
+
+* replace build script with prepublish ([90cafe3](https://github.com/hooroo/roo-ui/commit/90cafe3))
+
+
+
+
 <a name="0.5.3"></a>
 ## [0.5.3](https://github.com/hooroo/roo-ui/compare/v0.5.2...v0.5.3) (2018-05-08)
 

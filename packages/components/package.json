@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
@@ -9,8 +9,8 @@
     "prepublish": "babel src -d dist"
   },
   "devDependencies": {
-    "@roo-ui/test-utils": "^0.5.3",
-    "@roo-ui/themes": "^0.5.3"
+    "@roo-ui/test-utils": "^0.5.4",
+    "@roo-ui/themes": "^0.5.4"
   },
   "peerDependencies": {
     "polished": "^1.9.2",
