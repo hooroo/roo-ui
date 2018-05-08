@@ -5,19 +5,19 @@ const Heading = Text.withComponent('span');
 Heading.defaultProps = {
   ...Text.defaultProps,
   fontWeight: 'bold',
-  fontSize: 'lg',
+  fontSize: 'xl',
 };
 
 Heading.h1 = Heading.withComponent('h1');
 Heading.h1.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: 'xxxxxl',
+  fontSize: '3xl',
 };
 
 Heading.h2 = Heading.withComponent('h2');
 Heading.h2.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: 'xxl',
+  fontSize: '2xl',
 };
 
 Heading.h3 = Heading.withComponent('h3');

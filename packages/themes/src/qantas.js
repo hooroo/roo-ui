@@ -75,15 +75,13 @@ export default {
   },
   fontFamily: 'QantasCiutadella, sans-serif',
   fontSizes: {
-    xs: rem('12px'),
     sm: rem('14px'),
     base: rem('16px'),
     lg: rem('18px'),
     xl: rem('22px'),
-    xxl: rem('26px'),
-    xxxl: rem('30px'),
-    xxxxl: rem('34px'),
-    xxxxxl: rem('36px'),
+    '2xl': rem('26px'),
+    '3xl': rem('36px'),
+    '4xl': rem('46px'),
   },
   lineHeights: {
     tight: 1,
