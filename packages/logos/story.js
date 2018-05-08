@@ -12,7 +12,7 @@ storiesOf('Foundations|Logos', module)
   .add('default', () => (
     <img
       src={select('Logo', invert(logos), Object.values(logos)[0])}
-      height="100"
+      height="50"
       alt=""
     />
   ));
