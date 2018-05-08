@@ -6,6 +6,6 @@
     "access": "public"
   },
   "scripts": {
-    "build": "babel src -d dist --copy-files"
+    "prepublish": "babel src -d dist --copy-files"
   }
 }
