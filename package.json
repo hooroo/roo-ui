@@ -9,8 +9,10 @@
   ],
   "scripts": {
     "lint": "eslint .",
+    "pretest": "yarn build",
     "test": "jest",
-    "postinstall": "yarn lerna run prepublish",
+    "postinstall": "yarn build",
+    "build": "yarn lerna run build",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },
