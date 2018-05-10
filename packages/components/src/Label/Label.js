@@ -26,7 +26,7 @@ Label.propTypes = {
 };
 
 Label.defaultProps = {
-  fontSize: 'xs',
+  fontSize: 'sm',
   fontWeight: 'bold',
   color: 'grey.1',
   m: 0,

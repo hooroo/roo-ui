@@ -3,7 +3,7 @@
 exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 .c0 {
   color: #323232;
-  font-size: 2.875rem;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.5;
   margin: 0rem;
@@ -13,7 +13,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 <h1
   className="c0"
   color="grey.1"
-  fontSize="xxxxl"
+  fontSize="3xl"
   fontWeight="bold"
 >
   Hello world
@@ -23,7 +23,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 .c0 {
   color: #323232;
-  font-size: 2.875rem;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.5;
   margin: 0rem;
@@ -33,7 +33,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 <h1
   className="c0"
   color="grey.1"
-  fontSize="xxxxl"
+  fontSize="3xl"
   fontWeight="bold"
 >
   Hello world
@@ -53,7 +53,7 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 <h2
   className="c0"
   color="grey.1"
-  fontSize="xl"
+  fontSize="2xl"
   fontWeight="bold"
 >
   Hello world
@@ -73,7 +73,7 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 <h3
   className="c0"
   color="grey.1"
-  fontSize="lg"
+  fontSize="xl"
   fontWeight="bold"
 >
   Hello world
@@ -93,7 +93,7 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 <h4
   className="c0"
   color="grey.1"
-  fontSize="base"
+  fontSize="lg"
   fontWeight="bold"
 >
   Hello world
@@ -113,7 +113,7 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 <h5
   className="c0"
   color="grey.1"
-  fontSize="sm"
+  fontSize="base"
   fontWeight="bold"
 >
   Hello world
@@ -133,7 +133,7 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 <h6
   className="c0"
   color="grey.1"
-  fontSize="xs"
+  fontSize="sm"
   fontWeight="bold"
 >
   Hello world
@@ -153,7 +153,7 @@ exports[`<Heading /> renders correctly 1`] = `
 <span
   className="c0"
   color="grey.1"
-  fontSize="lg"
+  fontSize="xl"
   fontWeight="bold"
 >
   Hello world
