@@ -12,7 +12,7 @@ exports[`<Text /> renders correctly 1`] = `
 
 <Clean.p
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="base"
   fontWeight="normal"
   lineHeight="loose"

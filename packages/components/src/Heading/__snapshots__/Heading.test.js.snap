@@ -12,7 +12,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 
 <h1
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="3xl"
   fontWeight="bold"
 >
@@ -32,7 +32,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 
 <h1
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="3xl"
   fontWeight="bold"
 >
@@ -52,7 +52,7 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 
 <h2
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="2xl"
   fontWeight="bold"
 >
@@ -72,7 +72,7 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 <h3
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="xl"
   fontWeight="bold"
 >
@@ -92,7 +92,7 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 <h4
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="lg"
   fontWeight="bold"
 >
@@ -112,7 +112,7 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 <h5
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="base"
   fontWeight="bold"
 >
@@ -132,7 +132,7 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 <h6
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="sm"
   fontWeight="bold"
 >
@@ -152,7 +152,7 @@ exports[`<Heading /> renders correctly 1`] = `
 
 <span
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="xl"
   fontWeight="bold"
 >
