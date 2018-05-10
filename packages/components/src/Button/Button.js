@@ -22,7 +22,7 @@ const Button = styled(tag.button)`
   border-color: transparent;
   border-radius: ${themeGet('radii.default')};
   outline: 0;
-  transition: ${themeGet('transitions.default')};
+  transition: background-color ${themeGet('transitions.default')};
   cursor: pointer;
   appearance: none;
 
