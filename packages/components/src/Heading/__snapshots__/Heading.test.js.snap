@@ -3,7 +3,7 @@
 exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 .c0 {
   color: #323232;
-  font-size: 2.875rem;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.5;
   margin: 0rem;
@@ -12,8 +12,8 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 
 <Clean.h1
   className="c0"
-  color="grey.1"
-  fontSize="xxxxl"
+  color="grey.0"
+  fontSize="3xl"
   fontWeight="bold"
   lineHeight="loose"
   m={0}
@@ -26,7 +26,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 .c0 {
   color: #323232;
-  font-size: 2.875rem;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.5;
   margin: 0rem;
@@ -35,8 +35,8 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 
 <Clean.h1
   className="c0"
-  color="grey.1"
-  fontSize="xxxxl"
+  color="grey.0"
+  fontSize="3xl"
   fontWeight="bold"
   lineHeight="loose"
   m={0}
@@ -58,8 +58,8 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 
 <Clean.h2
   className="c0"
-  color="grey.1"
-  fontSize="xl"
+  color="grey.0"
+  fontSize="2xl"
   fontWeight="bold"
   lineHeight="loose"
   m={0}
@@ -81,8 +81,8 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 <Clean.h3
   className="c0"
-  color="grey.1"
-  fontSize="lg"
+  color="grey.0"
+  fontSize="xl"
   fontWeight="bold"
   lineHeight="loose"
   m={0}
@@ -104,8 +104,8 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 <Clean.h4
   className="c0"
-  color="grey.1"
-  fontSize="base"
+  color="grey.0"
+  fontSize="lg"
   fontWeight="bold"
   lineHeight="loose"
   m={0}
@@ -127,8 +127,8 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 <Clean.h5
   className="c0"
-  color="grey.1"
-  fontSize="sm"
+  color="grey.0"
+  fontSize="base"
   fontWeight="bold"
   lineHeight="loose"
   m={0}
@@ -150,8 +150,8 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 <Clean.h6
   className="c0"
-  color="grey.1"
-  fontSize="xs"
+  color="grey.0"
+  fontSize="sm"
   fontWeight="bold"
   lineHeight="loose"
   m={0}
@@ -173,8 +173,8 @@ exports[`<Heading /> renders correctly 1`] = `
 
 <Clean.span
   className="c0"
-  color="grey.1"
-  fontSize="lg"
+  color="grey.0"
+  fontSize="xl"
   fontWeight="bold"
   lineHeight="loose"
   m={0}

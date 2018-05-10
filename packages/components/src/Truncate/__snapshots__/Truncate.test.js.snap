@@ -3,7 +3,7 @@
 exports[`<Truncate /> renders correctly 1`] = `
 .c0 {
   color: #323232;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   margin: 0rem;
@@ -15,7 +15,7 @@ exports[`<Truncate /> renders correctly 1`] = `
 
 <Clean.p
   className="c0"
-  color="grey.1"
+  color="grey.0"
   fontSize="base"
   fontWeight="normal"
   lineHeight="loose"

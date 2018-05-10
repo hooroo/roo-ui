@@ -3,7 +3,7 @@
 exports[`<Card /> renders correctly 1`] = `
 .c0 {
   padding: 1rem;
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
   border-radius: 4px;
 }

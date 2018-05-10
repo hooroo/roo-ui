@@ -10,7 +10,7 @@ storiesOf('Components|BlockLink', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <BlockLink href="https://www.qantas.com" target="_blank">
-      <Box p={3} bg="grey.6">
+      <Box p={3} bg="grey.3">
         Hello world
       </Box>
     </BlockLink>

@@ -26,8 +26,8 @@ exports[`<Label /> hidden renders correctly 1`] = `
 
 <Clean.label
   className="c0"
-  color="grey.1"
-  fontSize="xs"
+  color="grey.0"
+  fontSize="sm"
   fontWeight="bold"
   hidden={true}
   m={0}
@@ -51,8 +51,8 @@ exports[`<Label /> renders correctly 1`] = `
 
 <Clean.label
   className="c0"
-  color="grey.1"
-  fontSize="xs"
+  color="grey.0"
+  fontSize="sm"
   fontWeight="bold"
   hidden={false}
   m={0}

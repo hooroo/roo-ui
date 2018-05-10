@@ -7,11 +7,11 @@ const Input = styled(tag.input)`
   width: 100%;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.4')};
-  font-size: ${themeGet('fontSizes.sm')};
+  font-size: ${themeGet('fontSizes.base')};
   line-height: ${themeGet('lineHeights.normal')};
-  color: ${themeGet('colors.grey.1')};
+  color: ${themeGet('colors.grey.0')};
   border: ${themeGet('borders.2')};
-  border-color: ${themeGet('colors.grey.5')};
+  border-color: ${themeGet('colors.grey.2')};
   outline: 0;
   appearance: none;
 
@@ -21,7 +21,7 @@ const Input = styled(tag.input)`
   }
 
   ::placeholder {
-    color: ${themeGet('colors.grey.4')};
+    color: ${themeGet('colors.grey.1')};
   }
 
   ::-ms-clear {
