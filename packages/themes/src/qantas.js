@@ -61,7 +61,7 @@ export default {
     none: 0,
     default: '0 1px 1px 0 rgba(0, 0, 0, 0.1)',
     heavy: '0 2px 2px 0 rgba(0, 0, 0, 0.1)',
-    focus: `0 0 0 2px ${colors.secondary};`,
+    focus: `0 0 0 2px ${colors.brand.secondary};`,
   },
   transitions: {
     default: '200ms ease-in',
