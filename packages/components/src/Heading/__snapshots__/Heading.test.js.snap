@@ -10,14 +10,17 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-<h1
+<Clean.h1
   className="c0"
   color="grey.1"
   fontSize="xxxxl"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</h1>
+</Clean.h1>
 `;
 
 exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
@@ -30,14 +33,17 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
   margin-bottom: 0.5rem;
 }
 
-<h1
+<Clean.h1
   className="c0"
   color="grey.1"
   fontSize="xxxxl"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</h1>
+</Clean.h1>
 `;
 
 exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
@@ -50,14 +56,17 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-<h2
+<Clean.h2
   className="c0"
   color="grey.1"
   fontSize="xl"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</h2>
+</Clean.h2>
 `;
 
 exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
@@ -70,14 +79,17 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-<h3
+<Clean.h3
   className="c0"
   color="grey.1"
   fontSize="lg"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</h3>
+</Clean.h3>
 `;
 
 exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
@@ -90,14 +102,17 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-<h4
+<Clean.h4
   className="c0"
   color="grey.1"
   fontSize="base"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</h4>
+</Clean.h4>
 `;
 
 exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
@@ -110,14 +125,17 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-<h5
+<Clean.h5
   className="c0"
   color="grey.1"
   fontSize="sm"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</h5>
+</Clean.h5>
 `;
 
 exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
@@ -130,14 +148,17 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-<h6
+<Clean.h6
   className="c0"
   color="grey.1"
   fontSize="xs"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</h6>
+</Clean.h6>
 `;
 
 exports[`<Heading /> renders correctly 1`] = `
@@ -150,12 +171,15 @@ exports[`<Heading /> renders correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-<span
+<Clean.span
   className="c0"
   color="grey.1"
   fontSize="lg"
   fontWeight="bold"
+  lineHeight="loose"
+  m={0}
+  mb={2}
 >
   Hello world
-</span>
+</Clean.span>
 `;
