@@ -18,23 +18,23 @@ exports[`<Input /> renders correctly 1`] = `
 }
 
 .c0:focus {
-  border-color: #8de2e0;
+  border-color: #8DE2E0;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #7B7B7B;
+  color: #666666;
 }
 
 .c0::-moz-placeholder {
-  color: #7B7B7B;
+  color: #666666;
 }
 
 .c0:-ms-input-placeholder {
-  color: #7B7B7B;
+  color: #666666;
 }
 
 .c0::placeholder {
-  color: #7B7B7B;
+  color: #666666;
 }
 
 .c0::-ms-clear {
