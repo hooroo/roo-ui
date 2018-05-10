@@ -10,6 +10,7 @@ export const Base = styled.div`
   font-family: ${themeGet('fontFamily')};
   font-size: ${themeGet('fontSizes.base')};
   line-height: ${themeGet('lineHeights.normal')};
+  color: ${themeGet('colors.defaultText')};
 
   *, *:before, *:after {
     box-sizing: border-box;
