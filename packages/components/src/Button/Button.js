@@ -47,6 +47,10 @@ const Button = styled(tag.button)`
   ${props => props.rounded && css`
     border-radius: ${themeGet('radii.rounded')};
   `}
+
+  ${props => props.block && css`
+    width: 100%;
+  `}
 `;
 
 Button.propTypes = {
@@ -56,6 +60,7 @@ Button.propTypes = {
   ...boxShadow.propTypes,
   primary: PropTypes.bool,
   rounded: PropTypes.bool,
+  block: PropTypes.bool,
 };
 
 Button.defaultProps = {
