@@ -26,7 +26,6 @@ const colors = {
   white: '#FFFFFF',
 };
 
-
 export default {
   colors,
   breakpoints: ['40rem', '52rem', '64rem'],
