@@ -7,7 +7,7 @@ const Input = styled(tag.input)`
   width: 100%;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.4')};
-  font-size: ${themeGet('fontSizes.sm')};
+  font-size: ${themeGet('fontSizes.base')};
   line-height: ${themeGet('lineHeights.normal')};
   color: ${themeGet('colors.grey.1')};
   border: ${themeGet('borders.2')};
