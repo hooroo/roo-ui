@@ -24,7 +24,7 @@ const colors = {
     '#F4F5F6',
   ],
   white: '#FFFFFF',
-  defaultText: '#323232',
+  text: '#323232',
 };
 
 export default {
