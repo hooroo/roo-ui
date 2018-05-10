@@ -2,7 +2,6 @@
 
 exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 .c0 {
-  color: #323232;
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.5;
@@ -12,7 +11,6 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 
 <Clean.h1
   className="c0"
-  color="grey.0"
   fontSize="3xl"
   fontWeight="bold"
   lineHeight="loose"
@@ -25,7 +23,6 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 .c0 {
-  color: #323232;
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.5;
@@ -35,7 +32,6 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 
 <Clean.h1
   className="c0"
-  color="grey.0"
   fontSize="3xl"
   fontWeight="bold"
   lineHeight="loose"
@@ -48,7 +44,6 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 
 exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 .c0 {
-  color: #323232;
   font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.5;
@@ -58,7 +53,6 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 
 <Clean.h2
   className="c0"
-  color="grey.0"
   fontSize="2xl"
   fontWeight="bold"
   lineHeight="loose"
@@ -71,7 +65,6 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 .c0 {
-  color: #323232;
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.5;
@@ -81,7 +74,6 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 <Clean.h3
   className="c0"
-  color="grey.0"
   fontSize="xl"
   fontWeight="bold"
   lineHeight="loose"
@@ -94,7 +86,6 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 .c0 {
-  color: #323232;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5;
@@ -104,7 +95,6 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 <Clean.h4
   className="c0"
-  color="grey.0"
   fontSize="lg"
   fontWeight="bold"
   lineHeight="loose"
@@ -117,7 +107,6 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 .c0 {
-  color: #323232;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
@@ -127,7 +116,6 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 <Clean.h5
   className="c0"
-  color="grey.0"
   fontSize="base"
   fontWeight="bold"
   lineHeight="loose"
@@ -140,7 +128,6 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 .c0 {
-  color: #323232;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5;
@@ -150,7 +137,6 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 <Clean.h6
   className="c0"
-  color="grey.0"
   fontSize="sm"
   fontWeight="bold"
   lineHeight="loose"
@@ -163,7 +149,6 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 exports[`<Heading /> renders correctly 1`] = `
 .c0 {
-  color: #323232;
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.5;
@@ -173,7 +158,6 @@ exports[`<Heading /> renders correctly 1`] = `
 
 <Clean.span
   className="c0"
-  color="grey.0"
   fontSize="xl"
   fontWeight="bold"
   lineHeight="loose"
