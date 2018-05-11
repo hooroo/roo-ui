@@ -27,6 +27,7 @@ exports[`<BlockLink /> renders correctly 1`] = `
       "bg",
       "hover",
       "fontWeight",
+      "textStyle",
       "inline",
     ]
   }
