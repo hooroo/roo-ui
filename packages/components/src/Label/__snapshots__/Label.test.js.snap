@@ -4,7 +4,8 @@ exports[`<Label /> hidden renders correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  line-height: 1.35;
+  margin: 0;
+  margin-bottom: 0.75rem;
   border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
@@ -20,15 +21,11 @@ exports[`<Label /> hidden renders correctly 1`] = `
   font-size: 0.875rem;
   font-weight: 600;
   color: #323232;
-  margin: 0rem;
-  margin-bottom: 0.75rem;
 }
 
 <Clean.label
   className="c0"
   hidden={true}
-  m={0}
-  mb={3}
   textStyle="label"
 >
   Hello world
@@ -39,19 +36,16 @@ exports[`<Label /> renders correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
-  line-height: 1.35;
+  margin: 0;
+  margin-bottom: 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
   color: #323232;
-  margin: 0rem;
-  margin-bottom: 0.75rem;
 }
 
 <Clean.label
   className="c0"
   hidden={false}
-  m={0}
-  mb={3}
   textStyle="label"
 >
   Hello world
