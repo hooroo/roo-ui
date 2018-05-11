@@ -4,18 +4,16 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 .c0 {
   font-size: 2.25rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.35;
   margin: 0rem;
   margin-bottom: 0.5rem;
 }
 
 <Clean.h1
   className="c0"
-  fontSize="3xl"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h1"
 >
   Hello world
 </Clean.h1>
@@ -25,18 +23,16 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
 .c0 {
   font-size: 2.25rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.35;
   margin: 0rem;
   margin-bottom: 0.5rem;
 }
 
 <Clean.h1
   className="c0"
-  fontSize="3xl"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h1"
 >
   Hello world
 </Clean.h1>
@@ -46,18 +42,16 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 .c0 {
   font-size: 1.625rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.35;
   margin: 0rem;
   margin-bottom: 0.5rem;
 }
 
 <Clean.h2
   className="c0"
-  fontSize="2xl"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h2"
 >
   Hello world
 </Clean.h2>
@@ -74,11 +68,9 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 <Clean.h3
   className="c0"
-  fontSize="xl"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h3"
 >
   Hello world
 </Clean.h3>
@@ -95,11 +87,9 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 <Clean.h4
   className="c0"
-  fontSize="lg"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h4"
 >
   Hello world
 </Clean.h4>
@@ -116,11 +106,9 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 <Clean.h5
   className="c0"
-  fontSize="base"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h5"
 >
   Hello world
 </Clean.h5>
@@ -137,11 +125,9 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 <Clean.h6
   className="c0"
-  fontSize="sm"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h6"
 >
   Hello world
 </Clean.h6>
@@ -158,11 +144,9 @@ exports[`<Heading /> renders correctly 1`] = `
 
 <Clean.span
   className="c0"
-  fontSize="xl"
-  fontWeight="bold"
-  lineHeight="loose"
   m={0}
   mb={2}
+  textStyle="h3"
 >
   Hello world
 </Clean.span>

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { hideVisually } from 'polished';
-import { themeGet, space, fontSize, fontWeight, color } from 'styled-system';
+import { themeGet, textStyle, space, fontSize, fontWeight, color } from 'styled-system';
 import tag from 'clean-tag';
 
 const Label = styled(tag.label)`
@@ -10,7 +10,8 @@ const Label = styled(tag.label)`
   line-height: ${themeGet('lineHeights.normal')};
 
   ${props => props.hidden && hideVisually()}
-
+  
+  ${textStyle}
   ${space}
   ${fontSize}
   ${color}
@@ -18,6 +19,7 @@ const Label = styled(tag.label)`
 `;
 
 Label.propTypes = {
+  ...textStyle.propTypes,
   ...space.propTypes,
   ...fontSize.propTypes,
   ...color.propTypes,
@@ -26,9 +28,7 @@ Label.propTypes = {
 };
 
 Label.defaultProps = {
-  fontSize: 'sm',
-  fontWeight: 'bold',
-  color: 'grey.0',
+  textStyle: 'label',
   m: 0,
   mb: 3,
   hidden: false,

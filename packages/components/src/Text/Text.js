@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import tag from 'clean-tag';
 import {
+  textStyle,
   color,
   fontSize,
   fontWeight,
@@ -11,6 +12,7 @@ import {
 } from 'styled-system';
 
 const Text = styled(tag.p)`
+  ${textStyle}
   ${color}
   ${fontSize}
   ${fontWeight}
@@ -21,6 +23,7 @@ const Text = styled(tag.p)`
 `;
 
 Text.propTypes = {
+  ...textStyle.propTypes,
   ...color.propTypes,
   ...fontSize.propTypes,
   ...fontWeight.propTypes,
@@ -31,9 +34,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  fontSize: 'base',
-  lineHeight: 'loose',
-  fontWeight: 'normal',
+  textStyle: 'text',
   m: 0,
   mb: 2,
 };
