@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import tag from 'clean-tag';
-import { color, hover, fontWeight, themeGet, textStyle } from 'styled-system';
+import { color, hover, fontWeight, themeGet, space } from 'styled-system';
 
 const Link = styled(tag.a)`
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
   color: ${themeGet('colors.ui.link')};
 
   &:hover {
@@ -19,7 +20,7 @@ const Link = styled(tag.a)`
   ${color}
   ${hover}
   ${fontWeight}
-  ${textStyle}
+  ${space}
 
   ${props => props.inline && css`
     &, &:hover {
@@ -33,7 +34,7 @@ Link.propTypes = {
   ...color.propTypes,
   ...hover.propTypes,
   ...fontWeight.propTypes,
-  ...textStyle.propTypes,
+  ...space.propTypes,
   inline: PropTypes.bool,
 };
 
