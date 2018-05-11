@@ -16,14 +16,22 @@ exports[`<BlockLink /> renders correctly 1`] = `
   color: #870000;
 }
 
+.c0:focus {
+  outline: 2px solid #8DE2E0;
+}
+
 <Clean.a
-  className="c0"
-  color="ui.link"
-  hover={
-    Object {
-      "color": "#870000",
-    }
+  blacklist={
+    Array [
+      "color",
+      "bg",
+      "hover",
+      "fontWeight",
+      "inline",
+    ]
   }
+  className="c0"
+  inline={false}
 >
   Hello world
 </Clean.a>
