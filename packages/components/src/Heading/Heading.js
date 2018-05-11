@@ -6,7 +6,7 @@ const Heading = Text.withComponent(tag.span);
 
 Heading.defaultProps = {
   ...Text.defaultProps,
-  textStyle: 'h1',
+  textStyle: 'h3',
 };
 
 Heading.h1 = Heading.withComponent(tag.h1);
