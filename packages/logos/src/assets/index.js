@@ -5,6 +5,7 @@ import jetstar from './jetstar.svg';
 import tripAdvisor from './trip-advisor.svg';
 import tripAdvisorOwl from './trip-advisor-owl.svg';
 import oneworld from './oneworld.svg';
+import qantasFavicon from './qantas-favicon.ico';
 
 export {
   qantas,
@@ -14,4 +15,5 @@ export {
   tripAdvisor,
   tripAdvisorOwl,
   oneworld,
+  qantasFavicon,
 };
