@@ -135,9 +135,9 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 exports[`<Heading /> renders correctly 1`] = `
 .c0 {
-  font-size: 2.25rem;
+  font-size: 1.375rem;
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1.5;
   margin: 0rem;
   margin-bottom: 0.5rem;
 }
@@ -146,7 +146,7 @@ exports[`<Heading /> renders correctly 1`] = `
   className="c0"
   m={0}
   mb={2}
-  textStyle="h1"
+  textStyle="h3"
 >
   Hello world
 </Clean.span>
