@@ -32,7 +32,7 @@ Link.propTypes = {
   ...color.propTypes,
   ...hover.propTypes,
   ...fontWeight.propTypes,
-  inline: PropTypes.boolean,
+  inline: PropTypes.bool,
 };
 
 Link.defaultProps = {

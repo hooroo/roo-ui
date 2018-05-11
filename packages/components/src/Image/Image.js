@@ -23,7 +23,7 @@ Image.propTypes = {
   ...size.propTypes,
   ...height.propTypes,
   ...width.propTypes,
-  inline: PropTypes.boolean,
+  inline: PropTypes.bool,
 };
 
 Image.defaultProps = {
