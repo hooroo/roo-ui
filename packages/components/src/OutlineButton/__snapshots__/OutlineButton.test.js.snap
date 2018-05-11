@@ -20,8 +20,8 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
   border-color: transparent;
   border-radius: 4px;
   outline: 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -111,8 +111,8 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   border-color: transparent;
   border-radius: 4px;
   outline: 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -201,8 +201,8 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
   border-color: transparent;
   border-radius: 4px;
   outline: 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
