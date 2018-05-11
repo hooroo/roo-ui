@@ -11,15 +11,7 @@ $ yarn add @roo-ui/components
 ## Example
 
 ```js
-import {
-  Heading,
-  Heading.h1,
-  Heading.h2,
-  Heading.h3,
-  Heading.h4,
-  Heading.h5,
-  Heading.h6,
- } from '@roo-ui/components';
+import { Heading } from '@roo-ui/components';
 
 export default (
   <Fragment>
