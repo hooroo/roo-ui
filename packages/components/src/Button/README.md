@@ -20,11 +20,12 @@ export default (
 
 ## Properties
 
-| Name       | Description           | Type   | Default | Required? |
-|:-----------|:----------------------|:-------|:--------|:----------|
-| `primary`  | use the primary color | `bool` | false   | -         |
-| `rounded`  | use a rounded border  | `bool` | false   | -         |
-| `disabled` | disable the button    | `bool` | false   | -         |
+| Name       | Description                | Type   | Default | Required? |
+|:-----------|:---------------------------|:-------|:--------|:----------|
+| `primary`  | use the primary color      | `bool` | false   | -         |
+| `rounded`  | use a rounded border       | `bool` | false   | -         |
+| `block`    | render a full width button | `bool` | false   | -         |
+| `disabled` | disable the button         | `bool` | false   | -         |
 
 ## Customization
 

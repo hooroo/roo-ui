@@ -1,5 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Button /> block renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.125em;
+  -moz-letter-spacing: 0.125em;
+  -ms-letter-spacing: 0.125em;
+  letter-spacing: 0.125em;
+  line-height: 1.35;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: white;
+  background-color: #323232;
+  width: 100%;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: #181818;
+}
+
+.c0:focus {
+  box-shadow: 0 0 0 2px #8DE2E0;
+}
+
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+<Clean.button
+  blacklist={
+    Array [
+      "buttonStyle",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "color",
+      "bg",
+      "boxShadow",
+      "primary",
+      "rounded",
+      "block",
+    ]
+  }
+  block={true}
+  buttonStyle="default"
+  className="c0"
+>
+  Hello world
+</Clean.button>
+`;
+
 exports[`<Button /> primary renders correctly 1`] = `
 .c0 {
   display: inline-block;
@@ -66,6 +144,7 @@ exports[`<Button /> primary renders correctly 1`] = `
       "boxShadow",
       "primary",
       "rounded",
+      "block",
     ]
   }
   buttonStyle="default"
@@ -142,6 +221,7 @@ exports[`<Button /> renders correctly 1`] = `
       "boxShadow",
       "primary",
       "rounded",
+      "block",
     ]
   }
   buttonStyle="default"
@@ -218,6 +298,7 @@ exports[`<Button /> rounded renders correctly 1`] = `
       "boxShadow",
       "primary",
       "rounded",
+      "block",
     ]
   }
   buttonStyle="default"
