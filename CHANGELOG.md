@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/hooroo/roo-ui/compare/v0.6.3...v0.6.4) (2018-05-11)
+
+
+### Bug Fixes
+
+* use clean tag for headings ([#20](https://github.com/hooroo/roo-ui/issues/20)) ([48a96af](https://github.com/hooroo/roo-ui/commit/48a96af))
+
+
+
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/hooroo/roo-ui/compare/v0.6.2...v0.6.3) (2018-05-10)
 
