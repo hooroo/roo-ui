@@ -17,21 +17,19 @@ exports[`<Label /> hidden renders correctly 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #323232;
   margin: 0rem;
   margin-bottom: 0.75rem;
-  font-size: 0.875rem;
-  color: #323232;
-  font-weight: 600;
 }
 
 <Clean.label
   className="c0"
-  color="grey.0"
-  fontSize="sm"
-  fontWeight="bold"
   hidden={true}
   m={0}
   mb={3}
+  textStyle="label"
 >
   Hello world
 </Clean.label>
@@ -42,21 +40,19 @@ exports[`<Label /> renders correctly 1`] = `
   display: block;
   width: 100%;
   line-height: 1.35;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #323232;
   margin: 0rem;
   margin-bottom: 0.75rem;
-  font-size: 0.875rem;
-  color: #323232;
-  font-weight: 600;
 }
 
 <Clean.label
   className="c0"
-  color="grey.0"
-  fontSize="sm"
-  fontWeight="bold"
   hidden={false}
   m={0}
   mb={3}
+  textStyle="label"
 >
   Hello world
 </Clean.label>
