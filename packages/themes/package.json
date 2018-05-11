@@ -1,11 +1,12 @@
 {
   "name": "@roo-ui/themes",
-  "version": "0.6.3",
+  "version": "0.7.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "prepublish": "babel src -d dist --copy-files"
+    "prepublish": "yarn build",
+    "build": "babel src -d dist"
   }
 }
