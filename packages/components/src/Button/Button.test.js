@@ -34,4 +34,14 @@ describe('<Button />', () => {
       expect(wrapper).toMatchSnapshot();
     });
   });
+
+  describe('block', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(<Button block>Hello world</Button>, theme);
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 });
