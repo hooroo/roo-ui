@@ -6,13 +6,17 @@
     "access": "public"
   },
   "scripts": {
-    "prepublish": "babel src -d dist"
+    "prepublish": "yarn build",
+    "build": "babel src -d dist"
   },
   "devDependencies": {
+    "@roo-ui/icons": "^0.0.0",
     "@roo-ui/test-utils": "^0.5.4",
     "@roo-ui/themes": "^0.6.3"
   },
   "peerDependencies": {
+    "clean-element": "^1.0.0",
+    "clean-tag": "^1.0.4",
     "polished": "^1.9.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
