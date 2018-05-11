@@ -80,6 +80,7 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
       "boxShadow",
       "primary",
       "rounded",
+      "block",
     ]
   }
   buttonStyle="default"
@@ -170,6 +171,7 @@ exports[`<OutlineButton /> renders correctly 1`] = `
       "boxShadow",
       "primary",
       "rounded",
+      "block",
     ]
   }
   buttonStyle="default"
@@ -260,6 +262,7 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
       "boxShadow",
       "primary",
       "rounded",
+      "block",
     ]
   }
   buttonStyle="default"
