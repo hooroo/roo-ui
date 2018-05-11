@@ -3,6 +3,7 @@ import tag from 'clean-tag';
 import {
   space,
   width,
+  height,
   color,
   alignItems,
   justifyContent,
@@ -15,6 +16,7 @@ const Flex = styled(tag)`
 
   ${space}
   ${width}
+  ${height}
   ${color}
   ${alignItems}
   ${justifyContent}
@@ -25,6 +27,7 @@ const Flex = styled(tag)`
 Flex.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
+  ...height.propTypes,
   ...color.propTypes,
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
