@@ -6,48 +6,43 @@ const Heading = Text.withComponent(tag.span);
 
 Heading.defaultProps = {
   ...Text.defaultProps,
-  fontWeight: 'bold',
-  fontSize: 'xl',
+  textStyle: 'h1',
 };
 
 Heading.h1 = Heading.withComponent(tag.h1);
 Heading.h1.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: '3xl',
+  textStyle: 'h1',
 };
 
 Heading.h2 = Heading.withComponent(tag.h2);
 Heading.h2.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: '2xl',
+  textStyle: 'h2',
 };
 
 Heading.h3 = Heading.withComponent(tag.h3);
 Heading.h3.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: 'xl',
-  lineHeight: 'loose',
+  textStyle: 'h3',
 };
 
 Heading.h4 = Heading.withComponent(tag.h4);
 Heading.h4.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: 'lg',
-  lineHeight: 'loose',
+  textStyle: 'h4',
 };
 
 Heading.h5 = Heading.withComponent(tag.h5);
 Heading.h5.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: 'base',
-  lineHeight: 'loose',
+  textStyle: 'h5',
 };
 
 Heading.h6 = Heading.withComponent(tag.h6);
 Heading.h6.defaultProps = {
   ...Heading.defaultProps,
-  fontSize: 'sm',
-  lineHeight: 'loose',
+  textStyle: 'h6',
 };
 
 export default Heading;

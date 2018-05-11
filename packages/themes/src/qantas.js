@@ -27,6 +27,70 @@ const colors = {
   text: '#323232',
 };
 
+const fontSizes = {
+  sm: rem('14px'),
+  base: rem('16px'),
+  lg: rem('18px'),
+  xl: rem('22px'),
+  '2xl': rem('26px'),
+  '3xl': rem('36px'),
+  '4xl': rem('46px'),
+};
+
+const lineHeights = {
+  tight: 1,
+  normal: 1.35,
+  loose: 1.5,
+};
+
+const fontWeights = {
+  normal: 500,
+  bold: 600,
+};
+
+const textStyles = {
+  text: {
+    fontSize: fontSizes.base,
+    lineHeight: lineHeights.loose,
+    fontWeight: fontWeights.normal,
+  },
+  label: {
+    fontSize: fontSizes.sm,
+    fontWeight: fontWeights.bold,
+    color: colors.grey[0],
+  },
+  h1: {
+    fontSize: fontSizes['3xl'],
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.normal,
+  },
+  h2: {
+    fontSize: fontSizes['2xl'],
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.normal,
+  },
+  h3: {
+    fontSize: fontSizes.xl,
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.loose,
+  },
+  h4: {
+    fontSize: fontSizes.lg,
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.loose,
+  },
+  h5: {
+    fontSize: fontSizes.base,
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.loose,
+  },
+  h6: {
+    fontSize: fontSizes.sm,
+    fontWeight: fontWeights.bold,
+    lineHeight: lineHeights.loose,
+  },
+};
+
 export default {
   colors,
   breakpoints: ['40rem', '52rem', '64rem'],
@@ -67,24 +131,10 @@ export default {
     default: '200ms ease-in',
   },
   fontFamily: 'QantasCiutadella, sans-serif',
-  fontSizes: {
-    sm: rem('14px'),
-    base: rem('16px'),
-    lg: rem('18px'),
-    xl: rem('22px'),
-    '2xl': rem('26px'),
-    '3xl': rem('36px'),
-    '4xl': rem('46px'),
-  },
-  lineHeights: {
-    tight: 1,
-    normal: 1.35,
-    loose: 1.5,
-  },
-  fontWeights: {
-    normal: 500,
-    bold: 600,
-  },
+  fontSizes,
+  lineHeights,
+  fontWeights,
+  textStyles,
   letterSpacings: {
     normal: '0',
     wide: '0.125em',
