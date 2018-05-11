@@ -2,11 +2,11 @@
 
 exports[`<Truncate /> renders correctly 1`] = `
 .c0 {
+  margin: 0;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -14,8 +14,6 @@ exports[`<Truncate /> renders correctly 1`] = `
 
 <Clean.p
   className="c0"
-  m={0}
-  mb={2}
   textStyle="text"
 >
   Hello world

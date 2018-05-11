@@ -1,16 +1,6 @@
-import { boxShadow, borderRadius } from 'styled-system';
-
 import { Box } from '..';
 
-const Card = Box.extend`
-  ${boxShadow}
-  ${borderRadius};
-`;
-
-Card.propTypes = {
-  ...boxShadow.propTypes,
-  ...borderRadius.propTypes,
-};
+const Card = Box.extend``;
 
 Card.defaultProps = {
   boxShadow: 'default',
