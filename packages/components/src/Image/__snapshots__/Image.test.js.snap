@@ -8,7 +8,31 @@ exports[`<Image /> renders correctly 1`] = `
 }
 
 <Clean.img
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "size",
+      "height",
+      "width",
+      "w",
+      "inline",
+    ]
+  }
   className="c0"
+  inline={false}
   src="/example.jpg"
 />
 `;
