@@ -110,12 +110,11 @@ const space = [
   rem('8px'),
   rem('12px'),
   rem('16px'),
+  rem('20px'),
   rem('24px'),
+  rem('28px'),
   rem('32px'),
-  rem('64px'),
-  rem('128px'),
-  rem('256px'),
-  rem('512px'),
+  rem('36px'),
 ];
 
 const borders = [
