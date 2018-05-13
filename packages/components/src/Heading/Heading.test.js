@@ -25,16 +25,6 @@ describe('<Heading />', () => {
     });
   });
 
-  describe('<Heading.h1 />', () => {
-    beforeEach(() => {
-      wrapper = shallowWithTheme(<Heading.h1>Hello world</Heading.h1>, theme);
-    });
-
-    it('renders correctly', () => {
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
   describe('<Heading.h2 />', () => {
     beforeEach(() => {
       wrapper = shallowWithTheme(<Heading.h2>Hello world</Heading.h2>, theme);
