@@ -1,4 +1,10 @@
 steps:
+  - label: ':git: Commit message'
+    command: ./hooroo-ci/scripts/commitmsg
+    env:
+      BUILDKITE_FIG_CONTAINER: app
+    agents:
+      ci-env: production
   - label: ':eslint: Lint'
     command: ./hooroo-ci/scripts/lint
     env:
