@@ -11,6 +11,8 @@ export { default as Input } from './Input';
 export { default as Label } from './Label';
 export { default as Link } from './Link';
 export { default as ExternalLink } from './ExternalLink';
+export { default as NakedButton } from './NakedButton';
+export { default as Alert } from './Alert';
 export { default as BlockLink } from './BlockLink';
 export { default as OutlineButton } from './OutlineButton';
 export { default as Text } from './Text';
