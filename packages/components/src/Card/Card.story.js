@@ -9,7 +9,7 @@ import README from './README.md';
 storiesOf('Components|Card', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Box p={5} bg="grey.3">
+    <Box p={6} bg="grey.3">
       <Card>
         Hello world
       </Card>

@@ -10,7 +10,7 @@ const getBackground = props =>
 const Button = styled(tag.button)`
   display: inline-block;
   margin: 0;
-  padding: ${themeGet('space.3')} ${themeGet('space.5')};
+  padding: ${themeGet('space.3')} ${themeGet('space.6')};
   font-size: ${themeGet('fontSizes.base')};
   font-weight: ${themeGet('fontWeights.bold')};
   letter-spacing: ${themeGet('letterSpacings.wide')};
