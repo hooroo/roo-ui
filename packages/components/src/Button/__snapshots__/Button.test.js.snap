@@ -20,8 +20,8 @@ exports[`<Button /> block renders correctly 1`] = `
   border-color: transparent;
   border-radius: 4px;
   outline: 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -98,8 +98,8 @@ exports[`<Button /> primary renders correctly 1`] = `
   border-color: transparent;
   border-radius: 4px;
   outline: 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -175,8 +175,8 @@ exports[`<Button /> renders correctly 1`] = `
   border-color: transparent;
   border-radius: 4px;
   outline: 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -251,8 +251,8 @@ exports[`<Button /> rounded renders correctly 1`] = `
   border-color: transparent;
   border-radius: 4px;
   outline: 0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
