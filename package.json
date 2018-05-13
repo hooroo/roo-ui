@@ -8,6 +8,7 @@
     "packages/*"
   ],
   "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint .",
     "pretest": "yarn build",
     "test": "jest",
@@ -28,6 +29,7 @@
     "babel-runtime": "^6.26.0",
     "clean-element": "^1.0.0",
     "clean-tag": "^1.0.4",
+    "commitlint": "^6.2.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
