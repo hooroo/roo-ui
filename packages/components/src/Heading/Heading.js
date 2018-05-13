@@ -45,4 +45,6 @@ Heading.h6.defaultProps = {
   textStyle: 'h6',
 };
 
+Heading.displayName = 'Heading';
+
 export default Heading;

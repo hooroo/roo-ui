@@ -68,4 +68,6 @@ Button.defaultProps = {
   blacklist: Object.keys(Button.propTypes),
 };
 
+Button.displayName = 'Button';
+
 export default Button;

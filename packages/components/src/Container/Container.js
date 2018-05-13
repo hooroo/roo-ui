@@ -17,4 +17,6 @@ Container.defaultProps = {
   maxWidth: 'default',
 };
 
+Container.displayName = 'Container';
+
 export default Container;
