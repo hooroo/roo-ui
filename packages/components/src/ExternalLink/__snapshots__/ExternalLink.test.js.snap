@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ExternalLink /> renders correctly 1`] = `
+<Styled(Clean.a)
+  blacklist={
+    Array [
+      "color",
+      "bg",
+      "hover",
+      "fontWeight",
+      "hidden",
+      "inline",
+    ]
+  }
+  color="grey.0"
+  hidden={false}
+  inline={false}
+  rel="noopener noreferrer"
+  target="_blank"
+  title="Link opens in new window"
+>
+  Hello world
+</Styled(Clean.a)>
+`;
