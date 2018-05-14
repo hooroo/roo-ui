@@ -5,6 +5,7 @@ exports[`<Link /> renders correctly 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  display: inline-block;
   color: #E00E00;
 }
 
@@ -23,6 +24,20 @@ exports[`<Link /> renders correctly 1`] = `
       "bg",
       "hover",
       "fontWeight",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
       "inline",
     ]
   }
