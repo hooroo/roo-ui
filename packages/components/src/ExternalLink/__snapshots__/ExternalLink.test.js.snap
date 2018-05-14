@@ -22,10 +22,12 @@ exports[`<ExternalLink /> renders correctly 1`] = `
       "pl",
       "px",
       "py",
+      "hidden",
       "inline",
     ]
   }
   color="grey.0"
+  hidden={false}
   inline={false}
   rel="noopener noreferrer"
   target="_blank"
