@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/hooroo/roo-ui/compare/v0.9.0...v0.9.1) (2018-05-13)
+
+
+### Bug Fixes
+
+* update greys in icon story ([#23](https://github.com/hooroo/roo-ui/issues/23)) ([c77a9d2](https://github.com/hooroo/roo-ui/commit/c77a9d2))
+
+
+
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/hooroo/roo-ui/compare/v0.8.1...v0.9.0) (2018-05-11)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://github.com/hooroo/roo-ui/compare/v0.8.0...v0.8.1) (2018-05-11)
 

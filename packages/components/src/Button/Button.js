@@ -10,7 +10,7 @@ const getBackground = props =>
 const Button = styled(tag.button)`
   display: inline-block;
   margin: 0;
-  padding: ${themeGet('space.3')} ${themeGet('space.5')};
+  padding: ${themeGet('space.3')} ${themeGet('space.6')};
   font-size: ${themeGet('fontSizes.base')};
   font-weight: ${themeGet('fontWeights.bold')};
   letter-spacing: ${themeGet('letterSpacings.wide')};
@@ -22,7 +22,7 @@ const Button = styled(tag.button)`
   border-color: transparent;
   border-radius: ${themeGet('radii.default')};
   outline: 0;
-  transition: ${themeGet('transitions.default')};
+  transition: background-color ${themeGet('transitions.default')};
   cursor: pointer;
   appearance: none;
 

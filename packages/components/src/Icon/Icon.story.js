@@ -31,8 +31,8 @@ const renderIcons = group => () => (
   <Grid>
     {groupedPaths[group].map(({ name }) => (
       <Box p={4}>
-        <Icon color="grey.3" size={48} name={name} />
-        <Caption title={name} fontSize="xs" color="grey.3">{name}</Caption>
+        <Icon color="grey.1" size={48} name={name} />
+        <Caption title={name} fontSize="xs" color="grey.1">{name}</Caption>
       </Box>
     ))}
   </Grid>
