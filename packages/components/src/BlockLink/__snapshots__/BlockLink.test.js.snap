@@ -28,8 +28,6 @@ exports[`<BlockLink /> renders correctly 1`] = `
       "bg",
       "hover",
       "fontWeight",
-      "hidden",
-      "inline",
       "m",
       "mt",
       "mr",
@@ -44,6 +42,8 @@ exports[`<BlockLink /> renders correctly 1`] = `
       "pl",
       "px",
       "py",
+      "hidden",
+      "inline",
     ]
   }
   className="c0"
