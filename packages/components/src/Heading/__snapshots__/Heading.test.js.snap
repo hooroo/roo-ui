@@ -17,23 +17,6 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 </Clean.h1>
 `;
 
-exports[`<Heading /> <Heading.h1 /> renders correctly 2`] = `
-.c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
-  font-size: 2.25rem;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-<Clean.h1
-  className="c0"
-  textStyle="h1"
->
-  Hello world
-</Clean.h1>
-`;
-
 exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 .c0 {
   margin: 0;

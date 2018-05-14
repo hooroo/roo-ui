@@ -24,6 +24,7 @@
     "@storybook/storybook-deployer": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-plugin-styled-components": "^1.5.1",
     "babel-preset-airbnb": "^2.4.0",
     "babel-runtime": "^6.26.0",
     "clean-element": "^1.0.0",

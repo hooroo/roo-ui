@@ -11,7 +11,7 @@ const colors = {
     link: '#E00E00',
     linkHover: '#870000',
     info: '#8DE2E0',
-    infoBackground: '#BFF4F2',
+    infoBackground: '#E7F7F7',
     error: '#ED710B',
     errorBackground: '#FCEBCD',
     success: '#35A509',
