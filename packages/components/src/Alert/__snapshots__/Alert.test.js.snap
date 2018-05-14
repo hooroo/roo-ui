@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
+.c0 {
+  margin-bottom: 0.75rem;
+  background-color: #FCEBCD;
+}
+
+<Base
+  bg="ui.errorBackground"
+  className="c0"
+  icon={
+    Object {
+      "color": "ui.error",
+      "name": "warning",
+    }
+  }
+  mb={3}
+  onClose={null}
+>
+  Hello world
+</Base>
+`;
+
+exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
+.c0 {
+  margin-bottom: 0.75rem;
+  background-color: #E7F7F7;
+}
+
+<Base
+  bg="ui.infoBackground"
+  className="c0"
+  icon={
+    Object {
+      "color": "ui.info",
+      "name": "info",
+    }
+  }
+  mb={3}
+  onClose={null}
+>
+  Hello world
+</Base>
+`;
+
+exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
+.c0 {
+  margin-bottom: 0.75rem;
+  background-color: #DEF2DE;
+}
+
+<Base
+  bg="ui.successBackground"
+  className="c0"
+  icon={
+    Object {
+      "color": "ui.success",
+      "name": "checkCircle",
+    }
+  }
+  mb={3}
+  onClose={null}
+>
+  Hello world
+</Base>
+`;
+
+exports[`<Alert /> renders correctly 1`] = `
+.c0 {
+  margin-bottom: 0.75rem;
+  background-color: #F4F5F6;
+}
+
+<Base
+  bg="grey.3"
+  className="c0"
+  icon={null}
+  mb={3}
+  onClose={null}
+>
+  Hello world
+</Base>
+`;
