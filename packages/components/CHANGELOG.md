@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.3"></a>
+## [0.9.3](https://github.com/hooroo/roo-ui/compare/v0.9.1...v0.9.3) (2018-05-14)
+
+
+### Bug Fixes
+
+* only transition the button background ([#18](https://github.com/hooroo/roo-ui/issues/18)) ([2476a92](https://github.com/hooroo/roo-ui/commit/2476a92))
+
+
+
+
 <a name="0.9.2"></a>
 ## [0.9.2](https://github.com/hooroo/roo-ui/compare/v0.9.1...v0.9.2) (2018-05-14)
 
