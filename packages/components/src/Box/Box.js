@@ -10,6 +10,8 @@ import {
   borderRadius,
   borders,
   borderColor,
+  flexBasis,
+  flex,
 } from 'styled-system';
 
 const Box = styled(tag)`
@@ -20,8 +22,10 @@ const Box = styled(tag)`
   ${textAlign}
   ${boxShadow}
   ${borderRadius}
-  ${borders};
-  ${borderColor};
+  ${borders}
+  ${borderColor}
+  ${flexBasis}
+  ${flex}
 `;
 
 Box.propTypes = {
@@ -34,6 +38,8 @@ Box.propTypes = {
   ...borderRadius.propTypes,
   ...borders.propTypes,
   ...borderColor.propTypes,
+  ...flexBasis.propTypes,
+  ...flex.propTypes,
 };
 
 export default Box;
