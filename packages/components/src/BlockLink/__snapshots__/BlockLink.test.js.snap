@@ -42,10 +42,12 @@ exports[`<BlockLink /> renders correctly 1`] = `
       "pl",
       "px",
       "py",
+      "hidden",
       "inline",
     ]
   }
   className="c0"
+  hidden={false}
   inline={false}
 >
   Hello world
