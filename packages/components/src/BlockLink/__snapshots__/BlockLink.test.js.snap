@@ -27,10 +27,12 @@ exports[`<BlockLink /> renders correctly 1`] = `
       "bg",
       "hover",
       "fontWeight",
+      "hidden",
       "inline",
     ]
   }
   className="c0"
+  hidden={false}
   inline={false}
 >
   Hello world
