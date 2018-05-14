@@ -50,6 +50,4 @@ Icon.propTypes = {
   ...space.propTypes,
 };
 
-Icon.displayName = 'Icon';
-
 export default Icon;

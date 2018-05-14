@@ -22,6 +22,4 @@ NakedButton.propTypes = {
   ...space.propTypes,
 };
 
-NakedButton.displayName = 'NakedButton';
-
 export default NakedButton;

@@ -9,6 +9,4 @@ Card.defaultProps = {
   p: 4,
 };
 
-Card.displayName = 'Card';
-
 export default Card;

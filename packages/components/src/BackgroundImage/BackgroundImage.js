@@ -34,6 +34,4 @@ BackgroundImage.propTypes = {
   ...backgroundRepeat.propTypes,
 };
 
-BackgroundImage.displayName = 'BackgroundImage';
-
 export default BackgroundImage;

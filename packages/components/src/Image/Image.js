@@ -31,6 +31,4 @@ Image.defaultProps = {
   inline: false,
 };
 
-Image.displayName = 'Image';
-
 export default Image;

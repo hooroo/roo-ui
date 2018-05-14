@@ -27,6 +27,4 @@ Label.defaultProps = {
   hidden: false,
 };
 
-Label.displayName = 'Label';
-
 export default Label;

@@ -85,6 +85,4 @@ Alert.error.defaultProps = {
   },
 };
 
-Alert.displayName = 'Alert';
-
 export default Alert;

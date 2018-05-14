@@ -19,6 +19,4 @@ const OutlineButton = Button.extend`
   }
 `;
 
-OutlineButton.displayName = 'OutlineButton';
-
 export default OutlineButton;

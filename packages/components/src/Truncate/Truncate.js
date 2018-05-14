@@ -6,6 +6,4 @@ const Truncate = Text.extend`
   text-overflow: ellipsis;
 `;
 
-Truncate.displayName = 'Truncate';
-
 export default Truncate;

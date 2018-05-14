@@ -35,6 +35,4 @@ Flex.propTypes = {
   ...flexDirection.propTypes,
 };
 
-Flex.displayName = 'Flex';
-
 export default Flex;

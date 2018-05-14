@@ -41,6 +41,4 @@ Text.defaultProps = {
   textStyle: 'text',
 };
 
-Text.displayName = 'Text';
-
 export default Text;

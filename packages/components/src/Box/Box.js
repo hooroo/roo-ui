@@ -36,6 +36,4 @@ Box.propTypes = {
   ...borderColor.propTypes,
 };
 
-Box.displayName = 'Box';
-
 export default Box;

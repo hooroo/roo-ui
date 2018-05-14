@@ -49,6 +49,4 @@ Input.defaultProps = {
   is: 'input',
 };
 
-Input.displayName = 'Input';
-
 export default Input;

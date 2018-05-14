@@ -50,6 +50,4 @@ Link.defaultProps = {
   hidden: false,
 };
 
-Link.displayName = 'Link';
-
 export default Link;

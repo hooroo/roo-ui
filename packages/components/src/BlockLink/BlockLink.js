@@ -6,6 +6,4 @@ const BlockLink = Link.extend`
   text-decoration: none;
 `;
 
-BlockLink.displayName = 'BlockLink';
-
 export default BlockLink;
