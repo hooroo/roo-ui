@@ -8,12 +8,24 @@ exports[`<ExternalLink /> renders correctly 1`] = `
       "bg",
       "hover",
       "fontWeight",
-      "hidden",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
       "inline",
     ]
   }
   color="grey.0"
-  hidden={false}
   inline={false}
   rel="noopener noreferrer"
   target="_blank"
