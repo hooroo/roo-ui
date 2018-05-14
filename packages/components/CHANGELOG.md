@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/hooroo/roo-ui/compare/v0.10.0...v0.11.0) (2018-05-14)
+
+
+### Features
+
+* add hideVisually to link component ([#32](https://github.com/hooroo/roo-ui/issues/32)) ([41a4460](https://github.com/hooroo/roo-ui/commit/41a4460))
+
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/hooroo/roo-ui/compare/v0.9.3...v0.10.0) (2018-05-14)
 
