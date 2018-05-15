@@ -14,8 +14,12 @@ $ yarn add @roo-ui/components
 import { Text } from '@roo-ui/components';
 
 export default (
-  <Text>Hello world</Text>
+  <Fragment>
+    <Text>Generic Text</Text>
+    <Text.paragraph>Text paragraph</Text.paragraph>
+  </Fragment>
 );
+```
 ```
 
 ## Customization
