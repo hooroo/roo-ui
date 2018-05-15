@@ -22,13 +22,6 @@ const Text = styled(tag.span)`
   ${textAlign}
 `;
 
-Text.paragraph = Text.withComponent(tag.p);
-Text.paragraph.defaultProps = {
-  textStyle: 'text',
-  m: 0,
-  mb: 2,
-};
-
 Text.propTypes = {
   ...textStyle.propTypes,
   ...color.propTypes,
