@@ -44,7 +44,7 @@ exports[`<Input /> renders correctly 1`] = `
   display: none;
 }
 
-<Clean.div
+<Clean.input
   blacklist={
     Array [
       "m",
@@ -65,6 +65,5 @@ exports[`<Input /> renders correctly 1`] = `
     ]
   }
   className="c0"
-  is="input"
 />
 `;
