@@ -1,34 +1,21 @@
-import styled from 'styled-components';
-import tag from 'clean-tag';
 import {
-  space,
-  width,
-  height,
-  color,
   alignItems,
   justifyContent,
   flexWrap,
   flexDirection,
 } from 'styled-system';
+import { Box } from '..';
 
-const Flex = styled(tag)`
+const Flex = Box.extend`
   display: flex;
-
-  ${space}
-  ${width}
-  ${height}
-  ${color}
   ${alignItems}
   ${justifyContent}
   ${flexWrap}
-  ${flexDirection};
+  ${flexDirection}
 `;
 
 Flex.propTypes = {
-  ...space.propTypes,
-  ...width.propTypes,
-  ...height.propTypes,
-  ...color.propTypes,
+  ...Box.propTypes,
   ...alignItems.propTypes,
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,

@@ -4,7 +4,7 @@ import { Button } from '..';
 const getBackground = props =>
   color(props).backgroundColor || buttonStyle(props).backgroundColor;
 
-export default Button.extend`
+const OutlineButton = Button.extend`
   background-color: transparent;
   border-color: ${getBackground};
   transition: none;
@@ -18,3 +18,5 @@ export default Button.extend`
     border-color: ${getBackground};
   }
 `;
+
+export default OutlineButton;
