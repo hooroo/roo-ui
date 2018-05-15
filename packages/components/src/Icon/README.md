@@ -23,7 +23,7 @@ export default (
 | Name       | Description         | Type                 | Default | Required? |
 |:-----------|:--------------------|:---------------------|:--------|:----------|
 | `name`     | the icon to render  | `string`             | 'hotel' | ✔︎         |
-| `title`    | accessibility title | `string`             | null    | -         |
+| `title`    | accessibility title | `string`             | name    | -         |
 | `disabled` | disable the button  | `bool`               | false   | -         |
 | `size`     | size of the icon    | `string` or `number` | 24      | - ︎        |
 
