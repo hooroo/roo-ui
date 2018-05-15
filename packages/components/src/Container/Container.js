@@ -5,6 +5,7 @@ import { maxWidth, space } from 'styled-system';
 const Container = styled(tag)`
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 
   ${maxWidth}
   ${space}

@@ -4,6 +4,7 @@ exports[`<Container /> renders correctly 1`] = `
 .c0 {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 80rem;
 }
 
