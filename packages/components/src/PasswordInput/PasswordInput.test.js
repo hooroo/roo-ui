@@ -11,12 +11,12 @@ describe('<PasswordInput />', () => {
     wrapper = shallowWithTheme(<PasswordInput />, theme).dive();
   });
 
-  it('renders correctly', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
+  describe('when visibility is not toggled', () => {
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
 
-  describe('on visibility toggle', () => {
-    describe('when <input /> type is password', () => {
+    describe('on visibility toggle click', () => {
       beforeEach(() => {
         wrapper.find('PasswordInput__Toggle').simulate('click');
       });
@@ -26,10 +26,19 @@ describe('<PasswordInput />', () => {
           .toHaveProperty('type', 'text');
       });
     });
+  });
 
-    describe('when <input /> type is text', () => {
+  describe('when visibility is toggled', () => {
+    beforeEach(() => {
+      wrapper.setState({ visible: true }).update();
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    describe('on visibility toggle click', () => {
       beforeEach(() => {
-        wrapper.setState({ visible: true });
         wrapper.find('PasswordInput__Toggle').simulate('click');
       });
 
