@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import tag from 'clean-tag';
 import { space } from 'styled-system';
 
-const NakedButton = styled(tag.button)`
+const NakedButton = styled(tag.button).attrs({
+  type: 'button',
+})`
   border: none;
   margin: 0;
   padding: 0;
