@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ExternalLink /> renders correctly 1`] = `
-<Styled(Clean.a)
+<Link
   blacklist={
     Array [
       "color",
@@ -34,5 +34,5 @@ exports[`<ExternalLink /> renders correctly 1`] = `
   title="Link opens in new window"
 >
   Hello world
-</Styled(Clean.a)>
+</Link>
 `;
