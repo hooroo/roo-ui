@@ -3,7 +3,11 @@ import tag from 'clean-tag';
 import {
   space,
   width,
+  minWidth,
+  maxWidth,
   height,
+  minHeight,
+  maxHeight,
   color,
   textAlign,
   boxShadow,
@@ -17,7 +21,11 @@ import {
 const Box = styled(tag)`
   ${space}
   ${width}
+  ${minWidth}
+  ${maxWidth}
   ${height}
+  ${minHeight}
+  ${maxHeight}
   ${color}
   ${textAlign}
   ${boxShadow}
@@ -31,7 +39,11 @@ const Box = styled(tag)`
 Box.propTypes = {
   ...space.propTypes,
   ...width.propTypes,
+  ...minWidth.propTypes,
+  ...maxWidth.propTypes,
   ...height.propTypes,
+  ...minHeight.propTypes,
+  ...maxHeight.propTypes,
   ...color.propTypes,
   ...textAlign.propTypes,
   ...boxShadow.propTypes,
