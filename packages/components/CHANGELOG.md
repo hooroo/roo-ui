@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/hooroo/roo-ui/compare/v0.13.0...v0.14.0) (2018-05-15)
+
+
+### Features
+
+* add paragraph text style ([d0e14e8](https://github.com/hooroo/roo-ui/commit/d0e14e8))
+
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/hooroo/roo-ui/compare/v0.12.0...v0.13.0) (2018-05-15)
 
