@@ -9,13 +9,9 @@ import {
   lineHeight,
   space,
   textAlign,
-  themeGet,
 } from 'styled-system';
 
-const Text = styled(tag.p)`
-  margin: 0;
-  margin-bottom: ${themeGet('space.2')};
-
+const Text = styled(tag.span)`
   ${textStyle}
   ${color}
   ${fontSize}
@@ -25,6 +21,13 @@ const Text = styled(tag.p)`
   ${space}
   ${textAlign}
 `;
+
+Text.paragraph = Text.withComponent(tag.p);
+Text.paragraph.defaultProps = {
+  textStyle: 'text',
+  m: 0,
+  mb: 2,
+};
 
 Text.propTypes = {
   ...textStyle.propTypes,
