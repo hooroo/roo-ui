@@ -2,6 +2,6 @@
   "lerna": "2.8.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "0.12.0",
+  "version": "0.13.0",
   "registry": "https://registry.npmjs.org/"
 }

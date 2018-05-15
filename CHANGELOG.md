@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/hooroo/roo-ui/compare/v0.12.0...v0.13.0) (2018-05-15)
+
+
+### Features
+
+* add support for more styled system props on Box, Flex & Container ([#34](https://github.com/hooroo/roo-ui/issues/34)) ([bcce5b1](https://github.com/hooroo/roo-ui/commit/bcce5b1))
+
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/hooroo/roo-ui/compare/v0.11.1...v0.12.0) (2018-05-14)
 
