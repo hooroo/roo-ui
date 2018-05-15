@@ -18,7 +18,7 @@ const Toggle = styled(NakedButton)`
   position: absolute;
   height: 100%;
   top: 0;
-  left: calc(100% - 80px);
+  left: calc(100% - ${rem('80px')});
   font-size: ${themeGet('fontSizes.sm')};
   color: ${themeGet('colors.grey.1')};
   text-decoration: underline;
