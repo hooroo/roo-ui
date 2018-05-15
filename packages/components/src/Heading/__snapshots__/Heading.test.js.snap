@@ -2,8 +2,6 @@
 
 exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.35;
@@ -19,8 +17,6 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.35;
@@ -36,8 +32,6 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.5;
@@ -53,8 +47,6 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5;
@@ -70,8 +62,6 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
@@ -87,8 +77,6 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5;
@@ -104,8 +92,6 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 exports[`<Heading /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.5;

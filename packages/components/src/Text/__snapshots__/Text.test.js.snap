@@ -2,17 +2,15 @@
 
 exports[`<Text /> renders correctly 1`] = `
 .c0 {
-  margin: 0;
-  margin-bottom: 0.5rem;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
 }
 
-<Clean.p
+<Clean.span
   className="c0"
   textStyle="text"
 >
   Hello world
-</Clean.p>
+</Clean.span>
 `;
