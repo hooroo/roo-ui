@@ -8,7 +8,10 @@ describe('<Alert />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Alert>Hello world</Alert>, theme);
+    wrapper = shallowWithTheme(
+      <Alert>Hello world</Alert>,
+      theme,
+    ).dive();
   });
 
   it('renders correctly', () => {
@@ -17,7 +20,10 @@ describe('<Alert />', () => {
 
   describe('<Alert.success />', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<Alert.success>Hello world</Alert.success>, theme);
+      wrapper = shallowWithTheme(
+        <Alert.success>Hello world</Alert.success>,
+        theme,
+      ).dive();
     });
 
     it('renders correctly', () => {
@@ -27,7 +33,10 @@ describe('<Alert />', () => {
 
   describe('<Alert.error />', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<Alert.error>Hello world</Alert.error>, theme);
+      wrapper = shallowWithTheme(
+        <Alert.error>Hello world</Alert.error>,
+        theme,
+      ).dive();
     });
 
     it('renders correctly', () => {
@@ -37,7 +46,10 @@ describe('<Alert />', () => {
 
   describe('<Alert.info />', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<Alert.info>Hello world</Alert.info>, theme);
+      wrapper = shallowWithTheme(
+        <Alert.info>Hello world</Alert.info>,
+        theme,
+      ).dive();
     });
 
     it('renders correctly', () => {
@@ -50,8 +62,11 @@ describe('<Alert />', () => {
 
     beforeEach(() => {
       onClose = jest.fn();
-      wrapper = shallowWithTheme(<Alert onClose={onClose}>Hello world</Alert>, theme);
-      wrapper.dive().find('NakedButton').simulate('click');
+      wrapper = shallowWithTheme(
+        <Alert onClose={onClose}>Hello world</Alert>,
+        theme,
+      ).dive();
+      wrapper.find('NakedButton').simulate('click');
     });
 
     it('calls #onClose', () => {

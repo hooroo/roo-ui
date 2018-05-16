@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { space, themeGet } from 'styled-system';
 import tag from 'clean-tag';
 
-const Input = styled(tag)`
+const Input = styled(tag.input)`
   display: block;
   width: 100%;
   margin: 0;
@@ -44,9 +44,6 @@ Input.propTypes = {
 
 Input.defaultProps = {
   blacklist: Object.keys(Input.propTypes),
-  // TODO: use tag.input once this issue is fixed:
-  // https://github.com/jxnblk/styled-system/issues/180
-  is: 'input',
 };
 
 export default Input;
