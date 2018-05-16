@@ -1,7 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ExternalLink /> renders correctly 1`] = `
-<Link
+.c0 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  color: #E00E00;
+  color: #323232;
+}
+
+.c0:hover {
+  color: #870000;
+}
+
+.c0:focus {
+  outline: 2px solid #8DE2E0;
+}
+
+<Clean.a
   blacklist={
     Array [
       "color",
@@ -26,7 +43,7 @@ exports[`<ExternalLink /> renders correctly 1`] = `
       "inline",
     ]
   }
-  color="grey.0"
+  className="c0"
   hidden={false}
   inline={false}
   rel="noopener noreferrer"
@@ -34,5 +51,5 @@ exports[`<ExternalLink /> renders correctly 1`] = `
   title="Link opens in new window"
 >
   Hello world
-</Link>
+</Clean.a>
 `;

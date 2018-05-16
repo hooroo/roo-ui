@@ -3,6 +3,7 @@
   "rules": {
     "react/jsx-filename-extension": 0,
     "import/no-extraneous-dependencies": 0,
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
   },
   "env": {
     "jest": true
