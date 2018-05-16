@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.15.3"></a>
+## [0.15.3](https://github.com/hooroo/roo-ui/compare/v0.15.2...v0.15.3) (2018-05-16)
+
+
+### Bug Fixes
+
+* incorrect export in Paragraph ([#44](https://github.com/hooroo/roo-ui/issues/44)) ([3f085f8](https://github.com/hooroo/roo-ui/commit/3f085f8))
+
+
+
+
 <a name="0.15.2"></a>
 ## [0.15.2](https://github.com/hooroo/roo-ui/compare/v0.15.1...v0.15.2) (2018-05-16)
 
