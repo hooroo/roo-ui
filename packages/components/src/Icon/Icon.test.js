@@ -8,7 +8,7 @@ describe('<Icon />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Icon name="hotel" />, theme);
+    wrapper = shallowWithTheme(<Icon name="hotel" />, theme).dive();
   });
 
   it('renders correctly', () => {
