@@ -1,30 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { ThemeProvider as Provider } from 'styled-components';
-import { themeGet } from 'styled-system';
+import { injectGlobal, ThemeProvider as Provider } from 'styled-components';
 
-export const Base = styled.div`
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+const ThemeProvider = ({ theme, ...otherProps }) => {
+  injectGlobal`
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    
+      font-family: ${theme.fontFamily};
+      font-size: ${theme.fontSizes.base};
+      line-height: ${theme.lineHeights.normal};
+      color: ${theme.colors.text};
+    }
+  
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+  `;
 
-  font-family: ${themeGet('fontFamily')};
-  font-size: ${themeGet('fontSizes.base')};
-  line-height: ${themeGet('lineHeights.normal')};
-  color: ${themeGet('colors.text')};
-
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-`;
-
-const ThemeProvider = ({ theme, ...props }) => (
-  <Provider theme={theme}>
-    <Base {...props} />
-  </Provider>
-);
+  return (
+    <Provider theme={theme} {...otherProps} />
+  );
+};
 
 ThemeProvider.propTypes = {
-  theme: PropTypes.shape({}).isRequired,
+  ...Provider.propTypes,
 };
 
 export default ThemeProvider;

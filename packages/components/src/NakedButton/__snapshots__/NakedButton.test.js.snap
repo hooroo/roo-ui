@@ -19,6 +19,7 @@ exports[`<NakedButton /> renders correctly 1`] = `
 
 <Clean.button
   className="c0"
+  type="button"
 >
   Hello world
 </Clean.button>
