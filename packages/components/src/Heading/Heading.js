@@ -2,10 +2,14 @@ import tag from 'clean-tag';
 
 import Text from '../Text';
 
-const Heading = Text.withComponent(tag.span);
+const Heading = Text.withComponent(tag.span).extend`
+  display: block;
+`;
 
 Heading.defaultProps = {
   ...Text.defaultProps,
+  m: 0,
+  mb: 2,
   textStyle: 'h3',
 };
 

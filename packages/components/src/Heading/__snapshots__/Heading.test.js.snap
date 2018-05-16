@@ -5,10 +5,15 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.35;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 <Clean.h1
   className="c0"
+  m={0}
+  mb={2}
   textStyle="h1"
 >
   Hello world
@@ -20,10 +25,15 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
   font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.35;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 <Clean.h2
   className="c0"
+  m={0}
+  mb={2}
   textStyle="h2"
 >
   Hello world
@@ -35,10 +45,15 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 <Clean.h3
   className="c0"
+  m={0}
+  mb={2}
   textStyle="h3"
 >
   Hello world
@@ -50,10 +65,15 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 <Clean.h4
   className="c0"
+  m={0}
+  mb={2}
   textStyle="h4"
 >
   Hello world
@@ -65,10 +85,15 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 <Clean.h5
   className="c0"
+  m={0}
+  mb={2}
   textStyle="h5"
 >
   Hello world
@@ -80,10 +105,15 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 <Clean.h6
   className="c0"
+  m={0}
+  mb={2}
   textStyle="h6"
 >
   Hello world
@@ -95,10 +125,15 @@ exports[`<Heading /> renders correctly 1`] = `
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.5;
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 <Clean.span
   className="c0"
+  m={0}
+  mb={2}
   textStyle="h3"
 >
   Hello world
