@@ -16,4 +16,5 @@ export { default as Alert } from './Alert';
 export { default as BlockLink } from './BlockLink';
 export { default as OutlineButton } from './OutlineButton';
 export { default as Text } from './Text';
+export { default as Paragraph } from './Paragraph';
 export { default as Truncate } from './Truncate';

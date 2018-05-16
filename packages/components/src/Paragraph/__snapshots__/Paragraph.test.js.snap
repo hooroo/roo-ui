@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paragraph /> renders correctly 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+<Clean.span
+  className="c0"
+  textStyle="text"
+>
+  Hello world
+</Clean.span>
+`;
