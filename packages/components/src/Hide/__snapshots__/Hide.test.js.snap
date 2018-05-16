@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hide /> lg renders correctly 1`] = `
+@media screen and (min-width:64rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> md renders correctly 1`] = `
+@media screen and (min-width:52rem) and (max-width:64rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> renders correctly 1`] = `
+<div
+  className=""
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> sm renders correctly 1`] = `
+@media screen and (min-width:40rem) and (max-width:52rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> xs renders correctly 1`] = `
+@media screen and (max-width:40rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;

@@ -39,6 +39,7 @@ Base.defaultProps = {
 };
 
 const Icon = styled(Base)`
+  vertical-align: middle;
   flex: none;
   ${space}
   ${color};
