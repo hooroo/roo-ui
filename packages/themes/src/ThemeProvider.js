@@ -1,20 +1,15 @@
-import { ThemeProvider, injectGlobal } from 'styled-components';
-import { themeGet } from 'styled-system';
+import React from 'react';
+import { ThemeProvider as Provider } from 'styled-components';
+import GlobalStyles from './GlobalStyles';
 
-injectGlobal`
-  body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  
-    font-family: ${themeGet('fontFamily')};
-    font-size: ${themeGet('fontSizes.base')};
-    line-height: ${themeGet('lineHeights.normal')};
-    color: ${themeGet('colors.text')};
-  }
+const ThemeProvider = ({ theme, ...otherProps }) => (
+  <Provider theme={theme}>
+    <GlobalStyles {...otherProps} />
+  </Provider>
+);
 
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-`;
+ThemeProvider.propTypes = {
+  ...Provider.propTypes,
+};
 
 export default ThemeProvider;
