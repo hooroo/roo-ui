@@ -5,6 +5,7 @@ export { default as Card } from './Card';
 export { default as Container } from './Container';
 export { default as Flex } from './Flex';
 export { default as Heading } from './Heading';
+export { default as Hide } from './Hide';
 export { default as Icon } from './Icon';
 export { default as Image } from './Image';
 export { default as Input } from './Input';
