@@ -6,7 +6,7 @@ import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
 import paths from '@roo-ui/icons';
 
-import { Box, Text } from '..';
+import { Box, Paragraph } from '..';
 import Icon from '.';
 import README from './README.md';
 
@@ -20,7 +20,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
 `;
 
-const Caption = Text.extend`
+const Caption = Paragraph.extend`
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
