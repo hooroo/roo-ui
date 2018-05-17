@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/hooroo/roo-ui/compare/v0.15.3...v0.17.0) (2018-05-16)
+
+
+### Features
+
+* add hide component ([#41](https://github.com/hooroo/roo-ui/issues/41)) ([486a098](https://github.com/hooroo/roo-ui/commit/486a098))
+* add password input ([#38](https://github.com/hooroo/roo-ui/issues/38)) ([f429c0e](https://github.com/hooroo/roo-ui/commit/f429c0e))
+
+
+
+
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/hooroo/roo-ui/compare/v0.15.3...v0.16.0) (2018-05-16)
+
+
+### Features
+
+* add hide component ([#41](https://github.com/hooroo/roo-ui/issues/41)) ([486a098](https://github.com/hooroo/roo-ui/commit/486a098))
+* add password input ([#38](https://github.com/hooroo/roo-ui/issues/38)) ([f429c0e](https://github.com/hooroo/roo-ui/commit/f429c0e))
+
+
+
+
 <a name="0.15.3"></a>
 ## [0.15.3](https://github.com/hooroo/roo-ui/compare/v0.15.2...v0.15.3) (2018-05-16)
 
