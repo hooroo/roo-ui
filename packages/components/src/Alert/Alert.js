@@ -56,6 +56,7 @@ Alert.defaultProps = {
 };
 
 Alert.info = Alert.extend``;
+Alert.info.displayName = 'Alert';
 Alert.info.defaultProps = {
   ...Alert.defaultProps,
   bg: 'ui.infoBackground',
@@ -66,6 +67,7 @@ Alert.info.defaultProps = {
 };
 
 Alert.success = Alert.extend``;
+Alert.success.displayName = 'Alert';
 Alert.success.defaultProps = {
   ...Alert.defaultProps,
   bg: 'ui.successBackground',
@@ -76,6 +78,7 @@ Alert.success.defaultProps = {
 };
 
 Alert.error = Alert.extend``;
+Alert.error.displayName = 'Alert';
 Alert.error.defaultProps = {
   ...Alert.defaultProps,
   bg: 'ui.errorBackground',
