@@ -54,5 +54,6 @@ storiesOf('Components|Icon', module)
   .add('navigation', renderIcons('navigation'))
   .add('notification', renderIcons('notification'))
   .add('places', renderIcons('places'))
+  .add('rating', renderIcons('rating'))
   .add('social', renderIcons('social'))
   .add('toggle', renderIcons('toggle'));
