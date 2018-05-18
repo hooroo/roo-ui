@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.17.1"></a>
+## [0.17.1](https://github.com/hooroo/roo-ui/compare/v0.17.0...v0.17.1) (2018-05-17)
+
+
+### Bug Fixes
+
+* labels in the icon story inherit from paragraph ([#47](https://github.com/hooroo/roo-ui/issues/47)) ([1cd05b8](https://github.com/hooroo/roo-ui/commit/1cd05b8))
+
+
+
+
 <a name="0.17.0"></a>
 # [0.17.0](https://github.com/hooroo/roo-ui/compare/v0.15.3...v0.17.0) (2018-05-16)
 
