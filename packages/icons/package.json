@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/icons",
-  "version": "0.7.0",
+  "version": "0.18.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"

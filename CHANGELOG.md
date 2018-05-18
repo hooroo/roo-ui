@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.18.0"></a>
+# [0.18.0](https://github.com/hooroo/roo-ui/compare/v0.17.2...v0.18.0) (2018-05-18)
+
+
+### Features
+
+* add icons for rating, also introduces a rating directory in icons ([#48](https://github.com/hooroo/roo-ui/issues/48)) ([be7c283](https://github.com/hooroo/roo-ui/commit/be7c283))
+
+
+
+
 <a name="0.17.2"></a>
 ## [0.17.2](https://github.com/hooroo/roo-ui/compare/v0.17.1...v0.17.2) (2018-05-18)
 
