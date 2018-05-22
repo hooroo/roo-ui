@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@roo-ui/icons": "^0.18.0",
-    "@roo-ui/test-utils": "^0.7.0",
+    "@roo-ui/test-utils": "^0.19.0",
     "@roo-ui/themes": "^0.15.2"
   },
   "peerDependencies": {
