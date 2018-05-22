@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> renders correctly 1`] = `
+.c0 {
+  margin: 1rem 0;
+  padding: 0 0 0 1rem;
+}
+
+<Clean.ul
+  className="c0"
+  columns={1}
+>
+  <ListItem>
+    Hello Item 1
+  </ListItem>
+  <ListItem>
+    Hello Item 2
+  </ListItem>
+  <ListItem>
+    Hello Item 3
+  </ListItem>
+</Clean.ul>
+`;
+
+exports[`<List /> with columns set renders correctly 1`] = `
+.c0 {
+  margin: 1rem 0;
+  padding: 0 0 0 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c0 .ListItem-llUgLb {
+  -webkit-flex: 1 1 33.333333333333336%;
+  -ms-flex: 1 1 33.333333333333336%;
+  flex: 1 1 33.333333333333336%;
+}
+
+<Clean.ul
+  className="c0"
+  columns={3}
+>
+  <ListItem>
+    Hello Item 1
+  </ListItem>
+  <ListItem>
+    Hello Item 2
+  </ListItem>
+  <ListItem>
+    Hello Item 3
+  </ListItem>
+</Clean.ul>
+`;
+
+exports[`<List /> with ordered prop renders correctly 1`] = `
+.c0 {
+  margin: 1rem 0;
+  padding: 0 0 0 1rem;
+}
+
+<Clean.ol
+  className="c0"
+  columns={1}
+>
+  <ListItem>
+    Hello Item 1
+  </ListItem>
+  <ListItem>
+    Hello Item 2
+  </ListItem>
+  <ListItem>
+    Hello Item 3
+  </ListItem>
+</Clean.ol>
+`;

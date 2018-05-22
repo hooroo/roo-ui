@@ -11,6 +11,8 @@ export { default as Image } from './Image';
 export { default as Input } from './Input';
 export { default as Label } from './Label';
 export { default as Link } from './Link';
+export { default as List } from './List';
+export { default as ListItem } from './ListItem';
 export { default as ExternalLink } from './ExternalLink';
 export { default as NakedButton } from './NakedButton';
 export { default as PasswordInput } from './PasswordInput';
