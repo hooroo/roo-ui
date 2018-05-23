@@ -58,4 +58,16 @@ describe('<List />', () => {
       expect(render()).toMatchSnapshot();
     });
   });
+
+  describe('with responsive columns set', () => {
+    beforeEach(() => {
+      props = {
+        columns: [1, 2, 3],
+      };
+    });
+
+    it('renders correctly', () => {
+      expect(render()).toMatchSnapshot();
+    });
+  });
 });
