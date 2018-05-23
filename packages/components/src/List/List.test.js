@@ -59,11 +59,10 @@ describe('<List />', () => {
     });
   });
 
-  describe('with columns & stackColumnsBreakpoint set', () => {
+  describe('with responsive columns set', () => {
     beforeEach(() => {
       props = {
-        columns: 3,
-        stackColumnsBreakpoint: 0,
+        columns: [1, 2, 3],
       };
     });
 

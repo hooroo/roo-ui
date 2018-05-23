@@ -5,8 +5,35 @@ import { themeGet } from 'styled-system';
 import tag from 'clean-tag';
 import { ListItem } from '..';
 
+const listColumns = ({ columns }) => {
+  const responsiveColumns = Array.isArray(columns) ? columns : [columns];
+
+  // Allow for collapsing margins with single column nested lists
+  if (responsiveColumns.length === 1 && responsiveColumns[0] === 1) {
+    return undefined;
+  }
+
+  return [
+    css`
+      display: flex;
+      flex-wrap: wrap;
+      
+      ${ListItem} {
+        flex: 1 1 ${100 / responsiveColumns.shift()}%;
+      }
+    `,
+    ...responsiveColumns.map((numColumns, index) => css`
+      @media (min-width: ${themeGet(`breakpoints.${index}`)}) {
+        ${ListItem} {
+          flex: 1 1 ${100 / numColumns}%;
+        }
+      }
+    `),
+  ];
+};
+
 const List = styled(({
-  ordered, columns, stackColumnsBreakpoint, ...listProps
+  ordered, columns, ...listProps
 }) => {
   const ListComponent = ordered ? tag.ol : tag.ul;
   return (
@@ -16,35 +43,19 @@ const List = styled(({
     margin: ${themeGet('space.4')} 0;
     padding: 0 0 0 ${themeGet('space.4')};
     
-    ${props => props.columns > 1 && css`
-      display: flex;
-      flex-wrap: wrap;
-      ${ListItem} {
-        flex: 1 1 ${100 / props.columns}%;
-      }
-
-      ${props.stackColumnsBreakpoint >= 0 && css`
-        @media (max-width: ${themeGet(`breakpoints.${props.stackColumnsBreakpoint}`)}) {
-          ${ListItem} {
-            flex-basis: 100%;
-          }
-        }
-      `}
-    `}
+    ${listColumns}
 `;
 
 List.displayName = 'List';
 
 List.propTypes = {
   ordered: PropTypes.bool,
-  columns: PropTypes.number,
-  stackColumnsBreakpoint: PropTypes.number,
+  columns: PropTypes.oneOfType([PropTypes.number, PropTypes.arrayOf(PropTypes.number)]),
 };
 
 List.defaultProps = {
   ordered: false,
   columns: 1,
-  stackColumnsBreakpoint: undefined,
 };
 
 export default List;
