@@ -24,6 +24,12 @@ exports[`<Input /> renders correctly 1`] = `
   border-color: #8DE2E0;
 }
 
+.c0[readonly] {
+  border-color: transparent;
+  background: transparent;
+  padding-left: 0;
+}
+
 .c0::-webkit-input-placeholder {
   color: #666666;
 }
