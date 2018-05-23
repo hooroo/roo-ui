@@ -15,6 +15,11 @@ describe('<StarRating />', () => {
     expect(stars.length).toBe(5);
   });
 
+  it('renders correctly', () => {
+    const wrapper = shallow(<StarRating rating={rating} ratingType={ratingType} size="16" />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   ['AAA', 'SELF_RATED'].forEach((type) => {
     describe(`${type} Rated <StarRating />`, () => {
       const ratingTypeIcon = (type === 'AAA') ? 'star' : 'circle';
