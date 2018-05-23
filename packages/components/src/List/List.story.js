@@ -12,6 +12,7 @@ storiesOf('Components|List', module)
       <List
         ordered={boolean('Ordered', false)}
         columns={number('Columns', 1)}
+        stackColumnsBreakpoint={number('Stack Columns Breakpoint', undefined)}
       >
         <ListItem>Russo-European Laika</ListItem>
         <ListItem>St. John&apos;s water dog</ListItem>

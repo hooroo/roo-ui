@@ -58,4 +58,17 @@ describe('<List />', () => {
       expect(render()).toMatchSnapshot();
     });
   });
+
+  describe('with columns & stackColumnsBreakpoint set', () => {
+    beforeEach(() => {
+      props = {
+        columns: 3,
+        stackColumnsBreakpoint: 0,
+      };
+    });
+
+    it('renders correctly', () => {
+      expect(render()).toMatchSnapshot();
+    });
+  });
 });
