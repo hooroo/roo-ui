@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { Flex, Icon } from '..';
@@ -26,27 +26,15 @@ const renderRating = ({ ratingType, rating, size }) => {
   return ratingItems;
 };
 
-class StarRating extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    const { ratingType } = this.props;
-    const { rating } = this.props;
-    const { size } = this.props;
-    return (
-      <Flex
-        itemType="http://schema.org/AggregateRating"
-        aria-label={`${rating} out of 5 rating`}
-        title={`${rating} out of 5 rating`}
-      >
-        {renderRating({ ratingType, rating, size })}
-      </Flex>
-    );
-  }
-}
+const StarRating = ({ ratingType, rating, size }) => (
+  <Flex
+    itemType="http://schema.org/AggregateRating"
+    aria-label={`${rating} out of 5 rating`}
+    title={`${rating} out of 5 rating`}
+  >
+    {renderRating({ ratingType, rating, size })}
+  </Flex>
+);
 
 StarRating.propTypes = {
   rating: PropTypes.string.isRequired,
