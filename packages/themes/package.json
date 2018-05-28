@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/themes",
-  "version": "0.15.2",
+  "version": "0.22.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.22.0"></a>
+# [0.22.0](https://github.com/hooroo/roo-ui/compare/v0.21.0...v0.22.0) (2018-05-28)
+
+
+### Features
+
+* Add star rating Component ([6e27bd9](https://github.com/hooroo/roo-ui/commit/6e27bd9))
+
+
+
+
+<a name="0.21.0"></a>
+# [0.21.0](https://github.com/hooroo/roo-ui/compare/v0.20.0...v0.21.0) (2018-05-28)
+
+
+### Features
+
+* add read only input style ([#52](https://github.com/hooroo/roo-ui/issues/52)) ([ba50fd4](https://github.com/hooroo/roo-ui/commit/ba50fd4))
+
+
+
+
 <a name="0.20.0"></a>
 # [0.20.0](https://github.com/hooroo/roo-ui/compare/v0.19.1...v0.20.0) (2018-05-23)
 
