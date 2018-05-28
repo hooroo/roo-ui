@@ -22,6 +22,12 @@ const Input = styled(tag.input)`
     border-color: ${themeGet('colors.brand.secondary')};
   }
 
+  &[readonly] {
+    border-color: transparent;
+    background: transparent;
+    padding-left: 0;
+  }
+
   ::placeholder {
     color: ${themeGet('colors.grey.1')};
   }
