@@ -29,6 +29,7 @@ Image.propTypes = {
 Image.defaultProps = {
   blacklist: Object.keys(Image.propTypes),
   inline: false,
+  alt: '',
 };
 
 export default Image;

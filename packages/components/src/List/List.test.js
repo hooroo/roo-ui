@@ -1,6 +1,7 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme, mountWithTheme } from '@roo-ui/test-utils';
+import { axe } from 'jest-axe';
 
 import { List, ListItem } from '..';
 
@@ -25,6 +26,10 @@ describe('<List />', () => {
 
   it('renders correctly', () => {
     expect(render()).toMatchSnapshot();
+  });
+
+  it('has no accessibility errors', async () => {
+    expect(await axe(render().html())).toHaveNoViolations();
   });
 
   it('renders an unordered list by default', () => {

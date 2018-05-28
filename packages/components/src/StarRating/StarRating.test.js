@@ -1,6 +1,7 @@
 /* eslint-env jest */
 import React from 'react';
 import { shallow } from 'enzyme';
+import { axe } from 'jest-axe';
 import StarRating from './StarRating';
 
 let ratingType;
@@ -18,6 +19,11 @@ describe('<StarRating />', () => {
   it('renders correctly', () => {
     const wrapper = shallow(<StarRating rating={rating} ratingType={ratingType} size="16" />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('has no accessibility errors', async () => {
+    const wrapper = shallow(<StarRating rating={rating} ratingType={ratingType} size="16" />);
+    expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
   ['AAA', 'SELF_RATED'].forEach((type) => {
