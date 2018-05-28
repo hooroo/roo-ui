@@ -5,10 +5,6 @@ import { rem } from 'polished';
 
 import Text from '../Text';
 
-const arrowSize = rem('10px');
-const indentLeft = rem('12px');
-const indentTop = rem('8px');
-
 const ErrorMessage = Text.extend`
   padding: ${themeGet('space.3')};
   position: relative;
@@ -22,22 +18,33 @@ const ErrorMessage = Text.extend`
     width: 0;
     position: absolute;
     border: solid transparent;
-    border-width: ${arrowSize};
+    border-width: ${rem('10px')};
   }
 
   ${props => props.arrowTop && css`
     &:after {
       bottom: 100%;
-      left: ${indentLeft};
+      left: ${themeGet('space.3')};
       border-color: transparent;
       border-bottom-color: ${themeGet('colors.ui.errorBackground')};
     }
   `}
 
+  ${props => props.arrowLeft && css`
+    &:after {
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+      border-color: transparent;
+      border-right-color: ${themeGet('colors.ui.errorBackground')};
+    }
+  `}
+
   ${props => props.arrowRight && css`
     &:after {
-      top: ${indentTop};
+      top: 50%;
       left: 100%;
+      transform: translateY(-50%);
       border-color: transparent;
       border-left-color: ${themeGet('colors.ui.errorBackground')};
     }
@@ -46,20 +53,13 @@ const ErrorMessage = Text.extend`
   ${props => props.arrowBottom && css`
     &:after {
       top: 100%;
-      left: ${indentLeft};
+      left: ${themeGet('space.3')};
       border-color: transparent;
       border-top-color: ${themeGet('colors.ui.errorBackground')};
     }
   `}
 
-  ${props => props.arrowLeft && css`
-    &:after {
-      top: ${indentTop};
-      right: 100%;
-      border-color: transparent;
-      border-right-color: ${themeGet('colors.ui.errorBackground')};
-    }
-  `}
+
 `;
 
 ErrorMessage.propTypes = {
@@ -68,7 +68,6 @@ ErrorMessage.propTypes = {
   arrowBottom: PropTypes.bool,
   arrowLeft: PropTypes.bool,
 };
-
 
 ErrorMessage.defaultProps = {
   bg: 'ui.errorBackground',

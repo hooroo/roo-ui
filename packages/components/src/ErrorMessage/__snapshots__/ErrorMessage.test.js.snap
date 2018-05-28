@@ -66,8 +66,11 @@ exports[`<ErrorMessage /> arrowLeft renders correctly 1`] = `
 }
 
 .c0:after {
-  top: 0.5rem;
+  top: 50%;
   right: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border-color: transparent;
   border-right-color: #FCEBCD;
 }
@@ -112,8 +115,11 @@ exports[`<ErrorMessage /> arrowRight renders correctly 1`] = `
 }
 
 .c0:after {
-  top: 0.5rem;
+  top: 50%;
   left: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border-color: transparent;
   border-left-color: #FCEBCD;
 }
