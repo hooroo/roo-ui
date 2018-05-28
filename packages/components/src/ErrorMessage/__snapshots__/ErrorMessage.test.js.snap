@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorMessage /> arrowBottom renders correctly 1`] = `
+.c0 {
+  background-color: #FCEBCD;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.c0:after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid transparent;
+  border-width: 0.625rem;
+}
+
+.c0:after {
+  top: 100%;
+  left: 0.75rem;
+  border-color: transparent;
+  border-top-color: #FCEBCD;
+}
+
+<Clean.span
+  arrowBottom={true}
+  arrowLeft={false}
+  arrowRight={false}
+  arrowTop={false}
+  bg="ui.errorBackground"
+  blacklist={
+    Array [
+      "arrowTop",
+      "arrowRight",
+      "arrowBottom",
+      "arrowLeft",
+    ]
+  }
+  className="c0"
+>
+  An error occurred
+</Clean.span>
+`;
+
+exports[`<ErrorMessage /> arrowLeft renders correctly 1`] = `
+.c0 {
+  background-color: #FCEBCD;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.c0:after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid transparent;
+  border-width: 0.625rem;
+}
+
+.c0:after {
+  top: 0.5rem;
+  right: 100%;
+  border-color: transparent;
+  border-right-color: #FCEBCD;
+}
+
+<Clean.span
+  arrowBottom={false}
+  arrowLeft={true}
+  arrowRight={false}
+  arrowTop={false}
+  bg="ui.errorBackground"
+  blacklist={
+    Array [
+      "arrowTop",
+      "arrowRight",
+      "arrowBottom",
+      "arrowLeft",
+    ]
+  }
+  className="c0"
+>
+  An error occurred
+</Clean.span>
+`;
+
+exports[`<ErrorMessage /> arrowRight renders correctly 1`] = `
+.c0 {
+  background-color: #FCEBCD;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.c0:after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid transparent;
+  border-width: 0.625rem;
+}
+
+.c0:after {
+  top: 0.5rem;
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #FCEBCD;
+}
+
+<Clean.span
+  arrowBottom={false}
+  arrowLeft={false}
+  arrowRight={true}
+  arrowTop={false}
+  bg="ui.errorBackground"
+  blacklist={
+    Array [
+      "arrowTop",
+      "arrowRight",
+      "arrowBottom",
+      "arrowLeft",
+    ]
+  }
+  className="c0"
+>
+  An error occurred
+</Clean.span>
+`;
+
+exports[`<ErrorMessage /> arrowTop renders correctly 1`] = `
+.c0 {
+  background-color: #FCEBCD;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.c0:after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid transparent;
+  border-width: 0.625rem;
+}
+
+.c0:after {
+  bottom: 100%;
+  left: 0.75rem;
+  border-color: transparent;
+  border-bottom-color: #FCEBCD;
+}
+
+<Clean.span
+  arrowBottom={false}
+  arrowLeft={false}
+  arrowRight={false}
+  arrowTop={true}
+  bg="ui.errorBackground"
+  blacklist={
+    Array [
+      "arrowTop",
+      "arrowRight",
+      "arrowBottom",
+      "arrowLeft",
+    ]
+  }
+  className="c0"
+>
+  An error occurred
+</Clean.span>
+`;
+
+exports[`<ErrorMessage /> renders correctly 1`] = `
+.c0 {
+  background-color: #FCEBCD;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+.c0:after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: solid transparent;
+  border-width: 0.625rem;
+}
+
+<Clean.span
+  arrowBottom={false}
+  arrowLeft={false}
+  arrowRight={false}
+  arrowTop={false}
+  bg="ui.errorBackground"
+  blacklist={
+    Array [
+      "arrowTop",
+      "arrowRight",
+      "arrowBottom",
+      "arrowLeft",
+    ]
+  }
+  className="c0"
+>
+  An error occurred
+</Clean.span>
+`;
