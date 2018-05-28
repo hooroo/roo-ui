@@ -15,9 +15,9 @@ describe('<ErrorMessage />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('arrowTop', () => {
+  describe('prop.arrow equals top', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<ErrorMessage arrowTop>An error occurred</ErrorMessage>, theme);
+      wrapper = shallowWithTheme(<ErrorMessage arrow="top">An error occurred</ErrorMessage>, theme);
     });
 
     it('renders correctly', () => {
@@ -25,9 +25,9 @@ describe('<ErrorMessage />', () => {
     });
   });
 
-  describe('arrowRight', () => {
+  describe('prop.arrow equals right', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<ErrorMessage arrowRight>An error occurred</ErrorMessage>, theme);
+      wrapper = shallowWithTheme(<ErrorMessage arrow="right">An error occurred</ErrorMessage>, theme);
     });
 
     it('renders correctly', () => {
@@ -35,9 +35,9 @@ describe('<ErrorMessage />', () => {
     });
   });
 
-  describe('arrowBottom', () => {
+  describe('prop.arrow equals bottom', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<ErrorMessage arrowBottom>An error occurred</ErrorMessage>, theme);
+      wrapper = shallowWithTheme(<ErrorMessage arrow="bottom">An error occurred</ErrorMessage>, theme);
     });
 
     it('renders correctly', () => {
@@ -45,9 +45,9 @@ describe('<ErrorMessage />', () => {
     });
   });
 
-  describe('arrowLeft', () => {
+  describe('prop.arrow equals left', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<ErrorMessage arrowLeft>An error occurred</ErrorMessage>, theme);
+      wrapper = shallowWithTheme(<ErrorMessage arrow="left">An error occurred</ErrorMessage>, theme);
     });
 
     it('renders correctly', () => {

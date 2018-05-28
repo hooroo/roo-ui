@@ -21,60 +21,48 @@ const ErrorMessage = Text.extend`
     border-width: ${rem('10px')};
   }
 
-  ${props => props.arrowTop && css`
+  ${props => props.arrow === 'top' && css`
     &:after {
       bottom: 100%;
       left: ${themeGet('space.3')};
-      border-color: transparent;
       border-bottom-color: ${themeGet('colors.ui.errorBackground')};
     }
   `}
 
-  ${props => props.arrowLeft && css`
+  ${props => props.arrow === 'left' && css`
     &:after {
       top: 50%;
       right: 100%;
       transform: translateY(-50%);
-      border-color: transparent;
       border-right-color: ${themeGet('colors.ui.errorBackground')};
     }
   `}
 
-  ${props => props.arrowRight && css`
+  ${props => props.arrow === 'right' && css`
     &:after {
       top: 50%;
       left: 100%;
       transform: translateY(-50%);
-      border-color: transparent;
       border-left-color: ${themeGet('colors.ui.errorBackground')};
     }
   `}
 
-  ${props => props.arrowBottom && css`
+  ${props => props.arrow === 'bottom' && css`
     &:after {
       top: 100%;
       left: ${themeGet('space.3')};
-      border-color: transparent;
       border-top-color: ${themeGet('colors.ui.errorBackground')};
     }
   `}
-
-
 `;
 
 ErrorMessage.propTypes = {
-  arrowTop: PropTypes.bool,
-  arrowRight: PropTypes.bool,
-  arrowBottom: PropTypes.bool,
-  arrowLeft: PropTypes.bool,
+  arrow: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
 };
 
 ErrorMessage.defaultProps = {
   bg: 'ui.errorBackground',
-  arrowTop: false,
-  arrowRight: false,
-  arrowBottom: false,
-  arrowLeft: false,
+  arrow: null,
   blacklist: Object.keys(ErrorMessage.propTypes),
 };
 

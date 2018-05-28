@@ -14,18 +14,15 @@ $ yarn add @roo-ui/components
 import { ErrorMessage } from '@roo-ui/components';
 
 export default (
-  <ErrorMessage>An error occurred</ErrorMessage>
+  <ErrorMessage arrow="top">An error occurred</ErrorMessage>
 );
 ```
 
 ## Properties
 
-| Name          | Description                | Type   | Default | Required? |
-|:--------------|:---------------------------|:-------|:--------|:----------|
-| `arrowTop`    | arrow is placed on top     | `bool` | false   | -         |
-| `arrowRight`  | arrow is placed on right   | `bool` | false   | -         |
-| `arrowBottom` | arrow is placed on bottom  | `bool` | false   | -         |
-| `arrowLeft`   | arrow is placed on left    | `bool` | false   | -         |
+| Name          | Description                | Type     | Default | Required? |
+|:--------------|:---------------------------|:---------|:--------|:----------|
+| `arrow`       | arrow position             | `string` | null    | -         |
 
 ## Customization
 

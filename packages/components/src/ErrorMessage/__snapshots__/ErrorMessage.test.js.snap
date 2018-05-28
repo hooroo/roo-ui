@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ErrorMessage /> arrowBottom renders correctly 1`] = `
+exports[`<ErrorMessage /> prop.arrow equals bottom renders correctly 1`] = `
 .c0 {
   background-color: #FCEBCD;
   padding: 0.75rem;
@@ -22,22 +22,15 @@ exports[`<ErrorMessage /> arrowBottom renders correctly 1`] = `
 .c0:after {
   top: 100%;
   left: 0.75rem;
-  border-color: transparent;
   border-top-color: #FCEBCD;
 }
 
 <Clean.span
-  arrowBottom={true}
-  arrowLeft={false}
-  arrowRight={false}
-  arrowTop={false}
+  arrow="bottom"
   bg="ui.errorBackground"
   blacklist={
     Array [
-      "arrowTop",
-      "arrowRight",
-      "arrowBottom",
-      "arrowLeft",
+      "arrow",
     ]
   }
   className="c0"
@@ -46,7 +39,7 @@ exports[`<ErrorMessage /> arrowBottom renders correctly 1`] = `
 </Clean.span>
 `;
 
-exports[`<ErrorMessage /> arrowLeft renders correctly 1`] = `
+exports[`<ErrorMessage /> prop.arrow equals left renders correctly 1`] = `
 .c0 {
   background-color: #FCEBCD;
   padding: 0.75rem;
@@ -71,22 +64,15 @@ exports[`<ErrorMessage /> arrowLeft renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  border-color: transparent;
   border-right-color: #FCEBCD;
 }
 
 <Clean.span
-  arrowBottom={false}
-  arrowLeft={true}
-  arrowRight={false}
-  arrowTop={false}
+  arrow="left"
   bg="ui.errorBackground"
   blacklist={
     Array [
-      "arrowTop",
-      "arrowRight",
-      "arrowBottom",
-      "arrowLeft",
+      "arrow",
     ]
   }
   className="c0"
@@ -95,7 +81,7 @@ exports[`<ErrorMessage /> arrowLeft renders correctly 1`] = `
 </Clean.span>
 `;
 
-exports[`<ErrorMessage /> arrowRight renders correctly 1`] = `
+exports[`<ErrorMessage /> prop.arrow equals right renders correctly 1`] = `
 .c0 {
   background-color: #FCEBCD;
   padding: 0.75rem;
@@ -120,22 +106,15 @@ exports[`<ErrorMessage /> arrowRight renders correctly 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  border-color: transparent;
   border-left-color: #FCEBCD;
 }
 
 <Clean.span
-  arrowBottom={false}
-  arrowLeft={false}
-  arrowRight={true}
-  arrowTop={false}
+  arrow="right"
   bg="ui.errorBackground"
   blacklist={
     Array [
-      "arrowTop",
-      "arrowRight",
-      "arrowBottom",
-      "arrowLeft",
+      "arrow",
     ]
   }
   className="c0"
@@ -144,7 +123,7 @@ exports[`<ErrorMessage /> arrowRight renders correctly 1`] = `
 </Clean.span>
 `;
 
-exports[`<ErrorMessage /> arrowTop renders correctly 1`] = `
+exports[`<ErrorMessage /> prop.arrow equals top renders correctly 1`] = `
 .c0 {
   background-color: #FCEBCD;
   padding: 0.75rem;
@@ -166,22 +145,15 @@ exports[`<ErrorMessage /> arrowTop renders correctly 1`] = `
 .c0:after {
   bottom: 100%;
   left: 0.75rem;
-  border-color: transparent;
   border-bottom-color: #FCEBCD;
 }
 
 <Clean.span
-  arrowBottom={false}
-  arrowLeft={false}
-  arrowRight={false}
-  arrowTop={true}
+  arrow="top"
   bg="ui.errorBackground"
   blacklist={
     Array [
-      "arrowTop",
-      "arrowRight",
-      "arrowBottom",
-      "arrowLeft",
+      "arrow",
     ]
   }
   className="c0"
@@ -210,17 +182,11 @@ exports[`<ErrorMessage /> renders correctly 1`] = `
 }
 
 <Clean.span
-  arrowBottom={false}
-  arrowLeft={false}
-  arrowRight={false}
-  arrowTop={false}
+  arrow={null}
   bg="ui.errorBackground"
   blacklist={
     Array [
-      "arrowTop",
-      "arrowRight",
-      "arrowBottom",
-      "arrowLeft",
+      "arrow",
     ]
   }
   className="c0"
