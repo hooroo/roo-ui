@@ -1,4 +1,4 @@
-# ErrorMessage
+# Error message
 
 <!-- STORY -->
 
