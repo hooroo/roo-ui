@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StarRating /> renders correctly 1`] = `
+<Box
+  aria-label="1 out of 5 rating"
+  itemType="http://schema.org/AggregateRating"
+  title="1 out of 5 rating"
+>
+  <Icon
+    color="starRating"
+    key="0"
+    name="circle"
+    size="16"
+  />
+  <Icon
+    color="starRating"
+    key="1"
+    name="circleBorder"
+    size="16"
+  />
+  <Icon
+    color="starRating"
+    key="2"
+    name="circleBorder"
+    size="16"
+  />
+  <Icon
+    color="starRating"
+    key="3"
+    name="circleBorder"
+    size="16"
+  />
+  <Icon
+    color="starRating"
+    key="4"
+    name="circleBorder"
+    size="16"
+  />
+</Box>
+`;

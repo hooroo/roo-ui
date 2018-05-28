@@ -25,6 +25,7 @@ const colors = {
   ],
   white: '#FFFFFF',
   text: '#323232',
+  starRating: '#fbcb3b',
 };
 
 const fontFamily = 'QantasCiutadella, sans-serif';
