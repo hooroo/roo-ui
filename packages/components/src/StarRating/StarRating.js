@@ -1,5 +1,5 @@
 import React from 'react';
-import _ from 'lodash';
+import range from 'lodash/range';
 import PropTypes from 'prop-types';
 import { Flex, Icon } from '..';
 
@@ -14,7 +14,7 @@ const iconType = (rating, index, ratingType) => {
 const renderRating = ({ ratingType, rating, size }) => {
   const ratingItems = [];
 
-  _.range(5).forEach((index) => {
+  range(5).forEach((index) => {
     ratingItems.push(<Icon
       name={iconType(rating, index, ratingType)}
       key={index}
