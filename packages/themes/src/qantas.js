@@ -1,4 +1,5 @@
 import { rem } from 'polished';
+import range from 'lodash/range';
 
 const colors = {
   brand: {
@@ -105,18 +106,7 @@ const maxWidths = {
   default: rem('1280px'),
 };
 
-const space = [
-  rem('0px'),
-  rem('4px'),
-  rem('8px'),
-  rem('12px'),
-  rem('16px'),
-  rem('20px'),
-  rem('24px'),
-  rem('28px'),
-  rem('32px'),
-  rem('36px'),
-];
+const space = range(0, 129, 4).map(i => rem(`${i}px`));
 
 const borders = [
   0,
