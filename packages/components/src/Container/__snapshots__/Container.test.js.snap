@@ -6,6 +6,8 @@ exports[`<Container /> renders correctly 1`] = `
   margin-right: auto;
   width: 100%;
   max-width: 80rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 <Clean.div
@@ -104,6 +106,7 @@ exports[`<Container /> renders correctly 1`] = `
   className="c0"
   is="div"
   maxWidth="default"
+  px={3}
 >
   Hello world
 </Clean.div>

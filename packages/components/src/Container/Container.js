@@ -18,6 +18,7 @@ Container.propTypes = {
 
 Container.defaultProps = {
   maxWidth: 'default',
+  px: 3,
 };
 
 export default Container;
