@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.24.0"></a>
+# [0.24.0](https://github.com/hooroo/roo-ui/compare/v0.23.1...v0.24.0) (2018-05-29)
+
+
+### Features
+
+* add inline error style ([#56](https://github.com/hooroo/roo-ui/issues/56)) ([bef9259](https://github.com/hooroo/roo-ui/commit/bef9259))
+
+
+
+
 <a name="0.23.1"></a>
 ## [0.23.1](https://github.com/hooroo/roo-ui/compare/v0.23.0...v0.23.1) (2018-05-28)
 
