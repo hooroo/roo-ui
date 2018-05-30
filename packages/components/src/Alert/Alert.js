@@ -16,17 +16,17 @@ const Base = ({
     <Container>
       <Flex py={4}>
         {icon && (
-          <Box pr={1} pl={4}>
+          <Box pl={1} pr={3}>
             <Icon {...icon} />
           </Box>
         )}
 
-        <Text mb={0} px={2} textAlign="left">
+        <Text mb={0} textAlign="left">
           {children}
         </Text>
 
         {onClose && (
-          <Box ml="auto" p={1} pr={4}>
+          <Box ml="auto" p={1} pl={3}>
             <NakedButton onClick={onClose}>
               <Icon name="close" />
             </NakedButton>

@@ -13,13 +13,14 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 >
   <Container
     maxWidth="default"
+    px={3}
   >
     <Box
       py={4}
     >
       <Box
-        pl={4}
-        pr={1}
+        pl={1}
+        pr={3}
       >
         <Icon
           color="ui.error"
@@ -28,7 +29,6 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
       </Box>
       <Text
         mb={0}
-        px={2}
         textAlign="left"
         textStyle="text"
       >
@@ -52,13 +52,14 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 >
   <Container
     maxWidth="default"
+    px={3}
   >
     <Box
       py={4}
     >
       <Box
-        pl={4}
-        pr={1}
+        pl={1}
+        pr={3}
       >
         <Icon
           color="ui.info"
@@ -67,7 +68,6 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
       </Box>
       <Text
         mb={0}
-        px={2}
         textAlign="left"
         textStyle="text"
       >
@@ -91,13 +91,14 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 >
   <Container
     maxWidth="default"
+    px={3}
   >
     <Box
       py={4}
     >
       <Box
-        pl={4}
-        pr={1}
+        pl={1}
+        pr={3}
       >
         <Icon
           color="ui.success"
@@ -106,7 +107,6 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
       </Box>
       <Text
         mb={0}
-        px={2}
         textAlign="left"
         textStyle="text"
       >
@@ -130,13 +130,13 @@ exports[`<Alert /> renders correctly 1`] = `
 >
   <Container
     maxWidth="default"
+    px={3}
   >
     <Box
       py={4}
     >
       <Text
         mb={0}
-        px={2}
         textAlign="left"
         textStyle="text"
       >
