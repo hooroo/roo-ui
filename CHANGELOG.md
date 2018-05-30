@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.25.0"></a>
+# [0.25.0](https://github.com/hooroo/roo-ui/compare/v0.24.1...v0.25.0) (2018-05-30)
+
+
+### Features
+
+* adds padding left/right to container ([#59](https://github.com/hooroo/roo-ui/issues/59)) ([40ae629](https://github.com/hooroo/roo-ui/commit/40ae629))
+
+
+
+
 <a name="0.24.1"></a>
 ## [0.24.1](https://github.com/hooroo/roo-ui/compare/v0.24.0...v0.24.1) (2018-05-29)
 
