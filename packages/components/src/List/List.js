@@ -15,7 +15,7 @@ const List = styled(tag).attrs({
   is: props => (props.ordered ? 'ol' : 'ul'),
 })`
   margin: ${themeGet('space.4')} 0;
-  padding-left: 0;
+  padding: 0;
   list-style-position: inside;
 
   ${props =>
