@@ -23,7 +23,7 @@ export default (
 
 ## Properties
 
-|   Name    |       Description       |          Type          | Default | Required? |
+| Name      | Description             | Type                   | Default | Required? |
 | :-------- | :---------------------- | :--------------------- | :------ | :-------- |
 | `ordered` | set list type to `<ol>` | `bool`                 | false   | -         |
-| `columns` | number of columns       | `number` or `number[]` | 1       | -         |
+| `columns` | number of columns       | `number` or `number[]` | null    | -         |

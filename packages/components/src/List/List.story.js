@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { boolean, number } from '@storybook/addon-knobs/react';
+
 import { Box, List, ListItem } from '..';
 import README from './README.md';
 
@@ -22,31 +23,35 @@ const flatList = props => (
   </Box>
 );
 
-// Note: `array` knob does not support array of numbers
-
+// NOTE: `array` knob does not support array of numbers
 storiesOf('Components|List', module)
   .addDecorator(withDocs(README))
-  .add('default', () => flatList({
-    ordered: boolean('Ordered', false),
-    columns: number('Columns', 1),
-  }))
-  .add('columns={[1, 2]}', () => flatList({
-    ordered: boolean('Ordered', false),
-    columns: [1, 2],
-  }))
-  .add('columns={[1, 2, 3]}', () => flatList({
-    ordered: boolean('Ordered', false),
-    columns: [1, 2, 3],
-  }))
-  .add('columns={[1, 3]}', () => flatList({
-    ordered: boolean('Ordered', false),
-    columns: [1, 3],
-  }))
+  .add('default', () =>
+    flatList({
+      ordered: boolean('Ordered', false),
+      columns: number('Columns', 1),
+    }))
+  .add('columns={[1, 2]}', () =>
+    flatList({
+      ordered: boolean('Ordered', false),
+      columns: [1, 2],
+    }))
+  .add('columns={[1, 2, 3]}', () =>
+    flatList({
+      ordered: boolean('Ordered', false),
+      columns: [1, 2, 3],
+    }))
+  .add('columns={[1, 3]}', () =>
+    flatList({
+      ordered: boolean('Ordered', false),
+      columns: [1, 3],
+    }))
   .add('nested', () => (
     <Box textAlign="left">
       <List>
         <ListItem>Coffee</ListItem>
-        <ListItem>Tea
+        <ListItem>
+          Tea
           <List>
             <ListItem>Black tea</ListItem>
             <ListItem>Green tea</ListItem>

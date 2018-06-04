@@ -1,61 +1,50 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { themeGet } from 'styled-system';
+import { themeGet, responsiveStyle } from 'styled-system';
 import tag from 'clean-tag';
+
 import { ListItem } from '..';
 
-const listColumns = ({ columns }) => {
-  const responsiveColumns = Array.isArray(columns) ? columns : [columns];
+const columns = responsiveStyle({
+  prop: 'columns',
+  cssProperty: 'flexBasis',
+  getter: n => `${100 / n}%`,
+});
 
-  // Allow for collapsing margins with single column nested lists
-  if (responsiveColumns.length === 1 && responsiveColumns[0] === 1) {
-    return undefined;
-  }
+const List = styled(tag).attrs({
+  is: props => (props.ordered ? 'ol' : 'ul'),
+})`
+  margin: ${themeGet('space.4')} 0;
+  padding-left: 0;
+  list-style-position: inside;
 
-  return [
+  ${props =>
+    props.columns &&
     css`
       display: flex;
       flex-wrap: wrap;
-      
-      ${ListItem} {
-        flex: 1 1 ${100 / responsiveColumns.shift()}%;
-      }
-    `,
-    ...responsiveColumns.map((numColumns, index) => css`
-      @media (min-width: ${themeGet(`breakpoints.${index}`)}) {
-        ${ListItem} {
-          flex: 1 1 ${100 / numColumns}%;
-        }
-      }
-    `),
-  ];
-};
+      margin-left: -${themeGet('space.2')};
+      margin-right: -${themeGet('space.2')};
 
-const List = styled(({
-  ordered, columns, ...listProps
-}) => {
-  const ListComponent = ordered ? tag.ol : tag.ul;
-  return (
-    <ListComponent {...listProps} />
-  );
-})`
-    margin: ${themeGet('space.4')} 0;
-    padding: 0 0 0 ${themeGet('space.4')};
-    
-    ${listColumns}
+      ${ListItem} {
+        flex: 1 1;
+        padding: 0 ${themeGet('space.2')};
+
+        ${columns};
+      }
+    `};
 `;
 
 List.displayName = 'List';
 
 List.propTypes = {
+  ...columns.propTypes,
   ordered: PropTypes.bool,
-  columns: PropTypes.oneOfType([PropTypes.number, PropTypes.arrayOf(PropTypes.number)]),
 };
 
 List.defaultProps = {
   ordered: false,
-  columns: 1,
+  columns: null,
 };
 
 export default List;
