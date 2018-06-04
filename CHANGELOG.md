@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.25.2"></a>
+## [0.25.2](https://github.com/hooroo/roo-ui/compare/v0.25.1...v0.25.2) (2018-06-04)
+
+
+### Bug Fixes
+
+* add width & height to logos ([#66](https://github.com/hooroo/roo-ui/issues/66)) ([bf67e8b](https://github.com/hooroo/roo-ui/commit/bf67e8b))
+
+
+
+
 <a name="0.25.1"></a>
 ## [0.25.1](https://github.com/hooroo/roo-ui/compare/v0.25.0...v0.25.1) (2018-05-31)
 
