@@ -1,7 +1,7 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme, mountWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
+import { qantas as theme } from '@roo-ui/themes';
+import { shallowWithTheme } from '@roo-ui/test-utils';
 
 import { List, ListItem } from '..';
 
@@ -21,8 +21,6 @@ describe('<List />', () => {
   );
 
   const render = () => shallowWithTheme(tree(), theme).dive();
-  const renderMount = () => mountWithTheme(tree(), theme);
-
 
   it('renders correctly', () => {
     expect(render()).toMatchSnapshot();
@@ -33,14 +31,12 @@ describe('<List />', () => {
   });
 
   it('renders an unordered list by default', () => {
-    expect(renderMount().find(List).getDOMNode().tagName).toBe('UL');
+    expect(render().type()).toBe('ul');
   });
 
   describe('with ordered prop', () => {
     beforeEach(() => {
-      props = {
-        ordered: true,
-      };
+      props.ordered = true;
     });
 
     it('renders correctly', () => {
@@ -48,15 +44,23 @@ describe('<List />', () => {
     });
 
     it('renders an ordered list', () => {
-      expect(renderMount().find(List).getDOMNode().tagName).toBe('OL');
+      expect(render().type()).toBe('ol');
+    });
+  });
+
+  describe('with flush set', () => {
+    beforeEach(() => {
+      props.flush = true;
+    });
+
+    it('renders correctly', () => {
+      expect(render()).toMatchSnapshot();
     });
   });
 
   describe('with columns set', () => {
     beforeEach(() => {
-      props = {
-        columns: 3,
-      };
+      props.columns = 3;
     });
 
     it('renders correctly', () => {
@@ -66,9 +70,7 @@ describe('<List />', () => {
 
   describe('with responsive columns set', () => {
     beforeEach(() => {
-      props = {
-        columns: [1, 2, 3],
-      };
+      props.columns = [1, 2, 3];
     });
 
     it('renders correctly', () => {

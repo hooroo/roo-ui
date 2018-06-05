@@ -8,8 +8,4 @@ const ListItem = styled(tag.li)`
 
 ListItem.displayName = 'ListItem';
 
-ListItem.propTypes = {};
-
-ListItem.defaultProps = {};
-
 export default ListItem;
