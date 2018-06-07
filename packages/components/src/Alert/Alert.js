@@ -62,7 +62,7 @@ Alert.info.defaultProps = {
   bg: 'ui.infoBackground',
   icon: {
     name: 'info',
-    color: 'ui.info',
+    color: 'grey.0',
   },
 };
 
