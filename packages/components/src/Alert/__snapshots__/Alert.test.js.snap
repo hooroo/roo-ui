@@ -62,7 +62,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
         pr={3}
       >
         <Icon
-          color="ui.info"
+          color="grey.0"
           name="info"
         />
       </Box>
