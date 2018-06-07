@@ -26,7 +26,7 @@ const Base = ({
         </Text>
 
         {onClose && (
-          <Box ml="auto" p={1} pl={3}>
+          <Box ml="auto" pr={1} pl={3}>
             <NakedButton onClick={onClose}>
               <Icon name="close" />
             </NakedButton>
@@ -62,7 +62,7 @@ Alert.info.defaultProps = {
   bg: 'ui.infoBackground',
   icon: {
     name: 'info',
-    color: 'ui.info',
+    color: 'grey.0',
   },
 };
 
