@@ -63,6 +63,10 @@ const textStyles = {
     lineHeight: lineHeights.loose,
     fontWeight: fontWeights.normal,
   },
+  caps: {
+    textTransform: 'uppercase',
+    fontWeight: fontWeights.bold,
+  },
   label: {
     fontSize: fontSizes.sm,
     fontWeight: fontWeights.bold,
