@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.26.0"></a>
+# [0.26.0](https://github.com/hooroo/roo-ui/compare/v0.25.4...v0.26.0) (2018-06-07)
+
+
+### Features
+
+* add caps text style ([#69](https://github.com/hooroo/roo-ui/issues/69)) ([885de97](https://github.com/hooroo/roo-ui/commit/885de97))
+
+
+
+
 <a name="0.24.1"></a>
 ## [0.24.1](https://github.com/hooroo/roo-ui/compare/v0.24.0...v0.24.1) (2018-05-29)
 
