@@ -97,7 +97,7 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 .c0 {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.5;
   margin: 0rem;

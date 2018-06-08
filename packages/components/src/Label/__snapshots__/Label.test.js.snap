@@ -18,7 +18,7 @@ exports[`<Label /> hidden renders correctly 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: #323232;
 }
@@ -38,7 +38,7 @@ exports[`<Label /> renders correctly 1`] = `
   width: 100%;
   margin: 0;
   margin-bottom: 0.75rem;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: #323232;
 }

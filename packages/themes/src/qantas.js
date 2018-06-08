@@ -32,7 +32,7 @@ const colors = {
 const fontFamily = 'QantasCiutadella, sans-serif';
 
 const fontSizes = {
-  sm: rem('14px'),
+  sm: rem('15px'),
   base: rem('16px'),
   lg: rem('18px'),
   xl: rem('22px'),
