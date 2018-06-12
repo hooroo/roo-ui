@@ -10,16 +10,21 @@ describe('<MaskedInput />', () => {
 
   beforeEach(() => {
     wrapper = shallowWithTheme(
-      <MaskedInput
-        placeholder="Enter postcode"
-        mask={[/\d/, /\d/, /\d/, /\d/]}
-      />,
+      <label htmlFor="postcode">
+        Enter postcode
+
+        <MaskedInput
+          id="postcode"
+          placeholder="Enter postcode"
+          mask={[/\d/, /\d/, /\d/, /\d/]}
+        />
+      </label>,
       theme,
-    ).dive();
+    );
   });
 
   it('renders correctly', () => {
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find('MaskedInput').dive()).toMatchSnapshot();
   });
 
   it('has no accessibility errors', async () => {
@@ -28,10 +33,7 @@ describe('<MaskedInput />', () => {
 
   describe('<MaskedInput.time />', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(
-        <MaskedInput.time />,
-        theme,
-      ).dive();
+      wrapper = shallowWithTheme(<MaskedInput.time />, theme);
     });
 
     it('renders correctly', () => {
