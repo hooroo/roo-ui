@@ -12,4 +12,7 @@ storiesOf('Components|MaskedInput', module)
       placeholder="Enter postcode"
       mask={[/\d/, /\d/, /\d/, /\d/]}
     />
+  ))
+  .add('time', () => (
+    <MaskedInput.time />
   ));

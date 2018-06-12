@@ -9,10 +9,10 @@ MaskedInput.time = MaskedInput.extend``;
 MaskedInput.time.displayName = 'MaskedInput.time';
 MaskedInput.time.defaultProps = {
   ...MaskedInput.defaultProps,
-  guide: false,
   keepCharPositions: true,
-  mask: [/[0-2]/, /[0-9]/, ':', /[0-6]/, /[0-9]/],
-  placeholder: '00:00',
+  placeholderChar: '\u2001',
+  mask: [/[0-2]/, /[0-9]/, ':', /[0-6]/, /[0-9]/, ' AEST'],
+  placeholder: '00:00 AEST',
 };
 
 export default MaskedInput;
