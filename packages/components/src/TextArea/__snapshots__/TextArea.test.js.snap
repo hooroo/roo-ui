@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TextArea /> renders correctly 1`] = `
+exports[`<Textarea /> renders correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;

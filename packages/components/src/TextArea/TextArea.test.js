@@ -3,13 +3,13 @@ import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 
-import TextArea from '.';
+import Textarea from '.';
 
-describe('<TextArea />', () => {
+describe('<Textarea />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<TextArea>Hello World</TextArea>, theme);
+    wrapper = shallowWithTheme(<Textarea>Hello World</Textarea>, theme);
   });
 
   it('renders correctly', () => {
@@ -17,7 +17,7 @@ describe('<TextArea />', () => {
   });
 
   it('has no accessibility errors', async () => {
-    wrapper = shallowWithTheme(<label htmlFor="input">Label<TextArea /></label>, theme);
+    wrapper = shallowWithTheme(<label htmlFor="input">Label<Textarea /></label>, theme);
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 });

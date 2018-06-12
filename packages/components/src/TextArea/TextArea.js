@@ -3,16 +3,16 @@ import tag from 'clean-tag';
 
 import { Input } from '..';
 
-const TextArea = Input.withComponent(tag.textarea);
+const Textarea = Input.withComponent(tag.textarea);
 
-TextArea.propTypes = {
+Textarea.propTypes = {
   ...Input.propTypes,
   rows: PropTypes.number,
 };
 
-TextArea.defaultProps = {
+Textarea.defaultProps = {
   ...Input.defaultProps,
   rows: 6,
 };
 
-export default TextArea;
+export default Textarea;

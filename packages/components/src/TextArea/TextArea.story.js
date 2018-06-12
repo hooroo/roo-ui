@@ -3,13 +3,13 @@ import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { boolean, number } from '@storybook/addon-knobs/react';
 
-import TextArea from '.';
+import Textarea from '.';
 import README from './README.md';
 
-storiesOf('Components|TextArea', module)
+storiesOf('Components|Textarea', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <TextArea
+    <Textarea
       placeholder="Lorem ipsum dolor sit amet"
       error={boolean('Error', false)}
       rows={number('Rows', 6)}
