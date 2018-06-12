@@ -6,13 +6,13 @@ import { Input } from '..';
 const TextArea = Input.withComponent(tag.textarea);
 
 TextArea.propTypes = {
-  rows: PropTypes.number,
   ...Input.propTypes,
+  rows: PropTypes.number,
 };
 
 TextArea.defaultProps = {
-  rows: 6,
   ...Input.defaultProps,
+  rows: 6,
 };
 
 export default TextArea;
