@@ -1,4 +1,4 @@
-# TextArea
+# Textarea
 
 <!-- STORY -->
 
