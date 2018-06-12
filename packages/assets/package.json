@@ -1,0 +1,12 @@
+{
+  "name": "@roo-ui/assets",
+  "version": "0.28.0",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "babel src -d dist --copy-files"
+  }
+}
