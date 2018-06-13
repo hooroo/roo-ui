@@ -1,4 +1,8 @@
 {
-  "presets": ["babel-preset-react", "babel-preset-env", "babel-preset-stage-0"],
-  "plugins": ["babel-plugin-styled-components"]
+  "presets": ["babel-preset-react", "babel-preset-env"],
+  "plugins": [
+    "babel-plugin-styled-components",
+    "babel-plugin-transform-class-properties",
+    "babel-plugin-transform-object-rest-spread"
+  ]
 }
