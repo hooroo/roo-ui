@@ -69,6 +69,7 @@ exports[`<Input /> renders correctly 1`] = `
       "px",
       "py",
       "error",
+      "underline",
     ]
   }
   className="c0"
