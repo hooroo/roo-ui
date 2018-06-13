@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input /> renders correctly 1`] = `
+exports[`<Select /> renders correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -19,6 +19,8 @@ exports[`<Input /> renders correctly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border-radius: 0;
+  padding-right: 2rem;
 }
 
 .c0:focus {
@@ -51,7 +53,7 @@ exports[`<Input /> renders correctly 1`] = `
   display: none;
 }
 
-<Clean.input
+<Base
   blacklist={
     Array [
       "m",
@@ -69,9 +71,10 @@ exports[`<Input /> renders correctly 1`] = `
       "px",
       "py",
       "error",
-      "underline",
     ]
   }
   className="c0"
-/>
+>
+  Options
+</Base>
 `;

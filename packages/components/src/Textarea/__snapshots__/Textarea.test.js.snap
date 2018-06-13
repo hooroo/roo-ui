@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input /> renders correctly 1`] = `
+exports[`<Textarea /> renders correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -51,7 +51,7 @@ exports[`<Input /> renders correctly 1`] = `
   display: none;
 }
 
-<Clean.input
+<Clean.textarea
   blacklist={
     Array [
       "m",
@@ -69,9 +69,11 @@ exports[`<Input /> renders correctly 1`] = `
       "px",
       "py",
       "error",
-      "underline",
     ]
   }
   className="c0"
-/>
+  rows={6}
+>
+  Hello World
+</Clean.textarea>
 `;

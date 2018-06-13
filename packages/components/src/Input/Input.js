@@ -12,6 +12,7 @@ const Input = styled(tag.input)`
   font-size: ${themeGet('fontSizes.base')};
   line-height: ${themeGet('lineHeights.normal')};
   color: ${themeGet('colors.grey.0')};
+  background-color: ${themeGet('colors.white')};
   border: ${themeGet('borders.2')};
   border-color: ${themeGet('colors.grey.2')};
   outline: 0;
