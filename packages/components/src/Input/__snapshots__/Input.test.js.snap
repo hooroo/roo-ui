@@ -10,6 +10,7 @@ exports[`<Input /> renders correctly 1`] = `
   font-size: 1rem;
   line-height: 1.35;
   color: #323232;
+  background-color: #FFFFFF;
   border: 2px solid;
   border-color: #DADADA;
   outline: 0;
