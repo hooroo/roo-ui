@@ -321,6 +321,7 @@ exports[`<Autocomplete /> renders correctly 1`] = `
                 "px",
                 "py",
                 "error",
+                "underline",
               ]
             }
             id="downshift-0-input"
@@ -352,6 +353,7 @@ exports[`<Autocomplete /> renders correctly 1`] = `
                   "px",
                   "py",
                   "error",
+                  "underline",
                 ]
               }
               className="c2"
@@ -384,6 +386,7 @@ exports[`<Autocomplete /> renders correctly 1`] = `
                     "px",
                     "py",
                     "error",
+                    "underline",
                   ]
                 }
                 className="c2"
@@ -751,6 +754,7 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                 "px",
                 "py",
                 "error",
+                "underline",
               ]
             }
             id="downshift-5-input"
@@ -782,6 +786,7 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                   "px",
                   "py",
                   "error",
+                  "underline",
                 ]
               }
               className="c2"
@@ -814,6 +819,7 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                     "px",
                     "py",
                     "error",
+                    "underline",
                   ]
                 }
                 className="c2"
