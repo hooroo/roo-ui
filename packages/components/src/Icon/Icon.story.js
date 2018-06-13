@@ -56,4 +56,6 @@ storiesOf('Components|Icon', module)
   .add('places', renderIcons('places'))
   .add('rating', renderIcons('rating'))
   .add('social', renderIcons('social'))
-  .add('toggle', renderIcons('toggle'));
+  .add('toggle', renderIcons('toggle'))
+  .add('qantas', renderIcons('qantas'));
+
