@@ -1,4 +1,4 @@
 {
-  "presets": ["airbnb"],
+  "presets": ["babel-preset-react", "babel-preset-env", "babel-preset-stage-0"],
   "plugins": ["babel-plugin-styled-components"]
 }
