@@ -19,6 +19,7 @@ const Menu = Box.extend`
   border-left: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
   border-right: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
 `;
+Menu.displayName = 'Menu';
 
 const MenuItem = Box.extend`
   background-color: ${themeGet('colors.grey.3')};
@@ -35,7 +36,7 @@ const MenuItem = Box.extend`
                    ${themeGet('colors.brand.secondary')};
     `};
 `;
-
+MenuItem.displayName = 'MenuItem';
 MenuItem.defaultProps = {
   blacklist: ['highlighted'],
 };
