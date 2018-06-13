@@ -37,6 +37,12 @@ const Input = styled(tag.input)`
     display: none;
   }
 
+  ${props => props.underline && css`
+    border: none;
+    border-bottom: ${themeGet('borders.2')};
+    border-color: ${themeGet('colors.grey.2')};
+  `}
+
   ${props => props.error && css`
     border-color: ${themeGet('colors.ui.error')};
   `}
@@ -47,6 +53,7 @@ const Input = styled(tag.input)`
 Input.propTypes = {
   ...space.propTypes,
   error: PropTypes.bool,
+  underline: PropTypes.bool,
 };
 
 Input.defaultProps = {
