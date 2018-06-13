@@ -12,6 +12,7 @@ storiesOf('Components|Input', module)
     <Input
       placeholder="Hello world"
       error={boolean('Error', false)}
+      underline={boolean('Underline', false)}
       readOnly={boolean('Read only', false)}
     />
   ));
