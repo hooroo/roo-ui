@@ -1,0 +1,813 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Radio /> renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+input:checked + .c2:after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 4px;
+  left: 4px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+<Radio>
+  <Radio__RadioWrapper>
+    <Clean.div
+      className="c0"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Radio__RadioInput
+            type="radio"
+          >
+            <input
+              className="c1"
+              type="radio"
+            />
+          </Radio__RadioInput>
+          <Radio__RadioIcon>
+            <Clean.div
+              className="c2"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c2"
+                is="div"
+              >
+                <div
+                  className="c2"
+                />
+              </Clean.div>
+            </Clean.div>
+          </Radio__RadioIcon>
+        </div>
+      </Clean.div>
+    </Clean.div>
+  </Radio__RadioWrapper>
+</Radio>
+`;
+
+exports[`<Radio /> when checked renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+input:checked + .c2:after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 4px;
+  left: 4px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+<Radio
+  checked={true}
+>
+  <Radio__RadioWrapper>
+    <Clean.div
+      className="c0"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Radio__RadioInput
+            checked={true}
+            type="radio"
+          >
+            <input
+              checked={true}
+              className="c1"
+              type="radio"
+            />
+          </Radio__RadioInput>
+          <Radio__RadioIcon>
+            <Clean.div
+              className="c2"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c2"
+                is="div"
+              >
+                <div
+                  className="c2"
+                />
+              </Clean.div>
+            </Clean.div>
+          </Radio__RadioIcon>
+        </div>
+      </Clean.div>
+    </Clean.div>
+  </Radio__RadioWrapper>
+</Radio>
+`;
+
+exports[`<Radio /> when disabled renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-right: 8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+input:checked + .c2:after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 4px;
+  left: 4px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+<Radio
+  disabled={true}
+>
+  <Radio__RadioWrapper>
+    <Clean.div
+      className="c0"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Radio__RadioInput
+            disabled={true}
+            type="radio"
+          >
+            <input
+              className="c1"
+              disabled={true}
+              type="radio"
+            />
+          </Radio__RadioInput>
+          <Radio__RadioIcon>
+            <Clean.div
+              className="c2"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c2"
+                is="div"
+              >
+                <div
+                  className="c2"
+                />
+              </Clean.div>
+            </Clean.div>
+          </Radio__RadioIcon>
+        </div>
+      </Clean.div>
+    </Clean.div>
+  </Radio__RadioWrapper>
+</Radio>
+`;
