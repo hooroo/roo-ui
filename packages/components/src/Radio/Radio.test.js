@@ -27,7 +27,7 @@ describe('<Radio />', () => {
   describe('when checked', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(
-        <Radio checked />,
+        <Radio defaultChecked />,
         theme,
       );
     });

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
+import { rem } from 'polished';
 import tag from 'clean-tag';
 
 const Radio = props => (
@@ -30,10 +31,10 @@ const RadioIcon = styled(tag.div)`
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  margin-bottom: 2px;
-  margin-right: 8px;
-  height: 20px;
-  width: 20px;
+  margin-bottom: ${rem('2px')};
+  margin-right: ${themeGet('space.2')};
+  height: ${rem('20px')};
+  width: ${rem('20px')};
   background-color: ${themeGet('colors.white')};
   border: ${themeGet('borders.2')};
   border-color: ${themeGet('colors.grey.2')};
@@ -52,10 +53,10 @@ const RadioIcon = styled(tag.div)`
       position: absolute;
       display: block;
       content: '';
-      top: 4px;
-      left: 4px;
-      height: 8px;
-      width: 8px;
+      top: ${rem('4px')};
+      left: ${rem('4px')};
+      height: ${themeGet('space.2')};
+      width: ${themeGet('space.2')};
       border-radius: 50%;
       background-color: black;
     }

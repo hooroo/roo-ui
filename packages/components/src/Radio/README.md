@@ -41,4 +41,4 @@ export default (
 | `checked`  | sets checked state    | `bool` | false   | -         |
 | `disabled` | disables radio button | `bool` | false   | -         |
 
-For more radio input properties, click [here](https://www.w3schools.com/jsref/dom_obj_radio.asp).
+Standard [radio attributes](https://www.w3schools.com/jsref/dom_obj_radio.asp) will be passed down to the `<input />`.
