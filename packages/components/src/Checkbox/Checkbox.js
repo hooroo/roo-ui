@@ -58,6 +58,7 @@ const CheckboxBorder = styled(tag.div)`
 const CheckboxIcon = Icon.extend`
   position: absolute;
   display: none;
+  padding: ${themeGet('space.1')};
   top: 0;
   left: -${rem('2px')};
 
