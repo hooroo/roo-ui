@@ -34,10 +34,7 @@ input:checked + .c2:after {
   position: absolute;
   display: block;
   content: '';
-  top: 0.25rem;
-  left: 0.25rem;
   border-radius: 50%;
-  background-color: black;
 }
 
 <Radio>
@@ -299,10 +296,7 @@ input:checked + .c2:after {
   position: absolute;
   display: block;
   content: '';
-  top: 0.25rem;
-  left: 0.25rem;
   border-radius: 50%;
-  background-color: black;
 }
 
 <Radio
@@ -568,10 +562,7 @@ input:checked + .c2:after {
   position: absolute;
   display: block;
   content: '';
-  top: 0.25rem;
-  left: 0.25rem;
   border-radius: 50%;
-  background-color: black;
 }
 
 <Radio

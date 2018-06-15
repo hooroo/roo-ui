@@ -58,7 +58,7 @@ const RadioIcon = styled(tag.div)`
       height: ${themeGet('space.2')};
       width: ${themeGet('space.2')};
       border-radius: 50%;
-      background-color: black;
+      background-color: ${themeGet('colors.grey.0')};
     }
   }
 
