@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.32.0"></a>
+# [0.32.0](https://github.com/hooroo/roo-ui/compare/v0.31.0...v0.32.0) (2018-06-15)
+
+
+### Features
+
+* add autocomplete component ([#77](https://github.com/hooroo/roo-ui/issues/77)) ([eee3f8c](https://github.com/hooroo/roo-ui/commit/eee3f8c))
+
+
+
+
+<a name="0.31.0"></a>
+# [0.31.0](https://github.com/hooroo/roo-ui/compare/v0.30.1...v0.31.0) (2018-06-15)
+
+
+### Features
+
+* add masked input component ([#72](https://github.com/hooroo/roo-ui/issues/72)) ([9d16239](https://github.com/hooroo/roo-ui/commit/9d16239))
+
+
+
+
 <a name="0.30.0"></a>
 # [0.30.0](https://github.com/hooroo/roo-ui/compare/v0.29.0...v0.30.0) (2018-06-13)
 
