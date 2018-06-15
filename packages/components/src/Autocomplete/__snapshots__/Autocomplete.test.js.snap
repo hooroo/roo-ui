@@ -1,0 +1,1072 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Autocomplete /> renders correctly 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  -webkit-transition: border-color;
+  transition: border-color;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c2[readonly] {
+  border-color: transparent;
+  background: transparent;
+  padding-left: 0;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+<Autocomplete
+  filterItems={true}
+  items={
+    Array [
+      "Greyhound",
+      "Whippet",
+      "Borzoi",
+    ]
+  }
+  render={null}
+  restrictValue={true}
+>
+  <Downshift
+    breakingChanges={Object {}}
+    defaultHighlightedIndex={null}
+    defaultInputValue=""
+    defaultIsOpen={false}
+    defaultSelectedItem={null}
+    environment={[Window]}
+    getA11yStatusMessage={[Function]}
+    itemToString={[Function]}
+    onChange={[Function]}
+    onInputValueChange={[Function]}
+    onOuterClick={[Function]}
+    onSelect={[Function]}
+    onStateChange={[Function]}
+    onUserAction={[Function]}
+    selectedItem=""
+    selectedItemChanged={[Function]}
+    stateReducer={[Function]}
+  >
+    <Box
+      innerRef={[Function]}
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        innerRef={[Function]}
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Label
+            hidden={false}
+            htmlFor="downshift-0-input"
+            textStyle="label"
+          >
+            <Clean.label
+              className="c1"
+              hidden={false}
+              htmlFor="downshift-0-input"
+              textStyle="label"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c1"
+                hidden={false}
+                htmlFor="downshift-0-input"
+                is="label"
+                textStyle="label"
+              >
+                <label
+                  className="c1"
+                  hidden={false}
+                  htmlFor="downshift-0-input"
+                >
+                  Favourite dog
+                </label>
+              </Clean.div>
+            </Clean.label>
+          </Label>
+          <Input
+            aria-activedescendant={null}
+            aria-autocomplete="list"
+            aria-expanded={false}
+            autoComplete="off"
+            blacklist={
+              Array [
+                "m",
+                "mt",
+                "mr",
+                "mb",
+                "ml",
+                "mx",
+                "my",
+                "p",
+                "pt",
+                "pr",
+                "pb",
+                "pl",
+                "px",
+                "py",
+                "error",
+                "underline",
+              ]
+            }
+            id="downshift-0-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            role="combobox"
+            value=""
+          >
+            <Clean.input
+              aria-activedescendant={null}
+              aria-autocomplete="list"
+              aria-expanded={false}
+              autoComplete="off"
+              blacklist={
+                Array [
+                  "m",
+                  "mt",
+                  "mr",
+                  "mb",
+                  "ml",
+                  "mx",
+                  "my",
+                  "p",
+                  "pt",
+                  "pr",
+                  "pb",
+                  "pl",
+                  "px",
+                  "py",
+                  "error",
+                  "underline",
+                ]
+              }
+              className="c2"
+              id="downshift-0-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              role="combobox"
+              value=""
+            >
+              <Clean.div
+                aria-activedescendant={null}
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "error",
+                    "underline",
+                  ]
+                }
+                className="c2"
+                id="downshift-0-input"
+                is="input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                role="combobox"
+                value=""
+              >
+                <input
+                  aria-activedescendant={null}
+                  aria-autocomplete="list"
+                  aria-expanded={false}
+                  autoComplete="off"
+                  className="c2"
+                  id="downshift-0-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  role="combobox"
+                  value=""
+                />
+              </Clean.div>
+            </Clean.input>
+          </Input>
+        </div>
+      </Clean.div>
+    </Box>
+  </Downshift>
+</Autocomplete>
+`;
+
+exports[`<Autocomplete /> when open renders correctly 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  position: absolute;
+  width: 100%;
+  margin-top: -;
+}
+
+.c4 {
+  border-left: transparent;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  -webkit-transition: border-color;
+  transition: border-color;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c2[readonly] {
+  border-color: transparent;
+  background: transparent;
+  padding-left: 0;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+<Autocomplete
+  filterItems={true}
+  isOpen={true}
+  items={
+    Array [
+      "Greyhound",
+      "Whippet",
+      "Borzoi",
+    ]
+  }
+  render={null}
+  restrictValue={true}
+>
+  <Downshift
+    breakingChanges={Object {}}
+    defaultHighlightedIndex={null}
+    defaultInputValue=""
+    defaultIsOpen={false}
+    defaultSelectedItem={null}
+    environment={[Window]}
+    getA11yStatusMessage={[Function]}
+    isOpen={true}
+    itemToString={[Function]}
+    onChange={[Function]}
+    onInputValueChange={[Function]}
+    onOuterClick={[Function]}
+    onSelect={[Function]}
+    onStateChange={[Function]}
+    onUserAction={[Function]}
+    selectedItem=""
+    selectedItemChanged={[Function]}
+    stateReducer={[Function]}
+  >
+    <Box
+      innerRef={[Function]}
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        innerRef={[Function]}
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Label
+            hidden={false}
+            htmlFor="downshift-5-input"
+            textStyle="label"
+          >
+            <Clean.label
+              className="c1"
+              hidden={false}
+              htmlFor="downshift-5-input"
+              textStyle="label"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c1"
+                hidden={false}
+                htmlFor="downshift-5-input"
+                is="label"
+                textStyle="label"
+              >
+                <label
+                  className="c1"
+                  hidden={false}
+                  htmlFor="downshift-5-input"
+                >
+                  Favourite dog
+                </label>
+              </Clean.div>
+            </Clean.label>
+          </Label>
+          <Input
+            aria-activedescendant={null}
+            aria-autocomplete="list"
+            aria-expanded={true}
+            autoComplete="off"
+            blacklist={
+              Array [
+                "m",
+                "mt",
+                "mr",
+                "mb",
+                "ml",
+                "mx",
+                "my",
+                "p",
+                "pt",
+                "pr",
+                "pb",
+                "pl",
+                "px",
+                "py",
+                "error",
+                "underline",
+              ]
+            }
+            id="downshift-5-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onKeyDown={[Function]}
+            role="combobox"
+            value=""
+          >
+            <Clean.input
+              aria-activedescendant={null}
+              aria-autocomplete="list"
+              aria-expanded={true}
+              autoComplete="off"
+              blacklist={
+                Array [
+                  "m",
+                  "mt",
+                  "mr",
+                  "mb",
+                  "ml",
+                  "mx",
+                  "my",
+                  "p",
+                  "pt",
+                  "pr",
+                  "pb",
+                  "pl",
+                  "px",
+                  "py",
+                  "error",
+                  "underline",
+                ]
+              }
+              className="c2"
+              id="downshift-5-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onKeyDown={[Function]}
+              role="combobox"
+              value=""
+            >
+              <Clean.div
+                aria-activedescendant={null}
+                aria-autocomplete="list"
+                aria-expanded={true}
+                autoComplete="off"
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "error",
+                    "underline",
+                  ]
+                }
+                className="c2"
+                id="downshift-5-input"
+                is="input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                role="combobox"
+                value=""
+              >
+                <input
+                  aria-activedescendant={null}
+                  aria-autocomplete="list"
+                  aria-expanded={true}
+                  autoComplete="off"
+                  className="c2"
+                  id="downshift-5-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  role="combobox"
+                  value=""
+                />
+              </Clean.div>
+            </Clean.input>
+          </Input>
+          <Menu>
+            <Clean.div
+              blacklist={
+                Array [
+                  "m",
+                  "mt",
+                  "mr",
+                  "mb",
+                  "ml",
+                  "mx",
+                  "my",
+                  "p",
+                  "pt",
+                  "pr",
+                  "pb",
+                  "pl",
+                  "px",
+                  "py",
+                  "width",
+                  "w",
+                  "fontSize",
+                  "f",
+                  "color",
+                  "bg",
+                  "fontFamily",
+                  "font",
+                  "textAlign",
+                  "align",
+                  "lineHeight",
+                  "fontWeight",
+                  "letterSpacing",
+                  "display",
+                  "maxWidth",
+                  "minWidth",
+                  "height",
+                  "maxHeight",
+                  "minHeight",
+                  "size",
+                  "ratio",
+                  "alignItems",
+                  "alignContent",
+                  "justifyContent",
+                  "justify",
+                  "flexWrap",
+                  "wrap",
+                  "flexBasis",
+                  "flexDirection",
+                  "flex",
+                  "justifySelf",
+                  "alignSelf",
+                  "order",
+                  "gridGap",
+                  "gridColumnGap",
+                  "gridRowGap",
+                  "gridColumn",
+                  "gridRow",
+                  "gridAutoFlow",
+                  "gridAutoColumns",
+                  "gridAutoRows",
+                  "gridTemplateColumns",
+                  "gridTemplateRows",
+                  "border",
+                  "borderTop",
+                  "borderRight",
+                  "borderBottom",
+                  "borderLeft",
+                  "borderColor",
+                  "borderRadius",
+                  "boxShadow",
+                  "background",
+                  "backgroundImage",
+                  "bgImage",
+                  "backgroundSize",
+                  "bgSize",
+                  "backgroundPosition",
+                  "bgPosition",
+                  "backgroundRepeat",
+                  "bgRepeat",
+                  "position",
+                  "zIndex",
+                  "top",
+                  "right",
+                  "bottom",
+                  "left",
+                  "hover",
+                  "focus",
+                  "active",
+                  "disabledStyle",
+                  "textStyle",
+                  "colors",
+                  "buttonStyle",
+                  "borderWidth",
+                ]
+              }
+              className="c3"
+              is="div"
+            >
+              <div
+                className="c3"
+              >
+                <MenuItem
+                  blacklist={
+                    Array [
+                      "highlighted",
+                    ]
+                  }
+                  highlighted={false}
+                  id="downshift-5-item-0"
+                  key="Greyhound"
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseMove={[Function]}
+                >
+                  <Clean.div
+                    blacklist={
+                      Array [
+                        "highlighted",
+                      ]
+                    }
+                    className="c4"
+                    highlighted={false}
+                    id="downshift-5-item-0"
+                    is="div"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                  >
+                    <div
+                      className="c4"
+                      id="downshift-5-item-0"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                    >
+                      Greyhound
+                    </div>
+                  </Clean.div>
+                </MenuItem>
+                <MenuItem
+                  blacklist={
+                    Array [
+                      "highlighted",
+                    ]
+                  }
+                  highlighted={false}
+                  id="downshift-5-item-1"
+                  key="Whippet"
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseMove={[Function]}
+                >
+                  <Clean.div
+                    blacklist={
+                      Array [
+                        "highlighted",
+                      ]
+                    }
+                    className="c4"
+                    highlighted={false}
+                    id="downshift-5-item-1"
+                    is="div"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                  >
+                    <div
+                      className="c4"
+                      id="downshift-5-item-1"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                    >
+                      Whippet
+                    </div>
+                  </Clean.div>
+                </MenuItem>
+                <MenuItem
+                  blacklist={
+                    Array [
+                      "highlighted",
+                    ]
+                  }
+                  highlighted={false}
+                  id="downshift-5-item-2"
+                  key="Borzoi"
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseMove={[Function]}
+                >
+                  <Clean.div
+                    blacklist={
+                      Array [
+                        "highlighted",
+                      ]
+                    }
+                    className="c4"
+                    highlighted={false}
+                    id="downshift-5-item-2"
+                    is="div"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    onMouseMove={[Function]}
+                  >
+                    <div
+                      className="c4"
+                      id="downshift-5-item-2"
+                      onClick={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseMove={[Function]}
+                    >
+                      Borzoi
+                    </div>
+                  </Clean.div>
+                </MenuItem>
+              </div>
+            </Clean.div>
+          </Menu>
+        </div>
+      </Clean.div>
+    </Box>
+  </Downshift>
+</Autocomplete>
+`;
