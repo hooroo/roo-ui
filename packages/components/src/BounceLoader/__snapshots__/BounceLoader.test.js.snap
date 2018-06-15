@@ -6,18 +6,15 @@ exports[`matches snapshot 1`] = `
 >
   <BounceLoader__Bouncer
     bg="grey.1"
-    height={18}
-    width={18}
+    size={18}
   />
   <BounceLoader__Bouncer
     bg="grey.1"
-    height={18}
-    width={18}
+    size={18}
   />
   <BounceLoader__Bouncer
     bg="grey.1"
-    height={18}
-    width={18}
+    size={18}
   />
 </BounceLoader__Bouncers>
 `;
