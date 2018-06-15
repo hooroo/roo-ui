@@ -1,0 +1,906 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> renders correctly 1`] = `
+.c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -0.125rem;
+}
+
+input:checked ~ .c3 {
+  display: block;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.125rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+<Checkbox>
+  <Checkbox__CheckboxWrapper>
+    <Clean.div
+      className="c0"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Checkbox__CheckboxInput
+            type="checkbox"
+          >
+            <input
+              className="c1"
+              type="checkbox"
+            />
+          </Checkbox__CheckboxInput>
+          <Checkbox__CheckboxBorder>
+            <Clean.div
+              className="c2"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c2"
+                is="div"
+              >
+                <div
+                  className="c2"
+                />
+              </Clean.div>
+            </Clean.div>
+          </Checkbox__CheckboxBorder>
+          <Icon
+            name="done"
+          >
+            <Base
+              className="c3"
+              name="done"
+              size={24}
+              title={null}
+            >
+              <Cleaned
+                className="c3"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
+              >
+                <svg
+                  className="c3"
+                  fill="currentcolor"
+                  height={24}
+                  title="done"
+                  viewBox="0 0 24 24"
+                  width={24}
+                >
+                  <path
+                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                  />
+                </svg>
+              </Cleaned>
+            </Base>
+          </Icon>
+        </div>
+      </Clean.div>
+    </Clean.div>
+  </Checkbox__CheckboxWrapper>
+</Checkbox>
+`;
+
+exports[`<Checkbox /> when checked renders correctly 1`] = `
+.c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -0.125rem;
+}
+
+input:checked ~ .c3 {
+  display: block;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.125rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+<Checkbox
+  defaultChecked={true}
+>
+  <Checkbox__CheckboxWrapper>
+    <Clean.div
+      className="c0"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Checkbox__CheckboxInput
+            defaultChecked={true}
+            type="checkbox"
+          >
+            <input
+              className="c1"
+              defaultChecked={true}
+              type="checkbox"
+            />
+          </Checkbox__CheckboxInput>
+          <Checkbox__CheckboxBorder>
+            <Clean.div
+              className="c2"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c2"
+                is="div"
+              >
+                <div
+                  className="c2"
+                />
+              </Clean.div>
+            </Clean.div>
+          </Checkbox__CheckboxBorder>
+          <Icon
+            name="done"
+          >
+            <Base
+              className="c3"
+              name="done"
+              size={24}
+              title={null}
+            >
+              <Cleaned
+                className="c3"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
+              >
+                <svg
+                  className="c3"
+                  fill="currentcolor"
+                  height={24}
+                  title="done"
+                  viewBox="0 0 24 24"
+                  width={24}
+                >
+                  <path
+                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                  />
+                </svg>
+              </Cleaned>
+            </Base>
+          </Icon>
+        </div>
+      </Clean.div>
+    </Clean.div>
+  </Checkbox__CheckboxWrapper>
+</Checkbox>
+`;
+
+exports[`<Checkbox /> when disabled renders correctly 1`] = `
+.c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -0.125rem;
+}
+
+input:checked ~ .c3 {
+  display: block;
+}
+
+.c0 {
+  display: inline-block;
+  position: relative;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.125rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+<Checkbox
+  disabled={true}
+>
+  <Checkbox__CheckboxWrapper>
+    <Clean.div
+      className="c0"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "width",
+            "w",
+            "fontSize",
+            "f",
+            "color",
+            "bg",
+            "fontFamily",
+            "font",
+            "textAlign",
+            "align",
+            "lineHeight",
+            "fontWeight",
+            "letterSpacing",
+            "display",
+            "maxWidth",
+            "minWidth",
+            "height",
+            "maxHeight",
+            "minHeight",
+            "size",
+            "ratio",
+            "alignItems",
+            "alignContent",
+            "justifyContent",
+            "justify",
+            "flexWrap",
+            "wrap",
+            "flexBasis",
+            "flexDirection",
+            "flex",
+            "justifySelf",
+            "alignSelf",
+            "order",
+            "gridGap",
+            "gridColumnGap",
+            "gridRowGap",
+            "gridColumn",
+            "gridRow",
+            "gridAutoFlow",
+            "gridAutoColumns",
+            "gridAutoRows",
+            "gridTemplateColumns",
+            "gridTemplateRows",
+            "border",
+            "borderTop",
+            "borderRight",
+            "borderBottom",
+            "borderLeft",
+            "borderColor",
+            "borderRadius",
+            "boxShadow",
+            "background",
+            "backgroundImage",
+            "bgImage",
+            "backgroundSize",
+            "bgSize",
+            "backgroundPosition",
+            "bgPosition",
+            "backgroundRepeat",
+            "bgRepeat",
+            "position",
+            "zIndex",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "hover",
+            "focus",
+            "active",
+            "disabledStyle",
+            "textStyle",
+            "colors",
+            "buttonStyle",
+            "borderWidth",
+          ]
+        }
+        className="c0"
+        is="div"
+      >
+        <div
+          className="c0"
+        >
+          <Checkbox__CheckboxInput
+            disabled={true}
+            type="checkbox"
+          >
+            <input
+              className="c1"
+              disabled={true}
+              type="checkbox"
+            />
+          </Checkbox__CheckboxInput>
+          <Checkbox__CheckboxBorder>
+            <Clean.div
+              className="c2"
+            >
+              <Clean.div
+                blacklist={
+                  Array [
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "width",
+                    "w",
+                    "fontSize",
+                    "f",
+                    "color",
+                    "bg",
+                    "fontFamily",
+                    "font",
+                    "textAlign",
+                    "align",
+                    "lineHeight",
+                    "fontWeight",
+                    "letterSpacing",
+                    "display",
+                    "maxWidth",
+                    "minWidth",
+                    "height",
+                    "maxHeight",
+                    "minHeight",
+                    "size",
+                    "ratio",
+                    "alignItems",
+                    "alignContent",
+                    "justifyContent",
+                    "justify",
+                    "flexWrap",
+                    "wrap",
+                    "flexBasis",
+                    "flexDirection",
+                    "flex",
+                    "justifySelf",
+                    "alignSelf",
+                    "order",
+                    "gridGap",
+                    "gridColumnGap",
+                    "gridRowGap",
+                    "gridColumn",
+                    "gridRow",
+                    "gridAutoFlow",
+                    "gridAutoColumns",
+                    "gridAutoRows",
+                    "gridTemplateColumns",
+                    "gridTemplateRows",
+                    "border",
+                    "borderTop",
+                    "borderRight",
+                    "borderBottom",
+                    "borderLeft",
+                    "borderColor",
+                    "borderRadius",
+                    "boxShadow",
+                    "background",
+                    "backgroundImage",
+                    "bgImage",
+                    "backgroundSize",
+                    "bgSize",
+                    "backgroundPosition",
+                    "bgPosition",
+                    "backgroundRepeat",
+                    "bgRepeat",
+                    "position",
+                    "zIndex",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "hover",
+                    "focus",
+                    "active",
+                    "disabledStyle",
+                    "textStyle",
+                    "colors",
+                    "buttonStyle",
+                    "borderWidth",
+                  ]
+                }
+                className="c2"
+                is="div"
+              >
+                <div
+                  className="c2"
+                />
+              </Clean.div>
+            </Clean.div>
+          </Checkbox__CheckboxBorder>
+          <Icon
+            name="done"
+          >
+            <Base
+              className="c3"
+              name="done"
+              size={24}
+              title={null}
+            >
+              <Cleaned
+                className="c3"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
+              >
+                <svg
+                  className="c3"
+                  fill="currentcolor"
+                  height={24}
+                  title="done"
+                  viewBox="0 0 24 24"
+                  width={24}
+                >
+                  <path
+                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                  />
+                </svg>
+              </Cleaned>
+            </Base>
+          </Icon>
+        </div>
+      </Clean.div>
+    </Clean.div>
+  </Checkbox__CheckboxWrapper>
+</Checkbox>
+`;
