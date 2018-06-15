@@ -53,8 +53,8 @@ const RadioIcon = styled(tag.div)`
       position: absolute;
       display: block;
       content: '';
-      top: ${rem('4px')};
-      left: ${rem('4px')};
+      top: ${themeGet('space.1')};
+      left: ${themeGet('space.1')};
       height: ${themeGet('space.2')};
       width: ${themeGet('space.2')};
       border-radius: 50%;
