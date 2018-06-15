@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.30.0",
+  "version": "0.31.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
@@ -18,8 +18,8 @@
     "clean-element": "^1.0.0",
     "clean-tag": "^1.0.4",
     "polished": "^1.9.2",
-    "react-dom": "^16.2.0",
     "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "styled-components": "^3.1.5",
     "styled-system": "^2.2.1"
   },
