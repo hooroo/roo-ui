@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.34.1"></a>
+## [0.34.1](https://github.com/hooroo/roo-ui/compare/v0.34.0...v0.34.1) (2018-06-15)
+
+
+### Bug Fixes
+
+* add missing components to index ([#83](https://github.com/hooroo/roo-ui/issues/83)) ([225ebd2](https://github.com/hooroo/roo-ui/commit/225ebd2))
+
+
+
+
 <a name="0.34.0"></a>
 # [0.34.0](https://github.com/hooroo/roo-ui/compare/v0.33.0...v0.34.0) (2018-06-15)
 
