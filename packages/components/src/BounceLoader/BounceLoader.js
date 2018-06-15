@@ -1,7 +1,7 @@
 import React from 'react';
 import tag from 'clean-tag';
 import PropTypes from 'prop-types';
-import { color, width, height } from 'styled-system';
+import { color, size } from 'styled-system';
 import styled, { keyframes, css } from 'styled-components';
 import Box from '../Box';
 
@@ -10,7 +10,7 @@ const fadeIn = keyframes`
   100% { opacity: 1 }
 `;
 
-const bounceDelay = keyframes`
+const bounce = keyframes`
   0%, 80%, 100% { transform: scale(0) }
   40% { transform: scale(1.0) }
 `;
@@ -24,13 +24,12 @@ const Bouncers = styled(Box)`
 `;
 
 const Bouncer = styled(tag.div)`
-  animation: ${bounceDelay} 1.4s infinite ease-in-out both;
+  animation: ${bounce} 1.4s infinite ease-in-out both;
   border-radius: 100%;
   display: inline-block;
 
   ${color}
-  ${width}
-  ${height}
+  ${size}
 `;
 
 const FirstBouncer = Bouncer.extend`
@@ -47,9 +46,9 @@ const ThirdBouncer = Bouncer.extend`
 
 const BounceLoader = props => (
   <Bouncers delay={props.delay}>
-    <FirstBouncer bg={props.color} width={props.size} height={props.size} />
-    <SecondBouncer bg={props.color} width={props.size} height={props.size} />
-    <ThirdBouncer bg={props.color} width={props.size} height={props.size} />
+    <FirstBouncer bg={props.color} size={props.size} />
+    <SecondBouncer bg={props.color} size={props.size} />
+    <ThirdBouncer bg={props.color} size={props.size} />
   </Bouncers>
 );
 
