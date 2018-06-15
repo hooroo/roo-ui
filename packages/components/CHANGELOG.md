@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.34.0"></a>
+# [0.34.0](https://github.com/hooroo/roo-ui/compare/v0.33.0...v0.34.0) (2018-06-15)
+
+
+### Features
+
+* add checkbox component ([#80](https://github.com/hooroo/roo-ui/issues/80)) ([c370ec5](https://github.com/hooroo/roo-ui/commit/c370ec5))
+
+
+
+
 <a name="0.33.0"></a>
 # [0.33.0](https://github.com/hooroo/roo-ui/compare/v0.32.0...v0.33.0) (2018-06-15)
 
