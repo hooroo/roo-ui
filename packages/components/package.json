@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.30.0",
+  "version": "0.31.0",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
@@ -22,5 +22,8 @@
     "react-dom": "^16.2.0",
     "styled-components": "^3.1.5",
     "styled-system": "^2.2.1"
+  },
+  "optionalDependencies": {
+    "react-text-mask": "^5.4.1"
   }
 }
