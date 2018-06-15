@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<BounceLoader__Bouncers
+  delay="0"
+>
+  <BounceLoader__Bouncer
+    bg="grey.1"
+    height={18}
+    width={18}
+  />
+  <BounceLoader__Bouncer
+    bg="grey.1"
+    height={18}
+    width={18}
+  />
+  <BounceLoader__Bouncer
+    bg="grey.1"
+    height={18}
+    width={18}
+  />
+</BounceLoader__Bouncers>
+`;
