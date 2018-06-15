@@ -25,7 +25,6 @@ export default (
 | `value` | value to be tested | `string` or `number` | -       | true      |
 | `limit` | maximum length     | `string`             | -       | true      |
 
-
 ## Customization
 
-This component can be customized with props supported by [`<Text />`](../Text/README.md)
+This component can be customized with props supported by [`<Text />`](../Text/README.md).
