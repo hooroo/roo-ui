@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.34.2"></a>
+## [0.34.2](https://github.com/hooroo/roo-ui/compare/v0.34.1...v0.34.2) (2018-06-18)
+
+
+### Bug Fixes
+
+* fixes autocomplete implementation ([#84](https://github.com/hooroo/roo-ui/issues/84)) ([b60372f](https://github.com/hooroo/roo-ui/commit/b60372f))
+
+
+
+
 <a name="0.34.1"></a>
 ## [0.34.1](https://github.com/hooroo/roo-ui/compare/v0.34.0...v0.34.1) (2018-06-15)
 
