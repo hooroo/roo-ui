@@ -26,8 +26,8 @@ storiesOf('Components|Autocomplete', module)
     <Box textAlign="left">
       <Autocomplete
         items={items}
-        restrictValue={boolean('Restrict value', true)}
-        filterItems={boolean('Filter items', true)}
+        restrictValue={boolean('Restrict value', false)}
+        filterItems={boolean('Filter items', false)}
       >
         {({ getLabelProps, getInputProps }) => (
           <Fragment>

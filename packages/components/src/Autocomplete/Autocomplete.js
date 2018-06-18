@@ -46,19 +46,23 @@ export default class Autocomplete extends React.Component {
     items: PropTypes.oneOfType([PropTypes.func, PropTypes.array]).isRequired,
     filterItems: PropTypes.bool,
     restrictValue: PropTypes.bool,
+    selectedItem: PropTypes.string,
     children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-    render: PropTypes.func,
   }
 
   static defaultProps = {
     filterItems: true,
     restrictValue: true,
+    selectedItem: '',
     children: null,
-    render: null,
   }
 
-  state = {
-    inputValue: undefined,
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      inputValue: this.props.restrictValue ? undefined : this.props.selectedItem,
+    };
   }
 
   getItems = (inputValue) => {
@@ -96,9 +100,9 @@ export default class Autocomplete extends React.Component {
   render() {
     return (
       <Downshift
+        {...omit(this.props, Object.keys(Autocomplete.propTypes))}
         onStateChange={this.handleStateChange}
         selectedItem={this.state.inputValue}
-        {...omit(this.props, Object.keys(Autocomplete.propTypes))}
       >
         {downshiftProps => (
           <Root

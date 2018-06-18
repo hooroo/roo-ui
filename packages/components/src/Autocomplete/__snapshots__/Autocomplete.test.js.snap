@@ -54,8 +54,8 @@ exports[`<Autocomplete /> renders correctly 1`] = `
       "Borzoi",
     ]
   }
-  render={null}
   restrictValue={true}
+  selectedItem=""
 >
   <Downshift
     breakingChanges={Object {}}
@@ -485,8 +485,8 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
       "Borzoi",
     ]
   }
-  render={null}
   restrictValue={true}
+  selectedItem=""
 >
   <Downshift
     breakingChanges={Object {}}
