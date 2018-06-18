@@ -58,7 +58,7 @@ export default class Autocomplete extends React.Component {
   }
 
   state = {
-    inputValue: '',
+    inputValue: undefined,
   }
 
   getItems = (inputValue) => {
@@ -74,18 +74,6 @@ export default class Autocomplete extends React.Component {
     if (!this.props.restrictValue) {
       this.setState({ inputValue });
     }
-  }
-
-  renderCallback = (downshiftProps) => {
-    const { render, children } = this.props;
-
-    if (render) {
-      return render(downshiftProps);
-    } else if (typeof children === 'function') {
-      return children(downshiftProps);
-    }
-
-    return children;
   }
 
   renderMenu = downshiftProps => (
@@ -108,15 +96,15 @@ export default class Autocomplete extends React.Component {
   render() {
     return (
       <Downshift
-        {...omit(this.props, Object.keys(Autocomplete.propTypes))}
         onStateChange={this.handleStateChange}
-        selectedItem={this.state && this.state.inputValue}
+        selectedItem={this.state.inputValue}
+        {...omit(this.props, Object.keys(Autocomplete.propTypes))}
       >
         {downshiftProps => (
           <Root
             {...downshiftProps.getRootProps({ refKey: 'innerRef' })}
           >
-            {this.renderCallback(downshiftProps)}
+            {this.props.children(downshiftProps)}
             {downshiftProps.isOpen && this.renderMenu(downshiftProps)}
           </Root>
         )}
