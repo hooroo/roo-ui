@@ -72,7 +72,6 @@ exports[`<Autocomplete /> renders correctly 1`] = `
     onSelect={[Function]}
     onStateChange={[Function]}
     onUserAction={[Function]}
-    selectedItem=""
     selectedItemChanged={[Function]}
     stateReducer={[Function]}
   >
@@ -505,7 +504,6 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
     onSelect={[Function]}
     onStateChange={[Function]}
     onUserAction={[Function]}
-    selectedItem=""
     selectedItemChanged={[Function]}
     stateReducer={[Function]}
   >
