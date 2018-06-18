@@ -26,7 +26,6 @@ storiesOf('Components|Autocomplete', module)
     <Box textAlign="left">
       <Autocomplete
         items={items}
-        selectedItem='Leonberger'
         restrictValue={boolean('Restrict value', false)}
         filterItems={boolean('Filter items', false)}
       >
