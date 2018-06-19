@@ -35,6 +35,7 @@ export default (
 
 | Name     | Description        | Type   | Default | Required? |
 |:---------|:-------------------|:-------|:--------|:----------|
+| `hidden` | visually hidden    | `bool` | false   | -         |
 | `inline` | inherit font color | `bool` | false   | -         |
 
 ## Customization
