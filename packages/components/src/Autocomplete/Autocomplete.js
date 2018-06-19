@@ -18,6 +18,7 @@ const Menu = Box.extend`
   margin-top: -${themeGet('space.3')};
   border-left: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
   border-right: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
+  z-index: 2;
 `;
 Menu.displayName = 'Menu';
 
