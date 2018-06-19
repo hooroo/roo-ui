@@ -12,6 +12,7 @@ exports[`<Truncate /> renders correctly 1`] = `
 
 <Clean.span
   className="c0"
+  hidden={false}
   textStyle="text"
 >
   Hello world
