@@ -11,6 +11,7 @@ exports[`<Paragraph /> renders correctly 1`] = `
 
 <Clean.p
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="text"

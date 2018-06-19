@@ -11,6 +11,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 
 <Clean.h1
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="h1"
@@ -30,6 +31,7 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 
 <Clean.h2
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="h2"
@@ -49,6 +51,7 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 <Clean.h3
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="h3"
@@ -68,6 +71,7 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 <Clean.h4
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="h4"
@@ -87,6 +91,7 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 <Clean.h5
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="h5"
@@ -106,6 +111,7 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 <Clean.h6
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="h6"
@@ -125,6 +131,7 @@ exports[`<Heading /> renders correctly 1`] = `
 
 <Clean.p
   className="c0"
+  hidden={false}
   m={0}
   mb={2}
   textStyle="h3"

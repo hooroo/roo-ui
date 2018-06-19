@@ -11,6 +11,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
 <Cleaned
   className="c0"
   fontSize="sm"
+  hidden={false}
   textStyle="text"
 >
   53
