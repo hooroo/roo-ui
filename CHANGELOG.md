@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.35.0"></a>
+# [0.35.0](https://github.com/hooroo/roo-ui/compare/v0.34.5...v0.35.0) (2018-06-19)
+
+
+### Features
+
+* add prop to visually hide text ([#88](https://github.com/hooroo/roo-ui/issues/88)) ([060ba34](https://github.com/hooroo/roo-ui/commit/060ba34))
+
+
+
+
 <a name="0.34.5"></a>
 ## [0.34.5](https://github.com/hooroo/roo-ui/compare/v0.34.4...v0.34.5) (2018-06-19)
 
