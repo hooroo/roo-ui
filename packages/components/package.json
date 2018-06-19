@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.34.3",
+  "version": "0.34.4",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
