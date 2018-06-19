@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.34.4"></a>
+## [0.34.4](https://github.com/hooroo/roo-ui/compare/v0.34.3...v0.34.4) (2018-06-19)
+
+
+### Bug Fixes
+
+* add workaround to update masked input values ([#86](https://github.com/hooroo/roo-ui/issues/86)) ([acedb36](https://github.com/hooroo/roo-ui/commit/acedb36))
+
+
+
+
 <a name="0.34.3"></a>
 ## [0.34.3](https://github.com/hooroo/roo-ui/compare/v0.34.2...v0.34.3) (2018-06-18)
 
