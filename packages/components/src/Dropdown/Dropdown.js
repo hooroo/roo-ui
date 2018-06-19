@@ -1,56 +1,69 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
-import { hideVisually } from 'polished';
+import partition from 'lodash/partition';
 
-import { Box, NakedButton, Icon, Text } from '..';
+import { Box, NakedButton, Text } from '..';
 
-const Dropdown = ({ items, children }) => (
+const Wrapper = Box.extend`
+  position: relative;
+`;
+
+const DropdownWrapper = Box.extend`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+`;
+
+const Dropdown = props => (
   <Downshift>
     {({
       isOpen,
-      toggleMenu,
-      selectedItem,
+      getToggleButtonProps,
+      highlightedIndex,
+      getItemProps,
       getRootProps,
-    }) => (
-      <Box {...getRootProps({ refKey: 'innerRef' })}>
-        {children}
-
+    }) => {
+    const [items, children] = partition(React.Children.toArray(props.children), child => child.type === Dropdown.item);
+    return (
+      <Wrapper {...getRootProps({ refKey: 'innerRef' })}>
         <NakedButton
-          type="button"
-          onClick={toggleMenu}
-          aria-haspopup="true"
-          aria-expanded={isOpen}
+          {...getToggleButtonProps()}
         >
-          <Icon name="keyboardArrowDown" />
-          <Text>Toggle Dropdown</Text>
+          {children}
+          <Text hidden>Toggle Dropdown</Text>
         </NakedButton>
 
         {isOpen ? (
-          <Box>
-            {items.map(item => (
-              <NakedButton
-                key={item}
-                selected={item === selectedItem}
-                style={{ cursor: 'pointer' }}
-              >
-                {item}
-              </NakedButton>
-            ))}
-          </Box>
+          <DropdownWrapper>
+            {items.map((item, index) => React.cloneElement(item, getItemProps({
+              item: index,
+              key: index,
+              highlighted: (highlightedIndex === index),
+            })))}
+          </DropdownWrapper>
         ) : null}
-      </Box>
-    )}
+      </Wrapper>
+    );
+  }}
   </Downshift>
 );
+
+Dropdown.item = Box.extend`
+${props => props.highlighted && `
+  background-color: red;
+`}
+`;
+
+Dropdown.item.displayName = 'Dropdown.item';
 
 Dropdown.defaultProps = {
   children: null,
 };
 
 Dropdown.propTypes = {
-  items: PropTypes.oneOfType([PropTypes.func, PropTypes.array]).isRequired,
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+  children: PropTypes.node,
 };
 
 export default Dropdown;
