@@ -27,11 +27,12 @@ export default (
 
 ## Properties
 
-| Name                | Description                             | Type    | Default | Required? |
-|:--------------------|:----------------------------------------|:--------|:--------|:----------|
-| `items`             | array of strings to be autocompleted    | `array` | -       | ✔︎         |
-| `filterItems`       | filter items based on input             | `bool`  | true    | -         |
-| `restrictInput`     | restrict input to the values in `items` | `bool`  | true    | -         |
-| `render`/`children` | function to render label and input      | `func`  | -       | -         |
+| Name                | Description                             | Type     | Default | Required? |
+|:--------------------|:----------------------------------------|:---------|:--------|:----------|
+| `items`             | array of strings to be autocompleted    | `array`  | -       | ✔︎         |
+| `filterItems`       | filter items based on input             | `bool`   | true    | -         |
+| `restrictInput`     | restrict input to the values in `items` | `bool`   | true    | -         |
+| `selectedItem`      | the default selected item               | `string` | ''      | -         |
+| `children`          | function to render label and input      | `func`   | -       | -         |
 
 Refer to [Downshift](https://github.com/paypal/downshift#props) for more props; all props other than the ones listed above will be passed to the `<Downshift />` instance.

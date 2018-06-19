@@ -28,6 +28,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        hidden={false}
         mb={0}
         textAlign="left"
         textStyle="text"
@@ -67,6 +68,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        hidden={false}
         mb={0}
         textAlign="left"
         textStyle="text"
@@ -106,6 +108,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        hidden={false}
         mb={0}
         textAlign="left"
         textStyle="text"
@@ -136,6 +139,7 @@ exports[`<Alert /> renders correctly 1`] = `
       py={4}
     >
       <Text
+        hidden={false}
         mb={0}
         textAlign="left"
         textStyle="text"

@@ -1,5 +1,7 @@
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 import tag from 'clean-tag';
+import { hideVisually } from 'polished';
 import {
   textStyle,
   color,
@@ -20,7 +22,13 @@ const Text = styled(tag.span)`
   ${lineHeight}
   ${space}
   ${textAlign}
+
+  ${props => props.hidden && css`
+    ${hideVisually()}
+  `
+}
 `;
+
 
 Text.propTypes = {
   ...textStyle.propTypes,
@@ -31,9 +39,11 @@ Text.propTypes = {
   ...lineHeight.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
+  hidden: PropTypes.bool,
 };
 
 Text.defaultProps = {
+  hidden: false,
   textStyle: 'text',
 };
 

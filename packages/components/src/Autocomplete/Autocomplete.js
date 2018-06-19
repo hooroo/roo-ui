@@ -18,6 +18,7 @@ const Menu = Box.extend`
   margin-top: -${themeGet('space.3')};
   border-left: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
   border-right: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
+  z-index: 2;
 `;
 Menu.displayName = 'Menu';
 
@@ -46,19 +47,23 @@ export default class Autocomplete extends React.Component {
     items: PropTypes.oneOfType([PropTypes.func, PropTypes.array]).isRequired,
     filterItems: PropTypes.bool,
     restrictValue: PropTypes.bool,
+    selectedItem: PropTypes.string,
     children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-    render: PropTypes.func,
   }
 
   static defaultProps = {
     filterItems: true,
     restrictValue: true,
+    selectedItem: '',
     children: null,
-    render: null,
   }
 
-  state = {
-    inputValue: '',
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      inputValue: this.props.restrictValue ? undefined : this.props.selectedItem,
+    };
   }
 
   getItems = (inputValue) => {
@@ -74,18 +79,6 @@ export default class Autocomplete extends React.Component {
     if (!this.props.restrictValue) {
       this.setState({ inputValue });
     }
-  }
-
-  renderCallback = (downshiftProps) => {
-    const { render, children } = this.props;
-
-    if (render) {
-      return render(downshiftProps);
-    } else if (typeof children === 'function') {
-      return children(downshiftProps);
-    }
-
-    return children;
   }
 
   renderMenu = downshiftProps => (
@@ -110,13 +103,13 @@ export default class Autocomplete extends React.Component {
       <Downshift
         {...omit(this.props, Object.keys(Autocomplete.propTypes))}
         onStateChange={this.handleStateChange}
-        selectedItem={this.state && this.state.inputValue}
+        selectedItem={this.state.inputValue}
       >
         {downshiftProps => (
           <Root
             {...downshiftProps.getRootProps({ refKey: 'innerRef' })}
           >
-            {this.renderCallback(downshiftProps)}
+            {this.props.children(downshiftProps)}
             {downshiftProps.isOpen && this.renderMenu(downshiftProps)}
           </Root>
         )}

@@ -54,8 +54,8 @@ exports[`<Autocomplete /> renders correctly 1`] = `
       "Borzoi",
     ]
   }
-  render={null}
   restrictValue={true}
+  selectedItem=""
 >
   <Downshift
     breakingChanges={Object {}}
@@ -72,7 +72,6 @@ exports[`<Autocomplete /> renders correctly 1`] = `
     onSelect={[Function]}
     onStateChange={[Function]}
     onUserAction={[Function]}
-    selectedItem=""
     selectedItemChanged={[Function]}
     stateReducer={[Function]}
   >
@@ -430,6 +429,7 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
   position: absolute;
   width: 100%;
   margin-top: -;
+  z-index: 2;
 }
 
 .c4 {
@@ -486,8 +486,8 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
       "Borzoi",
     ]
   }
-  render={null}
   restrictValue={true}
+  selectedItem=""
 >
   <Downshift
     breakingChanges={Object {}}
@@ -505,7 +505,6 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
     onSelect={[Function]}
     onStateChange={[Function]}
     onUserAction={[Function]}
-    selectedItem=""
     selectedItemChanged={[Function]}
     stateReducer={[Function]}
   >

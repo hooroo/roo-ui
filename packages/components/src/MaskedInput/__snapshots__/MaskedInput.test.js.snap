@@ -52,26 +52,6 @@ exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
 }
 
 <t
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   className="c0"
   keepCharPositions={true}
   mask={
@@ -85,7 +65,7 @@ exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
     ]
   }
   placeholder="00:00 AEST"
-  placeholderChar=" "
+  placeholderChar=" "
   render={[Function]}
 />
 `;
@@ -142,26 +122,6 @@ exports[`<MaskedInput /> renders correctly 1`] = `
 }
 
 <t
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   className="c0"
   id="postcode"
   mask={
