@@ -20,7 +20,7 @@ export default (
 
 ## Properties
 
-|   Name    |       Description       |   Type   | Default | Required? |
+| Name      | Description             | Type     | Default | Required? |
 | :-------- | :---------------------- | :------- | :------ | :-------- |
 | `hidden`  | visually hide           | `boolean`| false   | -         |
 
