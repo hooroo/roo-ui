@@ -1,6 +1,6 @@
 export { default as BackgroundImage } from './BackgroundImage';
 export { default as Box } from './Box';
-export { default as BounceLoader } from './BounceLoader';
+export { default as LoadingIndicator } from './LoadingIndicator';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as Container } from './Container';

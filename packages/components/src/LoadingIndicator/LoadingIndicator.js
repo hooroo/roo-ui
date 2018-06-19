@@ -44,7 +44,7 @@ const ThirdBouncer = Bouncer.extend`
   animation-delay: 0;
 `;
 
-const BounceLoader = props => (
+const LoadingIndicator = props => (
   <Bouncers delay={props.delay}>
     <FirstBouncer bg={props.color} size={props.size} />
     <SecondBouncer bg={props.color} size={props.size} />
@@ -52,16 +52,16 @@ const BounceLoader = props => (
   </Bouncers>
 );
 
-BounceLoader.propTypes = {
+LoadingIndicator.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   delay: PropTypes.string,
 };
 
-BounceLoader.defaultProps = {
+LoadingIndicator.defaultProps = {
   color: 'grey.1',
   size: 18,
   delay: '0',
 };
 
-export default BounceLoader;
+export default LoadingIndicator;

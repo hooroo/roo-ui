@@ -1,4 +1,4 @@
-# Bounce Loader
+# Loading Indicator
 
 <!-- STORY -->
 
@@ -11,10 +11,10 @@ $ yarn add @roo-ui/components
 ## Example
 
 ```js
-import { BounceLoader } from '@roo-ui/components';
+import { LoadingIndicator } from '@roo-ui/components';
 
 export default (
-  <BounceLoader/>
+  <LoadingIndicator/>
 );
 ```
 

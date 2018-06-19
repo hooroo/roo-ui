@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<LoadingIndicator /> matches snapshot 1'] = `
+.c0 {
+  text-align: center;
+  -webkit-animation: gdMPTF 1s ease-in-out both;
+  animation: gdMPTF 1s ease-in-out both;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+
+<Box
+  className="c0"
+  delay="0"
+>
+  <LoadingIndicator__Bouncer
+    bg="grey.1"
+    size={18}
+  />
+  <LoadingIndicator__Bouncer
+    bg="grey.1"
+    size={18}
+  />
+  <LoadingIndicator__Bouncer
+    bg="grey.1"
+    size={18}
+  />
+</Box>
+`;
