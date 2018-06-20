@@ -1,6 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Dropdown /> renders correctly 1`] = `
+exports[`<Dropdown /> renders correctly when closed 1`] = `
+<Box
+  innerRef={[Function]}
+>
+  <NakedButton
+    aria-expanded={false}
+    aria-haspopup={true}
+    aria-label="open menu"
+    data-toggle={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    type="button"
+  >
+    Options
+    <Text
+      hidden={true}
+      textStyle="text"
+    >
+      Toggle Dropdown
+    </Text>
+  </NakedButton>
+</Box>
+`;
+
+exports[`<Dropdown /> renders correctly when open 1`] = `
 <Box
   innerRef={[Function]}
 >
@@ -33,7 +59,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
       }
       foo="bar"
       highlighted={false}
-      id="downshift-0-item-0"
+      id="downshift-1-item-0"
       key="0"
       onClick={[Function]}
       onMouseDown={[Function]}
@@ -48,7 +74,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
         ]
       }
       highlighted={false}
-      id="downshift-0-item-1"
+      id="downshift-1-item-1"
       key="1"
       onClick={[Function]}
       onMouseDown={[Function]}
@@ -63,7 +89,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
         ]
       }
       highlighted={false}
-      id="downshift-0-item-2"
+      id="downshift-1-item-2"
       key="2"
       onClick={[Function]}
       onMouseDown={[Function]}
@@ -78,7 +104,7 @@ exports[`<Dropdown /> renders correctly 1`] = `
         ]
       }
       highlighted={false}
-      id="downshift-0-item-3"
+      id="downshift-1-item-3"
       key="3"
       onClick={[Function]}
       onMouseDown={[Function]}

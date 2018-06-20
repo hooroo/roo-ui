@@ -44,10 +44,8 @@ const Dropdown = ({ children, accessibilityLabel, ...props }) => (
       getItemProps,
       getRootProps,
     }) => {
-    const [items, toggle] = partition(
-    React.Children.toArray(children),
-        child => child.type === Dropdown.item,
-    );
+    const childrenArray = React.Children.toArray(children);
+    const [items, toggle] = partition(childrenArray, child => child.type === Dropdown.item);
 
     return (
       <Wrapper {...getRootProps({ refKey: 'innerRef' })}>
@@ -93,7 +91,7 @@ Dropdown.item = NakedButton.extend`
 
   ${props => props.highlighted && css`
     color: ${themeGet('colors.grey.0')};
-    font-weight: bold;
+    font-weight: ${themeGet('fontWeights.bold')};
   `}
 `;
 
