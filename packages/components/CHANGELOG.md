@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.37.1"></a>
+## [0.37.1](https://github.com/hooroo/roo-ui/compare/v0.37.0...v0.37.1) (2018-06-20)
+
+
+### Bug Fixes
+
+* add dropdown to index file ([#90](https://github.com/hooroo/roo-ui/issues/90)) ([80b9803](https://github.com/hooroo/roo-ui/commit/80b9803))
+
+
+
+
 <a name="0.37.0"></a>
 # [0.37.0](https://github.com/hooroo/roo-ui/compare/v0.36.0...v0.37.0) (2018-06-20)
 
