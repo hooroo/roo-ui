@@ -13,7 +13,7 @@ describe('<Dropdown />', () => {
   const render = () => shallowWithTheme(
     <Dropdown {...props}>
       Options
-      <Dropdown.item bg="red" foo="bar">Edit</Dropdown.item>
+      <Dropdown.item id="foo" foo="bar">Edit</Dropdown.item>
       <Dropdown.item>Delete</Dropdown.item>
       <Dropdown.item>Unpublish</Dropdown.item>
       <Dropdown.item>Duplicate</Dropdown.item>
@@ -37,7 +37,7 @@ describe('<Dropdown />', () => {
   it('adds props passed in to the <Dropdown.item />', () => {
     props.isOpen = true;
     expect(render().find(Dropdown.item).first().props()).toEqual(expect.objectContaining({
-      bg: 'red',
+      id: 'foo',
       foo: 'bar',
     }));
   });

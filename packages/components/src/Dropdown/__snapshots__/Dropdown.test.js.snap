@@ -51,7 +51,6 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
   </NakedButton>
   <Box>
     <Dropdown.item
-      bg="red"
       blacklist={
         Array [
           "highlighted",
@@ -59,7 +58,7 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
       }
       foo="bar"
       highlighted={false}
-      id="downshift-1-item-0"
+      id="foo"
       key="0"
       onClick={[Function]}
       onMouseDown={[Function]}
