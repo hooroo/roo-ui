@@ -9,7 +9,16 @@ describe('<Dropdown />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Dropdown>Hello world</Dropdown>, theme);
+    const component = (
+      <Dropdown isOpen>
+        Options
+        <Dropdown.item bg="red" foo="bar">Edit</Dropdown.item>
+        <Dropdown.item>Delete</Dropdown.item>
+        <Dropdown.item>Unpublish</Dropdown.item>
+        <Dropdown.item>Duplicate</Dropdown.item>
+      </Dropdown>
+    );
+    wrapper = shallowWithTheme(component, theme).dive();
   });
 
   it('renders correctly', () => {
@@ -18,5 +27,12 @@ describe('<Dropdown />', () => {
 
   it('has no accessibility errors', async () => {
     expect(await axe(wrapper.html())).toHaveNoViolations();
+  });
+
+  it('adds props passed in to the <Dropdown.item />', () => {
+    expect(wrapper.find(Dropdown.item).first().props()).toEqual(expect.objectContaining({
+      bg: 'red',
+      foo: 'bar',
+    }));
   });
 });

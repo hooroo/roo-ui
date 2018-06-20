@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { css } from 'styled-components';
 import Downshift from 'downshift';
 import partition from 'lodash/partition';
+import { themeGet } from 'styled-system';
 
 import { Box, NakedButton, Text } from '..';
 
@@ -9,15 +11,29 @@ const Wrapper = Box.extend`
   position: relative;
 `;
 
-const DropdownWrapper = Box.extend`
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
+const Toggle = NakedButton.extend`
+  &:hover {
+    color: ${themeGet('colors.ui.link')};
+  }
+
+  &:focus {
+    color: ${themeGet('colors.ui.linkHover')};
+    outline: none;
+  };
 `;
 
-const Dropdown = props => (
-  <Downshift>
+const DropdownWrapper = Box.extend`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: ${themeGet('colors.white')};
+  box-shadow: ${themeGet('shadows.heavy')};
+  border-radius: ${themeGet('radii.default')};
+`;
+
+const Dropdown = ({ children, ...props }) => (
+  <Downshift {...props}>
     {({
       isOpen,
       getToggleButtonProps,
@@ -25,15 +41,19 @@ const Dropdown = props => (
       getItemProps,
       getRootProps,
     }) => {
-    const [items, children] = partition(React.Children.toArray(props.children), child => child.type === Dropdown.item);
+    const [items, toggle] = partition(
+    React.Children.toArray(children),
+        child => child.type === Dropdown.item,
+    );
+
     return (
       <Wrapper {...getRootProps({ refKey: 'innerRef' })}>
-        <NakedButton
+        <Toggle
           {...getToggleButtonProps()}
         >
-          {children}
+          {toggle}
           <Text hidden>Toggle Dropdown</Text>
-        </NakedButton>
+        </Toggle>
 
         {isOpen ? (
           <DropdownWrapper>
@@ -41,6 +61,7 @@ const Dropdown = props => (
               item: index,
               key: index,
               highlighted: (highlightedIndex === index),
+              ...item.props,
             })))}
           </DropdownWrapper>
         ) : null}
@@ -50,20 +71,31 @@ const Dropdown = props => (
   </Downshift>
 );
 
-Dropdown.item = Box.extend`
-${props => props.highlighted && `
-  background-color: red;
-`}
-`;
-
-Dropdown.item.displayName = 'Dropdown.item';
-
 Dropdown.defaultProps = {
   children: null,
 };
 
 Dropdown.propTypes = {
   children: PropTypes.node,
+};
+
+Dropdown.item = NakedButton.extend`
+  padding: ${themeGet('space.2')} ${themeGet('space.8')};
+  color: ${themeGet('colors.grey.1')};
+  width: 100%;
+  display: block;
+  text-align: left;
+
+  ${props => props.highlighted && css`
+    color: ${themeGet('colors.grey.0')};
+    font-weight: bold;
+  `}
+`;
+
+Dropdown.item.displayName = 'Dropdown.item';
+
+Dropdown.item.defaultProps = {
+  blacklist: ['highlighted'],
 };
 
 export default Dropdown;

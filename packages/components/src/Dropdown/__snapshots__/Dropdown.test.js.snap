@@ -1,7 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dropdown /> renders correctly 1`] = `
-<div>
-  Hello world
-</div>
+<Box
+  innerRef={[Function]}
+>
+  <NakedButton
+    aria-expanded={true}
+    aria-haspopup={true}
+    aria-label="close menu"
+    data-toggle={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    type="button"
+  >
+    Options
+    <Text
+      hidden={true}
+      textStyle="text"
+    >
+      Toggle Dropdown
+    </Text>
+  </NakedButton>
+  <Box>
+    <Dropdown.item
+      bg="red"
+      blacklist={
+        Array [
+          "highlighted",
+        ]
+      }
+      foo="bar"
+      highlighted={false}
+      id="downshift-0-item-0"
+      key="0"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseMove={[Function]}
+    >
+      Edit
+    </Dropdown.item>
+    <Dropdown.item
+      blacklist={
+        Array [
+          "highlighted",
+        ]
+      }
+      highlighted={false}
+      id="downshift-0-item-1"
+      key="1"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseMove={[Function]}
+    >
+      Delete
+    </Dropdown.item>
+    <Dropdown.item
+      blacklist={
+        Array [
+          "highlighted",
+        ]
+      }
+      highlighted={false}
+      id="downshift-0-item-2"
+      key="2"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseMove={[Function]}
+    >
+      Unpublish
+    </Dropdown.item>
+    <Dropdown.item
+      blacklist={
+        Array [
+          "highlighted",
+        ]
+      }
+      highlighted={false}
+      id="downshift-0-item-3"
+      key="3"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseMove={[Function]}
+    >
+      Duplicate
+    </Dropdown.item>
+  </Box>
+</Box>
 `;
