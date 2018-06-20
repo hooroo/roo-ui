@@ -1,15 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { qantas as theme } from '@roo-ui/themes';
+import { shallowWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 import LoadingIndicator from './LoadingIndicator';
 
 describe('<LoadingIndicator />', () => {
-  let props;
   let wrapper;
 
   beforeEach(() => {
-    props = {};
-    wrapper = shallow(<LoadingIndicator {...props} />).dive();
+    wrapper = shallowWithTheme(<LoadingIndicator />, theme).dive();
   });
 
   it('matches snapshot', () => {
