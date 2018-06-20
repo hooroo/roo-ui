@@ -26,8 +26,9 @@ export default (
 
 ## Properties
 
-| Name            | Description                             | Type     | Default | Required? |
-|:----------------|:----------------------------------------|:---------|:--------|:----------|
-| `children`      | Toggle and Dropdown items to render     | `func`   | -       | -         |
+| Name                 | Description                              | Type     | Default | Required? |
+|----------------------|------------------------------------------|----------|---------|-----------|
+| `children`           | Toggle and Dropdown items to render      | `node`   | -       | -         |
+| `accessibilityLabel` | Visually hidden label for screen readers | `string` | -       | -         |
 
 Refer to [Downshift](https://github.com/paypal/downshift#props) for more props; all props other than the ones listed above will be passed to the `<Downshift />` instance.

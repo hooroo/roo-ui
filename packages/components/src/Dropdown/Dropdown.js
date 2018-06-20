@@ -4,11 +4,13 @@ import { css } from 'styled-components';
 import Downshift from 'downshift';
 import partition from 'lodash/partition';
 import { themeGet } from 'styled-system';
+import { rem } from 'polished';
 
 import { Box, NakedButton, Text } from '..';
 
 const Wrapper = Box.extend`
   position: relative;
+  display: inline-block;
 `;
 
 const Toggle = NakedButton.extend`
@@ -24,6 +26,7 @@ const Toggle = NakedButton.extend`
 
 const DropdownWrapper = Box.extend`
   position: absolute;
+  min-width: ${rem('200px')};
   top: 0;
   left: 0;
   right: 0;
@@ -32,7 +35,7 @@ const DropdownWrapper = Box.extend`
   border-radius: ${themeGet('radii.default')};
 `;
 
-const Dropdown = ({ children, ...props }) => (
+const Dropdown = ({ children, accessibilityLabel, ...props }) => (
   <Downshift {...props}>
     {({
       isOpen,
@@ -52,7 +55,7 @@ const Dropdown = ({ children, ...props }) => (
           {...getToggleButtonProps()}
         >
           {toggle}
-          <Text hidden>Toggle Dropdown</Text>
+          <Text hidden>{accessibilityLabel}</Text>
         </Toggle>
 
         {isOpen ? (
@@ -73,10 +76,12 @@ const Dropdown = ({ children, ...props }) => (
 
 Dropdown.defaultProps = {
   children: null,
+  accessibilityLabel: 'Toggle Dropdown',
 };
 
 Dropdown.propTypes = {
   children: PropTypes.node,
+  accessibilityLabel: PropTypes.string,
 };
 
 Dropdown.item = NakedButton.extend`
