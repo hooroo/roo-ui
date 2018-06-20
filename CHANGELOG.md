@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.36.0"></a>
+# [0.36.0](https://github.com/hooroo/roo-ui/compare/v0.35.0...v0.36.0) (2018-06-20)
+
+
+### Features
+
+* add loading indicator ([d97540a](https://github.com/hooroo/roo-ui/commit/d97540a))
+
+
+
+
 <a name="0.35.0"></a>
 # [0.35.0](https://github.com/hooroo/roo-ui/compare/v0.34.5...v0.35.0) (2018-06-19)
 
