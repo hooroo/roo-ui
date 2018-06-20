@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.37.0"></a>
+# [0.37.0](https://github.com/hooroo/roo-ui/compare/v0.36.0...v0.37.0) (2018-06-20)
+
+
+### Features
+
+* add dropdown component ([#89](https://github.com/hooroo/roo-ui/issues/89)) ([851e801](https://github.com/hooroo/roo-ui/commit/851e801))
+
+
+
+
 <a name="0.36.0"></a>
 # [0.36.0](https://github.com/hooroo/roo-ui/compare/v0.35.0...v0.36.0) (2018-06-20)
 
