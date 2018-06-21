@@ -26,7 +26,7 @@ const Toggle = NakedButton.extend`
 
 const DropdownWrapper = Box.extend`
   position: absolute;
-  min-width: ${rem('200px')};
+  min-width: ${rem('120px')};
   top: 0;
   left: 0;
   right: 0;
@@ -88,6 +88,7 @@ Dropdown.item = NakedButton.extend`
   width: 100%;
   display: block;
   text-align: left;
+  text-decoration: none;
 
   ${props => props.highlighted && css`
     color: ${themeGet('colors.grey.0')};
