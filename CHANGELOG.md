@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.38.1"></a>
+## [0.38.1](https://github.com/hooroo/roo-ui/compare/v0.38.0...v0.38.1) (2018-06-21)
+
+
+### Bug Fixes
+
+* remove Input props from dom element ([#93](https://github.com/hooroo/roo-ui/issues/93)) ([8d493df](https://github.com/hooroo/roo-ui/commit/8d493df))
+
+
+
+
 <a name="0.38.0"></a>
 # [0.38.0](https://github.com/hooroo/roo-ui/compare/v0.37.2...v0.38.0) (2018-06-20)
 
