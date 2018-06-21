@@ -75,6 +75,7 @@ exports[`<Select /> renders correctly 1`] = `
     ]
   }
   className="c0"
+  is="input"
 >
   Options
 </Base>
