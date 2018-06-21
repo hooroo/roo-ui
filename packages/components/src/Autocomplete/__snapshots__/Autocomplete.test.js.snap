@@ -324,13 +324,14 @@ exports[`<Autocomplete /> renders correctly 1`] = `
               ]
             }
             id="downshift-0-input"
+            is="input"
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
             role="combobox"
             value=""
           >
-            <Clean.input
+            <Clean.div
               aria-activedescendant={null}
               aria-autocomplete="list"
               aria-expanded={false}
@@ -357,61 +358,27 @@ exports[`<Autocomplete /> renders correctly 1`] = `
               }
               className="c2"
               id="downshift-0-input"
+              is="input"
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
               role="combobox"
               value=""
             >
-              <Clean.div
+              <input
                 aria-activedescendant={null}
                 aria-autocomplete="list"
                 aria-expanded={false}
                 autoComplete="off"
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "error",
-                    "underline",
-                  ]
-                }
                 className="c2"
                 id="downshift-0-input"
-                is="input"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onKeyDown={[Function]}
                 role="combobox"
                 value=""
-              >
-                <input
-                  aria-activedescendant={null}
-                  aria-autocomplete="list"
-                  aria-expanded={false}
-                  autoComplete="off"
-                  className="c2"
-                  id="downshift-0-input"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onKeyDown={[Function]}
-                  role="combobox"
-                  value=""
-                />
-              </Clean.div>
-            </Clean.input>
+              />
+            </Clean.div>
           </Input>
         </div>
       </Clean.div>
@@ -757,13 +724,14 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
               ]
             }
             id="downshift-5-input"
+            is="input"
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
             role="combobox"
             value=""
           >
-            <Clean.input
+            <Clean.div
               aria-activedescendant={null}
               aria-autocomplete="list"
               aria-expanded={true}
@@ -790,61 +758,27 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
               }
               className="c2"
               id="downshift-5-input"
+              is="input"
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
               role="combobox"
               value=""
             >
-              <Clean.div
+              <input
                 aria-activedescendant={null}
                 aria-autocomplete="list"
                 aria-expanded={true}
                 autoComplete="off"
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "error",
-                    "underline",
-                  ]
-                }
                 className="c2"
                 id="downshift-5-input"
-                is="input"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onKeyDown={[Function]}
                 role="combobox"
                 value=""
-              >
-                <input
-                  aria-activedescendant={null}
-                  aria-autocomplete="list"
-                  aria-expanded={true}
-                  autoComplete="off"
-                  className="c2"
-                  id="downshift-5-input"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onKeyDown={[Function]}
-                  role="combobox"
-                  value=""
-                />
-              </Clean.div>
-            </Clean.input>
+              />
+            </Clean.div>
           </Input>
           <Menu>
             <Clean.div
