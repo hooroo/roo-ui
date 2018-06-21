@@ -14,5 +14,5 @@ storiesOf('Components|MaskedInput', module)
     />
   ))
   .add('time', () => (
-    <MaskedInput.time underline mb={12} />
+    <MaskedInput.time />
   ));
