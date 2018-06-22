@@ -1,7 +1,7 @@
 import React from 'react';
 import tag from 'clean-tag';
 import PropTypes from 'prop-types';
-import { color, size } from 'styled-system';
+import { color, size, width, themeGet } from 'styled-system';
 import styled, { keyframes, css } from 'styled-components';
 import Box from '../Box';
 
@@ -16,11 +16,14 @@ const bounce = keyframes`
 `;
 
 const Bouncers = styled(Box)`
+  animation: ${fadeIn} ${themeGet('transitions.default')} both;
+  animation-delay: ${props => props.delay};
+  margin: 0 auto;
   text-align: center;
-  animation: ${fadeIn} 1s ease-in-out both;
-  ${props => css`
-    animation-delay: ${props.delay};
-  `}
+  display: flex;
+  justify-content: space-around;
+
+  ${width}
 `;
 
 const Bouncer = styled(tag.div)`
@@ -28,27 +31,19 @@ const Bouncer = styled(tag.div)`
   border-radius: 100%;
   display: inline-block;
 
+  &:nth-child(1) { animation-delay: -0.32s; }
+  &:nth-child(2) { animation-delay: -0.16s; }
+  &:nth-child(3) { animation-delay: 0; }
+
   ${color}
   ${size}
 `;
 
-const FirstBouncer = Bouncer.extend`
-  animation-delay: -0.32s;
-`;
-
-const SecondBouncer = Bouncer.extend`
-  animation-delay: -0.16s;
-`;
-
-const ThirdBouncer = Bouncer.extend`
-  animation-delay: 0;
-`;
-
 const LoadingIndicator = props => (
-  <Bouncers delay={props.delay}>
-    <FirstBouncer bg={props.color} size={props.size} />
-    <SecondBouncer bg={props.color} size={props.size} />
-    <ThirdBouncer bg={props.color} size={props.size} />
+  <Bouncers delay={props.delay} width={props.size * 4}>
+    <Bouncer bg={props.color} size={props.size} />
+    <Bouncer bg={props.color} size={props.size} />
+    <Bouncer bg={props.color} size={props.size} />
   </Bouncers>
 );
 
