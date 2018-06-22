@@ -90,6 +90,33 @@ Configure [style-loader](https://github.com/webpack-contrib/style-loader) and [c
 
 Also consider configuring [postcss-loader](https://github.com/postcss/postcss-loader) with [autoprefixer](https://github.com/postcss/autoprefixer) if you need vendor prefixes.
 
+## Development workflow
+Before publishing a new version of `roo-ui` you may want to preview it in your application.
+
+*Note*: `styled-components` only supports having one instance of it. We are using a *hack* to get around this issue by linking it.
+
+### Linking
+
+Within the root directory of `roo-ui` run these commands. This will make these packages available to be linked. The packages `styled-components` and `@roo-ui/themes` are required. Add additional packages as required.
+
+```
+yarn workspace styled-components link
+yarn workspace @roo-ui/themes link
+yarn workspace @roo-ui/package-name-here link
+```
+
+Navigate to the application that is consuming `roo-ui`. In the root directory run this command. This will tell the application to use the dependencies in `roo-ui`.
+
+```
+yarn link styled-components @roo-ui/themes  @roo-ui/package-name-here
+```
+
+### Unlinking
+Run the same commands as your previously did, in the same directories but instead of writing `link` write `unlink`. Eg: `yarn workspace @roo-ui/themes unlink`.
+
+### Watch mode
+Once the packages are linked. You can run `yarn workspace @roo-ui/package-name-here run build --watch` from the `roo-ui` root directory.
+
 ## Contributing
 
 Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on adding new packages, or improving existing packages.
