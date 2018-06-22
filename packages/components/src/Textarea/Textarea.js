@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types';
-import tag from 'clean-tag';
-
 import { Input } from '..';
 
-const Textarea = Input.withComponent(tag.textarea);
+const Textarea = Input.extend``;
 
 Textarea.propTypes = {
   ...Input.propTypes,
@@ -12,6 +10,7 @@ Textarea.propTypes = {
 
 Textarea.defaultProps = {
   ...Input.defaultProps,
+  is: 'textarea',
   rows: 6,
 };
 
