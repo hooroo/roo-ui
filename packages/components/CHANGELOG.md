@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.38.2"></a>
+## [0.38.2](https://github.com/hooroo/roo-ui/compare/v0.38.1...v0.38.2) (2018-06-22)
+
+
+### Bug Fixes
+
+* Render textarea and select using expected elements 🕷 ([#94](https://github.com/hooroo/roo-ui/issues/94)) ([74e4b82](https://github.com/hooroo/roo-ui/commit/74e4b82))
+
+
+
+
 <a name="0.38.1"></a>
 ## [0.38.1](https://github.com/hooroo/roo-ui/compare/v0.38.0...v0.38.1) (2018-06-21)
 
