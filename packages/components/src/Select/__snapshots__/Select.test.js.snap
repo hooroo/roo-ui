@@ -53,7 +53,7 @@ exports[`<Select /> renders correctly 1`] = `
   display: none;
 }
 
-<Base
+<Clean.div
   blacklist={
     Array [
       "m",
@@ -75,8 +75,8 @@ exports[`<Select /> renders correctly 1`] = `
     ]
   }
   className="c0"
-  is="input"
+  is={[Function]}
 >
   Options
-</Base>
+</Clean.div>
 `;
