@@ -2,7 +2,7 @@ import React from 'react';
 import tag from 'clean-tag';
 import PropTypes from 'prop-types';
 import { color, size, width, themeGet } from 'styled-system';
-import styled, { keyframes, css } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Box from '../Box';
 
 const fadeIn = keyframes`
