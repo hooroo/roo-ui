@@ -397,6 +397,9 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
   width: 100%;
   margin-top: -;
   z-index: 2;
+  max-height: 14.375rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c4 {

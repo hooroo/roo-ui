@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
+import { rem } from 'polished';
 import lowerCase from 'lodash/lowerCase';
 import omit from 'lodash/omit';
 
@@ -19,6 +20,9 @@ const Menu = Box.extend`
   border-left: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
   border-right: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
   z-index: 2;
+  max-height: ${rem('230px')};
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 `;
 Menu.displayName = 'Menu';
 
