@@ -32,9 +32,14 @@ const Base = props => (
   </Wrapper>
 );
 
-const Select = Input.withComponent(Base).extend`
+const Select = Input.extend`
   border-radius: 0;
   padding-right: ${themeGet('space.8')};
 `;
+
+Select.defaultProps = {
+  ...Select.defaultProps,
+  is: Base,
+};
 
 export default Select;
