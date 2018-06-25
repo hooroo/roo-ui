@@ -13,6 +13,7 @@
     "test": "jest",
     "postinstall": "yarn build",
     "build": "yarn lerna run build",
+    "build:watch": "yarn lerna run build:watch --parallel --prefix --stream",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },
