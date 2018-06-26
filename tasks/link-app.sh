@@ -9,5 +9,4 @@ cd $1
 
 for package in ${packages[@]/*v*/}; do
   yarn link "$package"
-  echo "linked $package 🙌"
 done

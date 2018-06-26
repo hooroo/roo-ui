@@ -7,7 +7,6 @@ cd $1
 
 for package in ${packages[@]/*v*/}; do
   yarn unlink "$package"
-  echo "unlinked $package 🙌"
 done
 
 echo "reinstall dependencies"
