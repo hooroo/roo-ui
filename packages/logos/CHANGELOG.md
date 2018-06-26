@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.39.0"></a>
+# [0.39.0](https://github.com/hooroo/roo-ui/compare/v0.38.4...v0.39.0) (2018-06-26)
+
+
+### Features
+
+* add build:watch scripts ([#98](https://github.com/hooroo/roo-ui/issues/98)) ([bcae0bf](https://github.com/hooroo/roo-ui/commit/bcae0bf))
+
+
+
+
 <a name="0.25.2"></a>
 ## [0.25.2](https://github.com/hooroo/roo-ui/compare/v0.25.1...v0.25.2) (2018-06-04)
 
