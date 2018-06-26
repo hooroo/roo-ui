@@ -5,6 +5,7 @@ import { lighten, darken } from 'polished';
 import { Manager, Reference, Popper } from 'react-popper';
 import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
+import onClickOutside from 'react-onclickoutside';
 
 import { Flex, Box, Text, NakedButton, Icon, MaskedInput } from '../';
 
@@ -224,6 +225,13 @@ class DatepickerWrapper extends React.Component {
     }
   }
 
+  handleClickOutside = (event) => {
+    console.log(event);
+    this.setState({
+      calendarVisible: false,
+    });
+  }
+
   render() {
     const {
       calendarVisible, selectedDate, date,
@@ -252,7 +260,7 @@ class DatepickerWrapper extends React.Component {
             {({
               ref, style, placement, arrowProps,
               }) => (
-                <Popover innerRef={ref} style={style} data-placement={placement}>
+                <Popover className="ignore-react-onclickoutside" innerRef={ref} style={style} data-placement={placement}>
                   <div aria-hidden="true" ref={arrowProps.ref} style={arrowProps.style} />
 
                   <Datepicker
@@ -269,4 +277,4 @@ class DatepickerWrapper extends React.Component {
   }
 }
 
-export default DatepickerWrapper;
+export default onClickOutside(DatepickerWrapper);
