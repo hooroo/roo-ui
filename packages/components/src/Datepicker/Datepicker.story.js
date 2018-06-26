@@ -8,5 +8,5 @@ import README from './README.md';
 storiesOf('Components|Datepicker', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Datepicker />
+    <Datepicker onDateChange={console.log} />
   ));

@@ -6,7 +6,7 @@ import { Manager, Reference, Popper } from 'react-popper';
 import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 
-import { Flex, Box, Text, NakedButton, Icon } from '../';
+import { Flex, Box, Text, NakedButton, Icon, MaskedInput } from '../';
 
 const monthNamesShort = [
   'Jan',
@@ -63,14 +63,15 @@ const Day = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  &:after {
+  border: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
+  z-index: 1;
+
+   &:after {
     content: '';
     display: block;
     padding-bottom: 100%;
   }
-  border: ${themeGet('borders.1')} ${themeGet('colors.brand.secondary')};
-  background-color: ${themeGet('colors.ui.infoBackground')};
-  z-index: 1;
+
   ${props =>
     !props.selectable &&
     css`
@@ -78,8 +79,9 @@ const Day = styled.button`
       border-color: ${themeGet('colors.grey.2')};
       color: ${themeGet('colors.grey.2')};
       z-index: 0;
-    `} ${props =>
-  props.selected &&
+    `};
+
+  ${props => props.selected &&
     css`
       color: ${themeGet('colors.grey.1')};
       background-color: ${props =>
@@ -93,9 +95,10 @@ const EmptyDay = Day.withComponent('div').extend`
   border-color: transparent;
 `;
 
-// const Popover = () => (
+const Popover = Box.extend`
+  border: 1px solid ${themeGet('colors.grey.2')};
+`;
 
-// );
 
 const Datepicker = ({ selected, onDateSelected }) => (
   <Dayzed
@@ -188,32 +191,60 @@ const Datepicker = ({ selected, onDateSelected }) => (
 );
 
 class DatepickerWrapper extends React.Component {
-  state = { calendarVisible: false, selectedDate: null };
-
-  handleDateChange = ({ selected, selectable, date }) => {
-    this.setState(state => ({ selectedDate: date, calendarVisible: false }));
+  state = {
+    calendarVisible: false, selectedDate: null, date: '',
   };
 
-  handleClick = () => {
+  handleDateChange = ({ selected, selectable, date }) => {
+    this.setState(state => ({
+      selectedDate: date,
+      calendarVisible: false,
+      date: date.toLocaleDateString(),
+    }));
+  };
+
+  handleInputChange = (event) => {
+    this.setState({
+      selectedDate: null,
+      date: event.target.value,
+    });
+  }
+
+  toggleCalendar = () => {
     this.setState({ calendarVisible: !this.state.calendarVisible });
   }
 
+  handleKeyDown = (event) => {
+    const eventKey = event.key;
+
+    if (eventKey === 'Tab') {
+      this.setState({
+        calendarVisible: false,
+      });
+    }
+  }
+
   render() {
-    const { calendarVisible, selectedDate } = this.state;
+    const {
+      calendarVisible, selectedDate, date,
+    } = this.state;
+
     return (
       <Fragment>
         <Manager>
           <Reference>
             {({ ref }) => (
-              <button type="button" ref={ref} onClick={this.handleClick}>
-                {this.state.selectedDate && (
-                  selectedDate.toLocaleDateString()
-                )}
-
-                {!this.state.selectedDate && (
-                  <Text>Select date</Text>
-                )}
-              </button>
+              <Box innerRef={ref}>
+                <MaskedInput
+                  focus="true"
+                  placeholder="DD/MM/YYYY"
+                  mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
+                  onFocus={this.toggleCalendar}
+                  value={date}
+                  onChange={this.handleInputChange}
+                  onKeyDown={this.handleKeyDown}
+                />
+              </Box>
             )}
           </Reference>
           {calendarVisible && (
@@ -221,14 +252,14 @@ class DatepickerWrapper extends React.Component {
             {({
               ref, style, placement, arrowProps,
               }) => (
-                <Box innerRef={ref} style={style} data-placement={placement}>
-                  <div ref={arrowProps.ref} style={arrowProps.style} />
+                <Popover innerRef={ref} style={style} data-placement={placement}>
+                  <div aria-hidden="true" ref={arrowProps.ref} style={arrowProps.style} />
 
                   <Datepicker
                     selected={this.state.selectedDate}
                     onDateSelected={this.handleDateChange}
                   />
-                </Box>
+                </Popover>
             )}
           </Popper>
           )}
