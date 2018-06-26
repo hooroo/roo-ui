@@ -66,6 +66,33 @@ $ lerna exec -- <command>
 $ lerna exec -- rm -rf ./node_modules
 ```
 
+### Development workflow
+Before publishing a new version of `roo-ui` you may want to preview it in your application.
+Both linking and unlinking need to be run in the root directory of `roo-ui`.
+
+*Note*: `styled-components` only supports having one instance of it. We are using a *hack* to get around this issue by linking it.
+
+#### Linking
+This will setup linking between `roo-ui` and your app. Once linked, your app will look at your local version of `roo-ui`.
+
+```
+yarn link-app ~/path-to-your-app
+```
+
+#### Unlinking
+This will remove the linking between `roo-ui` and your app.
+
+```
+yarn unlink-app ~/path-to-your-app
+```
+
+#### Watch mode
+This will watch for changes in `roo-ui` and rebuild the files.
+
+```
+yarn run build:watch
+```
+
 <a name="packages"></a>
 ## Creating new packages
 
@@ -81,6 +108,7 @@ Every package should contain the following:
   {
     "name": "@roo-ui/example",
     "version": "0.0.0",
+    "license": "MIT",
     "publishConfig": {
       "access": "public"
     }

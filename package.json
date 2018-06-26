@@ -5,7 +5,8 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    ".dev/*"
   ],
   "scripts": {
     "lint": "eslint .",
@@ -15,7 +16,9 @@
     "build": "yarn lerna run build",
     "build:watch": "yarn lerna run build:watch --parallel --prefix --stream",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "link-app": "tasks/link-app.sh",
+    "unlink-app": "tasks/unlink-app.sh"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^3.3.11",
