@@ -7,10 +7,12 @@
   },
   "scripts": {
     "prepublish": "yarn build",
-    "build": "babel src -d dist && node ./parseIcons.js"
+    "build": "babel src -d dist && node ./parseIcons.js",
+    "build:watch": "onchange 'src/**/*.svg' -i -v -- yarn run build"
   },
   "devDependencies": {
     "glob": "^7.1.2",
+    "onchange": "^4.0.0",
     "svgi": "^1.1.0",
     "svgo": "^1.0.5"
   }
