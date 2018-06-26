@@ -108,6 +108,7 @@ Every package should contain the following:
   {
     "name": "@roo-ui/example",
     "version": "0.0.0",
+    "license": "MIT",
     "publishConfig": {
       "access": "public"
     }
