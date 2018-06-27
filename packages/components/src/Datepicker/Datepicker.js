@@ -100,6 +100,17 @@ const Popover = Box.extend`
   border: 1px solid ${themeGet('colors.grey.2')};
 `;
 
+const DateInput = MaskedInput.extend`
+   ${props => props.calendarOpen &&
+    css`
+      border-color: ${themeGet('colors.brand.secondary')};
+    `};
+`;
+
+DateInput.defaultProps = {
+  ...MaskedInput.defaultProps,
+  blacklist: [...Object.keys(MaskedInput.propTypes), 'calendarOpen'],
+};
 
 const Datepicker = ({ selected, onDateSelected }) => (
   <Dayzed
@@ -243,8 +254,8 @@ class DatepickerWrapper extends React.Component {
           <Reference>
             {({ ref }) => (
               <Box innerRef={ref}>
-                <MaskedInput
-                  focus="true"
+                <DateInput
+                  calendarOpen={calendarVisible}
                   placeholder="DD/MM/YYYY"
                   mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
                   onFocus={this.toggleCalendar}
