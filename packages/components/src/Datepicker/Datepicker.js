@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import Dayzed from 'dayzed';
 import { getDay, eachDay, format } from 'date-fns';
-import { lighten, darken } from 'polished';
+import { lighten, darken, triangle, rem } from 'polished';
 import { Manager, Reference, Popper } from 'react-popper';
 import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 import onClickOutside from 'react-onclickoutside';
 
-import { Flex, Box, Text, NakedButton, Icon, MaskedInput } from '../';
+import { Flex, Box, Text, NakedButton, Icon, Input, MaskedInput } from '../';
 
 const monthNamesShort = [
   'Jan',
@@ -29,6 +29,7 @@ const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const Wrapper = Flex.extend`
   position: relative;
+  background: ${themeGet('colors.white')};
   flex-direction: column;
 `;
 
@@ -84,10 +85,8 @@ const Day = styled.button`
 
   ${props => props.selected &&
     css`
-      color: ${themeGet('colors.grey.1')};
-      background-color: ${props =>
-    lighten(0.05, themeGet('colors.grey.2')(props))};
-      border-color: ${props => darken(0.05, themeGet('colors.grey.2')(props))};
+      background-color: ${themeGet('colors.ui.infoBackground')};
+      border-color: ${themeGet('colors.brand.secondary')};
     `};
 `;
 
@@ -97,10 +96,21 @@ const EmptyDay = Day.withComponent('div').extend`
 `;
 
 const Popover = Box.extend`
-  border: 1px solid ${themeGet('colors.grey.2')};
+`;
+
+const DateInputWrapper = Box.extend`
+  position: relative;
+
+  > ${Icon} {
+    position: absolute;
+    top: ${themeGet('space.3')};
+    right: ${themeGet('space.4')};
+  }
 `;
 
 const DateInput = MaskedInput.extend`
+  padding-right: ${themeGet('space.12')};
+
    ${props => props.calendarOpen &&
     css`
       border-color: ${themeGet('colors.brand.secondary')};
@@ -111,6 +121,34 @@ DateInput.defaultProps = {
   ...MaskedInput.defaultProps,
   blacklist: [...Object.keys(MaskedInput.propTypes), 'calendarOpen'],
 };
+
+const Triangle = Box.extend`
+  ${props =>
+    triangle({
+      pointingDirection: 'right', width: '20px', height: '20px', foregroundColor: themeGet('colors.grey.2')(props),
+    })
+};
+
+${props => props.placement === 'top' &&
+    css`
+      transform: rotate(90deg);
+  `};
+
+  ${props => props.placement === 'right' &&
+    css`
+      transform: rotate(270deg);
+  `};
+
+  ${props => props.placement === 'bottom' &&
+    css`
+      transform: rotate(-90deg);
+  `};
+
+  ${props => props.placement === 'left' &&
+    css`
+      transform: rotate(0);
+  `};
+`;
 
 const Datepicker = ({ selected, onDateSelected }) => (
   <Dayzed
@@ -222,25 +260,24 @@ class DatepickerWrapper extends React.Component {
     });
   }
 
-  toggleCalendar = () => {
-    this.setState({ calendarVisible: !this.state.calendarVisible });
+  openCalendar = () => {
+    this.setState({ calendarVisible: true });
+  }
+
+  closeCalendar = () => {
+    this.setState({ calendarVisible: false });
   }
 
   handleKeyDown = (event) => {
     const eventKey = event.key;
 
     if (eventKey === 'Tab') {
-      this.setState({
-        calendarVisible: false,
-      });
+      this.closeCalendar();
     }
   }
 
   handleClickOutside = (event) => {
-    console.log(event);
-    this.setState({
-      calendarVisible: false,
-    });
+    this.closeCalendar();
   }
 
   render() {
@@ -253,26 +290,27 @@ class DatepickerWrapper extends React.Component {
         <Manager>
           <Reference>
             {({ ref }) => (
-              <Box innerRef={ref}>
+              <DateInputWrapper innerRef={ref}>
                 <DateInput
                   calendarOpen={calendarVisible}
                   placeholder="DD/MM/YYYY"
                   mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
-                  onFocus={this.toggleCalendar}
+                  onFocus={this.openCalendar}
                   value={date}
                   onChange={this.handleInputChange}
                   onKeyDown={this.handleKeyDown}
                 />
-              </Box>
+                <Icon name="event" onClick={this.openCalendar} />
+              </DateInputWrapper>
             )}
           </Reference>
           {calendarVisible && (
-          <Popper placement="bottom">
+          <Popper>
             {({
               ref, style, placement, arrowProps,
               }) => (
-                <Popover className="ignore-react-onclickoutside" innerRef={ref} style={style} data-placement={placement}>
-                  <div aria-hidden="true" ref={arrowProps.ref} style={arrowProps.style} />
+                <Popover aria-hidden="true" className="ignore-react-onclickoutside" innerRef={ref} style={style} placement={placement}>
+                  <Triangle innerRef={arrowProps.ref} style={arrowProps.style} placement={placement} />
 
                   <Datepicker
                     selected={this.state.selectedDate}
