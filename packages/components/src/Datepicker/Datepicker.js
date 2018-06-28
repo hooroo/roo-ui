@@ -4,7 +4,7 @@ import { getDay, eachDay, format } from 'date-fns';
 import { lighten, darken, triangle, rem } from 'polished';
 import { Manager, Reference, Popper } from 'react-popper';
 import styled, { css } from 'styled-components';
-import { themeGet } from 'styled-system';
+import { themeGet, theme } from 'styled-system';
 import onClickOutside from 'react-onclickoutside';
 
 import { Flex, Box, Text, NakedButton, Icon, Input, MaskedInput } from '../';
@@ -29,17 +29,15 @@ const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const Wrapper = Flex.extend`
   position: relative;
-  background: ${themeGet('colors.white')};
+  background: ${themeGet('colors.grey.3')};
   flex-direction: column;
+  padding: ${themeGet('space.4')};
 `;
 
 const Nav = styled.div`
-  position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  top: 0;
-  left: 0;
 `;
 
 const NavButton = NakedButton.extend`
@@ -49,6 +47,10 @@ const NavButton = NakedButton.extend`
   box-shadow: ${themeGet('shadows.default')};
 `;
 
+const WeekDayNames = Flex.extend`
+  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
+`;
+
 const Days = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -56,23 +58,25 @@ const Days = styled.div`
   margin-right: 1px;
 `;
 
-const Day = styled.button`
-  color: ${themeGet('colors.grey.0')};
-  position: relative;
-  margin: 0 -1px -1px 0;
-  padding: 0;
+const DayWrapper = Box.extend`
   flex: 1 1 calc(100% / 7);
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
-  z-index: 1;
+  margin: 0 -1px -1px 0;
+  border: ${themeGet('borders.1')} ${themeGet('colors.grey.3')};
 
-   &:after {
+  &:after {
     content: '';
     display: block;
     padding-bottom: 100%;
   }
+`;
+
+const Day = styled.button`
+  color: ${themeGet('colors.grey.0')};
+  padding: 0;
+  width: 100%;
+  border: 2px solid transparent;
 
   ${props =>
     !props.selectable &&
@@ -80,7 +84,6 @@ const Day = styled.button`
       background-color: ${themeGet('colors.white')};
       border-color: ${themeGet('colors.grey.2')};
       color: ${themeGet('colors.grey.2')};
-      z-index: 0;
     `};
 
   ${props => props.selected &&
@@ -90,12 +93,13 @@ const Day = styled.button`
     `};
 `;
 
-const EmptyDay = Day.withComponent('div').extend`
+const EmptyDay = DayWrapper.withComponent('div').extend`
   background-color: transparent;
   border-color: transparent;
 `;
 
 const Popover = Box.extend`
+  min-width: ${rem('500px')};
 `;
 
 const DateInputWrapper = Box.extend`
@@ -125,7 +129,7 @@ DateInput.defaultProps = {
 const Triangle = Box.extend`
   ${props =>
     triangle({
-      pointingDirection: 'right', width: '20px', height: '20px', foregroundColor: themeGet('colors.grey.2')(props),
+      pointingDirection: 'right', width: '20px', height: '20px', foregroundColor: themeGet('colors.grey.3')(props),
     })
 };
 
@@ -163,7 +167,7 @@ const Datepicker = ({ selected, onDateSelected }) => (
         if (!calendars.length) return null;
 
         return (
-          <Wrapper>
+          <Wrapper boxShadow="heavy">
             <Nav>
               <NavButton {...getBackProps({ calendars })}>
                 <Icon name="chevronLeft" />
@@ -179,12 +183,13 @@ const Datepicker = ({ selected, onDateSelected }) => (
                 <Box
                   key={`${calendar.month}${calendar.year}`}
                   textAlign="center"
+                  width="100%"
                 >
                   <Text textStyle="caps" color="grey.1">
                     {monthNamesShort[calendar.month]} {calendar.year}
                   </Text>
 
-                  <Flex mt={6} mb={2}>
+                  <WeekDayNames mt={6} mb={2}>
                     {weekdayNamesShort.map(weekday => (
                       <Box
                         width={1 / 7}
@@ -200,11 +205,11 @@ const Datepicker = ({ selected, onDateSelected }) => (
                         </Text>
                       </Box>
                   ))}
-                  </Flex>
+                  </WeekDayNames>
 
                   <Days>
                     {calendar.weeks.map(week =>
-                    week.map((dateObj, index) => {
+                      week.map((dateObj, index) => {
                       if (!dateObj) {
                         return (
                           <EmptyDay
@@ -214,20 +219,24 @@ const Datepicker = ({ selected, onDateSelected }) => (
                           />
                         );
                       }
+
                       const { date, selected, selectable } = dateObj;
 
                       return (
-                        <Day
-                          type="button"
-                          selected={selected}
-                          selectable={selectable}
-                          key={`${calendar.year}${
-                            calendar.month
-                            }${index}`}
-                          {...getDateProps({ dateObj })}
+                        <DayWrapper key={`${calendar.year}${
+                          calendar.month
+                          }${index}`}
                         >
-                          <span>{date.getDate()}</span>
-                        </Day>
+                          <Day
+                            type="button"
+                            selected={selected}
+                            selectable={selectable}
+
+                            {...getDateProps({ dateObj })}
+                          >
+                            {date.getDate()}
+                          </Day>
+                        </DayWrapper>
                       );
                   }))}
                   </Days>
@@ -242,7 +251,7 @@ const Datepicker = ({ selected, onDateSelected }) => (
 
 class DatepickerWrapper extends React.Component {
   state = {
-    calendarVisible: false, selectedDate: null, date: '',
+    calendarVisible: true, selectedDate: null, date: '',
   };
 
   handleDateChange = ({ selected, selectable, date }) => {
