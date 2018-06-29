@@ -48,21 +48,15 @@ class Popover extends Component {
     isOpen: false,
   }
 
-  handleClick = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-  }
-
-  handleKeyDown = ({ key }) => {
-    if (key === 'Tab') {
-      this.closeCalendar();
-    }
-  }
-
   handleClickOutside = () => {
-    this.closeCalendar();
+    this.closePopover();
   }
 
-  closeCalendar = () => {
+  openPopover = () => {
+    this.setState({ isOpen: true });
+  }
+
+  closePopover = () => {
     this.setState({ isOpen: false });
   }
 
@@ -76,8 +70,8 @@ class Popover extends Component {
           {({ ref }) => (
             <Box innerRef={ref}>
               {control[0].props.children({
-                onClick: this.handleClick,
-                onTabOut: this.handleKeyDown,
+                openPopover: this.openPopover,
+                closePopover: this.closePopover,
                 isOpen: this.state.isOpen,
               })}
             </Box>

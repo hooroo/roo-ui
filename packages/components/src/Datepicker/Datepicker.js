@@ -285,18 +285,22 @@ class DatepickerWrapper extends React.Component {
     return (
       <Popover>
         <Popover.control>
-          {({ onClick, onKeyDown, isOpen }) => (
+          {({ openPopover, closePopover, isOpen }) => (
             <DateInputWrapper>
               <DateInput
                 outline={isOpen}
                 placeholder="DD/MM/YYYY"
                 mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
-                onFocus={onClick}
+                onFocus={openPopover}
                 value={date}
                 onChange={this.handleInputChange}
-                onKeyDown={onKeyDown}
+                onKeyDown={({ key }) => {
+                  if (key === 'Tab') {
+                    closePopover();
+                  }
+                }}
               />
-              <Icon name="event" onClick={onClick} />
+              <Icon name="event" onClick={openPopover} />
             </DateInputWrapper>
           )}
         </Popover.control>

@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
-import Popover from './Popover';
+import Popover from '.';
 import README from './README.md';
 
 import { Button } from '..';
@@ -12,11 +12,11 @@ storiesOf('Components|Popover', module)
   .add('default', () => (
     <Popover>
       <Popover.control>
-        {({ onClick }) => (
-          <Button onClick={onClick}>Open popover</Button>
+        {({ openPopover, closePopover }) => (
+          <Button primary onClick={openPopover} onKeyDown={closePopover}>Open popover</Button>
         )}
       </Popover.control>
 
-      Contents
+      <p>Popover contents</p>
     </Popover>
   ));
