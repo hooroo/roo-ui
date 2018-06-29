@@ -19,7 +19,6 @@
   "peerDependencies": {
     "clean-element": "^1.0.0",
     "clean-tag": "^1.0.4",
-    "date-fns": "^1.29.0",
     "dayzed": "^2.2.0",
     "polished": "^1.9.2",
     "react": "^16.2.0",
@@ -29,7 +28,6 @@
     "styled-system": "^2.2.1"
   },
   "dependencies": {
-    "date-fns": "^1.29.0",
     "dayzed": "^2.2.0",
     "downshift": "^2.0.10",
     "react-onclickoutside": "^6.7.1",

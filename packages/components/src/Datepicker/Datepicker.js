@@ -1,43 +1,20 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Dayzed from 'dayzed';
-import { getDay, eachDay, format } from 'date-fns';
-import { lighten, darken, triangle, rem } from 'polished';
-import { Manager, Reference, Popper } from 'react-popper';
 import styled, { css } from 'styled-components';
-import { themeGet, theme } from 'styled-system';
-import onClickOutside from 'react-onclickoutside';
+import { themeGet } from 'styled-system';
 
-import { Flex, Box, Text, NakedButton, Icon, Input, MaskedInput } from '../';
-
-const monthNamesShort = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
-];
-
-const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-
+import { Popover, Flex, Box, Text, NakedButton, Icon, MaskedInput } from '../';
 
 const Wrapper = Flex.extend`
   position: relative;
-  background: ${themeGet('colors.grey.3')};
   flex-direction: column;
-  padding: ${themeGet('space.4')};
 `;
 
 const Nav = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: absolute;
 `;
 
 const NavButton = NakedButton.extend`
@@ -45,9 +22,29 @@ const NavButton = NakedButton.extend`
   background: ${themeGet('colors.white')};
   color: ${themeGet('colors.grey.1')};
   box-shadow: ${themeGet('shadows.default')};
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    > ${Icon} {
+      fill: ${themeGet('colors.brand.primary')};
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+
+    > ${Icon} {
+      fill: ${themeGet('colors.grey.2')};
+    }
+  }
 `;
 
 const WeekDayNames = Flex.extend`
+  padding-bottom: ${themeGet('space.2')};
+  margin-bottom: ${themeGet('space.3')};
   border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
 `;
 
@@ -72,19 +69,31 @@ const DayWrapper = Box.extend`
   }
 `;
 
-const Day = styled.button`
+const Day = NakedButton.extend`
   color: ${themeGet('colors.grey.0')};
   padding: 0;
   width: 100%;
   border: 2px solid transparent;
 
-  ${props =>
-    !props.selectable &&
+  &:disabled {
+    cursor: not-allowed;
+    background-color: ${themeGet('colors.grey.2')};
+  }
+
+   ${props => props.selectable &&
     css`
       background-color: ${themeGet('colors.white')};
-      border-color: ${themeGet('colors.grey.2')};
-      color: ${themeGet('colors.grey.2')};
-    `};
+
+      &:hover,
+      &:focus {
+        outline: none;
+        border-color: ${themeGet('colors.brand.secondary')};
+      }
+
+      &:active {
+        background-color: ${themeGet('colors.ui.infoBackground')};
+      }
+  `};
 
   ${props => props.selected &&
     css`
@@ -93,14 +102,16 @@ const Day = styled.button`
     `};
 `;
 
+Day.defaultProps = {
+  ...Day.defaultProps,
+  blacklist: [...Object.keys(Day.propTypes), 'selectable'],
+};
+
 const EmptyDay = DayWrapper.withComponent('div').extend`
   background-color: transparent;
   border-color: transparent;
 `;
 
-const Popover = Box.extend`
-  min-width: ${rem('500px')};
-`;
 
 const DateInputWrapper = Box.extend`
   position: relative;
@@ -115,7 +126,7 @@ const DateInputWrapper = Box.extend`
 const DateInput = MaskedInput.extend`
   padding-right: ${themeGet('space.12')};
 
-   ${props => props.calendarOpen &&
+   ${props => props.outline &&
     css`
       border-color: ${themeGet('colors.brand.secondary')};
     `};
@@ -123,41 +134,19 @@ const DateInput = MaskedInput.extend`
 
 DateInput.defaultProps = {
   ...MaskedInput.defaultProps,
-  blacklist: [...Object.keys(MaskedInput.propTypes), 'calendarOpen'],
+  blacklist: [...Object.keys(MaskedInput.propTypes), 'outline'],
 };
 
-const Triangle = Box.extend`
-  ${props =>
-    triangle({
-      pointingDirection: 'right', width: '20px', height: '20px', foregroundColor: themeGet('colors.grey.3')(props),
-    })
-};
 
-${props => props.placement === 'top' &&
-    css`
-      transform: rotate(90deg);
-  `};
-
-  ${props => props.placement === 'right' &&
-    css`
-      transform: rotate(270deg);
-  `};
-
-  ${props => props.placement === 'bottom' &&
-    css`
-      transform: rotate(-90deg);
-  `};
-
-  ${props => props.placement === 'left' &&
-    css`
-      transform: rotate(0);
-  `};
-`;
-
-const Datepicker = ({ selected, onDateSelected }) => (
+const Datepicker = ({
+  onDateSelected, monthsToDisplay, minDate, maxDate, selectedDate, monthNames, weekdayNames,
+}) => (
   <Dayzed
     onDateSelected={onDateSelected}
-    selected={selected}
+    selected={selectedDate}
+    monthsToDisplay={monthsToDisplay}
+    minDate={minDate}
+    maxDate={maxDate}
     render={({
         calendars,
         getBackProps,
@@ -167,7 +156,7 @@ const Datepicker = ({ selected, onDateSelected }) => (
         if (!calendars.length) return null;
 
         return (
-          <Wrapper boxShadow="heavy">
+          <Wrapper>
             <Nav>
               <NavButton {...getBackProps({ calendars })}>
                 <Icon name="chevronLeft" />
@@ -184,25 +173,21 @@ const Datepicker = ({ selected, onDateSelected }) => (
                   key={`${calendar.month}${calendar.year}`}
                   textAlign="center"
                   width="100%"
+                  px={4}
                 >
-                  <Text textStyle="caps" color="grey.1">
-                    {monthNamesShort[calendar.month]} {calendar.year}
+                  <Text textStyle="caps">
+                    {monthNames[calendar.month]} {calendar.year}
                   </Text>
 
-                  <WeekDayNames mt={6} mb={2}>
-                    {weekdayNamesShort.map(weekday => (
+                  <WeekDayNames mt={5}>
+                    {weekdayNames.map(weekday => (
                       <Box
                         width={1 / 7}
                         key={`${calendar.month}${
                         calendar.year
                         }${weekday}`}
                       >
-                        <Text
-                          color="grey.1"
-                          fontSize="sm"
-                        >
-                          {weekday}
-                        </Text>
+                        <Text>{weekday}</Text>
                       </Box>
                   ))}
                   </WeekDayNames>
@@ -249,17 +234,37 @@ const Datepicker = ({ selected, onDateSelected }) => (
   />
 );
 
+Datepicker.defaultProps = {
+  monthNames: ['Jan', 'Feb', 'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec'],
+  weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+};
+
 class DatepickerWrapper extends React.Component {
-  state = {
-    calendarVisible: true, selectedDate: null, date: '',
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      selectedDate: props.selectedDate,
+      date: '',
+    };
+  }
 
   handleDateChange = ({ selected, selectable, date }) => {
     this.setState(state => ({
       selectedDate: date,
-      calendarVisible: false,
       date: date.toLocaleDateString(),
     }));
+
+    this.props.onDateSelected(date);
   };
 
   handleInputChange = (event) => {
@@ -269,70 +274,47 @@ class DatepickerWrapper extends React.Component {
     });
   }
 
-  openCalendar = () => {
-    this.setState({ calendarVisible: true });
-  }
-
-  closeCalendar = () => {
-    this.setState({ calendarVisible: false });
-  }
-
-  handleKeyDown = (event) => {
-    const eventKey = event.key;
-
-    if (eventKey === 'Tab') {
-      this.closeCalendar();
-    }
-  }
-
-  handleClickOutside = (event) => {
-    this.closeCalendar();
-  }
-
   render() {
     const {
-      calendarVisible, selectedDate, date,
+      date,
     } = this.state;
+    const {
+      monthsToDisplay, minDate, maxDate, onDateSelected, selectedDate,
+    } = this.props;
 
     return (
-      <Fragment>
-        <Manager>
-          <Reference>
-            {({ ref }) => (
-              <DateInputWrapper innerRef={ref}>
-                <DateInput
-                  calendarOpen={calendarVisible}
-                  placeholder="DD/MM/YYYY"
-                  mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
-                  onFocus={this.openCalendar}
-                  value={date}
-                  onChange={this.handleInputChange}
-                  onKeyDown={this.handleKeyDown}
-                />
-                <Icon name="event" onClick={this.openCalendar} />
-              </DateInputWrapper>
-            )}
-          </Reference>
-          {calendarVisible && (
-          <Popper>
-            {({
-              ref, style, placement, arrowProps,
-              }) => (
-                <Popover aria-hidden="true" className="ignore-react-onclickoutside" innerRef={ref} style={style} placement={placement}>
-                  <Triangle innerRef={arrowProps.ref} style={arrowProps.style} placement={placement} />
-
-                  <Datepicker
-                    selected={this.state.selectedDate}
-                    onDateSelected={this.handleDateChange}
-                  />
-                </Popover>
-            )}
-          </Popper>
+      <Popover>
+        <Popover.control>
+          {({ onClick, onKeyDown, isOpen }) => (
+            <DateInputWrapper>
+              <DateInput
+                outline={isOpen}
+                placeholder="DD/MM/YYYY"
+                mask={[/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/]}
+                onFocus={onClick}
+                value={date}
+                onChange={this.handleInputChange}
+                onKeyDown={onKeyDown}
+              />
+              <Icon name="event" onClick={onClick} />
+            </DateInputWrapper>
           )}
-        </Manager>
-      </Fragment>
+        </Popover.control>
+
+        <Datepicker
+          onDateSelected={this.handleDateChange}
+          monthsToDisplay={monthsToDisplay}
+          minDate={minDate}
+          maxDate={maxDate}
+          selectedDate={this.state.selectedDate}
+        />
+      </Popover>
     );
   }
 }
 
-export default onClickOutside(DatepickerWrapper);
+DatepickerWrapper.defaultProps = {
+  selectedDate: '',
+};
+
+export default DatepickerWrapper;
