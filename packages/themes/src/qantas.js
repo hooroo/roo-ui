@@ -26,7 +26,7 @@ const colors = {
   ],
   white: '#FFFFFF',
   text: '#323232',
-  starRating: '#fbcb3b',
+  starRating: '#FBCB3B',
 };
 
 const fontFamily = 'QantasCiutadella, sans-serif';
@@ -106,6 +106,8 @@ const textStyles = {
 
 const breakpoints = ['40rem', '52rem', '64rem'];
 
+const mediaQueries = breakpoints.map(n => `@media screen and (min-width: ${n})`);
+
 const maxWidths = {
   default: rem('1280px'),
 };
@@ -181,9 +183,15 @@ const buttons = {
   },
 };
 
+const gutters = {
+  default: 3,
+};
+
 export default {
+  gutters,
   colors,
   breakpoints,
+  mediaQueries,
   space,
   maxWidths,
   borders,
