@@ -11,15 +11,13 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
   className="c0"
   mb={3}
 >
-  <Container
-    gutter="default"
-    maxWidth="default"
+  <Box
+    px={4}
   >
     <Box
       py={4}
     >
       <Box
-        pl={1}
         pr={3}
       >
         <Icon
@@ -36,7 +34,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
         Hello world
       </Text>
     </Box>
-  </Container>
+  </Box>
 </Cleaned>
 `;
 
@@ -51,15 +49,13 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
   className="c0"
   mb={3}
 >
-  <Container
-    gutter="default"
-    maxWidth="default"
+  <Box
+    px={4}
   >
     <Box
       py={4}
     >
       <Box
-        pl={1}
         pr={3}
       >
         <Icon
@@ -76,7 +72,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
         Hello world
       </Text>
     </Box>
-  </Container>
+  </Box>
 </Cleaned>
 `;
 
@@ -91,15 +87,13 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
   className="c0"
   mb={3}
 >
-  <Container
-    gutter="default"
-    maxWidth="default"
+  <Box
+    px={4}
   >
     <Box
       py={4}
     >
       <Box
-        pl={1}
         pr={3}
       >
         <Icon
@@ -116,11 +110,11 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
         Hello world
       </Text>
     </Box>
-  </Container>
+  </Box>
 </Cleaned>
 `;
 
-exports[`<Alert /> renders correctly 1`] = `
+exports[`<Alert /> contained renders correctly 1`] = `
 .c0 {
   margin-bottom: 0.75rem;
   background-color: #F4F5F6;
@@ -148,5 +142,35 @@ exports[`<Alert /> renders correctly 1`] = `
       </Text>
     </Box>
   </Container>
+</Cleaned>
+`;
+
+exports[`<Alert /> renders correctly 1`] = `
+.c0 {
+  margin-bottom: 0.75rem;
+  background-color: #F4F5F6;
+}
+
+<Cleaned
+  bg="grey.3"
+  className="c0"
+  mb={3}
+>
+  <Box
+    px={4}
+  >
+    <Box
+      py={4}
+    >
+      <Text
+        hidden={false}
+        mb={0}
+        textAlign="left"
+        textStyle="text"
+      >
+        Hello world
+      </Text>
+    </Box>
+  </Box>
 </Cleaned>
 `;
