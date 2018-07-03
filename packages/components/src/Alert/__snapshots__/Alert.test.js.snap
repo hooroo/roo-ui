@@ -12,8 +12,8 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
   mb={3}
 >
   <Container
+    gutter="default"
     maxWidth="default"
-    px={3}
   >
     <Box
       py={4}
@@ -52,8 +52,8 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
   mb={3}
 >
   <Container
+    gutter="default"
     maxWidth="default"
-    px={3}
   >
     <Box
       py={4}
@@ -92,8 +92,8 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
   mb={3}
 >
   <Container
+    gutter="default"
     maxWidth="default"
-    px={3}
   >
     <Box
       py={4}
@@ -132,8 +132,8 @@ exports[`<Alert /> renders correctly 1`] = `
   mb={3}
 >
   <Container
+    gutter="default"
     maxWidth="default"
-    px={3}
   >
     <Box
       py={4}
