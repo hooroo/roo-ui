@@ -10,40 +10,47 @@ const Base = ({
   children,
   icon,
   onClose,
+  contained,
   ...props
-}) => (
-  <CleanDiv {...props}>
-    <Container>
-      <Flex py={4}>
-        {icon && (
-          <Box pl={1} pr={3}>
-            <Icon {...icon} />
-          </Box>
-        )}
+}) => {
+  const Wrapper = contained ? Container : Box;
 
-        <Text mb={0} textAlign="left">
-          {children}
-        </Text>
+  return (
+    <CleanDiv {...props}>
+      <Wrapper px={contained ? undefined : 4}>
+        <Flex py={4}>
+          {icon && (
+            <Box pr={3}>
+              <Icon {...icon} />
+            </Box>
+          )}
 
-        {onClose && (
-          <Box ml="auto" pr={1} pl={3}>
-            <NakedButton onClick={onClose}>
-              <Icon name="close" />
-            </NakedButton>
-          </Box>
-        )}
-      </Flex>
-    </Container>
-  </CleanDiv>
-);
+          <Text mb={0} textAlign="left">
+            {children}
+          </Text>
+
+          {onClose && (
+            <Box ml="auto" pl={3}>
+              <NakedButton onClick={onClose}>
+                <Icon name="close" />
+              </NakedButton>
+            </Box>
+          )}
+        </Flex>
+      </Wrapper>
+    </CleanDiv>
+  );
+};
 
 Base.propTypes = {
   children: PropTypes.node.isRequired,
   icon: PropTypes.shape(Icon.propTypes),
+  contained: PropTypes.bool,
   onClose: PropTypes.func,
 };
 
 Base.defaultProps = {
+  contained: false,
   icon: null,
   onClose: null,
 };

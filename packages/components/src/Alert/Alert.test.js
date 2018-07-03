@@ -23,6 +23,19 @@ describe('<Alert />', () => {
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
+  describe('contained', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(
+        <Alert contained>Hello world</Alert>,
+        theme,
+      ).dive();
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   describe('<Alert.success />', () => {
     beforeEach(() => {
       wrapper = shallowWithTheme(

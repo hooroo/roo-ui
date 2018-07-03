@@ -104,9 +104,149 @@ exports[`<Container /> renders correctly 1`] = `
     ]
   }
   className="c0"
+  gutter="default"
   is="div"
   maxWidth="default"
-  px={3}
+>
+  Hello world
+</Clean.div>
+`;
+
+exports[`<Container /> with a responsive gutter renders correctly 1`] = `
+.c0 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media screen and (min-width:40rem) {
+  .c0 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width:52rem) {
+  .c0 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+}
+
+@media screen and (min-width:64rem) {
+  .c0 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+<Clean.div
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "fontSize",
+      "f",
+      "color",
+      "bg",
+      "fontFamily",
+      "font",
+      "textAlign",
+      "align",
+      "lineHeight",
+      "fontWeight",
+      "letterSpacing",
+      "display",
+      "maxWidth",
+      "minWidth",
+      "height",
+      "maxHeight",
+      "minHeight",
+      "size",
+      "ratio",
+      "alignItems",
+      "alignContent",
+      "justifyContent",
+      "justify",
+      "flexWrap",
+      "wrap",
+      "flexBasis",
+      "flexDirection",
+      "flex",
+      "justifySelf",
+      "alignSelf",
+      "order",
+      "gridGap",
+      "gridColumnGap",
+      "gridRowGap",
+      "gridColumn",
+      "gridRow",
+      "gridAutoFlow",
+      "gridAutoColumns",
+      "gridAutoRows",
+      "gridTemplateColumns",
+      "gridTemplateRows",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "borderRadius",
+      "boxShadow",
+      "background",
+      "backgroundImage",
+      "bgImage",
+      "backgroundSize",
+      "bgSize",
+      "backgroundPosition",
+      "bgPosition",
+      "backgroundRepeat",
+      "bgRepeat",
+      "position",
+      "zIndex",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "hover",
+      "focus",
+      "active",
+      "disabledStyle",
+      "textStyle",
+      "colors",
+      "buttonStyle",
+      "borderWidth",
+    ]
+  }
+  className="c0"
+  gutter={
+    Array [
+      3,
+      6,
+      9,
+      12,
+    ]
+  }
+  is="div"
+  maxWidth="default"
 >
   Hello world
 </Clean.div>

@@ -22,9 +22,10 @@ export default (
 
 ## Properties
 
-| Name      | Description                       | Type    | Default | Required? |
-|:----------|:----------------------------------|:--------|:--------|:----------|
-| `onClose` | called when close icon is clicked | `func`  | -       | -         |
-| `icon`    | render an icon                    | `shape` | -       | -         |
+| Name        | Description                                           | Type    | Default | Required? |
+|:------------|:------------------------------------------------------|:--------|:--------|:----------|
+| `onClose`   | called when close icon is clicked                     | `func`  | -       | -         |
+| `contained` | wrap the contents of the <Alert /> in a <Container /> | `bool`  | false   | -         |
+| `icon`      | render an icon                                        | `shape` | -       | -         |
 
 Refer to [<Icon />](../Icon) for available `icon` properties.
