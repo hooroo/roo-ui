@@ -22,12 +22,10 @@ export default (
 
 ```js
 import { Link as RouterLink } from 'react-router-dom';
-import { Link as StyledLink } from '@roo-ui/components';
-
-const Link = StyledLink.withComponent(RouterLink);
+import { Link } from '@roo-ui/components';
 
 export default (
-  <Link>Hello world</Link>
+  <Link is={RouterLink}>Hello world</Link>
 );
 ```
 
