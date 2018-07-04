@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
 
-import { Box, NakedButton } from '../../../';
+import { Flex, NakedButton } from '../../../';
 
-const Wrapper = Box.extend`
+const Wrapper = Flex.extend`
   flex: 1 1 calc(100% / 7);
-  display: flex;
   justify-content: center;
   margin: 0 -1px -1px 0;
   border: ${themeGet('borders.1')} ${themeGet('colors.grey.3')};
@@ -58,7 +57,6 @@ DayButton.defaultProps = {
 };
 
 export const EmptyDay = Wrapper.withComponent('div').extend`
-  background-color: transparent;
   border-color: transparent;
 `;
 
