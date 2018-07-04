@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Calendar /> renders correctly 1`] = `
+<Dayzed
+  date={2018-07-03T23:27:39.100Z}
+  firstDayOfWeek={0}
+  monthsToDisplay={1}
+  onOffsetChanged={[Function]}
+  render={[Function]}
+  showOutsideDays={false}
+/>
+`;

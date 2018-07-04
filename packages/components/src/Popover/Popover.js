@@ -78,7 +78,6 @@ class Popover extends Component {
           )}
         </Reference>
 
-
         {this.state.isOpen && (
           <Popper>
             {({
