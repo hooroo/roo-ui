@@ -3,28 +3,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { themeGet } from 'styled-system';
 
-import { Flex, Box, Text, Icon } from '../';
-import { Day, EmptyDay } from './components/Day';
-import { Nav, NavButton } from './components/Nav';
+import { Flex, Box } from '../';
+import { Day, EmptyDay, Days } from './components/Days';
+import { Weekday, Weekdays } from './components/Weekdays';
+import Nav from './components/Nav';
 import CalendarMonth from './components/CalendarMonth';
 
 const Wrapper = Box.extend`
   position: relative;
-`;
-
-const WeekDayNames = Flex.extend`
-  padding-bottom: ${themeGet('space.2')};
-  margin-top: ${themeGet('space.5')};
-  margin-bottom: ${themeGet('space.3')};
-  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
-`;
-
-const Weeks = Flex.extend`
-  flex-wrap: wrap;
-  margin-bottom: 1px;
-  margin-right: 1px;
 `;
 
 const Calendar = ({
@@ -48,38 +35,28 @@ const Calendar = ({
 
         return (
           <Wrapper>
-            <Nav>
-              <NavButton {...getBackProps({ calendars })}>
-                <Icon name="chevronLeft" />
-              </NavButton>
-
-              <NavButton {...getForwardProps({ calendars })}>
-                <Icon name="chevronRight" />
-              </NavButton>
-            </Nav>
+            <Nav
+              prevProps={getBackProps({ calendars })}
+              nextProps={getForwardProps({ calendars })}
+            />
 
             <Flex flexWrap="wrap">
               {calendars.map(calendar => (
                 <CalendarMonth
                   key={`${calendar.month}${calendar.year}`}
                   monthsToDisplay={monthsToDisplay}
+                  month={monthNames[calendar.month]}
+                  year={calendar.year}
                 >
-                  <Text textStyle="caps">
-                    {monthNames[calendar.month]} {calendar.year}
-                  </Text>
-
-                  <WeekDayNames>
+                  <Weekdays>
                     {weekdayNames.map(weekday => (
-                      <Box
-                        width={1 / 7}
-                        key={`${calendar.month}${calendar.year}${weekday}`}
-                      >
-                        <Text>{weekday}</Text>
-                      </Box>
+                      <Weekday key={`${calendar.month}${calendar.year}${weekday}`}>
+                        {weekday}
+                      </Weekday>
                     ))}
-                  </WeekDayNames>
+                  </Weekdays>
 
-                  <Weeks>
+                  <Days>
                     {calendar.weeks.map(week =>
                       week.map((dateObj, index) => {
                         if (!dateObj) {
@@ -98,7 +75,7 @@ const Calendar = ({
                           </Day>
                         );
                       }))}
-                  </Weeks>
+                  </Days>
                 </CalendarMonth>
               ))}
             </Flex>

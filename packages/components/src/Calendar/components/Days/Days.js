@@ -5,7 +5,7 @@ import { css } from 'styled-components';
 
 import { Flex, NakedButton } from '../../../';
 
-const Wrapper = Flex.extend`
+const DayButtonWrapper = Flex.extend`
   flex: 1 1 calc(100% / 7);
   justify-content: center;
   margin: 0 -1px -1px 0;
@@ -56,16 +56,22 @@ DayButton.defaultProps = {
   blacklist: [...Object.keys(NakedButton.propTypes), 'selectable'],
 };
 
-export const EmptyDay = Wrapper.withComponent('div').extend`
+export const Days = Flex.extend`
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+  margin-right: 1px;
+`;
+
+export const EmptyDay = DayButtonWrapper.withComponent('div').extend`
   border-color: transparent;
 `;
 
 export const Day = ({ children, ...rest }) => (
-  <Wrapper>
+  <DayButtonWrapper>
     <DayButton {...rest}>
       {children}
     </DayButton>
-  </Wrapper>
+  </DayButtonWrapper>
 );
 
 Day.propTypes = {

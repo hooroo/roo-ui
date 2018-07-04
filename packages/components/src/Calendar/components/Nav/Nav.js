@@ -1,15 +1,16 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 
-import { Box, NakedButton } from '../../../';
+import { Flex, NakedButton, Icon } from '../../../';
 
-export const Nav = Box.extend`
+const Wrapper = Flex.extend`
   width: 100%;
   position: absolute;
-  display: flex;
   justify-content: space-between;
 `;
 
-export const NavButton = NakedButton.extend`
+const NavButton = NakedButton.extend`
   border-radius: ${themeGet('radii.rounded')};
   background: ${themeGet('colors.white')};
   color: ${themeGet('colors.grey.1')};
@@ -28,3 +29,21 @@ export const NavButton = NakedButton.extend`
   }
 `;
 
+const Nav = ({ prevProps, nextProps }) => (
+  <Wrapper>
+    <NavButton {...prevProps}>
+      <Icon name="chevronLeft" />
+    </NavButton>
+
+    <NavButton {...nextProps}>
+      <Icon name="chevronRight" />
+    </NavButton>
+  </Wrapper>
+);
+
+Nav.propTypes = {
+  prevProps: PropTypes.shape().isRequired,
+  nextProps: PropTypes.shape().isRequired,
+};
+
+export default Nav;
