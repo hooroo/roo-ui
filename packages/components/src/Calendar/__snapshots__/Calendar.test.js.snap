@@ -2,11 +2,15 @@
 
 exports[`<Calendar /> renders correctly 1`] = `
 <Dayzed
-  date={2018-07-03T23:27:39.100Z}
+  date={2018-07-03T00:00:00.000Z}
   firstDayOfWeek={0}
+  maxDate={null}
+  minDate={null}
   monthsToDisplay={1}
+  onDateSelected={[MockFunction]}
   onOffsetChanged={[Function]}
   render={[Function]}
+  selected={null}
   showOutsideDays={false}
 />
 `;

@@ -1,24 +1,27 @@
+/* eslint-disable react/no-array-index-key */
+
 import React from 'react';
+import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 import { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 
 import { Flex, Box, Text, NakedButton, Icon } from '../';
+import { Day, EmptyDay } from './components/Day';
 
-const Wrapper = Flex.extend`
+const Wrapper = Box.extend`
   position: relative;
-  flex-direction: column;
 `;
 
 const Nav = Box.extend`
   width: 100%;
+  position: absolute;
   display: flex;
   justify-content: space-between;
-  position: absolute;
 `;
 
 const NavButton = NakedButton.extend`
-  border-radius: 50%;
+  border-radius: ${themeGet('radii.rounded')};
   background: ${themeGet('colors.white')};
   color: ${themeGet('colors.grey.1')};
   box-shadow: ${themeGet('shadows.default')};
@@ -26,80 +29,14 @@ const NavButton = NakedButton.extend`
   &:hover,
   &:focus {
     outline: none;
-
-    > ${Icon} {
-      fill: ${themeGet('colors.brand.primary')};
-    }
+    color: ${themeGet('colors.brand.primary')};
   }
 
   &:disabled {
     cursor: not-allowed;
     box-shadow: none;
-
-    > ${Icon} {
-      fill: ${themeGet('colors.grey.2')};
-    }
+    color: ${themeGet('colors.grey.2')};
   }
-`;
-
-const WeekDayNames = Flex.extend`
-  padding-bottom: ${themeGet('space.2')};
-  margin-bottom: ${themeGet('space.3')};
-  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
-`;
-
-const Days = Box.extend`
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1px;
-  margin-right: 1px;
-`;
-
-const DayWrapper = Box.extend`
-  flex: 1 1 calc(100% / 7);
-  display: flex;
-  justify-content: center;
-  margin: 0 -1px -1px 0;
-  border: ${themeGet('borders.1')} ${themeGet('colors.grey.3')};
-
-  &:after {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
-  }
-`;
-
-const Day = NakedButton.extend`
-  color: ${themeGet('colors.grey.0')};
-  padding: 0;
-  width: 100%;
-  border: 2px solid transparent;
-
-  &:disabled {
-    cursor: not-allowed;
-    background-color: ${themeGet('colors.grey.2')};
-  }
-
-   ${props => props.selectable &&
-    css`
-      background-color: ${themeGet('colors.white')};
-
-      &:hover,
-      &:focus {
-        outline: none;
-        border-color: ${themeGet('colors.brand.secondary')};
-      }
-
-      &:active {
-        background-color: ${themeGet('colors.ui.infoBackground')};
-      }
-  `};
-
-  ${props => props.selected &&
-    css`
-      background-color: ${themeGet('colors.ui.infoBackground')};
-      border-color: ${themeGet('colors.brand.secondary')};
-    `};
 `;
 
 const CalendarMonth = Box.extend`
@@ -118,23 +55,30 @@ const CalendarMonth = Box.extend`
     `};
 `;
 
-Day.defaultProps = {
-  ...Day.defaultProps,
-  blacklist: [...Object.keys(Day.propTypes), 'selectable'],
+CalendarMonth.defaultProps = {
+  ...Box.defaultProps,
+  blacklist: [...Object.keys(Box.propTypes), 'monthsToDisplay'],
 };
 
-const EmptyDay = DayWrapper.withComponent('div').extend`
-  background-color: transparent;
-  border-color: transparent;
+const WeekDayNames = Flex.extend`
+  padding-bottom: ${themeGet('space.2')};
+  margin-bottom: ${themeGet('space.3')};
+  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
 `;
 
+const Weeks = Flex.extend`
+  flex-wrap: wrap;
+  margin-bottom: 1px;
+  margin-right: 1px;
+`;
 
 const Calendar = ({
-  onDateSelected, monthsToDisplay, minDate, maxDate, selectedDate, monthNames, weekdayNames,
+  initialMonth, onDateSelected, monthsToDisplay, minDate, maxDate, selected, monthNames, weekdayNames,
 }) => (
   <Dayzed
+    date={initialMonth}
     onDateSelected={onDateSelected}
-    selected={selectedDate}
+    selected={selected}
     monthsToDisplay={monthsToDisplay}
     minDate={minDate}
     maxDate={maxDate}
@@ -172,48 +116,33 @@ const Calendar = ({
                     {weekdayNames.map(weekday => (
                       <Box
                         width={1 / 7}
-                        key={`${calendar.month}${
-                          calendar.year
-                          }${weekday}`}
+                        key={`${calendar.month}${calendar.year}${weekday}`}
                       >
                         <Text>{weekday}</Text>
                       </Box>
                     ))}
                   </WeekDayNames>
 
-                  <Days>
+                  <Weeks>
                     {calendar.weeks.map(week =>
                       week.map((dateObj, index) => {
                         if (!dateObj) {
                           return (
-                            <EmptyDay
-                              key={`${calendar.year}${
-                                calendar.month
-                                }${index}`}
-                            />
+                            <EmptyDay key={`${calendar.year}${calendar.month}${index}`} />
                           );
                         }
-
-                        const { date, selected, selectable } = dateObj;
-
                         return (
-                          <DayWrapper key={`${calendar.year}${
-                            calendar.month
-                            }${index}`}
+                          <Day
+                            key={`${calendar.year}${calendar.month}${index}`}
+                            selected={dateObj.selected}
+                            selectable={dateObj.selectable}
+                            {...getDateProps({ dateObj })}
                           >
-                            <Day
-                              type="button"
-                              selected={selected}
-                              selectable={selectable}
-
-                              {...getDateProps({ dateObj })}
-                            >
-                              {date.getDate()}
-                            </Day>
-                          </DayWrapper>
+                            {dateObj.date.getDate()}
+                          </Day>
                         );
                       }))}
-                  </Days>
+                  </Weeks>
                 </CalendarMonth>
               ))}
             </Flex>
@@ -224,8 +153,24 @@ const Calendar = ({
 );
 
 Calendar.defaultProps = {
+  monthsToDisplay: 1,
+  initialMonth: null,
+  selected: null,
+  minDate: null,
+  maxDate: null,
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+};
+
+Calendar.propTypes = {
+  monthsToDisplay: PropTypes.number,
+  onDateSelected: PropTypes.func.isRequired,
+  weekdayNames: PropTypes.arrayOf(PropTypes.string),
+  initialMonth: PropTypes.instanceOf(Date),
+  minDate: PropTypes.instanceOf(Date),
+  maxDate: PropTypes.instanceOf(Date),
+  selected: PropTypes.instanceOf(Date),
+  monthNames: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Calendar;

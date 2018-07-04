@@ -1,7 +1,10 @@
+/* eslint-disable no-console */
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { number, date } from '@storybook/addon-knobs';
 import { withDocs } from 'storybook-readme';
+import { addDays, subDays } from 'date-fns';
 
 import Calendar from './Calendar';
 import README from './README.md';
@@ -16,9 +19,9 @@ storiesOf('Components|Calendar', module)
   .add('default', () => (
     <Calendar
       monthsToDisplay={number('Months to display', 1)}
-      minDate={dateKnob('Min date', new Date('2018-06-12'))}
-      maxDate={dateKnob('Max date', new Date('2018-08-12'))}
-      selectedDate={dateKnob('Selected date', new Date('2018-06-20'))}
+      minDate={dateKnob('Min date', subDays(new Date(), 20))}
+      maxDate={dateKnob('Max date', addDays(new Date(), 60))}
+      selected={dateKnob('Selected date', new Date())}
       onDateSelected={console.log}
     />
   ));

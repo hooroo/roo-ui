@@ -7,9 +7,13 @@ import Calendar from '.';
 
 describe('<Calendar />', () => {
   let wrapper;
+  const props = {
+    initialMonth: new Date('2018-07-03'),
+    onDateSelected: jest.fn(),
+  };
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Calendar />, theme);
+    wrapper = shallowWithTheme(<Calendar {...props} />, theme);
   });
 
   it('renders correctly', () => {
