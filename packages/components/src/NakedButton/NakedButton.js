@@ -16,6 +16,7 @@ const NakedButton = styled(tag.button).attrs({
   line-height: normal;
   appearance: none;
   cursor: pointer;
+  vertical-align: middle;
 
   ${space}
 `;
