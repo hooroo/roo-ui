@@ -10,12 +10,12 @@ const CalendarMonth = Box.extend`
 
   ${props => props.monthsToDisplay === 2 &&
     css`
-      width: 50%;
+      width: ${100 / 2}%;
     `};
 
   ${props => props.monthsToDisplay === 3 &&
     css`
-      width: 33%;
+      width: ${100 / 3}%;
     `};
 `;
 
