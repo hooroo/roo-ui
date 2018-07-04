@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> renders correctly 1`] = `
+.c0 {
+  text-align: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+<Clean.div
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "minWidth",
+      "maxWidth",
+      "height",
+      "minHeight",
+      "maxHeight",
+      "color",
+      "bg",
+      "textAlign",
+      "align",
+      "boxShadow",
+      "borderRadius",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "flexBasis",
+      "flex",
+      "monthsToDisplay",
+    ]
+  }
+  className="c0"
+  is="div"
+>
+  Days
+</Clean.div>
+`;

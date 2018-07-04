@@ -83,9 +83,20 @@ class Popover extends Component {
             {({
               ref, style, placement, arrowProps,
             }) => (
-              <ContentWrapper boxShadow="heavy" aria-hidden="true" innerRef={ref} style={style} placement={placement} className="ignore-react-onclickoutside">
+              <ContentWrapper
+                boxShadow="heavy"
+                aria-hidden="true"
+                innerRef={ref}
+                style={style}
+                placement={placement}
+                className="ignore-react-onclickoutside"
+              >
                 {content}
-                <Triangle innerRef={arrowProps.ref} style={arrowProps.style} placement={placement} />
+                <Triangle
+                  innerRef={arrowProps.ref}
+                  style={arrowProps.style}
+                  placement={placement}
+                />
               </ContentWrapper>
             )}
           </Popper>

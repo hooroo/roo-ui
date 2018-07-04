@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> renders correctly 1`] = `
+.c0 {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+<Clean.div
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "fontSize",
+      "f",
+      "color",
+      "bg",
+      "fontFamily",
+      "font",
+      "textAlign",
+      "align",
+      "lineHeight",
+      "fontWeight",
+      "letterSpacing",
+      "display",
+      "maxWidth",
+      "minWidth",
+      "height",
+      "maxHeight",
+      "minHeight",
+      "size",
+      "ratio",
+      "alignItems",
+      "alignContent",
+      "justifyContent",
+      "justify",
+      "flexWrap",
+      "wrap",
+      "flexBasis",
+      "flexDirection",
+      "flex",
+      "justifySelf",
+      "alignSelf",
+      "order",
+      "gridGap",
+      "gridColumnGap",
+      "gridRowGap",
+      "gridColumn",
+      "gridRow",
+      "gridAutoFlow",
+      "gridAutoColumns",
+      "gridAutoRows",
+      "gridTemplateColumns",
+      "gridTemplateRows",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "borderRadius",
+      "boxShadow",
+      "background",
+      "backgroundImage",
+      "bgImage",
+      "backgroundSize",
+      "bgSize",
+      "backgroundPosition",
+      "bgPosition",
+      "backgroundRepeat",
+      "bgRepeat",
+      "position",
+      "zIndex",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "hover",
+      "focus",
+      "active",
+      "disabledStyle",
+      "textStyle",
+      "colors",
+      "buttonStyle",
+      "borderWidth",
+    ]
+  }
+  className="c0"
+  is="div"
+/>
+`;
+
+exports[`<NavButton /> renders correctly 1`] = `
+.c0 {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border-radius: 1000px;
+  background: #FFFFFF;
+  color: #666666;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+.c0:hover,
+.c0:focus {
+  outline: none;
+  color: #E40000;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #DADADA;
+}
+
+<Clean.button
+  className="c0"
+  type="button"
+>
+  Next
+</Clean.button>
+`;

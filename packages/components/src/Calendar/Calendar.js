@@ -3,65 +3,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 
-import { Flex, Box, Text, NakedButton, Icon } from '../';
+import { Flex, Box, Text, Icon } from '../';
 import { Day, EmptyDay } from './components/Day';
+import { Nav, NavButton } from './components/Nav';
+import CalendarMonth from './components/CalendarMonth';
 
 const Wrapper = Box.extend`
   position: relative;
 `;
 
-const Nav = Box.extend`
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-`;
-
-const NavButton = NakedButton.extend`
-  border-radius: ${themeGet('radii.rounded')};
-  background: ${themeGet('colors.white')};
-  color: ${themeGet('colors.grey.1')};
-  box-shadow: ${themeGet('shadows.default')};
-
-  &:hover,
-  &:focus {
-    outline: none;
-    color: ${themeGet('colors.brand.primary')};
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    box-shadow: none;
-    color: ${themeGet('colors.grey.2')};
-  }
-`;
-
-const CalendarMonth = Box.extend`
-  text-align: center;
-  padding: 0 ${themeGet('space.4')};
-  width: 100%;
-
-  ${props => props.monthsToDisplay === 2 &&
-    css`
-      width: 50%;
-    `};
-
-  ${props => props.monthsToDisplay === 3 &&
-    css`
-      width: 33%;
-    `};
-`;
-
-CalendarMonth.defaultProps = {
-  ...Box.defaultProps,
-  blacklist: [...Object.keys(Box.propTypes), 'monthsToDisplay'],
-};
-
 const WeekDayNames = Flex.extend`
   padding-bottom: ${themeGet('space.2')};
+  margin-top: ${themeGet('space.5')};
   margin-bottom: ${themeGet('space.3')};
   border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
 `;
@@ -73,7 +28,8 @@ const Weeks = Flex.extend`
 `;
 
 const Calendar = ({
-  initialMonth, onDateSelected, monthsToDisplay, minDate, maxDate, selected, monthNames, weekdayNames,
+  initialMonth, onDateSelected, monthsToDisplay,
+  minDate, maxDate, selected, monthNames, weekdayNames,
 }) => (
   <Dayzed
     date={initialMonth}
@@ -112,7 +68,7 @@ const Calendar = ({
                     {monthNames[calendar.month]} {calendar.year}
                   </Text>
 
-                  <WeekDayNames mt={5}>
+                  <WeekDayNames>
                     {weekdayNames.map(weekday => (
                       <Box
                         width={1 / 7}
