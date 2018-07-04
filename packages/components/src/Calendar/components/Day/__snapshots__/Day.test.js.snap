@@ -32,6 +32,10 @@ exports[`<Day /> renders correctly 1`] = `
 
 exports[`<EmptyDay /> renders correctly 1`] = `
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex: 1 1 calc(100% / 7);
   -ms-flex: 1 1 calc(100% / 7);
   flex: 1 1 calc(100% / 7);
