@@ -39,7 +39,7 @@ Wrapper.defaultProps = {
 
 CalendarMonth.defaultProps = {
   monthsToDisplay: 1,
-}
+};
 
 CalendarMonth.propTypes = {
   monthsToDisplay: PropTypes.number,
