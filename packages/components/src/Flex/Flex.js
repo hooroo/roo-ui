@@ -4,7 +4,7 @@ import {
   flexWrap,
   flexDirection,
 } from 'styled-system';
-import { Box } from '..';
+import Box from '../Box';
 
 const Flex = Box.extend`
   display: flex;
