@@ -20,6 +20,18 @@ export default (
 );
 ```
 
+The components that make up the `Calendar` can also be imported.
+
+```js
+import {
+  CalendarDay, CalendarEmptyDay, CalendarDays,
+  CalendarWeekday, CalendarWeekdays,
+  CalendarNav,
+  CalendarMonth
+} from '@roo-ui/components';
+```
+
+
 ## Properties
 
 | Name              | Description                           | Type     | Default | Required? |
