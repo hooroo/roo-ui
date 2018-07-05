@@ -3,6 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
+import { subDays } from 'date-fns';
 
 import { Flex, Box } from '../';
 import { CalendarDay, CalendarEmptyDay, CalendarDays, CalendarWeekday, CalendarWeekdays, CalendarNav, CalendarMonth } from '.';
@@ -81,7 +82,7 @@ Calendar.defaultProps = {
   monthsToDisplay: 1,
   date: null,
   selected: null,
-  minDate: new Date(),
+  minDate: subDays(new Date(), 1),
   maxDate: null,
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
