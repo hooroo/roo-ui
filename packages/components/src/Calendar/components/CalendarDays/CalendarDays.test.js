@@ -2,17 +2,17 @@ import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
 
-import { Day, EmptyDay, Days } from '.';
+import { CalendarDay, CalendarEmptyDay, CalendarDays } from '.';
 
-describe('<Days />', () => {
+describe('<CalendarDays />', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallowWithTheme(
-      <Days>
-        <EmptyDay />
-        <Day>21</Day>
-      </Days>,
+      <CalendarDays>
+        <CalendarEmptyDay />
+        <CalendarDay>21</CalendarDay>
+      </CalendarDays>,
       theme,
     );
   });

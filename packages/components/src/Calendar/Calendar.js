@@ -5,10 +5,7 @@ import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 
 import { Flex, Box } from '../';
-import { Day, EmptyDay, Days } from './components/Days';
-import { Weekday, Weekdays } from './components/Weekdays';
-import Nav from './components/Nav';
-import CalendarMonth from './components/CalendarMonth';
+import { CalendarDay, CalendarEmptyDay, CalendarDays, CalendarWeekday, CalendarWeekdays, CalendarNav, CalendarMonth } from '.';
 
 const Wrapper = Box.extend`
   position: relative;
@@ -35,7 +32,7 @@ const Calendar = ({
 
         return (
           <Wrapper>
-            <Nav
+            <CalendarNav
               prevProps={getBackProps({ calendars })}
               nextProps={getForwardProps({ calendars })}
             />
@@ -48,34 +45,34 @@ const Calendar = ({
                   month={monthNames[calendar.month]}
                   year={calendar.year}
                 >
-                  <Weekdays>
+                  <CalendarWeekdays>
                     {weekdayNames.map(weekday => (
-                      <Weekday key={`${calendar.month}${calendar.year}${weekday}`}>
+                      <CalendarWeekday key={`${calendar.month}${calendar.year}${weekday}`}>
                         {weekday}
-                      </Weekday>
+                      </CalendarWeekday>
                     ))}
-                  </Weekdays>
+                  </CalendarWeekdays>
 
-                  <Days>
+                  <CalendarDays>
                     {calendar.weeks.map(week =>
                       week.map((dateObj, index) => {
                         if (!dateObj) {
                           return (
-                            <EmptyDay key={`${calendar.year}${calendar.month}${index}`} />
+                            <CalendarEmptyDay key={`${calendar.year}${calendar.month}${index}`} />
                           );
                         }
                         return (
-                          <Day
+                          <CalendarDay
                             key={`${calendar.year}${calendar.month}${index}`}
                             selected={dateObj.selected}
                             selectable={dateObj.selectable}
                             {...getDateProps({ dateObj })}
                           >
                             {dateObj.date.getDate()}
-                          </Day>
+                          </CalendarDay>
                         );
                       }))}
-                  </Days>
+                  </CalendarDays>
                 </CalendarMonth>
               ))}
             </Flex>

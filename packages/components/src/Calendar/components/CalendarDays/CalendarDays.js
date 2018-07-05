@@ -5,7 +5,7 @@ import { css } from 'styled-components';
 
 import { Flex, NakedButton } from '../../../';
 
-const DayButtonWrapper = Flex.extend`
+const Wrapper = Flex.extend`
   flex: 1 1 calc(100% / 7);
   justify-content: center;
   margin: 0 -1px -1px 0;
@@ -18,7 +18,7 @@ const DayButtonWrapper = Flex.extend`
   }
 `;
 
-const DayButton = NakedButton.extend`
+const Button = NakedButton.extend`
   color: ${themeGet('colors.grey.0')};
   padding: 0;
   width: 100%;
@@ -51,29 +51,29 @@ const DayButton = NakedButton.extend`
     `};
 `;
 
-DayButton.defaultProps = {
+Button.defaultProps = {
   ...NakedButton.defaultProps,
   blacklist: [...Object.keys(NakedButton.propTypes), 'selectable'],
 };
 
-export const Days = Flex.extend`
+export const CalendarDays = Flex.extend`
   flex-wrap: wrap;
   margin-bottom: 1px;
   margin-right: 1px;
 `;
 
-export const EmptyDay = DayButtonWrapper.withComponent('div').extend`
+export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
   border-color: transparent;
 `;
 
-export const Day = ({ children, ...rest }) => (
-  <DayButtonWrapper>
-    <DayButton {...rest}>
+export const CalendarDay = ({ children, ...rest }) => (
+  <Wrapper>
+    <Button {...rest}>
       {children}
-    </DayButton>
-  </DayButtonWrapper>
+    </Button>
+  </Wrapper>
 );
 
-Day.propTypes = {
+CalendarDay.propTypes = {
   children: PropTypes.node.isRequired,
 };

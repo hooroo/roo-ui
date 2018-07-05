@@ -2,16 +2,16 @@ import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
 
-import { Weekday, Weekdays } from '.';
+import { CalendarWeekday, CalendarWeekdays } from '.';
 
-describe('<Weekdays />', () => {
+describe('<CalendarWeekdays />', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = shallowWithTheme(
-      <Weekdays>
-        <Weekday>Tuesday</Weekday>
-      </Weekdays>,
+      <CalendarWeekdays>
+        <CalendarWeekday>Tuesday</CalendarWeekday>
+      </CalendarWeekdays>,
       theme,
     );
   });

@@ -10,7 +10,7 @@ const Wrapper = Flex.extend`
   justify-content: space-between;
 `;
 
-const NavButton = NakedButton.extend`
+const Button = NakedButton.extend`
   border-radius: ${themeGet('radii.rounded')};
   background: ${themeGet('colors.white')};
   color: ${themeGet('colors.grey.1')};
@@ -29,21 +29,21 @@ const NavButton = NakedButton.extend`
   }
 `;
 
-const Nav = ({ prevProps, nextProps }) => (
+export const CalendarNav = ({ prevProps, nextProps }) => (
   <Wrapper>
-    <NavButton {...prevProps}>
+    <Button {...prevProps}>
       <Icon name="chevronLeft" />
-    </NavButton>
+    </Button>
 
-    <NavButton {...nextProps}>
+    <Button {...nextProps}>
       <Icon name="chevronRight" />
-    </NavButton>
+    </Button>
   </Wrapper>
 );
 
-Nav.propTypes = {
+CalendarNav.propTypes = {
   prevProps: PropTypes.shape().isRequired,
   nextProps: PropTypes.shape().isRequired,
 };
 
-export default Nav;
+export default CalendarNav;

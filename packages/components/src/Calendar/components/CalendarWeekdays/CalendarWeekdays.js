@@ -4,20 +4,20 @@ import { themeGet } from 'styled-system';
 
 import { Box, Flex, Text } from '../../../';
 
-export const Weekdays = Flex.extend`
+export const CalendarWeekdays = Flex.extend`
   padding-bottom: ${themeGet('space.2')};
   margin-top: ${themeGet('space.5')};
   margin-bottom: ${themeGet('space.3')};
   border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
 `;
 
-export const Weekday = ({ children, ...rest }) => (
+export const CalendarWeekday = ({ children, ...rest }) => (
   <Box width={1 / 7} {...rest}>
     <Text>{children}</Text>
   </Box>
 );
 
-Weekday.propTypes = {
+CalendarWeekday.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
