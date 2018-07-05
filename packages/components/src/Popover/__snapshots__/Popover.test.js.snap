@@ -157,6 +157,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
 .c0 {
   box-shadow: heavy;
   margin: 0.75rem;
+  z-index: 1;
 }
 
 .c1 {

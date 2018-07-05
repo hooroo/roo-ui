@@ -12,6 +12,7 @@ import { Box } from '../';
 const ContentWrapper = Box.extend`
   margin: ${rem('12px')};
   background: ${themeGet('colors.grey.3')};
+  z-index: 1;
 `;
 
 const Triangle = Box.extend`
