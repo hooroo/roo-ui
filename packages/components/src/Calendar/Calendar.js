@@ -81,7 +81,7 @@ Calendar.defaultProps = {
   monthsToDisplay: 1,
   date: null,
   selected: null,
-  minDate: null,
+  minDate: new Date(),
   maxDate: null,
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
