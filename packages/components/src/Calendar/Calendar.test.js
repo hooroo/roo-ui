@@ -15,6 +15,7 @@ describe('<Calendar />', () => {
     maxDate: new Date('2018-08-20'),
     selected: new Date('2018-07-03'),
     onDateSelected: jest.fn(),
+    monthsToDisplay: 1,
     weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
   };
 
@@ -40,12 +41,16 @@ describe('<Calendar />', () => {
       expect(childrenWrapper.find('CalendarMonth').prop('month')).toEqual('Jul');
     });
 
-    it('passes monthsToDisplay to <CalendarMonth />', () => {
-      expect(childrenWrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(1);
-    });
-
     it('passes renders a <CalendarWeekday /> for each weekdayNames', () => {
       expect(childrenWrapper.find('CalendarWeekday')).toHaveLength(props.weekdayNames.length);
+    });
+
+    it('passes monthsToDisplay to <CalendarMonth />', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+    });
+
+    it('passes monthsToDisplay to <Dayzed />', () => {
+      expect(wrapper.find('Dayzed').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
     });
 
     it('assigns the rest of the props to <Dayzed />', () => {

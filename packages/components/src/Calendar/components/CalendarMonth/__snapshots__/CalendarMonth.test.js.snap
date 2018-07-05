@@ -48,7 +48,9 @@ exports[`<Nav /> renders correctly 1`] = `
     hidden={false}
     textStyle="caps"
   >
+    Jul
      
+    2018
   </Text>
   Days
 </Box>

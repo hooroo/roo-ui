@@ -1,6 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CalendarDays /> renders correctly 1`] = `
+exports[`Calendar days renders <CalendarDay /> correctly 1`] = `
+<Box>
+  <NakedButton
+    blacklist={
+      Array [
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "selectable",
+      ]
+    }
+  >
+    21
+  </NakedButton>
+</Box>
+`;
+
+exports[`Calendar days renders <CalendarDays /> correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -109,9 +137,35 @@ exports[`<CalendarDays /> renders correctly 1`] = `
   className="c0"
   is="div"
 >
-  <Box />
-  <CalendarDay>
-    21
-  </CalendarDay>
+  Day
 </Clean.div>
+`;
+
+exports[`Calendar days renders <CalendarEmptyDay /> correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 1 calc(100% / 7);
+  -ms-flex: 1 1 calc(100% / 7);
+  flex: 1 1 calc(100% / 7);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 -1px -1px 0;
+  border: 1px solid #F4F5F6;
+  border-color: transparent;
+}
+
+.c0:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+<div
+  className="c0"
+/>
 `;

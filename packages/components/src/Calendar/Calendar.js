@@ -16,6 +16,7 @@ const Calendar = ({
 }) => (
   <Dayzed
     {...rest}
+    monthsToDisplay={monthsToDisplay}
     render={({
         calendars,
         getBackProps,

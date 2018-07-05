@@ -29,7 +29,7 @@ const Button = NakedButton.extend`
   }
 `;
 
-export const CalendarNav = ({ prevProps, nextProps }) => (
+const CalendarNav = ({ prevProps, nextProps }) => (
   <Wrapper>
     <Button {...prevProps}>
       <Icon name="chevronLeft" />

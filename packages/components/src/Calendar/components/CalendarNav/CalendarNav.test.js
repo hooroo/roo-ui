@@ -2,28 +2,28 @@ import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
 
-import { Nav, NavButton } from '.';
+import CalendarNav from '.';
 
-describe('<Nav />', () => {
+describe('<CalendarNav />', () => {
   let wrapper;
-
+  const props = {
+    prevProps: { onClick: jest.fn() },
+    nextProps: { onClick: jest.fn() },
+  };
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Nav />, theme);
+    wrapper = shallowWithTheme(<CalendarNav {...props} />, theme);
   });
 
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-});
 
-describe('<NavButton />', () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = shallowWithTheme(<NavButton>Next</NavButton>, theme);
+  it('passes props.prevProps to first <Button />', () => {
+    expect(wrapper.find('NakedButton').first().props()).toEqual(expect.objectContaining(props.prevProps));
   });
 
-  it('renders correctly', () => {
-    expect(wrapper).toMatchSnapshot();
+  it('passes props.nextProps to second <Button />', () => {
+    expect(wrapper.find('NakedButton').last().props()).toEqual(expect.objectContaining(props.nextProps));
   });
 });
+

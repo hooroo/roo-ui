@@ -6,9 +6,13 @@ import CalendarMonth from '.';
 
 describe('<Nav />', () => {
   let wrapper;
+  const props = {
+    month: 'Jul',
+    year: 2018,
+  };
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<CalendarMonth>Days</CalendarMonth>, theme);
+    wrapper = shallowWithTheme(<CalendarMonth {...props}>Days</CalendarMonth>, theme);
   });
 
   it('renders correctly', () => {
