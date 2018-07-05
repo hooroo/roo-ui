@@ -12,16 +12,10 @@ const Wrapper = Box.extend`
 `;
 
 const Calendar = ({
-  initialMonth, onDateSelected, monthsToDisplay,
-  minDate, maxDate, selected, monthNames, weekdayNames,
+  monthNames, weekdayNames, monthsToDisplay, ...rest
 }) => (
   <Dayzed
-    date={initialMonth}
-    onDateSelected={onDateSelected}
-    selected={selected}
-    monthsToDisplay={monthsToDisplay}
-    minDate={minDate}
-    maxDate={maxDate}
+    {...rest}
     render={({
         calendars,
         getBackProps,
@@ -99,7 +93,10 @@ Calendar.propTypes = {
   initialMonth: PropTypes.instanceOf(Date),
   minDate: PropTypes.instanceOf(Date),
   maxDate: PropTypes.instanceOf(Date),
-  selected: PropTypes.instanceOf(Date),
+  selected: PropTypes.oneOfType([
+    PropTypes.instanceOf(Date),
+    PropTypes.arrayOf(PropTypes.instanceOf(Date)),
+  ]),
   monthNames: PropTypes.arrayOf(PropTypes.string),
 };
 
