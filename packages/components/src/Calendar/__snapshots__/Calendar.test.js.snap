@@ -1,16 +1,471 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Calendar /> renders children correctly 1`] = `
+<Box>
+  <CalendarNav
+    nextProps={
+      Object {
+        "aria-label": "Go forward 1 month",
+        "disabled": false,
+        "onClick": [Function],
+      }
+    }
+    prevProps={
+      Object {
+        "aria-label": "Go back 1 month",
+        "disabled": false,
+        "onClick": [Function],
+      }
+    }
+  />
+  <Box
+    flexWrap="wrap"
+  >
+    <CalendarMonth
+      key="62018"
+      month="Jul"
+      monthsToDisplay={1}
+      year={2018}
+    >
+      <Box>
+        <CalendarWeekday
+          key="62018S"
+        >
+          S
+        </CalendarWeekday>
+        <CalendarWeekday
+          key="62018M"
+        >
+          M
+        </CalendarWeekday>
+        <CalendarWeekday
+          key="62018T"
+        >
+          T
+        </CalendarWeekday>
+        <CalendarWeekday
+          key="62018W"
+        >
+          W
+        </CalendarWeekday>
+        <CalendarWeekday
+          key="62018T"
+        >
+          T
+        </CalendarWeekday>
+        <CalendarWeekday
+          key="62018F"
+        >
+          F
+        </CalendarWeekday>
+        <CalendarWeekday
+          key="62018S"
+        >
+          S
+        </CalendarWeekday>
+      </Box>
+      <Box>
+        <CalendarDay
+          aria-label="Sun Jul 01 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201860"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          1
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Mon Jul 02 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201861"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          2
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Tue Jul 03 2018"
+          aria-pressed={true}
+          disabled={false}
+          key="201862"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={true}
+        >
+          3
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Wed Jul 04 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201863"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          4
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Thu Jul 05 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201864"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          5
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Fri Jul 06 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201865"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          6
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sat Jul 07 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201866"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          7
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sun Jul 08 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201860"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          8
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Mon Jul 09 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201861"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          9
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Tue Jul 10 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201862"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          10
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Wed Jul 11 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201863"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          11
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Thu Jul 12 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201864"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          12
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Fri Jul 13 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201865"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          13
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sat Jul 14 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201866"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          14
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sun Jul 15 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201860"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          15
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Mon Jul 16 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201861"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          16
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Tue Jul 17 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201862"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          17
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Wed Jul 18 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201863"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          18
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Thu Jul 19 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201864"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          19
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Fri Jul 20 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201865"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          20
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sat Jul 21 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201866"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          21
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sun Jul 22 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201860"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          22
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Mon Jul 23 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201861"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          23
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Tue Jul 24 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201862"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          24
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Wed Jul 25 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201863"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          25
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Thu Jul 26 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201864"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          26
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Fri Jul 27 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201865"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          27
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sat Jul 28 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201866"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          28
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Sun Jul 29 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201860"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          29
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Mon Jul 30 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201861"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          30
+        </CalendarDay>
+        <CalendarDay
+          aria-label="Tue Jul 31 2018"
+          aria-pressed={false}
+          disabled={false}
+          key="201862"
+          onClick={[Function]}
+          role="button"
+          selectable={true}
+          selected={false}
+        >
+          31
+        </CalendarDay>
+        <Box
+          key="201863"
+        />
+        <Box
+          key="201864"
+        />
+        <Box
+          key="201865"
+        />
+        <Box
+          key="201866"
+        />
+      </Box>
+    </CalendarMonth>
+  </Box>
+</Box>
+`;
+
 exports[`<Calendar /> renders correctly 1`] = `
 <Dayzed
   date={2018-07-03T00:00:00.000Z}
   firstDayOfWeek={0}
-  maxDate={null}
-  minDate={null}
+  maxDate={2018-08-20T00:00:00.000Z}
+  minDate={2018-06-01T00:00:00.000Z}
   monthsToDisplay={1}
   onDateSelected={[MockFunction]}
   onOffsetChanged={[Function]}
   render={[Function]}
-  selected={null}
+  selected={2018-07-03T00:00:00.000Z}
   showOutsideDays={false}
 />
 `;

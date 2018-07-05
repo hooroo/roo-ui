@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Weekdays /> renders correctly 1`] = `
+exports[`<CalendarWeekdays /> renders correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -108,8 +108,8 @@ exports[`<Weekdays /> renders correctly 1`] = `
   className="c0"
   is="div"
 >
-  <Weekday>
+  <CalendarWeekday>
     Tuesday
-  </Weekday>
+  </CalendarWeekday>
 </Clean.div>
 `;

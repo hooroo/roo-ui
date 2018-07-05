@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Days /> renders correctly 1`] = `
+exports[`<CalendarDays /> renders correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -110,8 +110,8 @@ exports[`<Days /> renders correctly 1`] = `
   is="div"
 >
   <Box />
-  <Day>
+  <CalendarDay>
     21
-  </Day>
+  </CalendarDay>
 </Clean.div>
 `;

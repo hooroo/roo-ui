@@ -78,7 +78,7 @@ const Calendar = ({
 
 Calendar.defaultProps = {
   monthsToDisplay: 1,
-  initialMonth: null,
+  date: null,
   selected: null,
   minDate: null,
   maxDate: null,
@@ -90,7 +90,7 @@ Calendar.propTypes = {
   monthsToDisplay: PropTypes.number,
   onDateSelected: PropTypes.func.isRequired,
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
-  initialMonth: PropTypes.instanceOf(Date),
+  date: PropTypes.instanceOf(Date),
   minDate: PropTypes.instanceOf(Date),
   maxDate: PropTypes.instanceOf(Date),
   selected: PropTypes.oneOfType([
