@@ -11,7 +11,6 @@ import { Box } from '../';
 
 const ContentWrapper = Box.extend`
   margin: ${rem('12px')};
-  padding: ${themeGet('space.8')} ${themeGet('space.4')};
   background: ${themeGet('colors.grey.3')};
 `;
 
