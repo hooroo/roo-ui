@@ -43,7 +43,7 @@ const Triangle = Box.extend`
   `};
 `;
 
-class Popover extends Component {
+class Base extends Component {
   state = {
     isOpen: false,
   }
@@ -106,12 +106,12 @@ class Popover extends Component {
   }
 }
 
-Popover.propTypes = {
+Base.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-const WrappedPopover = onClickOutside(Popover);
-WrappedPopover.control = Box.extend``;
-WrappedPopover.control.displayName = 'Popover.control';
+const Popover = onClickOutside(Base);
+Popover.control = Box.extend``;
+Popover.control.displayName = 'Popover.control';
 
-export default WrappedPopover;
+export default Popover;

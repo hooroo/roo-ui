@@ -2,7 +2,7 @@
 
 exports[`<Popover /> when popover is closed renders correctly 1`] = `
 <div>
-  <OnClickOutside(Popover)
+  <OnClickOutside(Base)
     eventTypes={
       Array [
         "mousedown",
@@ -14,7 +14,7 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
     preventDefault={false}
     stopPropagation={false}
   >
-    <Popover
+    <Base
       disableOnClickOutside={[Function]}
       enableOnClickOutside={[Function]}
       eventTypes={
@@ -148,8 +148,8 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
           </InnerReference>
         </Reference>
       </Manager>
-    </Popover>
-  </OnClickOutside(Popover)>
+    </Base>
+  </OnClickOutside(Base)>
 </div>
 `;
 
@@ -169,7 +169,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
 }
 
 <div>
-  <OnClickOutside(Popover)
+  <OnClickOutside(Base)
     eventTypes={
       Array [
         "mousedown",
@@ -181,7 +181,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
     preventDefault={false}
     stopPropagation={false}
   >
-    <Popover
+    <Base
       disableOnClickOutside={[Function]}
       enableOnClickOutside={[Function]}
       eventTypes={
@@ -586,7 +586,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
           </InnerPopper>
         </Popper>
       </Manager>
-    </Popover>
-  </OnClickOutside(Popover)>
+    </Base>
+  </OnClickOutside(Base)>
 </div>
 `;

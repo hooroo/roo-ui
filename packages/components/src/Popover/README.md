@@ -30,5 +30,4 @@ export default (
 
 | Name       | Description                           | Type   | Default | Required? |
 |------------|---------------------------------------|--------|---------|-----------|
-| `children` | Content and Popover.control to render | `node` | -       | -         |
-
+| `children` | Content and Popover.control to render | `node` | -       | ✔︎         |
