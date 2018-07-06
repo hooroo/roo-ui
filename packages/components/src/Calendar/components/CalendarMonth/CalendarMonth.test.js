@@ -4,7 +4,7 @@ import { shallowWithTheme } from '@roo-ui/test-utils';
 
 import CalendarMonth from '.';
 
-describe('<Nav />', () => {
+describe('<CalendarMonth />', () => {
   let wrapper;
   const props = {
     month: 'Jul',

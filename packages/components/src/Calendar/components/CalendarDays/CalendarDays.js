@@ -22,7 +22,7 @@ const Button = NakedButton.extend`
   color: ${themeGet('colors.grey.0')};
   padding: 0;
   width: 100%;
-  border: 2px solid transparent;
+  border: ${themeGet('borders.2')} transparent;
 
   &:disabled {
     cursor: not-allowed;

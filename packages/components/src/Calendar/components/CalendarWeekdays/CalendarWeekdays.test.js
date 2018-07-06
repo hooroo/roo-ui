@@ -4,12 +4,14 @@ import { shallowWithTheme } from '@roo-ui/test-utils';
 
 import { CalendarWeekday, CalendarWeekdays } from '.';
 
-describe('Calendar weekdays', () => {
-  it('renders <CalendarWeekdays /> correctly', () => {
+describe('<CalendarWeekdays />', () => {
+  it('renders correctly', () => {
     expect(shallowWithTheme(<CalendarWeekdays>Weekday</CalendarWeekdays>, theme)).toMatchSnapshot();
   });
+});
 
-  it('renders <CalendarWeekday /> correctly', () => {
+describe('<CalendarWeekday />', () => {
+  it('renders correctly', () => {
     expect(shallowWithTheme(<CalendarWeekday>Tuesday</CalendarWeekday>, theme)).toMatchSnapshot();
   });
 });
