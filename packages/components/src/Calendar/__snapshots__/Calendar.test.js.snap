@@ -27,6 +27,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
       key="62018"
       month="Jul"
       monthsToDisplay={1}
+      stacked={true}
       year={2018}
     >
       <Box>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { number } from '@storybook/addon-knobs';
+import { number, boolean } from '@storybook/addon-knobs';
 import { withDocs } from 'storybook-readme';
 import { addDays, subDays } from 'date-fns';
 
@@ -16,5 +16,6 @@ storiesOf('Components|Calendar', module)
       maxDate={addDays(new Date(), 60)}
       selected={new Date()}
       onDateSelected={console.log} // eslint-disable-line no-console
+      stacked={boolean('Stacked', false)}
     />
   ));

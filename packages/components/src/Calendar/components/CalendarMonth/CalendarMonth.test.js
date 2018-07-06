@@ -9,6 +9,7 @@ describe('<CalendarMonth />', () => {
   const props = {
     month: 'Jul',
     year: 2018,
+    stacked: true,
   };
 
   beforeEach(() => {

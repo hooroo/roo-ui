@@ -15,7 +15,7 @@ import {
 } from '.';
 
 const Calendar = ({
-  monthNames, weekdayNames, monthsToDisplay, ...rest
+  monthNames, weekdayNames, monthsToDisplay, stacked, ...rest
 }) => (
   <Dayzed
     {...rest}
@@ -42,6 +42,7 @@ const Calendar = ({
                   monthsToDisplay={monthsToDisplay}
                   month={monthNames[calendar.month]}
                   year={calendar.year}
+                  stacked={stacked}
                 >
                   <Weekdays>
                     {weekdayNames.map(weekday => (
@@ -83,6 +84,7 @@ const Calendar = ({
 
 Calendar.defaultProps = {
   monthsToDisplay: 1,
+  stacked: false,
   minDate: subDays(new Date(), 1),
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
@@ -91,6 +93,7 @@ Calendar.defaultProps = {
 Calendar.propTypes = {
   ...Dayzed.propTypes,
   monthsToDisplay: PropTypes.number,
+  stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),

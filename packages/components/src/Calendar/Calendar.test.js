@@ -16,6 +16,7 @@ describe('<Calendar />', () => {
     selected: new Date('2018-07-03'),
     onDateSelected: jest.fn(),
     monthsToDisplay: 1,
+    stacked: true,
     weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
   };
 
@@ -47,6 +48,10 @@ describe('<Calendar />', () => {
 
     it('passes monthsToDisplay to <CalendarMonth />', () => {
       expect(childrenWrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+    });
+
+    it('passes stacked to <CalendarMonth />', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('stacked')).toEqual(props.stacked);
     });
 
     it('passes monthsToDisplay to <Dayzed />', () => {

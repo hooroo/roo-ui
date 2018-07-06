@@ -8,23 +8,24 @@ import { Box, Text } from '../../../';
 const Wrapper = Box.extend`
   text-align: center;
   padding: 0 ${themeGet('space.4')};
-  width: 100%;
+  width: ${props => `${100 / props.monthsToDisplay}%`};
 
-  ${props => props.monthsToDisplay === 2 &&
+  ${props => props.stacked &&
     css`
-      width: ${100 / 2}%;
+      width: 100%;
+      margin-top: ${themeGet('space.8')};
+
+      &:first-of-type {
+        margin-top: 0;
+      }
     `};
 
-  ${props => props.monthsToDisplay === 3 &&
-    css`
-      width: ${100 / 3}%;
-    `};
 `;
 
 const CalendarMonth = ({
-  monthsToDisplay, month, year, children,
+  monthsToDisplay, month, year, stacked, children,
 }) => (
-  <Wrapper monthsToDisplay={monthsToDisplay}>
+  <Wrapper monthsToDisplay={monthsToDisplay} stacked={stacked}>
     <Text textStyle="caps">
       {month} {year}
     </Text>
@@ -34,11 +35,12 @@ const CalendarMonth = ({
 
 Wrapper.defaultProps = {
   ...Box.defaultProps,
-  blacklist: [...Object.keys(Box.propTypes), 'monthsToDisplay'],
+  blacklist: [...Object.keys(Box.propTypes), 'monthsToDisplay', 'stacked'],
 };
 
 CalendarMonth.defaultProps = {
   monthsToDisplay: 1,
+  stacked: false,
 };
 
 CalendarMonth.propTypes = {
@@ -46,6 +48,7 @@ CalendarMonth.propTypes = {
   month: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
+  stacked: PropTypes.bool,
 };
 
 export default CalendarMonth;

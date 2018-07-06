@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Calendar days renders <CalendarDay /> correctly 1`] = `
+exports[`<CalendarDay /> renders correctly 1`] = `
 <Box>
   <NakedButton
     blacklist={
@@ -28,7 +28,7 @@ exports[`Calendar days renders <CalendarDay /> correctly 1`] = `
 </Box>
 `;
 
-exports[`Calendar days renders <CalendarDays /> correctly 1`] = `
+exports[`<CalendarDays /> renders correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -141,7 +141,7 @@ exports[`Calendar days renders <CalendarDays /> correctly 1`] = `
 </Clean.div>
 `;
 
-exports[`Calendar days renders <CalendarEmptyDay /> correctly 1`] = `
+exports[`<CalendarEmptyDay /> renders correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;

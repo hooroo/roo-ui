@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Nav /> renders correctly 1`] = `
+exports[`<CalendarMonth /> renders correctly 1`] = `
 <Box
   blacklist={
     Array [
@@ -39,10 +39,13 @@ exports[`<Nav /> renders correctly 1`] = `
       "borderColor",
       "flexBasis",
       "flex",
+      "position",
       "monthsToDisplay",
+      "stacked",
     ]
   }
   monthsToDisplay={1}
+  stacked={true}
 >
   <Text
     hidden={false}
