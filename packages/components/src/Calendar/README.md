@@ -36,14 +36,14 @@ import {
 
 | Name              | Description                         | Type            | Default | Required? |
 |-------------------|-------------------------------------|-----------------|---------|-----------|
-| `onDateSelected`  | Function called when date selected  | `node`          | -       | true      |
-| `date`            | Initial month calendar is opened on | `date`          | Today   | false     |
-| `monthsToDisplay` | Number of months to display         | `number`        | 1       | false     |
-| `minDate`         | Minimum calendar month to render    | `date`          | -       | false     |
-| `maxDate`         | Maximum calendar month to render    | `date`          | -       | false     |
-| `selected`        | Dates to highlight                  | `date` or array | -       | false     |
-| `monthNames`      | Month names                         | `array`         | -       | false     |
-| `weekdayNames`    | Weekday names                       | `array`         | -       | false     |
+| `onDateSelected`  | Function called when date selected  | `node`          | -       | ✔︎         |
+| `date`            | Initial month calendar is opened on | `date`          | Today   | -         |
+| `monthsToDisplay` | Number of months to display         | `number`        | 1       | -         |
+| `minDate`         | Minimum calendar month to render    | `date`          | -       | -         |
+| `maxDate`         | Maximum calendar month to render    | `date`          | -       | -         |
+| `selected`        | Dates to highlight                  | `date` or array | -       | -         |
+| `monthNames`      | Month names                         | `array`         | -       | -         |
+| `weekdayNames`    | Weekday names                       | `array`         | -       | -         |
 
 ## Customization
 

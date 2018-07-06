@@ -22,8 +22,8 @@ export default (
 
 | Name    | Description        | Type                 | Default | Required? |
 |:--------|:-------------------|:---------------------|:--------|:----------|
-| `value` | value to be tested | `string` or `number` | -       | true      |
-| `limit` | maximum length     | `string`             | -       | true      |
+| `value` | value to be tested | `string` or `number` | -       | ✔︎         |
+| `limit` | maximum length     | `string`             | -       | ✔︎         |
 
 ## Customization
 
