@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Calendar /> renders children correctly 1`] = `
-<Box>
+<Box
+  position="relative"
+>
   <CalendarNav
     nextProps={
       Object {

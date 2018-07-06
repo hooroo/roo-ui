@@ -14,10 +14,6 @@ import {
   CalendarMonth as Month,
 } from '.';
 
-const Wrapper = Box.extend`
-  position: relative;
-`;
-
 const Calendar = ({
   monthNames, weekdayNames, monthsToDisplay, ...rest
 }) => (
@@ -33,7 +29,7 @@ const Calendar = ({
         if (!calendars.length) return null;
 
         return (
-          <Wrapper>
+          <Box position="relative">
             <Nav
               prevProps={getBackProps({ calendars })}
               nextProps={getForwardProps({ calendars })}
@@ -57,8 +53,8 @@ const Calendar = ({
 
                   <Days>
                     {calendar.weeks.map(week =>
-                      week.map((dateObj, index) => {
-                        if (!dateObj) {
+                      week.map((day, index) => {
+                        if (!day) {
                           return (
                             <EmptyDay key={`${calendar.year}${calendar.month}${index}`} /> // eslint-disable-line react/no-array-index-key
 
@@ -67,11 +63,11 @@ const Calendar = ({
                         return (
                           <Day
                             key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
-                            selected={dateObj.selected}
-                            selectable={dateObj.selectable}
-                            {...getDateProps({ dateObj })}
+                            selected={day.selected}
+                            selectable={day.selectable}
+                            {...getDateProps({ dateObj: day })}
                           >
-                            {dateObj.date.getDate()}
+                            {day.date.getDate()}
                           </Day>
                         );
                       }))}
@@ -79,7 +75,7 @@ const Calendar = ({
                 </Month>
               ))}
             </Flex>
-          </Wrapper>
+          </Box>
         );
       }}
   />
@@ -87,26 +83,17 @@ const Calendar = ({
 
 Calendar.defaultProps = {
   monthsToDisplay: 1,
-  date: null,
-  selected: null,
   minDate: subDays(new Date(), 1),
-  maxDate: null,
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 };
 
 Calendar.propTypes = {
+  ...Dayzed.propTypes,
   monthsToDisplay: PropTypes.number,
-  onDateSelected: PropTypes.func.isRequired,
-  weekdayNames: PropTypes.arrayOf(PropTypes.string),
-  date: PropTypes.instanceOf(Date),
   minDate: PropTypes.instanceOf(Date),
-  maxDate: PropTypes.instanceOf(Date),
-  selected: PropTypes.oneOfType([
-    PropTypes.instanceOf(Date),
-    PropTypes.arrayOf(PropTypes.instanceOf(Date)),
-  ]),
   monthNames: PropTypes.arrayOf(PropTypes.string),
+  weekdayNames: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Calendar;

@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { number } from '@storybook/addon-knobs';
@@ -17,6 +15,6 @@ storiesOf('Components|Calendar', module)
       minDate={subDays(new Date(), 10)}
       maxDate={addDays(new Date(), 60)}
       selected={new Date()}
-      onDateSelected={console.log}
+      onDateSelected={console.log} // eslint-disable-line no-console
     />
   ));
