@@ -1,12 +1,18 @@
-/* eslint-disable react/no-array-index-key */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 import { subDays } from 'date-fns';
 
 import { Flex, Box } from '../';
-import { CalendarDay, CalendarEmptyDay, CalendarDays, CalendarWeekday, CalendarWeekdays, CalendarNav, CalendarMonth } from '.';
+import {
+  CalendarDay as Day,
+  CalendarEmptyDay as EmptyDay,
+  CalendarDays as Days,
+  CalendarWeekday as Weekday,
+  CalendarWeekdays as Weekdays,
+  CalendarNav as Nav,
+  CalendarMonth as Month,
+} from '.';
 
 const Wrapper = Box.extend`
   position: relative;
@@ -28,48 +34,49 @@ const Calendar = ({
 
         return (
           <Wrapper>
-            <CalendarNav
+            <Nav
               prevProps={getBackProps({ calendars })}
               nextProps={getForwardProps({ calendars })}
             />
 
             <Flex flexWrap="wrap">
               {calendars.map(calendar => (
-                <CalendarMonth
+                <Month
                   key={`${calendar.month}${calendar.year}`}
                   monthsToDisplay={monthsToDisplay}
                   month={monthNames[calendar.month]}
                   year={calendar.year}
                 >
-                  <CalendarWeekdays>
+                  <Weekdays>
                     {weekdayNames.map(weekday => (
-                      <CalendarWeekday key={`${calendar.month}${calendar.year}${weekday}`}>
+                      <Weekday key={`${calendar.month}${calendar.year}${weekday}`}>
                         {weekday}
-                      </CalendarWeekday>
+                      </Weekday>
                     ))}
-                  </CalendarWeekdays>
+                  </Weekdays>
 
-                  <CalendarDays>
+                  <Days>
                     {calendar.weeks.map(week =>
                       week.map((dateObj, index) => {
                         if (!dateObj) {
                           return (
-                            <CalendarEmptyDay key={`${calendar.year}${calendar.month}${index}`} />
+                            <EmptyDay key={`${calendar.year}${calendar.month}${index}`} /> // eslint-disable-line react/no-array-index-key
+
                           );
                         }
                         return (
-                          <CalendarDay
-                            key={`${calendar.year}${calendar.month}${index}`}
+                          <Day
+                            key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
                             selected={dateObj.selected}
                             selectable={dateObj.selectable}
                             {...getDateProps({ dateObj })}
                           >
                             {dateObj.date.getDate()}
-                          </CalendarDay>
+                          </Day>
                         );
                       }))}
-                  </CalendarDays>
-                </CalendarMonth>
+                  </Days>
+                </Month>
               ))}
             </Flex>
           </Wrapper>
