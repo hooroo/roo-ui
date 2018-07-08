@@ -1,5 +1,6 @@
 import {
   alignItems,
+  alignContent,
   justifyContent,
   flexWrap,
   flexDirection,
@@ -9,6 +10,7 @@ import { Box } from '..';
 const Flex = Box.extend`
   display: flex;
   ${alignItems}
+  ${alignContent}
   ${justifyContent}
   ${flexWrap}
   ${flexDirection}
@@ -17,6 +19,7 @@ const Flex = Box.extend`
 Flex.propTypes = {
   ...Box.propTypes,
   ...alignItems.propTypes,
+  ...alignContent.propTypes,
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,
   ...flexDirection.propTypes,

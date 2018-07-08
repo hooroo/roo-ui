@@ -15,6 +15,7 @@ exports[`<NakedButton /> renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 <Clean.button

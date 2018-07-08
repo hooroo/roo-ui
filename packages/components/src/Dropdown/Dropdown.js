@@ -11,6 +11,7 @@ import { Box, NakedButton, Text } from '..';
 const Wrapper = Box.extend`
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 `;
 
 const Toggle = NakedButton.extend`
