@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import { boolean } from '@storybook/addon-knobs/react';
 
 import Alert from './Alert';
 import README from './README.md';
@@ -8,7 +9,7 @@ import README from './README.md';
 storiesOf('Components|Alert', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Alert icon={{ name: 'hotel' }}>
+    <Alert contained={boolean('Contained', false)} icon={{ name: 'hotel' }}>
       <strong>Hello world</strong><br />
       Lorem ipsum dolor sit amet
     </Alert>

@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.40.2"></a>
+## [0.40.2](https://github.com/hooroo/roo-ui/compare/v0.40.1...v0.40.2) (2018-07-08)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.40.1"></a>
+## [0.40.1](https://github.com/hooroo/roo-ui/compare/v0.40.0...v0.40.1) (2018-07-04)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.40.0"></a>
+# [0.40.0](https://github.com/hooroo/roo-ui/compare/v0.39.3...v0.40.0) (2018-07-04)
+
+
+### Features
+
+* add align content prop to flex ([#103](https://github.com/hooroo/roo-ui/issues/103)) ([6c4cfd7](https://github.com/hooroo/roo-ui/commit/6c4cfd7))
+
+
+
+
+<a name="0.39.3"></a>
+## [0.39.3](https://github.com/hooroo/roo-ui/compare/v0.39.2...v0.39.3) (2018-07-03)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.39.2"></a>
+## [0.39.2](https://github.com/hooroo/roo-ui/compare/v0.39.1...v0.39.2) (2018-06-27)
+
+
+### Bug Fixes
+
+* forward on default props and use Input which is a clean tag element ([#99](https://github.com/hooroo/roo-ui/issues/99)) ([9a7edfa](https://github.com/hooroo/roo-ui/commit/9a7edfa))
+
+
+
+
+<a name="0.39.1"></a>
+## [0.39.1](https://github.com/hooroo/roo-ui/compare/v0.39.0...v0.39.1) (2018-06-26)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
 <a name="0.39.0"></a>
 # [0.39.0](https://github.com/hooroo/roo-ui/compare/v0.38.4...v0.39.0) (2018-06-26)
 

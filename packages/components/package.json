@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.39.0",
+  "version": "0.40.2",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -12,9 +12,9 @@
     "build:watch": "yarn run build --watch"
   },
   "devDependencies": {
-    "@roo-ui/icons": "^0.39.0",
-    "@roo-ui/test-utils": "^0.39.0",
-    "@roo-ui/themes": "^0.39.0"
+    "@roo-ui/icons": "^0.39.1",
+    "@roo-ui/test-utils": "^0.39.1",
+    "@roo-ui/themes": "^0.39.3"
   },
   "peerDependencies": {
     "clean-element": "^1.0.0",
