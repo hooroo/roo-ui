@@ -38,7 +38,7 @@ exports[`<List /> with columns set renders correctly 1`] = `
   margin-right: -0.5rem;
 }
 
-.c0 .ListItem-cYZMMi {
+.c0 .ListItem-llUgLb {
   -webkit-flex: 1 1;
   -ms-flex: 1 1;
   flex: 1 1;
@@ -124,7 +124,7 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
   margin-right: -0.5rem;
 }
 
-.c0 .ListItem-cYZMMi {
+.c0 .ListItem-llUgLb {
   -webkit-flex: 1 1;
   -ms-flex: 1 1;
   flex: 1 1;
@@ -135,7 +135,7 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
 }
 
 @media screen and (min-width:40rem) {
-  .c0 .ListItem-cYZMMi {
+  .c0 .ListItem-llUgLb {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -143,7 +143,7 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
 }
 
 @media screen and (min-width:52rem) {
-  .c0 .ListItem-cYZMMi {
+  .c0 .ListItem-llUgLb {
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;

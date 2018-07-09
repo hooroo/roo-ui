@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Autocomplete /> renders correctly 1`] = `
+.c0 {
+  position: relative;
+}
+
 .c2 {
   display: block;
   width: 100%;
@@ -39,10 +43,6 @@ exports[`<Autocomplete /> renders correctly 1`] = `
   display: block;
   width: 100%;
   margin: 0;
-}
-
-.c0 {
-  position: relative;
 }
 
 <Autocomplete
@@ -388,6 +388,24 @@ exports[`<Autocomplete /> renders correctly 1`] = `
 `;
 
 exports[`<Autocomplete /> when open renders correctly 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  position: absolute;
+  width: 100%;
+  margin-top: -;
+  z-index: 2;
+  max-height: 14.375rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c4 {
+  border-left: transparent;
+}
+
 .c2 {
   display: block;
   width: 100%;
@@ -426,24 +444,6 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
   display: block;
   width: 100%;
   margin: 0;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  width: 100%;
-  margin-top: -;
-  z-index: 2;
-  max-height: 14.375rem;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-.c4 {
-  border-left: transparent;
 }
 
 <Autocomplete

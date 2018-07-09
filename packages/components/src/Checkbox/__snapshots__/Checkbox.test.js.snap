@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> renders correctly 1`] = `
+.c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -0.125rem;
+}
+
+input:checked ~ .c3 {
+  display: block;
+}
+
 .c0 {
   display: inline-block;
   position: relative;
@@ -25,21 +40,6 @@ exports[`<Checkbox /> renders correctly 1`] = `
   margin-bottom: 0.125rem;
   height: 1.25rem;
   width: 1.25rem;
-}
-
-.c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  position: absolute;
-  display: none;
-  top: 0;
-  left: -0.125rem;
-}
-
-input:checked ~ .c3 {
-  display: block;
 }
 
 <Checkbox>
@@ -300,6 +300,21 @@ input:checked ~ .c3 {
 `;
 
 exports[`<Checkbox /> when checked renders correctly 1`] = `
+.c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -0.125rem;
+}
+
+input:checked ~ .c3 {
+  display: block;
+}
+
 .c0 {
   display: inline-block;
   position: relative;
@@ -324,21 +339,6 @@ exports[`<Checkbox /> when checked renders correctly 1`] = `
   margin-bottom: 0.125rem;
   height: 1.25rem;
   width: 1.25rem;
-}
-
-.c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  position: absolute;
-  display: none;
-  top: 0;
-  left: -0.125rem;
-}
-
-input:checked ~ .c3 {
-  display: block;
 }
 
 <Checkbox
@@ -603,6 +603,21 @@ input:checked ~ .c3 {
 `;
 
 exports[`<Checkbox /> when disabled renders correctly 1`] = `
+.c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: -0.125rem;
+}
+
+input:checked ~ .c3 {
+  display: block;
+}
+
 .c0 {
   display: inline-block;
   position: relative;
@@ -627,21 +642,6 @@ exports[`<Checkbox /> when disabled renders correctly 1`] = `
   margin-bottom: 0.125rem;
   height: 1.25rem;
   width: 1.25rem;
-}
-
-.c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  position: absolute;
-  display: none;
-  top: 0;
-  left: -0.125rem;
-}
-
-input:checked ~ .c3 {
-  display: block;
 }
 
 <Checkbox

@@ -15,6 +15,13 @@ const bounce = keyframes`
   40% { transform: scale(1.0) }
 `;
 
+const delayType = (delay) => {
+  if (typeof delay === 'number') {
+    return (`${delay}ms`);
+  }
+  return (delay);
+};
+
 const Bouncers = styled(Box)`
   animation: ${fadeIn} ${themeGet('transitions.default')} both;
   animation-delay: ${props => props.delay};
@@ -39,24 +46,28 @@ const Bouncer = styled(tag.div)`
   ${size}
 `;
 
-const LoadingIndicator = props => (
-  <Bouncers delay={props.delay} width={props.size * 4}>
-    <Bouncer bg={props.color} size={props.size} />
-    <Bouncer bg={props.color} size={props.size} />
-    <Bouncer bg={props.color} size={props.size} />
-  </Bouncers>
-);
+const LoadingIndicator = (props) => {
+  const delay = delayType(props.delay);
+
+  return (
+    <Bouncers delay={delay} width={props.size * 4}>
+      <Bouncer bg={props.color} size={props.size} />
+      <Bouncer bg={props.color} size={props.size} />
+      <Bouncer bg={props.color} size={props.size} />
+    </Bouncers>
+  );
+};
 
 LoadingIndicator.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  delay: PropTypes.string,
+  delay: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 LoadingIndicator.defaultProps = {
   color: 'grey.1',
   size: 18,
-  delay: '0',
+  delay: 0,
 };
 
 export default LoadingIndicator;
