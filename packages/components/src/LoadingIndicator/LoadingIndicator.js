@@ -15,7 +15,7 @@ const bounce = keyframes`
   40% { transform: scale(1.0) }
 `;
 
-const delayType = (delay) => {
+const parseDelay = (delay) => {
   if (typeof delay === 'number') {
     return (`${delay}ms`);
   }
@@ -47,7 +47,7 @@ const Bouncer = styled(tag.div)`
 `;
 
 const LoadingIndicator = (props) => {
-  const delay = delayType(props.delay);
+  const delay = parseDelay(props.delay);
 
   return (
     <Bouncers delay={delay} width={props.size * 4}>
