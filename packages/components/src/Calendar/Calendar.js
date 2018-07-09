@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { subDays } from 'date-fns';
+import subDays from 'date-fns/sub_days';
 
 import { Flex, Box } from '../';
 import {

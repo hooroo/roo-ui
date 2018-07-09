@@ -2,7 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { number, boolean } from '@storybook/addon-knobs';
 import { withDocs } from 'storybook-readme';
-import { addDays, subDays } from 'date-fns';
+import addDays from 'date-fns/add_days';
+import subDays from 'date-fns/sub_days';
 
 import Calendar from './Calendar';
 import README from './README.md';
