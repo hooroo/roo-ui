@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.42.1"></a>
+## [0.42.1](https://github.com/hooroo/roo-ui/compare/v0.42.0...v0.42.1) (2018-07-10)
+
+
+### Bug Fixes
+
+* add padding to calendar nav ([#111](https://github.com/hooroo/roo-ui/issues/111)) ([7296686](https://github.com/hooroo/roo-ui/commit/7296686))
+
+
+
+
 <a name="0.42.0"></a>
 # [0.42.0](https://github.com/hooroo/roo-ui/compare/v0.41.0...v0.42.0) (2018-07-10)
 
