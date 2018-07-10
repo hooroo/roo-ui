@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tag from 'clean-tag';
-import { space } from 'styled-system';
+import { space, verticalAlign } from 'styled-system';
 
 const NakedButton = styled(tag.button).attrs({
   type: 'button',
@@ -16,13 +16,14 @@ const NakedButton = styled(tag.button).attrs({
   line-height: normal;
   appearance: none;
   cursor: pointer;
-  vertical-align: middle;
 
   ${space}
+  ${verticalAlign}
 `;
 
 NakedButton.propTypes = {
   ...space.propTypes,
+  ...verticalAlign.propTypes,
 };
 
 export default NakedButton;

@@ -61,6 +61,10 @@
     "react-text-mask": "^5.4.1",
     "storybook-readme": "^3.2.0",
     "styled-components": "^3.1.5",
+<<<<<<< HEAD
     "styled-system": "^2.3.2"
+=======
+    "styled-system": "^2.3.5"
+>>>>>>> c86ed27... fix: don't vertically align naked button by default
   }
 }
