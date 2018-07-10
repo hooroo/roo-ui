@@ -16,6 +16,7 @@ import {
   borderColor,
   flexBasis,
   flex,
+  position,
 } from 'styled-system';
 
 const Box = styled(tag)`
@@ -34,6 +35,7 @@ const Box = styled(tag)`
   ${borderColor}
   ${flexBasis}
   ${flex}
+  ${position}
 `;
 
 Box.propTypes = {
@@ -52,6 +54,7 @@ Box.propTypes = {
   ...borderColor.propTypes,
   ...flexBasis.propTypes,
   ...flex.propTypes,
+  ...position.propTypes,
 };
 
 export default Box;

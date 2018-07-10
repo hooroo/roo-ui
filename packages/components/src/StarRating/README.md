@@ -20,8 +20,8 @@ export default (
 
 ## Properties
 
-|   Name    |       Description       |   Type   | Default | Required? |
-| :-------- | :---------------------- | :------- | :------ | :-------- |
-| `rating` | from 1 to 5 | `string`   | -   | true         |
-| `ratingType` | AAA or SELF_RATED       | `string` | -       | true         |
-| `size` | size of the icon       | `string` | -       | true         |
+|   Name       |       Description       |   Type   | Default | Required? |
+| :----------- | :---------------------- | :------- | :------ | :-------- |
+| `rating`     | from 1 to 5 | `string`  | -        | true    | ✔︎         |
+| `ratingType` | AAA or SELF_RATED       | `string` | -       | ✔︎         |
+| `size`       | size of the icon        | `string` | -       | ✔︎         |
