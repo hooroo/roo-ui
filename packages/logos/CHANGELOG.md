@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.41.0"></a>
+# [0.41.0](https://github.com/hooroo/roo-ui/compare/v0.40.2...v0.41.0) (2018-07-09)
+
+
+### Features
+
+* **logos:** add new qantas hotels logo ([#102](https://github.com/hooroo/roo-ui/issues/102)) ([dd259b8](https://github.com/hooroo/roo-ui/commit/dd259b8))
+
+
+
+
 <a name="0.39.1"></a>
 ## [0.39.1](https://github.com/hooroo/roo-ui/compare/v0.39.0...v0.39.1) (2018-06-26)
 
