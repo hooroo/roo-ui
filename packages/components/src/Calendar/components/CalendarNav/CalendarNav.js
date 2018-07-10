@@ -8,6 +8,7 @@ const Wrapper = Flex.extend`
   width: 100%;
   position: absolute;
   justify-content: space-between;
+  padding: 0 ${themeGet('space.4')};
 `;
 
 const Button = NakedButton.extend`
