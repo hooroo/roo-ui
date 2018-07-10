@@ -4,8 +4,8 @@ exports[`<LoadingIndicator /> matches snapshot 1`] = `
 .c0 {
   -webkit-animation: gdMPTF 200ms ease-in both;
   animation: gdMPTF 200ms ease-in both;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
   margin: 0 auto;
   text-align: center;
   display: -webkit-box;
@@ -21,7 +21,7 @@ exports[`<LoadingIndicator /> matches snapshot 1`] = `
 
 <Box
   className="c0"
-  delay="0"
+  delay="0ms"
   width={72}
 >
   <LoadingIndicator__Bouncer
