@@ -6,6 +6,7 @@ import { Input } from '..';
 
 const MaskedInput = Input.withComponent(TextMask);
 MaskedInput.displayName = 'MaskedInput';
+
 MaskedInput.defaultProps = {
   ...Input.defaultProps,
   render: (ref, { defaultValue, ...props }) => (

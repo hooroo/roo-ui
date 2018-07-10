@@ -1,5 +1,6 @@
 import qantas from './qantas.svg';
 import qantasGroup from './qantas-group.svg';
+import qantasHotels from './qantas-hotels.svg';
 import qantasTail from './qantas-tail.svg';
 import jetstar from './jetstar.svg';
 import tripAdvisor from './trip-advisor.svg';
@@ -11,6 +12,7 @@ import qantasQff from './qantas-qff.svg';
 export {
   qantas,
   qantasGroup,
+  qantasHotels,
   qantasTail,
   jetstar,
   tripAdvisor,

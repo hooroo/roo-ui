@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CalendarNav /> renders correctly 1`] = `
+<Box>
+  <NakedButton
+    onClick={[MockFunction]}
+  >
+    <Icon
+      name="chevronLeft"
+    />
+  </NakedButton>
+  <NakedButton
+    onClick={[MockFunction]}
+  >
+    <Icon
+      name="chevronRight"
+    />
+  </NakedButton>
+</Box>
+`;
