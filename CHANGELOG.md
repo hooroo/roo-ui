@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.42.0"></a>
+# [0.42.0](https://github.com/hooroo/roo-ui/compare/v0.41.0...v0.42.0) (2018-07-10)
+
+
+### Features
+
+* add Calendar and Popover components ([#106](https://github.com/hooroo/roo-ui/issues/106)) ([f7b3b91](https://github.com/hooroo/roo-ui/commit/f7b3b91))
+
+
+
+
 <a name="0.41.0"></a>
 # [0.41.0](https://github.com/hooroo/roo-ui/compare/v0.40.2...v0.41.0) (2018-07-09)
 
