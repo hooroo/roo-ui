@@ -147,9 +147,10 @@ exports[`<CalendarEmptyDay /> renders correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex: 1 1 calc(100% / 7);
-  -ms-flex: 1 1 calc(100% / 7);
-  flex: 1 1 calc(100% / 7);
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: calc(100% / 7);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;

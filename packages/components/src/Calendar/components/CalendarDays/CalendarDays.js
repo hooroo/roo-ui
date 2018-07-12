@@ -6,7 +6,8 @@ import { css } from 'styled-components';
 import { Flex, NakedButton } from '../../../';
 
 const Wrapper = Flex.extend`
-  flex: 1 1 calc(100% / 7);
+  flex: 1 1 auto;
+  width: calc(100% / 7);
   justify-content: center;
   margin: 0 -1px -1px 0;
   border: ${themeGet('borders.1')} ${themeGet('colors.grey.3')};
