@@ -12,7 +12,7 @@ import { Box } from '../';
 const ContentWrapper = Box.extend`
   margin: ${rem('12px')};
   background: ${themeGet('colors.grey.3')};
-  z-index: 1;
+  border: ${themeGet('borders.2')} ${themeGet('colors.grey.2')};
 `;
 
 const Triangle = Box.extend`
@@ -43,6 +43,28 @@ const Triangle = Box.extend`
   `};
 `;
 
+const TriangleBorder = Triangle.extend`
+ ${props => props.placement === 'top' && css`
+    border-top-color: ${themeGet('colors.grey.2')};
+    margin-top: ${rem('2px')};
+  `};
+
+  ${props => props.placement === 'right' && css`
+    border-right-color: ${themeGet('colors.grey.2')};
+    margin-right: ${rem('2px')};
+  `};
+
+  ${props => props.placement === 'bottom' && css`
+    border-bottom-color: ${themeGet('colors.grey.2')};
+    margin-bottom: ${rem('2px')};
+  `};
+
+   ${props => props.placement === 'left' && css`
+    border-left-color: ${themeGet('colors.grey.2')};
+    margin-left: ${rem('2px')};
+  `};
+`;
+
 class Base extends Component {
   state = {
     isOpen: false,
@@ -61,7 +83,8 @@ class Base extends Component {
   }
 
   render() {
-    const childrenArray = React.Children.toArray(this.props.children);
+    const { children, zIndex } = this.props;
+    const childrenArray = React.Children.toArray(children);
     const [control, content] = partition(childrenArray, child => child.type.displayName === 'Popover.control');
 
     return (
@@ -84,14 +107,20 @@ class Base extends Component {
               ref, style, placement, arrowProps,
             }) => (
               <ContentWrapper
-                boxShadow="heavy"
                 aria-hidden="true"
                 innerRef={ref}
                 style={style}
                 placement={placement}
                 className="ignore-react-onclickoutside"
+                zIndex={zIndex}
               >
                 {content}
+
+                <TriangleBorder
+                  innerRef={arrowProps.ref}
+                  style={arrowProps.style}
+                  placement={placement}
+                />
                 <Triangle
                   innerRef={arrowProps.ref}
                   style={arrowProps.style}
@@ -106,8 +135,13 @@ class Base extends Component {
   }
 }
 
+Base.defaultProps = {
+  zIndex: 1,
+};
+
 Base.propTypes = {
   children: PropTypes.node.isRequired,
+  zIndex: PropTypes.number,
 };
 
 const Popover = onClickOutside(Base);

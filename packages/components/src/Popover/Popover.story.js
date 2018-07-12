@@ -10,7 +10,7 @@ import { Button } from '..';
 storiesOf('Components|Popover', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Popover>
+    <Popover zIndex={20}>
       <Popover.control>
         {({ openPopover, closePopover }) => (
           <Button primary onClick={openPopover} onKeyDown={closePopover}>Open popover</Button>
