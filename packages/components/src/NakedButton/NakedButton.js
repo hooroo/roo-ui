@@ -27,4 +27,8 @@ NakedButton.propTypes = {
   ...space.propTypes,
 };
 
+NakedButton.defaultProps = {
+  blacklist: ['verticalAlign'],
+};
+
 export default NakedButton;
