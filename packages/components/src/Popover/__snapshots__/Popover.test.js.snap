@@ -155,9 +155,16 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
 
 exports[`<Popover /> when popover is open renders correctly 1`] = `
 .c0 {
-  box-shadow: heavy;
   margin: 0.75rem;
   z-index: 1;
+}
+
+.c2 {
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-width: 0.75rem;
+  position: absolute;
 }
 
 .c1 {
@@ -333,7 +340,6 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
           >
             <Box
               aria-hidden="true"
-              boxShadow="heavy"
               className="ignore-react-onclickoutside"
               innerRef={[Function]}
               style={
@@ -440,7 +446,6 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                     "borderWidth",
                   ]
                 }
-                boxShadow="heavy"
                 className="ignore-react-onclickoutside c0"
                 innerRef={[Function]}
                 is="div"
@@ -576,6 +581,114 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                     >
                       <div
                         className="c1"
+                        style={Object {}}
+                      />
+                    </Clean.div>
+                  </Box>
+                  <Box
+                    innerRef={[Function]}
+                    style={Object {}}
+                  >
+                    <Clean.div
+                      blacklist={
+                        Array [
+                          "m",
+                          "mt",
+                          "mr",
+                          "mb",
+                          "ml",
+                          "mx",
+                          "my",
+                          "p",
+                          "pt",
+                          "pr",
+                          "pb",
+                          "pl",
+                          "px",
+                          "py",
+                          "width",
+                          "w",
+                          "fontSize",
+                          "f",
+                          "color",
+                          "bg",
+                          "fontFamily",
+                          "font",
+                          "textAlign",
+                          "align",
+                          "lineHeight",
+                          "fontWeight",
+                          "letterSpacing",
+                          "display",
+                          "maxWidth",
+                          "minWidth",
+                          "height",
+                          "maxHeight",
+                          "minHeight",
+                          "size",
+                          "ratio",
+                          "alignItems",
+                          "alignContent",
+                          "justifyContent",
+                          "justify",
+                          "flexWrap",
+                          "wrap",
+                          "flexBasis",
+                          "flexDirection",
+                          "flex",
+                          "justifySelf",
+                          "alignSelf",
+                          "order",
+                          "gridGap",
+                          "gridColumnGap",
+                          "gridRowGap",
+                          "gridColumn",
+                          "gridRow",
+                          "gridAutoFlow",
+                          "gridAutoColumns",
+                          "gridAutoRows",
+                          "gridTemplateColumns",
+                          "gridTemplateRows",
+                          "border",
+                          "borderTop",
+                          "borderRight",
+                          "borderBottom",
+                          "borderLeft",
+                          "borderColor",
+                          "borderRadius",
+                          "boxShadow",
+                          "background",
+                          "backgroundImage",
+                          "bgImage",
+                          "backgroundSize",
+                          "bgSize",
+                          "backgroundPosition",
+                          "bgPosition",
+                          "backgroundRepeat",
+                          "bgRepeat",
+                          "position",
+                          "zIndex",
+                          "top",
+                          "right",
+                          "bottom",
+                          "left",
+                          "hover",
+                          "focus",
+                          "active",
+                          "disabledStyle",
+                          "textStyle",
+                          "colors",
+                          "buttonStyle",
+                          "borderWidth",
+                        ]
+                      }
+                      className="c2"
+                      innerRef={[Function]}
+                      is="div"
+                      style={Object {}}
+                    >
+                      <div
+                        className="c2"
                         style={Object {}}
                       />
                     </Clean.div>

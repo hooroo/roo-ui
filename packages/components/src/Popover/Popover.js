@@ -12,6 +12,7 @@ import { Box } from '../';
 const ContentWrapper = Box.extend`
   margin: ${rem('12px')};
   background: ${themeGet('colors.grey.3')};
+  border: ${themeGet('borders.2')} ${themeGet('colors.grey.2')};
   z-index: 1;
 `;
 
@@ -40,6 +41,28 @@ const Triangle = Box.extend`
    ${props => props.placement === 'left' && css`
     border-left-color: ${themeGet('colors.grey.3')};
     left: 100%;
+  `};
+`;
+
+const TriangleShadow = Triangle.extend`
+ ${props => props.placement === 'top' && css`
+    border-top-color: ${themeGet('colors.grey.2')};
+    margin-top: ${rem('2px')};
+  `};
+
+  ${props => props.placement === 'right' && css`
+    border-right-color: ${themeGet('colors.grey.2')};
+    margin-right: ${rem('2px')};
+  `};
+
+  ${props => props.placement === 'bottom' && css`
+    border-bottom-color: ${themeGet('colors.grey.2')};
+    margin-bottom: ${rem('2px')};
+  `};
+
+   ${props => props.placement === 'left' && css`
+    border-left-color: ${themeGet('colors.grey.2')};
+    margin-left: ${rem('2px')};
   `};
 `;
 
@@ -84,7 +107,6 @@ class Base extends Component {
               ref, style, placement, arrowProps,
             }) => (
               <ContentWrapper
-                boxShadow="heavy"
                 aria-hidden="true"
                 innerRef={ref}
                 style={style}
@@ -92,6 +114,12 @@ class Base extends Component {
                 className="ignore-react-onclickoutside"
               >
                 {content}
+
+                <TriangleShadow
+                  innerRef={arrowProps.ref}
+                  style={arrowProps.style}
+                  placement={placement}
+                />
                 <Triangle
                   innerRef={arrowProps.ref}
                   style={arrowProps.style}
