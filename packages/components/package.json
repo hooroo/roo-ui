@@ -26,6 +26,7 @@
     "styled-system": "^2.2.1"
   },
   "dependencies": {
+    "date-fns": "^1.29.0",
     "dayzed": "^2.2.0",
     "downshift": "^2.0.10",
     "react-onclickoutside": "^6.7.1",
