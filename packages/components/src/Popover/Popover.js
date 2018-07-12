@@ -43,7 +43,7 @@ const Triangle = Box.extend`
   `};
 `;
 
-const TriangleShadow = Triangle.extend`
+const TriangleBorder = Triangle.extend`
  ${props => props.placement === 'top' && css`
     border-top-color: ${themeGet('colors.grey.2')};
     margin-top: ${rem('2px')};
@@ -116,7 +116,7 @@ class Base extends Component {
               >
                 {content}
 
-                <TriangleShadow
+                <TriangleBorder
                   innerRef={arrowProps.ref}
                   style={arrowProps.style}
                   placement={placement}
