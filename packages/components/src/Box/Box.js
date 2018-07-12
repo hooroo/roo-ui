@@ -17,6 +17,7 @@ import {
   flexBasis,
   flex,
   position,
+  zIndex,
 } from 'styled-system';
 
 const Box = styled(tag)`
@@ -36,6 +37,7 @@ const Box = styled(tag)`
   ${flexBasis}
   ${flex}
   ${position}
+  ${zIndex}
 `;
 
 Box.propTypes = {

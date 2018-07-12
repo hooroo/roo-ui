@@ -28,6 +28,8 @@ export default (
 
 ## Properties
 
-| Name       | Description                           | Type   | Default | Required? |
-|------------|---------------------------------------|--------|---------|-----------|
-| `children` | Content and Popover.control to render | `node` | -       | ✔︎         |
+| Name       | Description                           | Type     | Default | Required? |
+|------------|---------------------------------------|----------|---------|-----------|
+| `children` | Content and Popover.control to render | `node`   | -       | ✔︎         |
+| `zIndex`   | Content zIndex                        | `number` | 1       | -         |
+
