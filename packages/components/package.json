@@ -28,7 +28,7 @@
   "dependencies": {
     "date-fns": "^1.29.0",
     "dayzed": "^2.2.0",
-    "downshift": "^2.0.12",
+    "downshift": "^2.0.10",
     "prop-types": "^15.6.2",
     "react-onclickoutside": "^6.7.1",
     "react-popper": "^1.0.0",
