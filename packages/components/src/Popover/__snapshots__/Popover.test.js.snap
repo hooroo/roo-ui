@@ -26,6 +26,7 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
       outsideClickIgnoreClass="ignore-react-onclickoutside"
       preventDefault={false}
       stopPropagation={false}
+      zIndex={1}
     >
       <Manager>
         <Reference>
@@ -155,8 +156,8 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
 
 exports[`<Popover /> when popover is open renders correctly 1`] = `
 .c0 {
-  margin: 0.75rem;
   z-index: 1;
+  margin: 0.75rem;
 }
 
 .c2 {
@@ -200,6 +201,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
       outsideClickIgnoreClass="ignore-react-onclickoutside"
       preventDefault={false}
       stopPropagation={false}
+      zIndex={1}
     >
       <Manager>
         <Reference>
@@ -351,6 +353,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                   "top": 0,
                 }
               }
+              zIndex={1}
             >
               <Clean.div
                 aria-hidden="true"
@@ -458,6 +461,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                     "top": 0,
                   }
                 }
+                zIndex={1}
               >
                 <div
                   aria-hidden="true"

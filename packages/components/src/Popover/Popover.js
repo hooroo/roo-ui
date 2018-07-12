@@ -13,7 +13,6 @@ const ContentWrapper = Box.extend`
   margin: ${rem('12px')};
   background: ${themeGet('colors.grey.3')};
   border: ${themeGet('borders.2')} ${themeGet('colors.grey.2')};
-  z-index: 1;
 `;
 
 const Triangle = Box.extend`
@@ -84,7 +83,8 @@ class Base extends Component {
   }
 
   render() {
-    const childrenArray = React.Children.toArray(this.props.children);
+    const { children, zIndex } = this.props;
+    const childrenArray = React.Children.toArray(children);
     const [control, content] = partition(childrenArray, child => child.type.displayName === 'Popover.control');
 
     return (
@@ -112,6 +112,7 @@ class Base extends Component {
                 style={style}
                 placement={placement}
                 className="ignore-react-onclickoutside"
+                zIndex={zIndex}
               >
                 {content}
 
@@ -134,8 +135,13 @@ class Base extends Component {
   }
 }
 
+Base.defaultProps = {
+  zIndex: 1,
+};
+
 Base.propTypes = {
   children: PropTypes.node.isRequired,
+  zIndex: PropTypes.number,
 };
 
 const Popover = onClickOutside(Base);
