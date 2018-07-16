@@ -18,6 +18,11 @@ exports[`<NakedButton /> renders correctly 1`] = `
 }
 
 <Clean.button
+  blacklist={
+    Array [
+      "verticalAlign",
+    ]
+  }
   className="c0"
   type="button"
 >
