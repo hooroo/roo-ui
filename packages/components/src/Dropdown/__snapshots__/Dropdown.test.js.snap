@@ -11,6 +11,20 @@ exports[`<Dropdown /> renders correctly when closed 1`] = `
     blacklist={
       Array [
         "verticalAlign",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
       ]
     }
     data-toggle={true}
@@ -42,6 +56,20 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
     blacklist={
       Array [
         "verticalAlign",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
       ]
     }
     data-toggle={true}

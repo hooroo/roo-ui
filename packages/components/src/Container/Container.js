@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import tag from 'clean-tag';
 import { maxWidth, space, themeGet } from 'styled-system';
 
@@ -41,11 +42,17 @@ const Container = styled(tag)`
 `;
 
 Container.propTypes = {
+  gutter: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])),
+  ]),
   ...maxWidth.propTypes,
   ...space.propTypes,
 };
 
 Container.defaultProps = {
+  blacklist: Object.keys(Container.propTypes),
   maxWidth: 'default',
   gutter: 'default',
 };

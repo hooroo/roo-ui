@@ -21,6 +21,20 @@ exports[`<NakedButton /> renders correctly 1`] = `
   blacklist={
     Array [
       "verticalAlign",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
     ]
   }
   className="c0"
