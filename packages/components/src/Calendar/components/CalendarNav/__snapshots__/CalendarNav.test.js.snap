@@ -3,6 +3,11 @@
 exports[`<CalendarNav /> renders correctly 1`] = `
 <Box>
   <NakedButton
+    blacklist={
+      Array [
+        "verticalAlign",
+      ]
+    }
     onClick={[MockFunction]}
   >
     <Icon
@@ -10,6 +15,11 @@ exports[`<CalendarNav /> renders correctly 1`] = `
     />
   </NakedButton>
   <NakedButton
+    blacklist={
+      Array [
+        "verticalAlign",
+      ]
+    }
     onClick={[MockFunction]}
   >
     <Icon

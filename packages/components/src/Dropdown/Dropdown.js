@@ -15,6 +15,8 @@ const Wrapper = Box.extend`
 `;
 
 const Toggle = NakedButton.extend`
+  vertical-align: middle;
+
   &:hover {
     color: ${themeGet('colors.ui.link')};
   }

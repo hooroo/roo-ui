@@ -15,10 +15,14 @@ exports[`<NakedButton /> renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  vertical-align: middle;
 }
 
 <Clean.button
+  blacklist={
+    Array [
+      "verticalAlign",
+    ]
+  }
   className="c0"
   type="button"
 >
