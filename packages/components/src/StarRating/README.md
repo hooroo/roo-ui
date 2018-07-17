@@ -21,5 +21,5 @@ export default <StarRating />;
 | Name         | Description              | Type                  | Default | Required? |
 | :----------- | :----------------------- | :-------------------- | :------ | :-------- |
 | `rating`     | from 0.5 to 5            | `string` or `number`  | -       | ✔︎        |
-| `ratingType` | type of rating to render | `AAA` or 'SELF_RATED' | -       | ✔︎        |
+| `ratingType` | type of rating to render | `AAA` or `SELF_RATED` | -       | ✔︎        |
 | `size`       | size of the icons        | `string` or `number`  | -       | ✔︎        |
