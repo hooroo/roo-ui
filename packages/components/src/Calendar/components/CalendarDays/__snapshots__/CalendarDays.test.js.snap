@@ -5,6 +5,7 @@ exports[`<CalendarDay /> renders correctly 1`] = `
   <NakedButton
     blacklist={
       Array [
+        "verticalAlign",
         "m",
         "mt",
         "mr",
