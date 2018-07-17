@@ -5,6 +5,7 @@ import cleanElement from 'clean-element';
 import { Container, NakedButton, Text, Flex, Box, Icon } from '..';
 
 const CleanDiv = cleanElement('div');
+CleanDiv.propTypes = Box.propTypes;
 
 const Base = ({
   children,

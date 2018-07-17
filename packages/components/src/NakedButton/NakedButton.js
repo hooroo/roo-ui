@@ -18,8 +18,7 @@ const NakedButton = styled(tag.button).attrs({
   appearance: none;
   cursor: pointer;
 
-  ${space}
-  ${verticalAlign}
+  ${space} ${verticalAlign};
 `;
 
 NakedButton.propTypes = {
@@ -28,7 +27,7 @@ NakedButton.propTypes = {
 };
 
 NakedButton.defaultProps = {
-  blacklist: ['verticalAlign'],
+  blacklist: Object.keys(NakedButton.propTypes),
 };
 
 export default NakedButton;

@@ -126,6 +126,26 @@ exports[`<Alert /> contained renders correctly 1`] = `
   mb={3}
 >
   <Container
+    blacklist={
+      Array [
+        "gutter",
+        "maxWidth",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+      ]
+    }
     gutter="default"
     maxWidth="default"
   >
