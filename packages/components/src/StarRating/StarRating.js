@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Flex, Icon } from '..';
 
 const iconType = (rating, index, ratingType) => {
-  const ratingTypeIcon = (ratingType === 'AAA') ? 'star' : 'circle';
+  const ratingTypeIcon = ratingType === 'AAA' ? 'star' : 'circle';
 
   if (index < rating - 0.5) return `${ratingTypeIcon}`;
   if (index < rating) return `${ratingTypeIcon}Half`;
@@ -36,10 +36,12 @@ const StarRating = ({ ratingType, rating, size }) => (
   </Flex>
 );
 
+const stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
+
 StarRating.propTypes = {
-  rating: PropTypes.string.isRequired,
-  ratingType: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
+  rating: stringOrNumber.isRequired,
+  ratingType: PropTypes.oneOf(['AAA', 'SELF_RATED']).isRequired,
+  size: stringOrNumber.isRequired,
 };
 
 export default StarRating;
