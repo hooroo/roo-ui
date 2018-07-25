@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import subDays from 'date-fns/sub_days';
+import { subDays, isSameDay } from 'date-fns';
 
 import { Flex, Box } from '../';
 import {
@@ -14,8 +14,23 @@ import {
   CalendarMonth as Month,
 } from '.';
 
+const getCustomDateProps = (disabledDates, day) => {
+  const match = disabledDates.filter(disabledDate => isSameDay(disabledDate, day.date));
+  const props = {
+    selected: day.selected,
+    selectable: day.selectable,
+  };
+
+  if (match.length) {
+    props.disabled = true;
+    props.selectable = false;
+  }
+
+  return props;
+};
+
 const Calendar = ({
-  monthNames, weekdayNames, monthsToDisplay, stacked, ...rest
+  monthNames, weekdayNames, monthsToDisplay, stacked, disabledDates, ...rest
 }) => (
   <Dayzed
     {...rest}
@@ -61,12 +76,12 @@ const Calendar = ({
 
                           );
                         }
+
                         return (
                           <Day
                             key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
-                            selected={day.selected}
-                            selectable={day.selectable}
                             {...getDateProps({ dateObj: day })}
+                            {...getCustomDateProps(disabledDates, day)}
                           >
                             {day.date.getDate()}
                           </Day>
@@ -87,6 +102,7 @@ Calendar.defaultProps = {
   firstDayOfWeek: 1,
   stacked: false,
   minDate: subDays(new Date(), 1),
+  disabledDates: [],
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
 };
@@ -97,6 +113,7 @@ Calendar.propTypes = {
   firstDayOfWeek: PropTypes.number,
   stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
+  disabledDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
 };

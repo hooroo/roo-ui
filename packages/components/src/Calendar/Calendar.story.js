@@ -18,5 +18,6 @@ storiesOf('Components|Calendar', module)
       selected={new Date()}
       onDateSelected={console.log} // eslint-disable-line no-console
       stacked={boolean('Stacked', false)}
+      disabledDates={[addDays(new Date(), 1), addDays(new Date(), 2), addDays(new Date(), 4)]}
     />
   ));
