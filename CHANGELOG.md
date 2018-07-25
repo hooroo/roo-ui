@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.43.8"></a>
+## [0.43.8](https://github.com/hooroo/roo-ui/compare/v0.43.7...v0.43.8) (2018-07-25)
+
+
+### Bug Fixes
+
+* update styled system since vertical align was not working ([#124](https://github.com/hooroo/roo-ui/issues/124)) ([693989f](https://github.com/hooroo/roo-ui/commit/693989f))
+
+
+
+
 <a name="0.43.7"></a>
 ## [0.43.7](https://github.com/hooroo/roo-ui/compare/v0.43.6...v0.43.7) (2018-07-25)
 
