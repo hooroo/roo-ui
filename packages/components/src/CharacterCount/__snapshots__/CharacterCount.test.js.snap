@@ -9,6 +9,36 @@ exports[`<CharacterCount /> renders correctly 1`] = `
 }
 
 <Cleaned
+  blacklist={
+    Array [
+      "textStyle",
+      "color",
+      "bg",
+      "fontSize",
+      "f",
+      "fontWeight",
+      "letterSpacing",
+      "lineHeight",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textAlign",
+      "align",
+      "textDecoration",
+      "hidden",
+    ]
+  }
   className="c0"
   fontSize="sm"
   hidden={false}

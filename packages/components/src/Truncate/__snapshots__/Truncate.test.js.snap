@@ -11,6 +11,36 @@ exports[`<Truncate /> renders correctly 1`] = `
 }
 
 <Clean.span
+  blacklist={
+    Array [
+      "textStyle",
+      "color",
+      "bg",
+      "fontSize",
+      "f",
+      "fontWeight",
+      "letterSpacing",
+      "lineHeight",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textAlign",
+      "align",
+      "textDecoration",
+      "hidden",
+    ]
+  }
   className="c0"
   hidden={false}
   textStyle="text"

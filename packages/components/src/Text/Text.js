@@ -36,7 +36,6 @@ const Text = styled(tag.span)`
 }
 `;
 
-
 Text.propTypes = {
   ...textStyle.propTypes,
   ...color.propTypes,
@@ -53,6 +52,7 @@ Text.propTypes = {
 Text.defaultProps = {
   hidden: false,
   textStyle: 'text',
+  blacklist: Object.keys(Text.propTypes),
 };
 
 export default Text;

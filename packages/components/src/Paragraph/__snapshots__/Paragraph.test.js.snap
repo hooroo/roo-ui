@@ -10,6 +10,36 @@ exports[`<Paragraph /> renders correctly 1`] = `
 }
 
 <Clean.p
+  blacklist={
+    Array [
+      "textStyle",
+      "color",
+      "bg",
+      "fontSize",
+      "f",
+      "fontWeight",
+      "letterSpacing",
+      "lineHeight",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "textAlign",
+      "align",
+      "textDecoration",
+      "hidden",
+    ]
+  }
   className="c0"
   hidden={false}
   m={0}
