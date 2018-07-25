@@ -5,6 +5,36 @@ exports[`<CalendarWeekday /> renders correctly 1`] = `
   width={0.14285714285714285}
 >
   <Text
+    blacklist={
+      Array [
+        "textStyle",
+        "color",
+        "bg",
+        "fontSize",
+        "f",
+        "fontWeight",
+        "letterSpacing",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textAlign",
+        "align",
+        "textDecoration",
+        "hidden",
+      ]
+    }
     hidden={false}
     textStyle="text"
   >

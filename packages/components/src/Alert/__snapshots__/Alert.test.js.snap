@@ -26,6 +26,36 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -64,6 +94,36 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -102,6 +162,36 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -153,6 +243,36 @@ exports[`<Alert /> contained renders correctly 1`] = `
       py={4}
     >
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -183,6 +303,36 @@ exports[`<Alert /> renders correctly 1`] = `
       py={4}
     >
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
