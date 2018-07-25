@@ -7,8 +7,4 @@ import README from './README.md';
 
 storiesOf('Components|NakedButton', module)
   .addDecorator(withDocs(README))
-  .add('default', () => (
-    <NakedButton verticalAlign="middle" mt={3}>
-      Hello world
-    </NakedButton>
-  ));
+  .add('default', () => <NakedButton mt={3}>Hello world</NakedButton>);
