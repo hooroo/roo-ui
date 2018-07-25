@@ -94,6 +94,7 @@ Calendar.defaultProps = {
 Calendar.propTypes = {
   ...Dayzed.propTypes,
   monthsToDisplay: PropTypes.number,
+  firstDayOfWeek: PropTypes.number,
   stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
   monthNames: PropTypes.arrayOf(PropTypes.string),
