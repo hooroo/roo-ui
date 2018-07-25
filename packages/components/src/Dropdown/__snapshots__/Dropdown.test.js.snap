@@ -36,6 +36,36 @@ exports[`<Dropdown /> renders correctly when closed 1`] = `
   >
     Options
     <Text
+      blacklist={
+        Array [
+          "textStyle",
+          "color",
+          "bg",
+          "fontSize",
+          "f",
+          "fontWeight",
+          "letterSpacing",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textAlign",
+          "align",
+          "textDecoration",
+          "hidden",
+        ]
+      }
       hidden={true}
       textStyle="text"
     >
@@ -81,6 +111,36 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
   >
     Options
     <Text
+      blacklist={
+        Array [
+          "textStyle",
+          "color",
+          "bg",
+          "fontSize",
+          "f",
+          "fontWeight",
+          "letterSpacing",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textAlign",
+          "align",
+          "textDecoration",
+          "hidden",
+        ]
+      }
       hidden={true}
       textStyle="text"
     >
