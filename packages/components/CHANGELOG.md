@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.43.7"></a>
+## [0.43.7](https://github.com/hooroo/roo-ui/compare/v0.43.6...v0.43.7) (2018-07-25)
+
+
+### Bug Fixes
+
+* update calendar weekdays to start on Monday ([#123](https://github.com/hooroo/roo-ui/issues/123)) ([6cec7ce](https://github.com/hooroo/roo-ui/commit/6cec7ce))
+
+
+
+
 <a name="0.43.6"></a>
 ## [0.43.6](https://github.com/hooroo/roo-ui/compare/v0.43.5...v0.43.6) (2018-07-18)
 
