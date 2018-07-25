@@ -84,15 +84,17 @@ const Calendar = ({
 
 Calendar.defaultProps = {
   monthsToDisplay: 1,
+  firstDayOfWeek: 1,
   stacked: false,
   minDate: subDays(new Date(), 1),
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
 };
 
 Calendar.propTypes = {
   ...Dayzed.propTypes,
   monthsToDisplay: PropTypes.number,
+  firstDayOfWeek: PropTypes.number,
   stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
   monthNames: PropTypes.arrayOf(PropTypes.string),
