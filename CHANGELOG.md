@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.44.0"></a>
+# [0.44.0](https://github.com/hooroo/roo-ui/compare/v0.43.8...v0.44.0) (2018-07-25)
+
+
+### Features
+
+* Add textDecoration property to Text ([#122](https://github.com/hooroo/roo-ui/issues/122)) ([31a980a](https://github.com/hooroo/roo-ui/commit/31a980a))
+
+
+
+
 <a name="0.43.8"></a>
 ## [0.43.8](https://github.com/hooroo/roo-ui/compare/v0.43.7...v0.43.8) (2018-07-25)
 
