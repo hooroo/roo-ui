@@ -15,13 +15,16 @@ import {
 } from '.';
 
 const getCustomDateProps = (disabledDates, day) => {
-  const date = disabledDates.filter(disabledDate => isSameDay(disabledDate, day.date));
+  const isDisabled = disabledDates
+    .filter(disabledDate => isSameDay(disabledDate, day.date))
+    .length;
+
   const props = {
     selected: day.selected,
     selectable: day.selectable,
   };
 
-  if (date.length) {
+  if (isDisabled) {
     props.disabled = true;
     props.selectable = false;
   }
