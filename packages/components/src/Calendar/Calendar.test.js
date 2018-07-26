@@ -38,41 +38,49 @@ describe('<Calendar />', () => {
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
-  it('passes the calendar month name to <CalendarMonth />', () => {
-    expect(childrenWrapper.find('CalendarMonth').prop('month')).toEqual('Jul');
+  describe('<Dayzed />', () => {
+    it('passes down props.monthsToDisplay', () => {
+      expect(wrapper.find('Dayzed').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+    });
+
+    it('assigns the rest of the props', () => {
+      expect(wrapper.props()).toEqual(expect.objectContaining({
+        date: props.date,
+        minDate: props.minDate,
+        maxDate: props.maxDate,
+        selected: props.selected,
+        onDateSelected: props.onDateSelected,
+      }));
+    });
   });
 
-  it('renders a <CalendarWeekday /> for each weekday name', () => {
-    expect(childrenWrapper.find('CalendarWeekday')).toHaveLength(props.weekdayNames.length);
+  describe('<CalendarMonth />', () => {
+    it('passes the month name to each calendar month', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('month')).toEqual('Jul');
+    });
+
+    it('passes down props.stacked', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('stacked')).toEqual(props.stacked);
+    });
+
+    it('passes down props.monthsToDisplay', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+    });
   });
 
-  it('passes props.monthsToDisplay to <CalendarMonth />', () => {
-    expect(childrenWrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+  describe('<CalendarWeekday />', () => {
+    it('renders one for each weekday name', () => {
+      expect(childrenWrapper.find('CalendarWeekday')).toHaveLength(props.weekdayNames.length);
+    });
   });
 
-  it('passes props.stacked to <CalendarMonth />', () => {
-    expect(childrenWrapper.find('CalendarMonth').prop('stacked')).toEqual(props.stacked);
+  describe('<CalendarEmptyDay />', () => {
+    it('renders one for each empty day in the calendar month', () => {
+      expect(childrenWrapper.find('CalendarEmptyDay')).toHaveLength(11);
+    });
   });
 
-  it('passes props.monthsToDisplay to <Dayzed />', () => {
-    expect(wrapper.find('Dayzed').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
-  });
-
-  it('assigns the rest of the props to <Dayzed />', () => {
-    expect(wrapper.props()).toEqual(expect.objectContaining({
-      date: props.date,
-      minDate: props.minDate,
-      maxDate: props.maxDate,
-      selected: props.selected,
-      onDateSelected: props.onDateSelected,
-    }));
-  });
-
-  it('renders a <CalendarEmptyDay /> for each empty day in the calendar month', () => {
-    expect(childrenWrapper.find('CalendarEmptyDay')).toHaveLength(11);
-  });
-
-  describe('<CalendarDay/>', () => {
+  describe('<CalendarDay />', () => {
     it('it renders a day for each day in the month', () => {
       expect(childrenWrapper.find('CalendarDay')).toHaveLength(31);
     });
