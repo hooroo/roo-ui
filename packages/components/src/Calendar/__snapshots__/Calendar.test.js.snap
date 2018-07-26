@@ -68,22 +68,22 @@ exports[`<Calendar /> renders children correctly 1`] = `
         </CalendarWeekday>
       </Box>
       <Box>
-        <Box
+        <CalendarEmptyDay
           key="201860"
         />
-        <Box
+        <CalendarEmptyDay
           key="201861"
         />
-        <Box
+        <CalendarEmptyDay
           key="201862"
         />
-        <Box
+        <CalendarEmptyDay
           key="201863"
         />
-        <Box
+        <CalendarEmptyDay
           key="201864"
         />
-        <Box
+        <CalendarEmptyDay
           key="201865"
         />
         <CalendarDay
@@ -112,24 +112,24 @@ exports[`<Calendar /> renders children correctly 1`] = `
         </CalendarDay>
         <CalendarDay
           aria-label="Tue Jul 03 2018"
-          aria-pressed={true}
+          aria-pressed={false}
           disabled={false}
           key="201861"
           onClick={[Function]}
           role="button"
           selectable={true}
-          selected={true}
+          selected={false}
         >
           3
         </CalendarDay>
         <CalendarDay
           aria-label="Wed Jul 04 2018"
           aria-pressed={false}
-          disabled={false}
+          disabled={true}
           key="201862"
           onClick={[Function]}
           role="button"
-          selectable={true}
+          selectable={false}
           selected={false}
         >
           4
@@ -137,11 +137,11 @@ exports[`<Calendar /> renders children correctly 1`] = `
         <CalendarDay
           aria-label="Thu Jul 05 2018"
           aria-pressed={false}
-          disabled={false}
+          disabled={true}
           key="201863"
           onClick={[Function]}
           role="button"
-          selectable={true}
+          selectable={false}
           selected={false}
         >
           5
@@ -316,13 +316,13 @@ exports[`<Calendar /> renders children correctly 1`] = `
         </CalendarDay>
         <CalendarDay
           aria-label="Fri Jul 20 2018"
-          aria-pressed={false}
+          aria-pressed={true}
           disabled={false}
           key="201864"
           onClick={[Function]}
           role="button"
           selectable={true}
-          selected={false}
+          selected={true}
         >
           20
         </CalendarDay>
@@ -458,19 +458,19 @@ exports[`<Calendar /> renders children correctly 1`] = `
         >
           31
         </CalendarDay>
-        <Box
+        <CalendarEmptyDay
           key="201862"
         />
-        <Box
+        <CalendarEmptyDay
           key="201863"
         />
-        <Box
+        <CalendarEmptyDay
           key="201864"
         />
-        <Box
+        <CalendarEmptyDay
           key="201865"
         />
-        <Box
+        <CalendarEmptyDay
           key="201866"
         />
       </Box>
@@ -489,7 +489,7 @@ exports[`<Calendar /> renders correctly 1`] = `
   onDateSelected={[MockFunction]}
   onOffsetChanged={[Function]}
   render={[Function]}
-  selected={2018-07-03T00:00:00.000Z}
+  selected={2018-07-20T00:00:00.000Z}
   showOutsideDays={false}
 />
 `;

@@ -30,7 +30,7 @@ const Button = NakedButton.extend`
     background-color: ${themeGet('colors.grey.2')};
   }
 
-   ${props => props.selectable &&
+  ${props => props.selectable &&
     css`
       background-color: ${themeGet('colors.white')};
 
@@ -43,7 +43,7 @@ const Button = NakedButton.extend`
       &:active {
         background-color: ${themeGet('colors.ui.infoBackground')};
       }
-  `};
+    `};
 
   ${props => props.selected &&
     css`
@@ -54,6 +54,7 @@ const Button = NakedButton.extend`
 
 Button.defaultProps = {
   ...NakedButton.defaultProps,
+  disabled: PropTypes.bool,
   blacklist: [...Object.keys(NakedButton.propTypes), 'selectable'],
 };
 
@@ -66,6 +67,8 @@ export const CalendarDays = Flex.extend`
 export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
   border-color: transparent;
 `;
+
+CalendarEmptyDay.displayName = 'CalendarEmptyDay';
 
 export const CalendarDay = ({ children, ...rest }) => (
   <Wrapper>
