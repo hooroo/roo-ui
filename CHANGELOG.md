@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.45.0"></a>
+# [0.45.0](https://github.com/hooroo/roo-ui/compare/v0.44.0...v0.45.0) (2018-07-26)
+
+
+### Features
+
+* add ability to disable dates on calendar ([#125](https://github.com/hooroo/roo-ui/issues/125)) ([d36034c](https://github.com/hooroo/roo-ui/commit/d36034c))
+
+
+
+
 <a name="0.44.0"></a>
 # [0.44.0](https://github.com/hooroo/roo-ui/compare/v0.43.8...v0.44.0) (2018-07-25)
 
