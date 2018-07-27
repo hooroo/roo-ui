@@ -14,9 +14,9 @@ import {
   CalendarMonth as Month,
 } from '.';
 
-const getCustomDateProps = (disabledDates, day) => {
-  const isDisabled = disabledDates
-    .filter(disabledDate => isSameDay(disabledDate, day.date))
+const getCustomDateProps = (blockedDates, day) => {
+  const isBlocked = blockedDates
+    .filter(blockedDate => isSameDay(blockedDate, day.date))
     .length;
 
   const props = {
@@ -24,8 +24,7 @@ const getCustomDateProps = (disabledDates, day) => {
     selectable: day.selectable,
   };
 
-  if (isDisabled) {
-    props.disabled = true;
+  if (isBlocked) {
     props.selectable = false;
   }
 
@@ -33,7 +32,7 @@ const getCustomDateProps = (disabledDates, day) => {
 };
 
 const Calendar = ({
-  monthNames, weekdayNames, monthsToDisplay, stacked, disabledDates, ...rest
+  monthNames, weekdayNames, monthsToDisplay, stacked, blockedDates, ...rest
 }) => (
   <Dayzed
     {...rest}
@@ -84,7 +83,8 @@ const Calendar = ({
                           <Day
                             key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
                             {...getDateProps({ dateObj: day })}
-                            {...getCustomDateProps(disabledDates, day)}
+                            {...getCustomDateProps(blockedDates, day)}
+
                           >
                             {day.date.getDate()}
                           </Day>
@@ -105,7 +105,7 @@ Calendar.defaultProps = {
   firstDayOfWeek: 1,
   stacked: false,
   minDate: subDays(new Date(), 1),
-  disabledDates: [],
+  blockedDates: [],
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
 };
@@ -116,7 +116,7 @@ Calendar.propTypes = {
   firstDayOfWeek: PropTypes.number,
   stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
-  disabledDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
+  blockedDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
 };

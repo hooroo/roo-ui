@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
+import { darken } from 'polished';
 
 import { Flex, NakedButton } from '../../../';
 
@@ -25,6 +26,10 @@ const Button = NakedButton.extend`
   width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
+  &:focus {
+    outline: none;
+  }
+
   &:disabled {
     cursor: not-allowed;
     background-color: ${themeGet('colors.grey.2')};
@@ -36,20 +41,29 @@ const Button = NakedButton.extend`
 
       &:hover,
       &:focus {
-        outline: none;
         border-color: ${themeGet('colors.brand.secondary')};
       }
 
       &:active {
         background-color: ${themeGet('colors.ui.infoBackground')};
       }
-    `};
+  `};
 
   ${props => props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
       border-color: ${themeGet('colors.brand.secondary')};
-    `};
+  `};
+
+  ${props => !props.selectable && !props.disabled &&
+    css`
+    background-color: ${themeGet('colors.grey.2')};
+
+    &:hover,
+    &:focus {
+      background-color: ${props => darken(0.1, themeGet('colors.grey.2')(props))};
+    }
+  `};
 `;
 
 Button.defaultProps = {

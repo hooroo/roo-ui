@@ -125,7 +125,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
         <CalendarDay
           aria-label="Wed Jul 04 2018"
           aria-pressed={false}
-          disabled={true}
+          disabled={false}
           key="201862"
           onClick={[Function]}
           role="button"
@@ -137,7 +137,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
         <CalendarDay
           aria-label="Thu Jul 05 2018"
           aria-pressed={false}
-          disabled={true}
+          disabled={false}
           key="201863"
           onClick={[Function]}
           role="button"
