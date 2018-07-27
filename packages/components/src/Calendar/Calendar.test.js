@@ -1,6 +1,6 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme, mountWithTheme } from '@roo-ui/test-utils';
+import { shallowWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 
 import { Calendar } from '.';
@@ -32,11 +32,6 @@ describe('<Calendar />', () => {
 
   it('renders children correctly', () => {
     expect(childrenWrapper).toMatchSnapshot();
-  });
-
-  fit('has no accessibility errors', async () => {
-    console.log(wrapper.html());
-    // expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
   describe('<Dayzed />', () => {
