@@ -26,6 +26,7 @@ const Button = NakedButton.extend`
   width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
+
   &:focus {
     outline: none;
   }
@@ -53,6 +54,11 @@ const Button = NakedButton.extend`
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
       border-color: ${themeGet('colors.brand.secondary')};
+
+      &:hover,
+      &:focus {
+        background-color: ${themeGet('colors.white')};
+      }
   `};
 
   ${props => !props.selectable && !props.disabled &&
