@@ -14,25 +14,30 @@ import {
   CalendarMonth as Month,
 } from '.';
 
-const getCustomDateProps = (blockedDates, day) => {
-  const isBlocked = blockedDates
-    .filter(blockedDate => isSameDay(blockedDate, day.date))
+const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
+  const isDisabled = disabledDates
+    .filter(disabledDate => isSameDay(disabledDate, day.date))
     .length;
-
   const props = {
     selected: day.selected,
     selectable: day.selectable,
   };
 
-  if (isBlocked) {
+  if (isDisabled) {
     props.selectable = false;
+    props.disabled = true;
+  }
+
+  if (interactiveDisabledDates) {
+    props.disabled = false;
   }
 
   return props;
 };
 
 const Calendar = ({
-  monthNames, weekdayNames, monthsToDisplay, stacked, blockedDates, ...rest
+  monthNames, weekdayNames, monthsToDisplay, stacked,
+  disabledDates, interactiveDisabledDates, ...rest
 }) => (
   <Dayzed
     {...rest}
@@ -83,7 +88,7 @@ const Calendar = ({
                           <Day
                             key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
                             {...getDateProps({ dateObj: day })}
-                            {...getCustomDateProps(blockedDates, day)}
+                            {...getCustomDateProps(disabledDates, interactiveDisabledDates, day)}
 
                           >
                             {day.date.getDate()}
@@ -105,9 +110,10 @@ Calendar.defaultProps = {
   firstDayOfWeek: 1,
   stacked: false,
   minDate: subDays(new Date(), 1),
-  blockedDates: [],
+  disabledDates: [],
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  interactiveDisabledDates: false,
 };
 
 Calendar.propTypes = {
@@ -116,7 +122,8 @@ Calendar.propTypes = {
   firstDayOfWeek: PropTypes.number,
   stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
-  blockedDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
+  disabledDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
+  interactiveDisabledDates: PropTypes.bool,
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
 };

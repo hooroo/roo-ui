@@ -33,13 +33,15 @@ import {
 
 ## Properties
 
-| Name              | Description                          | Type      | Default | Required? |
-|-------------------|--------------------------------------|-----------|---------|-----------|
-| `monthsToDisplay` | Number of months to display          | `number`  | 1       | -         |
-| `stacked`         | Stack the calendar months vertically | `boolean` | false   | -         |
-| `monthNames`      | Month names                          | `array`   | -       | -         |
-| `weekdayNames`    | Weekday names                        | `array`   | -       | -         |
-| `blockedDates`    | Dates which will be blocked          | `array`   | []      | -         |
+| Name                       | Description                          | Type      | Default | Required? |
+|----------------------------|--------------------------------------|-----------|---------|-----------|
+| `monthsToDisplay`          | Number of months to display          | `number`  | 1       | -         |
+| `stacked`                  | Stack the calendar months vertically | `boolean` | false   | -         |
+| `monthNames`               | Month names                          | `array`   | -       | -         |
+| `weekdayNames`             | Weekday names                        | `array`   | -       | -         |
+| `disabledDates`            | Dates which will be disabled         | `array`   | []      | -         |
+| `interactiveDisabledDates` | Disabled dates will be clickable     | `boolean` | false   | -         |
+
 
 ## Customization
 

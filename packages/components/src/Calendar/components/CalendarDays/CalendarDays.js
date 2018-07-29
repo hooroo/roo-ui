@@ -26,7 +26,6 @@ const Button = NakedButton.extend`
   width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
-
   &:focus {
     outline: none;
   }

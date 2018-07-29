@@ -17,7 +17,7 @@ describe('<Calendar />', () => {
     monthsToDisplay: 1,
     stacked: true,
     weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-    blockedDates: [new Date('2018-07-04'), new Date('2018-07-05')],
+    disabledDates: [new Date('2018-07-04'), new Date('2018-07-05')],
   };
 
   beforeEach(() => {
@@ -97,21 +97,46 @@ describe('<Calendar />', () => {
       }));
     });
 
-    it('renders a blocked day when date is in props.blockedDates', () => {
+    it('renders a disabled day when date is in props.disabledDates', () => {
       const day3 = childrenWrapper.find('CalendarDay').at(3);
       const day4 = childrenWrapper.find('CalendarDay').at(4);
 
       expect(day3.props()).toEqual(expect.objectContaining({
         selected: false,
         selectable: false,
-        disabled: false,
+        disabled: true,
       }));
 
       expect(day4.props()).toEqual(expect.objectContaining({
         selected: false,
         selectable: false,
-        disabled: false,
+        disabled: true,
       }));
+    });
+
+    describe('when props.interactiveDisabledDates is present', () => {
+      beforeEach(() => {
+        props.interactiveDisabledDates = true;
+        wrapper = shallowWithTheme(<Calendar {...props} />, theme);
+        childrenWrapper = wrapper.dive();
+      });
+
+      it('renders clickable disabled days', () => {
+        const day3 = childrenWrapper.find('CalendarDay').at(3);
+        const day4 = childrenWrapper.find('CalendarDay').at(4);
+
+        expect(day3.props()).toEqual(expect.objectContaining({
+          selected: false,
+          selectable: false,
+          disabled: false,
+        }));
+
+        expect(day4.props()).toEqual(expect.objectContaining({
+          selected: false,
+          selectable: false,
+          disabled: false,
+        }));
+      });
     });
   });
 });
