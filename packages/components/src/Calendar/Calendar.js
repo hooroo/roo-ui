@@ -25,11 +25,7 @@ const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
 
   if (isDisabled) {
     props.selectable = false;
-    props.disabled = true;
-  }
-
-  if (interactiveDisabledDates) {
-    props.disabled = false;
+    props.disabled = !interactiveDisabledDates;
   }
 
   return props;
