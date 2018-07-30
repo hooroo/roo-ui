@@ -4,8 +4,14 @@ import {
   justifyContent,
   flexWrap,
   flexDirection,
+  style,
 } from 'styled-system';
 import Box from '../Box';
+
+const flexFlow = style({
+  prop: 'flexFlow',
+  cssProperty: 'flexFlow',
+});
 
 const Flex = Box.extend`
   display: flex;
@@ -14,6 +20,7 @@ const Flex = Box.extend`
   ${justifyContent}
   ${flexWrap}
   ${flexDirection}
+  ${flexFlow}
 `;
 
 Flex.propTypes = {
@@ -23,6 +30,7 @@ Flex.propTypes = {
   ...justifyContent.propTypes,
   ...flexWrap.propTypes,
   ...flexDirection.propTypes,
+  ...flexFlow.propTypes,
 };
 
 export default Flex;
