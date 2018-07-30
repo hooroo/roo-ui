@@ -14,26 +14,26 @@ import {
   CalendarMonth as Month,
 } from '.';
 
-const getCustomDateProps = (disabledDates, day) => {
+const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
   const isDisabled = disabledDates
     .filter(disabledDate => isSameDay(disabledDate, day.date))
     .length;
-
   const props = {
     selected: day.selected,
     selectable: day.selectable,
   };
 
   if (isDisabled) {
-    props.disabled = true;
     props.selectable = false;
+    props.disabled = !interactiveDisabledDates;
   }
 
   return props;
 };
 
 const Calendar = ({
-  monthNames, weekdayNames, monthsToDisplay, stacked, disabledDates, ...rest
+  monthNames, weekdayNames, monthsToDisplay, stacked,
+  disabledDates, interactiveDisabledDates, ...rest
 }) => (
   <Dayzed
     {...rest}
@@ -84,7 +84,8 @@ const Calendar = ({
                           <Day
                             key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
                             {...getDateProps({ dateObj: day })}
-                            {...getCustomDateProps(disabledDates, day)}
+                            {...getCustomDateProps(disabledDates, interactiveDisabledDates, day)}
+
                           >
                             {day.date.getDate()}
                           </Day>
@@ -108,6 +109,7 @@ Calendar.defaultProps = {
   disabledDates: [],
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  interactiveDisabledDates: false,
 };
 
 Calendar.propTypes = {
@@ -117,6 +119,7 @@ Calendar.propTypes = {
   stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
   disabledDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
+  interactiveDisabledDates: PropTypes.bool,
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
 };
