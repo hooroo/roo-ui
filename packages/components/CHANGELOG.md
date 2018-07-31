@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.47.0"></a>
+# [0.47.0](https://github.com/hooroo/roo-ui/compare/v0.46.1...v0.47.0) (2018-07-31)
+
+
+### Features
+
+* add zIndex proptypes ([#118](https://github.com/hooroo/roo-ui/issues/118)) ([9545af3](https://github.com/hooroo/roo-ui/commit/9545af3))
+
+
+
+
 <a name="0.46.1"></a>
 ## [0.46.1](https://github.com/hooroo/roo-ui/compare/v0.46.0...v0.46.1) (2018-07-30)
 
