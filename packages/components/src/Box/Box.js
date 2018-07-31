@@ -57,6 +57,7 @@ Box.propTypes = {
   ...flexBasis.propTypes,
   ...flex.propTypes,
   ...position.propTypes,
+  ...zIndex.propTypes,
 };
 
 export default Box;
