@@ -11,8 +11,8 @@ import { Box } from '../';
 
 const ContentWrapper = Box.extend`
   margin: ${rem('12px')};
-  background: ${themeGet('colors.grey.3')};
-  border: ${themeGet('borders.2')} ${themeGet('colors.grey.2')};
+  background: ${themeGet('colors.greys.porcelain')};
+  border: ${themeGet('borders.2')} ${themeGet('colors.greys.alto')};
 `;
 
 const Triangle = Box.extend`
@@ -23,44 +23,44 @@ const Triangle = Box.extend`
   position: absolute;
 
   ${props => props.placement === 'top' && css`
-    border-top-color: ${themeGet('colors.grey.3')};
+    border-top-color: ${themeGet('colors.greys.porcelain')};
     top: 100%;
   `};
 
   ${props => props.placement === 'right' && css`
-    border-right-color: ${themeGet('colors.grey.3')};
+    border-right-color: ${themeGet('colors.greys.porcelain')};
     right: 100%;
   `};
 
   ${props => props.placement === 'bottom' && css`
-    border-bottom-color: ${themeGet('colors.grey.3')};
+    border-bottom-color: ${themeGet('colors.greys.porcelain')};
     bottom: 100%;
   `};
 
    ${props => props.placement === 'left' && css`
-    border-left-color: ${themeGet('colors.grey.3')};
+    border-left-color: ${themeGet('colors.greys.porcelain')};
     left: 100%;
   `};
 `;
 
 const TriangleBorder = Triangle.extend`
  ${props => props.placement === 'top' && css`
-    border-top-color: ${themeGet('colors.grey.2')};
+    border-top-color: ${themeGet('colors.greys.alto')};
     margin-top: ${rem('2px')};
   `};
 
   ${props => props.placement === 'right' && css`
-    border-right-color: ${themeGet('colors.grey.2')};
+    border-right-color: ${themeGet('colors.greys.alto')};
     margin-right: ${rem('2px')};
   `};
 
   ${props => props.placement === 'bottom' && css`
-    border-bottom-color: ${themeGet('colors.grey.2')};
+    border-bottom-color: ${themeGet('colors.greys.alto')};
     margin-bottom: ${rem('2px')};
   `};
 
    ${props => props.placement === 'left' && css`
-    border-left-color: ${themeGet('colors.grey.2')};
+    border-left-color: ${themeGet('colors.greys.alto')};
     margin-left: ${rem('2px')};
   `};
 `;

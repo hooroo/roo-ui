@@ -8,7 +8,7 @@ export const CalendarWeekdays = Flex.extend`
   padding-bottom: ${themeGet('space.2')};
   margin-top: ${themeGet('space.5')};
   margin-bottom: ${themeGet('space.3')};
-  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
+  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.greys.alto')};
 `;
 
 export const CalendarWeekday = ({ children, ...rest }) => (
@@ -20,4 +20,3 @@ export const CalendarWeekday = ({ children, ...rest }) => (
 CalendarWeekday.propTypes = {
   children: PropTypes.node.isRequired,
 };
-

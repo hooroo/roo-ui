@@ -8,7 +8,7 @@ import README from './README.md';
 storiesOf('Components|Box', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Box p={3} bg="grey.3">
+    <Box p={3} bg="greys.porcelain">
       Hello world
     </Box>
   ));

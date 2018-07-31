@@ -10,7 +10,7 @@ const Wrapper = Flex.extend`
   width: calc(100% / 7);
   justify-content: center;
   margin: 0 -1px -1px 0;
-  border: ${themeGet('borders.1')} ${themeGet('colors.grey.3')};
+  border: ${themeGet('borders.1')} ${themeGet('colors.greys.porcelain')};
 
   &:after {
     content: '';
@@ -20,14 +20,14 @@ const Wrapper = Flex.extend`
 `;
 
 const Button = NakedButton.extend`
-  color: ${themeGet('colors.grey.0')};
+  color: ${themeGet('colors.greys.charcoal')};
   padding: 0;
   width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
   &:disabled {
     cursor: not-allowed;
-    background-color: ${themeGet('colors.grey.2')};
+    background-color: ${themeGet('colors.greys.alto')};
   }
 
   ${props => props.selectable &&
