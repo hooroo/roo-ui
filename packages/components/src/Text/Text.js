@@ -11,7 +11,13 @@ import {
   lineHeight,
   space,
   textAlign,
+  style,
 } from 'styled-system';
+
+const textDecoration = style({
+  prop: 'textDecoration',
+  cssProperty: 'textDecoration',
+});
 
 const Text = styled(tag.span)`
   ${textStyle}
@@ -22,13 +28,13 @@ const Text = styled(tag.span)`
   ${lineHeight}
   ${space}
   ${textAlign}
+  ${textDecoration}
 
   ${props => props.hidden && css`
     ${hideVisually()}
   `
 }
 `;
-
 
 Text.propTypes = {
   ...textStyle.propTypes,
@@ -39,12 +45,14 @@ Text.propTypes = {
   ...lineHeight.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
+  ...textDecoration.propTypes,
   hidden: PropTypes.bool,
 };
 
 Text.defaultProps = {
   hidden: false,
   textStyle: 'text',
+  blacklist: Object.keys(Text.propTypes),
 };
 
 export default Text;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
+import { darken } from 'polished';
 
 import { Flex, NakedButton } from '../../../';
 
@@ -25,18 +26,21 @@ const Button = NakedButton.extend`
   width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
+  &:focus {
+    outline: none;
+  }
+
   &:disabled {
     cursor: not-allowed;
     background-color: ${themeGet('colors.grey.2')};
   }
 
-   ${props => props.selectable &&
+  ${props => props.selectable &&
     css`
       background-color: ${themeGet('colors.white')};
 
       &:hover,
       &:focus {
-        outline: none;
         border-color: ${themeGet('colors.brand.secondary')};
       }
 
@@ -49,11 +53,27 @@ const Button = NakedButton.extend`
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
       border-color: ${themeGet('colors.brand.secondary')};
-    `};
+
+      &:hover,
+      &:focus {
+        background-color: ${themeGet('colors.white')};
+      }
+  `};
+
+  ${props => !props.selectable && !props.disabled &&
+    css`
+      background-color: ${themeGet('colors.grey.2')};
+
+      &:hover,
+      &:focus {
+        background-color: ${darken(0.1, themeGet('colors.grey.2')(props))};
+      }
+  `};
 `;
 
 Button.defaultProps = {
   ...NakedButton.defaultProps,
+  disabled: PropTypes.bool,
   blacklist: [...Object.keys(NakedButton.propTypes), 'selectable'],
 };
 
@@ -66,6 +86,8 @@ export const CalendarDays = Flex.extend`
 export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
   border-color: transparent;
 `;
+
+CalendarEmptyDay.displayName = 'CalendarEmptyDay';
 
 export const CalendarDay = ({ children, ...rest }) => (
   <Wrapper>

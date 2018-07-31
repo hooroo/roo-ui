@@ -3,6 +3,93 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.46.1"></a>
+## [0.46.1](https://github.com/hooroo/roo-ui/compare/v0.46.0...v0.46.1) (2018-07-30)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.46.0"></a>
+# [0.46.0](https://github.com/hooroo/roo-ui/compare/v0.45.0...v0.46.0) (2018-07-29)
+
+
+### Features
+
+* add prop to allow disabled calendar dates to be clicked ([#127](https://github.com/hooroo/roo-ui/issues/127)) ([74f49fe](https://github.com/hooroo/roo-ui/commit/74f49fe))
+
+
+
+
+<a name="0.45.0"></a>
+# [0.45.0](https://github.com/hooroo/roo-ui/compare/v0.44.0...v0.45.0) (2018-07-26)
+
+
+### Features
+
+* add ability to disable dates on calendar ([#125](https://github.com/hooroo/roo-ui/issues/125)) ([d36034c](https://github.com/hooroo/roo-ui/commit/d36034c))
+
+
+
+
+<a name="0.44.0"></a>
+# [0.44.0](https://github.com/hooroo/roo-ui/compare/v0.43.8...v0.44.0) (2018-07-25)
+
+
+### Features
+
+* Add textDecoration property to Text ([#122](https://github.com/hooroo/roo-ui/issues/122)) ([31a980a](https://github.com/hooroo/roo-ui/commit/31a980a))
+
+
+
+
+<a name="0.43.8"></a>
+## [0.43.8](https://github.com/hooroo/roo-ui/compare/v0.43.7...v0.43.8) (2018-07-25)
+
+
+### Bug Fixes
+
+* update styled system since vertical align was not working ([#124](https://github.com/hooroo/roo-ui/issues/124)) ([693989f](https://github.com/hooroo/roo-ui/commit/693989f))
+
+
+
+
+<a name="0.43.7"></a>
+## [0.43.7](https://github.com/hooroo/roo-ui/compare/v0.43.6...v0.43.7) (2018-07-25)
+
+
+### Bug Fixes
+
+* update calendar weekdays to start on Monday ([#123](https://github.com/hooroo/roo-ui/issues/123)) ([6cec7ce](https://github.com/hooroo/roo-ui/commit/6cec7ce))
+
+
+
+
+<a name="0.43.6"></a>
+## [0.43.6](https://github.com/hooroo/roo-ui/compare/v0.43.5...v0.43.6) (2018-07-18)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.43.5"></a>
+## [0.43.5](https://github.com/hooroo/roo-ui/compare/v0.43.4...v0.43.5) (2018-07-17)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.43.4"></a>
+## [0.43.4](https://github.com/hooroo/roo-ui/compare/v0.43.3...v0.43.4) (2018-07-17)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
 <a name="0.43.3"></a>
 ## [0.43.3](https://github.com/hooroo/roo-ui/compare/v0.43.2...v0.43.3) (2018-07-12)
 

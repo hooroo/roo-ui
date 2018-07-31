@@ -68,11 +68,29 @@ exports[`<Calendar /> renders children correctly 1`] = `
         </CalendarWeekday>
       </Box>
       <Box>
+        <CalendarEmptyDay
+          key="201860"
+        />
+        <CalendarEmptyDay
+          key="201861"
+        />
+        <CalendarEmptyDay
+          key="201862"
+        />
+        <CalendarEmptyDay
+          key="201863"
+        />
+        <CalendarEmptyDay
+          key="201864"
+        />
+        <CalendarEmptyDay
+          key="201865"
+        />
         <CalendarDay
           aria-label="Sun Jul 01 2018"
           aria-pressed={false}
           disabled={false}
-          key="201860"
+          key="201866"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -84,7 +102,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Mon Jul 02 2018"
           aria-pressed={false}
           disabled={false}
-          key="201861"
+          key="201860"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -94,24 +112,24 @@ exports[`<Calendar /> renders children correctly 1`] = `
         </CalendarDay>
         <CalendarDay
           aria-label="Tue Jul 03 2018"
-          aria-pressed={true}
+          aria-pressed={false}
           disabled={false}
-          key="201862"
+          key="201861"
           onClick={[Function]}
           role="button"
           selectable={true}
-          selected={true}
+          selected={false}
         >
           3
         </CalendarDay>
         <CalendarDay
           aria-label="Wed Jul 04 2018"
           aria-pressed={false}
-          disabled={false}
-          key="201863"
+          disabled={true}
+          key="201862"
           onClick={[Function]}
           role="button"
-          selectable={true}
+          selectable={false}
           selected={false}
         >
           4
@@ -119,11 +137,11 @@ exports[`<Calendar /> renders children correctly 1`] = `
         <CalendarDay
           aria-label="Thu Jul 05 2018"
           aria-pressed={false}
-          disabled={false}
-          key="201864"
+          disabled={true}
+          key="201863"
           onClick={[Function]}
           role="button"
-          selectable={true}
+          selectable={false}
           selected={false}
         >
           5
@@ -132,7 +150,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Fri Jul 06 2018"
           aria-pressed={false}
           disabled={false}
-          key="201865"
+          key="201864"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -144,7 +162,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sat Jul 07 2018"
           aria-pressed={false}
           disabled={false}
-          key="201866"
+          key="201865"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -156,7 +174,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sun Jul 08 2018"
           aria-pressed={false}
           disabled={false}
-          key="201860"
+          key="201866"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -168,7 +186,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Mon Jul 09 2018"
           aria-pressed={false}
           disabled={false}
-          key="201861"
+          key="201860"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -180,7 +198,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Tue Jul 10 2018"
           aria-pressed={false}
           disabled={false}
-          key="201862"
+          key="201861"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -192,7 +210,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Wed Jul 11 2018"
           aria-pressed={false}
           disabled={false}
-          key="201863"
+          key="201862"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -204,7 +222,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Thu Jul 12 2018"
           aria-pressed={false}
           disabled={false}
-          key="201864"
+          key="201863"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -216,7 +234,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Fri Jul 13 2018"
           aria-pressed={false}
           disabled={false}
-          key="201865"
+          key="201864"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -228,7 +246,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sat Jul 14 2018"
           aria-pressed={false}
           disabled={false}
-          key="201866"
+          key="201865"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -240,7 +258,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sun Jul 15 2018"
           aria-pressed={false}
           disabled={false}
-          key="201860"
+          key="201866"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -252,7 +270,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Mon Jul 16 2018"
           aria-pressed={false}
           disabled={false}
-          key="201861"
+          key="201860"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -264,7 +282,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Tue Jul 17 2018"
           aria-pressed={false}
           disabled={false}
-          key="201862"
+          key="201861"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -276,7 +294,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Wed Jul 18 2018"
           aria-pressed={false}
           disabled={false}
-          key="201863"
+          key="201862"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -288,7 +306,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Thu Jul 19 2018"
           aria-pressed={false}
           disabled={false}
-          key="201864"
+          key="201863"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -298,13 +316,13 @@ exports[`<Calendar /> renders children correctly 1`] = `
         </CalendarDay>
         <CalendarDay
           aria-label="Fri Jul 20 2018"
-          aria-pressed={false}
+          aria-pressed={true}
           disabled={false}
-          key="201865"
+          key="201864"
           onClick={[Function]}
           role="button"
           selectable={true}
-          selected={false}
+          selected={true}
         >
           20
         </CalendarDay>
@@ -312,7 +330,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sat Jul 21 2018"
           aria-pressed={false}
           disabled={false}
-          key="201866"
+          key="201865"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -324,7 +342,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sun Jul 22 2018"
           aria-pressed={false}
           disabled={false}
-          key="201860"
+          key="201866"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -336,7 +354,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Mon Jul 23 2018"
           aria-pressed={false}
           disabled={false}
-          key="201861"
+          key="201860"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -348,7 +366,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Tue Jul 24 2018"
           aria-pressed={false}
           disabled={false}
-          key="201862"
+          key="201861"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -360,7 +378,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Wed Jul 25 2018"
           aria-pressed={false}
           disabled={false}
-          key="201863"
+          key="201862"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -372,7 +390,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Thu Jul 26 2018"
           aria-pressed={false}
           disabled={false}
-          key="201864"
+          key="201863"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -384,7 +402,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Fri Jul 27 2018"
           aria-pressed={false}
           disabled={false}
-          key="201865"
+          key="201864"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -396,7 +414,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sat Jul 28 2018"
           aria-pressed={false}
           disabled={false}
-          key="201866"
+          key="201865"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -408,7 +426,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Sun Jul 29 2018"
           aria-pressed={false}
           disabled={false}
-          key="201860"
+          key="201866"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -420,7 +438,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Mon Jul 30 2018"
           aria-pressed={false}
           disabled={false}
-          key="201861"
+          key="201860"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -432,7 +450,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
           aria-label="Tue Jul 31 2018"
           aria-pressed={false}
           disabled={false}
-          key="201862"
+          key="201861"
           onClick={[Function]}
           role="button"
           selectable={true}
@@ -440,16 +458,19 @@ exports[`<Calendar /> renders children correctly 1`] = `
         >
           31
         </CalendarDay>
-        <Box
+        <CalendarEmptyDay
+          key="201862"
+        />
+        <CalendarEmptyDay
           key="201863"
         />
-        <Box
+        <CalendarEmptyDay
           key="201864"
         />
-        <Box
+        <CalendarEmptyDay
           key="201865"
         />
-        <Box
+        <CalendarEmptyDay
           key="201866"
         />
       </Box>
@@ -461,14 +482,14 @@ exports[`<Calendar /> renders children correctly 1`] = `
 exports[`<Calendar /> renders correctly 1`] = `
 <Dayzed
   date={2018-07-03T00:00:00.000Z}
-  firstDayOfWeek={0}
+  firstDayOfWeek={1}
   maxDate={2018-08-20T00:00:00.000Z}
   minDate={2018-06-01T00:00:00.000Z}
   monthsToDisplay={1}
   onDateSelected={[MockFunction]}
   onOffsetChanged={[Function]}
   render={[Function]}
-  selected={2018-07-03T00:00:00.000Z}
+  selected={2018-07-20T00:00:00.000Z}
   showOutsideDays={false}
 />
 `;

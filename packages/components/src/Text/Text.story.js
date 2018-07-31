@@ -9,7 +9,7 @@ import README from './README.md';
 storiesOf('Components|Text', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Text hidden={boolean('Hidden', false)} >
+    <Text hidden={boolean('Hidden', false)}>
       Generic text.
     </Text>
   ));

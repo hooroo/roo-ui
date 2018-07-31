@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import subDays from 'date-fns/sub_days';
+import { subDays, isSameDay } from 'date-fns';
 
 import { Flex, Box } from '../';
 import {
@@ -14,8 +14,26 @@ import {
   CalendarMonth as Month,
 } from '.';
 
+const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
+  const isDisabled = disabledDates
+    .filter(disabledDate => isSameDay(disabledDate, day.date))
+    .length;
+  const props = {
+    selected: day.selected,
+    selectable: day.selectable,
+  };
+
+  if (isDisabled) {
+    props.selectable = false;
+    props.disabled = !interactiveDisabledDates;
+  }
+
+  return props;
+};
+
 const Calendar = ({
-  monthNames, weekdayNames, monthsToDisplay, stacked, ...rest
+  monthNames, weekdayNames, monthsToDisplay, stacked,
+  disabledDates, interactiveDisabledDates, ...rest
 }) => (
   <Dayzed
     {...rest}
@@ -61,12 +79,13 @@ const Calendar = ({
 
                           );
                         }
+
                         return (
                           <Day
                             key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
-                            selected={day.selected}
-                            selectable={day.selectable}
                             {...getDateProps({ dateObj: day })}
+                            {...getCustomDateProps(disabledDates, interactiveDisabledDates, day)}
+
                           >
                             {day.date.getDate()}
                           </Day>
@@ -84,17 +103,23 @@ const Calendar = ({
 
 Calendar.defaultProps = {
   monthsToDisplay: 1,
+  firstDayOfWeek: 1,
   stacked: false,
   minDate: subDays(new Date(), 1),
+  disabledDates: [],
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  weekdayNames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  interactiveDisabledDates: false,
 };
 
 Calendar.propTypes = {
   ...Dayzed.propTypes,
   monthsToDisplay: PropTypes.number,
+  firstDayOfWeek: PropTypes.number,
   stacked: PropTypes.bool,
   minDate: PropTypes.instanceOf(Date),
+  disabledDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
+  interactiveDisabledDates: PropTypes.bool,
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
 };

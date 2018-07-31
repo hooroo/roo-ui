@@ -8,6 +8,25 @@ exports[`<Dropdown /> renders correctly when closed 1`] = `
     aria-expanded={false}
     aria-haspopup={true}
     aria-label="open menu"
+    blacklist={
+      Array [
+        "verticalAlign",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+      ]
+    }
     data-toggle={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -17,6 +36,36 @@ exports[`<Dropdown /> renders correctly when closed 1`] = `
   >
     Options
     <Text
+      blacklist={
+        Array [
+          "textStyle",
+          "color",
+          "bg",
+          "fontSize",
+          "f",
+          "fontWeight",
+          "letterSpacing",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textAlign",
+          "align",
+          "textDecoration",
+          "hidden",
+        ]
+      }
       hidden={true}
       textStyle="text"
     >
@@ -34,6 +83,25 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
     aria-expanded={true}
     aria-haspopup={true}
     aria-label="close menu"
+    blacklist={
+      Array [
+        "verticalAlign",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+      ]
+    }
     data-toggle={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -43,6 +111,36 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
   >
     Options
     <Text
+      blacklist={
+        Array [
+          "textStyle",
+          "color",
+          "bg",
+          "fontSize",
+          "f",
+          "fontWeight",
+          "letterSpacing",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textAlign",
+          "align",
+          "textDecoration",
+          "hidden",
+        ]
+      }
       hidden={true}
       textStyle="text"
     >

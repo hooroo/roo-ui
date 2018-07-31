@@ -20,9 +20,9 @@ export default (
 
 ## Properties
 
-| Name      | Description             | Type     | Default | Required? |
-| :-------- | :---------------------- | :------- | :------ | :-------- |
-| `hidden`  | visually hide           | `boolean`| false   | -         |
+| Name     | Description   | Type      | Default | Required? |
+|:---------|:--------------|:----------|:--------|:----------|
+| `hidden` | visually hide | `boolean` | false   | -         |
 
 
 ## Customization
@@ -34,5 +34,6 @@ This component can be customized with [styled-system](https://github.com/jxnblk/
 `fontWeight`,
 `letterSpacing`,
 `lineHeight`,
-`space` &
+`space`,
+`textDecoration`&
 `textAlign` [functions](https://github.com/jxnblk/styled-system#table-of-style-props)
