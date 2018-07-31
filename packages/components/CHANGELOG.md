@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.48.0"></a>
+# [0.48.0](https://github.com/hooroo/roo-ui/compare/v0.47.0...v0.48.0) (2018-07-31)
+
+
+### Features
+
+* add flexFlow shorthand css Property ([1ed2556](https://github.com/hooroo/roo-ui/commit/1ed2556))
+
+
+
+
+<a name="0.47.0"></a>
+# [0.47.0](https://github.com/hooroo/roo-ui/compare/v0.46.1...v0.47.0) (2018-07-31)
+
+
+### Features
+
+* add zIndex proptypes ([#118](https://github.com/hooroo/roo-ui/issues/118)) ([9545af3](https://github.com/hooroo/roo-ui/commit/9545af3))
+
+
+
+
+<a name="0.46.1"></a>
+## [0.46.1](https://github.com/hooroo/roo-ui/compare/v0.46.0...v0.46.1) (2018-07-30)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.46.0"></a>
+# [0.46.0](https://github.com/hooroo/roo-ui/compare/v0.45.0...v0.46.0) (2018-07-29)
+
+
+### Features
+
+* add prop to allow disabled calendar dates to be clicked ([#127](https://github.com/hooroo/roo-ui/issues/127)) ([74f49fe](https://github.com/hooroo/roo-ui/commit/74f49fe))
+
+
+
+
 <a name="0.45.0"></a>
 # [0.45.0](https://github.com/hooroo/roo-ui/compare/v0.44.0...v0.45.0) (2018-07-26)
 

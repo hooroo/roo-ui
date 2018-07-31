@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/themes",
-  "version": "0.39.3",
+  "version": "0.46.1",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
