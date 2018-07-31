@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.48.0"></a>
+# [0.48.0](https://github.com/hooroo/roo-ui/compare/v0.47.0...v0.48.0) (2018-07-31)
+
+
+### Features
+
+* add flexFlow shorthand css Property ([1ed2556](https://github.com/hooroo/roo-ui/commit/1ed2556))
+
+
+
+
 <a name="0.47.0"></a>
 # [0.47.0](https://github.com/hooroo/roo-ui/compare/v0.46.1...v0.47.0) (2018-07-31)
 
