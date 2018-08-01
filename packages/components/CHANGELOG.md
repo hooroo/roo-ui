@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.49.0"></a>
+# [0.49.0](https://github.com/hooroo/roo-ui/compare/v0.48.0...v0.49.0) (2018-08-01)
+
+
+### Features
+
+* **greys:** converts greys array to an object and introduces a new grey - Breaking Change :pear: [@dougmcclurg](https://github.com/dougmcclurg) ([#132](https://github.com/hooroo/roo-ui/issues/132)) ([0706dd0](https://github.com/hooroo/roo-ui/commit/0706dd0))
+
+
+
+
 <a name="0.48.0"></a>
 # [0.48.0](https://github.com/hooroo/roo-ui/compare/v0.47.0...v0.48.0) (2018-07-31)
 
