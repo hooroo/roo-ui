@@ -59,7 +59,7 @@ Base.defaultProps = {
 const Alert = Box.withComponent(Base);
 Alert.defaultProps = {
   ...Box.defaultProps,
-  bg: 'grey.3',
+  bg: 'greys.porcelain',
   mb: 3,
 };
 
@@ -70,7 +70,7 @@ Alert.info.defaultProps = {
   bg: 'ui.infoBackground',
   icon: {
     name: 'info',
-    color: 'grey.0',
+    color: 'greys.charcoal',
   },
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
+import { darken } from 'polished';
 
 import { Flex, NakedButton } from '../../../';
 
@@ -10,7 +11,7 @@ const Wrapper = Flex.extend`
   width: calc(100% / 7);
   justify-content: center;
   margin: 0 -1px -1px 0;
-  border: ${themeGet('borders.1')} ${themeGet('colors.grey.3')};
+  border: ${themeGet('borders.1')} ${themeGet('colors.greys.porcelain')};
 
   &:after {
     content: '';
@@ -20,14 +21,18 @@ const Wrapper = Flex.extend`
 `;
 
 const Button = NakedButton.extend`
-  color: ${themeGet('colors.grey.0')};
+  color: ${themeGet('colors.greys.charcoal')};
   padding: 0;
   width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
+  &:focus {
+    outline: none;
+  }
+
   &:disabled {
     cursor: not-allowed;
-    background-color: ${themeGet('colors.grey.2')};
+    background-color: ${themeGet('colors.greys.alto')};
   }
 
   ${props => props.selectable &&
@@ -36,20 +41,34 @@ const Button = NakedButton.extend`
 
       &:hover,
       &:focus {
-        outline: none;
         border-color: ${themeGet('colors.brand.secondary')};
       }
 
       &:active {
         background-color: ${themeGet('colors.ui.infoBackground')};
       }
-    `};
+  `};
 
   ${props => props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
       border-color: ${themeGet('colors.brand.secondary')};
-    `};
+
+      &:hover,
+      &:focus {
+        background-color: ${themeGet('colors.white')};
+      }
+  `};
+
+  ${props => !props.selectable && !props.disabled &&
+    css`
+      background-color: ${themeGet('colors.grey.2')};
+
+      &:hover,
+      &:focus {
+        background-color: ${darken(0.1, themeGet('colors.grey.2')(props))};
+      }
+  `};
 `;
 
 Button.defaultProps = {
