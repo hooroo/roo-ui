@@ -3,8 +3,6 @@
 exports[`<Link /> renders correctly 1`] = `
 .c0 {
   cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   display: inline-block;
   color: #E00E00;
 }
@@ -38,6 +36,7 @@ exports[`<Link /> renders correctly 1`] = `
       "pl",
       "px",
       "py",
+      "textDecoration",
       "hidden",
       "inline",
     ]
