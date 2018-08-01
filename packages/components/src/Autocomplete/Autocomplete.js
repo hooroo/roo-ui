@@ -17,8 +17,8 @@ const Menu = Box.extend`
   position: absolute;
   width: 100%;
   margin-top: -${themeGet('space.3')};
-  border-left: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
-  border-right: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
+  border-left: ${themeGet('borders.1')} ${themeGet('colors.greys.alto')};
+  border-right: ${themeGet('borders.1')} ${themeGet('colors.greys.alto')};
   z-index: 2;
   max-height: ${rem('230px')};
   overflow-y: scroll;
@@ -27,8 +27,8 @@ const Menu = Box.extend`
 Menu.displayName = 'Menu';
 
 const MenuItem = Box.extend`
-  background-color: ${themeGet('colors.grey.3')};
-  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.grey.2')};
+  background-color: ${themeGet('colors.greys.porcelain')};
+  border-bottom: ${themeGet('borders.1')} ${themeGet('colors.greys.alto')};
   border-left: ${themeGet('borders.1')} transparent;
   padding: ${themeGet('space.3')} ${themeGet('space.4')};
 

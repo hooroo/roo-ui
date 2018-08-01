@@ -10,7 +10,7 @@ storiesOf('Components|Container', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Container>
-      <Box p={3} bg="grey.3">
+      <Box p={3} bg="greys.porcelain">
         Hello world
       </Box>
     </Container>

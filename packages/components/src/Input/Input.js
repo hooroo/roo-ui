@@ -11,10 +11,10 @@ const Input = styled(tag)`
   padding: ${themeGet('space.3')} ${themeGet('space.4')};
   font-size: ${themeGet('fontSizes.base')};
   line-height: ${themeGet('lineHeights.normal')};
-  color: ${themeGet('colors.grey.0')};
+  color: ${themeGet('colors.greys.charcoal')};
   background-color: ${themeGet('colors.white')};
   border: ${themeGet('borders.2')};
-  border-color: ${themeGet('colors.grey.2')};
+  border-color: ${themeGet('colors.greys.alto')};
   outline: 0;
   transition: border-color ${themeGet('transitions.default')};
   appearance: none;
@@ -30,7 +30,7 @@ const Input = styled(tag)`
   }
 
   ::placeholder {
-    color: ${themeGet('colors.grey.1')};
+    color: ${themeGet('colors.greys.steel')};
   }
 
   ::-ms-clear {
@@ -40,7 +40,7 @@ const Input = styled(tag)`
   ${props => props.underline && css`
     border: none;
     border-bottom: ${themeGet('borders.2')};
-    border-color: ${themeGet('colors.grey.2')};
+    border-color: ${themeGet('colors.greys.alto')};
   `}
 
   ${props => props.error && css`

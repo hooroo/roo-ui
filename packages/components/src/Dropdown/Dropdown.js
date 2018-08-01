@@ -87,14 +87,14 @@ Dropdown.propTypes = {
 
 Dropdown.item = NakedButton.extend`
   padding: ${themeGet('space.2')} ${themeGet('space.8')};
-  color: ${themeGet('colors.grey.1')};
+  color: ${themeGet('colors.greys.steel')};
   width: 100%;
   display: block;
   text-align: left;
   text-decoration: none;
 
   ${props => props.highlighted && css`
-    color: ${themeGet('colors.grey.0')};
+    color: ${themeGet('colors.greys.charcoal')};
     font-weight: ${themeGet('fontWeights.bold')};
   `}
 `;

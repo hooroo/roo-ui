@@ -31,8 +31,8 @@ const renderIcons = group => () => (
   <Grid>
     {groupedPaths[group].map(({ name }) => (
       <Box p={4}>
-        <Icon color="grey.1" size={48} name={name} />
-        <Caption title={name} fontSize="xs" color="grey.1">{name}</Caption>
+        <Icon color="greys.steel" size={48} name={name} />
+        <Caption title={name} fontSize="xs" color="greys.steel">{name}</Caption>
       </Box>
     ))}
   </Grid>
@@ -58,4 +58,3 @@ storiesOf('Components|Icon', module)
   .add('social', renderIcons('social'))
   .add('toggle', renderIcons('toggle'))
   .add('qantas', renderIcons('qantas'));
-
