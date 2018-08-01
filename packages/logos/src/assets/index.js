@@ -8,6 +8,7 @@ import tripAdvisorOwl from './trip-advisor-owl.svg';
 import oneworld from './oneworld.svg';
 import qantasFavicon from './qantas-favicon.ico';
 import qantasQff from './qantas-qff.svg';
+import qantasBusinessRewards from './qantas-business-rewards.svg';
 
 export {
   qantas,
@@ -20,4 +21,5 @@ export {
   oneworld,
   qantasFavicon,
   qantasQff,
+  qantasBusinessRewards,
 };
