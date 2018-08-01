@@ -10,7 +10,7 @@ storiesOf('Components|Flex', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Flex>
-      <Box width={1 / 2} p={3} m={3} bg="grey.3">Flex</Box>
-      <Box width={1 / 2} p={3} m={3} bg="grey.3">Box</Box>
+      <Box width={1 / 2} p={3} m={3} bg="greys.porcelain">Flex</Box>
+      <Box width={1 / 2} p={3} m={3} bg="greys.porcelain">Box</Box>
     </Flex>
   ));

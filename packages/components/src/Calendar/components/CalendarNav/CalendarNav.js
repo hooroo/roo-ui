@@ -14,7 +14,7 @@ const Wrapper = Flex.extend`
 const Button = NakedButton.extend`
   border-radius: ${themeGet('radii.rounded')};
   background: ${themeGet('colors.white')};
-  color: ${themeGet('colors.grey.1')};
+  color: ${themeGet('colors.greys.steel')};
   box-shadow: ${themeGet('shadows.default')};
 
   &:hover,
@@ -26,7 +26,7 @@ const Button = NakedButton.extend`
   &:disabled {
     cursor: not-allowed;
     box-shadow: none;
-    color: ${themeGet('colors.grey.2')};
+    color: ${themeGet('colors.greys.alto')};
   }
 `;
 

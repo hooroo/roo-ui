@@ -25,15 +25,15 @@ exports[`<LoadingIndicator /> matches snapshot 1`] = `
   width={72}
 >
   <LoadingIndicator__Bouncer
-    bg="grey.1"
+    bg="greys.steel"
     size={18}
   />
   <LoadingIndicator__Bouncer
-    bg="grey.1"
+    bg="greys.steel"
     size={18}
   />
   <LoadingIndicator__Bouncer
-    bg="grey.1"
+    bg="greys.steel"
     size={18}
   />
 </Box>

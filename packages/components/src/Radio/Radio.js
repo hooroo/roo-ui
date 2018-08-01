@@ -37,7 +37,7 @@ const RadioIcon = styled(tag.div)`
   width: ${rem('20px')};
   background-color: ${themeGet('colors.white')};
   border: ${themeGet('borders.2')};
-  border-color: ${themeGet('colors.grey.2')};
+  border-color: ${themeGet('colors.greys.alto')};
   border-radius: 50%;
   z-index: 1;
 
@@ -58,13 +58,13 @@ const RadioIcon = styled(tag.div)`
       height: ${themeGet('space.2')};
       width: ${themeGet('space.2')};
       border-radius: 50%;
-      background-color: ${themeGet('colors.grey.0')};
+      background-color: ${themeGet('colors.greys.charcoal')};
     }
   }
 
   input:disabled + & {
-    background-color: ${themeGet('colors.grey.2')};
-    border-color: ${themeGet('colors.grey.2')};
+    background-color: ${themeGet('colors.greys.alto')};
+    border-color: ${themeGet('colors.greys.alto')};
   }
 `;
 

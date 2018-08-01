@@ -20,11 +20,11 @@ const Toggle = styled(NakedButton)`
   top: 0;
   left: calc(100% - ${rem('80px')});
   font-size: ${themeGet('fontSizes.sm')};
-  color: ${themeGet('colors.grey.1')};
+  color: ${themeGet('colors.greys.steel')};
   text-decoration: underline;
 
   &:focus {
-    color: ${themeGet('colors.grey.0')};
+    color: ${themeGet('colors.greys.charcoal')};
     outline: none;
   }
 `;

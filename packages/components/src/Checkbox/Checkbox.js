@@ -39,7 +39,7 @@ const CheckboxBorder = styled(tag.div)`
   width: ${rem('20px')};
   background-color: ${themeGet('colors.white')};
   border: ${themeGet('borders.2')};
-  border-color: ${themeGet('colors.grey.2')};
+  border-color: ${themeGet('colors.greys.alto')};
   border-radius: ${themeGet('radii.default')};
 
   input:checked + &,
@@ -50,15 +50,15 @@ const CheckboxBorder = styled(tag.div)`
   }
 
   input:disabled + & {
-    background-color: ${themeGet('colors.grey.2')};
-    border-color: ${themeGet('colors.grey.2')};
+    background-color: ${themeGet('colors.greys.alto')};
+    border-color: ${themeGet('colors.greys.alto')};
   }
 `;
 
 const CheckboxIcon = Icon.extend`
   position: absolute;
   display: none;
-  color: ${themeGet('colors.grey.0')};
+  color: ${themeGet('colors.greys.charcoal')};
   padding: ${themeGet('space.1')};
   top: 0;
   left: -${rem('2px')};

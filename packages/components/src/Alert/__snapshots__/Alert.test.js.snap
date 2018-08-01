@@ -89,7 +89,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
         pr={3}
       >
         <Icon
-          color="grey.0"
+          color="greys.charcoal"
           name="info"
         />
       </Box>
@@ -211,7 +211,7 @@ exports[`<Alert /> contained renders correctly 1`] = `
 }
 
 <Cleaned
-  bg="grey.3"
+  bg="greys.porcelain"
   className="c0"
   mb={3}
 >
@@ -292,7 +292,7 @@ exports[`<Alert /> renders correctly 1`] = `
 }
 
 <Cleaned
-  bg="grey.3"
+  bg="greys.porcelain"
   className="c0"
   mb={3}
 >

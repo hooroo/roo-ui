@@ -65,7 +65,7 @@ LoadingIndicator.propTypes = {
 };
 
 LoadingIndicator.defaultProps = {
-  color: 'grey.1',
+  color: 'greys.steel',
   size: 18,
   delay: 0,
 };
