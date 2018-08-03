@@ -68,7 +68,7 @@ const Button = NakedButton.extend`
     `};
 
     ${props =>
-      props.selectable &&
+    props.selectable &&
       !props.selected &&
       css`
         &:hover,
@@ -116,4 +116,5 @@ export const CalendarDay = ({ children, selected, ...rest }) => (
 
 CalendarDay.propTypes = {
   children: PropTypes.node.isRequired,
+  selected: PropTypes.bool.isRequired,
 };
