@@ -6,7 +6,7 @@ import { CalendarDay, CalendarEmptyDay, CalendarDays } from '.';
 
 describe('<CalendarDay />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarDay>21</CalendarDay>, theme)).toMatchSnapshot();
+    expect(shallowWithTheme(<CalendarDay selected>21</CalendarDay>, theme)).toMatchSnapshot();
   });
 });
 
@@ -18,6 +18,6 @@ describe('<CalendarEmptyDay />', () => {
 
 describe('<CalendarDays />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarDays>Day</CalendarDays>, theme)).toMatchSnapshot();
+    expect(shallowWithTheme(<CalendarDays selected>Day</CalendarDays>, theme)).toMatchSnapshot();
   });
 });
