@@ -41,4 +41,4 @@ export default (
 | `checked`  | sets checked state    | `bool` | false   | -         |
 | `disabled` | disables checkbox     | `bool` | false   | -         |
 
-Standard [checkbox attributes](https://www.w3schools.com/jsref/dom_obj_checkbox.asp) will be passed down to the `<input />`.
+Standard [checkbox attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/checkbox) will be passed down to the `<input />`.
