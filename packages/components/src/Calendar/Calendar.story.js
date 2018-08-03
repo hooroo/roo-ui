@@ -18,7 +18,20 @@ storiesOf('Components|Calendar', module)
       selected={new Date()}
       onDateSelected={console.log} // eslint-disable-line no-console
       stacked={boolean('Stacked', false)}
-      disabledDates={[addDays(new Date(), 1), addDays(new Date(), 2), addDays(new Date(), 4)]}
+      selected={[
+        addDays(new Date(), 1),
+        addDays(new Date(), 2),
+        addDays(new Date(), 3),
+        addDays(new Date(), 4),
+        addDays(new Date(), 5),
+        addDays(new Date(), 6),
+        addDays(new Date(), 7),
+        addDays(new Date(), 8),
+        addDays(new Date(), 9),
+        addDays(new Date(), 10),
+        addDays(new Date(), 11),
+
+      ]}
       interactiveDisabledDates
     />
   ));

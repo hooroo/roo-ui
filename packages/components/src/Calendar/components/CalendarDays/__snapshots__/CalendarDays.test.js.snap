@@ -145,25 +145,18 @@ exports[`<CalendarDays /> renders correctly 1`] = `
 
 exports[`<CalendarEmptyDay /> renders correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   width: calc(100% / 7);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin: 0 -1px -1px 0;
+  position: relative;
   border: 1px solid #F4F5F6;
   border-color: transparent;
 }
 
 .c0:after {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 100%;
 }

@@ -4,26 +4,30 @@ import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
-import { Flex, NakedButton } from '../../../';
+import { Flex, NakedButton, Box } from '../../../';
 
-const Wrapper = Flex.extend`
+const Wrapper = Box.extend`
   flex: 1 1 auto;
   width: calc(100% / 7);
-  justify-content: center;
   margin: 0 -1px -1px 0;
+  position: relative;
   border: ${themeGet('borders.1')} ${themeGet('colors.greys.porcelain')};
 
   &:after {
-    content: '';
+    content: "";
     display: block;
     padding-bottom: 100%;
   }
 `;
 
 const Button = NakedButton.extend`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   color: ${themeGet('colors.greys.charcoal')};
   padding: 0;
-  width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
   &:focus {
@@ -35,7 +39,8 @@ const Button = NakedButton.extend`
     background-color: ${themeGet('colors.greys.alto')};
   }
 
-  ${props => props.selectable &&
+  ${props =>
+    props.selectable &&
     css`
       background-color: ${themeGet('colors.white')};
 
@@ -47,9 +52,10 @@ const Button = NakedButton.extend`
       &:active {
         background-color: ${themeGet('colors.ui.infoBackground')};
       }
-  `};
+    `};
 
-  ${props => props.selected &&
+  ${props =>
+    props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
       border-color: ${themeGet('colors.brand.secondary')};
@@ -58,9 +64,11 @@ const Button = NakedButton.extend`
       &:focus {
         background-color: ${themeGet('colors.white')};
       }
-  `};
+    `};
 
-  ${props => !props.selectable && !props.disabled &&
+  ${props =>
+    !props.selectable &&
+    !props.disabled &&
     css`
       background-color: ${themeGet('colors.greys.alto')};
 
@@ -68,7 +76,7 @@ const Button = NakedButton.extend`
       &:focus {
         background-color: ${darken(0.1, themeGet('colors.greys.alto')(props))};
       }
-  `};
+    `};
 `;
 
 Button.defaultProps = {
@@ -91,9 +99,7 @@ CalendarEmptyDay.displayName = 'CalendarEmptyDay';
 
 export const CalendarDay = ({ children, ...rest }) => (
   <Wrapper>
-    <Button {...rest}>
-      {children}
-    </Button>
+    <Button {...rest}>{children}</Button>
   </Wrapper>
 );
 
