@@ -62,11 +62,11 @@ const Button = NakedButton.extend`
 
   ${props => !props.selectable && !props.disabled &&
     css`
-      background-color: ${themeGet('colors.grey.2')};
+      background-color: ${themeGet('colors.greys.alto')};
 
       &:hover,
       &:focus {
-        background-color: ${darken(0.1, themeGet('colors.grey.2')(props))};
+        background-color: ${darken(0.1, themeGet('colors.greys.alto')(props))};
       }
   `};
 `;
