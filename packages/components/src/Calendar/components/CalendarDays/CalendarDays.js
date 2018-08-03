@@ -9,15 +9,22 @@ import { Flex, NakedButton, Box } from '../../../';
 const Wrapper = Box.extend`
   flex: 1 1 auto;
   width: calc(100% / 7);
-  margin: 0 -1px -1px 0;
+  margin: 0 -2px -2px 0;
   position: relative;
-  border: ${themeGet('borders.1')} ${themeGet('colors.greys.porcelain')};
+  border: ${themeGet('borders.2')} ${themeGet('colors.greys.porcelain')};
 
   &:after {
     content: "";
     display: block;
     padding-bottom: 100%;
   }
+
+  ${props =>
+    props.selected &&
+    css`
+      z-index: 1;
+      border-color: ${themeGet('colors.brand.secondary')};
+    `};
 `;
 
 const Button = NakedButton.extend`
@@ -44,11 +51,6 @@ const Button = NakedButton.extend`
     css`
       background-color: ${themeGet('colors.white')};
 
-      &:hover,
-      &:focus {
-        border-color: ${themeGet('colors.brand.secondary')};
-      }
-
       &:active {
         background-color: ${themeGet('colors.ui.infoBackground')};
       }
@@ -58,13 +60,22 @@ const Button = NakedButton.extend`
     props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
-      border-color: ${themeGet('colors.brand.secondary')};
 
       &:hover,
       &:focus {
         background-color: ${themeGet('colors.white')};
       }
     `};
+
+    ${props =>
+      props.selectable &&
+      !props.selected &&
+      css`
+        &:hover,
+        &:focus {
+          background-color: ${themeGet('colors.ui.infoBackground')};
+        }
+      `};
 
   ${props =>
     !props.selectable &&
@@ -87,8 +98,8 @@ Button.defaultProps = {
 
 export const CalendarDays = Flex.extend`
   flex-wrap: wrap;
-  margin-bottom: 1px;
-  margin-right: 1px;
+  margin-bottom: 2px;
+  margin-right: 2px;
 `;
 
 export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
@@ -97,9 +108,9 @@ export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
 
 CalendarEmptyDay.displayName = 'CalendarEmptyDay';
 
-export const CalendarDay = ({ children, ...rest }) => (
-  <Wrapper>
-    <Button {...rest}>{children}</Button>
+export const CalendarDay = ({ children, selected, ...rest }) => (
+  <Wrapper selected={selected}>
+    <Button selected={selected} {...rest}>{children}</Button>
   </Wrapper>
 );
 
