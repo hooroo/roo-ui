@@ -4,26 +4,42 @@ import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
-import { Flex, NakedButton } from '../../../';
+import { Flex, NakedButton, Box } from '../../../';
 
-const Wrapper = Flex.extend`
+const Wrapper = Box.extend`
   flex: 1 1 auto;
   width: calc(100% / 7);
-  justify-content: center;
-  margin: 0 -1px -1px 0;
-  border: ${themeGet('borders.1')} ${themeGet('colors.greys.porcelain')};
+  margin: 0 -2px -2px 0;
+  position: relative;
+  border: ${themeGet('borders.2')} ${themeGet('colors.greys.porcelain')};
 
   &:after {
-    content: '';
+    content: "";
     display: block;
     padding-bottom: 100%;
   }
+
+  &:hover {
+    border-color: ${themeGet('colors.brand.secondary')};
+    z-index: 1;
+  }
+
+  ${props =>
+    props.selected &&
+    css`
+      z-index: 1;
+      border-color: ${themeGet('colors.brand.secondary')};
+    `};
 `;
 
 const Button = NakedButton.extend`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   color: ${themeGet('colors.greys.charcoal')};
   padding: 0;
-  width: 100%;
   border: ${themeGet('borders.2')} transparent;
 
   &:focus {
@@ -35,40 +51,48 @@ const Button = NakedButton.extend`
     background-color: ${themeGet('colors.greys.alto')};
   }
 
-  ${props => props.selectable &&
+  ${props =>
+    props.selectable &&
     css`
       background-color: ${themeGet('colors.white')};
-
-      &:hover,
-      &:focus {
-        border-color: ${themeGet('colors.brand.secondary')};
-      }
 
       &:active {
         background-color: ${themeGet('colors.ui.infoBackground')};
       }
-  `};
+    `};
 
-  ${props => props.selected &&
+  ${props =>
+    props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
-      border-color: ${themeGet('colors.brand.secondary')};
 
       &:hover,
       &:focus {
         background-color: ${themeGet('colors.white')};
       }
-  `};
+    `};
 
-  ${props => !props.selectable && !props.disabled &&
+    ${props =>
+    props.selectable &&
+      !props.selected &&
+      css`
+        &:hover,
+        &:focus {
+          background-color: ${themeGet('colors.ui.infoBackground')};
+        }
+      `};
+
+  ${props =>
+    !props.selectable &&
+    !props.disabled &&
     css`
-      background-color: ${themeGet('colors.grey.2')};
+      background-color: ${themeGet('colors.greys.alto')};
 
       &:hover,
       &:focus {
-        background-color: ${darken(0.1, themeGet('colors.grey.2')(props))};
+        background-color: ${darken(0.1, themeGet('colors.greys.alto')(props))};
       }
-  `};
+    `};
 `;
 
 Button.defaultProps = {
@@ -79,8 +103,8 @@ Button.defaultProps = {
 
 export const CalendarDays = Flex.extend`
   flex-wrap: wrap;
-  margin-bottom: 1px;
-  margin-right: 1px;
+  margin-bottom: 2px;
+  margin-right: 2px;
 `;
 
 export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
@@ -89,14 +113,13 @@ export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
 
 CalendarEmptyDay.displayName = 'CalendarEmptyDay';
 
-export const CalendarDay = ({ children, ...rest }) => (
-  <Wrapper>
-    <Button {...rest}>
-      {children}
-    </Button>
+export const CalendarDay = ({ children, selected, ...rest }) => (
+  <Wrapper selected={selected}>
+    <Button selected={selected} {...rest}>{children}</Button>
   </Wrapper>
 );
 
 CalendarDay.propTypes = {
   children: PropTypes.node.isRequired,
+  selected: PropTypes.bool.isRequired,
 };
