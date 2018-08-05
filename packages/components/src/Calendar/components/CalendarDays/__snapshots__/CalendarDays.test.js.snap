@@ -165,6 +165,11 @@ exports[`<CalendarEmptyDay /> renders correctly 1`] = `
   padding-bottom: 100%;
 }
 
+.c0:hover {
+  border-color: #8DE2E0;
+  z-index: 1;
+}
+
 <div
   className="c0"
 />

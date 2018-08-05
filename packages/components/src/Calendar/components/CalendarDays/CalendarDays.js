@@ -19,6 +19,11 @@ const Wrapper = Box.extend`
     padding-bottom: 100%;
   }
 
+  &:hover {
+    border-color: ${ themeGet('colors.brand.secondary') };
+    z-index: 1;
+  }
+
   ${props =>
     props.selected &&
     css`
