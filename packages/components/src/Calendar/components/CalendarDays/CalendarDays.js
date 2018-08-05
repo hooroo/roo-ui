@@ -20,7 +20,7 @@ const Wrapper = Box.extend`
   }
 
   &:hover {
-    border-color: ${ themeGet('colors.brand.secondary') };
+    border-color: ${themeGet('colors.brand.secondary')};
     z-index: 1;
   }
 
