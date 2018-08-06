@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.50.3"></a>
+## [0.50.3](https://github.com/hooroo/roo-ui/compare/v0.50.2...v0.50.3) (2018-08-06)
+
+
+### Bug Fixes
+
+* don't apply hover styles to non selectable dates ([#139](https://github.com/hooroo/roo-ui/issues/139)) ([f914d8d](https://github.com/hooroo/roo-ui/commit/f914d8d))
+
+
+
+
 <a name="0.50.2"></a>
 ## [0.50.2](https://github.com/hooroo/roo-ui/compare/v0.50.1...v0.50.2) (2018-08-05)
 
