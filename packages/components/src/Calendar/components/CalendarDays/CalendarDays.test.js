@@ -6,18 +6,21 @@ import { CalendarDay, CalendarEmptyDay, CalendarDays } from '.';
 
 describe('<CalendarDay />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarDay selected>21</CalendarDay>, theme)).toMatchSnapshot();
+    const component = <CalendarDay selected selectable>21</CalendarDay>;
+    expect(shallowWithTheme(component, theme)).toMatchSnapshot();
   });
 });
 
 describe('<CalendarEmptyDay />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarEmptyDay />, theme)).toMatchSnapshot();
+    const component = <CalendarEmptyDay />;
+    expect(shallowWithTheme(component, theme)).toMatchSnapshot();
   });
 });
 
 describe('<CalendarDays />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarDays selected>Day</CalendarDays>, theme)).toMatchSnapshot();
+    const component = <CalendarDays selected selectable>Day</CalendarDays>;
+    expect(shallowWithTheme(component, theme)).toMatchSnapshot();
   });
 });

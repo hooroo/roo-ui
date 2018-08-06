@@ -2,6 +2,7 @@
 
 exports[`<CalendarDay /> renders correctly 1`] = `
 <Box
+  selectable={true}
   selected={true}
 >
   <NakedButton
@@ -26,6 +27,7 @@ exports[`<CalendarDay /> renders correctly 1`] = `
       ]
     }
     disabled={[Function]}
+    selectable={true}
     selected={true}
   >
     21
@@ -141,6 +143,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
   }
   className="c0"
   is="div"
+  selectable={true}
   selected={true}
 >
   Day
@@ -163,11 +166,6 @@ exports[`<CalendarEmptyDay /> renders correctly 1`] = `
   content: "";
   display: block;
   padding-bottom: 100%;
-}
-
-.c0:hover {
-  border-color: #8DE2E0;
-  z-index: 1;
 }
 
 <div

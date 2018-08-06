@@ -19,10 +19,14 @@ const Wrapper = Box.extend`
     padding-bottom: 100%;
   }
 
-  &:hover {
-    border-color: ${themeGet('colors.brand.secondary')};
-    z-index: 1;
-  }
+  ${props =>
+    props.selectable &&
+    css`
+      &:hover {
+        border-color: ${themeGet('colors.brand.secondary')};
+        z-index: 1;
+      }
+    `};
 
   ${props =>
     props.selected &&
@@ -74,8 +78,8 @@ const Button = NakedButton.extend`
 
     ${props =>
     props.selectable &&
-      !props.selected &&
-      css`
+    !props.selected &&
+    css`
         &:hover,
         &:focus {
           background-color: ${themeGet('colors.ui.infoBackground')};
@@ -113,13 +117,16 @@ export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
 
 CalendarEmptyDay.displayName = 'CalendarEmptyDay';
 
-export const CalendarDay = ({ children, selected, ...rest }) => (
-  <Wrapper selected={selected}>
-    <Button selected={selected} {...rest}>{children}</Button>
+export const CalendarDay = ({
+  children, selected, selectable, ...rest
+}) => (
+  <Wrapper selected={selected} selectable={selectable}>
+    <Button selected={selected} selectable={selectable} {...rest}>{children}</Button>
   </Wrapper>
 );
 
 CalendarDay.propTypes = {
   children: PropTypes.node.isRequired,
   selected: PropTypes.bool.isRequired,
+  selectable: PropTypes.bool.isRequired,
 };
