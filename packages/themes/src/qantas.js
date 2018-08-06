@@ -19,6 +19,7 @@ const colors = {
     successBackground: '#DEF2DE',
   },
   greys: {
+    mineShaft: '#222222',
     charcoal: '#323232',
     steel: '#666666',
     alto: '#DADADA',
