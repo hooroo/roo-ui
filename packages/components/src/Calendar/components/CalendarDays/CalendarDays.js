@@ -36,6 +36,11 @@ const Wrapper = Box.extend`
     `};
 `;
 
+Wrapper.defaultProps = {
+  ...Box.defaultProps,
+  blacklist: [...Object.keys(Box.propTypes), 'selected', 'selectable'],
+};
+
 const Button = NakedButton.extend`
   position: absolute;
   left: 0;

@@ -2,6 +2,49 @@
 
 exports[`<CalendarDay /> renders correctly 1`] = `
 <Box
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "minWidth",
+      "maxWidth",
+      "height",
+      "minHeight",
+      "maxHeight",
+      "color",
+      "bg",
+      "textAlign",
+      "align",
+      "boxShadow",
+      "borderRadius",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "flexBasis",
+      "flex",
+      "position",
+      "zIndex",
+      "selected",
+      "selectable",
+    ]
+  }
   selectable={true}
   selected={true}
 >
