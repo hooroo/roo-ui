@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Calendar /> renders children correctly 1`] = `
+exports[`<DatePicker /> renders children correctly 1`] = `
 <Box
   position="relative"
 >
@@ -952,7 +952,7 @@ exports[`<Calendar /> renders children correctly 1`] = `
 </Box>
 `;
 
-exports[`<Calendar /> renders correctly 1`] = `
+exports[`<DatePicker /> renders correctly 1`] = `
 <Dayzed
   date={2018-07-03T00:00:00.000Z}
   firstDayOfWeek={1}

@@ -5,13 +5,13 @@ import { withDocs } from 'storybook-readme';
 import addDays from 'date-fns/add_days';
 import subDays from 'date-fns/sub_days';
 
-import Calendar from './Calendar';
+import DatePicker from './DatePicker';
 import README from './README.md';
 
-storiesOf('Components|Calendar', module)
+storiesOf('Components|DatePicker', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Calendar
+    <DatePicker
       monthsToDisplay={number('Months to display', 1)}
       minDate={subDays(new Date(), 10)}
       maxDate={addDays(new Date(), 60)}

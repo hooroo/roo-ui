@@ -2,9 +2,9 @@ import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
 
-import { Calendar } from '.';
+import DatePicker from '.';
 
-describe('<Calendar />', () => {
+describe('<DatePicker />', () => {
   let wrapper;
   let childrenWrapper;
 
@@ -21,7 +21,7 @@ describe('<Calendar />', () => {
   };
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Calendar {...props} />, theme);
+    wrapper = shallowWithTheme(<DatePicker {...props} />, theme);
     childrenWrapper = wrapper.dive();
   });
 
@@ -117,7 +117,7 @@ describe('<Calendar />', () => {
     describe('when props.interactiveDisabledDates is present', () => {
       beforeEach(() => {
         props.interactiveDisabledDates = true;
-        wrapper = shallowWithTheme(<Calendar {...props} />, theme);
+        wrapper = shallowWithTheme(<DatePicker {...props} />, theme);
         childrenWrapper = wrapper.dive();
       });
 

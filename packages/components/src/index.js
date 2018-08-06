@@ -34,5 +34,4 @@ export { default as Select } from './Select';
 export { default as Autocomplete } from './Autocomplete';
 export { default as Dropdown } from './Dropdown';
 export { default as Popover } from './Popover';
-export * from './Calendar';
-
+export { default as DatePicker } from './DatePicker';

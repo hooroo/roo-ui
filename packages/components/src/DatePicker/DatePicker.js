@@ -4,15 +4,11 @@ import Dayzed from 'dayzed';
 import { subDays, isSameDay } from 'date-fns';
 
 import { Flex, Box } from '../';
-import {
-  CalendarDay as Day,
-  CalendarEmptyDay as EmptyDay,
-  CalendarDays as Days,
-  CalendarWeekday as Weekday,
-  CalendarWeekdays as Weekdays,
-  CalendarNav as Nav,
-  CalendarMonth as Month,
-} from '.';
+
+import CalendarNav from './components/CalendarNav';
+import CalendarMonth from './components/CalendarMonth';
+import { CalendarDay, CalendarEmptyDay, CalendarDays } from './components/CalendarDays';
+import { CalendarWeekday, CalendarWeekdays } from './components/CalendarWeekdays';
 
 const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
   const isDisabled = disabledDates
@@ -31,7 +27,7 @@ const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
   return props;
 };
 
-const Calendar = ({
+const DatePicker = ({
   monthNames, weekdayNames, monthsToDisplay, stacked,
   disabledDates, interactiveDisabledDates, ...rest
 }) => (
@@ -48,51 +44,51 @@ const Calendar = ({
 
         return (
           <Box position="relative">
-            <Nav
+            <CalendarNav
               prevProps={getBackProps({ calendars })}
               nextProps={getForwardProps({ calendars })}
             />
 
             <Flex flexWrap="wrap">
               {calendars.map(calendar => (
-                <Month
+                <CalendarMonth
                   key={`${calendar.month}${calendar.year}`}
                   monthsToDisplay={monthsToDisplay}
                   month={monthNames[calendar.month]}
                   year={calendar.year}
                   stacked={stacked}
                 >
-                  <Weekdays>
+                  <CalendarWeekdays>
                     {weekdayNames.map(weekday => (
-                      <Weekday key={`${calendar.month}${calendar.year}${weekday}`}>
+                      <CalendarWeekday key={`${calendar.month}${calendar.year}${weekday}`}>
                         {weekday}
-                      </Weekday>
+                      </CalendarWeekday>
                     ))}
-                  </Weekdays>
+                  </CalendarWeekdays>
 
-                  <Days>
+                  <CalendarDays>
                     {calendar.weeks.map(week =>
                       week.map((day, index) => {
                         if (!day) {
                           return (
-                            <EmptyDay key={`${calendar.year}${calendar.month}${index}`} /> // eslint-disable-line react/no-array-index-key
+                            <CalendarEmptyDay key={`${calendar.year}${calendar.month}${index}`} /> // eslint-disable-line react/no-array-index-key
 
                           );
                         }
 
                         return (
-                          <Day
+                          <CalendarDay
                             key={`${calendar.year}${calendar.month}${index}`} // eslint-disable-line react/no-array-index-key
                             {...getDateProps({ dateObj: day })}
                             {...getCustomDateProps(disabledDates, interactiveDisabledDates, day)}
 
                           >
                             {day.date.getDate()}
-                          </Day>
+                          </CalendarDay>
                         );
                       }))}
-                  </Days>
-                </Month>
+                  </CalendarDays>
+                </CalendarMonth>
               ))}
             </Flex>
           </Box>
@@ -101,7 +97,7 @@ const Calendar = ({
   />
 );
 
-Calendar.defaultProps = {
+DatePicker.defaultProps = {
   monthsToDisplay: 1,
   firstDayOfWeek: 1,
   stacked: false,
@@ -112,7 +108,7 @@ Calendar.defaultProps = {
   interactiveDisabledDates: false,
 };
 
-Calendar.propTypes = {
+DatePicker.propTypes = {
   ...Dayzed.propTypes,
   monthsToDisplay: PropTypes.number,
   firstDayOfWeek: PropTypes.number,
@@ -124,4 +120,4 @@ Calendar.propTypes = {
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
 };
 
-export default Calendar;
+export default DatePicker;
