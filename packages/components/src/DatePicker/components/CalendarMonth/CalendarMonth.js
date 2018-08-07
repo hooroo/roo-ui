@@ -4,8 +4,9 @@ import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
 
 import { Box, Text } from '../../../';
+import CalendarWeekdays from '../CalendarWeekdays';
 
-const Wrapper = Box.extend`
+const MonthWrapper = Box.extend`
   text-align: center;
   padding: 0 ${themeGet('space.4')};
   width: ${props => `${100 / props.monthsToDisplay}%`};
@@ -19,21 +20,21 @@ const Wrapper = Box.extend`
         margin-top: 0;
       }
     `};
-
 `;
 
 const CalendarMonth = ({
-  monthsToDisplay, month, year, stacked, children,
+  monthsToDisplay, month, monthName, year, stacked, children, weekdayNames,
 }) => (
-  <Wrapper monthsToDisplay={monthsToDisplay} stacked={stacked}>
+  <MonthWrapper monthsToDisplay={monthsToDisplay} stacked={stacked}>
     <Text textStyle="caps">
-      {month} {year}
+      {monthName} {year}
     </Text>
+    <CalendarWeekdays month={month} year={year} weekdayNames={weekdayNames} />
     {children}
-  </Wrapper>
+  </MonthWrapper>
 );
 
-Wrapper.defaultProps = {
+MonthWrapper.defaultProps = {
   ...Box.defaultProps,
   blacklist: [...Object.keys(Box.propTypes), 'monthsToDisplay', 'stacked'],
 };
@@ -45,10 +46,12 @@ CalendarMonth.defaultProps = {
 
 CalendarMonth.propTypes = {
   monthsToDisplay: PropTypes.number,
-  month: PropTypes.string.isRequired,
+  month: PropTypes.number.isRequired,
+  monthName: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
   stacked: PropTypes.bool,
+  weekdayNames: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default CalendarMonth;

@@ -2,16 +2,19 @@ import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
 
-import { CalendarWeekday, CalendarWeekdays } from '.';
+import CalendarWeekdays from '.';
+
+const props = {
+  month: 7,
+  year: 2018,
+  weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+};
 
 describe('<CalendarWeekdays />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarWeekdays>Weekday</CalendarWeekdays>, theme)).toMatchSnapshot();
-  });
-});
-
-describe('<CalendarWeekday />', () => {
-  it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarWeekday>Tuesday</CalendarWeekday>, theme)).toMatchSnapshot();
+    expect(shallowWithTheme(
+      <CalendarWeekdays {...props}>Weekday</CalendarWeekdays>,
+      theme,
+    )).toMatchSnapshot();
   });
 });

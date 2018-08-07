@@ -8,7 +8,6 @@ import { Flex, Box } from '../';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 import { CalendarDay, CalendarEmptyDay, CalendarDays } from './components/CalendarDays';
-import { CalendarWeekday, CalendarWeekdays } from './components/CalendarWeekdays';
 
 const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
   const isDisabled = disabledDates
@@ -54,18 +53,12 @@ const DatePicker = ({
                 <CalendarMonth
                   key={`${calendar.month}${calendar.year}`}
                   monthsToDisplay={monthsToDisplay}
-                  month={monthNames[calendar.month]}
+                  monthName={monthNames[calendar.month]}
+                  month={calendar.month}
                   year={calendar.year}
                   stacked={stacked}
+                  weekdayNames={weekdayNames}
                 >
-                  <CalendarWeekdays>
-                    {weekdayNames.map(weekday => (
-                      <CalendarWeekday key={`${calendar.month}${calendar.year}${weekday}`}>
-                        {weekday}
-                      </CalendarWeekday>
-                    ))}
-                  </CalendarWeekdays>
-
                   <CalendarDays>
                     {calendar.weeks.map(week =>
                       week.map((day, index) => {

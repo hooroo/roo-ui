@@ -1,1 +1,1 @@
-export { CalendarWeekday, CalendarWeekdays } from './CalendarWeekdays';
+export { default } from './CalendarWeekdays';

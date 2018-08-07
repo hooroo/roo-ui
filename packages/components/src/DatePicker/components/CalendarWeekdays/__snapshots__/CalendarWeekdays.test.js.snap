@@ -1,156 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CalendarWeekday /> renders correctly 1`] = `
-<Box
-  width={0.14285714285714285}
->
-  <Text
-    blacklist={
-      Array [
-        "textStyle",
-        "color",
-        "bg",
-        "fontSize",
-        "f",
-        "fontWeight",
-        "letterSpacing",
-        "lineHeight",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "textAlign",
-        "align",
-        "textDecoration",
-        "hidden",
-      ]
-    }
-    hidden={false}
-    textStyle="text"
-  >
-    Tuesday
-  </Text>
-</Box>
-`;
-
 exports[`<CalendarWeekdays /> renders correctly 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 0.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid #DADADA;
-}
-
-<Clean.div
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "width",
-      "w",
-      "fontSize",
-      "f",
-      "color",
-      "bg",
-      "fontFamily",
-      "font",
-      "textAlign",
-      "align",
-      "lineHeight",
-      "fontWeight",
-      "letterSpacing",
-      "display",
-      "maxWidth",
-      "minWidth",
-      "height",
-      "maxHeight",
-      "minHeight",
-      "size",
-      "ratio",
-      "alignItems",
-      "alignContent",
-      "justifyContent",
-      "justify",
-      "flexWrap",
-      "wrap",
-      "flexBasis",
-      "flexDirection",
-      "flex",
-      "justifySelf",
-      "alignSelf",
-      "order",
-      "gridGap",
-      "gridColumnGap",
-      "gridRowGap",
-      "gridColumn",
-      "gridRow",
-      "gridAutoFlow",
-      "gridAutoColumns",
-      "gridAutoRows",
-      "gridTemplateColumns",
-      "gridTemplateRows",
-      "border",
-      "borderTop",
-      "borderRight",
-      "borderBottom",
-      "borderLeft",
-      "borderColor",
-      "borderRadius",
-      "boxShadow",
-      "background",
-      "backgroundImage",
-      "bgImage",
-      "backgroundSize",
-      "bgSize",
-      "backgroundPosition",
-      "bgPosition",
-      "backgroundRepeat",
-      "bgRepeat",
-      "position",
-      "zIndex",
-      "top",
-      "right",
-      "bottom",
-      "left",
-      "hover",
-      "focus",
-      "active",
-      "disabledStyle",
-      "textStyle",
-      "colors",
-      "buttonStyle",
-      "borderWidth",
-    ]
-  }
-  className="c0"
-  is="div"
->
-  Weekday
-</Clean.div>
+<Box>
+  <CalendarWeekday
+    key="72018S"
+  >
+    S
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018M"
+  >
+    M
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018T"
+  >
+    T
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018W"
+  >
+    W
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018T"
+  >
+    T
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018F"
+  >
+    F
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018S"
+  >
+    S
+  </CalendarWeekday>
+</Box>
 `;

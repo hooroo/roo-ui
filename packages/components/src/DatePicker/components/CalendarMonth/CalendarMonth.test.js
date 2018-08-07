@@ -7,9 +7,11 @@ import CalendarMonth from '.';
 describe('<CalendarMonth />', () => {
   let wrapper;
   const props = {
-    month: 'Jul',
+    monthName: 'Jul',
+    month: 7,
     year: 2018,
     stacked: true,
+    weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
   };
 
   beforeEach(() => {
@@ -18,5 +20,13 @@ describe('<CalendarMonth />', () => {
 
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('<CalendarWeekdays />', () => {
+    it('renders CalendarWeekdays', () => {
+      expect(wrapper.find('CalendarWeekdays').prop('month')).toEqual(props.month);
+      expect(wrapper.find('CalendarWeekdays').prop('year')).toEqual(props.year);
+      expect(wrapper.find('CalendarWeekdays').prop('weekdayNames')).toEqual(props.weekdayNames);
+    });
   });
 });
