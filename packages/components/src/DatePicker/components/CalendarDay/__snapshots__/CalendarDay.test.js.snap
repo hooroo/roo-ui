@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CalendarDay /> renders correctly 1`] = `
+<Box
+  selected={true}
+>
+  <NakedButton
+    blacklist={
+      Array [
+        "verticalAlign",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "selectable",
+      ]
+    }
+    disabled={false}
+    selectable={true}
+    selected={true}
+  >
+    21
+  </NakedButton>
+</Box>
+`;
