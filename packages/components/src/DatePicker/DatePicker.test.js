@@ -29,108 +29,37 @@ describe('<DatePicker />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // it('renders children correctly', () => {
-  //   expect(childrenWrapper).toMatchSnapshot();
-  // });
+  it('renders children correctly', () => {
+    expect(childrenWrapper).toMatchSnapshot();
+  });
 
-  // describe('<Dayzed />', () => {
-  //   it('passes down props.monthsToDisplay', () => {
-  //     expect(wrapper.find('Dayzed').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
-  //   });
+  describe('<Dayzed />', () => {
+    it('passes down props.monthsToDisplay', () => {
+      expect(wrapper.find('Dayzed').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+    });
 
-  //   it('assigns the rest of the props', () => {
-  //     expect(wrapper.props()).toEqual(expect.objectContaining({
-  //       date: props.date,
-  //       minDate: props.minDate,
-  //       maxDate: props.maxDate,
-  //       selected: props.selected,
-  //       onDateSelected: props.onDateSelected,
-  //     }));
-  //   });
-  // });
+    it('assigns the rest of the props', () => {
+      expect(wrapper.props()).toEqual(expect.objectContaining({
+        date: props.date,
+        minDate: props.minDate,
+        maxDate: props.maxDate,
+        selected: props.selected,
+        onDateSelected: props.onDateSelected,
+      }));
+    });
+  });
 
-  // describe('<CalendarMonth />', () => {
-  //   it('passes the month name to each calendar month', () => {
-  //     expect(childrenWrapper.find('CalendarMonth').prop('monthName')).toEqual('Jul');
-  //   });
+  describe('<CalendarMonth />', () => {
+    it('passes the month name to each calendar month', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('monthName')).toEqual('Jul');
+    });
 
-  //   it('passes down props.stacked', () => {
-  //     expect(childrenWrapper.find('CalendarMonth').prop('stacked')).toEqual(props.stacked);
-  //   });
+    it('passes down props.stacked', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('stacked')).toEqual(props.stacked);
+    });
 
-  //   it('passes down props.monthsToDisplay', () => {
-  //     expect(childrenWrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
-  //   });
-  // });
-
-  // describe('<CalendarEmptyDay />', () => {
-  //   it('renders one for each empty day in the calendar month', () => {
-  //     expect(childrenWrapper.find('CalendarEmptyDay')).toHaveLength(11);
-  //   });
-  // });
-
-  // describe('<CalendarDay />', () => {
-  //   it('it renders a day for each day in the month', () => {
-  //     expect(childrenWrapper.find('CalendarDay')).toHaveLength(31);
-  //   });
-
-  //   it('renders days as clickable elements', () => {
-  //     const day = childrenWrapper.find('CalendarDay').first();
-
-  //     expect(day.props()).toEqual(expect.objectContaining({
-  //       selectable: true,
-  //       disabled: false,
-  //     }));
-  //   });
-
-  //   it('adds props.selected true when date is in props.selected', () => {
-  //     const day19 = childrenWrapper.find('CalendarDay').at(19);
-
-  //     expect(day19.props()).toEqual(expect.objectContaining({
-  //       selected: true,
-  //     }));
-  //   });
-
-  //   it('renders a disabled day when date is in props.disabledDates', () => {
-  //     const day3 = childrenWrapper.find('CalendarDay').at(3);
-  //     const day4 = childrenWrapper.find('CalendarDay').at(4);
-
-  //     expect(day3.props()).toEqual(expect.objectContaining({
-  //       selected: false,
-  //       selectable: false,
-  //       disabled: true,
-  //     }));
-
-  //     expect(day4.props()).toEqual(expect.objectContaining({
-  //       selected: false,
-  //       selectable: false,
-  //       disabled: true,
-  //     }));
-  //   });
-
-  //   describe('when props.interactiveDisabledDates is present', () => {
-  //     beforeEach(() => {
-  //       props.interactiveDisabledDates = true;
-  //       wrapper = shallowWithTheme(<DatePicker {...props} />, theme);
-  //       childrenWrapper = wrapper.dive();
-  //     });
-
-  //     it('renders clickable disabled days', () => {
-  //       const day3 = childrenWrapper.find('CalendarDay').at(3);
-  //       const day4 = childrenWrapper.find('CalendarDay').at(4);
-
-  //       expect(day3.props()).toEqual(expect.objectContaining({
-  //         selected: false,
-  //         selectable: false,
-  //         disabled: false,
-  //       }));
-
-  //       expect(day4.props()).toEqual(expect.objectContaining({
-  //         selected: false,
-  //         selectable: false,
-  //         disabled: false,
-  //       }));
-  //     });
-  //   });
-  // });
+    it('passes down props.monthsToDisplay', () => {
+      expect(childrenWrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+    });
+  });
 });

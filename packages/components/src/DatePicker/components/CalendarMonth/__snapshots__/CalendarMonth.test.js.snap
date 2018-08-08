@@ -101,6 +101,441 @@ exports[`<CalendarMonth /> renders correctly 1`] = `
     }
     year={2018}
   />
-  Days
+  <Box>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201870"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      8
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201871"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      9
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201872"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      10
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201873"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      11
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201874"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      12
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201875"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      13
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201876"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      15
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201870"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      15
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201871"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      16
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201872"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      17
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201873"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      18
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201874"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      19
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201875"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      20
+    </CalendarDay>
+    <CalendarDay
+      _isMockFunction={true}
+      disabled={false}
+      getMockImplementation={[Function]}
+      getMockName={[Function]}
+      key="201876"
+      mock={
+        Object {
+          "calls": Array [],
+          "instances": Array [],
+          "invocationCallOrder": Array [],
+          "results": Array [],
+        }
+      }
+      mockClear={[Function]}
+      mockImplementation={[Function]}
+      mockImplementationOnce={[Function]}
+      mockName={[Function]}
+      mockRejectedValue={[Function]}
+      mockRejectedValueOnce={[Function]}
+      mockReset={[Function]}
+      mockResolvedValue={[Function]}
+      mockResolvedValueOnce={[Function]}
+      mockRestore={[Function]}
+      mockReturnThis={[Function]}
+      mockReturnValue={[Function]}
+      mockReturnValueOnce={[Function]}
+      selectable={true}
+    >
+      22
+    </CalendarDay>
+  </Box>
 </Box>
 `;
