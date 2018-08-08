@@ -8,6 +8,8 @@ import CalendarDays from '.';
 describe('<CalendarDays />', () => {
   let wrapper;
 
+  const startDate = new Date(2018, 7, 1, 10, 33, 30, 0);
+
   const props = {
     monthName: 'Jul',
     month: 7,
@@ -16,22 +18,22 @@ describe('<CalendarDays />', () => {
     weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     weeks: [
       [
-        { date: new Date() },
-        { date: addDays(new Date(), 1) },
-        { date: addDays(new Date(), 2) },
-        { date: addDays(new Date(), 3) },
-        { date: addDays(new Date(), 4) },
-        { date: addDays(new Date(), 5) },
-        { date: addDays(new Date(), 7) },
+        { date: startDate },
+        { date: addDays(startDate, 1) },
+        { date: addDays(startDate, 2) },
+        { date: addDays(startDate, 3) },
+        { date: addDays(startDate, 4) },
+        { date: addDays(startDate, 5) },
+        { date: addDays(startDate, 7) },
       ],
       [
-        { date: addDays(new Date(), 7) },
-        { date: addDays(new Date(), 8) },
-        { date: addDays(new Date(), 9) },
-        { date: addDays(new Date(), 10) },
-        { date: addDays(new Date(), 11) },
-        { date: addDays(new Date(), 12) },
-        { date: addDays(new Date(), 14) },
+        { date: addDays(startDate, 7) },
+        { date: addDays(startDate, 8) },
+        { date: addDays(startDate, 9) },
+        { date: addDays(startDate, 10) },
+        { date: addDays(startDate, 11) },
+        { date: addDays(startDate, 12) },
+        { date: addDays(startDate, 14) },
       ]],
     getDateProps: jest.fn,
   };
@@ -43,75 +45,4 @@ describe('<CalendarDays />', () => {
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
-  // describe('<CalendarEmptyDay />', () => {
-  //   it('renders one for each empty day in the calendar month', () => {
-  //     expect(childrenWrapper.find('CalendarEmptyDay')).toHaveLength(11);
-  //   });
-  // });
-
-  // describe('<CalendarDay />', () => {
-  //   it('it renders a day for each day in the month', () => {
-  //     expect(childrenWrapper.find('CalendarDay')).toHaveLength(31);
-  //   });
-
-  //   it('renders days as clickable elements', () => {
-  //     const day = childrenWrapper.find('CalendarDay').first();
-
-  //     expect(day.props()).toEqual(expect.objectContaining({
-  //       selectable: true,
-  //       disabled: false,
-  //     }));
-  //   });
-
-  //   it('adds props.selected true when date is in props.selected', () => {
-  //     const day19 = childrenWrapper.find('CalendarDay').at(19);
-
-  //     expect(day19.props()).toEqual(expect.objectContaining({
-  //       selected: true,
-  //     }));
-  //   });
-
-  //   it('renders a disabled day when date is in props.disabledDates', () => {
-  //     const day3 = childrenWrapper.find('CalendarDay').at(3);
-  //     const day4 = childrenWrapper.find('CalendarDay').at(4);
-
-  //     expect(day3.props()).toEqual(expect.objectContaining({
-  //       selected: false,
-  //       selectable: false,
-  //       disabled: true,
-  //     }));
-
-  //     expect(day4.props()).toEqual(expect.objectContaining({
-  //       selected: false,
-  //       selectable: false,
-  //       disabled: true,
-  //     }));
-  //   });
-
-  //   describe('when props.interactiveDisabledDates is present', () => {
-  //     beforeEach(() => {
-  //       props.interactiveDisabledDates = true;
-  //       wrapper = shallowWithTheme(<DatePicker {...props} />, theme);
-  //       childrenWrapper = wrapper.dive();
-  //     });
-
-  //     it('renders clickable disabled days', () => {
-  //       const day3 = childrenWrapper.find('CalendarDay').at(3);
-  //       const day4 = childrenWrapper.find('CalendarDay').at(4);
-
-  //       expect(day3.props()).toEqual(expect.objectContaining({
-  //         selected: false,
-  //         selectable: false,
-  //         disabled: false,
-  //       }));
-
-  //       expect(day4.props()).toEqual(expect.objectContaining({
-  //         selected: false,
-  //         selectable: false,
-  //         disabled: false,
-  //       }));
-  //     });
-  //   });
-  // });
 });

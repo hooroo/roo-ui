@@ -14,8 +14,8 @@ const CalendarWeekdaysWrapper = Flex.extend`
 
 const CalendarWeekdays = ({ weekdayNames, month, year }) => (
   <CalendarWeekdaysWrapper>
-    {weekdayNames.map(weekday => (
-      <CalendarWeekday key={`${month}${year}${weekday}`}>
+    {weekdayNames.map((weekday, index) => (
+      <CalendarWeekday key={`${month}${year}${weekday}${index}`}> { /* eslint-disable-line react/no-array-index-key */ }
         {weekday}
       </CalendarWeekday>
     ))}

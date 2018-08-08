@@ -19,10 +19,14 @@ const DayWrapper = Box.extend`
     padding-bottom: 100%;
   }
 
-  &:hover {
-    border-color: ${themeGet('colors.brand.secondary')};
-    z-index: 1;
-  }
+  ${props =>
+    props.selectable &&
+    css`
+      &:hover {
+        border-color: ${themeGet('colors.brand.secondary')};
+        z-index: 1;
+      }
+    `};
 
   ${props =>
     props.selected &&
@@ -31,6 +35,11 @@ const DayWrapper = Box.extend`
       border-color: ${themeGet('colors.brand.secondary')};
     `};
 `;
+
+DayWrapper.defaultProps = {
+  ...Box.defaultProps,
+  blacklist: [...Object.keys(Box.propTypes), 'selected', 'selectable'],
+};
 
 const Button = NakedButton.extend`
   position: absolute;
@@ -72,13 +81,12 @@ const Button = NakedButton.extend`
       }
     `};
 
-    ${props =>
+  ${props =>
     props.selectable &&
-      !props.selected &&
-      css`
-        &:hover,
-        &:focus {
-          background-color: ${themeGet('colors.ui.infoBackground')};
+    !props.selected &&
+    css`
+        &:hover {
+          border-color: ${themeGet('colors.brand.secondary')};
         }
       `};
 
@@ -110,11 +118,12 @@ export const CalendarDay = ({ children, selected, ...rest }) => (
 CalendarDay.defaultProps = {
   selectable: true,
   disabled: false,
+  selected: false,
 };
 
 CalendarDay.propTypes = {
   children: PropTypes.node.isRequired,
-  selected: PropTypes.bool.isRequired,
+  selected: PropTypes.bool,
   selectable: PropTypes.bool,
   disabled: PropTypes.bool,
 };

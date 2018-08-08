@@ -2,6 +2,49 @@
 
 exports[`<CalendarDay /> renders correctly 1`] = `
 <Box
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "minWidth",
+      "maxWidth",
+      "height",
+      "minHeight",
+      "maxHeight",
+      "color",
+      "bg",
+      "textAlign",
+      "align",
+      "boxShadow",
+      "borderRadius",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "flexBasis",
+      "flex",
+      "position",
+      "zIndex",
+      "selected",
+      "selectable",
+    ]
+  }
   selected={true}
 >
   <NakedButton
@@ -50,11 +93,6 @@ exports[`<CalendarEmptyDay /> renders correctly 1`] = `
   content: "";
   display: block;
   padding-bottom: 100%;
-}
-
-.c0:hover {
-  border-color: #8DE2E0;
-  z-index: 1;
 }
 
 <div
