@@ -1,1 +1,1 @@
-export { default } from './CalendarDay';
+export { CalendarDay, CalendarEmptyDay } from './CalendarDay';

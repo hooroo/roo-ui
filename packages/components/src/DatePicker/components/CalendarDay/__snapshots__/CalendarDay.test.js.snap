@@ -2,7 +2,7 @@
 
 exports[`<CalendarDay /> renders correctly 1`] = `
 <Box
-  selected={true}
+  selected={false}
 >
   <NakedButton
     blacklist={
@@ -27,9 +27,39 @@ exports[`<CalendarDay /> renders correctly 1`] = `
     }
     disabled={false}
     selectable={true}
-    selected={true}
+    selected={false}
   >
     21
   </NakedButton>
 </Box>
+`;
+
+exports[`<CalendarEmptyDay /> renders correctly 1`] = `
+.c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: calc(100% / 7);
+  margin: 0 -2px -2px 0;
+  position: relative;
+  border: 2px solid #F4F5F6;
+  border-color: transparent;
+}
+
+.c0:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.c0:hover {
+  border-color: #8DE2E0;
+  z-index: 1;
+}
+
+<div
+  className="c0"
+>
+  15
+</div>
 `;

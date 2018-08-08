@@ -101,7 +101,7 @@ Button.defaultProps = {
   blacklist: [...Object.keys(NakedButton.propTypes), 'selectable'],
 };
 
-const CalendarDay = ({ children, selected, ...rest }) => (
+export const CalendarDay = ({ children, selected, ...rest }) => (
   <DayWrapper selected={selected}>
     <Button selected={selected} {...rest}>{children}</Button>
   </DayWrapper>
@@ -110,13 +110,18 @@ const CalendarDay = ({ children, selected, ...rest }) => (
 CalendarDay.defaultProps = {
   selectable: true,
   disabled: false,
+  selected: false,
 };
 
 CalendarDay.propTypes = {
   children: PropTypes.node.isRequired,
-  selected: PropTypes.bool.isRequired,
+  selected: PropTypes.bool,
   selectable: PropTypes.bool,
   disabled: PropTypes.bool,
 };
 
-export default CalendarDay;
+export const CalendarEmptyDay = DayWrapper.withComponent('div').extend`
+  border-color: transparent;
+`;
+
+CalendarEmptyDay.displayName = 'CalendarEmptyDay';
