@@ -2,7 +2,7 @@
 
 exports[`<CalendarDay /> renders correctly 1`] = `
 <Box
-  selected={false}
+  selected={true}
 >
   <NakedButton
     blacklist={
@@ -27,7 +27,7 @@ exports[`<CalendarDay /> renders correctly 1`] = `
     }
     disabled={false}
     selectable={true}
-    selected={false}
+    selected={true}
   >
     21
   </NakedButton>

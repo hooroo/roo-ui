@@ -110,12 +110,11 @@ export const CalendarDay = ({ children, selected, ...rest }) => (
 CalendarDay.defaultProps = {
   selectable: true,
   disabled: false,
-  selected: false,
 };
 
 CalendarDay.propTypes = {
   children: PropTypes.node.isRequired,
-  selected: PropTypes.bool,
+  selected: PropTypes.bool.isRequired,
   selectable: PropTypes.bool,
   disabled: PropTypes.bool,
 };
