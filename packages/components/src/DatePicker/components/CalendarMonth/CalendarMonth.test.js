@@ -7,7 +7,6 @@ import CalendarMonth from '.';
 
 describe('<CalendarMonth />', () => {
   let wrapper;
-  let childrenWrapper;
 
   const props = {
     monthName: 'Jul',
@@ -39,7 +38,6 @@ describe('<CalendarMonth />', () => {
 
   beforeEach(() => {
     wrapper = shallowWithTheme(<CalendarMonth {...props}>Days</CalendarMonth>, theme);
-    childrenWrapper = wrapper.dive();
   });
 
   it('renders correctly', () => {
@@ -54,74 +52,11 @@ describe('<CalendarMonth />', () => {
     });
   });
 
-  // describe('<CalendarEmptyDay />', () => {
-  //   it('renders one for each empty day in the calendar month', () => {
-  //     expect(childrenWrapper.find('CalendarEmptyDay')).toHaveLength(11);
-  //   });
-  // });
-
-  // describe('<CalendarDay />', () => {
-  //   it('it renders a day for each day in the month', () => {
-  //     expect(childrenWrapper.find('CalendarDay')).toHaveLength(31);
-  //   });
-
-  //   it('renders days as clickable elements', () => {
-  //     const day = childrenWrapper.find('CalendarDay').first();
-
-  //     expect(day.props()).toEqual(expect.objectContaining({
-  //       selectable: true,
-  //       disabled: false,
-  //     }));
-  //   });
-
-  //   it('adds props.selected true when date is in props.selected', () => {
-  //     const day19 = childrenWrapper.find('CalendarDay').at(19);
-
-  //     expect(day19.props()).toEqual(expect.objectContaining({
-  //       selected: true,
-  //     }));
-  //   });
-
-  //   it('renders a disabled day when date is in props.disabledDates', () => {
-  //     const day3 = childrenWrapper.find('CalendarDay').at(3);
-  //     const day4 = childrenWrapper.find('CalendarDay').at(4);
-
-  //     expect(day3.props()).toEqual(expect.objectContaining({
-  //       selected: false,
-  //       selectable: false,
-  //       disabled: true,
-  //     }));
-
-  //     expect(day4.props()).toEqual(expect.objectContaining({
-  //       selected: false,
-  //       selectable: false,
-  //       disabled: true,
-  //     }));
-  //   });
-
-  //   describe('when props.interactiveDisabledDates is present', () => {
-  //     beforeEach(() => {
-  //       props.interactiveDisabledDates = true;
-  //       wrapper = shallowWithTheme(<DatePicker {...props} />, theme);
-  //       childrenWrapper = wrapper.dive();
-  //     });
-
-  //     it('renders clickable disabled days', () => {
-  //       const day3 = childrenWrapper.find('CalendarDay').at(3);
-  //       const day4 = childrenWrapper.find('CalendarDay').at(4);
-
-  //       expect(day3.props()).toEqual(expect.objectContaining({
-  //         selected: false,
-  //         selectable: false,
-  //         disabled: false,
-  //       }));
-
-  //       expect(day4.props()).toEqual(expect.objectContaining({
-  //         selected: false,
-  //         selectable: false,
-  //         disabled: false,
-  //       }));
-  //     });
-  //   });
-  // });
+  describe('<CalendarDays />', () => {
+    it('renders CalendarDays', () => {
+      expect(wrapper.find('CalendarDays').prop('month')).toEqual(props.month);
+      expect(wrapper.find('CalendarDays').prop('year')).toEqual(props.year);
+      expect(wrapper.find('CalendarDays').prop('weeks')).toEqual(props.weeks);
+    });
+  });
 });
