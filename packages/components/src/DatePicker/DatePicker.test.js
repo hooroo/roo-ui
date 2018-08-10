@@ -50,7 +50,7 @@ describe('<DatePicker />', () => {
     beforeEach(() => {
       setup();
 
-      calendarMonthWrapper = wrapper.find('CalendarMonth')
+      calendarMonthWrapper = wrapper.find('CalendarMonth');
     });
 
     it('passes the month name to each calendar month', () => {
