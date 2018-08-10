@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.50.4"></a>
+## [0.50.4](https://github.com/hooroo/roo-ui/compare/v0.50.3...v0.50.4) (2018-08-10)
+
+
+### Bug Fixes
+
+* remove appearance declaration from <Radio /> and <Checkbox /> to ensure they remain tabbable ([#148](https://github.com/hooroo/roo-ui/issues/148)) ([d67b9b0](https://github.com/hooroo/roo-ui/commit/d67b9b0))
+
+
+
+
 <a name="0.50.3"></a>
 ## [0.50.3](https://github.com/hooroo/roo-ui/compare/v0.50.2...v0.50.3) (2018-08-06)
 
