@@ -24,20 +24,6 @@ describe('<DatePicker />', () => {
     wrapper = mountWithTheme(<DatePicker {...props} />, theme);
   };
 
-  describe('renders correctly', () => {
-    beforeEach(() => {
-      setup();
-    });
-
-    it('renders correctly', () => {
-      expect(wrapper).toMatchSnapshot();
-    });
-
-    it('renders children correctly', () => {
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
   describe('<Dayzed />', () => {
     beforeEach(() => {
       setup();
@@ -59,20 +45,24 @@ describe('<DatePicker />', () => {
   });
 
   describe('<CalendarMonth />', () => {
+    let calendarMonthWrapper;
+
     beforeEach(() => {
       setup();
+
+      calendarMonthWrapper = wrapper.find('CalendarMonth')
     });
 
     it('passes the month name to each calendar month', () => {
-      expect(wrapper.find('CalendarMonth').prop('monthName')).toEqual('Jul');
+      expect(calendarMonthWrapper.prop('monthName')).toEqual('Jul');
     });
 
     it('passes down props.stacked', () => {
-      expect(wrapper.find('CalendarMonth').prop('stacked')).toEqual(props.stacked);
+      expect(calendarMonthWrapper.prop('stacked')).toEqual(props.stacked);
     });
 
     it('passes down props.monthsToDisplay', () => {
-      expect(wrapper.find('CalendarMonth').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+      expect(calendarMonthWrapper.prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
     });
   });
 
