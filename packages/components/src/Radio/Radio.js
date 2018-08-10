@@ -17,7 +17,6 @@ const RadioWrapper = styled(tag.div)`
 `;
 
 const RadioInput = styled.input`
-  appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
@@ -45,7 +44,7 @@ const RadioIcon = styled(tag.div)`
   input:focus + &,
   input:hover + & {
     border-color: ${themeGet('colors.brand.secondary')};
-    transition: ${themeGet('transitions.default')}
+    transition: ${themeGet('transitions.default')};
   }
 
   input:checked + & {

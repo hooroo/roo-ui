@@ -20,7 +20,6 @@ const CheckboxWrapper = styled(tag.div)`
 `;
 
 const CheckboxInput = styled.input`
-  appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
@@ -46,7 +45,7 @@ const CheckboxBorder = styled(tag.div)`
   input:focus + &,
   input:hover + & {
     border-color: ${themeGet('colors.brand.secondary')};
-    transition: ${themeGet('transitions.default')}
+    transition: ${themeGet('transitions.default')};
   }
 
   input:disabled + & {
