@@ -14,6 +14,7 @@ const greys = {
   alto: '#DADADA',
   porcelain: '#F4F5F6',
   dusty: '#999999',
+  mineShaft: '#222222',
 };
 
 const namedColors = {
