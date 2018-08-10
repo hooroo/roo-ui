@@ -85,9 +85,10 @@ const Button = NakedButton.extend`
     props.selectable &&
     !props.selected &&
     css`
-        &:hover {
-          border-color: ${themeGet('colors.brand.secondary')};
-        }
+      &:hover,
+      &:focus {
+        background-color: ${themeGet('colors.ui.infoBackground')};
+      }
       `};
 
   ${props =>
