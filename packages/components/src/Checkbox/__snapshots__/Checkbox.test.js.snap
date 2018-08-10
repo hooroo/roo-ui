@@ -7,9 +7,6 @@ exports[`<Checkbox /> renders correctly 1`] = `
 }
 
 .c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
@@ -306,9 +303,6 @@ exports[`<Checkbox /> when checked renders correctly 1`] = `
 }
 
 .c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
@@ -609,9 +603,6 @@ exports[`<Checkbox /> when disabled renders correctly 1`] = `
 }
 
 .c1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
