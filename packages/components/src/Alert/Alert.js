@@ -1,99 +1,88 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cleanElement from 'clean-element';
 
 import { Container, NakedButton, Text, Flex, Box, Icon } from '..';
 
-const CleanDiv = cleanElement('div');
-CleanDiv.propTypes = Box.propTypes;
+const alertFactory = (defaultProps = {}) => {
+  const BaseAlert = ({
+    children,
+    icon,
+    onClose,
+    contained,
+    ...props
+  }) => {
+    const Wrapper = contained ? Container : Box;
 
-const Base = ({
-  children,
-  icon,
-  onClose,
-  contained,
-  ...props
-}) => {
-  const Wrapper = contained ? Container : Box;
+    return (
+      <Box {...props}>
+        <Wrapper px={contained ? undefined : 4}>
+          <Flex py={4}>
+            {icon && (
+              <Box pr={3}>
+                <Icon {...icon} />
+              </Box>
+            )}
 
-  return (
-    <CleanDiv {...props}>
-      <Wrapper px={contained ? undefined : 4}>
-        <Flex py={4}>
-          {icon && (
-            <Box pr={3}>
-              <Icon {...icon} />
-            </Box>
-          )}
+            <Text mb={0} textAlign="left">
+              {children}
+            </Text>
 
-          <Text mb={0} textAlign="left">
-            {children}
-          </Text>
+            {onClose && (
+              <Box ml="auto" pl={3}>
+                <NakedButton onClick={onClose}>
+                  <Icon name="close" />
+                </NakedButton>
+              </Box>
+            )}
+          </Flex>
+        </Wrapper>
+      </Box>
+    );
+  };
 
-          {onClose && (
-            <Box ml="auto" pl={3}>
-              <NakedButton onClick={onClose}>
-                <Icon name="close" />
-              </NakedButton>
-            </Box>
-          )}
-        </Flex>
-      </Wrapper>
-    </CleanDiv>
-  );
+  BaseAlert.displayName = 'Alert';
+  BaseAlert.propTypes = {
+    ...Box.propTypes,
+    children: PropTypes.node.isRequired,
+    icon: PropTypes.shape(Icon.propTypes),
+    contained: PropTypes.bool,
+    onClose: PropTypes.func,
+  };
+
+  BaseAlert.defaultProps = {
+    ...Box.defaultProps,
+    bg: 'greys.porcelain',
+    mb: 3,
+    ...defaultProps,
+  };
+
+  return BaseAlert;
 };
 
-Base.propTypes = {
-  children: PropTypes.node.isRequired,
-  icon: PropTypes.shape(Icon.propTypes),
-  contained: PropTypes.bool,
-  onClose: PropTypes.func,
-};
+const Alert = alertFactory();
 
-Base.defaultProps = {
-  contained: false,
-  icon: null,
-  onClose: null,
-};
-
-const Alert = Box.withComponent(Base);
-Alert.defaultProps = {
-  ...Box.defaultProps,
-  bg: 'greys.porcelain',
-  mb: 3,
-};
-
-Alert.info = Alert.extend``;
-Alert.info.displayName = 'Alert';
-Alert.info.defaultProps = {
-  ...Alert.defaultProps,
+Alert.info = alertFactory({
   bg: 'ui.infoBackground',
   icon: {
     name: 'info',
     color: 'greys.charcoal',
   },
-};
+});
 
-Alert.success = Alert.extend``;
-Alert.success.displayName = 'Alert';
-Alert.success.defaultProps = {
-  ...Alert.defaultProps,
+Alert.success = alertFactory({
   bg: 'ui.successBackground',
   icon: {
     name: 'checkCircle',
     color: 'ui.success',
   },
-};
+});
 
-Alert.error = Alert.extend``;
-Alert.error.displayName = 'Alert';
-Alert.error.defaultProps = {
-  ...Alert.defaultProps,
+Alert.error = alertFactory({
   bg: 'ui.errorBackground',
   icon: {
     name: 'warning',
     color: 'ui.error',
   },
-};
+});
 
 export default Alert;

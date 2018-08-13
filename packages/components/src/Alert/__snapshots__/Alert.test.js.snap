@@ -1,14 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #FCEBCD;
-}
-
-<Cleaned
+<Box
   bg="ui.errorBackground"
-  className="c0"
   mb={3}
 >
   <Box
@@ -65,18 +59,12 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
 `;
 
 exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #E7F7F7;
-}
-
-<Cleaned
+<Box
   bg="ui.infoBackground"
-  className="c0"
   mb={3}
 >
   <Box
@@ -133,18 +121,12 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
 `;
 
 exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #DEF2DE;
-}
-
-<Cleaned
+<Box
   bg="ui.successBackground"
-  className="c0"
   mb={3}
 >
   <Box
@@ -201,18 +183,12 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
 `;
 
 exports[`<Alert /> contained renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #F4F5F6;
-}
-
-<Cleaned
+<Box
   bg="greys.porcelain"
-  className="c0"
   mb={3}
 >
   <Container
@@ -282,18 +258,12 @@ exports[`<Alert /> contained renders correctly 1`] = `
       </Text>
     </Box>
   </Container>
-</Cleaned>
+</Box>
 `;
 
 exports[`<Alert /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #F4F5F6;
-}
-
-<Cleaned
+<Box
   bg="greys.porcelain"
-  className="c0"
   mb={3}
 >
   <Box
@@ -342,5 +312,5 @@ exports[`<Alert /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
 `;
