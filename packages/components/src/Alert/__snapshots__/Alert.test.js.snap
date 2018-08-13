@@ -1,5 +1,191 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Alert /> <Alert type="error" /> renders correctly 1`] = `
+<Box
+  bg="ui.errorBackground"
+  mb={3}
+>
+  <Box
+    px={4}
+  >
+    <Box
+      py={4}
+    >
+      <Box
+        pr={3}
+      >
+        <Icon
+          color="ui.error"
+          name="warning"
+        />
+      </Box>
+      <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
+        hidden={false}
+        mb={0}
+        textAlign="left"
+        textStyle="text"
+      >
+        Hello world
+      </Text>
+    </Box>
+  </Box>
+</Box>
+`;
+
+exports[`<Alert /> <Alert type="info" /> renders correctly 1`] = `
+<Box
+  bg="ui.infoBackground"
+  mb={3}
+>
+  <Box
+    px={4}
+  >
+    <Box
+      py={4}
+    >
+      <Box
+        pr={3}
+      >
+        <Icon
+          color="greys.charcoal"
+          name="info"
+        />
+      </Box>
+      <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
+        hidden={false}
+        mb={0}
+        textAlign="left"
+        textStyle="text"
+      >
+        Hello world
+      </Text>
+    </Box>
+  </Box>
+</Box>
+`;
+
+exports[`<Alert /> <Alert type="success" /> renders correctly 1`] = `
+<Box
+  bg="ui.successBackground"
+  mb={3}
+>
+  <Box
+    px={4}
+  >
+    <Box
+      py={4}
+    >
+      <Box
+        pr={3}
+      >
+        <Icon
+          color="ui.success"
+          name="checkCircle"
+        />
+      </Box>
+      <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
+        hidden={false}
+        mb={0}
+        textAlign="left"
+        textStyle="text"
+      >
+        Hello world
+      </Text>
+    </Box>
+  </Box>
+</Box>
+`;
+
 exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 <Box
   bg="ui.errorBackground"

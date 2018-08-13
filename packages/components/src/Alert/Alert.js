@@ -55,6 +55,7 @@ const alertFactory = (defaultType) => {
     icon: PropTypes.shape(Icon.propTypes),
     contained: PropTypes.bool,
     onClose: PropTypes.func,
+    type: PropTypes.string,
   };
 
   BaseAlert.defaultProps = {
