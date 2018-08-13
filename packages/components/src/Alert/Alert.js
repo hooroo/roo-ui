@@ -54,7 +54,7 @@ const alertFactory = (defaultType) => {
     children: PropTypes.node.isRequired,
     icon: PropTypes.shape(Icon.propTypes),
     contained: PropTypes.bool,
-    onClose: PropTypes.func, //eslint-disable-line
+    onClose: PropTypes.func,
   };
 
   BaseAlert.defaultProps = {
