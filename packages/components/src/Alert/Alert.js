@@ -1,20 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withTheme } from 'styled-components';
+import { themeGet } from 'styled-system';
 
 import { Container, NakedButton, Text, Flex, Box, Icon } from '..';
 
-const alertFactory = (defaultProps = {}) => {
-  const BaseAlert = ({
+const alertFactory = (defaultType) => {
+  const BaseAlert = withTheme(({
     children,
-    icon,
     onClose,
     contained,
+    theme,
+    type,
     ...props
   }) => {
+    const { icon, bg } = {
+      ...themeGet(`alertStyles.${type}`)({ theme }),
+      ...props,
+    };
+
     const Wrapper = contained ? Container : Box;
 
     return (
-      <Box {...props}>
+      <Box {...props} bg={bg} >
         <Wrapper px={contained ? undefined : 4}>
           <Flex py={4}>
             {icon && (
@@ -38,7 +46,7 @@ const alertFactory = (defaultProps = {}) => {
         </Wrapper>
       </Box>
     );
-  };
+  });
 
   BaseAlert.displayName = 'Alert';
   BaseAlert.propTypes = {
@@ -46,43 +54,24 @@ const alertFactory = (defaultProps = {}) => {
     children: PropTypes.node.isRequired,
     icon: PropTypes.shape(Icon.propTypes),
     contained: PropTypes.bool,
-    onClose: PropTypes.func,
+    onClose: PropTypes.func, //eslint-disable-line
   };
 
   BaseAlert.defaultProps = {
     ...Box.defaultProps,
-    bg: 'greys.porcelain',
+    type: defaultType,
     mb: 3,
-    ...defaultProps,
   };
 
   return BaseAlert;
 };
 
-const Alert = alertFactory();
+const Alert = alertFactory('default');
 
-Alert.info = alertFactory({
-  bg: 'ui.infoBackground',
-  icon: {
-    name: 'info',
-    color: 'greys.charcoal',
-  },
-});
+Alert.info = alertFactory('info');
 
-Alert.success = alertFactory({
-  bg: 'ui.successBackground',
-  icon: {
-    name: 'checkCircle',
-    color: 'ui.success',
-  },
-});
+Alert.success = alertFactory('success');
 
-Alert.error = alertFactory({
-  bg: 'ui.errorBackground',
-  icon: {
-    name: 'warning',
-    color: 'ui.error',
-  },
-});
+Alert.error = alertFactory('error');
 
 export default Alert;

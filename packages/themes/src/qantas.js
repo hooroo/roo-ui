@@ -186,6 +186,31 @@ const buttons = {
   },
 };
 
+const alertStyles = {
+  default: { bg: 'greys.porcelain' },
+  info: {
+    bg: 'ui.infoBackground',
+    icon: {
+      name: 'info',
+      color: 'greys.charcoal',
+    },
+  },
+  success: {
+    bg: 'ui.successBackground',
+    icon: {
+      name: 'checkCircle',
+      color: 'ui.success',
+    },
+  },
+  error: {
+    bg: 'ui.errorBackground',
+    icon: {
+      name: 'warning',
+      color: 'ui.error',
+    },
+  },
+};
+
 const gutters = {
   default: 3,
 };
@@ -208,4 +233,5 @@ export default {
   textStyles,
   letterSpacings,
   buttons,
+  alertStyles,
 };

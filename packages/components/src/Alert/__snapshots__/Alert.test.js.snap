@@ -2,7 +2,6 @@
 
 exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 <Box
-  bg="ui.errorBackground"
   mb={3}
 >
   <Box
@@ -11,14 +10,6 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
     <Box
       py={4}
     >
-      <Box
-        pr={3}
-      >
-        <Icon
-          color="ui.error"
-          name="warning"
-        />
-      </Box>
       <Text
         blacklist={
           Array [
@@ -64,7 +55,6 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 
 exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 <Box
-  bg="ui.infoBackground"
   mb={3}
 >
   <Box
@@ -73,14 +63,6 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
     <Box
       py={4}
     >
-      <Box
-        pr={3}
-      >
-        <Icon
-          color="greys.charcoal"
-          name="info"
-        />
-      </Box>
       <Text
         blacklist={
           Array [
@@ -126,7 +108,6 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 
 exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 <Box
-  bg="ui.successBackground"
   mb={3}
 >
   <Box
@@ -135,14 +116,6 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
     <Box
       py={4}
     >
-      <Box
-        pr={3}
-      >
-        <Icon
-          color="ui.success"
-          name="checkCircle"
-        />
-      </Box>
       <Text
         blacklist={
           Array [
@@ -188,7 +161,6 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 
 exports[`<Alert /> contained renders correctly 1`] = `
 <Box
-  bg="greys.porcelain"
   mb={3}
 >
   <Container
@@ -263,7 +235,6 @@ exports[`<Alert /> contained renders correctly 1`] = `
 
 exports[`<Alert /> renders correctly 1`] = `
 <Box
-  bg="greys.porcelain"
   mb={3}
 >
   <Box

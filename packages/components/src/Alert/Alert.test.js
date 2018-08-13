@@ -12,7 +12,7 @@ describe('<Alert />', () => {
     wrapper = shallowWithTheme(
       <Alert>Hello world</Alert>,
       theme,
-    );
+    ).dive();
   });
 
   it('renders correctly', () => {
@@ -28,7 +28,7 @@ describe('<Alert />', () => {
       wrapper = shallowWithTheme(
         <Alert contained>Hello world</Alert>,
         theme,
-      );
+      ).dive();
     });
 
     it('renders correctly', () => {
@@ -41,7 +41,7 @@ describe('<Alert />', () => {
       wrapper = shallowWithTheme(
         <Alert.success>Hello world</Alert.success>,
         theme,
-      );
+      ).dive();
     });
 
     it('renders correctly', () => {
@@ -54,7 +54,7 @@ describe('<Alert />', () => {
       wrapper = shallowWithTheme(
         <Alert.error>Hello world</Alert.error>,
         theme,
-      );
+      ).dive();
     });
 
     it('renders correctly', () => {
@@ -67,7 +67,7 @@ describe('<Alert />', () => {
       wrapper = shallowWithTheme(
         <Alert.info>Hello world</Alert.info>,
         theme,
-      );
+      ).dive();
     });
 
     it('renders correctly', () => {
@@ -83,7 +83,7 @@ describe('<Alert />', () => {
       wrapper = shallowWithTheme(
         <Alert onClose={onClose}>Hello world</Alert>,
         theme,
-      );
+      ).dive();
       wrapper.find('NakedButton').simulate('click');
     });
 
