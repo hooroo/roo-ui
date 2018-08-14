@@ -8,27 +8,46 @@ import README from './README.md';
 
 storiesOf('Components|Alert', module)
   .addDecorator(withDocs(README))
-  .add('default', () => (
+  .add('<Alert />', () => (
     <Alert contained={boolean('Contained', false)} icon={{ name: 'hotel' }}>
       <strong>Hello world</strong><br />
       Lorem ipsum dolor sit amet
     </Alert>
   ))
-  .add('info', () => (
+  .add('<Alert.info />', () => (
     <Alert.info onClose={() => {}}>
       <strong>Info</strong><br />
       Lorem ipsum dolor sit amet
     </Alert.info>
   ))
-  .add('success', () => (
+  .add('<Alert.success />', () => (
     <Alert.success onClose={() => {}}>
       <strong>Success</strong><br />
       Lorem ipsum dolor sit amet
     </Alert.success>
   ))
-  .add('error', () => (
+  .add('<Alert.error />', () => (
     <Alert.error onClose={() => {}}>
       <strong>Error</strong><br />
       Lorem ipsum dolor sit amet
     </Alert.error>
+  ))
+  .add('<Alert variant="info" />', () => (
+    <Alert variant="info" onClose={() => {}}>
+      <strong>Info</strong><br />
+      Lorem ipsum dolor sit amet
+    </Alert>
+  ))
+  .add('<Alert variant="success" />', () => (
+    <Alert variant="success" onClose={() => {}}>
+      <strong>Success</strong><br />
+      Lorem ipsum dolor sit amet
+    </Alert>
+  ))
+  .add('<Alert variant="error" />', () => (
+    <Alert variant="error" onClose={() => {}}>
+      <strong>Error</strong><br />
+      Lorem ipsum dolor sit amet
+    </Alert>
   ));
+
