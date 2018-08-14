@@ -14,6 +14,10 @@ describe('<Alert />', () => {
     wrapper = render(<Alert>Hello world</Alert>);
   });
 
+  it('has expected displayName', () => {
+    expect(Alert.displayName).toBe('Alert');
+  });
+
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
@@ -37,6 +41,10 @@ describe('<Alert />', () => {
       wrapper = render(<Alert.success>Hello world</Alert.success>);
     });
 
+    it('has expected displayName', () => {
+      expect(Alert.success.displayName).toBe('Alert.success');
+    });
+
     it('renders correctly', () => {
       expect(wrapper).toMatchSnapshot();
     });
@@ -57,6 +65,10 @@ describe('<Alert />', () => {
       wrapper = render(<Alert.error>Hello world</Alert.error>);
     });
 
+    it('has expected displayName', () => {
+      expect(Alert.error.displayName).toBe('Alert.error');
+    });
+
     it('renders correctly', () => {
       expect(wrapper).toMatchSnapshot();
     });
@@ -75,6 +87,10 @@ describe('<Alert />', () => {
   describe('<Alert.info />', () => {
     beforeEach(() => {
       wrapper = render(<Alert.info>Hello world</Alert.info>);
+    });
+
+    it('has expected displayName', () => {
+      expect(Alert.info.displayName).toBe('Alert.info');
     });
 
     it('renders correctly', () => {

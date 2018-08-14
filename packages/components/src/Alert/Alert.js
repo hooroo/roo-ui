@@ -48,7 +48,7 @@ const alertFactory = (defaultVariant) => {
     );
   });
 
-  BaseAlert.displayName = 'Alert';
+  BaseAlert.displayName = `Alert${defaultVariant !== 'default' ? `.${defaultVariant}` : ''}`;
   BaseAlert.propTypes = {
     ...Box.propTypes,
     children: PropTypes.node.isRequired,
