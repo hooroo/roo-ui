@@ -157,7 +157,6 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
 exports[`<Popover /> when popover is open renders correctly 1`] = `
 .c0 {
   z-index: 1;
-  margin: 0.75rem;
   background: #F4F5F6;
   border: 2px solid #DADADA;
 }
@@ -325,11 +324,13 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
             </Box>
           </InnerReference>
         </Reference>
-        <Popper>
+        <Popper
+          positionFixed={true}
+        >
           <InnerPopper
             eventsEnabled={true}
             placement="bottom"
-            positionFixed={false}
+            positionFixed={true}
             referenceElement={
               <div
                 class=""
