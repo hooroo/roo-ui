@@ -9,9 +9,12 @@ import { NakedButton, Box } from '../../../';
 const DayWrapper = Box.extend`
   flex: 1 1 auto;
   width: calc(100% / 7);
-  margin: 0 -2px -2px 0;
+  margin: 0 -1px -1px 0;
   position: relative;
-  border: ${themeGet('borders.2')} ${themeGet('colors.greys.porcelain')};
+  ${props => css`
+    border: ${themeGet('borders.1')} ${darken(0.1, themeGet('colors.greys.alto')(props))};
+  `}
+
 
   &:after {
     content: "";
@@ -49,7 +52,7 @@ const Button = NakedButton.extend`
   height: 100%;
   color: ${themeGet('colors.greys.charcoal')};
   padding: 0;
-  border: ${themeGet('borders.2')} transparent;
+  border: ${themeGet('borders.1')} transparent;
 
   &:focus {
     outline: none;
@@ -77,6 +80,7 @@ const Button = NakedButton.extend`
 
       &:hover,
       &:focus {
+        border-color: ${themeGet('colors.ui.info')};
         background-color: ${themeGet('colors.white')};
       }
     `};
