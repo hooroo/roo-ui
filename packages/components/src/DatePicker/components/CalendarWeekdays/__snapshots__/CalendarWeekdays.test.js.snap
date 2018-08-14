@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CalendarWeekdays /> renders correctly 1`] = `
+<Box>
+  <CalendarWeekday
+    key="72018S0"
+  >
+     
+    S
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018M1"
+  >
+     
+    M
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018T2"
+  >
+     
+    T
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018W3"
+  >
+     
+    W
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018T4"
+  >
+     
+    T
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018F5"
+  >
+     
+    F
+  </CalendarWeekday>
+  <CalendarWeekday
+    key="72018S6"
+  >
+     
+    S
+  </CalendarWeekday>
+</Box>
+`;
