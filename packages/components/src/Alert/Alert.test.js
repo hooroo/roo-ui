@@ -8,11 +8,14 @@ import Alert from '.';
 describe('<Alert />', () => {
   let wrapper;
 
+  const render = tree => shallowWithTheme(tree, theme).dive();
+
   beforeEach(() => {
-    wrapper = shallowWithTheme(
-      <Alert>Hello world</Alert>,
-      theme,
-    ).dive();
+    wrapper = render(<Alert>Hello world</Alert>);
+  });
+
+  it('has expected displayName', () => {
+    expect(Alert.displayName).toBe('Alert');
   });
 
   it('renders correctly', () => {
@@ -25,10 +28,7 @@ describe('<Alert />', () => {
 
   describe('contained', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(
-        <Alert contained>Hello world</Alert>,
-        theme,
-      ).dive();
+      wrapper = render(<Alert contained>Hello world</Alert>);
     });
 
     it('renders correctly', () => {
@@ -38,10 +38,21 @@ describe('<Alert />', () => {
 
   describe('<Alert.success />', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(
-        <Alert.success>Hello world</Alert.success>,
-        theme,
-      ).dive();
+      wrapper = render(<Alert.success>Hello world</Alert.success>);
+    });
+
+    it('has expected displayName', () => {
+      expect(Alert.success.displayName).toBe('Alert.success');
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('<Alert variant="success" />', () => {
+    beforeEach(() => {
+      wrapper = render(<Alert variant="success">Hello world</Alert>);
     });
 
     it('renders correctly', () => {
@@ -51,10 +62,21 @@ describe('<Alert />', () => {
 
   describe('<Alert.error />', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(
-        <Alert.error>Hello world</Alert.error>,
-        theme,
-      ).dive();
+      wrapper = render(<Alert.error>Hello world</Alert.error>);
+    });
+
+    it('has expected displayName', () => {
+      expect(Alert.error.displayName).toBe('Alert.error');
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('<Alert variant="error" />', () => {
+    beforeEach(() => {
+      wrapper = render(<Alert variant="error">Hello world</Alert>);
     });
 
     it('renders correctly', () => {
@@ -64,10 +86,21 @@ describe('<Alert />', () => {
 
   describe('<Alert.info />', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(
-        <Alert.info>Hello world</Alert.info>,
-        theme,
-      ).dive();
+      wrapper = render(<Alert.info>Hello world</Alert.info>);
+    });
+
+    it('has expected displayName', () => {
+      expect(Alert.info.displayName).toBe('Alert.info');
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('<Alert variant="info" />', () => {
+    beforeEach(() => {
+      wrapper = render(<Alert variant="info">Hello world</Alert>);
     });
 
     it('renders correctly', () => {
@@ -80,10 +113,7 @@ describe('<Alert />', () => {
 
     beforeEach(() => {
       onClose = jest.fn();
-      wrapper = shallowWithTheme(
-        <Alert onClose={onClose}>Hello world</Alert>,
-        theme,
-      ).dive();
+      wrapper = render(<Alert onClose={onClose}>Hello world</Alert>);
       wrapper.find('NakedButton').simulate('click');
     });
 
