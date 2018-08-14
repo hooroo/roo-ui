@@ -10,7 +10,6 @@ import partition from 'lodash/partition';
 import { Box } from '../';
 
 const ContentWrapper = Box.extend`
-  margin: ${rem('12px')};
   background: ${themeGet('colors.greys.porcelain')};
   border: ${themeGet('borders.2')} ${themeGet('colors.greys.alto')};
 `;
@@ -102,7 +101,9 @@ class Base extends Component {
         </Reference>
 
         {this.state.isOpen && (
-          <Popper>
+          <Popper
+            positionFixed={true}
+          >
             {({
               ref, style, placement, arrowProps,
             }) => (
