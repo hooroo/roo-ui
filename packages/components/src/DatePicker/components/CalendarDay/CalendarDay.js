@@ -4,9 +4,9 @@ import { themeGet } from 'styled-system';
 import { css } from 'styled-components';
 import { darken } from 'polished';
 
-import { Flex, NakedButton, Box } from '../../../';
+import { NakedButton, Box } from '../../../';
 
-const Wrapper = Box.extend`
+const DayWrapper = Box.extend`
   flex: 1 1 auto;
   width: calc(100% / 7);
   margin: 0 -2px -2px 0;
@@ -36,7 +36,7 @@ const Wrapper = Box.extend`
     `};
 `;
 
-Wrapper.defaultProps = {
+DayWrapper.defaultProps = {
   ...Box.defaultProps,
   blacklist: [...Object.keys(Box.propTypes), 'selected', 'selectable'],
 };
@@ -81,14 +81,14 @@ const Button = NakedButton.extend`
       }
     `};
 
-    ${props =>
+  ${props =>
     props.selectable &&
     !props.selected &&
     css`
-        &:hover,
-        &:focus {
-          background-color: ${themeGet('colors.ui.infoBackground')};
-        }
+      &:hover,
+      &:focus {
+        background-color: ${themeGet('colors.ui.infoBackground')};
+      }
       `};
 
   ${props =>
@@ -110,28 +110,27 @@ Button.defaultProps = {
   blacklist: [...Object.keys(NakedButton.propTypes), 'selectable'],
 };
 
-export const CalendarDays = Flex.extend`
-  flex-wrap: wrap;
-  margin-bottom: 2px;
-  margin-right: 2px;
-`;
+export const CalendarDay = ({ children, selected, ...rest }) => (
+  <DayWrapper selected={selected}>
+    <Button selected={selected} {...rest}>{children}</Button>
+  </DayWrapper>
+);
 
-export const CalendarEmptyDay = Wrapper.withComponent('div').extend`
+CalendarDay.defaultProps = {
+  selectable: true,
+  disabled: false,
+  selected: false,
+};
+
+CalendarDay.propTypes = {
+  children: PropTypes.node.isRequired,
+  selected: PropTypes.bool,
+  selectable: PropTypes.bool,
+  disabled: PropTypes.bool,
+};
+
+export const CalendarEmptyDay = DayWrapper.withComponent('div').extend`
   border-color: transparent;
 `;
 
 CalendarEmptyDay.displayName = 'CalendarEmptyDay';
-
-export const CalendarDay = ({
-  children, selected, selectable, ...rest
-}) => (
-  <Wrapper selected={selected} selectable={selectable}>
-    <Button selected={selected} selectable={selectable} {...rest}>{children}</Button>
-  </Wrapper>
-);
-
-CalendarDay.propTypes = {
-  children: PropTypes.node.isRequired,
-  selected: PropTypes.bool.isRequired,
-  selectable: PropTypes.bool.isRequired,
-};

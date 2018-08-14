@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CalendarMonth /> renders correctly 1`] = `
+exports[`<CalendarDay /> renders correctly 1`] = `
 <Box
   blacklist={
     Array [
@@ -41,24 +41,16 @@ exports[`<CalendarMonth /> renders correctly 1`] = `
       "flex",
       "position",
       "zIndex",
-      "monthsToDisplay",
-      "stacked",
+      "selected",
+      "selectable",
     ]
   }
-  monthsToDisplay={1}
-  stacked={true}
+  selected={true}
 >
-  <Text
+  <NakedButton
     blacklist={
       Array [
-        "textStyle",
-        "color",
-        "bg",
-        "fontSize",
-        "f",
-        "fontWeight",
-        "letterSpacing",
-        "lineHeight",
+        "verticalAlign",
         "m",
         "mt",
         "mr",
@@ -73,19 +65,39 @@ exports[`<CalendarMonth /> renders correctly 1`] = `
         "pl",
         "px",
         "py",
-        "textAlign",
-        "align",
-        "textDecoration",
-        "hidden",
+        "selectable",
       ]
     }
-    hidden={false}
-    textStyle="caps"
+    disabled={false}
+    selectable={true}
+    selected={true}
   >
-    Jul
-     
-    2018
-  </Text>
-  Days
+    21
+  </NakedButton>
 </Box>
+`;
+
+exports[`<CalendarEmptyDay /> renders correctly 1`] = `
+.c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: calc(100% / 7);
+  margin: 0 -2px -2px 0;
+  position: relative;
+  border: 2px solid #F4F5F6;
+  border-color: transparent;
+}
+
+.c0:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+<div
+  className="c0"
+>
+  15
+</div>
 `;

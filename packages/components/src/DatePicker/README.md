@@ -1,4 +1,4 @@
-# Calendar
+# DatePicker
 
 <!-- STORY -->
 
@@ -11,24 +11,13 @@ $ yarn add @roo-ui/components
 ## Example
 
 ```js
-import { Calendar } from '@roo-ui/components';
+import { DatePicker } from '@roo-ui/components';
 
 export default (
-  <Calendar
+  <DatePicker
     onDateSelected={console.log}
   />
 );
-```
-
-The components that make up the `Calendar` can also be imported.
-
-```js
-import {
-  CalendarDay, CalendarEmptyDay, CalendarDays,
-  CalendarWeekday, CalendarWeekdays,
-  CalendarNav,
-  CalendarMonth
-} from '@roo-ui/components';
 ```
 
 ## Properties
