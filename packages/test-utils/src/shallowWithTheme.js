@@ -7,8 +7,5 @@ export default (tree, theme) => {
     .instance()
     .getChildContext();
 
-  return shallow(tree, {
-    context,
-    childContextTypes: ThemeProvider.childContextTypes,
-  });
+  return shallow(tree, { context });
 };
