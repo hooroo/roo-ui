@@ -1,8 +1,14 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 
 export default (tree, theme) => {
-  const context = mount(<ThemeProvider theme={theme} />).instance().getChildContext();
-  return mount(tree, { context });
+  const context = shallow(<ThemeProvider theme={theme} />)
+    .instance()
+    .getChildContext();
+
+  return mount(tree, {
+    context,
+    childContextTypes: ThemeProvider.childContextTypes,
+  });
 };
