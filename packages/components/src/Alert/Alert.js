@@ -5,17 +5,17 @@ import { themeGet } from 'styled-system';
 
 import { Container, NakedButton, Text, Flex, Box, Icon } from '..';
 
-const alertFactory = (defaultType) => {
+const alertFactory = (defaultVariant) => {
   const BaseAlert = withTheme(({
     children,
     onClose,
     contained,
     theme,
-    type,
+    variant,
     ...props
   }) => {
     const { icon, bg } = {
-      ...themeGet(`alertStyles.${type}`)({ theme }),
+      ...themeGet(`alertStyles.${variant}`)({ theme }),
       ...props,
     };
 
@@ -55,12 +55,12 @@ const alertFactory = (defaultType) => {
     icon: PropTypes.shape(Icon.propTypes),
     contained: PropTypes.bool,
     onClose: PropTypes.func,
-    type: PropTypes.string,
+    variant: PropTypes.string,
   };
 
   BaseAlert.defaultProps = {
     ...Box.defaultProps,
-    type: defaultType,
+    variant: defaultVariant,
     mb: 3,
   };
 

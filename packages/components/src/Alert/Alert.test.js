@@ -42,9 +42,9 @@ describe('<Alert />', () => {
     });
   });
 
-  describe('<Alert type="success" />', () => {
+  describe('<Alert variant="success" />', () => {
     beforeEach(() => {
-      wrapper = render(<Alert type="success">Hello world</Alert>);
+      wrapper = render(<Alert variant="success">Hello world</Alert>);
     });
 
     it('renders correctly', () => {
@@ -62,9 +62,9 @@ describe('<Alert />', () => {
     });
   });
 
-  describe('<Alert type="error" />', () => {
+  describe('<Alert variant="error" />', () => {
     beforeEach(() => {
-      wrapper = render(<Alert type="error">Hello world</Alert>);
+      wrapper = render(<Alert variant="error">Hello world</Alert>);
     });
 
     it('renders correctly', () => {
@@ -82,9 +82,9 @@ describe('<Alert />', () => {
     });
   });
 
-  describe('<Alert type="info" />', () => {
+  describe('<Alert variant="info" />', () => {
     beforeEach(() => {
-      wrapper = render(<Alert type="info">Hello world</Alert>);
+      wrapper = render(<Alert variant="info">Hello world</Alert>);
     });
 
     it('renders correctly', () => {

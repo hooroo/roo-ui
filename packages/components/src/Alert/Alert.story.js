@@ -32,20 +32,20 @@ storiesOf('Components|Alert', module)
       Lorem ipsum dolor sit amet
     </Alert.error>
   ))
-  .add('<Alert type="info" />', () => (
-    <Alert type="info" onClose={() => {}}>
+  .add('<Alert variant="info" />', () => (
+    <Alert variant="info" onClose={() => {}}>
       <strong>Info</strong><br />
       Lorem ipsum dolor sit amet
     </Alert>
   ))
-  .add('<Alert type="success" />', () => (
-    <Alert type="success" onClose={() => {}}>
+  .add('<Alert variant="success" />', () => (
+    <Alert variant="success" onClose={() => {}}>
       <strong>Success</strong><br />
       Lorem ipsum dolor sit amet
     </Alert>
   ))
-  .add('<Alert type="error" />', () => (
-    <Alert type="error" onClose={() => {}}>
+  .add('<Alert variant="error" />', () => (
+    <Alert variant="error" onClose={() => {}}>
       <strong>Error</strong><br />
       Lorem ipsum dolor sit amet
     </Alert>
