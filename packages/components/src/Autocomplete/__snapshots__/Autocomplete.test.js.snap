@@ -5,12 +5,24 @@ exports[`<Autocomplete /> renders correctly 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #323232;
+  background-color: #FFFFFF;
+  border: 2px solid;
+  border-color: #DADADA;
   outline: 0;
-  -webkit-transition: border-color;
-  transition: border-color;
+  -webkit-transition: border-color 200ms ease-in;
+  transition: border-color 200ms ease-in;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.c2:focus {
+  border-color: #8DE2E0;
 }
 
 .c2[readonly] {
@@ -19,16 +31,20 @@ exports[`<Autocomplete /> renders correctly 1`] = `
   padding-left: 0;
 }
 
-.c2::-ms-clear {
-  display: none;
+.c2::-webkit-input-placeholder {
+  color: #666666;
 }
 
-.c2::-ms-clear {
-  display: none;
+.c2::-moz-placeholder {
+  color: #666666;
 }
 
-.c2::-ms-clear {
-  display: none;
+.c2:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c2::placeholder {
+  color: #666666;
 }
 
 .c2::-ms-clear {
@@ -39,6 +55,10 @@ exports[`<Autocomplete /> renders correctly 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #323232;
 }
 
 .c0 {
@@ -392,12 +412,24 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #323232;
+  background-color: #FFFFFF;
+  border: 2px solid;
+  border-color: #DADADA;
   outline: 0;
-  -webkit-transition: border-color;
-  transition: border-color;
+  -webkit-transition: border-color 200ms ease-in;
+  transition: border-color 200ms ease-in;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.c2:focus {
+  border-color: #8DE2E0;
 }
 
 .c2[readonly] {
@@ -406,16 +438,20 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
   padding-left: 0;
 }
 
-.c2::-ms-clear {
-  display: none;
+.c2::-webkit-input-placeholder {
+  color: #666666;
 }
 
-.c2::-ms-clear {
-  display: none;
+.c2::-moz-placeholder {
+  color: #666666;
 }
 
-.c2::-ms-clear {
-  display: none;
+.c2:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c2::placeholder {
+  color: #666666;
 }
 
 .c2::-ms-clear {
@@ -426,6 +462,10 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
   display: block;
   width: 100%;
   margin: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #323232;
 }
 
 .c0 {
@@ -435,7 +475,9 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
 .c3 {
   position: absolute;
   width: 100%;
-  margin-top: -;
+  margin-top: -0.75rem;
+  border-left: 1px solid #DADADA;
+  border-right: 1px solid #DADADA;
   z-index: 2;
   max-height: 14.375rem;
   overflow-y: scroll;
@@ -443,7 +485,10 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
 }
 
 .c4 {
-  border-left: transparent;
+  background-color: #F4F5F6;
+  border-bottom: 1px solid #DADADA;
+  border-left: 1px solid transparent;
+  padding: 0.75rem 1rem;
 }
 
 <Autocomplete
