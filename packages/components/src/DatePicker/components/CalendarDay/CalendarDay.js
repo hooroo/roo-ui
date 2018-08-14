@@ -15,7 +15,6 @@ const DayWrapper = Box.extend`
     border: ${themeGet('borders.1')} ${darken(0.1, themeGet('colors.greys.alto')(props))};
   `}
 
-
   &:after {
     content: "";
     display: block;
