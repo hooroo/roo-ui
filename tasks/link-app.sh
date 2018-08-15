@@ -13,14 +13,13 @@ packages=($(yarn lerna ls | grep @roo-ui))
 cd $roo_path
 yarn lerna exec 'yarn link'
 
-# Link packages in consuming app
-cd $consumer_path
+cd "$roo_path/node_modules/styled-components"
+
+yarn link
+
+cd "$consumer_path"
 for package in ${packages[@]/*v*/}; do
   yarn link "$package"
 done
 
-# Link styled-components
-rm -rf "$consumer_path/node_modules/styled-components"
-ln -s \
-  "$roo_path/node_modules/styled-components" \
-  "$consumer_path/node_modules/styled-components"
+yarn link styled-components
