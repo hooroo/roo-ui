@@ -66,9 +66,11 @@ exports[`<CalendarDay /> renders correctly 1`] = `
         "px",
         "py",
         "selectable",
+        "isHighlightedDay",
       ]
     }
     disabled={false}
+    isHighlightedDay={false}
     selectable={true}
     selected={true}
   >

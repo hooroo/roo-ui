@@ -75,12 +75,26 @@ const Button = NakedButton.extend`
   ${props =>
     props.selected &&
     css`
+      background-color: ${themeGet('colors.ui.infoBackground')(props)};
+
+      &:hover {
+        background-color: transparent;
+        border-color: ${themeGet('colors.brand.secondary')};
+      }
+      &:focus {
+        border: dotted 1px rgba(0,0,0,.8);
+      }
+    `};
+
+  ${props =>
+    props.isHighlightedDay &&
+    css`
       background-color: ${themeGet('colors.ui.infoBackground')};
 
       &:hover,
       &:focus {
-        border-color: ${themeGet('colors.ui.info')};
-        background-color: ${themeGet('colors.white')};
+        background-color: transparent;
+        border-color: ${themeGet('colors.brand.secondary')};
       }
     `};
 
@@ -90,7 +104,8 @@ const Button = NakedButton.extend`
     css`
       &:hover,
       &:focus {
-        background-color: ${themeGet('colors.ui.infoBackground')};
+        background-color: transparent;
+        border-color: ${themeGet('colors.brand.secondary')};
       }
       `};
 
@@ -110,7 +125,7 @@ const Button = NakedButton.extend`
 Button.defaultProps = {
   ...NakedButton.defaultProps,
   disabled: PropTypes.bool,
-  blacklist: [...Object.keys(NakedButton.propTypes), 'selectable'],
+  blacklist: [...Object.keys(NakedButton.propTypes), 'selectable', 'isHighlightedDay'],
 };
 
 export const CalendarDay = ({ children, selected, ...rest }) => (
@@ -123,6 +138,7 @@ CalendarDay.defaultProps = {
   selectable: true,
   disabled: false,
   selected: false,
+  isHighlightedDay: false,
 };
 
 CalendarDay.propTypes = {
@@ -130,6 +146,7 @@ CalendarDay.propTypes = {
   selected: PropTypes.bool,
   selectable: PropTypes.bool,
   disabled: PropTypes.bool,
+  isHighlightedDay: PropTypes.bool,
 };
 
 export const CalendarEmptyDay = DayWrapper.withComponent('div').extend`

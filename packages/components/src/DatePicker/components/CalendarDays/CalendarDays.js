@@ -11,17 +11,19 @@ const CalendarDaysWrapper = Flex.extend`
   margin-right: 2px;
 `;
 
-const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
+const getCustomDateProps = (disabledDates, interactiveDisabledDates, isInRange, day) => {
   const isDisabled = disabledDates
     .filter(disabledDate => isSameDay(disabledDate, day.date))
     .length;
   const props = {
     selected: day.selected,
+    isHighlightedDay: isInRange && isInRange(day.date),
     selectable: day.selectable,
   };
 
   if (isDisabled) {
     props.selectable = false;
+    props.isHighlightedDay = false;
     props.disabled = !interactiveDisabledDates;
   }
 
@@ -30,6 +32,7 @@ const getCustomDateProps = (disabledDates, interactiveDisabledDates, day) => {
 
 const CalendarDays = ({
   weeks, month, year, getDateProps, disabledDates, interactiveDisabledDates,
+  onMouseEnterOfDay, isInRange,
 }) => (
   <CalendarDaysWrapper>
     {weeks.map(week =>
@@ -43,8 +46,13 @@ const CalendarDays = ({
           return (
             <CalendarDay
               key={`${year}${month}${index}`} // eslint-disable-line react/no-array-index-key
-              {...getDateProps({ dateObj: day })}
-              {...getCustomDateProps(disabledDates, interactiveDisabledDates, day)}
+              {...getDateProps({
+                dateObj: day,
+                onMouseEnter: () => {
+                  if (onMouseEnterOfDay) onMouseEnterOfDay(day);
+                },
+              })}
+              {...getCustomDateProps(disabledDates, interactiveDisabledDates, isInRange, day)}
             >
               {day.date.getDate()}
             </CalendarDay>
@@ -56,6 +64,8 @@ const CalendarDays = ({
 CalendarDays.defaultProps = {
   disabledDates: [],
   interactiveDisabledDates: false,
+  isInRange: null,
+  onMouseEnterOfDay: null,
 };
 
 CalendarDays.propTypes = {
@@ -65,6 +75,8 @@ CalendarDays.propTypes = {
   getDateProps: PropTypes.func.isRequired,
   disabledDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
   interactiveDisabledDates: PropTypes.bool,
+  onMouseEnterOfDay: PropTypes.func,
+  isInRange: PropTypes.func || null,
 };
 
 export default CalendarDays;

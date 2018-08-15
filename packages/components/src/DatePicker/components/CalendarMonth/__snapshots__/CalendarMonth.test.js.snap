@@ -105,7 +105,9 @@ exports[`<CalendarMonth /> renders correctly 1`] = `
     disabledDates={Array []}
     getDateProps={[Function]}
     interactiveDisabledDates={false}
+    isInRange={[Function]}
     month={7}
+    onMouseEnterOfDay={[Function]}
     weeks={
       Array [
         Array [

@@ -26,6 +26,7 @@ const MonthWrapper = Box.extend`
 const CalendarMonth = ({
   monthsToDisplay, month, monthName, year, stacked, weekdayNames,
   weeks, getDateProps, disabledDates, interactiveDisabledDates,
+  onMouseEnterOfDay, isInRange,
 }) => (
   <MonthWrapper monthsToDisplay={monthsToDisplay} stacked={stacked}>
     <Text textStyle="caps">
@@ -39,6 +40,8 @@ const CalendarMonth = ({
       getDateProps={getDateProps}
       disabledDates={disabledDates}
       interactiveDisabledDates={interactiveDisabledDates}
+      onMouseEnterOfDay={onMouseEnterOfDay}
+      isInRange={isInRange}
     />
   </MonthWrapper>
 );
@@ -53,6 +56,8 @@ CalendarMonth.defaultProps = {
   stacked: false,
   disabledDates: [],
   interactiveDisabledDates: false,
+  isInRange: null,
+  onMouseEnterOfDay: null,
 };
 
 CalendarMonth.propTypes = {
@@ -66,6 +71,8 @@ CalendarMonth.propTypes = {
   monthsToDisplay: PropTypes.number,
   stacked: PropTypes.bool,
   getDateProps: PropTypes.func.isRequired,
+  onMouseEnterOfDay: PropTypes.func,
+  isInRange: PropTypes.func,
 };
 
 export default CalendarMonth;
