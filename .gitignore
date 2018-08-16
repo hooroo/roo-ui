@@ -57,7 +57,4 @@ typings/
 # dotenv environment variables file
 .env
 
-# editors
-.vscode
-
 dist/
