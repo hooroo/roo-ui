@@ -15,8 +15,8 @@ const colors = {
     infoBackground: '#E7F7F7',
     error: '#ED710B',
     errorBackground: '#FCEBCD',
-    success: '#35A509',
-    successBackground: '#DEF2DE',
+    success: '#00AF6A',
+    successBackground: '#DCF5DC',
   },
   greys: {
     charcoal: '#323232',
@@ -151,12 +151,7 @@ const maxWidths = {
 // 32 128px
 const space = range(0, 129, 4).map(i => rem(`${i}px`));
 
-const borders = [
-  0,
-  '1px solid',
-  '2px solid',
-  '3px solid',
-];
+const borders = [0, '1px solid', '2px solid', '3px solid'];
 
 const radii = {
   none: 0,
