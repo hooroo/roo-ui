@@ -15,7 +15,8 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "link-app": "tasks/link-app.sh",
-    "unlink-app": "tasks/unlink-app.sh"
+    "unlink-app": "tasks/unlink-app.sh",
+    "new:component": "hygen component new --component-path"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^3.3.11",
@@ -43,6 +44,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
+    "hygen": "^1.6.2",
     "jest": "^23.3.0",
     "jest-axe": "^3.0.0",
     "jest-styled-components": "^5.0.1",
