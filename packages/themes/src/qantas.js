@@ -1,13 +1,28 @@
 import { rem } from 'polished';
 import range from 'lodash/range';
 
+const brand = {
+  primary: '#E40000',
+  secondary: '#8DE2E0',
+  tertiary: '#D20000',
+  quaternary: '#F9F3E9',
+}
+
+const greys = {
+  charcoal: '#323232',
+  steel: '#666666',
+  alto: '#DADADA',
+  porcelain: '#F4F5F6',
+  dusty: '#999999',
+}
+
+const miscellaneousColours = {
+  white: '#FFFFFF',
+  brightSun: '#FBCB3B',
+};
+
 const colors = {
-  brand: {
-    primary: '#E40000',
-    secondary: '#8DE2E0',
-    tertiary: '#D20000',
-    quaternary: '#F9F3E9',
-  },
+  brand,
   ui: {
     link: '#E00E00',
     linkHover: '#870000',
@@ -18,17 +33,9 @@ const colors = {
     success: '#35A509',
     successBackground: '#DEF2DE',
   },
-  greys: {
-    charcoal: '#323232',
-    steel: '#666666',
-    alto: '#DADADA',
-    porcelain: '#F4F5F6',
-    dusty: '#999999',
-  },
-
-  white: '#FFFFFF',
+  greys,
   text: '#323232',
-  starRating: '#FBCB3B',
+  ...miscellaneousColours,
 };
 
 const fontFamily = 'QantasCiutadella, sans-serif';
