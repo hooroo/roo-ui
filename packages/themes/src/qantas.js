@@ -16,25 +16,35 @@ const greys = {
   dusty: '#999999',
 }
 
-const miscellaneousColours = {
+const assortedColours = {
   white: '#FFFFFF',
   brightSun: '#FBCB3B',
+  red: '#E00E00',
+  maroon: '#870000',
+  riptide: '#8DE2E0',
+  blackSqueeze: '#E7F7F7',
+  christine: '#ED710B',
+  doublePearlLusta: '#FCEBCD',
+  christi: '#35A509',
+  peppermint: '#DEF2DE',
+};
+
+const ui = {
+  link: assortedColours.red,
+  linkHover: assortedColours.maroon,
+  info: assortedColours.riptide,
+  infoBackground: assortedColours.blackSqueeze,
+  error: assortedColours.christine,
+  errorBackground: assortedColours.doublePearlLusta,
+  success: assortedColours.christi,
+  successBackground: assortedColours.peppermint,
 };
 
 const colors = {
   brand,
-  ui: {
-    link: '#E00E00',
-    linkHover: '#870000',
-    info: '#8DE2E0',
-    infoBackground: '#E7F7F7',
-    error: '#ED710B',
-    errorBackground: '#FCEBCD',
-    success: '#35A509',
-    successBackground: '#DEF2DE',
-  },
+  ui,
   greys,
-  ...miscellaneousColours,
+  ...assortedColours,
 };
 
 const fontFamily = 'QantasCiutadella, sans-serif';
