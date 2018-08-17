@@ -34,7 +34,6 @@ const colors = {
     successBackground: '#DEF2DE',
   },
   greys,
-  text: '#323232',
   ...miscellaneousColours,
 };
 
