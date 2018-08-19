@@ -20,7 +20,6 @@ const CheckboxWrapper = styled(tag.div)`
 `;
 
 const CheckboxInput = styled.input`
-  appearance: none;
   opacity: 0;
   position: absolute;
   z-index: 0;
@@ -39,26 +38,26 @@ const CheckboxBorder = styled(tag.div)`
   width: ${rem('20px')};
   background-color: ${themeGet('colors.white')};
   border: ${themeGet('borders.2')};
-  border-color: ${themeGet('colors.grey.2')};
+  border-color: ${themeGet('colors.greys.alto')};
   border-radius: ${themeGet('radii.default')};
 
   input:checked + &,
   input:focus + &,
   input:hover + & {
     border-color: ${themeGet('colors.brand.secondary')};
-    transition: ${themeGet('transitions.default')}
+    transition: ${themeGet('transitions.default')};
   }
 
   input:disabled + & {
-    background-color: ${themeGet('colors.grey.2')};
-    border-color: ${themeGet('colors.grey.2')};
+    background-color: ${themeGet('colors.greys.alto')};
+    border-color: ${themeGet('colors.greys.alto')};
   }
 `;
 
 const CheckboxIcon = Icon.extend`
   position: absolute;
   display: none;
-  color: ${themeGet('colors.grey.0')};
+  color: ${themeGet('colors.greys.charcoal')};
   padding: ${themeGet('space.1')};
   top: 0;
   left: -${rem('2px')};

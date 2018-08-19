@@ -11,7 +11,7 @@ import README from './README.md';
 storiesOf('Foundations|Assets', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Box p={6} bg="grey.3">
+    <Box p={6} bg="greys.porcelain">
       <img
         src={select('Assets', invert(assets), Object.values(assets)[0])}
         height="100"

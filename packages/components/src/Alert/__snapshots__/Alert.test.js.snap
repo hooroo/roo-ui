@@ -1,14 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #FCEBCD;
-}
-
-<Cleaned
+exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
+<Box
   bg="ui.errorBackground"
-  className="c0"
   mb={3}
 >
   <Box
@@ -26,6 +20,36 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -35,18 +59,12 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
 `;
 
-exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #E7F7F7;
-}
-
-<Cleaned
+exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
+<Box
   bg="ui.infoBackground"
-  className="c0"
   mb={3}
 >
   <Box
@@ -59,11 +77,41 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
         pr={3}
       >
         <Icon
-          color="grey.0"
+          color="greys.charcoal"
           name="info"
         />
       </Box>
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -73,18 +121,12 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
 `;
 
-exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #DEF2DE;
-}
-
-<Cleaned
+exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
+<Box
   bg="ui.successBackground"
-  className="c0"
   mb={3}
 >
   <Box
@@ -102,6 +144,36 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
         />
       </Box>
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -111,18 +183,198 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
+`;
+
+exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
+<Box
+  bg="ui.errorBackground"
+  mb={3}
+>
+  <Box
+    px={4}
+  >
+    <Box
+      py={4}
+    >
+      <Box
+        pr={3}
+      >
+        <Icon
+          color="ui.error"
+          name="warning"
+        />
+      </Box>
+      <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
+        hidden={false}
+        mb={0}
+        textAlign="left"
+        textStyle="text"
+      >
+        Hello world
+      </Text>
+    </Box>
+  </Box>
+</Box>
+`;
+
+exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
+<Box
+  bg="ui.infoBackground"
+  mb={3}
+>
+  <Box
+    px={4}
+  >
+    <Box
+      py={4}
+    >
+      <Box
+        pr={3}
+      >
+        <Icon
+          color="greys.charcoal"
+          name="info"
+        />
+      </Box>
+      <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
+        hidden={false}
+        mb={0}
+        textAlign="left"
+        textStyle="text"
+      >
+        Hello world
+      </Text>
+    </Box>
+  </Box>
+</Box>
+`;
+
+exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
+<Box
+  bg="ui.successBackground"
+  mb={3}
+>
+  <Box
+    px={4}
+  >
+    <Box
+      py={4}
+    >
+      <Box
+        pr={3}
+      >
+        <Icon
+          color="ui.success"
+          name="checkCircle"
+        />
+      </Box>
+      <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
+        hidden={false}
+        mb={0}
+        textAlign="left"
+        textStyle="text"
+      >
+        Hello world
+      </Text>
+    </Box>
+  </Box>
+</Box>
 `;
 
 exports[`<Alert /> contained renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #F4F5F6;
-}
-
-<Cleaned
-  bg="grey.3"
-  className="c0"
+<Box
+  bg="greys.porcelain"
   mb={3}
 >
   <Container
@@ -153,6 +405,36 @@ exports[`<Alert /> contained renders correctly 1`] = `
       py={4}
     >
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -162,18 +444,12 @@ exports[`<Alert /> contained renders correctly 1`] = `
       </Text>
     </Box>
   </Container>
-</Cleaned>
+</Box>
 `;
 
 exports[`<Alert /> renders correctly 1`] = `
-.c0 {
-  margin-bottom: 0.75rem;
-  background-color: #F4F5F6;
-}
-
-<Cleaned
-  bg="grey.3"
-  className="c0"
+<Box
+  bg="greys.porcelain"
   mb={3}
 >
   <Box
@@ -183,6 +459,36 @@ exports[`<Alert /> renders correctly 1`] = `
       py={4}
     >
       <Text
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "hidden",
+          ]
+        }
         hidden={false}
         mb={0}
         textAlign="left"
@@ -192,5 +498,5 @@ exports[`<Alert /> renders correctly 1`] = `
       </Text>
     </Box>
   </Box>
-</Cleaned>
+</Box>
 `;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import tag from 'clean-tag';
 import { space, verticalAlign } from 'styled-system';
 
@@ -22,7 +21,7 @@ const NakedButton = styled(tag.button).attrs({
 `;
 
 NakedButton.propTypes = {
-  verticalAlign: PropTypes.string,
+  ...verticalAlign.propTypes,
   ...space.propTypes,
 };
 

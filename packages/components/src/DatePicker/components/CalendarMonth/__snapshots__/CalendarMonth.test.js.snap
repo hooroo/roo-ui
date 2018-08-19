@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CalendarMonth /> renders correctly 1`] = `
+<Box
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "minWidth",
+      "maxWidth",
+      "height",
+      "minHeight",
+      "maxHeight",
+      "color",
+      "bg",
+      "textAlign",
+      "align",
+      "boxShadow",
+      "borderRadius",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "flexBasis",
+      "flex",
+      "position",
+      "zIndex",
+      "monthsToDisplay",
+      "stacked",
+    ]
+  }
+  monthsToDisplay={1}
+  stacked={true}
+>
+  <Text
+    blacklist={
+      Array [
+        "textStyle",
+        "color",
+        "bg",
+        "fontSize",
+        "f",
+        "fontWeight",
+        "letterSpacing",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textAlign",
+        "align",
+        "textDecoration",
+        "hidden",
+      ]
+    }
+    hidden={false}
+    textStyle="caps"
+  >
+    Jul
+     
+    2018
+  </Text>
+  <CalendarWeekdays
+    month={7}
+    weekdayNames={
+      Array [
+        "S",
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S",
+      ]
+    }
+    year={2018}
+  />
+  <CalendarDays
+    disabledDates={Array []}
+    getDateProps={[Function]}
+    interactiveDisabledDates={false}
+    month={7}
+    weeks={
+      Array [
+        Array [
+          Object {
+            "date": 2018-08-01T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-02T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-03T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-04T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-05T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-06T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-08T00:33:30.000Z,
+          },
+        ],
+        Array [
+          Object {
+            "date": 2018-08-08T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-09T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-10T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-11T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-12T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-13T00:33:30.000Z,
+          },
+          Object {
+            "date": 2018-08-15T00:33:30.000Z,
+          },
+        ],
+      ]
+    }
+    year={2018}
+  />
+</Box>
+`;

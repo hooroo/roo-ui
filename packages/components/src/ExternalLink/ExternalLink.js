@@ -2,7 +2,7 @@ import { themeGet } from 'styled-system';
 import { Link } from '..';
 
 const ExternalLink = Link.extend`
-  color: ${themeGet('colors.grey.0')};
+  color: ${themeGet('colors.greys.charcoal')};
 `;
 
 ExternalLink.defaultProps = {

@@ -3,6 +3,178 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.50.8"></a>
+## [0.50.8](https://github.com/hooroo/roo-ui/compare/v0.50.7...v0.50.8) (2018-08-14)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.50.7"></a>
+## [0.50.7](https://github.com/hooroo/roo-ui/compare/v0.50.6...v0.50.7) (2018-08-14)
+
+
+### Bug Fixes
+
+* pass theme to child components; update snapshots ([#153](https://github.com/hooroo/roo-ui/issues/153)) ([1a83477](https://github.com/hooroo/roo-ui/commit/1a83477))
+
+
+
+
+<a name="0.50.6"></a>
+## [0.50.6](https://github.com/hooroo/roo-ui/compare/v0.50.5...v0.50.6) (2018-08-14)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.50.5"></a>
+## [0.50.5](https://github.com/hooroo/roo-ui/compare/v0.50.4...v0.50.5) (2018-08-14)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.50.4"></a>
+## [0.50.4](https://github.com/hooroo/roo-ui/compare/v0.50.3...v0.50.4) (2018-08-10)
+
+
+### Bug Fixes
+
+* remove appearance declaration from <Radio /> and <Checkbox /> to ensure they remain tabbable ([#148](https://github.com/hooroo/roo-ui/issues/148)) ([d67b9b0](https://github.com/hooroo/roo-ui/commit/d67b9b0))
+
+
+
+
+<a name="0.50.3"></a>
+## [0.50.3](https://github.com/hooroo/roo-ui/compare/v0.50.2...v0.50.3) (2018-08-06)
+
+
+### Bug Fixes
+
+* don't apply hover styles to non selectable dates ([#139](https://github.com/hooroo/roo-ui/issues/139)) ([f914d8d](https://github.com/hooroo/roo-ui/commit/f914d8d))
+
+
+
+
+<a name="0.50.2"></a>
+## [0.50.2](https://github.com/hooroo/roo-ui/compare/v0.50.1...v0.50.2) (2018-08-05)
+
+
+### Bug Fixes
+
+* calendar tweaks ([#136](https://github.com/hooroo/roo-ui/issues/136)) ([22eb3ca](https://github.com/hooroo/roo-ui/commit/22eb3ca))
+
+
+
+
+<a name="0.50.1"></a>
+## [0.50.1](https://github.com/hooroo/roo-ui/compare/v0.50.0...v0.50.1) (2018-08-03)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.49.0"></a>
+# [0.49.0](https://github.com/hooroo/roo-ui/compare/v0.48.0...v0.49.0) (2018-08-01)
+
+
+### Features
+
+* **greys:** converts greys array to an object and introduces a new grey - Breaking Change :pear: [@dougmcclurg](https://github.com/dougmcclurg) ([#132](https://github.com/hooroo/roo-ui/issues/132)) ([0706dd0](https://github.com/hooroo/roo-ui/commit/0706dd0))
+
+
+
+
+<a name="0.48.0"></a>
+# [0.48.0](https://github.com/hooroo/roo-ui/compare/v0.47.0...v0.48.0) (2018-07-31)
+
+
+### Features
+
+* add flexFlow shorthand css Property ([1ed2556](https://github.com/hooroo/roo-ui/commit/1ed2556))
+
+
+
+
+<a name="0.47.0"></a>
+# [0.47.0](https://github.com/hooroo/roo-ui/compare/v0.46.1...v0.47.0) (2018-07-31)
+
+
+### Features
+
+* add zIndex proptypes ([#118](https://github.com/hooroo/roo-ui/issues/118)) ([9545af3](https://github.com/hooroo/roo-ui/commit/9545af3))
+
+
+
+
+<a name="0.46.1"></a>
+## [0.46.1](https://github.com/hooroo/roo-ui/compare/v0.46.0...v0.46.1) (2018-07-30)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
+<a name="0.46.0"></a>
+# [0.46.0](https://github.com/hooroo/roo-ui/compare/v0.45.0...v0.46.0) (2018-07-29)
+
+
+### Features
+
+* add prop to allow disabled calendar dates to be clicked ([#127](https://github.com/hooroo/roo-ui/issues/127)) ([74f49fe](https://github.com/hooroo/roo-ui/commit/74f49fe))
+
+
+
+
+<a name="0.45.0"></a>
+# [0.45.0](https://github.com/hooroo/roo-ui/compare/v0.44.0...v0.45.0) (2018-07-26)
+
+
+### Features
+
+* add ability to disable dates on calendar ([#125](https://github.com/hooroo/roo-ui/issues/125)) ([d36034c](https://github.com/hooroo/roo-ui/commit/d36034c))
+
+
+
+
+<a name="0.44.0"></a>
+# [0.44.0](https://github.com/hooroo/roo-ui/compare/v0.43.8...v0.44.0) (2018-07-25)
+
+
+### Features
+
+* Add textDecoration property to Text ([#122](https://github.com/hooroo/roo-ui/issues/122)) ([31a980a](https://github.com/hooroo/roo-ui/commit/31a980a))
+
+
+
+
+<a name="0.43.8"></a>
+## [0.43.8](https://github.com/hooroo/roo-ui/compare/v0.43.7...v0.43.8) (2018-07-25)
+
+
+### Bug Fixes
+
+* update styled system since vertical align was not working ([#124](https://github.com/hooroo/roo-ui/issues/124)) ([693989f](https://github.com/hooroo/roo-ui/commit/693989f))
+
+
+
+
+<a name="0.43.7"></a>
+## [0.43.7](https://github.com/hooroo/roo-ui/compare/v0.43.6...v0.43.7) (2018-07-25)
+
+
+### Bug Fixes
+
+* update calendar weekdays to start on Monday ([#123](https://github.com/hooroo/roo-ui/issues/123)) ([6cec7ce](https://github.com/hooroo/roo-ui/commit/6cec7ce))
+
+
+
+
 <a name="0.43.6"></a>
 ## [0.43.6](https://github.com/hooroo/roo-ui/compare/v0.43.5...v0.43.6) (2018-07-18)
 

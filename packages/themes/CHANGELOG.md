@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.50.5"></a>
+## [0.50.5](https://github.com/hooroo/roo-ui/compare/v0.50.4...v0.50.5) (2018-08-14)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/themes
+
+<a name="0.49.0"></a>
+# [0.49.0](https://github.com/hooroo/roo-ui/compare/v0.48.0...v0.49.0) (2018-08-01)
+
+
+### Features
+
+* **greys:** converts greys array to an object and introduces a new grey - Breaking Change :pear: [@dougmcclurg](https://github.com/dougmcclurg) ([#132](https://github.com/hooroo/roo-ui/issues/132)) ([0706dd0](https://github.com/hooroo/roo-ui/commit/0706dd0))
+
+
+
+
+<a name="0.46.1"></a>
+## [0.46.1](https://github.com/hooroo/roo-ui/compare/v0.46.0...v0.46.1) (2018-07-30)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/themes
+
 <a name="0.39.3"></a>
 ## [0.39.3](https://github.com/hooroo/roo-ui/compare/v0.39.2...v0.39.3) (2018-07-03)
 

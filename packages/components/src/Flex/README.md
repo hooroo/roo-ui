@@ -23,5 +23,5 @@ export default (
 
 ## Customization
 
-This component can be customized with [styled-system](https://github.com/jxnblk/styled-system) by passing props for `alignContent`, `alignItems`, `justifyContent`, `flexWrap` & `flexDirection` [functions](https://github.com/jxnblk/styled-system#table-of-style-props)
+This component can be customized with [styled-system](https://github.com/jxnblk/styled-system) by passing props for `alignContent`, `alignItems`, `justifyContent`, `flexWrap`, `flexFlow` & `flexDirection` [functions](https://github.com/jxnblk/styled-system#table-of-style-props)
 as well as props supported by [`<Box />`](../Box/README.md)

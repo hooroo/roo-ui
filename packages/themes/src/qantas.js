@@ -18,12 +18,14 @@ const colors = {
     success: '#35A509',
     successBackground: '#DEF2DE',
   },
-  grey: [
-    '#323232',
-    '#666666',
-    '#DADADA',
-    '#F4F5F6',
-  ],
+  greys: {
+    charcoal: '#323232',
+    steel: '#666666',
+    alto: '#DADADA',
+    porcelain: '#F4F5F6',
+    dusty: '#999999',
+  },
+
   white: '#FFFFFF',
   text: '#323232',
   starRating: '#FBCB3B',
@@ -32,6 +34,7 @@ const colors = {
 const fontFamily = 'QantasCiutadella, sans-serif';
 
 const fontSizes = {
+  xs: rem('13px'),
   sm: rem('15px'),
   base: rem('16px'),
   lg: rem('18px'),
@@ -70,7 +73,7 @@ const textStyles = {
   label: {
     fontSize: fontSizes.sm,
     fontWeight: fontWeights.bold,
-    color: colors.grey[0],
+    color: colors.greys.charcoal,
   },
   h1: {
     fontSize: fontSizes['3xl'],
@@ -175,11 +178,36 @@ const transitions = {
 const buttons = {
   default: {
     color: 'white',
-    backgroundColor: colors.grey[0],
+    backgroundColor: colors.greys.charcoal,
   },
   primary: {
     color: 'white',
     backgroundColor: colors.brand.primary,
+  },
+};
+
+const alertStyles = {
+  default: { bg: 'greys.porcelain' },
+  info: {
+    bg: 'ui.infoBackground',
+    icon: {
+      name: 'info',
+      color: 'greys.charcoal',
+    },
+  },
+  success: {
+    bg: 'ui.successBackground',
+    icon: {
+      name: 'checkCircle',
+      color: 'ui.success',
+    },
+  },
+  error: {
+    bg: 'ui.errorBackground',
+    icon: {
+      name: 'warning',
+      color: 'ui.error',
+    },
   },
 };
 
@@ -205,4 +233,5 @@ export default {
   textStyles,
   letterSpacings,
   buttons,
+  alertStyles,
 };
