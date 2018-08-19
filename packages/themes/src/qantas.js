@@ -14,30 +14,30 @@ const greys = {
   alto: '#DADADA',
   porcelain: '#F4F5F6',
   dusty: '#999999',
-}
+};
 
 const assortedColours = {
   white: '#FFFFFF',
   brightSun: '#FBCB3B',
   red: '#E00E00',
   maroon: '#870000',
-  riptide: '#8DE2E0',
-  blackSqueeze: '#E7F7F7',
-  christine: '#ED710B',
-  doublePearlLusta: '#FCEBCD',
-  christi: '#35A509',
-  peppermint: '#DEF2DE',
+  blue: '#8DE2E0',
+  lightBlue: '#E7F7F7',
+  orange: '#ED710B',
+  lightOrange: '#FCEBCD',
+  green: '#35A509',
+  lightGreen: '#DEF2DE',
 };
 
 const ui = {
   link: assortedColours.red,
   linkHover: assortedColours.maroon,
-  info: assortedColours.riptide,
-  infoBackground: assortedColours.blackSqueeze,
-  error: assortedColours.christine,
-  errorBackground: assortedColours.doublePearlLusta,
-  success: assortedColours.christi,
-  successBackground: assortedColours.peppermint,
+  info: assortedColours.blue,
+  infoBackground: assortedColours.lightBlue,
+  error: assortedColours.orange,
+  errorBackground: assortedColours.lightOrange,
+  success: assortedColours.green,
+  successBackground: assortedColours.lightGreen,
 };
 
 const colors = {
