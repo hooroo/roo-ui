@@ -16,7 +16,7 @@ const greys = {
   dusty: '#999999',
 };
 
-const assortedColours = {
+const namedColors = {
   white: '#FFFFFF',
   brightSun: '#FBCB3B',
   red: '#E00E00',
@@ -30,21 +30,21 @@ const assortedColours = {
 };
 
 const ui = {
-  link: assortedColours.red,
-  linkHover: assortedColours.maroon,
-  info: assortedColours.blue,
-  infoBackground: assortedColours.lightBlue,
-  error: assortedColours.orange,
-  errorBackground: assortedColours.lightOrange,
-  success: assortedColours.green,
-  successBackground: assortedColours.lightGreen,
+  link: namedColors.red,
+  linkHover: namedColors.maroon,
+  info: namedColors.blue,
+  infoBackground: namedColors.lightBlue,
+  error: namedColors.orange,
+  errorBackground: namedColors.lightOrange,
+  success: namedColors.green,
+  successBackground: namedColors.lightGreen,
 };
 
 const colors = {
   brand,
   ui,
   greys,
-  ...assortedColours,
+  ...namedColors,
 };
 
 const fontFamily = 'QantasCiutadella, sans-serif';
