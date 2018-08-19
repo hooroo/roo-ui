@@ -6,7 +6,7 @@ const brand = {
   secondary: '#8DE2E0',
   tertiary: '#D20000',
   quaternary: '#F9F3E9',
-}
+};
 
 const greys = {
   charcoal: '#323232',
