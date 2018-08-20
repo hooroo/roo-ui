@@ -7,31 +7,31 @@ exports[`<StarRating /> renders correctly 1`] = `
   title="1 out of 5 rating"
 >
   <Icon
-    color="starRating"
+    color="brightSun"
     key="0"
     name="circle"
     size="16"
   />
   <Icon
-    color="starRating"
+    color="brightSun"
     key="1"
     name="circleBorder"
     size="16"
   />
   <Icon
-    color="starRating"
+    color="brightSun"
     key="2"
     name="circleBorder"
     size="16"
   />
   <Icon
-    color="starRating"
+    color="brightSun"
     key="3"
     name="circleBorder"
     size="16"
   />
   <Icon
-    color="starRating"
+    color="brightSun"
     key="4"
     name="circleBorder"
     size="16"
