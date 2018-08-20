@@ -13,7 +13,7 @@ const ModalWrapper = ({ initial = true, variant }) => (
     {({ on, toggle }) => (
       <div>
         <Button primary onClick={toggle}>Open</Button>
-        <Modal isOpen={on} onRequestClose={toggle} shouldCloseOnOverlayClick>
+        <Modal isOpen={on} onRequestClose={toggle} ariaHideApp={false} shouldCloseOnOverlayClick>
           <Modal.header variant={variant} style={{ textTransform: 'capitalize' }}>
             {variant || 'Default'}
           </Modal.header>
