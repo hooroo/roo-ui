@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.50.9",
+  "version": "0.50.10",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -14,7 +14,7 @@
   "devDependencies": {
     "@roo-ui/icons": "^0.39.1",
     "@roo-ui/test-utils": "^0.50.7",
-    "@roo-ui/themes": "^0.50.5"
+    "@roo-ui/themes": "^0.50.10"
   },
   "peerDependencies": {
     "clean-element": "^1.0.0",
