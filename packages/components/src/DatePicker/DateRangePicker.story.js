@@ -15,8 +15,8 @@ storiesOf('Components|DateRangePicker', module)
       monthsToDisplay={number('Months to display', 1)}
       minDate={subDays(new Date(), 10)}
       maxDate={addDays(new Date(), 60)}
-      startDate={addDays(new Date(), 3)}
-      endDate={addDays(new Date(), 7)}
+      // startDate={addDays(new Date(), 3)}
+      // endDate={addDays(new Date(), 7)}
       onRangeSelected={console.log} // eslint-disable-line no-console
       stacked={boolean('Stacked', false)}
     />

@@ -7,6 +7,7 @@ import { subDays, format } from 'date-fns';
 import { Flex, Box, Input } from '../';
 
 import dayInRange from './lib/dayInRange';
+import handleDateSelection from './lib/handleDateSelection';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 
@@ -50,64 +51,37 @@ class DateRangePicker extends React.Component {
   onDateSelected = ({ selectable, date }) => {
     if (!selectable) return;
 
-    let pickedDate = date;
-
-    const { onRangeSelected } = this.props;
-    let {
-      startDate, endDate, isSetStartDate, isSetEndDate,
-    } = this.state;
-
-    if (isSetEndDate) {
-      endDate = null;
-      isSetEndDate = false;
-    }
-
-    if (isSetStartDate) {
-      if (startDate && endDate) {
-        if (endDate > pickedDate) {
-          startDate = pickedDate;
-          pickedDate = endDate;
-          endDate = null;
-        } else {
-          startDate = null;
-          endDate = null;
-        }
-      } else {
-        startDate = null;
-      }
-      isSetStartDate = false;
-    }
-
-    // restarting the selection
-    if (startDate && endDate) {
-      startDate = null;
-      endDate = null;
-    }
-
-    if (!startDate || (startDate && startDate.getTime() >= pickedDate.getTime())) {
-      startDate = pickedDate;
-    } else {
-      endDate = pickedDate;
-    }
-
-    if (startDate && !endDate) isSetEndDate = true;
-
-    this.setState({
-      startDate, endDate, isSetStartDate, isSetEndDate,
+    const newState = handleDateSelection({
+      startDate: this.state.startDate,
+      endDate: this.state.endDate,
+      isSetStartDate: this.state.isSetStartDate,
+      isSetEndDate: this.state.isSetEndDate,
+      selectedDate: date,
     });
 
-    if (startDate && endDate) onRangeSelected({ startDate, endDate });
+    console.log(newState);
+
+    this.setState({
+      startDate: newState.startDate,
+      endDate: newState.endDate,
+      isSetStartDate: newState.isSetStartDate,
+      isSetEndDate: newState.isSetEndDate,
+      hoveredDate: null,
+    }, () => {
+      if (this.rangeIsSelected()) {
+        this.invokeRangeSelectedCallBack();
+      }
+    });
   };
 
-  onClickStartDate = () => this.setState({ isSetStartDate: true, isSetEndDate: false });
+  invokeRangeSelectedCallBack = () => {
+    this.props.onRangeSelected({
+      startDate: this.state.startDate,
+      endDate: this.state.endDate,
+    });
+  };
 
-  onClickEndDate = () => {
-    if (this.state.startDate) {
-      this.setState({ isSetStartDate: false, isSetEndDate: true });
-    } else {
-      this.onClickStartDate();
-    }
-  }
+  rangeIsSelected = () => this.state.startDate && this.state.endDate;
 
   isInRange = (day) => {
     const {
@@ -117,6 +91,17 @@ class DateRangePicker extends React.Component {
     return dayInRange({
       startDate, endDate, isSetStartDate, hoveredDate, day,
     });
+  }
+
+  // All the following methods should be removed when we remove the two text boxes for start/end dates
+  onClickStartDate = () => this.setState({ isSetStartDate: true, isSetEndDate: false });
+
+  onClickEndDate = () => {
+    if (this.state.startDate) {
+      this.setState({ isSetStartDate: false, isSetEndDate: true });
+    } else {
+      this.onClickStartDate();
+    }
   }
 
   formatDate = (date) => {
