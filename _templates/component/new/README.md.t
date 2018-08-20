@@ -28,4 +28,4 @@ export default (
 
 | Name       | Description        | Type             | Default | Required? |
 |------------|--------------------|------------------|---------|-----------|
-| `children` | Component Children | `PropTypes.node` | -       | -         |
+| `children` | Component Children | `PropTypes.node` | -       | ✔︎         |
