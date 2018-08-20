@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.50.9"></a>
+## [0.50.9](https://github.com/hooroo/roo-ui/compare/v0.50.8...v0.50.9) (2018-08-20)
+
+
+### Bug Fixes
+
+* prevent password input icon from overlapping input text ([#158](https://github.com/hooroo/roo-ui/issues/158)) ([e4f8628](https://github.com/hooroo/roo-ui/commit/e4f8628))
+
+
+
+
 <a name="0.50.8"></a>
 ## [0.50.8](https://github.com/hooroo/roo-ui/compare/v0.50.7...v0.50.8) (2018-08-14)
 
