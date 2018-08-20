@@ -13,7 +13,12 @@ describe('<PasswordInput />', () => {
   });
 
   it('has no accessibility errors', async () => {
-    wrapper = shallowWithTheme(<label htmlFor="input">Label<PasswordInput id="input" /></label>, theme);
+    wrapper = shallowWithTheme(
+      <label htmlFor="input">
+        Label<PasswordInput id="input" />
+      </label>,
+      theme,
+    );
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
@@ -28,8 +33,10 @@ describe('<PasswordInput />', () => {
       });
 
       it('sets <input /> type to text', () => {
-        expect(wrapper.update().find('PasswordInput__CleanInput').props())
-          .toHaveProperty('type', 'text');
+        expect(wrapper
+          .update()
+          .find('PasswordInput__Input')
+          .props()).toHaveProperty('type', 'text');
       });
     });
   });
@@ -49,8 +56,10 @@ describe('<PasswordInput />', () => {
       });
 
       it('sets <input /> type to password', () => {
-        expect(wrapper.update().find('PasswordInput__CleanInput').props())
-          .toHaveProperty('type', 'password');
+        expect(wrapper
+          .update()
+          .find('PasswordInput__Input')
+          .props()).toHaveProperty('type', 'password');
       });
     });
   });
