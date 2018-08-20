@@ -76,13 +76,12 @@ const Button = NakedButton.extend`
     props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')(props)};
+      border: ${themeGet('borders.2')};
+      border-color: ${themeGet('colors.brand.secondary')};
 
       &:hover {
         background-color: transparent;
         border-color: ${themeGet('colors.brand.secondary')};
-      }
-      &:focus {
-        border: dotted 1px rgba(0,0,0,.8);
       }
     `};
 
