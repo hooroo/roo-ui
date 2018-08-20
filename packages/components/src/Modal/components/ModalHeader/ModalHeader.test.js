@@ -8,6 +8,10 @@ describe('<ModalHeader />', () => {
   const theme = { alertStyles: qantas.alertStyles };
   let wrapper;
 
+  it('has display name', () => {
+    expect(ModalHeader.displayName).toBe('Modal.header');
+  });
+
   describe('default', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(

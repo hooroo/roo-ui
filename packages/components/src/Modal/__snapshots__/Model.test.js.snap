@@ -42,14 +42,14 @@ exports[`<Modal /> renders correctly 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   max-height: 90%;
-  width: calc(100% - 20px);
+  width: calc(100% - 1.25rem);
 }
 
 @media (min-width:40rem) {
   .c0 .ModalContent {
-    -webkit-flex: 0 1 660px;
-    -ms-flex: 0 1 660px;
-    flex: 0 1 660px;
+    -webkit-flex: 0 1 41.25rem;
+    -ms-flex: 0 1 41.25rem;
+    flex: 0 1 41.25rem;
   }
 }
 

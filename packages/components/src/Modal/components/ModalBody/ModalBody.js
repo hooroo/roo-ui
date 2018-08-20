@@ -14,10 +14,10 @@ const ModalBody = ({ children, ...props }) => (
 ModalBody.displayName = 'Modal.body';
 
 ModalBody.defaultProps = {
-  textAlign: 'center', // eslint-disable-line react/default-props-match-prop-types
-  px: 11, // eslint-disable-line react/default-props-match-prop-types
-  pt: 7, // eslint-disable-line react/default-props-match-prop-types
-  pb: 10, // eslint-disable-line react/default-props-match-prop-types
+  textAlign: 'center',
+  px: 11,
+  pt: 7,
+  pb: 10,
 };
 
 ModalBody.propTypes = {

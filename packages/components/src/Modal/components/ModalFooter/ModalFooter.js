@@ -12,10 +12,10 @@ const ModalFooter = ({ children, ...props }) => (
 ModalFooter.displayName = 'Modal.footer';
 
 ModalFooter.defaultProps = {
-  alignItems: 'center', // eslint-disable-line react/default-props-match-prop-types
-  justifyContent: 'center', // eslint-disable-line react/default-props-match-prop-types
-  px: 11, // eslint-disable-line react/default-props-match-prop-types
-  pb: 11, // eslint-disable-line react/default-props-match-prop-types
+  alignItems: 'center',
+  justifyContent: 'center',
+  px: 11,
+  pb: 11,
 };
 
 ModalFooter.propTypes = {

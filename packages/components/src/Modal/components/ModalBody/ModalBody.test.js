@@ -1,6 +1,6 @@
 import React from 'react';
 import { axe } from 'jest-axe';
-import { mountWithTheme, shallowWithTheme } from '@roo-ui/test-utils';
+import { shallowWithTheme } from '@roo-ui/test-utils';
 import { qantas as theme } from '@roo-ui/themes';
 import ModalBody from './ModalBody';
 
@@ -8,7 +8,7 @@ describe('<ModalBody />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mountWithTheme(
+    wrapper = shallowWithTheme(
       <ModalBody>
         Lorem ipsum dolor sit amet
       </ModalBody>,
@@ -21,15 +21,10 @@ describe('<ModalBody />', () => {
   });
 
   it('has display name', () => {
-    expect(wrapper.find(ModalBody).name()).toBe('Modal.body');
+    expect(ModalBody.displayName).toBe('Modal.body');
   });
 
   it('renders correctly', () => {
-    expect(shallowWithTheme(
-      <ModalBody>
-        Lorem ipsum dolor sit amet
-      </ModalBody>,
-      theme,
-    )).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { axe } from 'jest-axe';
-import { mountWithTheme, shallowWithTheme } from '@roo-ui/test-utils';
+import { shallowWithTheme } from '@roo-ui/test-utils';
 import { qantas as theme } from '@roo-ui/themes';
 import ModalFooter from './ModalFooter';
 
@@ -8,7 +8,7 @@ describe('<ModalFooter />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mountWithTheme(
+    wrapper = shallowWithTheme(
       <ModalFooter>
         Lorem ipsum dolor sit amet
       </ModalFooter>,
@@ -21,15 +21,10 @@ describe('<ModalFooter />', () => {
   });
 
   it('has display name', () => {
-    expect(wrapper.find(ModalFooter).name()).toBe('Modal.footer');
+    expect(ModalFooter.displayName).toBe('Modal.footer');
   });
 
   it('renders correctly', () => {
-    expect(shallowWithTheme(
-      <ModalFooter>
-        Lorem ipsum dolor sit amet
-      </ModalFooter>,
-      theme,
-    )).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

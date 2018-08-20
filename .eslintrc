@@ -4,7 +4,8 @@
   "rules": {
     "react/jsx-filename-extension": 0,
     "import/no-extraneous-dependencies": 0,
-    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "react/default-props-match-prop-types": 0
   },
   "env": {
     "jest": true

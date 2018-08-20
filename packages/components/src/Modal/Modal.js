@@ -2,7 +2,7 @@ import React from 'react';
 import ReactModal from 'react-modal';
 import styled, { injectGlobal } from 'styled-components';
 import { themeGet } from 'styled-system';
-import { rgba } from 'polished';
+import { rem, rgba } from 'polished';
 
 import ModalHeader from './components/ModalHeader';
 import ModalBody from './components/ModalBody';
@@ -47,10 +47,10 @@ const Modal = styled(({ className, ...props }) => (
     display: flex;
     flex-direction: column;
     max-height: 90%;
-    width: calc(100% - 20px);
+    width: calc(100% - ${themeGet('space.5')});
 
     @media (min-width: ${themeGet('breakpoints.0')}) {
-      flex: 0 1 660px;
+      flex: 0 1 ${rem('660px')};
     }
   }
 `;
