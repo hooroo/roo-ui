@@ -15,9 +15,13 @@ storiesOf('Components|DateRangePicker', module)
       monthsToDisplay={number('Months to display', 1)}
       minDate={subDays(new Date(), 10)}
       maxDate={addDays(new Date(), 60)}
-      // startDate={addDays(new Date(), 3)}
-      // endDate={addDays(new Date(), 7)}
-      onRangeSelected={console.log} // eslint-disable-line no-console
+      startDate={addDays(new Date(), 3)}
+      endDate={addDays(new Date(), 7)}
       stacked={boolean('Stacked', false)}
+      setStartDate={boolean('Change start date', false)}
+      setEndDate={boolean('Change end date', false)}
+      onRangeSelected={console.log} // eslint-disable-line no-console
+      onChangeStartDate={console.log} // eslint-disable-line no-console
+      onChangeEndDate={console.log} // eslint-disable-line no-console
     />
   ));

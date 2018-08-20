@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 import { themeGet } from 'styled-system';
-import { subDays, format } from 'date-fns';
+import { subDays, isEqual } from 'date-fns';
 
 import { Flex, Box, Input } from '../';
 
@@ -30,15 +30,29 @@ class DateRangePicker extends React.Component {
     this.onMouseEnterOfDay = this.onMouseEnterOfDay.bind(this);
     this.onDateSelected = this.onDateSelected.bind(this);
     this.isInRange = this.isInRange.bind(this);
+
+    this.state = {
+      hoveredDate: null,
+      startDate: this.props.startDate,
+      endDate: this.props.endDate,
+      isSetStartDate: this.props.setStartDate,
+      isSetEndDate: this.props.setEndDate,
+    };
   }
 
-  state = {
-    hoveredDate: null,
-    startDate: this.props.startDate,
-    endDate: this.props.endDate,
-    isSetStartDate: false,
-    isSetEndDate: false,
-  };
+  componentDidUpdate(prevProps, prevState) {
+    const { startDate, endDate } = this.state;
+    const { startDate: prevStartDate, endDate: prevEndDate } = prevState;
+    const { onChangeStartDate, onChangeEndDate } = this.props;
+
+    if (!isEqual(startDate, prevStartDate) && onChangeStartDate) {
+      onChangeStartDate(startDate);
+    }
+
+    if (!isEqual(endDate, prevEndDate) && onChangeEndDate) {
+      onChangeEndDate(endDate);
+    }
+  }
 
   onMouseLeaveOfCalendar = () => this.setState({ hoveredDate: null });
 
@@ -58,8 +72,6 @@ class DateRangePicker extends React.Component {
       isSetEndDate: this.state.isSetEndDate,
       selectedDate: date,
     });
-
-    console.log(newState);
 
     this.setState({
       startDate: newState.startDate,
@@ -93,31 +105,6 @@ class DateRangePicker extends React.Component {
     });
   }
 
-  // All the following methods should be removed when we remove the two text boxes for start/end dates
-  onClickStartDate = () => this.setState({ isSetStartDate: true, isSetEndDate: false });
-
-  onClickEndDate = () => {
-    if (this.state.startDate) {
-      this.setState({ isSetStartDate: false, isSetEndDate: true });
-    } else {
-      this.onClickStartDate();
-    }
-  }
-
-  formatDate = (date) => {
-    if (!date) return '';
-
-    return format(date, 'ddd D MMM YYYY');
-  }
-
-  formatStartDate = () => this.formatDate(this.state.startDate);
-
-  formatEndDate = () => this.formatDate(this.state.endDate);
-
-  isFocusStartDate = () => this.state.isSetStartDate;
-
-  isFocusEndDate = () => this.state.isSetEndDate;
-
   render() {
     const {
       monthNames,
@@ -126,8 +113,6 @@ class DateRangePicker extends React.Component {
       stacked,
       disabledDates,
       interactiveDisabledDates,
-      startDateLabel,
-      endDateLabel,
       ...rest
     } = this.props;
 
@@ -149,25 +134,6 @@ class DateRangePicker extends React.Component {
 
             return (
               <Box onMouseLeave={this.onMouseLeaveOfCalendar}>
-                <Flex flexWrap="wrap">
-                  <Flex>
-                    <DateInput
-                      placeholder={startDateLabel}
-                      value={this.formatStartDate()}
-                      highlight={this.isFocusStartDate()}
-                      onClick={this.onClickStartDate}
-                    />
-                  </Flex>
-                  <Flex>
-                    <DateInput
-                      placeholder={endDateLabel}
-                      value={this.formatEndDate()}
-                      highlight={this.isFocusEndDate()}
-                      onClick={this.onClickEndDate}
-                    />
-                  </Flex>
-                </Flex>
-
                 <CalendarNav
                   prevProps={getBackProps({ calendars })}
                   nextProps={getForwardProps({ calendars })}
@@ -211,8 +177,10 @@ DateRangePicker.defaultProps = {
   interactiveDisabledDates: false,
   startDate: null,
   endDate: null,
-  startDateLabel: 'Start Date',
-  endDateLabel: 'End Date',
+  onChangeStartDate: null,
+  onChangeEndDate: null,
+  setStartDate: false,
+  setEndDate: false,
 };
 
 DateRangePicker.propTypes = {
@@ -224,11 +192,13 @@ DateRangePicker.propTypes = {
   interactiveDisabledDates: PropTypes.bool,
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
-  onRangeSelected: PropTypes.func.isRequired,
   startDate: PropTypes.instanceOf(Date),
   endDate: PropTypes.instanceOf(Date),
-  startDateLabel: PropTypes.string,
-  endDateLabel: PropTypes.string,
+  onChangeStartDate: PropTypes.func,
+  onChangeEndDate: PropTypes.func,
+  onRangeSelected: PropTypes.func.isRequired,
+  setStartDate: PropTypes.bool,
+  setEndDate: PropTypes.bool,
 };
 
 export default DateRangePicker;
