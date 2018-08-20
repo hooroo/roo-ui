@@ -9,5 +9,13 @@
   },
   "env": {
     "jest": true
-  }
+  },
+  "overrides": [{
+    "files": [
+      "**/*.story.js"
+    ],
+    "rules": {
+      "react/prop-types": 0
+    }
+  }]
 }

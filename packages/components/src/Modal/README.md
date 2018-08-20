@@ -14,7 +14,7 @@ $ yarn add @roo-ui/components
 import { Modal } from '@roo-ui/components';
 
 export default (
-  <Modal isOpen={isOpen}>
+  <Modal isOpen={isOpen} onRequestClose={toggleIsOpen} shouldCloseOnOverlayClick>
     <Modal.header>Default</Modal.header>
     <Modal.body>
       Lorem ipsum dolor sit amet<br />
@@ -31,6 +31,10 @@ export default (
 ## Properties
 
 ### Modal
+
+| Name    | Description                                       | Type            | Default        | Required? |
+|---------|---------------------------------------------------|-----------------|----------------|-----------|
+| `width` | Max width of the modal after the first breakpoint | `number|string` | `rem('660px')` | -         |
 
 This component support same props as [react-modal](https://github.com/reactjs/react-modal/blob/v3.5.1/docs/README.md#general-usage-usage).
 

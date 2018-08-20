@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
 import styled, { injectGlobal } from 'styled-components';
 import { themeGet } from 'styled-system';
@@ -12,7 +13,7 @@ injectGlobal`
   .ReactModal__Body--open { overflow: hidden; }
 `;
 
-const Modal = styled(({ className, ...props }) => (
+const Modal = styled(({ className, width, ...props }) => (
   <ReactModal
     {...props}
     className="ModalContent"
@@ -50,13 +51,20 @@ const Modal = styled(({ className, ...props }) => (
     width: calc(100% - ${themeGet('space.5')});
 
     @media (min-width: ${themeGet('breakpoints.0')}) {
-      flex: 0 1 ${rem('660px')};
+      flex: 0 1 ${({ width }) => width};
     }
   }
 `;
 
 Modal.propTypes = {
   ...ReactModal.propTypes,
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
+
+Modal.defaultProps = {
+  width: rem(660),
+  role: 'dialog',
+  ariaHideApp: true,
 };
 
 Modal.header = ModalHeader;

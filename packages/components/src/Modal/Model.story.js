@@ -8,64 +8,40 @@ import { Button } from '../..';
 import README from './README.md';
 import Modal from './Modal';
 
-const modalBodyDisplay = (
-  <Modal.body>
-    Lorem ipsum dolor sit amet<br />
-    Lorem ipsum dolor sit amet<br />
-    Lorem ipsum dolor sit amet<br />
-  </Modal.body>
-);
-
-const modalFooterDisplay = (
-  <Modal.footer>
-    <Button primary>Close</Button>
-  </Modal.footer>
+const ModalWrapper = ({ initial = true, variant }) => (
+  <Toggle initial={initial}>
+    {({ on, toggle }) => (
+      <div>
+        <Button primary onClick={toggle}>Open</Button>
+        <Modal isOpen={on} onRequestClose={toggle} shouldCloseOnOverlayClick>
+          <Modal.header variant={variant} style={{ textTransform: 'capitalize' }}>
+            {variant || 'Default'}
+          </Modal.header>
+          <Modal.body>
+            Lorem ipsum dolor sit amet<br />
+            Lorem ipsum dolor sit amet<br />
+            Lorem ipsum dolor sit amet<br />
+          </Modal.body>
+          <Modal.footer>
+            <Button primary onClick={toggle}>Close</Button>
+          </Modal.footer>
+        </Modal>
+      </div>
+      )}
+  </Toggle>
 );
 
 storiesOf('Components|Modal', module)
   .addDecorator(withDocs(README))
   .add('<Modal />', () => (
-    <Toggle initial={false}>
-      {({ on, toggle }) => (
-        <div>
-          <Button primary onClick={toggle}>Open</Button>
-          <Modal isOpen={on} ariaHideApp={false}>
-            <Modal.header>
-              Default
-            </Modal.header>
-            {modalBodyDisplay}
-            <Modal.footer>
-              <Button primary onClick={toggle}>Close</Button>
-            </Modal.footer>
-          </Modal>
-        </div>
-      )}
-    </Toggle>
+    <ModalWrapper initial={false} />
   ))
   .add('<Modal.header variant="info" />', () => (
-    <Modal isOpen ariaHideApp={false}>
-      <Modal.header variant="info">
-        Info
-      </Modal.header>
-      {modalBodyDisplay}
-      {modalFooterDisplay}
-    </Modal>
+    <ModalWrapper variant="info" />
   ))
   .add('<Modal.header variant="success" />', () => (
-    <Modal isOpen ariaHideApp={false}>
-      <Modal.header variant="success">
-        Success
-      </Modal.header>
-      {modalBodyDisplay}
-      {modalFooterDisplay}
-    </Modal>
+    <ModalWrapper variant="success" />
   ))
   .add('<Modal.header variant="error" />', () => (
-    <Modal isOpen ariaHideApp={false}>
-      <Modal.header variant="error">
-        Error
-      </Modal.header>
-      {modalBodyDisplay}
-      {modalFooterDisplay}
-    </Modal>
+    <ModalWrapper variant="error" />
   ));
