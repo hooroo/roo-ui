@@ -2,6 +2,8 @@
 
 - [Setup](#setup)
 - [Workflow](#workflow)
+  - [Component Generator](#component-generator)
+  - [Preview Changes in Consuming App](#linking)
 - [Creating new packages](#packages)
   - [Component packages](#packages-component)
   - [Utility packages](#packages-utility)
@@ -66,7 +68,27 @@ $ lerna exec -- <command>
 $ lerna exec -- rm -rf ./node_modules
 ```
 
-### Development workflow
+<a name="component-generator"></a>
+### Component Generator
+
+New components can be auto generated using the `new:component` script.
+
+#### Features
+
+✓ Generate index, component, test, story and README  
+✓ Add component index to packages/components/src/index.js  
+✓ Generate nested components  
+
+#### Usage
+
+```
+yarn run new:component MyNewComponent
+```
+
+
+<a name="linking"></a>
+### Preview Changes in Consuming App (Linking)
+
 Before publishing a new version of `roo-ui` you may want to preview it in your application.
 Both linking and unlinking need to be run in the root directory of `roo-ui`.
 
