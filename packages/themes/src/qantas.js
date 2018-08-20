@@ -1,34 +1,50 @@
 import { rem } from 'polished';
 import range from 'lodash/range';
 
-const colors = {
-  brand: {
-    primary: '#E40000',
-    secondary: '#8DE2E0',
-    tertiary: '#D20000',
-    quaternary: '#F9F3E9',
-  },
-  ui: {
-    link: '#E00E00',
-    linkHover: '#870000',
-    info: '#8DE2E0',
-    infoBackground: '#E7F7F7',
-    error: '#ED710B',
-    errorBackground: '#FCEBCD',
-    success: '#35A509',
-    successBackground: '#DEF2DE',
-  },
-  greys: {
-    charcoal: '#323232',
-    steel: '#666666',
-    alto: '#DADADA',
-    porcelain: '#F4F5F6',
-    dusty: '#999999',
-  },
+const brand = {
+  primary: '#E40000',
+  secondary: '#8DE2E0',
+  tertiary: '#D20000',
+  quaternary: '#F9F3E9',
+};
 
+const greys = {
+  charcoal: '#323232',
+  steel: '#666666',
+  alto: '#DADADA',
+  porcelain: '#F4F5F6',
+  dusty: '#999999',
+};
+
+const namedColors = {
   white: '#FFFFFF',
-  text: '#323232',
-  starRating: '#FBCB3B',
+  brightSun: '#FBCB3B',
+  red: '#E00E00',
+  maroon: '#870000',
+  blue: '#8DE2E0',
+  lightBlue: '#E7F7F7',
+  orange: '#ED710B',
+  lightOrange: '#FCEBCD',
+  green: '#35A509',
+  lightGreen: '#DEF2DE',
+};
+
+const ui = {
+  link: namedColors.red,
+  linkHover: namedColors.maroon,
+  info: namedColors.blue,
+  infoBackground: namedColors.lightBlue,
+  error: namedColors.orange,
+  errorBackground: namedColors.lightOrange,
+  success: namedColors.green,
+  successBackground: namedColors.lightGreen,
+};
+
+const colors = {
+  brand,
+  ui,
+  greys,
+  ...namedColors,
 };
 
 const fontFamily = 'QantasCiutadella, sans-serif';
