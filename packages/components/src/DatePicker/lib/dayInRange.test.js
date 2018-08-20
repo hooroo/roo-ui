@@ -34,13 +34,13 @@ describe('dayInRange', () => {
     });
 
     describe('with hoveredDate', () => {
-      describe('with isFocusOnStartDate is false', () => {
+      describe('with isSetStartDate is false', () => {
         describe('when day is between startDate and hoveredDate', () => {
           it('returns true', () => {
             expect(dayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isFocusOnStartDate: false,
+              isSetStartDate: false,
               day: new Date(2018, 1, 14),
             })).toEqual(true);
           });
@@ -51,20 +51,20 @@ describe('dayInRange', () => {
             expect(dayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isFocusOnStartDate: false,
+              isSetStartDate: false,
               day: new Date(2018, 1, 20),
             })).toEqual(false);
           });
         });
       });
 
-      describe('with isFocusOnStartDate is true', () => {
+      describe('with isSetStartDate is true', () => {
         describe('when day is between startDate and hoveredDate', () => {
           it('returns false', () => {
             expect(dayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isFocusOnStartDate: true,
+              isSetStartDate: true,
               day: new Date(2018, 1, 14),
             })).toEqual(false);
           });
@@ -75,7 +75,7 @@ describe('dayInRange', () => {
             expect(dayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isFocusOnStartDate: true,
+              isSetStartDate: true,
               day: new Date(2018, 1, 20),
             })).toEqual(false);
           });

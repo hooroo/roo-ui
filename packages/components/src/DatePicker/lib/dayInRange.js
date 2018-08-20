@@ -1,7 +1,7 @@
 import { isWithinRange } from 'date-fns';
 
 const dayInRange = ({
-  startDate, endDate, isFocusOnStartDate, hoveredDate, day,
+  startDate, endDate, isSetStartDate, hoveredDate, day,
 }) => {
   if (!startDate || (!endDate && !hoveredDate)) return false;
 
@@ -12,7 +12,7 @@ const dayInRange = ({
 
   // end day is not selected, hoverd date is selected,
   // not focusing on start day input
-  if (hoveredDate && hoveredDate > startDate && !isFocusOnStartDate) {
+  if (hoveredDate && hoveredDate > startDate && !isSetStartDate) {
     return isWithinRange(day, startDate, hoveredDate);
   }
 
