@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.50.11",
+  "version": "0.51.0",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -14,7 +14,7 @@
   "devDependencies": {
     "@roo-ui/icons": "^0.39.1",
     "@roo-ui/test-utils": "^0.50.7",
-    "@roo-ui/themes": "^0.50.10",
+    "@roo-ui/themes": "^0.51.0",
     "react-powerplug": "^1.0.0-rc.1"
   },
   "peerDependencies": {
