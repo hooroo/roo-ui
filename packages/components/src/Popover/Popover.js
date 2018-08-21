@@ -98,7 +98,7 @@ class Base extends Component {
   };
 
   render() {
-    const { children, zIndex, ...rest } = this.props;
+    const { children, zIndex, modifiers } = this.props;
     const childrenArray = React.Children.toArray(children);
     const [control, content] = partition(
       childrenArray,
@@ -120,7 +120,7 @@ class Base extends Component {
         </Reference>
 
         {this.state.isOpen && (
-          <Popper {...rest}>
+          <Popper modifiers={modifiers}>
             {({
              ref, style, placement, arrowProps,
             }) => (
@@ -154,11 +154,13 @@ class Base extends Component {
 }
 
 Base.defaultProps = {
+  modifiers: {},
   zIndex: 1,
 };
 
 Base.propTypes = {
   children: PropTypes.node.isRequired,
+  modifiers: PropTypes.shape({}),
   zIndex: PropTypes.number,
 };
 
