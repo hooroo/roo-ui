@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModalHeader /> default renders correctly 1`] = `
+<Component
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+    }
+  }
+  variant="default"
+>
+  Lorem ipsum dolor sit amet
+</Component>
+`;
+
+exports[`<ModalHeader /> variant = error renders correctly 1`] = `
+<Component
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+    }
+  }
+  variant="error"
+>
+  Lorem ipsum dolor sit amet
+</Component>
+`;
+
+exports[`<ModalHeader /> variant = info renders correctly 1`] = `
+<Component
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+    }
+  }
+  variant="info"
+>
+  Lorem ipsum dolor sit amet
+</Component>
+`;
+
+exports[`<ModalHeader /> variant = success renders correctly 1`] = `
+<Component
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+    }
+  }
+  variant="success"
+>
+  Lorem ipsum dolor sit amet
+</Component>
+`;
