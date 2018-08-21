@@ -54,14 +54,14 @@ exports[`<Modal /> renders correctly 1`] = `
 }
 
 <Modal
-  ariaHideApp={false}
+  ariaHideApp={true}
   isOpen={true}
   role="dialog"
   title="Test Modal"
   width="41.25rem"
 >
   <Component
-    ariaHideApp={false}
+    ariaHideApp={true}
     className="c0"
     isOpen={true}
     role="dialog"
@@ -69,7 +69,7 @@ exports[`<Modal /> renders correctly 1`] = `
     width="41.25rem"
   >
     <Modal
-      ariaHideApp={false}
+      ariaHideApp={true}
       bodyOpenClassName="ReactModal__Body--open"
       className="ModalContent"
       closeTimeoutMS={0}
@@ -85,7 +85,7 @@ exports[`<Modal /> renders correctly 1`] = `
       title="Test Modal"
     >
       <ModalPortal
-        ariaHideApp={false}
+        ariaHideApp={true}
         bodyOpenClassName="ReactModal__Body--open"
         className="ModalContent"
         closeTimeoutMS={0}

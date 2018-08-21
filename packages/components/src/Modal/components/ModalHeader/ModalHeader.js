@@ -34,7 +34,6 @@ const ModalHeader = withTheme(({
 
 ModalHeader.displayName = 'Modal.header';
 ModalHeader.defaultProps = {
-  ...Box.defaultProps,
   variant: 'default',
 };
 
@@ -42,6 +41,7 @@ ModalHeader.propTypes = {
   children: PropTypes.node.isRequired,
   icon: PropTypes.shape(Icon.propTypes),
   variant: PropTypes.string,
+  ...Box.propTypes,
 };
 
 export default ModalHeader;

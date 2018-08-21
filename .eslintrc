@@ -8,6 +8,7 @@
     "react/default-props-match-prop-types": 0
   },
   "env": {
+    "browser": true,
     "jest": true
   },
   "overrides": [{
