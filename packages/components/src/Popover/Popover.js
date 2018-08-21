@@ -98,7 +98,7 @@ class Base extends Component {
   };
 
   render() {
-    const { children, zIndex } = this.props;
+    const { children, zIndex, modifiers } = this.props;
     const childrenArray = React.Children.toArray(children);
     const [control, content] = partition(
       childrenArray,
@@ -120,31 +120,31 @@ class Base extends Component {
         </Reference>
 
         {this.state.isOpen && (
-          <Popper positionFixed>
+          <Popper modifiers={modifiers}>
             {({
- ref, style, placement, arrowProps,
-}) => (
-  <ContentWrapper
-    aria-hidden="true"
-    innerRef={ref}
-    style={style}
-    placement={placement}
-    className="ignore-react-onclickoutside"
-    zIndex={zIndex}
-  >
-    {content}
+             ref, style, placement, arrowProps,
+            }) => (
+              <ContentWrapper
+                aria-hidden="true"
+                innerRef={ref}
+                style={style}
+                placement={placement}
+                className="ignore-react-onclickoutside"
+                zIndex={zIndex}
+              >
+                {content}
 
-    <TriangleBorder
-      innerRef={arrowProps.ref}
-      style={arrowProps.style}
-      placement={placement}
-    />
-    <Triangle
-      innerRef={arrowProps.ref}
-      style={arrowProps.style}
-      placement={placement}
-    />
-  </ContentWrapper>
+                <TriangleBorder
+                  innerRef={arrowProps.ref}
+                  style={arrowProps.style}
+                  placement={placement}
+                />
+                <Triangle
+                  innerRef={arrowProps.ref}
+                  style={arrowProps.style}
+                  placement={placement}
+                />
+              </ContentWrapper>
             )}
           </Popper>
         )}
@@ -154,11 +154,13 @@ class Base extends Component {
 }
 
 Base.defaultProps = {
+  modifiers: {},
   zIndex: 1,
 };
 
 Base.propTypes = {
   children: PropTypes.node.isRequired,
+  modifiers: PropTypes.shape({}),
   zIndex: PropTypes.number,
 };
 
