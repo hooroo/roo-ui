@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModalBody /> renders correctly 1`] = `
+<Box
+  pb={10}
+  pt={7}
+  px={11}
+  textAlign="center"
+>
+  <Text
+    blacklist={
+      Array [
+        "textStyle",
+        "color",
+        "bg",
+        "fontSize",
+        "f",
+        "fontWeight",
+        "letterSpacing",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textAlign",
+        "align",
+        "textDecoration",
+        "hidden",
+      ]
+    }
+    color="text"
+    fontSize="xl"
+    hidden={false}
+    textStyle="text"
+  >
+    Lorem ipsum dolor sit amet
+  </Text>
+</Box>
+`;

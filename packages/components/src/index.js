@@ -28,6 +28,7 @@ export { default as Truncate } from './Truncate';
 export { default as CharacterCount } from './CharacterCount';
 export { default as Checkbox } from './Checkbox';
 export { default as MaskedInput } from './MaskedInput';
+export { default as Modal } from './Modal';
 export { default as Textarea } from './Textarea';
 export { default as Radio } from './Radio';
 export { default as Select } from './Select';
