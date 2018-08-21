@@ -32,9 +32,9 @@ export default (
 
 ### Modal
 
-| Name    | Description                                       | Type            | Default        | Required? |
-|---------|---------------------------------------------------|-----------------|----------------|-----------|
-| `width` | Max width of the modal after the first breakpoint | `number|string` | `rem('660px')` | -         |
+| Name    | Description                                       | Type                  | Default        | Required? |
+|---------|---------------------------------------------------|-----------------------|----------------|-----------|
+| `width` | Max width of the modal after the first breakpoint | `number` or `string`  | `rem('660px')` | -         |
 
 This component support same props as [react-modal](https://github.com/reactjs/react-modal/blob/v3.5.1/docs/README.md#general-usage-usage).
 
