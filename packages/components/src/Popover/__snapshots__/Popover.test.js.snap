@@ -10,6 +10,13 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
       ]
     }
     excludeScrollbar={false}
+    modifiers={
+      Object {
+        "preventOverflow": Object {
+          "enabled": false,
+        },
+      }
+    }
     outsideClickIgnoreClass="ignore-react-onclickoutside"
     preventDefault={false}
     stopPropagation={false}
@@ -22,6 +29,13 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
           "mousedown",
           "touchstart",
         ]
+      }
+      modifiers={
+        Object {
+          "preventOverflow": Object {
+            "enabled": false,
+          },
+        }
       }
       outsideClickIgnoreClass="ignore-react-onclickoutside"
       preventDefault={false}
@@ -186,6 +200,13 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
       ]
     }
     excludeScrollbar={false}
+    modifiers={
+      Object {
+        "preventOverflow": Object {
+          "enabled": false,
+        },
+      }
+    }
     outsideClickIgnoreClass="ignore-react-onclickoutside"
     preventDefault={false}
     stopPropagation={false}
@@ -198,6 +219,13 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
           "mousedown",
           "touchstart",
         ]
+      }
+      modifiers={
+        Object {
+          "preventOverflow": Object {
+            "enabled": false,
+          },
+        }
       }
       outsideClickIgnoreClass="ignore-react-onclickoutside"
       preventDefault={false}
@@ -325,12 +353,25 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
           </InnerReference>
         </Reference>
         <Popper
-          positionFixed={true}
+          modifiers={
+            Object {
+              "preventOverflow": Object {
+                "enabled": false,
+              },
+            }
+          }
         >
           <InnerPopper
             eventsEnabled={true}
+            modifiers={
+              Object {
+                "preventOverflow": Object {
+                  "enabled": false,
+                },
+              }
+            }
             placement="bottom"
-            positionFixed={true}
+            positionFixed={false}
             referenceElement={
               <div
                 class=""
