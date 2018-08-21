@@ -1,10 +1,10 @@
-import dayInRange from './dayInRange';
+import isDayInRange from './isDayInRange';
 
-describe('dayInRange', () => {
+describe('isDayInRange', () => {
   describe('when startDate and endDate are selected', () => {
     describe('when date is in the range', () => {
       it('returns true', () => {
-        expect(dayInRange({
+        expect(isDayInRange({
           startDate: new Date(2018, 1, 11),
           endDate: new Date(2018, 1, 20),
           day: new Date(2018, 1, 15),
@@ -14,7 +14,7 @@ describe('dayInRange', () => {
 
     describe('when date is not in the range', () => {
       it('returns false', () => {
-        expect(dayInRange({
+        expect(isDayInRange({
           startDate: new Date(2018, 1, 11),
           endDate: new Date(2018, 1, 20),
           day: new Date(2018, 1, 25),
@@ -26,7 +26,7 @@ describe('dayInRange', () => {
   describe('when only startDate is selected', () => {
     describe('with no hoveredDate', () => {
       it('returns false', () => {
-        expect(dayInRange({
+        expect(isDayInRange({
           startDate: new Date(2018, 1, 11),
           day: new Date(2018, 1, 25),
         })).toEqual(false);
@@ -37,7 +37,7 @@ describe('dayInRange', () => {
       describe('with isSetStartDate is false', () => {
         describe('when day is between startDate and hoveredDate', () => {
           it('returns true', () => {
-            expect(dayInRange({
+            expect(isDayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
               isSetStartDate: false,
@@ -48,7 +48,7 @@ describe('dayInRange', () => {
 
         describe('when day is not between startDate and hoveredDate', () => {
           it('returns false', () => {
-            expect(dayInRange({
+            expect(isDayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
               isSetStartDate: false,
@@ -61,7 +61,7 @@ describe('dayInRange', () => {
       describe('with isSetStartDate is true', () => {
         describe('when day is between startDate and hoveredDate', () => {
           it('returns false', () => {
-            expect(dayInRange({
+            expect(isDayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
               isSetStartDate: true,
@@ -72,7 +72,7 @@ describe('dayInRange', () => {
 
         describe('when day is not between startDate and hoveredDate', () => {
           it('returns false', () => {
-            expect(dayInRange({
+            expect(isDayInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
               isSetStartDate: true,

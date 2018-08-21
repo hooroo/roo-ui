@@ -2,12 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 import { themeGet } from 'styled-system';
-import { subDays, isEqual } from 'date-fns';
+import { subDays, isEqual, isWithinRange } from 'date-fns';
 
 import { Flex, Box, Input } from '../';
 
-import dayInRange from './lib/dayInRange';
-import handleDateSelection from './lib/handleDateSelection';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 
@@ -35,8 +33,8 @@ class DateRangePicker extends React.Component {
       hoveredDate: null,
       startDate: this.props.startDate,
       endDate: this.props.endDate,
-      isSetStartDate: this.props.setStartDate,
-      isSetEndDate: this.props.setEndDate,
+      isSettingStartDate: this.props.setStartDate,
+      isSettingEndDate: this.props.setEndDate,
     };
   }
 
@@ -65,44 +63,65 @@ class DateRangePicker extends React.Component {
   onDateSelected = ({ selectable, date }) => {
     if (!selectable) return;
 
-    const newState = handleDateSelection({
-      startDate: this.state.startDate,
-      endDate: this.state.endDate,
-      isSetStartDate: this.state.isSetStartDate,
-      isSetEndDate: this.state.isSetEndDate,
-      selectedDate: date,
-    });
+    const { isSettingStartDate, isSettingEndDate } = this.state;
+
+    if (isSettingStartDate) {
+      this.selectStartDate(date);
+    } else if (isSettingEndDate) {
+      this.selectEndDate(date);
+    } else if (!isSettingStartDate && !isSettingEndDate) {
+      this.resetWithStartDate(date);
+    }
 
     this.setState({
-      startDate: newState.startDate,
-      endDate: newState.endDate,
-      isSetStartDate: newState.isSetStartDate,
-      isSetEndDate: newState.isSetEndDate,
       hoveredDate: null,
     }, () => {
-      if (this.rangeIsSelected()) {
-        this.invokeRangeSelectedCallBack();
+      const { startDate, endDate } = this.state;
+
+      if (startDate && endDate) {
+        this.props.onRangeSelected({ startDate, endDate });
       }
     });
   };
 
-  invokeRangeSelectedCallBack = () => {
-    this.props.onRangeSelected({
-      startDate: this.state.startDate,
-      endDate: this.state.endDate,
+  selectStartDate = (startDate) => {
+    const endDate = startDate <= this.state.endDate ? this.state.endDate : null;
+    const endDateRequiresSelection = endDate === null;
+
+    this.setState({
+      startDate,
+      endDate,
+      isSettingStartDate: false,
+      isSettingEndDate: endDateRequiresSelection,
     });
   };
 
-  rangeIsSelected = () => this.state.startDate && this.state.endDate;
+  selectEndDate = (endDate) => {
+    if (endDate <= this.state.startDate) return;
 
-  isInRange = (day) => {
+    this.setState({
+      endDate,
+      isSettingEndDate: false,
+    });
+  };
+
+  resetWithStartDate = (startDate) => {
+    this.setState({
+      startDate,
+      endDate: null,
+      isSettingStartDate: false,
+      isSettingEndDate: true,
+    });
+  };
+
+  isInRange = (date) => {
     const {
-      startDate, endDate, isSetStartDate, hoveredDate,
+      startDate, endDate, hoveredDate,
     } = this.state;
 
-    return dayInRange({
-      startDate, endDate, isSetStartDate, hoveredDate, day,
-    });
+    if (!startDate || !endDate) return false;
+
+    return isWithinRange(date, startDate, endDate || hoveredDate);
   }
 
   render() {
