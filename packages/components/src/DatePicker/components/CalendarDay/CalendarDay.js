@@ -66,10 +66,6 @@ const Button = NakedButton.extend`
     props.selectable &&
     css`
       background-color: ${themeGet('colors.white')};
-
-      &:active {
-        background-color: ${themeGet('colors.ui.infoBackground')};
-      }
     `};
 
   ${props =>

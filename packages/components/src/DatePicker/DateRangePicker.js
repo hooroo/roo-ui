@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 import { themeGet } from 'styled-system';
-import { subDays, isEqual, isWithinRange } from 'date-fns';
+import { subDays, isEqual } from 'date-fns';
 
 import { Flex, Box, Input } from '../';
 
+import isDateInRange from './lib/isDateInRange';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 
@@ -116,13 +117,22 @@ class DateRangePicker extends React.Component {
 
   isInRange = (date) => {
     const {
-      startDate, endDate, hoveredDate,
+      startDate, endDate, isSettingStartDate, hoveredDate,
     } = this.state;
-
-    if (!startDate || !endDate) return false;
-
-    return isWithinRange(date, startDate, endDate || hoveredDate);
+    return isDateInRange({
+      startDate, endDate, isSettingStartDate, hoveredDate, date,
+    });
   }
+
+  // isInRange = (date) => {
+  //   const {
+  //     startDate, endDate, hoveredDate,
+  //   } = this.state;
+  //
+  //   if (!startDate || !endDate) return false;
+  //
+  //   return isWithinRange(date, startDate, endDate || hoveredDate);
+  // }
 
   render() {
     const {
