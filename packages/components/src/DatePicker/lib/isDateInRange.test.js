@@ -7,7 +7,7 @@ describe('isDateInRange', () => {
         expect(isDateInRange({
           startDate: new Date(2018, 1, 11),
           endDate: new Date(2018, 1, 20),
-          day: new Date(2018, 1, 15),
+          date: new Date(2018, 1, 15),
         })).toEqual(true);
       });
     });
@@ -17,7 +17,7 @@ describe('isDateInRange', () => {
         expect(isDateInRange({
           startDate: new Date(2018, 1, 11),
           endDate: new Date(2018, 1, 20),
-          day: new Date(2018, 1, 25),
+          date: new Date(2018, 1, 25),
         })).toEqual(false);
       });
     });
@@ -28,20 +28,20 @@ describe('isDateInRange', () => {
       it('returns false', () => {
         expect(isDateInRange({
           startDate: new Date(2018, 1, 11),
-          day: new Date(2018, 1, 25),
+          date: new Date(2018, 1, 25),
         })).toEqual(false);
       });
     });
 
     describe('with hoveredDate', () => {
-      describe('with isSetStartDate is false', () => {
+      describe('with isSettingStartDate is false', () => {
         describe('when day is between startDate and hoveredDate', () => {
           it('returns true', () => {
             expect(isDateInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isSetStartDate: false,
-              day: new Date(2018, 1, 14),
+              isSettingStartDate: false,
+              date: new Date(2018, 1, 14),
             })).toEqual(true);
           });
         });
@@ -51,21 +51,21 @@ describe('isDateInRange', () => {
             expect(isDateInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isSetStartDate: false,
-              day: new Date(2018, 1, 20),
+              isSettingStartDate: false,
+              date: new Date(2018, 1, 20),
             })).toEqual(false);
           });
         });
       });
 
-      describe('with isSetStartDate is true', () => {
+      describe('with isSettingStartDate is true', () => {
         describe('when day is between startDate and hoveredDate', () => {
           it('returns false', () => {
             expect(isDateInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isSetStartDate: true,
-              day: new Date(2018, 1, 14),
+              isSettingStartDate: true,
+              date: new Date(2018, 1, 14),
             })).toEqual(false);
           });
         });
@@ -75,8 +75,8 @@ describe('isDateInRange', () => {
             expect(isDateInRange({
               startDate: new Date(2018, 1, 11),
               hoveredDate: new Date(2018, 1, 18),
-              isSetStartDate: true,
-              day: new Date(2018, 1, 20),
+              isSettingStartDate: true,
+              date: new Date(2018, 1, 20),
             })).toEqual(false);
           });
         });

@@ -71,9 +71,7 @@ const Button = NakedButton.extend`
   ${props =>
     props.selected &&
     css`
-      background-color: ${themeGet('colors.ui.infoBackground')(props)};
-      border: ${themeGet('borders.2')};
-      border-color: ${themeGet('colors.brand.secondary')};
+      background-color: ${themeGet('colors.brand.secondary')};
 
       &:hover {
         background-color: transparent;
@@ -83,6 +81,7 @@ const Button = NakedButton.extend`
 
   ${props =>
     props.isHighlightedDay &&
+    !props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
 

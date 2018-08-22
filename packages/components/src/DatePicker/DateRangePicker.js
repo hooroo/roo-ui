@@ -64,26 +64,28 @@ class DateRangePicker extends React.Component {
   onDateSelected = ({ selectable, date }) => {
     if (!selectable) return;
 
-    const { isSettingStartDate, isSettingEndDate } = this.state;
+    const {
+      startDate, endDate, isSettingStartDate, isSettingEndDate,
+    } = this.state;
 
-    if (isSettingStartDate) {
+    if (!startDate || isSettingStartDate) {
       this.selectStartDate(date);
-    } else if (isSettingEndDate) {
+    } else if (!endDate || isSettingEndDate) {
       this.selectEndDate(date);
-    } else if (!isSettingStartDate && !isSettingEndDate) {
+    } else {
       this.resetWithStartDate(date);
     }
 
-    this.setState({
-      hoveredDate: null,
-    }, () => {
-      const { startDate, endDate } = this.state;
-
-      if (startDate && endDate) {
-        this.props.onRangeSelected({ startDate, endDate });
-      }
-    });
+    this.checkIfRangeIsSelected();
   };
+
+  checkIfRangeIsSelected = () => {
+    const { startDate, endDate } = this.state;
+
+    if (startDate && endDate) {
+      this.props.onRangeSelected({ startDate, endDate });
+    }
+  }
 
   selectStartDate = (startDate) => {
     const endDate = startDate <= this.state.endDate ? this.state.endDate : null;
@@ -94,16 +96,20 @@ class DateRangePicker extends React.Component {
       endDate,
       isSettingStartDate: false,
       isSettingEndDate: endDateRequiresSelection,
+      hoveredDate: null,
     });
   };
 
-  selectEndDate = (endDate) => {
-    if (endDate <= this.state.startDate) return;
-
-    this.setState({
-      endDate,
-      isSettingEndDate: false,
-    });
+  selectEndDate = (date) => {
+    if (date <= this.state.startDate) {
+      this.resetWithStartDate(date);
+    } else {
+      this.setState({
+        endDate: date,
+        isSettingEndDate: false,
+        hoveredDate: null,
+      });
+    }
   };
 
   resetWithStartDate = (startDate) => {
@@ -112,6 +118,7 @@ class DateRangePicker extends React.Component {
       endDate: null,
       isSettingStartDate: false,
       isSettingEndDate: true,
+      hoveredDate: null,
     });
   };
 
