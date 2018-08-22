@@ -131,16 +131,6 @@ class DateRangePicker extends React.Component {
     });
   }
 
-  // isInRange = (date) => {
-  //   const {
-  //     startDate, endDate, hoveredDate,
-  //   } = this.state;
-  //
-  //   if (!startDate || !endDate) return false;
-  //
-  //   return isWithinRange(date, startDate, endDate || hoveredDate);
-  // }
-
   render() {
     const {
       monthNames,
