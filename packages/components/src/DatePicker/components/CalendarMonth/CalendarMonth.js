@@ -56,8 +56,8 @@ CalendarMonth.defaultProps = {
   stacked: false,
   disabledDates: [],
   interactiveDisabledDates: false,
-  isInRange: null,
-  onMouseEnterOfDay: null,
+  isInRange: () => {},
+  onMouseEnterOfDay: () => {},
 };
 
 CalendarMonth.propTypes = {

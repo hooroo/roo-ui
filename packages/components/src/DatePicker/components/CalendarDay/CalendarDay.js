@@ -83,7 +83,7 @@ const Button = NakedButton.extend`
     props.highlighted &&
     !props.selected &&
     css`
-      background-color: ${themeGet('colors.ui.infoBackground')};
+      background-color: ${themeGet('colors.lightBlue')};
 
       &:hover,
       &:focus {

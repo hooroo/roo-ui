@@ -26,16 +26,12 @@ class DateRangePicker extends React.Component {
   constructor(props) {
     super(props);
 
-    this.onMouseEnterOfDay = this.onMouseEnterOfDay.bind(this);
-    this.onDateSelected = this.onDateSelected.bind(this);
-    this.isInRange = this.isInRange.bind(this);
-
     this.state = {
       hoveredDate: null,
-      startDate: this.props.startDate,
-      endDate: this.props.endDate,
-      isSettingStartDate: this.props.setStartDate,
-      isSettingEndDate: this.props.setEndDate,
+      startDate: props.startDate,
+      endDate: props.endDate,
+      isSettingStartDate: props.setStartDate,
+      isSettingEndDate: props.setEndDate,
     };
   }
 

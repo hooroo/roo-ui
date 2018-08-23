@@ -5,14 +5,15 @@ const isDateInRange = ({
 }) => {
   if (!startDate || (!endDate && !hoveredDate)) return false;
 
-  // range is already selected
-  if (endDate) {
+  const IsRangeSelected = !!endDate;
+  if (IsRangeSelected) {
     return isWithinRange(date, startDate, endDate);
   }
 
-  // end date is not selected, hoverd date is selected,
-  // not focusing on start date input
-  if (hoveredDate && hoveredDate > startDate && !isSettingStartDate) {
+  const isHoverdDate = !!hoveredDate;
+  const isValidHoverdDate = hoveredDate > startDate;
+
+  if (isHoverdDate && isValidHoverdDate && !isSettingStartDate) {
     return isWithinRange(date, startDate, hoveredDate);
   }
 
