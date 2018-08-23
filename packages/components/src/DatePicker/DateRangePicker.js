@@ -76,10 +76,10 @@ class DateRangePicker extends React.Component {
       this.resetWithStartDate(date);
     }
 
-    this.checkIfRangeIsSelected();
+    this.notifyRangeSelection();
   };
 
-  checkIfRangeIsSelected = () => {
+  notifyRangeSelection = () => {
     const { startDate, endDate } = this.state;
 
     if (startDate && endDate) {
