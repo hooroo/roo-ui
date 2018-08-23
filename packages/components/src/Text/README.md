@@ -36,4 +36,4 @@ This component can be customized with [styled-system](https://github.com/jxnblk/
 `lineHeight`,
 `space`,
 `textDecoration`&
-`textAlign` [functions](https://github.com/jxnblk/styled-system#table-of-style-props)
+`textAlign` [functions](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#table-of-style-props)

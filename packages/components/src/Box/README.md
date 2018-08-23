@@ -37,4 +37,4 @@ This component can be customized with [styled-system](https://github.com/jxnblk/
 `flexBasis`,
 `flex`,
 `position` &
-`zIndex` [functions](https://github.com/jxnblk/styled-system#table-of-style-props)
+`zIndex` [functions](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#table-of-style-props)
