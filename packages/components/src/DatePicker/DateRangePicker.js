@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 import { themeGet } from 'styled-system';
 import { subDays, isEqual } from 'date-fns';
+import throttle from 'lodash/throttle';
 
 import { Flex, Box, Input } from '../';
 
@@ -52,9 +53,11 @@ class DateRangePicker extends React.Component {
   onMouseLeaveOfCalendar = () => this.setState({ hoveredDate: null });
 
   onMouseEnterOfDay = (hoveredDate) => {
-    if (this.state.startDate && !this.state.endDate) {
-      this.setState({ hoveredDate: hoveredDate.date });
-    }
+    throttle(() => {
+      if (this.state.startDate && !this.state.endDate) {
+        this.setState({ hoveredDate: hoveredDate.date });
+      }
+    }, 10)();
   }
 
   onDateSelected = ({ selectable, date }) => {
