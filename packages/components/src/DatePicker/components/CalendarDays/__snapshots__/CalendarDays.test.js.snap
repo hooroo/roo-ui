@@ -7,7 +7,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201870"
     mock={
       Object {
@@ -40,7 +40,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201871"
     mock={
       Object {
@@ -73,7 +73,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201872"
     mock={
       Object {
@@ -106,7 +106,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201873"
     mock={
       Object {
@@ -139,7 +139,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201874"
     mock={
       Object {
@@ -172,7 +172,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201875"
     mock={
       Object {
@@ -205,7 +205,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201876"
     mock={
       Object {
@@ -238,7 +238,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201870"
     mock={
       Object {
@@ -271,7 +271,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201871"
     mock={
       Object {
@@ -304,7 +304,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201872"
     mock={
       Object {
@@ -337,7 +337,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201873"
     mock={
       Object {
@@ -370,7 +370,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201874"
     mock={
       Object {
@@ -403,7 +403,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201875"
     mock={
       Object {
@@ -436,7 +436,7 @@ exports[`<CalendarDays /> renders correctly 1`] = `
     disabled={false}
     getMockImplementation={[Function]}
     getMockName={[Function]}
-    isHighlightedDay={null}
+    highlighted={false}
     key="201876"
     mock={
       Object {

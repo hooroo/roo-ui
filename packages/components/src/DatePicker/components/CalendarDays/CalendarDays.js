@@ -17,13 +17,13 @@ const getCustomDateProps = (disabledDates, interactiveDisabledDates, isInRange, 
     .length;
   const props = {
     selected: day.selected,
-    isHighlightedDay: isInRange && isInRange(day.date),
+    highlighted: isInRange(day.date),
     selectable: day.selectable,
   };
 
   if (isDisabled) {
     props.selectable = false;
-    props.isHighlightedDay = false;
+    props.highlighted = false;
     props.disabled = !interactiveDisabledDates;
   }
 
@@ -48,9 +48,7 @@ const CalendarDays = ({
               key={`${year}${month}${index}`} // eslint-disable-line react/no-array-index-key
               {...getDateProps({
                 dateObj: day,
-                onMouseEnter: () => {
-                  if (onMouseEnterOfDay) onMouseEnterOfDay(day);
-                },
+                onMouseEnter: () => onMouseEnterOfDay(day),
               })}
               {...getCustomDateProps(disabledDates, interactiveDisabledDates, isInRange, day)}
             >
@@ -64,8 +62,8 @@ const CalendarDays = ({
 CalendarDays.defaultProps = {
   disabledDates: [],
   interactiveDisabledDates: false,
-  isInRange: null,
-  onMouseEnterOfDay: null,
+  isInRange: () => {},
+  onMouseEnterOfDay: () => {},
 };
 
 CalendarDays.propTypes = {
@@ -76,7 +74,7 @@ CalendarDays.propTypes = {
   disabledDates: PropTypes.arrayOf(PropTypes.instanceOf(Date)),
   interactiveDisabledDates: PropTypes.bool,
   onMouseEnterOfDay: PropTypes.func,
-  isInRange: PropTypes.func || null,
+  isInRange: PropTypes.func,
 };
 
 export default CalendarDays;

@@ -80,7 +80,7 @@ const Button = NakedButton.extend`
     `};
 
   ${props =>
-    props.isHighlightedDay &&
+    props.highlighted &&
     !props.selected &&
     css`
       background-color: ${themeGet('colors.ui.infoBackground')};
@@ -119,7 +119,7 @@ const Button = NakedButton.extend`
 Button.defaultProps = {
   ...NakedButton.defaultProps,
   disabled: PropTypes.bool,
-  blacklist: [...Object.keys(NakedButton.propTypes), 'selectable', 'isHighlightedDay'],
+  blacklist: [...Object.keys(NakedButton.propTypes), 'selectable', 'highlighted'],
 };
 
 export const CalendarDay = ({ children, selected, ...rest }) => (
@@ -132,7 +132,7 @@ CalendarDay.defaultProps = {
   selectable: true,
   disabled: false,
   selected: false,
-  isHighlightedDay: false,
+  highlighted: false,
 };
 
 CalendarDay.propTypes = {
@@ -140,7 +140,7 @@ CalendarDay.propTypes = {
   selected: PropTypes.bool,
   selectable: PropTypes.bool,
   disabled: PropTypes.bool,
-  isHighlightedDay: PropTypes.bool,
+  highlighted: PropTypes.bool,
 };
 
 export const CalendarEmptyDay = DayWrapper.withComponent('div').extend`

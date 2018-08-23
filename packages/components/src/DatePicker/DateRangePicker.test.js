@@ -69,7 +69,7 @@ describe('<DateRangePicker />', () => {
     it('highlights dates in range', () => {
       range(15, 18).forEach((index) => {
         const date = wrapper.find('CalendarDay').at(index);
-        expect(date.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
+        expect(date.props()).toEqual(expect.objectContaining({ highlighted: true }));
       });
     });
 
@@ -115,8 +115,8 @@ describe('<DateRangePicker />', () => {
           const date13 = wrapper.find('CalendarDay').at(12);
           const date14 = wrapper.find('CalendarDay').at(13);
 
-          expect(date13.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date14.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date13.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date14.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
 
@@ -158,8 +158,8 @@ describe('<DateRangePicker />', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
 
@@ -185,8 +185,8 @@ describe('<DateRangePicker />', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
     });
@@ -221,8 +221,8 @@ describe('<DateRangePicker />', () => {
           const date13 = wrapper.find('CalendarDay').at(12);
           const date14 = wrapper.find('CalendarDay').at(13);
 
-          expect(date13.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date14.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date13.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date14.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
 
@@ -264,8 +264,8 @@ describe('<DateRangePicker />', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date17.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date16.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date17.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
 
@@ -291,8 +291,8 @@ describe('<DateRangePicker />', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date17.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date16.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date17.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
     });
@@ -327,8 +327,8 @@ describe('<DateRangePicker />', () => {
           const date13 = wrapper.find('CalendarDay').at(12);
           const date14 = wrapper.find('CalendarDay').at(13);
 
-          expect(date13.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date14.props()).not.toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date13.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date14.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
 
@@ -370,8 +370,8 @@ describe('<DateRangePicker />', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
 
@@ -397,8 +397,8 @@ describe('<DateRangePicker />', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ isHighlightedDay: true }));
+          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
         });
       });
     });

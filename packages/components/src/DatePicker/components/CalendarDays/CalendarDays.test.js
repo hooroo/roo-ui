@@ -50,29 +50,22 @@ describe('<CalendarDays />', () => {
   });
 
   describe('<CalendarDay />', () => {
-    describe('isHighlightedDay', () => {
-      describe('when isInRange is not defined', () => {
-        it('props.isHighlightedDay is false', () => {
-          setup();
-          expect(wrapper.find('CalendarDay').first().prop('isHighlightedDay')).toBeFalsy();
-        });
-      });
-
+    describe('highlighted', () => {
       describe('when isInRange is false', () => {
-        it('props.isHighlightedDay is false', () => {
+        it('props.highlighted is false', () => {
           setup({
             isInRange: () => false,
           });
-          expect(wrapper.find('CalendarDay').first().prop('isHighlightedDay')).toBeFalsy();
+          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(false);
         });
       });
 
       describe('when isInRange is true', () => {
-        it('props.isHighlightedDay is true', () => {
+        it('props.highlighted is true', () => {
           setup({
             isInRange: () => true,
           });
-          expect(wrapper.find('CalendarDay').first().prop('isHighlightedDay')).toEqual(true);
+          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(true);
         });
       });
     });
