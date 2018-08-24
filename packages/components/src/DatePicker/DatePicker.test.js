@@ -2,7 +2,7 @@ import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { mountWithTheme } from '@roo-ui/test-utils';
 
-import DatePicker from '.';
+import DatePicker from './DatePicker';
 
 describe('<DatePicker />', () => {
   let wrapper;

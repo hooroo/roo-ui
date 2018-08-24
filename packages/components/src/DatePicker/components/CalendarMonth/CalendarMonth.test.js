@@ -36,6 +36,8 @@ describe('<CalendarMonth />', () => {
         { date: addDays(startDate, 14) },
       ]],
     getDateProps: jest.fn,
+    isInRange: jest.fn,
+    onMouseEnterOfDay: jest.fn,
   };
 
   beforeEach(() => {
@@ -55,10 +57,12 @@ describe('<CalendarMonth />', () => {
   });
 
   describe('<CalendarDays />', () => {
-    it('renders CalendarDays', () => {
+    it('passes the correct props', () => {
       expect(wrapper.find('CalendarDays').prop('month')).toEqual(props.month);
       expect(wrapper.find('CalendarDays').prop('year')).toEqual(props.year);
       expect(wrapper.find('CalendarDays').prop('weeks')).toEqual(props.weeks);
+      expect(wrapper.find('CalendarDays').prop('isInRange')).toEqual(props.isInRange);
+      expect(wrapper.find('CalendarDays').prop('onMouseEnterOfDay')).toEqual(props.onMouseEnterOfDay);
     });
   });
 });
