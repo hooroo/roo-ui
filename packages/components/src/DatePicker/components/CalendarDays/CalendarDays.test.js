@@ -38,11 +38,36 @@ describe('<CalendarDays />', () => {
     getDateProps: jest.fn,
   };
 
-  beforeEach(() => {
+  const setup = (params = {}) => {
+    props.isInRange = params.isInRange;
+    props.onMouseEnterOfDay = params.onMouseEnterOfDay;
     wrapper = shallowWithTheme(<CalendarDays {...props} />, theme);
-  });
+  };
 
   it('renders correctly', () => {
+    setup();
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('<CalendarDay />', () => {
+    describe('highlighted', () => {
+      describe('when isInRange is false', () => {
+        it('props.highlighted is false', () => {
+          setup({
+            isInRange: () => false,
+          });
+          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(false);
+        });
+      });
+
+      describe('when isInRange is true', () => {
+        it('props.highlighted is true', () => {
+          setup({
+            isInRange: () => true,
+          });
+          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(true);
+        });
+      });
+    });
   });
 });
