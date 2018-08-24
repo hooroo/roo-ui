@@ -72,11 +72,11 @@ const Button = NakedButton.extend`
     props.selected &&
     !props.highlighted &&
     css`
-      border-color: ${themeGet('colors.brand.secondary')};
       background-color: ${themeGet('colors.lightBlue')};
 
       &:hover {
-        background-color: transparent;
+        border-color: ${themeGet('colors.brand.secondary')};
+        background-color: ${themeGet('colors.white')};;
       }
     `};
 
@@ -114,7 +114,7 @@ const Button = NakedButton.extend`
     css`
       &:hover,
       &:focus {
-        background-color: transparent;
+        background-color: ${themeGet('colors.white')};
         border-color: ${themeGet('colors.brand.secondary')};
       }
       `};
