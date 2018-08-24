@@ -70,12 +70,13 @@ const Button = NakedButton.extend`
 
   ${props =>
     props.selected &&
+    !props.highlighted &&
     css`
-      background-color: ${themeGet('colors.brand.secondary')};
+      border-color: ${themeGet('colors.brand.secondary')};
+      background-color: ${themeGet('colors.lightBlue')};
 
       &:hover {
         background-color: transparent;
-        border-color: ${themeGet('colors.brand.secondary')};
       }
     `};
 
@@ -89,6 +90,21 @@ const Button = NakedButton.extend`
       &:focus {
         background-color: transparent;
         border-color: ${themeGet('colors.brand.secondary')};
+      }
+    `};
+
+  ${props =>
+    props.highlighted &&
+    props.selected &&
+    css`
+      background-color: ${themeGet('colors.brand.secondary')};
+
+      &:hover {
+        background-color: transparent;
+        border-color: ${themeGet('colors.brand.secondary')};
+      }
+      &:focus {
+        border-color: ${themeGet('colors.lightBlue')};
       }
     `};
 
