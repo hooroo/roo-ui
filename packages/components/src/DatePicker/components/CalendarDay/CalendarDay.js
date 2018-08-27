@@ -74,7 +74,8 @@ const Button = NakedButton.extend`
     css`
       background-color: ${themeGet('colors.lightBlue')};
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: ${themeGet('colors.brand.secondary')};
         background-color: ${themeGet('colors.white')};;
       }
