@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.52.1"></a>
+## [0.52.1](https://github.com/hooroo/roo-ui/compare/v0.52.0...v0.52.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* Remove the border from the focus state of the DateRangePicker day ([cea0cda](https://github.com/hooroo/roo-ui/commit/cea0cda))
+
+
+
+
 <a name="0.52.0"></a>
 # [0.52.0](https://github.com/hooroo/roo-ui/compare/v0.51.1...v0.52.0) (2018-08-24)
 
