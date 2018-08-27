@@ -103,9 +103,6 @@ const Button = NakedButton.extend`
         background-color: transparent;
         border-color: ${themeGet('colors.brand.secondary')};
       }
-      &:focus {
-        border-color: ${themeGet('colors.lightBlue')};
-      }
     `};
 
   ${props =>
