@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/hooroo/roo-ui/compare/v0.52.2...v0.53.0) (2018-09-06)
+
+
+### Features
+
+* **assets:** add red roo ([#165](https://github.com/hooroo/roo-ui/issues/165)) ([5f0e53e](https://github.com/hooroo/roo-ui/commit/5f0e53e))
+
+
+
+
 <a name="0.49.0"></a>
 # [0.49.0](https://github.com/hooroo/roo-ui/compare/v0.48.0...v0.49.0) (2018-08-01)
 
