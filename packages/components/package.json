@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.52.2",
+  "version": "0.54.0",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -12,7 +12,7 @@
     "build:watch": "yarn run build --watch"
   },
   "devDependencies": {
-    "@roo-ui/icons": "^0.39.1",
+    "@roo-ui/icons": "^0.54.0",
     "@roo-ui/test-utils": "^0.50.7",
     "@roo-ui/themes": "^0.51.0",
     "react-powerplug": "^1.0.0-rc.1"
