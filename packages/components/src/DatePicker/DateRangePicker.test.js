@@ -11,7 +11,6 @@ describe('<DateRangePicker />', () => {
 
   const props = {
     minDate: parse('2018-07-01'),
-    maxDate: parse('2018-07-31'),
     onRangeSelected: jest.fn,
     monthsToDisplay: 1,
     stacked: true,

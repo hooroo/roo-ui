@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { subDays, isEqual } from 'date-fns';
+import { subDays, isEqual, differenceInCalendarMonths } from 'date-fns';
 import throttle from 'lodash/throttle';
 
 import { Flex, Box } from '../';
@@ -10,12 +10,20 @@ import isDateInRange from './lib/isDateInRange';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 
+const calculateMonthOffset = (startDate = null, endDate = null) => {
+  const today = new Date();
+  const displayDate = startDate || endDate || today;
+  const offset = differenceInCalendarMonths(displayDate, today);
+  return offset;
+};
+
 class DateRangePicker extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       hoveredDate: null,
+      offset: calculateMonthOffset(props.initialStartDate, props.initialEndDate),
       startDate: props.initialStartDate,
       endDate: props.initialEndDate,
       isSettingStartDate: props.isSettingStartDate,
@@ -36,6 +44,8 @@ class DateRangePicker extends React.Component {
       onChangeEndDate(endDate);
     }
   }
+
+  onOffsetChanged = offset => this.setState({ offset });
 
   onMouseLeaveOfCalendar = () => this.setState({ hoveredDate: null });
 
@@ -128,15 +138,18 @@ class DateRangePicker extends React.Component {
       interactiveDisabledDates,
       ...rest
     } = this.props;
-
-    const selectedDates = [this.state.startDate, this.state.endDate];
+    const { startDate, endDate, offset } = this.state;
+    const selectedDates = [startDate, endDate];
 
     return (
       <Dayzed
         {...rest}
         selected={selectedDates}
+        date={new Date()}
+        offset={offset}
         monthsToDisplay={monthsToDisplay}
         onDateSelected={this.onDateSelected}
+        onOffsetChanged={this.onOffsetChanged}
         render={({
             calendars,
             getBackProps,
