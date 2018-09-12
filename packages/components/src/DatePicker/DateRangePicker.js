@@ -67,9 +67,10 @@ class DateRangePicker extends React.Component {
 
   notifyRangeSelection = () => {
     const { startDate, endDate } = this.state;
+    const { onRangeSelected } = this.props;
 
-    if (startDate && endDate) {
-      this.props.onRangeSelected({ startDate, endDate });
+    if (startDate && endDate && onRangeSelected) {
+      onRangeSelected({ startDate, endDate });
     }
   }
 
@@ -191,6 +192,7 @@ DateRangePicker.defaultProps = {
   initialEndDate: null,
   onChangeStartDate: null,
   onChangeEndDate: null,
+  onRangeSelected: null,
   isSettingStartDate: false,
   isSettingEndDate: false,
 };
@@ -208,7 +210,7 @@ DateRangePicker.propTypes = {
   initialEndDate: PropTypes.instanceOf(Date),
   onChangeStartDate: PropTypes.func,
   onChangeEndDate: PropTypes.func,
-  onRangeSelected: PropTypes.func.isRequired,
+  onRangeSelected: PropTypes.func,
   isSettingStartDate: PropTypes.bool,
   isSettingEndDate: PropTypes.bool,
 };
