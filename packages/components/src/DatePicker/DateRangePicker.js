@@ -1,27 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { themeGet } from 'styled-system';
 import { subDays, isEqual } from 'date-fns';
 import throttle from 'lodash/throttle';
 
-import { Flex, Box, Input } from '../';
+import { Flex, Box } from '../';
 
 import isDateInRange from './lib/isDateInRange';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
-
-const DateInput = Input.extend`
-  border: ${themeGet('borders.2')} ${themeGet('colors.greys.porcelain')};
-  color: transparent;
-  text-shadow: 0 0 0 ${themeGet('colors.greys.charcoal')};
-  border-color: ${props => ((props.highlight) ? themeGet('colors.brand.secondary') : themeGet('colors.greys.porcelain'))};
-`;
-
-DateInput.defaultProps = {
-  ...Input.defaultProps,
-  blacklist: [...Object.keys(Input.propTypes), 'highlight'],
-};
 
 class DateRangePicker extends React.Component {
   constructor(props) {
@@ -29,10 +16,10 @@ class DateRangePicker extends React.Component {
 
     this.state = {
       hoveredDate: null,
-      startDate: props.startDate,
-      endDate: props.endDate,
-      isSettingStartDate: props.setStartDate,
-      isSettingEndDate: props.setEndDate,
+      startDate: props.initialStartDate,
+      endDate: props.initialEndDate,
+      isSettingStartDate: props.isSettingStartDate,
+      isSettingEndDate: props.isSettingEndDate,
     };
   }
 
@@ -200,12 +187,12 @@ DateRangePicker.defaultProps = {
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   interactiveDisabledDates: false,
-  startDate: null,
-  endDate: null,
+  initialStartDate: null,
+  initialEndDate: null,
   onChangeStartDate: null,
   onChangeEndDate: null,
-  setStartDate: false,
-  setEndDate: false,
+  isSettingStartDate: false,
+  isSettingEndDate: false,
 };
 
 DateRangePicker.propTypes = {
@@ -217,13 +204,13 @@ DateRangePicker.propTypes = {
   interactiveDisabledDates: PropTypes.bool,
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
-  startDate: PropTypes.instanceOf(Date),
-  endDate: PropTypes.instanceOf(Date),
+  initialStartDate: PropTypes.instanceOf(Date),
+  initialEndDate: PropTypes.instanceOf(Date),
   onChangeStartDate: PropTypes.func,
   onChangeEndDate: PropTypes.func,
   onRangeSelected: PropTypes.func.isRequired,
-  setStartDate: PropTypes.bool,
-  setEndDate: PropTypes.bool,
+  isSettingStartDate: PropTypes.bool,
+  isSettingEndDate: PropTypes.bool,
 };
 
 export default DateRangePicker;

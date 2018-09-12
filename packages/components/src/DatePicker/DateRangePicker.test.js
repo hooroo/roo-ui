@@ -20,10 +20,10 @@ describe('<DateRangePicker />', () => {
   };
 
   const setup = (args = {}) => {
-    props.startDate = args.startDate || null;
-    props.endDate = args.endDate || null;
-    props.setStartDate = args.setStartDate || false;
-    props.setEndDate = args.setEndDate || false;
+    props.initialStartDate = args.initialStartDate || null;
+    props.initialEndDate = args.initialEndDate || null;
+    props.isSettingStartDate = args.isSettingStartDate || false;
+    props.isSettingEndDate = args.isSettingEndDate || false;
 
     wrapper = mountWithTheme(<DateRangePicker {...props} />, theme);
   };
@@ -60,11 +60,11 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('preselected range', () => {
-    const startDate = parse('2018-07-15');
-    const endDate = parse('2018-07-20');
+    const initialStartDate = parse('2018-07-15');
+    const initialEndDate = parse('2018-07-20');
 
     beforeEach(() => {
-      setup({ startDate, endDate });
+      setup({ initialStartDate, initialEndDate });
     });
 
     it('highlights dates in range', () => {
@@ -84,13 +84,13 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('when only start date is set', () => {
-    const startDate = parse('2018-07-15');
+    const initialStartDate = parse('2018-07-15');
 
-    describe('with setStartDate is false', () => {
-      const setStartDate = false;
+    describe('with isSettingStartDate is false', () => {
+      const isSettingStartDate = false;
 
       beforeEach(() => {
-        setup({ startDate, setStartDate });
+        setup({ initialStartDate, isSettingStartDate });
       });
 
       it('selects start date', () => {
@@ -192,11 +192,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setStartDate is true', () => {
-      const setStartDate = true;
+    describe('with isSettingStartDate is true', () => {
+      const isSettingStartDate = true;
 
       beforeEach(() => {
-        setup({ startDate, setStartDate });
+        setup({ initialStartDate, isSettingStartDate });
       });
 
       it('selects start date', () => {
@@ -298,11 +298,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setEndDate is true', () => {
-      const setEndDate = true;
+    describe('with isSettingEndDate is true', () => {
+      const isSettingEndDate = true;
 
       beforeEach(() => {
-        setup({ startDate, setEndDate });
+        setup({ initialStartDate, isSettingEndDate });
       });
 
       it('selects start date', () => {
@@ -406,14 +406,14 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('when start date & end date are set', () => {
-    const startDate = parse('2018-07-15');
-    const endDate = parse('2018-07-20');
+    const initialStartDate = parse('2018-07-15');
+    const initialEndDate = parse('2018-07-20');
 
-    describe('with setStartDate is true', () => {
-      const setStartDate = true;
+    describe('with isSettingStartDate is true', () => {
+      const isSettingStartDate = true;
 
       beforeEach(() => {
-        setup({ startDate, endDate, setStartDate });
+        setup({ initialStartDate, initialEndDate, isSettingStartDate });
       });
 
       describe('when click on a date < endDate', () => {
@@ -465,11 +465,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setEndDate is true', () => {
-      const setEndDate = true;
+    describe('with isSettingEndDate is true', () => {
+      const isSettingEndDate = true;
 
       beforeEach(() => {
-        setup({ startDate, endDate, setEndDate });
+        setup({ initialStartDate, initialEndDate, isSettingEndDate });
       });
 
       describe('when click on a date > startDate', () => {
@@ -521,11 +521,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setStartDate is false and setEndDate is false', () => {
+    describe('with isSettingStartDate is false and isSettingEndDate is false', () => {
       let newClickedDate;
 
       beforeEach(() => {
-        setup({ startDate, endDate });
+        setup({ initialStartDate, initialEndDate });
 
         wrapper.find('CalendarDay').at(22).find('button').simulate('click');
         wrapper.update();
