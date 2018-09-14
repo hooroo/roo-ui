@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/icons",
-  "version": "0.39.1",
+  "version": "0.54.0",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
