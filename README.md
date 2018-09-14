@@ -103,14 +103,14 @@ If your project is setup with Create React App you can skip this step. For Webpa
 
 ## FAQ’s
 
-- [How do I do layout in this new world?](#how-do-I-do-layout–in-this-new-world?)
-- [How do I do responsive styles?](#how-do-I-do-responsive-styles?)
-- [How do I change the font size?](#how-do-I-change-the-font-size?)
-- [How do I add spacing to elements?](#how-do-I-add-spacing-to-elements?)
-- [What’s a good example?](#whats-a-good-example?)
-- [How do I use the theme?](#how-do-I-use-the-theme?)
-- [How can I get help?](#how-can-I-get-help?)
-- [Can I contribute?](#can-I-contribute)
+- [How do I do layout in this new world?](#how-do-i-do-layout-in-this-new-world)
+- [How do I do responsive styles?](#how-do-i-do-layout-in-this-new-world)
+- [How do I change the font size?](#how-do-i-do-layout-in-this-new-world)
+- [How do I add spacing to elements?](#how-do-i-add-spacing-to-elements)
+- [What’s a good example?](#whats-a-good-usage-example)
+- [How do I use the theme?](#how-do-i-use-the-theme)
+- [How can I get help?](#how-can-i-get-help)
+- [Can I contribute?](#can-i-contribute)
 
 #### How do I do layout in this new world?
 You’ll most likely need to use these three components: `Container`, `Box` and `Flex`.
