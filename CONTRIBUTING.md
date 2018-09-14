@@ -8,7 +8,7 @@
 - [Adding components](#adding-components)
 - [Adding assets](#adding-new-assets)
 - [Deployment process](#deployment-process)
-- [FAQ’s](#faqs)
+- [FAQs](#faqs)
 
 ---
 
@@ -307,7 +307,7 @@ Get someone from another team to review the pull request. This gets other teams 
 
 Once a pull request is merged into master a Buildkite pipeline is triggered. It will deploy the new version of the package to NPM and deploy the latest storybook.
 
-## FAQ's
+## FAQs
 
 - [What goes into Roo UI?](#what-goes-into-roo-ui)
 - [Can I add a new dependency?](can-I-add-a-new-dependency)
