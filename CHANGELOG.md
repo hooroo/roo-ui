@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.54.0"></a>
+# [0.54.0](https://github.com/hooroo/roo-ui/compare/v0.53.0...v0.54.0) (2018-09-07)
+
+
+### Features
+
+* **icons:** add more qantas icons ([#166](https://github.com/hooroo/roo-ui/issues/166)) ([e877357](https://github.com/hooroo/roo-ui/commit/e877357))
+
+
+
+
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/hooroo/roo-ui/compare/v0.52.2...v0.53.0) (2018-09-06)
+
+
+### Features
+
+* **assets:** add red roo ([#165](https://github.com/hooroo/roo-ui/issues/165)) ([5f0e53e](https://github.com/hooroo/roo-ui/commit/5f0e53e))
+
+
+
+
+<a name="0.52.2"></a>
+## [0.52.2](https://github.com/hooroo/roo-ui/compare/v0.52.1...v0.52.2) (2018-08-27)
+
+
+### Bug Fixes
+
+* add focus style ([#164](https://github.com/hooroo/roo-ui/issues/164)) ([d86ab6a](https://github.com/hooroo/roo-ui/commit/d86ab6a))
+
+
+
+
+<a name="0.52.1"></a>
+## [0.52.1](https://github.com/hooroo/roo-ui/compare/v0.52.0...v0.52.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* Remove the border from the focus state of the DateRangePicker day ([cea0cda](https://github.com/hooroo/roo-ui/commit/cea0cda))
+
+
+
+
 <a name="0.52.0"></a>
 # [0.52.0](https://github.com/hooroo/roo-ui/compare/v0.51.1...v0.52.0) (2018-08-24)
 
