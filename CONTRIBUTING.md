@@ -300,20 +300,23 @@ Commit _types_ other than `fix:` and `feat:` are allowed:
 - **test:** Adding missing tests or correcting existing tests
 
 ### Pull request reviews
+
 Get someone from another team to review the pull request. This gets other teams across the new changes and helps with knowledge sharing.
 
 ## Deploying
-Once a pull request is merged into master a Buildkite pipeline is triggered.
-It will deploy the new version of the package to NPM and deploy the latest storybook.
+
+Once a pull request is merged into master a Buildkite pipeline is triggered. It will deploy the new version of the package to NPM and deploy the latest storybook.
 
 ## FAQ's
 
-- [What goes into roo-ui?](#what-goes-into-roo-ui)
+- [What goes into Roo UI?](#what-goes-into-roo-ui)
 - [Can I add a new dependency?](can-I-add-a-new-dependency)
 
-#### What goes into roo-ui?
+### What goes into Roo UI?
+
 Anything that is Qantas styled that could be used by another team. If you are unsure, chat to one of the designers or contributors.
 
-#### Can I add a new dependency?
-Ideally ro-ui should be unopinionated. This is so we don’t force consumers to install additional peer dependencies.
-Try to abstract away the new dependency, so that it logic lives in your consuming app and only the building blocks are in roo-ui.
+### Can I add a new dependency?
+
+Ideally Roo UI should be unopinionated. This is so we don’t force consumers to install additional peer dependencies.
+Try to abstract away the new dependency, so that it logic lives in your consuming app and only the building blocks are in Roo UI.
