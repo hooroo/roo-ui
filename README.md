@@ -14,7 +14,7 @@ If you want to jump and and play around with the project check out [roo ui playg
 - [Installation](#installation)
 - [FAQ’s](#faqs)
 - [Helpful resources](#helpful-resources)
-- [Contributing](#contributing)
+- [Contributing](https://github.com/hooroo/roo-ui/blob/master/CONTRIBUTING.md)
 
 ---
 
