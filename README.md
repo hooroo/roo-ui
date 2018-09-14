@@ -141,7 +141,7 @@ If you writing CSS in JS and want to access theme values you can use styled syst
 If you want to use a custom theme attribute that is outside the Styled System API, you’ll need to import the theme directly into your component.
 
 #### How can I get help?
-Theres is a few different ways. Chat to any of the contributors, pop a question in the #roo-ui slack channel or attend a Roo-ui working group.
+Theres is a few different ways. Chat to any of the contributors, pop a question in the #roo-ui slack channel or attend a roo-ui working group.
 
 #### Can I contribute?
 Yes, refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on adding new packages, or improving existing packages. Browse the issues and pick one up or send a pull request for a new package or asset.
