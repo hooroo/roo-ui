@@ -101,36 +101,6 @@ import 'normalize.css/normalize.css';
 If your project is setup with Create React App you can skip this step. For Webpack you'll need to setup [file loader](https://github.com/webpack-contrib/file-loader), [style loader](https://github.com/webpack-contrib/style-loader) and [CSS loader](https://github.com/webpack-contrib/css-loader).
 
 
-### Webpack
-
-Some of roo-ui's components and packages require Webpack loaders to be configured.
-
-#### File loader
-
-Configure [file-loader](https://github.com/webpack-contrib/file-loader) to load images, fonts, etc.:
-
-```js
-{
-  test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
-  use: ['file-loader'],
-}
-```
-
-Also consider configuring [url-loader](https://github.com/webpack-contrib/url-loader) to inline smaller assets.
-
-#### CSS loader
-
-Configure [style-loader](https://github.com/webpack-contrib/style-loader) and [css-loader](https://github.com/webpack-contrib/css-loader) to load CSS:
-
-```js
-{
-  test: /\.css$/,
-  use: ['style-loader', 'css-loader'],
-}
-```
-
-Also consider configuring [postcss-loader](https://github.com/postcss/postcss-loader) with [autoprefixer](https://github.com/postcss/autoprefixer) if you need vendor prefixes.
-
 ## FAQ’s
 
 - [How do I do layout in this new world?](#how-do-I-do-layout–in-this-new-world?)
