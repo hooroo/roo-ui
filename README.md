@@ -70,7 +70,7 @@ export default (
 );
 ```
 
-### Thememing
+### Theming
 
 To have consistent styles between our apps we should aim to use the default theme styles.
 
