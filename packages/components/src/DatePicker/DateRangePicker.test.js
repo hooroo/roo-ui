@@ -6,6 +6,9 @@ import { mountWithTheme } from '@roo-ui/test-utils';
 
 import DateRangePicker from './DateRangePicker';
 
+const rangeInclusive = (start = 0, end = 0) => range(start, end + 1);
+const getDayOfMonth = (wrapper, dayOfMonth) => wrapper.find('CalendarDay').at(dayOfMonth - 1);
+
 describe('<DateRangePicker />', () => {
   let wrapper;
 
@@ -94,9 +97,9 @@ describe('<DateRangePicker />', () => {
     });
 
     it('highlights dates in range', () => {
-      range(15, 18).forEach((index) => {
-        const date = wrapper.find('CalendarDay').at(index);
-        expect(date.props()).toEqual(expect.objectContaining({ highlighted: true }));
+      rangeInclusive(15, 20).forEach((index) => {
+        const day = getDayOfMonth(wrapper, index);
+        expect(day.props()).toEqual(expect.objectContaining({ highlighted: true }));
       });
     });
 

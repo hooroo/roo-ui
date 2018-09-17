@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { subDays, isEqual, differenceInCalendarMonths } from 'date-fns';
+import { subDays, isEqual, differenceInCalendarMonths, startOfDay, endOfDay } from 'date-fns';
 import throttle from 'lodash/throttle';
 
 import { Flex, Box } from '../';
@@ -21,13 +21,17 @@ class DateRangePicker extends React.Component {
   constructor(props) {
     super(props);
 
+    const { initialStartDate, initialEndDate } = this.props;
+    const startDate = initialStartDate ? startOfDay(initialStartDate) : null;
+    const endDate = initialEndDate ? endOfDay(initialEndDate) : null;
+
     this.state = {
       hoveredDate: null,
-      offset: calculateMonthOffset(props.initialStartDate, props.initialEndDate),
-      startDate: props.initialStartDate,
-      endDate: props.initialEndDate,
+      offset: calculateMonthOffset(startDate, endDate),
       isSettingStartDate: props.isSettingStartDate,
       isSettingEndDate: props.isSettingEndDate,
+      startDate,
+      endDate,
     };
   }
 
