@@ -27,10 +27,37 @@ describe('<DateRangePicker />', () => {
     wrapper = mountWithTheme(<DateRangePicker {...props} />, theme);
   };
 
-  describe('disabledDates', () => {
-    beforeEach(() => {
-      setup();
+  describe('when initial dates are passed in', () => {
+    describe('and those dates are in the same month as the minDate', () => {
+      const initialStartDate = new Date('2018-07-15');
+      const initialEndDate = new Date('2018-07-20');
+
+      beforeEach(() => setup({ initialStartDate, initialEndDate }));
+
+      it('displays the correct month', () => {
+        const MonthWrapper = wrapper.find('MonthWrapper');
+        expect(MonthWrapper.find('Text').first().text()).toEqual('Jul 2018');
+      });
     });
+
+    describe('and those dates are in advance of the minDate', () => {
+      const initialStartDate = new Date('2018-11-15');
+      const initialEndDate = new Date('2018-11-20');
+
+      beforeEach(() => setup({ initialStartDate, initialEndDate }));
+
+      it('displays the correct month', () => {
+        const MonthWrapper = wrapper.find('MonthWrapper');
+        expect(MonthWrapper.find('Text').first().text()).toEqual('Nov 2018');
+      });
+    });
+  });
+
+  describe('disabledDates', () => {
+    const initialStartDate = new Date('2018-07-15');
+    const initialEndDate = new Date('2018-07-20');
+
+    beforeEach(() => setup({ initialStartDate, initialEndDate }));
 
     it('disables dates in disabledDates array', () => {
       const date4 = wrapper.find('CalendarDay').at(3);
