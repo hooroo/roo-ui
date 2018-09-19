@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { subDays, isEqual, differenceInCalendarMonths, startOfDay, endOfDay } from 'date-fns';
+import { subDays, differenceInCalendarMonths, startOfDay, endOfDay, isSameDay } from 'date-fns';
 import throttle from 'lodash/throttle';
 
 import { Flex, Box } from '../';
@@ -9,6 +9,8 @@ import { Flex, Box } from '../';
 import isDateInRange from './lib/isDateInRange';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
+
+const NOOP = () => false;
 
 const calculateMonthOffset = (startDate = null, endDate = null) => {
   const today = new Date();
@@ -38,14 +40,11 @@ class DateRangePicker extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     const { startDate, endDate } = this.state;
     const { startDate: prevStartDate, endDate: prevEndDate } = prevState;
-    const { onChangeStartDate, onChangeEndDate } = this.props;
+    const startDateDidUpdate = !isSameDay(startDate, prevStartDate);
+    const endDateDidUpdate = !isSameDay(endDate, prevEndDate);
 
-    if (!isEqual(startDate, prevStartDate) && onChangeStartDate) {
-      onChangeStartDate(startDate);
-    }
-
-    if (!isEqual(endDate, prevEndDate) && onChangeEndDate) {
-      onChangeEndDate(endDate);
+    if (startDateDidUpdate || endDateDidUpdate) {
+      this.props.onChangeDates({ startDate, endDate });
     }
   }
 
@@ -209,9 +208,10 @@ DateRangePicker.defaultProps = {
   initialEndDate: null,
   onChangeStartDate: null,
   onChangeEndDate: null,
-  onRangeSelected: null,
   isSettingStartDate: false,
   isSettingEndDate: false,
+  onRangeSelected: NOOP,
+  onChangeDates: NOOP,
 };
 
 DateRangePicker.propTypes = {
@@ -225,11 +225,10 @@ DateRangePicker.propTypes = {
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
   initialStartDate: PropTypes.instanceOf(Date),
   initialEndDate: PropTypes.instanceOf(Date),
-  onChangeStartDate: PropTypes.func,
-  onChangeEndDate: PropTypes.func,
-  onRangeSelected: PropTypes.func,
   isSettingStartDate: PropTypes.bool,
   isSettingEndDate: PropTypes.bool,
+  onRangeSelected: PropTypes.func,
+  onChangeDates: PropTypes.func,
 };
 
 export default DateRangePicker;
