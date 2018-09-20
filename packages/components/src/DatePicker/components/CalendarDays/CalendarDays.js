@@ -16,7 +16,7 @@ const getCustomDateProps = (disabledDates, interactiveDisabledDates, isInRange, 
     .some(disabledDate => isEqual(String(disabledDate), String(day.date)));
 
   const props = {
-    selected: day.selected,
+    selected: day.selected || (interactiveDisabledDates && day.selectable),
     highlighted: isInRange(day.date),
     selectable: day.selectable,
   };
