@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { isSameDay } from 'date-fns';
+import isEqual from 'lodash/isEqual';
 
 import { Flex } from '../../../';
 import { CalendarDay, CalendarEmptyDay } from '../CalendarDay';
@@ -13,8 +13,8 @@ const CalendarDaysWrapper = Flex.extend`
 
 const getCustomDateProps = (disabledDates, interactiveDisabledDates, isInRange, day) => {
   const isDisabled = disabledDates
-    .filter(disabledDate => isSameDay(disabledDate, day.date))
-    .length;
+    .some(disabledDate => isEqual(String(disabledDate), String(day.date)));
+
   const props = {
     selected: day.selected,
     highlighted: isInRange(day.date),
