@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Dayzed from 'dayzed';
 import { subDays, differenceInCalendarMonths, startOfDay, endOfDay, isSameDay } from 'date-fns';
 import throttle from 'lodash/throttle';
@@ -11,6 +12,10 @@ import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 
 const NOOP = () => false;
+
+const Wrapper = styled(Box)`
+  position: relative;
+`;
 
 const calculateMonthOffset = (startDate = null, endDate = null) => {
   const today = new Date();
@@ -162,7 +167,7 @@ class DateRangePicker extends React.Component {
             if (!calendars.length) return null;
 
             return (
-              <Box onMouseLeave={this.onMouseLeaveOfCalendar}>
+              <Wrapper onMouseLeave={this.onMouseLeaveOfCalendar}>
                 <CalendarNav
                   prevProps={getBackProps({ calendars })}
                   nextProps={getForwardProps({ calendars })}
@@ -187,7 +192,7 @@ class DateRangePicker extends React.Component {
                     />
                   ))}
                 </Flex>
-              </Box>
+              </Wrapper>
             );
           }}
       />
