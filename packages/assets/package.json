@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/assets",
-  "version": "0.53.0",
+  "version": "0.54.2",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
