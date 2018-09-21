@@ -1,4 +1,5 @@
 import React from 'react';
+import { parse } from 'date-fns';
 import range from 'lodash/range';
 import { qantas as theme } from '@roo-ui/themes';
 import { mountWithTheme } from '@roo-ui/test-utils';
@@ -9,13 +10,13 @@ describe('<DateRangePicker />', () => {
   let wrapper;
 
   const props = {
-    minDate: new Date('2018-07-01'),
-    maxDate: new Date('2018-07-31'),
+    minDate: parse('2018-07-01'),
+    maxDate: parse('2018-07-31'),
     onRangeSelected: jest.fn,
     monthsToDisplay: 1,
     stacked: true,
     weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-    disabledDates: [new Date('2018-07-04'), new Date('2018-07-05')],
+    disabledDates: [parse('2018-07-04'), parse('2018-07-05')],
   };
 
   const setup = (args = {}) => {
@@ -59,8 +60,8 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('preselected range', () => {
-    const startDate = new Date('2018-07-15');
-    const endDate = new Date('2018-07-20');
+    const startDate = parse('2018-07-15');
+    const endDate = parse('2018-07-20');
 
     beforeEach(() => {
       setup({ startDate, endDate });
@@ -83,7 +84,7 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('when only start date is set', () => {
-    const startDate = new Date('2018-07-15');
+    const startDate = parse('2018-07-15');
 
     describe('with setStartDate is false', () => {
       const setStartDate = false;
@@ -405,8 +406,8 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('when start date & end date are set', () => {
-    const startDate = new Date('2018-07-15');
-    const endDate = new Date('2018-07-20');
+    const startDate = parse('2018-07-15');
+    const endDate = parse('2018-07-20');
 
     describe('with setStartDate is true', () => {
       const setStartDate = true;
