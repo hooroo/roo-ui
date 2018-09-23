@@ -17,11 +17,9 @@ const Wrapper = styled(Box)`
   position: relative;
 `;
 
-const calculateMonthOffset = (startDate = null, endDate = null) => {
+const calcuateMonthOffsetFromToday = (focusDate) => {
   const today = new Date();
-  const displayDate = startDate || endDate || today;
-  const offset = differenceInCalendarMonths(displayDate, today);
-  return offset;
+  return differenceInCalendarMonths(focusDate, today);
 };
 
 class DateRangePicker extends React.Component {
@@ -31,10 +29,11 @@ class DateRangePicker extends React.Component {
     const { initialStartDate, initialEndDate } = this.props;
     const startDate = initialStartDate ? startOfDay(initialStartDate) : null;
     const endDate = initialEndDate ? endOfDay(initialEndDate) : null;
+    const focusDate = startDate || endDate || new Date();
 
     this.state = {
       hoveredDate: null,
-      offset: calculateMonthOffset(startDate, endDate),
+      offset: calcuateMonthOffsetFromToday(focusDate),
       isSettingStartDate: props.isSettingStartDate,
       isSettingEndDate: props.isSettingEndDate,
       startDate,
