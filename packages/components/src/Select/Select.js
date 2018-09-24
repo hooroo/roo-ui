@@ -22,7 +22,7 @@ const IconWrapper = styled.div`
   pointer-events: none;
 
   ${props => props.disabled && css`
-    opacity: 0.7;
+    opacity: ${themeGet('opacity.disabled')};
   `}
 `;
 

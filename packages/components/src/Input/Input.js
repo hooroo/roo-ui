@@ -24,7 +24,7 @@ const Input = styled(tag)`
   }
 
   &:disabled {
-    opacity: 0.7;
+    opacity: ${themeGet('opacity.disabled')};
     cursor: not-allowed;
   }
 

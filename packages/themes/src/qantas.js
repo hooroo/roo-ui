@@ -232,6 +232,10 @@ const gutters = {
   default: 3,
 };
 
+const opacity = {
+  disabled: 0.7,
+}
+
 export default {
   gutters,
   colors,
@@ -251,4 +255,5 @@ export default {
   letterSpacings,
   buttons,
   alertStyles,
+  opacity,
 };
