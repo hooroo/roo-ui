@@ -1,54 +1,53 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { themeGet } from 'styled-system';
-import { subDays, isEqual } from 'date-fns';
+import { subDays, differenceInCalendarMonths, startOfDay, endOfDay, isSameDay } from 'date-fns';
 import throttle from 'lodash/throttle';
 
-import { Flex, Box, Input } from '../';
+import { Flex, Box } from '../';
 
 import isDateInRange from './lib/isDateInRange';
 import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 
-const DateInput = Input.extend`
-  border: ${themeGet('borders.2')} ${themeGet('colors.greys.porcelain')};
-  color: transparent;
-  text-shadow: 0 0 0 ${themeGet('colors.greys.charcoal')};
-  border-color: ${props => ((props.highlight) ? themeGet('colors.brand.secondary') : themeGet('colors.greys.porcelain'))};
-`;
+const NOOP = () => false;
 
-DateInput.defaultProps = {
-  ...Input.defaultProps,
-  blacklist: [...Object.keys(Input.propTypes), 'highlight'],
+const calcuateMonthOffsetFromToday = (focusDate) => {
+  const today = new Date();
+  return differenceInCalendarMonths(focusDate, today);
 };
 
 class DateRangePicker extends React.Component {
   constructor(props) {
     super(props);
 
+    const { initialStartDate, initialEndDate } = this.props;
+    const startDate = initialStartDate ? startOfDay(initialStartDate) : null;
+    const endDate = initialEndDate ? endOfDay(initialEndDate) : null;
+    const focusDate = startDate || endDate || new Date();
+
     this.state = {
       hoveredDate: null,
-      startDate: props.startDate,
-      endDate: props.endDate,
-      isSettingStartDate: props.setStartDate,
-      isSettingEndDate: props.setEndDate,
+      offset: calcuateMonthOffsetFromToday(focusDate),
+      isSettingStartDate: props.isSettingStartDate,
+      isSettingEndDate: props.isSettingEndDate,
+      startDate,
+      endDate,
     };
   }
 
   componentDidUpdate(prevProps, prevState) {
     const { startDate, endDate } = this.state;
     const { startDate: prevStartDate, endDate: prevEndDate } = prevState;
-    const { onChangeStartDate, onChangeEndDate } = this.props;
+    const startDateDidUpdate = !isSameDay(startDate, prevStartDate);
+    const endDateDidUpdate = !isSameDay(endDate, prevEndDate);
 
-    if (!isEqual(startDate, prevStartDate) && onChangeStartDate) {
-      onChangeStartDate(startDate);
-    }
-
-    if (!isEqual(endDate, prevEndDate) && onChangeEndDate) {
-      onChangeEndDate(endDate);
+    if (startDateDidUpdate || endDateDidUpdate) {
+      this.props.onChangeDates({ startDate, endDate });
     }
   }
+
+  onOffsetChanged = offset => this.setState({ offset });
 
   onMouseLeaveOfCalendar = () => this.setState({ hoveredDate: null });
 
@@ -80,9 +79,10 @@ class DateRangePicker extends React.Component {
 
   notifyRangeSelection = () => {
     const { startDate, endDate } = this.state;
+    const { onRangeSelected } = this.props;
 
-    if (startDate && endDate) {
-      this.props.onRangeSelected({ startDate, endDate });
+    if (startDate && endDate && onRangeSelected) {
+      onRangeSelected({ startDate, endDate });
     }
   }
 
@@ -140,15 +140,18 @@ class DateRangePicker extends React.Component {
       interactiveDisabledDates,
       ...rest
     } = this.props;
-
-    const selectedDates = [this.state.startDate, this.state.endDate];
+    const { startDate, endDate, offset } = this.state;
+    const selectedDates = [startDate, endDate];
 
     return (
       <Dayzed
         {...rest}
         selected={selectedDates}
+        date={new Date()}
+        offset={offset}
         monthsToDisplay={monthsToDisplay}
         onDateSelected={this.onDateSelected}
+        onOffsetChanged={this.onOffsetChanged}
         render={({
             calendars,
             getBackProps,
@@ -158,7 +161,7 @@ class DateRangePicker extends React.Component {
             if (!calendars.length) return null;
 
             return (
-              <Box onMouseLeave={this.onMouseLeaveOfCalendar}>
+              <Box onMouseLeave={this.onMouseLeaveOfCalendar} position="relative">
                 <CalendarNav
                   prevProps={getBackProps({ calendars })}
                   nextProps={getForwardProps({ calendars })}
@@ -200,12 +203,14 @@ DateRangePicker.defaultProps = {
   monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   interactiveDisabledDates: false,
-  startDate: null,
-  endDate: null,
+  initialStartDate: null,
+  initialEndDate: null,
   onChangeStartDate: null,
   onChangeEndDate: null,
-  setStartDate: false,
-  setEndDate: false,
+  isSettingStartDate: false,
+  isSettingEndDate: false,
+  onRangeSelected: NOOP,
+  onChangeDates: NOOP,
 };
 
 DateRangePicker.propTypes = {
@@ -217,13 +222,12 @@ DateRangePicker.propTypes = {
   interactiveDisabledDates: PropTypes.bool,
   monthNames: PropTypes.arrayOf(PropTypes.string),
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
-  startDate: PropTypes.instanceOf(Date),
-  endDate: PropTypes.instanceOf(Date),
-  onChangeStartDate: PropTypes.func,
-  onChangeEndDate: PropTypes.func,
-  onRangeSelected: PropTypes.func.isRequired,
-  setStartDate: PropTypes.bool,
-  setEndDate: PropTypes.bool,
+  initialStartDate: PropTypes.instanceOf(Date),
+  initialEndDate: PropTypes.instanceOf(Date),
+  isSettingStartDate: PropTypes.bool,
+  isSettingEndDate: PropTypes.bool,
+  onRangeSelected: PropTypes.func,
+  onChangeDates: PropTypes.func,
 };
 
 export default DateRangePicker;

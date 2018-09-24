@@ -6,12 +6,14 @@ import { mountWithTheme } from '@roo-ui/test-utils';
 
 import DateRangePicker from './DateRangePicker';
 
+const rangeInclusive = (start = 0, end = 0) => range(start, end + 1);
+const getDayOfMonth = (wrapper, dayOfMonth) => wrapper.find('CalendarDay').at(dayOfMonth - 1);
+
 describe('<DateRangePicker />', () => {
   let wrapper;
 
-  const props = {
+  const defaultProps = {
     minDate: parse('2018-07-01'),
-    maxDate: parse('2018-07-31'),
     onRangeSelected: jest.fn,
     monthsToDisplay: 1,
     stacked: true,
@@ -20,18 +22,41 @@ describe('<DateRangePicker />', () => {
   };
 
   const setup = (args = {}) => {
-    props.startDate = args.startDate || null;
-    props.endDate = args.endDate || null;
-    props.setStartDate = args.setStartDate || false;
-    props.setEndDate = args.setEndDate || false;
-
+    const props = { ...defaultProps, ...args };
     wrapper = mountWithTheme(<DateRangePicker {...props} />, theme);
   };
 
-  describe('disabledDates', () => {
-    beforeEach(() => {
-      setup();
+  describe('when initial dates are passed in', () => {
+    describe('and those dates are in the same month as the minDate', () => {
+      const initialStartDate = new Date('2018-07-15');
+      const initialEndDate = new Date('2018-07-20');
+
+      beforeEach(() => setup({ initialStartDate, initialEndDate }));
+
+      it('displays the correct month', () => {
+        const MonthWrapper = wrapper.find('MonthWrapper');
+        expect(MonthWrapper.find('Text').first().text()).toEqual('Jul 2018');
+      });
     });
+
+    describe('and those dates are in advance of the minDate', () => {
+      const initialStartDate = new Date('2018-11-15');
+      const initialEndDate = new Date('2018-11-20');
+
+      beforeEach(() => setup({ initialStartDate, initialEndDate }));
+
+      it('displays the correct month', () => {
+        const MonthWrapper = wrapper.find('MonthWrapper');
+        expect(MonthWrapper.find('Text').first().text()).toEqual('Nov 2018');
+      });
+    });
+  });
+
+  describe('disabledDates', () => {
+    const initialStartDate = new Date('2018-07-15');
+    const initialEndDate = new Date('2018-07-20');
+
+    beforeEach(() => setup({ initialStartDate, initialEndDate }));
 
     it('disables dates in disabledDates array', () => {
       const date4 = wrapper.find('CalendarDay').at(3);
@@ -60,17 +85,17 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('preselected range', () => {
-    const startDate = parse('2018-07-15');
-    const endDate = parse('2018-07-20');
+    const initialStartDate = parse('2018-07-15');
+    const initialEndDate = parse('2018-07-20');
 
     beforeEach(() => {
-      setup({ startDate, endDate });
+      setup({ initialStartDate, initialEndDate });
     });
 
     it('highlights dates in range', () => {
-      range(15, 18).forEach((index) => {
-        const date = wrapper.find('CalendarDay').at(index);
-        expect(date.props()).toEqual(expect.objectContaining({ highlighted: true }));
+      rangeInclusive(15, 20).forEach((index) => {
+        const day = getDayOfMonth(wrapper, index);
+        expect(day.props()).toEqual(expect.objectContaining({ highlighted: true }));
       });
     });
 
@@ -83,14 +108,48 @@ describe('<DateRangePicker />', () => {
     });
   });
 
-  describe('when only start date is set', () => {
-    const startDate = parse('2018-07-15');
+  describe('callbacks', () => {
+    let callback;
 
-    describe('with setStartDate is false', () => {
-      const setStartDate = false;
+    describe('when selecting three sequential days', () => {
+      beforeEach(() => {
+        callback = jest.fn();
+        setup({ onChangeDates: callback });
+        getDayOfMonth(wrapper, 1).find('button').simulate('click');
+        getDayOfMonth(wrapper, 2).find('button').simulate('click');
+        getDayOfMonth(wrapper, 3).find('button').simulate('click');
+        wrapper.update();
+      });
+
+      it('calls the callback three times', () => {
+        expect(callback).toHaveBeenCalledTimes(3);
+      });
+
+      it('calls the first callback with only the correct start date', () => {
+        expect(callback.mock.calls[0][0].startDate.toLocaleString()).toEqual('2018-9-1 00:00:00');
+        expect(callback.mock.calls[0][0].endDate).toBeNull();
+      });
+
+      it('calls the second callback with the correct start and end dates', () => {
+        expect(callback.mock.calls[1][0].startDate.toLocaleString()).toEqual('2018-9-1 00:00:00');
+        expect(callback.mock.calls[1][0].endDate.toLocaleString()).toEqual('2018-9-2 00:00:00');
+      });
+
+      it('calls the third callback with the correct start date and resets the end date', () => {
+        expect(callback.mock.calls[2][0].startDate.toLocaleString()).toEqual('2018-9-3 00:00:00');
+        expect(callback.mock.calls[2][0].endDate).toBeNull();
+      });
+    });
+  });
+
+  describe('when only start date is set', () => {
+    const initialStartDate = parse('2018-07-15');
+
+    describe('with isSettingStartDate is false', () => {
+      const isSettingStartDate = false;
 
       beforeEach(() => {
-        setup({ startDate, setStartDate });
+        setup({ initialStartDate, isSettingStartDate });
       });
 
       it('selects start date', () => {
@@ -192,11 +251,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setStartDate is true', () => {
-      const setStartDate = true;
+    describe('with isSettingStartDate is true', () => {
+      const isSettingStartDate = true;
 
       beforeEach(() => {
-        setup({ startDate, setStartDate });
+        setup({ initialStartDate, isSettingStartDate });
       });
 
       it('selects start date', () => {
@@ -298,11 +357,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setEndDate is true', () => {
-      const setEndDate = true;
+    describe('with isSettingEndDate is true', () => {
+      const isSettingEndDate = true;
 
       beforeEach(() => {
-        setup({ startDate, setEndDate });
+        setup({ initialStartDate, isSettingEndDate });
       });
 
       it('selects start date', () => {
@@ -406,14 +465,14 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('when start date & end date are set', () => {
-    const startDate = parse('2018-07-15');
-    const endDate = parse('2018-07-20');
+    const initialStartDate = parse('2018-07-15');
+    const initialEndDate = parse('2018-07-20');
 
-    describe('with setStartDate is true', () => {
-      const setStartDate = true;
+    describe('with isSettingStartDate is true', () => {
+      const isSettingStartDate = true;
 
       beforeEach(() => {
-        setup({ startDate, endDate, setStartDate });
+        setup({ initialStartDate, initialEndDate, isSettingStartDate });
       });
 
       describe('when click on a date < endDate', () => {
@@ -465,11 +524,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setEndDate is true', () => {
-      const setEndDate = true;
+    describe('with isSettingEndDate is true', () => {
+      const isSettingEndDate = true;
 
       beforeEach(() => {
-        setup({ startDate, endDate, setEndDate });
+        setup({ initialStartDate, initialEndDate, isSettingEndDate });
       });
 
       describe('when click on a date > startDate', () => {
@@ -521,11 +580,11 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('with setStartDate is false and setEndDate is false', () => {
+    describe('with isSettingStartDate is false and isSettingEndDate is false', () => {
       let newClickedDate;
 
       beforeEach(() => {
-        setup({ startDate, endDate });
+        setup({ initialStartDate, initialEndDate });
 
         wrapper.find('CalendarDay').at(22).find('button').simulate('click');
         wrapper.update();
