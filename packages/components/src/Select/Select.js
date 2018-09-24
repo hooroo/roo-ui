@@ -1,6 +1,6 @@
 import React from 'react';
 import cleanElement from 'clean-element';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 
 import { Icon, Input } from '..';
@@ -20,17 +20,25 @@ const IconWrapper = styled.div`
   top: 0.75rem;
   right: 0;
   pointer-events: none;
+
+  ${props => props.disabled && css`
+    opacity: 0.7;
+  `}
 `;
 
 const Base = props => (
   <Wrapper>
     <CleanSelect {...props} />
 
-    <IconWrapper>
-      <Icon name="expandMore" size={24} mr={2} />
-    </IconWrapper>
+    {!props.readOnly && (
+      <IconWrapper disabled={props.disabled}>
+        <Icon name="expandMore" size={24} mr={2} />
+      </IconWrapper>
+    )}
   </Wrapper>
 );
+
+Base.propTypes = Input.propTypes;
 
 const Select = Input.extend`
   border-radius: 0;

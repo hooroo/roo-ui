@@ -20,4 +20,14 @@ describe('<Input />', () => {
     wrapper = shallowWithTheme(<label htmlFor="input">Label<Input /></label>, theme);
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
+
+  describe('underline', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(<Input underline />, theme);
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 });
