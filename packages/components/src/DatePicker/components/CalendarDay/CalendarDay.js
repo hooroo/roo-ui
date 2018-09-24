@@ -11,9 +11,7 @@ const DayWrapper = Box.extend`
   width: calc(100% / 7);
   margin: 0 -1px -1px 0;
   position: relative;
-  ${props => css`
-    border: ${themeGet('borders.1')} ${darken(0.1, themeGet('colors.greys.alto')(props))};
-  `}
+  border: ${themeGet('borders.1')} transparent;
 
   &:after {
     content: "";

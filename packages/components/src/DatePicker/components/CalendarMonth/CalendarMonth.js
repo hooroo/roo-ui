@@ -23,6 +23,8 @@ const MonthWrapper = Box.extend`
     `};
 `;
 
+MonthWrapper.displayName = 'MonthWrapper';
+
 const CalendarMonth = ({
   monthsToDisplay, month, monthName, year, stacked, weekdayNames,
   weeks, getDateProps, disabledDates, interactiveDisabledDates,
