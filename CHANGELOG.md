@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.54.3"></a>
+## [0.54.3](https://github.com/hooroo/roo-ui/compare/v0.54.2...v0.54.3) (2018-09-24)
+
+
+### Bug Fixes
+
+* DateRangePicker offset bug and props refactor ([#169](https://github.com/hooroo/roo-ui/issues/169)) ([aa8d64a](https://github.com/hooroo/roo-ui/commit/aa8d64a))
+
+
+
+
 <a name="0.54.2"></a>
 ## [0.54.2](https://github.com/hooroo/roo-ui/compare/v0.54.1...v0.54.2) (2018-09-21)
 
