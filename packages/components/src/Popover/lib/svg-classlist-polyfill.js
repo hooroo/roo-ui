@@ -6,8 +6,8 @@ if (!('classList' in SVGElement.prototype)) {
       return {
         contains: className => (
           this.className.baseVal.split(' ').indexOf(className) !== -1
-        )
+        ),
       };
-    }
+    },
   });
 }
