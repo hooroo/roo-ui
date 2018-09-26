@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.54.4"></a>
+## [0.54.4](https://github.com/hooroo/roo-ui/compare/v0.54.3...v0.54.4) (2018-09-26)
+
+
+### Bug Fixes
+
+* fix error when user clicks a svg element in IE11 ([#173](https://github.com/hooroo/roo-ui/issues/173)) ([3f39376](https://github.com/hooroo/roo-ui/commit/3f39376))
+
+
+
+
 <a name="0.54.3"></a>
 ## [0.54.3](https://github.com/hooroo/roo-ui/compare/v0.54.2...v0.54.3) (2018-09-24)
 
