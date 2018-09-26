@@ -39,9 +39,8 @@ describe('<CalendarDays />', () => {
   };
 
   const setup = (params = {}) => {
-    props.isInRange = params.isInRange;
-    props.onMouseEnterOfDay = params.onMouseEnterOfDay;
-    wrapper = shallowWithTheme(<CalendarDays {...props} />, theme);
+    const newProps = { ...props, ...params };
+    wrapper = shallowWithTheme(<CalendarDays {...newProps} />, theme);
   };
 
   it('renders correctly', () => {
@@ -62,10 +61,24 @@ describe('<CalendarDays />', () => {
 
       describe('when isInRange is true', () => {
         it('props.highlighted is true', () => {
-          setup({
-            isInRange: () => true,
-          });
+          setup({ isInRange: () => true });
           expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(true);
+        });
+      });
+    });
+
+    describe('disabled', () => {
+      describe('when disabled dates are provided', () => {
+        beforeEach(() => setup({ disabledDates: [startDate, addDays(startDate, 1)] }));
+
+        it('provided dates are disabled', () => {
+          expect(wrapper.find('CalendarDay').at(0).prop('disabled')).toEqual(true);
+          expect(wrapper.find('CalendarDay').at(1).prop('disabled')).toEqual(true);
+        });
+
+        it('other dates are not disabled', () => {
+          expect(wrapper.find('CalendarDay').at(2).prop('disabled')).toEqual(false);
+          expect(wrapper.find('CalendarDay').at(3).prop('disabled')).toEqual(false);
         });
       });
     });

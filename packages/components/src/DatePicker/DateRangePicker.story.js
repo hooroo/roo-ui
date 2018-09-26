@@ -17,15 +17,12 @@ storiesOf('Components|DateRangePicker', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <DateRangePicker
-      monthsToDisplay={number('Months to display', 1)}
-      minDate={date}
-      startDate={addDays(date, 3)}
-      endDate={addDays(date, 7)}
+      monthsToDisplay={number('Months to display', 2)}
       stacked={boolean('Stacked', false)}
-      setStartDate={boolean('Change start date', false)}
-      setEndDate={boolean('Change end date', false)}
-      onRangeSelected={console.log} // eslint-disable-line no-console
-      onChangeStartDate={console.log} // eslint-disable-line no-console
-      onChangeEndDate={console.log} // eslint-disable-line no-console
+      minDate={date}
+      initialStartDate={addDays(date, 3)}
+      initialEndDate={addDays(date, 7)}
+      isSettingStartDate={false}
+      isSettingEndDate={false}
     />
   ));
