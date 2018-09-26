@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
 import { subDays, differenceInCalendarMonths, startOfDay, endOfDay, isSameDay } from 'date-fns';
-import throttle from 'lodash/throttle';
+import throttle from 'lodash/fp/throttle';
 
 import { Flex, Box } from '../';
 
@@ -11,6 +11,7 @@ import CalendarNav from './components/CalendarNav';
 import CalendarMonth from './components/CalendarMonth';
 
 const NOOP = () => false;
+const throttled = throttle(10);
 
 const calcuateMonthOffsetFromToday = (focusDate) => {
   const today = new Date();
@@ -51,13 +52,11 @@ class DateRangePicker extends React.Component {
 
   onMouseLeaveOfCalendar = () => this.setState({ hoveredDate: null });
 
-  onMouseEnterOfDay = (hoveredDate) => {
-    throttle(() => {
-      if (this.state.startDate && !this.state.endDate) {
-        this.setState({ hoveredDate: hoveredDate.date });
-      }
-    }, 10)();
-  }
+  onMouseEnterOfDay = throttled((hoveredDate) => {
+    if (this.state.startDate && !this.state.endDate) {
+      this.setState({ hoveredDate: hoveredDate.date });
+    }
+  })
 
   onDateSelected = ({ selectable, date }) => {
     if (!selectable) return;
