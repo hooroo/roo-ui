@@ -13,23 +13,18 @@ import CalendarMonth from './components/CalendarMonth';
 const NOOP = () => false;
 const throttled = throttle(10);
 
-const calcuateMonthOffsetFromToday = (focusDate) => {
-  const today = new Date();
-  return differenceInCalendarMonths(focusDate, today);
-};
-
 class DateRangePicker extends React.Component {
   constructor(props) {
     super(props);
 
-    const { initialStartDate, initialEndDate } = this.props;
+    const { initialStartDate, initialEndDate, initialDisplayDate } = this.props;
     const startDate = initialStartDate ? startOfDay(initialStartDate) : null;
     const endDate = initialEndDate ? endOfDay(initialEndDate) : null;
-    const focusDate = startDate || endDate || new Date();
+    const focusDate = startDate || endDate || initialDisplayDate;
 
     this.state = {
       hoveredDate: null,
-      offset: calcuateMonthOffsetFromToday(focusDate),
+      offset: differenceInCalendarMonths(focusDate, initialDisplayDate),
       isSettingStartDate: props.isSettingStartDate,
       isSettingEndDate: props.isSettingEndDate,
       startDate,
@@ -137,6 +132,7 @@ class DateRangePicker extends React.Component {
       stacked,
       disabledDates,
       interactiveDisabledDates,
+      initialDisplayDate,
       ...rest
     } = this.props;
     const { startDate, endDate, offset } = this.state;
@@ -146,7 +142,7 @@ class DateRangePicker extends React.Component {
       <Dayzed
         {...rest}
         selected={selectedDates}
-        date={new Date()}
+        date={initialDisplayDate}
         offset={offset}
         monthsToDisplay={monthsToDisplay}
         onDateSelected={this.onDateSelected}
@@ -204,6 +200,7 @@ DateRangePicker.defaultProps = {
   interactiveDisabledDates: false,
   initialStartDate: null,
   initialEndDate: null,
+  initialDisplayDate: new Date(),
   onChangeStartDate: null,
   onChangeEndDate: null,
   isSettingStartDate: false,
@@ -223,6 +220,7 @@ DateRangePicker.propTypes = {
   weekdayNames: PropTypes.arrayOf(PropTypes.string),
   initialStartDate: PropTypes.instanceOf(Date),
   initialEndDate: PropTypes.instanceOf(Date),
+  initialDisplayDate: PropTypes.instanceOf(Date),
   isSettingStartDate: PropTypes.bool,
   isSettingEndDate: PropTypes.bool,
   onRangeSelected: PropTypes.func,
