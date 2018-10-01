@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.54.5"></a>
+## [0.54.5](https://github.com/hooroo/roo-ui/compare/v0.54.4...v0.54.5) (2018-10-01)
+
+
+### Bug Fixes
+
+* datepicker tests that rely on current date ([#175](https://github.com/hooroo/roo-ui/issues/175)) ([d6f0e17](https://github.com/hooroo/roo-ui/commit/d6f0e17))
+
+
+
+
 <a name="0.54.4"></a>
 ## [0.54.4](https://github.com/hooroo/roo-ui/compare/v0.54.3...v0.54.4) (2018-09-26)
 
