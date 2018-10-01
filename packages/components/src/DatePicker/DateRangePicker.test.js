@@ -1,11 +1,12 @@
 import React from 'react';
-import { parse } from 'date-fns';
+import { parse, format } from 'date-fns';
 import range from 'lodash/range';
 import { qantas as theme } from '@roo-ui/themes';
 import { mountWithTheme } from '@roo-ui/test-utils';
 
 import DateRangePicker from './DateRangePicker';
 
+const dateToString = date => format(date, 'YYYY-MM-DD');
 const rangeInclusive = (start = 0, end = 0) => range(start, end + 1);
 const getDayOfMonth = (wrapper, dayOfMonth) => wrapper.find('CalendarDay').at(dayOfMonth - 1);
 
@@ -114,7 +115,8 @@ describe('<DateRangePicker />', () => {
     describe('when selecting three sequential days', () => {
       beforeEach(() => {
         callback = jest.fn();
-        setup({ onChangeDates: callback });
+        const initialDisplayDate = parse('2018-07-15');
+        setup({ initialDisplayDate, onChangeDates: callback });
         getDayOfMonth(wrapper, 1).find('button').simulate('click');
         getDayOfMonth(wrapper, 2).find('button').simulate('click');
         getDayOfMonth(wrapper, 3).find('button').simulate('click');
@@ -126,17 +128,17 @@ describe('<DateRangePicker />', () => {
       });
 
       it('calls the first callback with only the correct start date', () => {
-        expect(callback.mock.calls[0][0].startDate.toLocaleString()).toEqual('2018-9-1 00:00:00');
+        expect(dateToString(callback.mock.calls[0][0].startDate)).toEqual('2018-07-01');
         expect(callback.mock.calls[0][0].endDate).toBeNull();
       });
 
       it('calls the second callback with the correct start and end dates', () => {
-        expect(callback.mock.calls[1][0].startDate.toLocaleString()).toEqual('2018-9-1 00:00:00');
-        expect(callback.mock.calls[1][0].endDate.toLocaleString()).toEqual('2018-9-2 00:00:00');
+        expect(dateToString(callback.mock.calls[1][0].startDate)).toEqual('2018-07-01');
+        expect(dateToString(callback.mock.calls[1][0].endDate)).toEqual('2018-07-02');
       });
 
       it('calls the third callback with the correct start date and resets the end date', () => {
-        expect(callback.mock.calls[2][0].startDate.toLocaleString()).toEqual('2018-9-3 00:00:00');
+        expect(dateToString(callback.mock.calls[2][0].startDate)).toEqual('2018-07-03');
         expect(callback.mock.calls[2][0].endDate).toBeNull();
       });
     });
