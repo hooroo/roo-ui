@@ -25,6 +25,11 @@ exports[`<Input /> renders correctly 1`] = `
   border-color: #8DE2E0;
 }
 
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .c0[readonly] {
   border-color: transparent;
   background: transparent;
@@ -74,5 +79,91 @@ exports[`<Input /> renders correctly 1`] = `
   }
   className="c0"
   is="input"
+/>
+`;
+
+exports[`<Input /> underline renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #323232;
+  background-color: #FFFFFF;
+  border: 2px solid;
+  border-color: #DADADA;
+  outline: 0;
+  -webkit-transition: border-color 200ms ease-in;
+  transition: border-color 200ms ease-in;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #DADADA;
+}
+
+.c0:focus {
+  border-color: #8DE2E0;
+}
+
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.c0[readonly] {
+  border-color: transparent;
+  background: transparent;
+  padding-left: 0;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #666666;
+}
+
+.c0::-moz-placeholder {
+  color: #666666;
+}
+
+.c0:-ms-input-placeholder {
+  color: #666666;
+}
+
+.c0::placeholder {
+  color: #666666;
+}
+
+.c0::-ms-clear {
+  display: none;
+}
+
+<Clean.div
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "error",
+      "underline",
+    ]
+  }
+  className="c0"
+  is="input"
+  underline={true}
 />
 `;
