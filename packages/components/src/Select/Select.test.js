@@ -20,4 +20,34 @@ describe('<Select />', () => {
     wrapper = shallowWithTheme(<label htmlFor="input">Label<Select /></label>, theme);
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
+
+  describe('disabled', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(<Select disabled>Options</Select>, theme);
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('readOnly', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(<Select readOnly>Options</Select>, theme);
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('underline', () => {
+    beforeEach(() => {
+      wrapper = shallowWithTheme(<Select underline>Options</Select>, theme);
+    });
+
+    it('renders correctly', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 });

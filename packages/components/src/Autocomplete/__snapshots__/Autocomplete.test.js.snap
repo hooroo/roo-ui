@@ -25,6 +25,11 @@ exports[`<Autocomplete /> renders correctly 1`] = `
   border-color: #8DE2E0;
 }
 
+.c2:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .c2[readonly] {
   border-color: transparent;
   background: transparent;
@@ -430,6 +435,11 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
 
 .c2:focus {
   border-color: #8DE2E0;
+}
+
+.c2:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .c2[readonly] {

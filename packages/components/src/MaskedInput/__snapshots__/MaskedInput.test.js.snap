@@ -25,6 +25,11 @@ exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
   border-color: #8DE2E0;
 }
 
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .c0[readonly] {
   border-color: transparent;
   background: transparent;
@@ -114,6 +119,11 @@ exports[`<MaskedInput /> renders correctly 1`] = `
 
 .c0:focus {
   border-color: #8DE2E0;
+}
+
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .c0[readonly] {

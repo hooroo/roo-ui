@@ -9,7 +9,12 @@ import README from './README.md';
 storiesOf('Components|Select', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Select error={boolean('Error', false)}>
+    <Select
+      error={boolean('Error', false)}
+      underline={boolean('Underline', false)}
+      readOnly={boolean('Read only', false)}
+      disabled={boolean('Disabled', false)}
+    >
       <option>One</option>
       <option>Two</option>
       <option>Three</option>
