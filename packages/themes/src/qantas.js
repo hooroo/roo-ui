@@ -234,7 +234,7 @@ const gutters = {
 
 const opacity = {
   disabled: 0.7,
-}
+};
 
 export default {
   gutters,
