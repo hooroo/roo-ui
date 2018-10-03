@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/logos",
-  "version": "0.50.0",
+  "version": "0.55.1",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
