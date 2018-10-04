@@ -23,6 +23,11 @@ const Input = styled(tag)`
     border-color: ${themeGet('colors.brand.secondary')};
   }
 
+  &:disabled {
+    opacity: ${themeGet('opacity.disabled')};
+    cursor: not-allowed;
+  }
+
   &[readonly] {
     border-color: transparent;
     background: transparent;

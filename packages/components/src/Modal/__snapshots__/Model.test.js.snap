@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> renders correctly 1`] = `
+.c0 .ModalOverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(34,34,34,0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .ModalContent {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: none;
+  background: #FFFFFF;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 90%;
+  width: calc(100% - 1.25rem);
+}
+
+@media (min-width:40rem) {
+  .c0 .ModalContent {
+    -webkit-flex: 0 1 41.25rem;
+    -ms-flex: 0 1 41.25rem;
+    flex: 0 1 41.25rem;
+  }
+}
+
+<Modal
+  ariaHideApp={true}
+  isOpen={true}
+  role="dialog"
+  title="Test Modal"
+  width="41.25rem"
+>
+  <Component
+    ariaHideApp={true}
+    className="c0"
+    isOpen={true}
+    role="dialog"
+    title="Test Modal"
+    width="41.25rem"
+  >
+    <Modal
+      ariaHideApp={true}
+      bodyOpenClassName="ReactModal__Body--open"
+      className="ModalContent"
+      closeTimeoutMS={0}
+      isOpen={true}
+      overlayClassName="ModalOverlay"
+      parentSelector={[Function]}
+      portalClassName="Modal-yQUFA c0"
+      role="dialog"
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldFocusAfterRender={true}
+      shouldReturnFocusAfterClose={true}
+      title="Test Modal"
+    >
+      <ModalPortal
+        ariaHideApp={true}
+        bodyOpenClassName="ReactModal__Body--open"
+        className="ModalContent"
+        closeTimeoutMS={0}
+        defaultStyles={
+          Object {
+            "content": Object {
+              "WebkitOverflowScrolling": "touch",
+              "background": "#fff",
+              "border": "1px solid #ccc",
+              "borderRadius": "4px",
+              "bottom": "40px",
+              "left": "40px",
+              "outline": "none",
+              "overflow": "auto",
+              "padding": "20px",
+              "position": "absolute",
+              "right": "40px",
+              "top": "40px",
+            },
+            "overlay": Object {
+              "backgroundColor": "rgba(255, 255, 255, 0.75)",
+              "bottom": 0,
+              "left": 0,
+              "position": "fixed",
+              "right": 0,
+              "top": 0,
+            },
+          }
+        }
+        isOpen={true}
+        overlayClassName="ModalOverlay"
+        parentSelector={[Function]}
+        portalClassName="Modal-yQUFA c0"
+        role="dialog"
+        shouldCloseOnEsc={true}
+        shouldCloseOnOverlayClick={true}
+        shouldFocusAfterRender={true}
+        shouldReturnFocusAfterClose={true}
+        style={
+          Object {
+            "content": Object {},
+            "overlay": Object {},
+          }
+        }
+        title="Test Modal"
+      >
+        <div
+          aria-modal="true"
+          className="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
+          onClick={[Function]}
+          onMouseDown={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="ReactModal__Content ReactModal__Content--after-open ModalContent"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseUp={[Function]}
+            role="dialog"
+            style={Object {}}
+            tabIndex="-1"
+          />
+        </div>
+      </ModalPortal>
+    </Modal>
+  </Component>
+</Modal>
+`;

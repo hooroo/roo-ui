@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.50.8",
+  "version": "0.55.0",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -12,9 +12,10 @@
     "build:watch": "yarn run build --watch"
   },
   "devDependencies": {
-    "@roo-ui/icons": "^0.39.1",
+    "@roo-ui/icons": "^0.54.0",
     "@roo-ui/test-utils": "^0.50.7",
-    "@roo-ui/themes": "^0.50.5"
+    "@roo-ui/themes": "^0.55.0",
+    "react-powerplug": "^1.0.0-rc.1"
   },
   "peerDependencies": {
     "clean-element": "^1.0.0",
@@ -29,6 +30,7 @@
     "date-fns": "^1.29.0",
     "dayzed": "^2.2.0",
     "downshift": "^2.0.10",
+    "react-modal": "^3.5.1",
     "react-onclickoutside": "^6.7.1",
     "react-popper": "^1.0.0",
     "react-text-mask": "^5.4.2"

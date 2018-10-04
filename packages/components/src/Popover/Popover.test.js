@@ -15,13 +15,15 @@ jest.mock('popper.js', () => class {
 });
 
 describe('<Popover />', () => {
+  const modifiers = { preventOverflow: { enabled: false } };
+
   let wrapper;
 
   beforeEach(() => {
     // Need to wrap in div until this is solved https://github.com/Pomax/react-onclickoutside/issues/271
     wrapper = mountWithTheme(
       <div>
-        <Popover>
+        <Popover modifiers={modifiers}>
           <Popover.control>
             {({ openPopover, closePopover, isOpen }) => (
               <button disabled={isOpen} onClick={openPopover} onKeyDown={closePopover}>
@@ -68,6 +70,10 @@ describe('<Popover />', () => {
 
     it('renders correctly', () => {
       expect(wrapper).toMatchSnapshot();
+    });
+
+    it('passed modifiers to <Popper />', () => {
+      expect(wrapper.find('Popper').prop('modifiers')).toEqual(modifiers);
     });
 
     it('passes down isOpen true', () => {

@@ -38,11 +38,49 @@ describe('<CalendarDays />', () => {
     getDateProps: jest.fn,
   };
 
-  beforeEach(() => {
-    wrapper = shallowWithTheme(<CalendarDays {...props} />, theme);
-  });
+  const setup = (params = {}) => {
+    const newProps = { ...props, ...params };
+    wrapper = shallowWithTheme(<CalendarDays {...newProps} />, theme);
+  };
 
   it('renders correctly', () => {
+    setup();
     expect(wrapper).toMatchSnapshot();
+  });
+
+  describe('<CalendarDay />', () => {
+    describe('highlighted', () => {
+      describe('when isInRange is false', () => {
+        it('props.highlighted is false', () => {
+          setup({
+            isInRange: () => false,
+          });
+          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(false);
+        });
+      });
+
+      describe('when isInRange is true', () => {
+        it('props.highlighted is true', () => {
+          setup({ isInRange: () => true });
+          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(true);
+        });
+      });
+    });
+
+    describe('disabled', () => {
+      describe('when disabled dates are provided', () => {
+        beforeEach(() => setup({ disabledDates: [startDate, addDays(startDate, 1)] }));
+
+        it('provided dates are disabled', () => {
+          expect(wrapper.find('CalendarDay').at(0).prop('disabled')).toEqual(true);
+          expect(wrapper.find('CalendarDay').at(1).prop('disabled')).toEqual(true);
+        });
+
+        it('other dates are not disabled', () => {
+          expect(wrapper.find('CalendarDay').at(2).prop('disabled')).toEqual(false);
+          expect(wrapper.find('CalendarDay').at(3).prop('disabled')).toEqual(false);
+        });
+      });
+    });
   });
 });

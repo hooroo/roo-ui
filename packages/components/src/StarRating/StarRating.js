@@ -18,7 +18,7 @@ const renderRating = ({ ratingType, rating, size }) => {
     ratingItems.push(<Icon
       name={iconType(rating, index, ratingType)}
       key={index}
-      color="starRating"
+      color="brightSun"
       size={size}
     />);
   });

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.54.0"></a>
+# [0.54.0](https://github.com/hooroo/roo-ui/compare/v0.53.0...v0.54.0) (2018-09-07)
+
+
+### Features
+
+* **icons:** add more qantas icons ([#166](https://github.com/hooroo/roo-ui/issues/166)) ([e877357](https://github.com/hooroo/roo-ui/commit/e877357))
+
+
+
+
 <a name="0.39.1"></a>
 ## [0.39.1](https://github.com/hooroo/roo-ui/compare/v0.39.0...v0.39.1) (2018-06-26)
 

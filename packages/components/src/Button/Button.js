@@ -40,7 +40,7 @@ const Button = styled(tag.button)`
   }
 
   &:disabled {
-    opacity: 0.7;
+    opacity: ${themeGet('opacity.disabled')};
     cursor: not-allowed;
   }
 

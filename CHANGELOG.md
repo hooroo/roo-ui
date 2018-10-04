@@ -3,6 +3,178 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.55.1"></a>
+## [0.55.1](https://github.com/hooroo/roo-ui/compare/v0.55.0...v0.55.1) (2018-10-03)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.55.0"></a>
+# [0.55.0](https://github.com/hooroo/roo-ui/compare/v0.54.5...v0.55.0) (2018-10-02)
+
+
+### Features
+
+* add disabled input styles ([#172](https://github.com/hooroo/roo-ui/issues/172)) ([cbd044c](https://github.com/hooroo/roo-ui/commit/cbd044c))
+
+
+
+
+<a name="0.54.5"></a>
+## [0.54.5](https://github.com/hooroo/roo-ui/compare/v0.54.4...v0.54.5) (2018-10-01)
+
+
+### Bug Fixes
+
+* datepicker tests that rely on current date ([#175](https://github.com/hooroo/roo-ui/issues/175)) ([d6f0e17](https://github.com/hooroo/roo-ui/commit/d6f0e17))
+
+
+
+
+<a name="0.54.4"></a>
+## [0.54.4](https://github.com/hooroo/roo-ui/compare/v0.54.3...v0.54.4) (2018-09-26)
+
+
+### Bug Fixes
+
+* fix error when user clicks a svg element in IE11 ([#173](https://github.com/hooroo/roo-ui/issues/173)) ([3f39376](https://github.com/hooroo/roo-ui/commit/3f39376))
+
+
+
+
+<a name="0.54.3"></a>
+## [0.54.3](https://github.com/hooroo/roo-ui/compare/v0.54.2...v0.54.3) (2018-09-24)
+
+
+### Bug Fixes
+
+* DateRangePicker offset bug and props refactor ([#169](https://github.com/hooroo/roo-ui/issues/169)) ([aa8d64a](https://github.com/hooroo/roo-ui/commit/aa8d64a))
+
+
+
+
+<a name="0.54.2"></a>
+## [0.54.2](https://github.com/hooroo/roo-ui/compare/v0.54.1...v0.54.2) (2018-09-21)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.54.1"></a>
+## [0.54.1](https://github.com/hooroo/roo-ui/compare/v0.54.0...v0.54.1) (2018-09-20)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.54.0"></a>
+# [0.54.0](https://github.com/hooroo/roo-ui/compare/v0.53.0...v0.54.0) (2018-09-07)
+
+
+### Features
+
+* **icons:** add more qantas icons ([#166](https://github.com/hooroo/roo-ui/issues/166)) ([e877357](https://github.com/hooroo/roo-ui/commit/e877357))
+
+
+
+
+<a name="0.53.0"></a>
+# [0.53.0](https://github.com/hooroo/roo-ui/compare/v0.52.2...v0.53.0) (2018-09-06)
+
+
+### Features
+
+* **assets:** add red roo ([#165](https://github.com/hooroo/roo-ui/issues/165)) ([5f0e53e](https://github.com/hooroo/roo-ui/commit/5f0e53e))
+
+
+
+
+<a name="0.52.2"></a>
+## [0.52.2](https://github.com/hooroo/roo-ui/compare/v0.52.1...v0.52.2) (2018-08-27)
+
+
+### Bug Fixes
+
+* add focus style ([#164](https://github.com/hooroo/roo-ui/issues/164)) ([d86ab6a](https://github.com/hooroo/roo-ui/commit/d86ab6a))
+
+
+
+
+<a name="0.52.1"></a>
+## [0.52.1](https://github.com/hooroo/roo-ui/compare/v0.52.0...v0.52.1) (2018-08-27)
+
+
+### Bug Fixes
+
+* Remove the border from the focus state of the DateRangePicker day ([cea0cda](https://github.com/hooroo/roo-ui/commit/cea0cda))
+
+
+
+
+<a name="0.52.0"></a>
+# [0.52.0](https://github.com/hooroo/roo-ui/compare/v0.51.1...v0.52.0) (2018-08-24)
+
+
+### Features
+
+* **DateRangePicker:** Adding a date range picker ([79d406e](https://github.com/hooroo/roo-ui/commit/79d406e))
+
+
+
+
+<a name="0.51.1"></a>
+## [0.51.1](https://github.com/hooroo/roo-ui/compare/v0.51.0...v0.51.1) (2018-08-23)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.51.0"></a>
+# [0.51.0](https://github.com/hooroo/roo-ui/compare/v0.50.11...v0.51.0) (2018-08-21)
+
+
+### Features
+
+* Add Modal component ([#152](https://github.com/hooroo/roo-ui/issues/152)) ([89a6425](https://github.com/hooroo/roo-ui/commit/89a6425))
+
+
+
+
+<a name="0.50.11"></a>
+## [0.50.11](https://github.com/hooroo/roo-ui/compare/v0.50.10...v0.50.11) (2018-08-21)
+
+
+### Features
+
+* add component generator ([#155](https://github.com/hooroo/roo-ui/issues/155)) ([92a6331](https://github.com/hooroo/roo-ui/commit/92a6331))
+
+
+
+
+<a name="0.50.10"></a>
+## [0.50.10](https://github.com/hooroo/roo-ui/compare/v0.50.9...v0.50.10) (2018-08-20)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.50.9"></a>
+## [0.50.9](https://github.com/hooroo/roo-ui/compare/v0.50.8...v0.50.9) (2018-08-20)
+
+
+### Bug Fixes
+
+* prevent password input icon from overlapping input text ([#158](https://github.com/hooroo/roo-ui/issues/158)) ([e4f8628](https://github.com/hooroo/roo-ui/commit/e4f8628))
+
+
+
+
 <a name="0.50.8"></a>
 ## [0.50.8](https://github.com/hooroo/roo-ui/compare/v0.50.7...v0.50.8) (2018-08-14)
 

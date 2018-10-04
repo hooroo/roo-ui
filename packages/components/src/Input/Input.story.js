@@ -11,6 +11,7 @@ storiesOf('Components|Input', module)
   .add('default', () => (
     <Input
       placeholder="Hello world"
+      disabled={boolean('Disabled', false)}
       error={boolean('Error', false)}
       underline={boolean('Underline', false)}
       readOnly={boolean('Read only', false)}

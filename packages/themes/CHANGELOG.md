@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.55.0"></a>
+# [0.55.0](https://github.com/hooroo/roo-ui/compare/v0.54.5...v0.55.0) (2018-10-02)
+
+
+### Features
+
+* add disabled input styles ([#172](https://github.com/hooroo/roo-ui/issues/172)) ([cbd044c](https://github.com/hooroo/roo-ui/commit/cbd044c))
+
+
+
+
+<a name="0.51.0"></a>
+# [0.51.0](https://github.com/hooroo/roo-ui/compare/v0.50.11...v0.51.0) (2018-08-21)
+
+
+### Features
+
+* Add Modal component ([#152](https://github.com/hooroo/roo-ui/issues/152)) ([89a6425](https://github.com/hooroo/roo-ui/commit/89a6425))
+
+
+
+
+<a name="0.50.10"></a>
+## [0.50.10](https://github.com/hooroo/roo-ui/compare/v0.50.9...v0.50.10) (2018-08-20)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/themes
+
 <a name="0.50.5"></a>
 ## [0.50.5](https://github.com/hooroo/roo-ui/compare/v0.50.4...v0.50.5) (2018-08-14)
 
