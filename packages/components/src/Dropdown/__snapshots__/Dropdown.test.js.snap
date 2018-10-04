@@ -2,10 +2,14 @@
 
 exports[`<Dropdown /> renders correctly when closed 1`] = `
 <Box
+  aria-expanded={false}
+  aria-haspopup="listbox"
+  aria-labelledby="downshift-0-label"
+  aria-owns={null}
   innerRef={[Function]}
+  role="combobox"
 >
   <NakedButton
-    aria-expanded={false}
     aria-haspopup={true}
     aria-label="open menu"
     blacklist={
@@ -31,6 +35,7 @@ exports[`<Dropdown /> renders correctly when closed 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onKeyDown={[Function]}
+    onKeyUp={[Function]}
     role="button"
     type="button"
   >
@@ -67,6 +72,8 @@ exports[`<Dropdown /> renders correctly when closed 1`] = `
         ]
       }
       hidden={true}
+      htmlFor="downshift-0-input"
+      id="downshift-0-label"
       textStyle="text"
     >
       Toggle Dropdown
@@ -77,10 +84,14 @@ exports[`<Dropdown /> renders correctly when closed 1`] = `
 
 exports[`<Dropdown /> renders correctly when open 1`] = `
 <Box
+  aria-expanded={true}
+  aria-haspopup="listbox"
+  aria-labelledby="downshift-1-label"
+  aria-owns="downshift-1-menu"
   innerRef={[Function]}
+  role="combobox"
 >
   <NakedButton
-    aria-expanded={true}
     aria-haspopup={true}
     aria-label="close menu"
     blacklist={
@@ -106,6 +117,7 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onKeyDown={[Function]}
+    onKeyUp={[Function]}
     role="button"
     type="button"
   >
@@ -142,6 +154,8 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
         ]
       }
       hidden={true}
+      htmlFor="downshift-1-input"
+      id="downshift-1-label"
       textStyle="text"
     >
       Toggle Dropdown
@@ -149,6 +163,7 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
   </NakedButton>
   <Box>
     <Dropdown.item
+      aria-selected={false}
       blacklist={
         Array [
           "highlighted",
@@ -161,10 +176,12 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
       onClick={[Function]}
       onMouseDown={[Function]}
       onMouseMove={[Function]}
+      role="option"
     >
       Edit
     </Dropdown.item>
     <Dropdown.item
+      aria-selected={false}
       blacklist={
         Array [
           "highlighted",
@@ -176,10 +193,12 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
       onClick={[Function]}
       onMouseDown={[Function]}
       onMouseMove={[Function]}
+      role="option"
     >
       Delete
     </Dropdown.item>
     <Dropdown.item
+      aria-selected={false}
       blacklist={
         Array [
           "highlighted",
@@ -191,10 +210,12 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
       onClick={[Function]}
       onMouseDown={[Function]}
       onMouseMove={[Function]}
+      role="option"
     >
       Unpublish
     </Dropdown.item>
     <Dropdown.item
+      aria-selected={false}
       blacklist={
         Array [
           "highlighted",
@@ -206,6 +227,7 @@ exports[`<Dropdown /> renders correctly when open 1`] = `
       onClick={[Function]}
       onMouseDown={[Function]}
       onMouseMove={[Function]}
+      role="option"
     >
       Duplicate
     </Dropdown.item>

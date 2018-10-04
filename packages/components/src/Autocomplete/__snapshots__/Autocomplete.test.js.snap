@@ -83,7 +83,6 @@ exports[`<Autocomplete /> renders correctly 1`] = `
   selectedItem=""
 >
   <Downshift
-    breakingChanges={Object {}}
     defaultHighlightedIndex={null}
     defaultInputValue=""
     defaultIsOpen={false}
@@ -97,13 +96,24 @@ exports[`<Autocomplete /> renders correctly 1`] = `
     onSelect={[Function]}
     onStateChange={[Function]}
     onUserAction={[Function]}
+    scrollIntoView={[Function]}
     selectedItemChanged={[Function]}
     stateReducer={[Function]}
+    suppressRefError={false}
   >
     <Box
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-0-label"
+      aria-owns={null}
       innerRef={[Function]}
+      role="combobox"
     >
       <Clean.div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-labelledby="downshift-0-label"
+        aria-owns={null}
         blacklist={
           Array [
             "m",
@@ -199,19 +209,27 @@ exports[`<Autocomplete /> renders correctly 1`] = `
         className="c0"
         innerRef={[Function]}
         is="div"
+        role="combobox"
       >
         <div
+          aria-expanded={false}
+          aria-haspopup="listbox"
+          aria-labelledby="downshift-0-label"
+          aria-owns={null}
           className="c0"
+          role="combobox"
         >
           <Label
             hidden={false}
             htmlFor="downshift-0-input"
+            id="downshift-0-label"
             textStyle="label"
           >
             <Clean.label
               className="c1"
               hidden={false}
               htmlFor="downshift-0-input"
+              id="downshift-0-label"
               textStyle="label"
             >
               <Clean.div
@@ -310,6 +328,7 @@ exports[`<Autocomplete /> renders correctly 1`] = `
                 className="c1"
                 hidden={false}
                 htmlFor="downshift-0-input"
+                id="downshift-0-label"
                 is="label"
                 textStyle="label"
               >
@@ -317,6 +336,7 @@ exports[`<Autocomplete /> renders correctly 1`] = `
                   className="c1"
                   hidden={false}
                   htmlFor="downshift-0-input"
+                  id="downshift-0-label"
                 >
                   Favourite dog
                 </label>
@@ -326,7 +346,8 @@ exports[`<Autocomplete /> renders correctly 1`] = `
           <Input
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={false}
+            aria-controls={null}
+            aria-labelledby="downshift-0-label"
             autoComplete="off"
             blacklist={
               Array [
@@ -353,13 +374,13 @@ exports[`<Autocomplete /> renders correctly 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            role="combobox"
             value=""
           >
             <Clean.div
               aria-activedescendant={null}
               aria-autocomplete="list"
-              aria-expanded={false}
+              aria-controls={null}
+              aria-labelledby="downshift-0-label"
               autoComplete="off"
               blacklist={
                 Array [
@@ -387,20 +408,19 @@ exports[`<Autocomplete /> renders correctly 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              role="combobox"
               value=""
             >
               <input
                 aria-activedescendant={null}
                 aria-autocomplete="list"
-                aria-expanded={false}
+                aria-controls={null}
+                aria-labelledby="downshift-0-label"
                 autoComplete="off"
                 className="c2"
                 id="downshift-0-input"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onKeyDown={[Function]}
-                role="combobox"
                 value=""
               />
             </Clean.div>
@@ -515,7 +535,6 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
   selectedItem=""
 >
   <Downshift
-    breakingChanges={Object {}}
     defaultHighlightedIndex={null}
     defaultInputValue=""
     defaultIsOpen={false}
@@ -530,13 +549,24 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
     onSelect={[Function]}
     onStateChange={[Function]}
     onUserAction={[Function]}
+    scrollIntoView={[Function]}
     selectedItemChanged={[Function]}
     stateReducer={[Function]}
+    suppressRefError={false}
   >
     <Box
+      aria-expanded={true}
+      aria-haspopup="listbox"
+      aria-labelledby="downshift-5-label"
+      aria-owns="downshift-5-menu"
       innerRef={[Function]}
+      role="combobox"
     >
       <Clean.div
+        aria-expanded={true}
+        aria-haspopup="listbox"
+        aria-labelledby="downshift-5-label"
+        aria-owns="downshift-5-menu"
         blacklist={
           Array [
             "m",
@@ -632,19 +662,27 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
         className="c0"
         innerRef={[Function]}
         is="div"
+        role="combobox"
       >
         <div
+          aria-expanded={true}
+          aria-haspopup="listbox"
+          aria-labelledby="downshift-5-label"
+          aria-owns="downshift-5-menu"
           className="c0"
+          role="combobox"
         >
           <Label
             hidden={false}
             htmlFor="downshift-5-input"
+            id="downshift-5-label"
             textStyle="label"
           >
             <Clean.label
               className="c1"
               hidden={false}
               htmlFor="downshift-5-input"
+              id="downshift-5-label"
               textStyle="label"
             >
               <Clean.div
@@ -743,6 +781,7 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                 className="c1"
                 hidden={false}
                 htmlFor="downshift-5-input"
+                id="downshift-5-label"
                 is="label"
                 textStyle="label"
               >
@@ -750,6 +789,7 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                   className="c1"
                   hidden={false}
                   htmlFor="downshift-5-input"
+                  id="downshift-5-label"
                 >
                   Favourite dog
                 </label>
@@ -759,7 +799,8 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
           <Input
             aria-activedescendant={null}
             aria-autocomplete="list"
-            aria-expanded={true}
+            aria-controls="downshift-5-menu"
+            aria-labelledby="downshift-5-label"
             autoComplete="off"
             blacklist={
               Array [
@@ -786,13 +827,13 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             onKeyDown={[Function]}
-            role="combobox"
             value=""
           >
             <Clean.div
               aria-activedescendant={null}
               aria-autocomplete="list"
-              aria-expanded={true}
+              aria-controls="downshift-5-menu"
+              aria-labelledby="downshift-5-label"
               autoComplete="off"
               blacklist={
                 Array [
@@ -820,20 +861,19 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               onKeyDown={[Function]}
-              role="combobox"
               value=""
             >
               <input
                 aria-activedescendant={null}
                 aria-autocomplete="list"
-                aria-expanded={true}
+                aria-controls="downshift-5-menu"
+                aria-labelledby="downshift-5-label"
                 autoComplete="off"
                 className="c2"
                 id="downshift-5-input"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onKeyDown={[Function]}
-                role="combobox"
                 value=""
               />
             </Clean.div>
@@ -939,6 +979,7 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                 className="c3"
               >
                 <MenuItem
+                  aria-selected={false}
                   blacklist={
                     Array [
                       "highlighted",
@@ -950,8 +991,10 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseMove={[Function]}
+                  role="option"
                 >
                   <Clean.div
+                    aria-selected={false}
                     blacklist={
                       Array [
                         "highlighted",
@@ -964,19 +1007,23 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseMove={[Function]}
+                    role="option"
                   >
                     <div
+                      aria-selected={false}
                       className="c4"
                       id="downshift-5-item-0"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
+                      role="option"
                     >
                       Greyhound
                     </div>
                   </Clean.div>
                 </MenuItem>
                 <MenuItem
+                  aria-selected={false}
                   blacklist={
                     Array [
                       "highlighted",
@@ -988,8 +1035,10 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseMove={[Function]}
+                  role="option"
                 >
                   <Clean.div
+                    aria-selected={false}
                     blacklist={
                       Array [
                         "highlighted",
@@ -1002,19 +1051,23 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseMove={[Function]}
+                    role="option"
                   >
                     <div
+                      aria-selected={false}
                       className="c4"
                       id="downshift-5-item-1"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
+                      role="option"
                     >
                       Whippet
                     </div>
                   </Clean.div>
                 </MenuItem>
                 <MenuItem
+                  aria-selected={false}
                   blacklist={
                     Array [
                       "highlighted",
@@ -1026,8 +1079,10 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseMove={[Function]}
+                  role="option"
                 >
                   <Clean.div
+                    aria-selected={false}
                     blacklist={
                       Array [
                         "highlighted",
@@ -1040,13 +1095,16 @@ exports[`<Autocomplete /> when open renders correctly 1`] = `
                     onClick={[Function]}
                     onMouseDown={[Function]}
                     onMouseMove={[Function]}
+                    role="option"
                   >
                     <div
+                      aria-selected={false}
                       className="c4"
                       id="downshift-5-item-2"
                       onClick={[Function]}
                       onMouseDown={[Function]}
                       onMouseMove={[Function]}
+                      role="option"
                     >
                       Borzoi
                     </div>

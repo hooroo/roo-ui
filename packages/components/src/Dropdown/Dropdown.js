@@ -44,8 +44,10 @@ const Dropdown = ({ children, accessibilityLabel, ...props }) => (
       isOpen,
       getToggleButtonProps,
       highlightedIndex,
-      getItemProps,
       getRootProps,
+      getMenuProps,
+      getItemProps,
+      getLabelProps
     }) => {
     const childrenArray = React.Children.toArray(children);
     const [items, toggle] = partition(childrenArray, child => child.type === Dropdown.item);
@@ -56,7 +58,7 @@ const Dropdown = ({ children, accessibilityLabel, ...props }) => (
           {...getToggleButtonProps()}
         >
           {toggle}
-          <Text hidden>{accessibilityLabel}</Text>
+          <Text hidden {...getLabelProps()}>{accessibilityLabel}</Text>
         </Toggle>
 
         {isOpen ? (
