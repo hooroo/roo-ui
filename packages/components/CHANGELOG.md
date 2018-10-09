@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.55.3"></a>
+## [0.55.3](https://github.com/hooroo/roo-ui/compare/v0.55.2...v0.55.3) (2018-10-09)
+
+
+### Bug Fixes
+
+* removes lib/svg-classlist-polyfill ([3f58187](https://github.com/hooroo/roo-ui/commit/3f58187))
+
+
+
+
 <a name="0.55.2"></a>
 ## [0.55.2](https://github.com/hooroo/roo-ui/compare/v0.55.1...v0.55.2) (2018-10-09)
 
