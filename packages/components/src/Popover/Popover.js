@@ -6,8 +6,6 @@ import { Manager, Reference, Popper } from 'react-popper';
 import onClickOutside from 'react-onclickoutside';
 import { css } from 'styled-components';
 import partition from 'lodash/partition';
-
-import './lib/svg-classlist-polyfill';
 import { Box } from '../';
 
 const ContentWrapper = Box.extend`
