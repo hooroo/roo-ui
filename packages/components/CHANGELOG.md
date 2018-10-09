@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.55.2"></a>
+## [0.55.2](https://github.com/hooroo/roo-ui/compare/v0.55.1...v0.55.2) (2018-10-09)
+
+
+### Bug Fixes
+
+* Adds check for window before running svg-classlist-polyfill ([e5d37a2](https://github.com/hooroo/roo-ui/commit/e5d37a2))
+
+
+
+
 <a name="0.55.0"></a>
 # [0.55.0](https://github.com/hooroo/roo-ui/compare/v0.54.5...v0.55.0) (2018-10-02)
 
