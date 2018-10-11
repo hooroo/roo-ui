@@ -4,6 +4,7 @@ exports[`<CalendarMonth /> renders correctly 1`] = `
 <MonthWrapper
   blacklist={
     Array [
+      "display",
       "m",
       "mt",
       "mr",

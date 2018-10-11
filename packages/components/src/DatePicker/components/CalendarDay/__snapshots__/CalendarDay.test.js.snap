@@ -4,6 +4,7 @@ exports[`<CalendarDay /> renders correctly 1`] = `
 <Box
   blacklist={
     Array [
+      "display",
       "m",
       "mt",
       "mr",
