@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tag from 'clean-tag';
-import { space, verticalAlign } from 'styled-system';
+import { space, verticalAlign, themeGet } from 'styled-system';
 
 const NakedButton = styled(tag.button).attrs({
   type: 'button',
@@ -16,6 +16,10 @@ const NakedButton = styled(tag.button).attrs({
   line-height: normal;
   appearance: none;
   cursor: pointer;
+
+  &:focus {
+    outline: ${themeGet('borders.2')} ${themeGet('colors.brand.secondary')};
+  }
 
   ${space} ${verticalAlign};
 `;
