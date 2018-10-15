@@ -17,6 +17,10 @@ exports[`<NakedButton /> renders correctly 1`] = `
   cursor: pointer;
 }
 
+.c0:focus {
+  outline: 2px solid #8DE2E0;
+}
+
 <Clean.button
   blacklist={
     Array [

@@ -36,7 +36,7 @@ exports[`<Button /> block renders correctly 1`] = `
 }
 
 .c0:focus {
-  box-shadow: 0 0 0 2px #8DE2E0;
+  box-shadow: 0 0 2px 2px #999999;
 }
 
 .c0:disabled {
@@ -113,7 +113,7 @@ exports[`<Button /> primary renders correctly 1`] = `
 }
 
 .c0:focus {
-  box-shadow: 0 0 0 2px #8DE2E0;
+  box-shadow: 0 0 2px 2px #999999;
 }
 
 .c0:disabled {
@@ -190,7 +190,7 @@ exports[`<Button /> renders correctly 1`] = `
 }
 
 .c0:focus {
-  box-shadow: 0 0 0 2px #8DE2E0;
+  box-shadow: 0 0 2px 2px #999999;
 }
 
 .c0:disabled {
@@ -267,7 +267,7 @@ exports[`<Button /> rounded renders correctly 1`] = `
 }
 
 .c0:focus {
-  box-shadow: 0 0 0 2px #8DE2E0;
+  box-shadow: 0 0 2px 2px #999999;
 }
 
 .c0:disabled {
