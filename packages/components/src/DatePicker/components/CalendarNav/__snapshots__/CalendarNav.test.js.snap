@@ -20,6 +20,8 @@ exports[`<CalendarNav /> renders correctly 1`] = `
         "pl",
         "px",
         "py",
+        "color",
+        "bg",
       ]
     }
     onClick={[MockFunction]}
@@ -46,6 +48,8 @@ exports[`<CalendarNav /> renders correctly 1`] = `
         "pl",
         "px",
         "py",
+        "color",
+        "bg",
       ]
     }
     onClick={[MockFunction]}

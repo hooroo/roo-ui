@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tag from 'clean-tag';
-import { space, verticalAlign, themeGet } from 'styled-system';
+import { space, verticalAlign, themeGet, color } from 'styled-system';
 
 const NakedButton = styled(tag.button).attrs({
   type: 'button',
@@ -21,12 +21,15 @@ const NakedButton = styled(tag.button).attrs({
     outline: ${themeGet('borders.2')} ${themeGet('colors.brand.secondary')};
   }
 
-  ${space} ${verticalAlign};
+  ${space}
+  ${verticalAlign}
+  ${color}
 `;
 
 NakedButton.propTypes = {
   ...verticalAlign.propTypes,
   ...space.propTypes,
+  ...color.propTypes,
 };
 
 NakedButton.defaultProps = {

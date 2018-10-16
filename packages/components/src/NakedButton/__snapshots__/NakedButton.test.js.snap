@@ -39,6 +39,8 @@ exports[`<NakedButton /> renders correctly 1`] = `
       "pl",
       "px",
       "py",
+      "color",
+      "bg",
     ]
   }
   className="c0"
