@@ -4,7 +4,10 @@
   "author": "Hooroo <support@hooroo.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*", ".dev/*"],
+  "workspaces": [
+    "packages/*",
+    ".dev/*"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "yarn build",
@@ -51,7 +54,7 @@
     "lerna": "^2.8.0",
     "lodash": "^4.17.4",
     "normalize.css": "^8.0.0",
-    "polished": "^1.9.3",
+    "polished": "^2.2.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

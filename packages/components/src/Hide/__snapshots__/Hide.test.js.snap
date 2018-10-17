@@ -1,6 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Hide /> lg renders correctly 1`] = `
+exports[`<Hide /> with breakpoints in px lg renders correctly 1`] = `
+@media screen and (min-width:1280px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> with breakpoints in px md renders correctly 1`] = `
+@media screen and (min-width:1100px) and (max-width:1279px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> with breakpoints in px no props renders correctly 1`] = `
+<div
+  className=""
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> with breakpoints in px sm renders correctly 1`] = `
+@media screen and (min-width:768px) and (max-width:1099px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> with breakpoints in px xs renders correctly 1`] = `
+@media screen and (max-width:767px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  Hello world
+</div>
+`;
+
+exports[`<Hide /> with breakpoints in rems lg renders correctly 1`] = `
 @media screen and (min-width:64rem) {
   .c0 {
     display: none;
@@ -14,8 +78,8 @@ exports[`<Hide /> lg renders correctly 1`] = `
 </div>
 `;
 
-exports[`<Hide /> md renders correctly 1`] = `
-@media screen and (min-width:52rem) and (max-width:64rem) {
+exports[`<Hide /> with breakpoints in rems md renders correctly 1`] = `
+@media screen and (min-width:52rem) and (max-width:63.9375rem) {
   .c0 {
     display: none;
   }
@@ -28,7 +92,7 @@ exports[`<Hide /> md renders correctly 1`] = `
 </div>
 `;
 
-exports[`<Hide /> renders correctly 1`] = `
+exports[`<Hide /> with breakpoints in rems no props renders correctly 1`] = `
 <div
   className=""
 >
@@ -36,8 +100,8 @@ exports[`<Hide /> renders correctly 1`] = `
 </div>
 `;
 
-exports[`<Hide /> sm renders correctly 1`] = `
-@media screen and (min-width:40rem) and (max-width:52rem) {
+exports[`<Hide /> with breakpoints in rems sm renders correctly 1`] = `
+@media screen and (min-width:40rem) and (max-width:51.9375rem) {
   .c0 {
     display: none;
   }
@@ -50,8 +114,8 @@ exports[`<Hide /> sm renders correctly 1`] = `
 </div>
 `;
 
-exports[`<Hide /> xs renders correctly 1`] = `
-@media screen and (max-width:40rem) {
+exports[`<Hide /> with breakpoints in rems xs renders correctly 1`] = `
+@media screen and (max-width:39.9375rem) {
   .c0 {
     display: none;
   }
