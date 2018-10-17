@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
@@ -8,10 +8,15 @@ import README from './README.md';
 storiesOf('Components|Hide', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Fragment>
-      <Hide xs>Hidden on xs</Hide>
-      <Hide sm>Hidden on sm</Hide>
-      <Hide md>Hidden on md</Hide>
-      <Hide lg>Hidden on lg</Hide>
-    </Fragment>
+    <table>
+      <thead>
+        <th /><th>is visible</th>
+      </thead>
+      <tbody>
+        <tr><th>xs</th><td><Hide xs><span role="img" aria-label="Is visible?">✅</span></Hide></td></tr>
+        <tr><th>sm</th><td><Hide sm><span role="img" aria-label="Is visible?">✅</span></Hide></td></tr>
+        <tr><th>md</th><td><Hide md><span role="img" aria-label="Is visible?">✅</span></Hide></td></tr>
+        <tr><th>lg</th><td><Hide lg><span role="img" aria-label="Is visible?">✅</span></Hide></td></tr>
+      </tbody>
+    </table>
   ));
