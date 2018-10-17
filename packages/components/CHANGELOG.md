@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.55.8"></a>
+## [0.55.8](https://github.com/hooroo/roo-ui/compare/v0.55.7...v0.55.8) (2018-10-17)
+
+
+### Bug Fixes
+
+* overlapping breakpoints in hide ([#186](https://github.com/hooroo/roo-ui/issues/186)) ([368962e](https://github.com/hooroo/roo-ui/commit/368962e))
+
+
+
+
 <a name="0.55.7"></a>
 ## [0.55.7](https://github.com/hooroo/roo-ui/compare/v0.55.6...v0.55.7) (2018-10-16)
 
