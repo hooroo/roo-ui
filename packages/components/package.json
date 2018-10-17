@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.55.7",
+  "version": "0.55.8",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
