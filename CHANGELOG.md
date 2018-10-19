@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.56.0"></a>
+# [0.56.0](https://github.com/hooroo/roo-ui/compare/v0.55.9...v0.56.0) (2018-10-19)
+
+
+### Features
+
+* add trip advisor rating svgs ([#191](https://github.com/hooroo/roo-ui/issues/191)) ([a58d21f](https://github.com/hooroo/roo-ui/commit/a58d21f))
+
+
+
+
 <a name="0.55.9"></a>
 ## [0.55.9](https://github.com/hooroo/roo-ui/compare/v0.55.8...v0.55.9) (2018-10-19)
 
