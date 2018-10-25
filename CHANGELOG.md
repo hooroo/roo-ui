@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.57.0"></a>
+# [0.57.0](https://github.com/hooroo/roo-ui/compare/v0.56.0...v0.57.0) (2018-10-25)
+
+
+### Features
+
+* **icon:** add Qantas filter icon ([#192](https://github.com/hooroo/roo-ui/issues/192)) ([2ba0eba](https://github.com/hooroo/roo-ui/commit/2ba0eba))
+
+
+
+
 <a name="0.56.0"></a>
 # [0.56.0](https://github.com/hooroo/roo-ui/compare/v0.55.9...v0.56.0) (2018-10-19)
 
