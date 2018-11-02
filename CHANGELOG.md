@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.57.1"></a>
+## [0.57.1](https://github.com/hooroo/roo-ui/compare/v0.57.0...v0.57.1) (2018-11-02)
+
+
+### Bug Fixes
+
+* add viewBox to QantasBusinessReward and TripAdvisorOwl logos svgs ([#200](https://github.com/hooroo/roo-ui/issues/200)) ([cdc2c8e](https://github.com/hooroo/roo-ui/commit/cdc2c8e))
+
+
+
+
 <a name="0.57.0"></a>
 # [0.57.0](https://github.com/hooroo/roo-ui/compare/v0.56.0...v0.57.0) (2018-10-25)
 
