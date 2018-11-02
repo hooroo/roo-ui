@@ -48,7 +48,7 @@ const colors = {
   ...namedColors,
 };
 
-const fontFamily = 'QantasCiutadella, sans-serif';
+const fontFamily = 'Ciutadella, sans-serif';
 
 const fontSizes = {
   xs: rem('13px'),

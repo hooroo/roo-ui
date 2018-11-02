@@ -13,8 +13,8 @@ const styles = {
 };
 
 const fonts = {
-  QantasCiutadella: 'Qantas Ciutadella',
-  JetstarHappy: 'Jetstar Happy',
+  Ciutadella: 'Ciutadella',
+  Happy: 'Happy',
 };
 
 storiesOf('Foundations|Fonts', module)

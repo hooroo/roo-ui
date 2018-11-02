@@ -18,6 +18,6 @@ import '@roo-ui/fonts/ciutadella.css';
 ```css
 /* index.css */
 body {
-  font-family: 'QantasCiutadella', sans-serif;
+  font-family: 'Ciutadella', sans-serif;
 }
 ```
