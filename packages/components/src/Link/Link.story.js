@@ -13,7 +13,7 @@ storiesOf('Components|Link', module)
       href="https://www.qantas.com"
       target="_blank"
       hidden={boolean('Hidden', false)}
-      inline={boolean('Inline', false)}
+      underline={boolean('Underline', false)}
     >
       Hello world
     </Link>
