@@ -41,6 +41,7 @@ exports[`<ExternalLink /> renders correctly 1`] = `
       "py",
       "hidden",
       "inline",
+      "underline",
     ]
   }
   className="c0"
@@ -49,6 +50,7 @@ exports[`<ExternalLink /> renders correctly 1`] = `
   rel="noopener noreferrer"
   target="_blank"
   title="Link opens in new window"
+  underline={false}
 >
   Hello world
 </Clean.a>
