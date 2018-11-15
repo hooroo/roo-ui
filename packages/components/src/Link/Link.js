@@ -30,10 +30,19 @@ const Link = styled(tag.a)`
     }
   `}
 
+  ${props => props.underline && css`
+    &, &:hover {
+      text-decoration: underline;
+      color: inherit;
+    }
+  `}
+
   ${props => props.hidden && css`
     ${hideVisually()}
   `}
 `;
+
+console.warn('[Roo-ui deprecration warning] <Link />\'s inline prop has been renamed to underline. Please update where relevant. The inline prop will be removed in the future')
 
 Link.propTypes = {
   ...color.propTypes,
@@ -42,11 +51,13 @@ Link.propTypes = {
   ...space.propTypes,
   hidden: PropTypes.bool,
   inline: PropTypes.bool,
+  underline: PropTypes.bool,
 };
 
 Link.defaultProps = {
   blacklist: Object.keys(Link.propTypes),
   inline: false,
+  underline: false,
   hidden: false,
 };
 
