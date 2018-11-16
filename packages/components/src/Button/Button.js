@@ -39,11 +39,6 @@ const Button = styled(tag.button)`
     box-shadow: ${themeGet('shadows.focus')};
   }
 
-  &:disabled {
-    opacity: ${themeGet('opacity.disabled')};
-    cursor: not-allowed;
-  }
-
   ${props => props.rounded && css`
     border-radius: ${themeGet('radii.rounded')};
   `}

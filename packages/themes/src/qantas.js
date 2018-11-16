@@ -201,6 +201,11 @@ const buttons = {
     color: 'white',
     backgroundColor: colors.brand.primary,
   },
+  disabled: {
+    cursor: 'not-allowed',
+    color: greys.dusty,
+    backgroundColor: greys.alto,
+  },
 };
 
 const alertStyles = {

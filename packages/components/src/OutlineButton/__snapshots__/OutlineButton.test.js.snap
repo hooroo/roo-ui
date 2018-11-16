@@ -42,11 +42,6 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
   box-shadow: 0 0 2px 2px #999999;
 }
 
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
 .c0:not(:hover),
 .c0:disabled {
   color: #E40000;
@@ -133,11 +128,6 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   box-shadow: 0 0 2px 2px #999999;
 }
 
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
 .c0:not(:hover),
 .c0:disabled {
   color: #323232;
@@ -222,11 +212,6 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
 
 .c0:focus {
   box-shadow: 0 0 2px 2px #999999;
-}
-
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
 }
 
 .c0:not(:hover),

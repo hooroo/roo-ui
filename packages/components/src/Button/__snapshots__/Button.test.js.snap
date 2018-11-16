@@ -39,11 +39,6 @@ exports[`<Button /> block renders correctly 1`] = `
   box-shadow: 0 0 2px 2px #999999;
 }
 
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
 <Clean.button
   blacklist={
     Array [
@@ -114,11 +109,6 @@ exports[`<Button /> primary renders correctly 1`] = `
 
 .c0:focus {
   box-shadow: 0 0 2px 2px #999999;
-}
-
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
 }
 
 <Clean.button
@@ -193,11 +183,6 @@ exports[`<Button /> renders correctly 1`] = `
   box-shadow: 0 0 2px 2px #999999;
 }
 
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
 <Clean.button
   blacklist={
     Array [
@@ -268,11 +253,6 @@ exports[`<Button /> rounded renders correctly 1`] = `
 
 .c0:focus {
   box-shadow: 0 0 2px 2px #999999;
-}
-
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
 }
 
 <Clean.button
