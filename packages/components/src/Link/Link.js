@@ -23,13 +23,6 @@ const Link = styled(tag.a)`
   ${fontWeight}
   ${space}
 
-  ${props => props.inline && css`
-    &, &:hover {
-      text-decoration: underline;
-      color: inherit;
-    }
-  `}
-
   ${props => props.underline && css`
     &, &:hover {
       text-decoration: underline;
@@ -42,21 +35,17 @@ const Link = styled(tag.a)`
   `}
 `;
 
-console.warn('[Roo-ui deprecration warning] <Link />\'s inline prop has been renamed to underline. Please update where relevant. The inline prop will be removed in the future'); // eslint-disable-line no-console
-
 Link.propTypes = {
   ...color.propTypes,
   ...hover.propTypes,
   ...fontWeight.propTypes,
   ...space.propTypes,
   hidden: PropTypes.bool,
-  inline: PropTypes.bool,
   underline: PropTypes.bool,
 };
 
 Link.defaultProps = {
   blacklist: Object.keys(Link.propTypes),
-  inline: false,
   underline: false,
   hidden: false,
 };

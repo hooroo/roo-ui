@@ -39,14 +39,12 @@ exports[`<Link /> renders correctly 1`] = `
       "px",
       "py",
       "hidden",
-      "inline",
       "underline",
     ]
   }
   className="c0"
   hidden={false}
   href="/"
-  inline={false}
   underline={false}
 >
   Hello world

@@ -40,13 +40,11 @@ exports[`<ExternalLink /> renders correctly 1`] = `
       "px",
       "py",
       "hidden",
-      "inline",
       "underline",
     ]
   }
   className="c0"
   hidden={false}
-  inline={false}
   rel="noopener noreferrer"
   target="_blank"
   title="Link opens in new window"
