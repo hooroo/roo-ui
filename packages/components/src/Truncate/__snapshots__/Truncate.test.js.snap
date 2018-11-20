@@ -5,7 +5,6 @@ exports[`<Truncate /> renders correctly 1`] = `
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
-  display: block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
