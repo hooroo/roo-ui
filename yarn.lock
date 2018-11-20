@@ -3824,13 +3824,6 @@ downshift@^1.31.7:
   resolved "https://registry.yarnpkg.com/downshift/-/downshift-1.31.16.tgz#acd81631539502d4112d01bd573654419fd9f640"
   integrity sha512-RskXmiGSoz0EHAyBrmTBGSLHg6+NYDGuLu2W3GpmuOe6hmZEWhCiQrq5g6DWzhnUaJD41xHbbfC6j1Fe86YqgA==
 
-downshift@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/downshift/-/downshift-2.0.10.tgz#598b93c5598c4c45caf8c46479fdfde587da7860"
-  integrity sha512-xsTnSqiq/V/5W5NoSkuG3mrs3Ia0mTk6rm0aTbkG9Y1x7Y/WxL/aWmhPBKCWvHr0Ony2LXioQcsRh50ffGCP3Q==
-  dependencies:
-    prop-types "^15.6.0"
-
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
