@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.57.3"></a>
+## [0.57.3](https://github.com/hooroo/roo-ui/compare/v0.57.2...v0.57.3) (2018-11-20)
+
+
+### Bug Fixes
+
+* omit node modules from linting ([#205](https://github.com/hooroo/roo-ui/issues/205)) ([76074f0](https://github.com/hooroo/roo-ui/commit/76074f0))
+* truncate component properly truncates ([#201](https://github.com/hooroo/roo-ui/issues/201)) ([e393ea5](https://github.com/hooroo/roo-ui/commit/e393ea5))
+
+
+
+
 <a name="0.57.2"></a>
 ## [0.57.2](https://github.com/hooroo/roo-ui/compare/v0.57.1...v0.57.2) (2018-11-02)
 
