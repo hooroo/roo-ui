@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.57.4"></a>
+## [0.57.4](https://github.com/hooroo/roo-ui/compare/v0.57.3...v0.57.4) (2018-11-21)
+
+
+### Bug Fixes
+
+* rename link inline prop ([#202](https://github.com/hooroo/roo-ui/issues/202)) ([45b75f9](https://github.com/hooroo/roo-ui/commit/45b75f9))
+
+
+
+
 <a name="0.57.3"></a>
 ## [0.57.3](https://github.com/hooroo/roo-ui/compare/v0.57.2...v0.57.3) (2018-11-20)
 
