@@ -203,8 +203,8 @@ const buttons = {
   },
   disabled: {
     cursor: 'not-allowed',
-    color: greys.dusty,
-    backgroundColor: greys.alto,
+    color: 'white',
+    backgroundColor: greys.steel,
   },
 };
 
