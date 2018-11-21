@@ -39,6 +39,12 @@ const Button = styled(tag.button)`
     box-shadow: ${themeGet('shadows.focus')};
   }
 
+  &:disabled {
+    background-color: ${themeGet('colors.greys.steel')};
+    color: white;
+    cursor: not-allowed;
+  }
+
   ${props => props.rounded && css`
     border-radius: ${themeGet('radii.rounded')};
   `}
