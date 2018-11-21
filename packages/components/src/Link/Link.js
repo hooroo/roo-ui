@@ -23,7 +23,7 @@ const Link = styled(tag.a)`
   ${fontWeight}
   ${space}
 
-  ${props => props.inline && css`
+  ${props => props.underline && css`
     &, &:hover {
       text-decoration: underline;
       color: inherit;
@@ -41,12 +41,12 @@ Link.propTypes = {
   ...fontWeight.propTypes,
   ...space.propTypes,
   hidden: PropTypes.bool,
-  inline: PropTypes.bool,
+  underline: PropTypes.bool,
 };
 
 Link.defaultProps = {
   blacklist: Object.keys(Link.propTypes),
-  inline: false,
+  underline: false,
   hidden: false,
 };
 
