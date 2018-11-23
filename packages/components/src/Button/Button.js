@@ -40,7 +40,8 @@ const Button = styled(tag.button)`
   }
 
   &:disabled {
-    opacity: ${themeGet('opacity.disabled')};
+    background-color: ${themeGet('colors.greys.steel')};
+    color: white;
     cursor: not-allowed;
   }
 

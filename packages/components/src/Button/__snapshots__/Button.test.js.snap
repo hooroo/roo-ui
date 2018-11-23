@@ -40,7 +40,8 @@ exports[`<Button /> block renders correctly 1`] = `
 }
 
 .c0:disabled {
-  opacity: 0.7;
+  background-color: #666666;
+  color: white;
   cursor: not-allowed;
 }
 
@@ -117,7 +118,8 @@ exports[`<Button /> primary renders correctly 1`] = `
 }
 
 .c0:disabled {
-  opacity: 0.7;
+  background-color: #666666;
+  color: white;
   cursor: not-allowed;
 }
 
@@ -194,7 +196,8 @@ exports[`<Button /> renders correctly 1`] = `
 }
 
 .c0:disabled {
-  opacity: 0.7;
+  background-color: #666666;
+  color: white;
   cursor: not-allowed;
 }
 
@@ -271,7 +274,8 @@ exports[`<Button /> rounded renders correctly 1`] = `
 }
 
 .c0:disabled {
-  opacity: 0.7;
+  background-color: #666666;
+  color: white;
   cursor: not-allowed;
 }
 
