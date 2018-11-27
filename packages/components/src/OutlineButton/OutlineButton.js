@@ -1,4 +1,4 @@
-import { color, buttonStyle } from 'styled-system';
+import { color, buttonStyle, themeGet } from 'styled-system';
 import { Button } from '..';
 
 const getBackground = props =>
@@ -9,13 +9,18 @@ const OutlineButton = Button.extend`
   border-color: ${getBackground};
   transition: none;
 
-  &:not(:hover), &:disabled {
+  &:not(:hover) {
     color: ${getBackground};
   }
 
   &:hover:not(:disabled) {
     background-color: ${getBackground};
     border-color: ${getBackground};
+  }
+
+  &:disabled {
+    color: ${themeGet('colors.greys.dusty')};
+    border-color: ${themeGet('colors.greys.dusty')};
   }
 `;
 

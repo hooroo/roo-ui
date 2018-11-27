@@ -40,8 +40,8 @@ const Button = styled(tag.button)`
   }
 
   &:disabled {
-    background-color: ${themeGet('colors.greys.steel')};
-    color: white;
+    background-color: ${themeGet('colors.greys.alto')};
+    color: ${themeGet('colors.greys.dusty')};
     cursor: not-allowed;
   }
 
