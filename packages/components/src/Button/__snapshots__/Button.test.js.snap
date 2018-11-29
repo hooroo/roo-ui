@@ -40,8 +40,8 @@ exports[`<Button /> block renders correctly 1`] = `
 }
 
 .c0:disabled {
-  background-color: #666666;
-  color: white;
+  background-color: #DADADA;
+  color: #999999;
   cursor: not-allowed;
 }
 
@@ -118,8 +118,8 @@ exports[`<Button /> primary renders correctly 1`] = `
 }
 
 .c0:disabled {
-  background-color: #666666;
-  color: white;
+  background-color: #DADADA;
+  color: #999999;
   cursor: not-allowed;
 }
 
@@ -196,8 +196,8 @@ exports[`<Button /> renders correctly 1`] = `
 }
 
 .c0:disabled {
-  background-color: #666666;
-  color: white;
+  background-color: #DADADA;
+  color: #999999;
   cursor: not-allowed;
 }
 
@@ -274,8 +274,8 @@ exports[`<Button /> rounded renders correctly 1`] = `
 }
 
 .c0:disabled {
-  background-color: #666666;
-  color: white;
+  background-color: #DADADA;
+  color: #999999;
   cursor: not-allowed;
 }
 
