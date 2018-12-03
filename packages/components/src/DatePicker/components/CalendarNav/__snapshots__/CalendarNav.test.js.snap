@@ -24,6 +24,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
         "bg",
       ]
     }
+    is="button"
     onClick={[MockFunction]}
   >
     <Icon
@@ -52,6 +53,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
         "bg",
       ]
     }
+    is="button"
     onClick={[MockFunction]}
   >
     <Icon
