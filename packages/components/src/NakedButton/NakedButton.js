@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tag from 'clean-tag';
 import { space, verticalAlign, themeGet, color } from 'styled-system';
 
-const NakedButton = styled(tag.button).attrs({
+const NakedButton = styled(tag).attrs({
   type: 'button',
 })`
   border: none;
@@ -34,6 +34,7 @@ NakedButton.propTypes = {
 
 NakedButton.defaultProps = {
   blacklist: Object.keys(NakedButton.propTypes),
+  is: 'button',
 };
 
 export default NakedButton;
