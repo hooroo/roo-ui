@@ -21,7 +21,7 @@ exports[`<NakedButton /> renders correctly 1`] = `
   outline: 2px solid #8DE2E0;
 }
 
-<Clean.button
+<Clean.div
   blacklist={
     Array [
       "verticalAlign",
@@ -44,8 +44,9 @@ exports[`<NakedButton /> renders correctly 1`] = `
     ]
   }
   className="c0"
+  is="button"
   type="button"
 >
   Hello world
-</Clean.button>
+</Clean.div>
 `;
