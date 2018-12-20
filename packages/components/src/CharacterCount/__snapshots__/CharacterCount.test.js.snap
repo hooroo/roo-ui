@@ -74,6 +74,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
         "textAlign",
         "align",
         "textDecoration",
+        "display",
         "hidden",
       ]
     }
@@ -112,6 +113,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
           "textAlign",
           "align",
           "textDecoration",
+          "display",
           "hidden",
         ]
       }
@@ -150,6 +152,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -186,6 +189,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
               "textAlign",
               "align",
               "textDecoration",
+              "display",
               "hidden",
             ]
           }
