@@ -1,6 +1,6 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import { mountWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 
 import OutlineButton from '.';
@@ -9,8 +9,8 @@ describe('<OutlineButton />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(
-      <OutlineButton>Hello world</OutlineButton>,
+    wrapper = mountWithTheme(
+      <OutlineButton>Click here</OutlineButton>,
       theme,
     );
   });
@@ -20,12 +20,12 @@ describe('<OutlineButton />', () => {
   });
 
   it('has no accessibility errors', async () => {
-    expect(await axe(wrapper.text())).toHaveNoViolations();
+    expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
   describe('primary', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(
+      wrapper = mountWithTheme(
         <OutlineButton primary>Hello world</OutlineButton>,
         theme,
       );
@@ -38,7 +38,7 @@ describe('<OutlineButton />', () => {
 
   describe('rounded', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(
+      wrapper = mountWithTheme(
         <OutlineButton rounded>Hello world</OutlineButton>,
         theme,
       );
