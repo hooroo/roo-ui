@@ -2,63 +2,11 @@
 
 exports[`<Select /> disabled renders correctly 1`] = `
 .c0 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 0.75rem;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  line-height: 1.35;
-  color: #323232;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
-  outline: 0;
-  -webkit-transition: border-color 200ms ease-in;
-  transition: border-color 200ms ease-in;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   border-radius: 0;
   padding-right: 2rem;
 }
 
-.c0:focus {
-  border-color: #8DE2E0;
-}
-
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.c0[readonly] {
-  border-color: transparent;
-  background: transparent;
-  padding-left: 0;
-}
-
-.c0::-webkit-input-placeholder {
-  color: #666666;
-}
-
-.c0::-moz-placeholder {
-  color: #666666;
-}
-
-.c0:-ms-input-placeholder {
-  color: #666666;
-}
-
-.c0::placeholder {
-  color: #666666;
-}
-
-.c0::-ms-clear {
-  display: none;
-}
-
-<Clean.div
+<Input
   blacklist={
     Array [
       "m",
@@ -84,68 +32,16 @@ exports[`<Select /> disabled renders correctly 1`] = `
   is={[Function]}
 >
   Options
-</Clean.div>
+</Input>
 `;
 
 exports[`<Select /> readOnly renders correctly 1`] = `
 .c0 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 0.75rem;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  line-height: 1.35;
-  color: #323232;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
-  outline: 0;
-  -webkit-transition: border-color 200ms ease-in;
-  transition: border-color 200ms ease-in;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   border-radius: 0;
   padding-right: 2rem;
 }
 
-.c0:focus {
-  border-color: #8DE2E0;
-}
-
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.c0[readonly] {
-  border-color: transparent;
-  background: transparent;
-  padding-left: 0;
-}
-
-.c0::-webkit-input-placeholder {
-  color: #666666;
-}
-
-.c0::-moz-placeholder {
-  color: #666666;
-}
-
-.c0:-ms-input-placeholder {
-  color: #666666;
-}
-
-.c0::placeholder {
-  color: #666666;
-}
-
-.c0::-ms-clear {
-  display: none;
-}
-
-<Clean.div
+<Input
   blacklist={
     Array [
       "m",
@@ -171,68 +67,16 @@ exports[`<Select /> readOnly renders correctly 1`] = `
   readOnly={true}
 >
   Options
-</Clean.div>
+</Input>
 `;
 
 exports[`<Select /> renders correctly 1`] = `
 .c0 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 0.75rem;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  line-height: 1.35;
-  color: #323232;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
-  outline: 0;
-  -webkit-transition: border-color 200ms ease-in;
-  transition: border-color 200ms ease-in;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   border-radius: 0;
   padding-right: 2rem;
 }
 
-.c0:focus {
-  border-color: #8DE2E0;
-}
-
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.c0[readonly] {
-  border-color: transparent;
-  background: transparent;
-  padding-left: 0;
-}
-
-.c0::-webkit-input-placeholder {
-  color: #666666;
-}
-
-.c0::-moz-placeholder {
-  color: #666666;
-}
-
-.c0:-ms-input-placeholder {
-  color: #666666;
-}
-
-.c0::placeholder {
-  color: #666666;
-}
-
-.c0::-ms-clear {
-  display: none;
-}
-
-<Clean.div
+<Input
   blacklist={
     Array [
       "m",
@@ -257,71 +101,16 @@ exports[`<Select /> renders correctly 1`] = `
   is={[Function]}
 >
   Options
-</Clean.div>
+</Input>
 `;
 
 exports[`<Select /> underline renders correctly 1`] = `
 .c0 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 0.75rem;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  line-height: 1.35;
-  color: #323232;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
-  outline: 0;
-  -webkit-transition: border-color 200ms ease-in;
-  transition: border-color 200ms ease-in;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  border-bottom: 2px solid;
-  border-color: #DADADA;
   border-radius: 0;
   padding-right: 2rem;
 }
 
-.c0:focus {
-  border-color: #8DE2E0;
-}
-
-.c0:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-.c0[readonly] {
-  border-color: transparent;
-  background: transparent;
-  padding-left: 0;
-}
-
-.c0::-webkit-input-placeholder {
-  color: #666666;
-}
-
-.c0::-moz-placeholder {
-  color: #666666;
-}
-
-.c0:-ms-input-placeholder {
-  color: #666666;
-}
-
-.c0::placeholder {
-  color: #666666;
-}
-
-.c0::-ms-clear {
-  display: none;
-}
-
-<Clean.div
+<Input
   blacklist={
     Array [
       "m",
@@ -347,5 +136,5 @@ exports[`<Select /> underline renders correctly 1`] = `
   underline={true}
 >
   Options
-</Clean.div>
+</Input>
 `;

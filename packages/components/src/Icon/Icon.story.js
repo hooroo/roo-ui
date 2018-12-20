@@ -20,7 +20,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
 `;
 
-const Caption = Paragraph.extend`
+const Caption = styled(Paragraph)`
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;

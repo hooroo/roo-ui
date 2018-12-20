@@ -2,18 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import { themeGet } from 'styled-system';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 import lowerCase from 'lodash/lowerCase';
 import omit from 'lodash/omit';
 
 import { Box } from '..';
 
-const Root = Box.extend`
+const Root = styled(Box)`
   position: relative;
 `;
 
-const Menu = Box.extend`
+const Menu = styled(Box)`
   position: absolute;
   width: 100%;
   margin-top: -${themeGet('space.3')};
@@ -26,7 +26,7 @@ const Menu = Box.extend`
 `;
 Menu.displayName = 'Menu';
 
-const MenuItem = Box.extend`
+const MenuItem = styled(Box)`
   background-color: ${themeGet('colors.greys.porcelain')};
   border-bottom: ${themeGet('borders.1')} ${themeGet('colors.greys.alto')};
   border-left: ${themeGet('borders.1')} transparent;

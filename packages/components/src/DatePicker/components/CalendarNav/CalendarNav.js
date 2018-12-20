@@ -1,17 +1,18 @@
+import styled from 'styled-components';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 
 import { Flex, NakedButton, Icon } from '../../../';
 
-const Wrapper = Flex.extend`
+const Wrapper = styled(Flex)`
   width: 100%;
   position: absolute;
   justify-content: space-between;
   padding: 0 ${themeGet('space.4')};
 `;
 
-const Button = NakedButton.extend`
+const Button = styled(NakedButton)`
   border-radius: ${themeGet('radii.rounded')};
   background: ${themeGet('colors.white')};
   color: ${themeGet('colors.greys.steel')};

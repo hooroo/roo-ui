@@ -20,7 +20,7 @@ describe('<OutlineButton />', () => {
   });
 
   it('has no accessibility errors', async () => {
-    expect(await axe(wrapper.html())).toHaveNoViolations();
+    expect(await axe(wrapper.text())).toHaveNoViolations();
   });
 
   describe('primary', () => {

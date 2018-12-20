@@ -4,8 +4,7 @@ import { darken } from 'polished';
 import tag from 'clean-tag';
 import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
 
-const getBackground = props =>
-  color(props).backgroundColor || buttonStyle(props).backgroundColor;
+const getBackground = props => (color(props).backgroundColor || buttonStyle(props).backgroundColor);
 
 const Button = styled(tag.button)`
   display: inline-block;
