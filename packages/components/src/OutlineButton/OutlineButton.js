@@ -1,10 +1,11 @@
+import styled from 'styled-components';
 import { color, buttonStyle, themeGet } from 'styled-system';
 import { Button } from '..';
 
 const getBackground = props =>
   color(props).backgroundColor || buttonStyle(props).backgroundColor;
 
-const OutlineButton = Button.extend`
+const OutlineButton = styled(Button)`
   background-color: transparent;
   border-color: ${getBackground};
   transition: none;

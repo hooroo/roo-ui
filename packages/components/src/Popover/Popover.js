@@ -4,16 +4,16 @@ import { themeGet } from 'styled-system';
 import { rem } from 'polished';
 import { Manager, Reference, Popper } from 'react-popper';
 import onClickOutside from 'react-onclickoutside';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import partition from 'lodash/partition';
 import { Box } from '../';
 
-const ContentWrapper = Box.extend`
+const ContentWrapper = styled(Box)`
   background: ${themeGet('colors.greys.porcelain')};
   border: ${themeGet('borders.2')} ${themeGet('colors.greys.alto')};
 `;
 
-const Triangle = Box.extend`
+const Triangle = styled(Box)`
   height: 0;
   width: 0;
   border: solid transparent;
@@ -49,7 +49,7 @@ const Triangle = Box.extend`
     `};
 `;
 
-const TriangleBorder = Triangle.extend`
+const TriangleBorder = styled(Triangle)`
   ${props =>
     props.placement === 'top' &&
     css`
@@ -164,7 +164,7 @@ Base.propTypes = {
 };
 
 const Popover = onClickOutside(Base);
-Popover.control = Box.extend``;
+Popover.control = styled(Box)``;
 Popover.control.displayName = 'Popover.control';
 
 export default Popover;

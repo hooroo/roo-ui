@@ -54,7 +54,7 @@ const CheckboxBorder = styled(tag.div)`
   }
 `;
 
-const CheckboxIcon = Icon.extend`
+const CheckboxIcon = styled(Icon)`
   position: absolute;
   display: none;
   color: ${themeGet('colors.greys.charcoal')};

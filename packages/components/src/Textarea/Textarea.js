@@ -1,7 +1,8 @@
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Input } from '..';
 
-const Textarea = Input.extend``;
+const Textarea = styled(Input)``;
 
 Textarea.propTypes = {
   ...Input.propTypes,
