@@ -1,11 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import isEqual from 'lodash/isEqual';
 
 import { Flex } from '../../../';
 import { CalendarDay, CalendarEmptyDay } from '../CalendarDay';
 
-const CalendarDaysWrapper = Flex.extend`
+const CalendarDaysWrapper = styled(Flex)`
   flex-wrap: wrap;
   margin-bottom: 2px;
   margin-right: 2px;

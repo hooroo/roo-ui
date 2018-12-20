@@ -5,14 +5,14 @@ import { axe } from 'jest-axe';
 
 import Popover from '.';
 
-jest.mock('popper.js', () => class {
+jest.mock('popper.js', () => (class {
   constructor() {
     return {
       destroy: () => {},
       scheduleUpdate: () => {},
     };
   }
-});
+}));
 
 describe('<Popover />', () => {
   const modifiers = { preventOverflow: { enabled: false } };

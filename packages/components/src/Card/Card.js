@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import { Box } from '..';
 
-const Card = Box.extend``;
+const Card = styled(Box)``;
 
 Card.defaultProps = {
   boxShadow: 'default',

@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { Box, Text } from '../../../';
 import CalendarWeekdays from '../CalendarWeekdays';
 import CalendarDays from '../CalendarDays';
 
-const MonthWrapper = Box.extend`
+const MonthWrapper = styled(Box)`
   text-align: center;
   padding: 0 ${themeGet('space.4')};
   width: ${props => `${100 / props.monthsToDisplay}%`};

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cleanElement from 'clean-element';
 import { themeGet } from 'styled-system';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { Text } from '..';
 
@@ -23,7 +23,7 @@ Base.propTypes = {
   limit: PropTypes.number.isRequired,
 };
 
-const CharacterCount = Text.withComponent(Base).extend`
+const CharacterCount = styled(Text.withComponent(Base))`
   ${props => props.value.length > props.limit && css`
     color: ${themeGet('colors.ui.error')};
   `};

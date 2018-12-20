@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { css } from 'styled-components';
 import { themeGet } from 'styled-system';
+import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 
 import Text from '../Text';
 
-const ErrorMessage = Text.extend`
+const ErrorMessage = styled(Text)`
   padding: ${themeGet('space.3')};
   position: relative;
   width: 100%;

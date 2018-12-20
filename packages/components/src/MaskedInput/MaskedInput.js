@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import TextMask from 'react-text-mask';
 import omit from 'lodash/omit';
 
@@ -18,7 +19,7 @@ MaskedInput.defaultProps = {
   ),
 };
 
-MaskedInput.time = MaskedInput.extend``;
+MaskedInput.time = styled(MaskedInput)``;
 MaskedInput.time.displayName = 'MaskedInput.time';
 MaskedInput.time.defaultProps = {
   ...MaskedInput.defaultProps,

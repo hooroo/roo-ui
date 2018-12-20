@@ -2,7 +2,6 @@
 
 exports[`<ErrorMessage /> prop.arrow equals bottom renders correctly 1`] = `
 .c0 {
-  background-color: #FCEBCD;
   padding: 0.75rem;
   position: relative;
   width: 100%;
@@ -25,7 +24,7 @@ exports[`<ErrorMessage /> prop.arrow equals bottom renders correctly 1`] = `
   border-top-color: #FCEBCD;
 }
 
-<Clean.span
+<Text
   arrow="bottom"
   bg="ui.errorBackground"
   blacklist={
@@ -34,14 +33,15 @@ exports[`<ErrorMessage /> prop.arrow equals bottom renders correctly 1`] = `
     ]
   }
   className="c0"
+  hidden={false}
+  textStyle="text"
 >
   An error occurred
-</Clean.span>
+</Text>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals left renders correctly 1`] = `
 .c0 {
-  background-color: #FCEBCD;
   padding: 0.75rem;
   position: relative;
   width: 100%;
@@ -67,7 +67,7 @@ exports[`<ErrorMessage /> prop.arrow equals left renders correctly 1`] = `
   border-right-color: #FCEBCD;
 }
 
-<Clean.span
+<Text
   arrow="left"
   bg="ui.errorBackground"
   blacklist={
@@ -76,14 +76,15 @@ exports[`<ErrorMessage /> prop.arrow equals left renders correctly 1`] = `
     ]
   }
   className="c0"
+  hidden={false}
+  textStyle="text"
 >
   An error occurred
-</Clean.span>
+</Text>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals right renders correctly 1`] = `
 .c0 {
-  background-color: #FCEBCD;
   padding: 0.75rem;
   position: relative;
   width: 100%;
@@ -109,7 +110,7 @@ exports[`<ErrorMessage /> prop.arrow equals right renders correctly 1`] = `
   border-left-color: #FCEBCD;
 }
 
-<Clean.span
+<Text
   arrow="right"
   bg="ui.errorBackground"
   blacklist={
@@ -118,14 +119,15 @@ exports[`<ErrorMessage /> prop.arrow equals right renders correctly 1`] = `
     ]
   }
   className="c0"
+  hidden={false}
+  textStyle="text"
 >
   An error occurred
-</Clean.span>
+</Text>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals top renders correctly 1`] = `
 .c0 {
-  background-color: #FCEBCD;
   padding: 0.75rem;
   position: relative;
   width: 100%;
@@ -148,7 +150,7 @@ exports[`<ErrorMessage /> prop.arrow equals top renders correctly 1`] = `
   border-bottom-color: #FCEBCD;
 }
 
-<Clean.span
+<Text
   arrow="top"
   bg="ui.errorBackground"
   blacklist={
@@ -157,14 +159,15 @@ exports[`<ErrorMessage /> prop.arrow equals top renders correctly 1`] = `
     ]
   }
   className="c0"
+  hidden={false}
+  textStyle="text"
 >
   An error occurred
-</Clean.span>
+</Text>
 `;
 
 exports[`<ErrorMessage /> renders correctly 1`] = `
 .c0 {
-  background-color: #FCEBCD;
   padding: 0.75rem;
   position: relative;
   width: 100%;
@@ -181,7 +184,7 @@ exports[`<ErrorMessage /> renders correctly 1`] = `
   border-width: 0.625rem;
 }
 
-<Clean.span
+<Text
   arrow={null}
   bg="ui.errorBackground"
   blacklist={
@@ -190,7 +193,9 @@ exports[`<ErrorMessage /> renders correctly 1`] = `
     ]
   }
   className="c0"
+  hidden={false}
+  textStyle="text"
 >
   An error occurred
-</Clean.span>
+</Text>
 `;

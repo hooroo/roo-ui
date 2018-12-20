@@ -8,7 +8,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
   <Box
     px={4}
   >
-    <Box
+    <Flex
       py={4}
     >
       <Box
@@ -58,7 +58,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Box>
 </Box>
 `;
@@ -71,7 +71,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
   <Box
     px={4}
   >
-    <Box
+    <Flex
       py={4}
     >
       <Box
@@ -121,7 +121,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Box>
 </Box>
 `;
@@ -134,7 +134,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
   <Box
     px={4}
   >
-    <Box
+    <Flex
       py={4}
     >
       <Box
@@ -184,7 +184,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Box>
 </Box>
 `;
@@ -197,7 +197,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
   <Box
     px={4}
   >
-    <Box
+    <Flex
       py={4}
     >
       <Box
@@ -247,7 +247,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Box>
 </Box>
 `;
@@ -260,7 +260,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
   <Box
     px={4}
   >
-    <Box
+    <Flex
       py={4}
     >
       <Box
@@ -310,7 +310,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Box>
 </Box>
 `;
@@ -323,7 +323,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
   <Box
     px={4}
   >
-    <Box
+    <Flex
       py={4}
     >
       <Box
@@ -373,7 +373,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Box>
 </Box>
 `;
@@ -407,7 +407,7 @@ exports[`<Alert /> contained renders correctly 1`] = `
     gutter="default"
     maxWidth="default"
   >
-    <Box
+    <Flex
       py={4}
     >
       <Text
@@ -449,7 +449,7 @@ exports[`<Alert /> contained renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Container>
 </Box>
 `;
@@ -462,7 +462,7 @@ exports[`<Alert /> renders correctly 1`] = `
   <Box
     px={4}
   >
-    <Box
+    <Flex
       py={4}
     >
       <Text
@@ -504,7 +504,7 @@ exports[`<Alert /> renders correctly 1`] = `
       >
         Hello world
       </Text>
-    </Box>
+    </Flex>
   </Box>
 </Box>
 `;

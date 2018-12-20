@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import Text from '../Text';
 
-const Truncate = Text.extend`
+const Truncate = styled(Text)`
   display: block;
   overflow: hidden;
   white-space: nowrap;

@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> renders correctly 1`] = `
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 .c0 {
   display: inline-block;
   position: relative;
@@ -43,10 +50,6 @@ input:disabled + .c2 {
 }
 
 .c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
   position: absolute;
   display: none;
   color: #323232;
@@ -277,38 +280,43 @@ input:checked ~ .c3 {
               </Clean.div>
             </Clean.div>
           </Checkbox__CheckboxBorder>
-          <Icon
+          <Checkbox__CheckboxIcon
             name="done"
           >
-            <Base
+            <Icon
               className="c3"
               name="done"
-              size={24}
-              title={null}
             >
-              <Cleaned
-                className="c3"
-                fill="currentcolor"
-                height={24}
-                title="done"
-                viewBox="0 0 24 24"
-                width={24}
+              <Base
+                className="c3 c4"
+                name="done"
+                size={24}
+                title={null}
               >
-                <svg
-                  className="c3"
+                <Cleaned
+                  className="c3 c4"
                   fill="currentcolor"
                   height={24}
                   title="done"
                   viewBox="0 0 24 24"
                   width={24}
                 >
-                  <path
-                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                  />
-                </svg>
-              </Cleaned>
-            </Base>
-          </Icon>
+                  <svg
+                    className="c3 c4"
+                    fill="currentcolor"
+                    height={24}
+                    title="done"
+                    viewBox="0 0 24 24"
+                    width={24}
+                  >
+                    <path
+                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                    />
+                  </svg>
+                </Cleaned>
+              </Base>
+            </Icon>
+          </Checkbox__CheckboxIcon>
         </div>
       </Clean.div>
     </Clean.div>
@@ -317,6 +325,13 @@ input:checked ~ .c3 {
 `;
 
 exports[`<Checkbox /> when checked renders correctly 1`] = `
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 .c0 {
   display: inline-block;
   position: relative;
@@ -359,10 +374,6 @@ input:disabled + .c2 {
 }
 
 .c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
   position: absolute;
   display: none;
   color: #323232;
@@ -597,38 +608,43 @@ input:checked ~ .c3 {
               </Clean.div>
             </Clean.div>
           </Checkbox__CheckboxBorder>
-          <Icon
+          <Checkbox__CheckboxIcon
             name="done"
           >
-            <Base
+            <Icon
               className="c3"
               name="done"
-              size={24}
-              title={null}
             >
-              <Cleaned
-                className="c3"
-                fill="currentcolor"
-                height={24}
-                title="done"
-                viewBox="0 0 24 24"
-                width={24}
+              <Base
+                className="c3 c4"
+                name="done"
+                size={24}
+                title={null}
               >
-                <svg
-                  className="c3"
+                <Cleaned
+                  className="c3 c4"
                   fill="currentcolor"
                   height={24}
                   title="done"
                   viewBox="0 0 24 24"
                   width={24}
                 >
-                  <path
-                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                  />
-                </svg>
-              </Cleaned>
-            </Base>
-          </Icon>
+                  <svg
+                    className="c3 c4"
+                    fill="currentcolor"
+                    height={24}
+                    title="done"
+                    viewBox="0 0 24 24"
+                    width={24}
+                  >
+                    <path
+                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                    />
+                  </svg>
+                </Cleaned>
+              </Base>
+            </Icon>
+          </Checkbox__CheckboxIcon>
         </div>
       </Clean.div>
     </Clean.div>
@@ -637,6 +653,13 @@ input:checked ~ .c3 {
 `;
 
 exports[`<Checkbox /> when disabled renders correctly 1`] = `
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 .c0 {
   display: inline-block;
   position: relative;
@@ -679,10 +702,6 @@ input:disabled + .c2 {
 }
 
 .c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
   position: absolute;
   display: none;
   color: #323232;
@@ -917,38 +936,43 @@ input:checked ~ .c3 {
               </Clean.div>
             </Clean.div>
           </Checkbox__CheckboxBorder>
-          <Icon
+          <Checkbox__CheckboxIcon
             name="done"
           >
-            <Base
+            <Icon
               className="c3"
               name="done"
-              size={24}
-              title={null}
             >
-              <Cleaned
-                className="c3"
-                fill="currentcolor"
-                height={24}
-                title="done"
-                viewBox="0 0 24 24"
-                width={24}
+              <Base
+                className="c3 c4"
+                name="done"
+                size={24}
+                title={null}
               >
-                <svg
-                  className="c3"
+                <Cleaned
+                  className="c3 c4"
                   fill="currentcolor"
                   height={24}
                   title="done"
                   viewBox="0 0 24 24"
                   width={24}
                 >
-                  <path
-                    d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                  />
-                </svg>
-              </Cleaned>
-            </Base>
-          </Icon>
+                  <svg
+                    className="c3 c4"
+                    fill="currentcolor"
+                    height={24}
+                    title="done"
+                    viewBox="0 0 24 24"
+                    width={24}
+                  >
+                    <path
+                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                    />
+                  </svg>
+                </Cleaned>
+              </Base>
+            </Icon>
+          </Checkbox__CheckboxIcon>
         </div>
       </Clean.div>
     </Clean.div>

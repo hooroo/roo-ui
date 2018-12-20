@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<OutlineButton /> primary renders correctly 1`] = `
-.c0 {
+.c1 {
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.5rem;
@@ -28,24 +28,27 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
   appearance: none;
   color: white;
   background-color: #E40000;
+}
+
+.c1:hover:not(:disabled) {
+  background-color: #b10000;
+}
+
+.c1:focus {
+  box-shadow: 0 0 2px 2px #999999;
+}
+
+.c1:disabled {
+  background-color: #DADADA;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c0 {
   background-color: transparent;
   border-color: #E40000;
   -webkit-transition: none;
   transition: none;
-}
-
-.c0:hover:not(:disabled) {
-  background-color: #b10000;
-}
-
-.c0:focus {
-  box-shadow: 0 0 2px 2px #999999;
-}
-
-.c0:disabled {
-  background-color: #DADADA;
-  color: #999999;
-  cursor: not-allowed;
 }
 
 .c0:not(:hover) {
@@ -62,42 +65,113 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
   border-color: #999999;
 }
 
-<Clean.button
-  blacklist={
-    Array [
-      "buttonStyle",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "primary",
-      "rounded",
-      "block",
-    ]
-  }
-  buttonStyle="default"
-  className="c0"
+<OutlineButton
   primary={true}
 >
-  Hello world
-</Clean.button>
+  <Button
+    blacklist={
+      Array [
+        "buttonStyle",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "color",
+        "bg",
+        "boxShadow",
+        "primary",
+        "rounded",
+        "block",
+      ]
+    }
+    buttonStyle="default"
+    className="c0"
+    primary={true}
+  >
+    <Clean.button
+      blacklist={
+        Array [
+          "buttonStyle",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "color",
+          "bg",
+          "boxShadow",
+          "primary",
+          "rounded",
+          "block",
+        ]
+      }
+      buttonStyle="default"
+      className="c0 c1"
+      primary={true}
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "buttonStyle",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "color",
+            "bg",
+            "boxShadow",
+            "primary",
+            "rounded",
+            "block",
+          ]
+        }
+        buttonStyle="default"
+        className="c0 c1"
+        is="button"
+        primary={true}
+      >
+        <button
+          className="c0 c1"
+        >
+          Hello world
+        </button>
+      </Clean.div>
+    </Clean.button>
+  </Button>
+</OutlineButton>
 `;
 
 exports[`<OutlineButton /> renders correctly 1`] = `
-.c0 {
+.c1 {
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.5rem;
@@ -124,33 +198,26 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   appearance: none;
   color: white;
   background-color: #323232;
-  background-color: transparent;
-  border-color: #323232;
-  -webkit-transition: none;
-  transition: none;
 }
 
-.c0:hover:not(:disabled) {
+.c1:hover:not(:disabled) {
   background-color: #181818;
 }
 
-.c0:focus {
+.c1:focus {
   box-shadow: 0 0 2px 2px #999999;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #DADADA;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c0:not(:hover) {
-  color: #323232;
-}
-
-.c0:hover:not(:disabled) {
-  background-color: #323232;
-  border-color: #323232;
+.c0 {
+  background-color: transparent;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .c0:disabled {
@@ -158,41 +225,108 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   border-color: #999999;
 }
 
-<Clean.button
-  blacklist={
-    Array [
-      "buttonStyle",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "primary",
-      "rounded",
-      "block",
-    ]
-  }
-  buttonStyle="default"
-  className="c0"
->
-  Hello world
-</Clean.button>
+<OutlineButton>
+  <Button
+    blacklist={
+      Array [
+        "buttonStyle",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "color",
+        "bg",
+        "boxShadow",
+        "primary",
+        "rounded",
+        "block",
+      ]
+    }
+    buttonStyle="default"
+    className="c0"
+  >
+    <Clean.button
+      blacklist={
+        Array [
+          "buttonStyle",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "color",
+          "bg",
+          "boxShadow",
+          "primary",
+          "rounded",
+          "block",
+        ]
+      }
+      buttonStyle="default"
+      className="c0 c1"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "buttonStyle",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "color",
+            "bg",
+            "boxShadow",
+            "primary",
+            "rounded",
+            "block",
+          ]
+        }
+        buttonStyle="default"
+        className="c0 c1"
+        is="button"
+      >
+        <button
+          className="c0 c1"
+        >
+          Click here
+        </button>
+      </Clean.div>
+    </Clean.button>
+  </Button>
+</OutlineButton>
 `;
 
 exports[`<OutlineButton /> rounded renders correctly 1`] = `
-.c0 {
+.c1 {
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.5rem;
@@ -220,33 +354,26 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
   color: white;
   background-color: #323232;
   border-radius: 1000px;
-  background-color: transparent;
-  border-color: #323232;
-  -webkit-transition: none;
-  transition: none;
 }
 
-.c0:hover:not(:disabled) {
+.c1:hover:not(:disabled) {
   background-color: #181818;
 }
 
-.c0:focus {
+.c1:focus {
   box-shadow: 0 0 2px 2px #999999;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: #DADADA;
   color: #999999;
   cursor: not-allowed;
 }
 
-.c0:not(:hover) {
-  color: #323232;
-}
-
-.c0:hover:not(:disabled) {
-  background-color: #323232;
-  border-color: #323232;
+.c0 {
+  background-color: transparent;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .c0:disabled {
@@ -254,36 +381,107 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
   border-color: #999999;
 }
 
-<Clean.button
-  blacklist={
-    Array [
-      "buttonStyle",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "primary",
-      "rounded",
-      "block",
-    ]
-  }
-  buttonStyle="default"
-  className="c0"
+<OutlineButton
   rounded={true}
 >
-  Hello world
-</Clean.button>
+  <Button
+    blacklist={
+      Array [
+        "buttonStyle",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "color",
+        "bg",
+        "boxShadow",
+        "primary",
+        "rounded",
+        "block",
+      ]
+    }
+    buttonStyle="default"
+    className="c0"
+    rounded={true}
+  >
+    <Clean.button
+      blacklist={
+        Array [
+          "buttonStyle",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "color",
+          "bg",
+          "boxShadow",
+          "primary",
+          "rounded",
+          "block",
+        ]
+      }
+      buttonStyle="default"
+      className="c0 c1"
+      rounded={true}
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "buttonStyle",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "color",
+            "bg",
+            "boxShadow",
+            "primary",
+            "rounded",
+            "block",
+          ]
+        }
+        buttonStyle="default"
+        className="c0 c1"
+        is="button"
+        rounded={true}
+      >
+        <button
+          className="c0 c1"
+        >
+          Hello world
+        </button>
+      </Clean.div>
+    </Clean.button>
+  </Button>
+</OutlineButton>
 `;

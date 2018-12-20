@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import {
   alignItems,
   alignContent,
@@ -13,7 +14,7 @@ const flexFlow = style({
   cssProperty: 'flexFlow',
 });
 
-const Flex = Box.extend`
+const Flex = styled(Box)`
   display: flex;
   ${alignItems}
   ${alignContent}

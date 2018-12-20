@@ -1,7 +1,8 @@
+import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 import { Link } from '..';
 
-const ExternalLink = Link.extend`
+const ExternalLink = styled(Link)`
   color: ${themeGet('colors.greys.charcoal')};
 `;
 

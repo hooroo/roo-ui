@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { darken } from 'polished';
 
 import { NakedButton, Box } from '../../../';
 
-const DayWrapper = Box.extend`
+const DayWrapper = styled(Box)`
   flex: 1 1 auto;
   width: calc(100% / 7);
   margin: 0 -1px -1px 0;
@@ -41,7 +41,7 @@ DayWrapper.defaultProps = {
   blacklist: [...Object.keys(Box.propTypes), 'selected', 'selectable'],
 };
 
-const Button = NakedButton.extend`
+const Button = styled(NakedButton)`
   position: absolute;
   left: 0;
   top: 0;
@@ -155,7 +155,7 @@ CalendarDay.propTypes = {
   highlighted: PropTypes.bool,
 };
 
-export const CalendarEmptyDay = DayWrapper.withComponent('div').extend`
+export const CalendarEmptyDay = styled(DayWrapper.withComponent('div'))`
   border-color: transparent;
 `;
 
