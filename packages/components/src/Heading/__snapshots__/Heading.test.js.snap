@@ -37,6 +37,7 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
@@ -87,6 +88,7 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
@@ -137,6 +139,7 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
@@ -187,6 +190,7 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
@@ -237,6 +241,7 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
@@ -287,6 +292,7 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
@@ -337,6 +343,7 @@ exports[`<Heading /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
