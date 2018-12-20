@@ -77,6 +77,7 @@ exports[`<CalendarMonth /> renders correctly 1`] = `
         "textAlign",
         "align",
         "textDecoration",
+        "display",
         "hidden",
       ]
     }

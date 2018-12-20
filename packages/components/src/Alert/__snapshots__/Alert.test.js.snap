@@ -47,6 +47,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -109,6 +110,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -171,6 +173,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -233,6 +236,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -295,6 +299,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -357,6 +362,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -432,6 +438,7 @@ exports[`<Alert /> contained renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
@@ -486,6 +493,7 @@ exports[`<Alert /> renders correctly 1`] = `
             "textAlign",
             "align",
             "textDecoration",
+            "display",
             "hidden",
           ]
         }
