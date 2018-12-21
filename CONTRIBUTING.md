@@ -199,7 +199,7 @@ Component packages should define a script to compile the Javascript source with 
 
 #### Styling
 
-Component packages that require styling should be styled with [styled-components](http://styled-components.com) and [styled-system](https://github.com/jxnblk/styled-system) which should be added as a peer dependencies:
+Component packages that require styling should be styled with [styled-components](http://styled-components.com) and [styled-system](https://jxnblk.com/styled-system/) which should be added as a peer dependencies:
 
 ```json
 {

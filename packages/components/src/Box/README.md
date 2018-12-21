@@ -20,7 +20,7 @@ export default (
 
 ## Customization
 
-This component can be customized with [styled-system](https://github.com/jxnblk/styled-system) by passing props for
+This component can be customized with [styled-system](https://jxnblk.com/styled-system/) by passing props for
 `display`,
 `space`,
 `width`,

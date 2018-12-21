@@ -22,7 +22,7 @@ If you want to jump in and and play around with the project check out [Roo UI pl
 
 Roo UI is built with [Styled Components](https://www.styled-components.com/) which is a CSS-in-JS library. We use [Styled System](https://jxnblk.com/styled-system/) which allows us to pass props which style components. These props reference values from the [theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js). Alongside these tools we use [Polished](https://github.com/styled-components/polished) for CSS helper functions.
 
-When using styled-components, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using [`clean-tag`](https://github.com/jxnblk/styled-system/tree/master/clean-tag). Using clean-tag we can define a `blackList` default prop on components which prevents props from making there way to the DOM.
+When using styled-components, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using [`clean-tag`](https://github.com/jxnblk/styled-system/tree/master/packages/clean-tag). Using clean-tag we can define a `blackList` default prop on components which prevents props from making there way to the DOM.
 
 ### Supported devices
 
