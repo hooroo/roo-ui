@@ -164,7 +164,7 @@ Yes, refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on adding ne
 
 ### General
 
-- [Styled System API table reference](http://jxnblk.com/styled-system/table/)
+- [Styled System API table reference](http://jxnblk.com/styled-system/table)
 - [Qantas theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js)
 
 ### Accessibility

@@ -37,4 +37,4 @@ This component can be customized with [styled-system](https://jxnblk.com/styled-
 `space`,
 `textDecoration`,
 `display` &
-`textAlign` [functions](http://jxnblk.com/styled-system/table/)
+`textAlign` [functions](http://jxnblk.com/styled-system/table)

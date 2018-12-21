@@ -38,4 +38,4 @@ This component can be customized with [styled-system](https://jxnblk.com/styled-
 `flexBasis`,
 `flex`,
 `position` &
-`zIndex` [functions](http://jxnblk.com/styled-system/table/)
+`zIndex` [functions](http://jxnblk.com/styled-system/table)

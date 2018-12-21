@@ -20,4 +20,4 @@ export default (
 
 ## Customization
 
-This component can be customized with [styled-system](https://jxnblk.com/styled-system) by passing props for `maxWidth` & `space` [functions](http://jxnblk.com/styled-system/table/).
+This component can be customized with [styled-system](https://jxnblk.com/styled-system) by passing props for `maxWidth` & `space` [functions](http://jxnblk.com/styled-system/table).
