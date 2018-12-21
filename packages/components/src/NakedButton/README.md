@@ -20,4 +20,4 @@ export default (
 
 ## Customization
 
-This component can be customized with [styled-system](https://jxnblk.com/styled-system/) by passing props for [color](https://jxnblk.com/styled-system/table#core), [space](https://jxnblk.com/styled-system/table#core) or [vertical align](https://jxnblk.com/styled-system/table#layout).
+This component can be customized with [styled-system](https://jxnblk.com/styled-system) by passing props for [color](https://jxnblk.com/styled-system/table#core), [space](https://jxnblk.com/styled-system/table#core) or [vertical align](https://jxnblk.com/styled-system/table#layout).

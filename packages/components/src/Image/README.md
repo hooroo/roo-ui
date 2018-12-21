@@ -27,5 +27,5 @@ export default (
 
 ## Customization
 
-This component can be customized with [styled-system](https://jxnblk.com/styled-system/) by passing props for [space](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#space-responsive), [width](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#width-responsive),
-[height](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#layout), or [size](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#layout).
+This component can be customized with [styled-system](https://jxnblk.com/styled-system) by passing props for [space](https://jxnblk.com/styled-system#space-theming), [width](https://jxnblk.com/styled-system#width),
+[height](http://jxnblk.com/styled-system/table#layout), or [size](http://jxnblk.com/styled-system/table#layout).
