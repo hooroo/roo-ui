@@ -20,7 +20,7 @@ export default (
 
 ## Customization
 
-This component can be customized with [styled-system](https://github.com/jxnblk/styled-system) by passing props for
+This component can be customized with [styled-system](https://jxnblk.com/styled-system) by passing props for
 `display`,
 `space`,
 `width`,
@@ -38,4 +38,4 @@ This component can be customized with [styled-system](https://github.com/jxnblk/
 `flexBasis`,
 `flex`,
 `position` &
-`zIndex` [functions](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#table-of-style-props)
+`zIndex` [functions](http://jxnblk.com/styled-system/table)
