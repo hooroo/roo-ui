@@ -30,7 +30,7 @@ const Caption = styled(Paragraph)`
 const renderIcons = group => () => (
   <Grid>
     {groupedPaths[group].map(({ name }) => (
-      <Box p={4}>
+      <Box p={4} key={name}>
         <Icon color="greys.steel" size={48} name={name} />
         <Caption title={name} fontSize="xs" color="greys.steel">{name}</Caption>
       </Box>

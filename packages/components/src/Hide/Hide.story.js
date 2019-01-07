@@ -10,7 +10,7 @@ storiesOf('Components|Hide', module)
   .add('default', () => (
     <table>
       <thead>
-        <th /><th>is visible</th>
+        <th>is visible</th>
       </thead>
       <tbody>
         <tr><th>xs</th><td><Hide xs><span role="img" aria-label="Is visible?">✅</span></Hide></td></tr>
