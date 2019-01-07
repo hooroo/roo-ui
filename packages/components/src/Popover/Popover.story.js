@@ -13,7 +13,7 @@ storiesOf('Components|Popover', module)
     <Popover zIndex={20}>
       <Popover.control>
         {({ openPopover, closePopover }) => (
-          <Button primary onClick={openPopover} onKeyDown={closePopover}>Open popover</Button>
+          <Button variant="primary" onClick={openPopover} onKeyDown={closePopover}>Open popover</Button>
         )}
       </Popover.control>
 

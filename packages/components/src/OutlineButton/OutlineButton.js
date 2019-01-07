@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { color, buttonStyle, themeGet } from 'styled-system';
+import get from 'lodash/get';
 import { Button } from '..';
 
 const getBackground = props =>
-  color(props).backgroundColor || buttonStyle(props).backgroundColor;
+  get(color(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor');
 
 const OutlineButton = styled(Button)`
   background-color: transparent;

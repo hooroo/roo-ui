@@ -22,7 +22,7 @@ export default (
       Lorem ipsum dolor sit amet<br />
     </Modal.body>
     <Modal.footer>
-      <Button primary onClick={toggleIsOpen}>Close</Button>
+      <Button variant="primary" onClick={toggleIsOpen}>Close</Button>
     </Modal.footer>
   </Modal>
 );

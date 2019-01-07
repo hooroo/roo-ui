@@ -108,7 +108,7 @@ class Base extends Component {
       <Manager>
         <Reference>
           {({ ref }) => (
-            <Box innerRef={ref}>
+            <Box ref={ref}>
               {control[0].props.children({
                 openPopover: this.openPopover,
                 closePopover: this.closePopover,
@@ -125,7 +125,7 @@ class Base extends Component {
             }) => (
               <ContentWrapper
                 aria-hidden="true"
-                innerRef={ref}
+                ref={ref}
                 style={style}
                 placement={placement}
                 className="ignore-react-onclickoutside"
@@ -134,12 +134,12 @@ class Base extends Component {
                 {content}
 
                 <TriangleBorder
-                  innerRef={arrowProps.ref}
+                  ref={arrowProps.ref}
                   style={arrowProps.style}
                   placement={placement}
                 />
                 <Triangle
-                  innerRef={arrowProps.ref}
+                  ref={arrowProps.ref}
                   style={arrowProps.style}
                   placement={placement}
                 />
