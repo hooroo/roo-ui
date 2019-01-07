@@ -1,1 +1,1 @@
-export { default } from './Modal';
+export { default, ModalGlobalStyle } from './Modal';
