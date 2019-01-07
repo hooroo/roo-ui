@@ -22,7 +22,7 @@ describe('<Button />', () => {
 
   describe('primary', () => {
     beforeEach(() => {
-      wrapper = shallowWithTheme(<Button primary>Hello world</Button>, theme);
+      wrapper = shallowWithTheme(<Button variant="primary">Hello world</Button>, theme);
     });
 
     it('renders correctly', () => {

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { themeGet, responsiveStyle } from 'styled-system';
+import { themeGet, style } from 'styled-system';
 import tag from 'clean-tag';
 
 import { ListItem } from '..';
 
-const columns = responsiveStyle({
+const columns = style({
   prop: 'columns',
   cssProperty: 'flexBasis',
   getter: n => `${100 / n}%`,
