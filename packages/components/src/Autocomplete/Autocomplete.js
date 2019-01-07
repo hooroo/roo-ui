@@ -111,7 +111,7 @@ export default class Autocomplete extends React.Component {
       >
         {downshiftProps => (
           <Root
-            {...downshiftProps.getRootProps({ refKey: 'innerRef' })}
+            {...downshiftProps.getRootProps()}
           >
             {this.props.children(downshiftProps)}
             {downshiftProps.isOpen && this.renderMenu(downshiftProps)}
