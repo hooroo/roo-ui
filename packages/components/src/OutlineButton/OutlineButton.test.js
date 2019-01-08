@@ -15,7 +15,7 @@ describe('<OutlineButton />', () => {
     );
   });
 
-  it('renders correctly', () => {
+  fit('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 

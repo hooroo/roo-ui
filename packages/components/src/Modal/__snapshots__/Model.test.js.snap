@@ -57,101 +57,1399 @@ exports[`<Modal /> renders correctly 1`] = `
   ariaHideApp={true}
   isOpen={true}
   role="dialog"
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+      "borders": Array [
+        0,
+        "1px solid",
+        "2px solid",
+        "3px solid",
+      ],
+      "breakpoints": Array [
+        "40rem",
+        "52rem",
+        "64rem",
+      ],
+      "buttons": Object {
+        "default": Object {
+          "backgroundColor": "#323232",
+          "color": "white",
+        },
+        "primary": Object {
+          "backgroundColor": "#E40000",
+          "color": "white",
+        },
+      },
+      "colors": Object {
+        "blue": "#8DE2E0",
+        "brand": Object {
+          "primary": "#E40000",
+          "quaternary": "#F9F3E9",
+          "secondary": "#8DE2E0",
+          "tertiary": "#D20000",
+        },
+        "brightSun": "#FBCB3B",
+        "green": "#35A509",
+        "greys": Object {
+          "alto": "#DADADA",
+          "charcoal": "#323232",
+          "dusty": "#999999",
+          "mineShaft": "#222222",
+          "porcelain": "#F4F5F6",
+          "steel": "#666666",
+        },
+        "lightBlue": "#E7F7F7",
+        "lightGreen": "#DEF2DE",
+        "lightOrange": "#FCEBCD",
+        "maroon": "#870000",
+        "orange": "#ED710B",
+        "red": "#E00E00",
+        "ui": Object {
+          "error": "#ED710B",
+          "errorBackground": "#FCEBCD",
+          "info": "#8DE2E0",
+          "infoBackground": "#E7F7F7",
+          "link": "#E00E00",
+          "linkHover": "#870000",
+          "success": "#35A509",
+          "successBackground": "#DEF2DE",
+        },
+        "white": "#FFFFFF",
+      },
+      "fontFamily": "Ciutadella, sans-serif",
+      "fontSizes": Object {
+        "2xl": "1.625rem",
+        "3xl": "2.25rem",
+        "4xl": "2.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "sm": "0.9375rem",
+        "xl": "1.375rem",
+        "xs": "0.8125rem",
+      },
+      "fontWeights": Object {
+        "bold": 600,
+        "normal": 500,
+      },
+      "gutters": Object {
+        "default": 3,
+      },
+      "letterSpacings": Object {
+        "normal": "0",
+        "wide": "0.125em",
+      },
+      "lineHeights": Object {
+        "loose": 1.5,
+        "normal": 1.35,
+        "tight": 1,
+      },
+      "maxWidths": Object {
+        "default": "80rem",
+      },
+      "mediaQueries": Array [
+        "@media screen and (min-width: 40rem)",
+        "@media screen and (min-width: 52rem)",
+        "@media screen and (min-width: 64rem)",
+      ],
+      "opacity": Object {
+        "disabled": 0.7,
+      },
+      "radii": Object {
+        "default": "4px",
+        "none": 0,
+        "rounded": "1000px",
+      },
+      "shadows": Object {
+        "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+        "focus": "0 0 2px 2px #999999;",
+        "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+        "none": 0,
+      },
+      "space": Array [
+        "0rem",
+        "0.25rem",
+        "0.5rem",
+        "0.75rem",
+        "1rem",
+        "1.25rem",
+        "1.5rem",
+        "1.75rem",
+        "2rem",
+        "2.25rem",
+        "2.5rem",
+        "2.75rem",
+        "3rem",
+        "3.25rem",
+        "3.5rem",
+        "3.75rem",
+        "4rem",
+        "4.25rem",
+        "4.5rem",
+        "4.75rem",
+        "5rem",
+        "5.25rem",
+        "5.5rem",
+        "5.75rem",
+        "6rem",
+        "6.25rem",
+        "6.5rem",
+        "6.75rem",
+        "7rem",
+        "7.25rem",
+        "7.5rem",
+        "7.75rem",
+        "8rem",
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "fontWeight": 600,
+          "textTransform": "uppercase",
+        },
+        "h1": Object {
+          "fontSize": "2.25rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h2": Object {
+          "fontSize": "1.625rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h3": Object {
+          "fontSize": "1.375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h4": Object {
+          "fontSize": "1.125rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h5": Object {
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h6": Object {
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "label": Object {
+          "color": "#323232",
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+        },
+        "text": Object {
+          "fontSize": "1rem",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+        },
+      },
+      "transitions": Object {
+        "default": "200ms ease-in",
+      },
+    }
+  }
   title="Test Modal"
   width="41.25rem"
 >
-  <Component
+  <StyledComponent
     ariaHideApp={true}
-    className="c0"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "body": [Function],
+        "componentStyle": ComponentStyle {
+          "componentId": "Modal-sc-19nb0si-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            ".ModalOverlay{position:fixed;top:0px;left:0px;right:0px;bottom:0px;background-color:",
+            [Function],
+            ";display:flex;justify-content:center;align-items:center;}.ModalContent{position:relative;top:auto;left:auto;right:auto;bottom:auto;border:none;background:",
+            [Function],
+            ";overflow:auto;border-radius:",
+            [Function],
+            ";outline:none;padding:0px;display:flex;flex-direction:column;max-height:90%;width:calc(100% - ",
+            [Function],
+            ");@media (min-width:",
+            [Function],
+            "){flex:0 1 ",
+            [Function],
+            ";}}",
+          ],
+        },
+        "defaultProps": Object {
+          "ariaHideApp": true,
+          "role": "dialog",
+          "width": "41.25rem",
+        },
+        "displayName": "Modal",
+        "foldedComponentIds": Array [],
+        "footer": [Function],
+        "header": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "variant": "default",
+          },
+          "displayName": "Modal.header",
+          "propTypes": Object {
+            "bg": [Function],
+            "border": [Function],
+            "borderBottom": [Function],
+            "borderColor": [Function],
+            "borderLeft": [Function],
+            "borderRadius": [Function],
+            "borderRight": [Function],
+            "borderTop": [Function],
+            "boxShadow": [Function],
+            "children": [Function],
+            "color": [Function],
+            "display": [Function],
+            "flex": [Function],
+            "flexBasis": [Function],
+            "height": [Function],
+            "icon": [Function],
+            "m": [Function],
+            "maxHeight": [Function],
+            "maxWidth": [Function],
+            "mb": [Function],
+            "minHeight": [Function],
+            "minWidth": [Function],
+            "ml": [Function],
+            "mr": [Function],
+            "mt": [Function],
+            "mx": [Function],
+            "my": [Function],
+            "p": [Function],
+            "pb": [Function],
+            "pl": [Function],
+            "position": [Function],
+            "pr": [Function],
+            "pt": [Function],
+            "px": [Function],
+            "py": [Function],
+            "textAlign": [Function],
+            "variant": [Function],
+            "width": [Function],
+            "zIndex": [Function],
+          },
+          "render": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+        "propTypes": Object {
+          "appElement": [Function],
+          "aria": [Function],
+          "ariaHideApp": [Function],
+          "bodyOpenClassName": [Function],
+          "className": [Function],
+          "closeTimeoutMS": [Function],
+          "contentLabel": [Function],
+          "contentRef": [Function],
+          "data": [Function],
+          "htmlOpenClassName": [Function],
+          "isOpen": [Function],
+          "onAfterOpen": [Function],
+          "onRequestClose": [Function],
+          "overlayClassName": [Function],
+          "overlayRef": [Function],
+          "parentSelector": [Function],
+          "portalClassName": [Function],
+          "role": [Function],
+          "shouldCloseOnEsc": [Function],
+          "shouldCloseOnOverlayClick": [Function],
+          "shouldFocusAfterRender": [Function],
+          "shouldReturnFocusAfterClose": [Function],
+          "style": [Function],
+          "width": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "Modal-sc-19nb0si-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     isOpen={true}
     role="dialog"
+    theme={
+      Object {
+        "alertStyles": Object {
+          "default": Object {
+            "bg": "greys.porcelain",
+          },
+          "error": Object {
+            "bg": "ui.errorBackground",
+            "icon": Object {
+              "color": "ui.error",
+              "name": "warning",
+            },
+          },
+          "info": Object {
+            "bg": "ui.infoBackground",
+            "icon": Object {
+              "color": "greys.charcoal",
+              "name": "info",
+            },
+          },
+          "success": Object {
+            "bg": "ui.successBackground",
+            "icon": Object {
+              "color": "ui.success",
+              "name": "checkCircle",
+            },
+          },
+        },
+        "borders": Array [
+          0,
+          "1px solid",
+          "2px solid",
+          "3px solid",
+        ],
+        "breakpoints": Array [
+          "40rem",
+          "52rem",
+          "64rem",
+        ],
+        "buttons": Object {
+          "default": Object {
+            "backgroundColor": "#323232",
+            "color": "white",
+          },
+          "primary": Object {
+            "backgroundColor": "#E40000",
+            "color": "white",
+          },
+        },
+        "colors": Object {
+          "blue": "#8DE2E0",
+          "brand": Object {
+            "primary": "#E40000",
+            "quaternary": "#F9F3E9",
+            "secondary": "#8DE2E0",
+            "tertiary": "#D20000",
+          },
+          "brightSun": "#FBCB3B",
+          "green": "#35A509",
+          "greys": Object {
+            "alto": "#DADADA",
+            "charcoal": "#323232",
+            "dusty": "#999999",
+            "mineShaft": "#222222",
+            "porcelain": "#F4F5F6",
+            "steel": "#666666",
+          },
+          "lightBlue": "#E7F7F7",
+          "lightGreen": "#DEF2DE",
+          "lightOrange": "#FCEBCD",
+          "maroon": "#870000",
+          "orange": "#ED710B",
+          "red": "#E00E00",
+          "ui": Object {
+            "error": "#ED710B",
+            "errorBackground": "#FCEBCD",
+            "info": "#8DE2E0",
+            "infoBackground": "#E7F7F7",
+            "link": "#E00E00",
+            "linkHover": "#870000",
+            "success": "#35A509",
+            "successBackground": "#DEF2DE",
+          },
+          "white": "#FFFFFF",
+        },
+        "fontFamily": "Ciutadella, sans-serif",
+        "fontSizes": Object {
+          "2xl": "1.625rem",
+          "3xl": "2.25rem",
+          "4xl": "2.875rem",
+          "base": "1rem",
+          "lg": "1.125rem",
+          "sm": "0.9375rem",
+          "xl": "1.375rem",
+          "xs": "0.8125rem",
+        },
+        "fontWeights": Object {
+          "bold": 600,
+          "normal": 500,
+        },
+        "gutters": Object {
+          "default": 3,
+        },
+        "letterSpacings": Object {
+          "normal": "0",
+          "wide": "0.125em",
+        },
+        "lineHeights": Object {
+          "loose": 1.5,
+          "normal": 1.35,
+          "tight": 1,
+        },
+        "maxWidths": Object {
+          "default": "80rem",
+        },
+        "mediaQueries": Array [
+          "@media screen and (min-width: 40rem)",
+          "@media screen and (min-width: 52rem)",
+          "@media screen and (min-width: 64rem)",
+        ],
+        "opacity": Object {
+          "disabled": 0.7,
+        },
+        "radii": Object {
+          "default": "4px",
+          "none": 0,
+          "rounded": "1000px",
+        },
+        "shadows": Object {
+          "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+          "focus": "0 0 2px 2px #999999;",
+          "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+          "none": 0,
+        },
+        "space": Array [
+          "0rem",
+          "0.25rem",
+          "0.5rem",
+          "0.75rem",
+          "1rem",
+          "1.25rem",
+          "1.5rem",
+          "1.75rem",
+          "2rem",
+          "2.25rem",
+          "2.5rem",
+          "2.75rem",
+          "3rem",
+          "3.25rem",
+          "3.5rem",
+          "3.75rem",
+          "4rem",
+          "4.25rem",
+          "4.5rem",
+          "4.75rem",
+          "5rem",
+          "5.25rem",
+          "5.5rem",
+          "5.75rem",
+          "6rem",
+          "6.25rem",
+          "6.5rem",
+          "6.75rem",
+          "7rem",
+          "7.25rem",
+          "7.5rem",
+          "7.75rem",
+          "8rem",
+        ],
+        "textStyles": Object {
+          "caps": Object {
+            "fontWeight": 600,
+            "textTransform": "uppercase",
+          },
+          "h1": Object {
+            "fontSize": "2.25rem",
+            "fontWeight": 600,
+            "lineHeight": 1.35,
+          },
+          "h2": Object {
+            "fontSize": "1.625rem",
+            "fontWeight": 600,
+            "lineHeight": 1.35,
+          },
+          "h3": Object {
+            "fontSize": "1.375rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "h4": Object {
+            "fontSize": "1.125rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "h5": Object {
+            "fontSize": "1rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "h6": Object {
+            "fontSize": "0.9375rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "label": Object {
+            "color": "#323232",
+            "fontSize": "0.9375rem",
+            "fontWeight": 600,
+          },
+          "text": Object {
+            "fontSize": "1rem",
+            "fontWeight": 500,
+            "lineHeight": 1.5,
+          },
+        },
+        "transitions": Object {
+          "default": "200ms ease-in",
+        },
+      }
+    }
     title="Test Modal"
     width="41.25rem"
   >
-    <Modal
+    <Component
       ariaHideApp={true}
-      bodyOpenClassName="ReactModal__Body--open"
-      className="ModalContent"
-      closeTimeoutMS={0}
+      className="c0"
       isOpen={true}
-      overlayClassName="ModalOverlay"
-      parentSelector={[Function]}
-      portalClassName="Modal-yQUFA c0"
       role="dialog"
-      shouldCloseOnEsc={true}
-      shouldCloseOnOverlayClick={true}
-      shouldFocusAfterRender={true}
-      shouldReturnFocusAfterClose={true}
+      theme={
+        Object {
+          "alertStyles": Object {
+            "default": Object {
+              "bg": "greys.porcelain",
+            },
+            "error": Object {
+              "bg": "ui.errorBackground",
+              "icon": Object {
+                "color": "ui.error",
+                "name": "warning",
+              },
+            },
+            "info": Object {
+              "bg": "ui.infoBackground",
+              "icon": Object {
+                "color": "greys.charcoal",
+                "name": "info",
+              },
+            },
+            "success": Object {
+              "bg": "ui.successBackground",
+              "icon": Object {
+                "color": "ui.success",
+                "name": "checkCircle",
+              },
+            },
+          },
+          "borders": Array [
+            0,
+            "1px solid",
+            "2px solid",
+            "3px solid",
+          ],
+          "breakpoints": Array [
+            "40rem",
+            "52rem",
+            "64rem",
+          ],
+          "buttons": Object {
+            "default": Object {
+              "backgroundColor": "#323232",
+              "color": "white",
+            },
+            "primary": Object {
+              "backgroundColor": "#E40000",
+              "color": "white",
+            },
+          },
+          "colors": Object {
+            "blue": "#8DE2E0",
+            "brand": Object {
+              "primary": "#E40000",
+              "quaternary": "#F9F3E9",
+              "secondary": "#8DE2E0",
+              "tertiary": "#D20000",
+            },
+            "brightSun": "#FBCB3B",
+            "green": "#35A509",
+            "greys": Object {
+              "alto": "#DADADA",
+              "charcoal": "#323232",
+              "dusty": "#999999",
+              "mineShaft": "#222222",
+              "porcelain": "#F4F5F6",
+              "steel": "#666666",
+            },
+            "lightBlue": "#E7F7F7",
+            "lightGreen": "#DEF2DE",
+            "lightOrange": "#FCEBCD",
+            "maroon": "#870000",
+            "orange": "#ED710B",
+            "red": "#E00E00",
+            "ui": Object {
+              "error": "#ED710B",
+              "errorBackground": "#FCEBCD",
+              "info": "#8DE2E0",
+              "infoBackground": "#E7F7F7",
+              "link": "#E00E00",
+              "linkHover": "#870000",
+              "success": "#35A509",
+              "successBackground": "#DEF2DE",
+            },
+            "white": "#FFFFFF",
+          },
+          "fontFamily": "Ciutadella, sans-serif",
+          "fontSizes": Object {
+            "2xl": "1.625rem",
+            "3xl": "2.25rem",
+            "4xl": "2.875rem",
+            "base": "1rem",
+            "lg": "1.125rem",
+            "sm": "0.9375rem",
+            "xl": "1.375rem",
+            "xs": "0.8125rem",
+          },
+          "fontWeights": Object {
+            "bold": 600,
+            "normal": 500,
+          },
+          "gutters": Object {
+            "default": 3,
+          },
+          "letterSpacings": Object {
+            "normal": "0",
+            "wide": "0.125em",
+          },
+          "lineHeights": Object {
+            "loose": 1.5,
+            "normal": 1.35,
+            "tight": 1,
+          },
+          "maxWidths": Object {
+            "default": "80rem",
+          },
+          "mediaQueries": Array [
+            "@media screen and (min-width: 40rem)",
+            "@media screen and (min-width: 52rem)",
+            "@media screen and (min-width: 64rem)",
+          ],
+          "opacity": Object {
+            "disabled": 0.7,
+          },
+          "radii": Object {
+            "default": "4px",
+            "none": 0,
+            "rounded": "1000px",
+          },
+          "shadows": Object {
+            "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+            "focus": "0 0 2px 2px #999999;",
+            "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+            "none": 0,
+          },
+          "space": Array [
+            "0rem",
+            "0.25rem",
+            "0.5rem",
+            "0.75rem",
+            "1rem",
+            "1.25rem",
+            "1.5rem",
+            "1.75rem",
+            "2rem",
+            "2.25rem",
+            "2.5rem",
+            "2.75rem",
+            "3rem",
+            "3.25rem",
+            "3.5rem",
+            "3.75rem",
+            "4rem",
+            "4.25rem",
+            "4.5rem",
+            "4.75rem",
+            "5rem",
+            "5.25rem",
+            "5.5rem",
+            "5.75rem",
+            "6rem",
+            "6.25rem",
+            "6.5rem",
+            "6.75rem",
+            "7rem",
+            "7.25rem",
+            "7.5rem",
+            "7.75rem",
+            "8rem",
+          ],
+          "textStyles": Object {
+            "caps": Object {
+              "fontWeight": 600,
+              "textTransform": "uppercase",
+            },
+            "h1": Object {
+              "fontSize": "2.25rem",
+              "fontWeight": 600,
+              "lineHeight": 1.35,
+            },
+            "h2": Object {
+              "fontSize": "1.625rem",
+              "fontWeight": 600,
+              "lineHeight": 1.35,
+            },
+            "h3": Object {
+              "fontSize": "1.375rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "h4": Object {
+              "fontSize": "1.125rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "h5": Object {
+              "fontSize": "1rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "h6": Object {
+              "fontSize": "0.9375rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "label": Object {
+              "color": "#323232",
+              "fontSize": "0.9375rem",
+              "fontWeight": 600,
+            },
+            "text": Object {
+              "fontSize": "1rem",
+              "fontWeight": 500,
+              "lineHeight": 1.5,
+            },
+          },
+          "transitions": Object {
+            "default": "200ms ease-in",
+          },
+        }
+      }
       title="Test Modal"
+      width="41.25rem"
     >
-      <ModalPortal
+      <Modal
         ariaHideApp={true}
         bodyOpenClassName="ReactModal__Body--open"
         className="ModalContent"
         closeTimeoutMS={0}
-        defaultStyles={
-          Object {
-            "content": Object {
-              "WebkitOverflowScrolling": "touch",
-              "background": "#fff",
-              "border": "1px solid #ccc",
-              "borderRadius": "4px",
-              "bottom": "40px",
-              "left": "40px",
-              "outline": "none",
-              "overflow": "auto",
-              "padding": "20px",
-              "position": "absolute",
-              "right": "40px",
-              "top": "40px",
-            },
-            "overlay": Object {
-              "backgroundColor": "rgba(255, 255, 255, 0.75)",
-              "bottom": 0,
-              "left": 0,
-              "position": "fixed",
-              "right": 0,
-              "top": 0,
-            },
-          }
-        }
         isOpen={true}
         overlayClassName="ModalOverlay"
         parentSelector={[Function]}
-        portalClassName="Modal-yQUFA c0"
+        portalClassName="Modal-sc-19nb0si-0 c0"
         role="dialog"
         shouldCloseOnEsc={true}
         shouldCloseOnOverlayClick={true}
         shouldFocusAfterRender={true}
         shouldReturnFocusAfterClose={true}
-        style={
+        theme={
           Object {
-            "content": Object {},
-            "overlay": Object {},
+            "alertStyles": Object {
+              "default": Object {
+                "bg": "greys.porcelain",
+              },
+              "error": Object {
+                "bg": "ui.errorBackground",
+                "icon": Object {
+                  "color": "ui.error",
+                  "name": "warning",
+                },
+              },
+              "info": Object {
+                "bg": "ui.infoBackground",
+                "icon": Object {
+                  "color": "greys.charcoal",
+                  "name": "info",
+                },
+              },
+              "success": Object {
+                "bg": "ui.successBackground",
+                "icon": Object {
+                  "color": "ui.success",
+                  "name": "checkCircle",
+                },
+              },
+            },
+            "borders": Array [
+              0,
+              "1px solid",
+              "2px solid",
+              "3px solid",
+            ],
+            "breakpoints": Array [
+              "40rem",
+              "52rem",
+              "64rem",
+            ],
+            "buttons": Object {
+              "default": Object {
+                "backgroundColor": "#323232",
+                "color": "white",
+              },
+              "primary": Object {
+                "backgroundColor": "#E40000",
+                "color": "white",
+              },
+            },
+            "colors": Object {
+              "blue": "#8DE2E0",
+              "brand": Object {
+                "primary": "#E40000",
+                "quaternary": "#F9F3E9",
+                "secondary": "#8DE2E0",
+                "tertiary": "#D20000",
+              },
+              "brightSun": "#FBCB3B",
+              "green": "#35A509",
+              "greys": Object {
+                "alto": "#DADADA",
+                "charcoal": "#323232",
+                "dusty": "#999999",
+                "mineShaft": "#222222",
+                "porcelain": "#F4F5F6",
+                "steel": "#666666",
+              },
+              "lightBlue": "#E7F7F7",
+              "lightGreen": "#DEF2DE",
+              "lightOrange": "#FCEBCD",
+              "maroon": "#870000",
+              "orange": "#ED710B",
+              "red": "#E00E00",
+              "ui": Object {
+                "error": "#ED710B",
+                "errorBackground": "#FCEBCD",
+                "info": "#8DE2E0",
+                "infoBackground": "#E7F7F7",
+                "link": "#E00E00",
+                "linkHover": "#870000",
+                "success": "#35A509",
+                "successBackground": "#DEF2DE",
+              },
+              "white": "#FFFFFF",
+            },
+            "fontFamily": "Ciutadella, sans-serif",
+            "fontSizes": Object {
+              "2xl": "1.625rem",
+              "3xl": "2.25rem",
+              "4xl": "2.875rem",
+              "base": "1rem",
+              "lg": "1.125rem",
+              "sm": "0.9375rem",
+              "xl": "1.375rem",
+              "xs": "0.8125rem",
+            },
+            "fontWeights": Object {
+              "bold": 600,
+              "normal": 500,
+            },
+            "gutters": Object {
+              "default": 3,
+            },
+            "letterSpacings": Object {
+              "normal": "0",
+              "wide": "0.125em",
+            },
+            "lineHeights": Object {
+              "loose": 1.5,
+              "normal": 1.35,
+              "tight": 1,
+            },
+            "maxWidths": Object {
+              "default": "80rem",
+            },
+            "mediaQueries": Array [
+              "@media screen and (min-width: 40rem)",
+              "@media screen and (min-width: 52rem)",
+              "@media screen and (min-width: 64rem)",
+            ],
+            "opacity": Object {
+              "disabled": 0.7,
+            },
+            "radii": Object {
+              "default": "4px",
+              "none": 0,
+              "rounded": "1000px",
+            },
+            "shadows": Object {
+              "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+              "focus": "0 0 2px 2px #999999;",
+              "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+              "none": 0,
+            },
+            "space": Array [
+              "0rem",
+              "0.25rem",
+              "0.5rem",
+              "0.75rem",
+              "1rem",
+              "1.25rem",
+              "1.5rem",
+              "1.75rem",
+              "2rem",
+              "2.25rem",
+              "2.5rem",
+              "2.75rem",
+              "3rem",
+              "3.25rem",
+              "3.5rem",
+              "3.75rem",
+              "4rem",
+              "4.25rem",
+              "4.5rem",
+              "4.75rem",
+              "5rem",
+              "5.25rem",
+              "5.5rem",
+              "5.75rem",
+              "6rem",
+              "6.25rem",
+              "6.5rem",
+              "6.75rem",
+              "7rem",
+              "7.25rem",
+              "7.5rem",
+              "7.75rem",
+              "8rem",
+            ],
+            "textStyles": Object {
+              "caps": Object {
+                "fontWeight": 600,
+                "textTransform": "uppercase",
+              },
+              "h1": Object {
+                "fontSize": "2.25rem",
+                "fontWeight": 600,
+                "lineHeight": 1.35,
+              },
+              "h2": Object {
+                "fontSize": "1.625rem",
+                "fontWeight": 600,
+                "lineHeight": 1.35,
+              },
+              "h3": Object {
+                "fontSize": "1.375rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "h4": Object {
+                "fontSize": "1.125rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "h5": Object {
+                "fontSize": "1rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "h6": Object {
+                "fontSize": "0.9375rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "label": Object {
+                "color": "#323232",
+                "fontSize": "0.9375rem",
+                "fontWeight": 600,
+              },
+              "text": Object {
+                "fontSize": "1rem",
+                "fontWeight": 500,
+                "lineHeight": 1.5,
+              },
+            },
+            "transitions": Object {
+              "default": "200ms ease-in",
+            },
           }
         }
         title="Test Modal"
       >
-        <div
-          aria-modal="true"
-          className="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
-          onClick={[Function]}
-          onMouseDown={[Function]}
-          style={Object {}}
+        <Portal
+          containerInfo={
+            .c0 .ModalOverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(34,34,34,0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .ModalContent {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: none;
+  background: #FFFFFF;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 90%;
+  width: calc(100% - 1.25rem);
+}
+
+@media (min-width:40rem) {
+  .c0 .ModalContent {
+    -webkit-flex: 0 1 41.25rem;
+    -ms-flex: 0 1 41.25rem;
+    flex: 0 1 41.25rem;
+  }
+}
+
+<div
+              class="c0"
+            >
+              <div
+                aria-modal="true"
+                class="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
+              >
+                <div
+                  class="ReactModal__Content ReactModal__Content--after-open ModalContent"
+                  role="dialog"
+                  tabindex="-1"
+                />
+              </div>
+            </div>
+          }
         >
-          <div
-            className="ReactModal__Content ReactModal__Content--after-open ModalContent"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            onMouseDown={[Function]}
-            onMouseUp={[Function]}
+          <ModalPortal
+            ariaHideApp={true}
+            bodyOpenClassName="ReactModal__Body--open"
+            className="ModalContent"
+            closeTimeoutMS={0}
+            defaultStyles={
+              Object {
+                "content": Object {
+                  "WebkitOverflowScrolling": "touch",
+                  "background": "#fff",
+                  "border": "1px solid #ccc",
+                  "borderRadius": "4px",
+                  "bottom": "40px",
+                  "left": "40px",
+                  "outline": "none",
+                  "overflow": "auto",
+                  "padding": "20px",
+                  "position": "absolute",
+                  "right": "40px",
+                  "top": "40px",
+                },
+                "overlay": Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "fixed",
+                  "right": 0,
+                  "top": 0,
+                },
+              }
+            }
+            isOpen={true}
+            overlayClassName="ModalOverlay"
+            parentSelector={[Function]}
+            portalClassName="Modal-sc-19nb0si-0 c0"
             role="dialog"
-            style={Object {}}
-            tabIndex="-1"
-          />
-        </div>
-      </ModalPortal>
-    </Modal>
-  </Component>
+            shouldCloseOnEsc={true}
+            shouldCloseOnOverlayClick={true}
+            shouldFocusAfterRender={true}
+            shouldReturnFocusAfterClose={true}
+            style={
+              Object {
+                "content": Object {},
+                "overlay": Object {},
+              }
+            }
+            theme={
+              Object {
+                "alertStyles": Object {
+                  "default": Object {
+                    "bg": "greys.porcelain",
+                  },
+                  "error": Object {
+                    "bg": "ui.errorBackground",
+                    "icon": Object {
+                      "color": "ui.error",
+                      "name": "warning",
+                    },
+                  },
+                  "info": Object {
+                    "bg": "ui.infoBackground",
+                    "icon": Object {
+                      "color": "greys.charcoal",
+                      "name": "info",
+                    },
+                  },
+                  "success": Object {
+                    "bg": "ui.successBackground",
+                    "icon": Object {
+                      "color": "ui.success",
+                      "name": "checkCircle",
+                    },
+                  },
+                },
+                "borders": Array [
+                  0,
+                  "1px solid",
+                  "2px solid",
+                  "3px solid",
+                ],
+                "breakpoints": Array [
+                  "40rem",
+                  "52rem",
+                  "64rem",
+                ],
+                "buttons": Object {
+                  "default": Object {
+                    "backgroundColor": "#323232",
+                    "color": "white",
+                  },
+                  "primary": Object {
+                    "backgroundColor": "#E40000",
+                    "color": "white",
+                  },
+                },
+                "colors": Object {
+                  "blue": "#8DE2E0",
+                  "brand": Object {
+                    "primary": "#E40000",
+                    "quaternary": "#F9F3E9",
+                    "secondary": "#8DE2E0",
+                    "tertiary": "#D20000",
+                  },
+                  "brightSun": "#FBCB3B",
+                  "green": "#35A509",
+                  "greys": Object {
+                    "alto": "#DADADA",
+                    "charcoal": "#323232",
+                    "dusty": "#999999",
+                    "mineShaft": "#222222",
+                    "porcelain": "#F4F5F6",
+                    "steel": "#666666",
+                  },
+                  "lightBlue": "#E7F7F7",
+                  "lightGreen": "#DEF2DE",
+                  "lightOrange": "#FCEBCD",
+                  "maroon": "#870000",
+                  "orange": "#ED710B",
+                  "red": "#E00E00",
+                  "ui": Object {
+                    "error": "#ED710B",
+                    "errorBackground": "#FCEBCD",
+                    "info": "#8DE2E0",
+                    "infoBackground": "#E7F7F7",
+                    "link": "#E00E00",
+                    "linkHover": "#870000",
+                    "success": "#35A509",
+                    "successBackground": "#DEF2DE",
+                  },
+                  "white": "#FFFFFF",
+                },
+                "fontFamily": "Ciutadella, sans-serif",
+                "fontSizes": Object {
+                  "2xl": "1.625rem",
+                  "3xl": "2.25rem",
+                  "4xl": "2.875rem",
+                  "base": "1rem",
+                  "lg": "1.125rem",
+                  "sm": "0.9375rem",
+                  "xl": "1.375rem",
+                  "xs": "0.8125rem",
+                },
+                "fontWeights": Object {
+                  "bold": 600,
+                  "normal": 500,
+                },
+                "gutters": Object {
+                  "default": 3,
+                },
+                "letterSpacings": Object {
+                  "normal": "0",
+                  "wide": "0.125em",
+                },
+                "lineHeights": Object {
+                  "loose": 1.5,
+                  "normal": 1.35,
+                  "tight": 1,
+                },
+                "maxWidths": Object {
+                  "default": "80rem",
+                },
+                "mediaQueries": Array [
+                  "@media screen and (min-width: 40rem)",
+                  "@media screen and (min-width: 52rem)",
+                  "@media screen and (min-width: 64rem)",
+                ],
+                "opacity": Object {
+                  "disabled": 0.7,
+                },
+                "radii": Object {
+                  "default": "4px",
+                  "none": 0,
+                  "rounded": "1000px",
+                },
+                "shadows": Object {
+                  "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                  "focus": "0 0 2px 2px #999999;",
+                  "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                  "none": 0,
+                },
+                "space": Array [
+                  "0rem",
+                  "0.25rem",
+                  "0.5rem",
+                  "0.75rem",
+                  "1rem",
+                  "1.25rem",
+                  "1.5rem",
+                  "1.75rem",
+                  "2rem",
+                  "2.25rem",
+                  "2.5rem",
+                  "2.75rem",
+                  "3rem",
+                  "3.25rem",
+                  "3.5rem",
+                  "3.75rem",
+                  "4rem",
+                  "4.25rem",
+                  "4.5rem",
+                  "4.75rem",
+                  "5rem",
+                  "5.25rem",
+                  "5.5rem",
+                  "5.75rem",
+                  "6rem",
+                  "6.25rem",
+                  "6.5rem",
+                  "6.75rem",
+                  "7rem",
+                  "7.25rem",
+                  "7.5rem",
+                  "7.75rem",
+                  "8rem",
+                ],
+                "textStyles": Object {
+                  "caps": Object {
+                    "fontWeight": 600,
+                    "textTransform": "uppercase",
+                  },
+                  "h1": Object {
+                    "fontSize": "2.25rem",
+                    "fontWeight": 600,
+                    "lineHeight": 1.35,
+                  },
+                  "h2": Object {
+                    "fontSize": "1.625rem",
+                    "fontWeight": 600,
+                    "lineHeight": 1.35,
+                  },
+                  "h3": Object {
+                    "fontSize": "1.375rem",
+                    "fontWeight": 600,
+                    "lineHeight": 1.5,
+                  },
+                  "h4": Object {
+                    "fontSize": "1.125rem",
+                    "fontWeight": 600,
+                    "lineHeight": 1.5,
+                  },
+                  "h5": Object {
+                    "fontSize": "1rem",
+                    "fontWeight": 600,
+                    "lineHeight": 1.5,
+                  },
+                  "h6": Object {
+                    "fontSize": "0.9375rem",
+                    "fontWeight": 600,
+                    "lineHeight": 1.5,
+                  },
+                  "label": Object {
+                    "color": "#323232",
+                    "fontSize": "0.9375rem",
+                    "fontWeight": 600,
+                  },
+                  "text": Object {
+                    "fontSize": "1rem",
+                    "fontWeight": 500,
+                    "lineHeight": 1.5,
+                  },
+                },
+                "transitions": Object {
+                  "default": "200ms ease-in",
+                },
+              }
+            }
+            title="Test Modal"
+          >
+            <div
+              aria-modal="true"
+              className="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
+              onClick={[Function]}
+              onMouseDown={[Function]}
+              style={Object {}}
+            >
+              <div
+                className="ReactModal__Content ReactModal__Content--after-open ModalContent"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onMouseUp={[Function]}
+                role="dialog"
+                style={Object {}}
+                tabIndex="-1"
+              />
+            </div>
+          </ModalPortal>
+        </Portal>
+      </Modal>
+    </Component>
+  </StyledComponent>
 </Modal>
 `;

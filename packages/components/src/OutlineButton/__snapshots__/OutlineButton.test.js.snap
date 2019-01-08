@@ -1,177 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OutlineButton /> primary renders correctly 1`] = `
-.c1 {
-  display: inline-block;
-  margin: 0;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0.125em;
-  -moz-letter-spacing: 0.125em;
-  -ms-letter-spacing: 0.125em;
-  letter-spacing: 0.125em;
-  line-height: 1.35;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 2px solid;
-  border-color: transparent;
-  border-radius: 4px;
-  outline: 0;
-  -webkit-transition: background-color 200ms ease-in;
-  transition: background-color 200ms ease-in;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: white;
-  background-color: #E40000;
-}
-
-.c1:hover:not(:disabled) {
-  background-color: #b10000;
-}
-
-.c1:focus {
-  box-shadow: 0 0 2px 2px #999999;
-}
-
-.c1:disabled {
-  background-color: #DADADA;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c0 {
-  background-color: transparent;
-  border-color: #E40000;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:not(:hover) {
-  color: #E40000;
-}
-
-.c0:hover:not(:disabled) {
-  background-color: #E40000;
-  border-color: #E40000;
-}
-
-.c0:disabled {
-  color: #999999;
-  border-color: #999999;
-}
-
-<OutlineButton
-  primary={true}
->
-  <Button
-    blacklist={
-      Array [
-        "buttonStyle",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "color",
-        "bg",
-        "boxShadow",
-        "primary",
-        "rounded",
-        "block",
-      ]
-    }
-    buttonStyle="default"
-    className="c0"
-    primary={true}
-  >
-    <Clean.button
-      blacklist={
-        Array [
-          "buttonStyle",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-          "color",
-          "bg",
-          "boxShadow",
-          "primary",
-          "rounded",
-          "block",
-        ]
-      }
-      buttonStyle="default"
-      className="c0 c1"
-      primary={true}
-    >
-      <Clean.div
-        blacklist={
-          Array [
-            "buttonStyle",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "color",
-            "bg",
-            "boxShadow",
-            "primary",
-            "rounded",
-            "block",
-          ]
-        }
-        buttonStyle="default"
-        className="c0 c1"
-        is="button"
-        primary={true}
-      >
-        <button
-          className="c0 c1"
-        >
-          Hello world
-        </button>
-      </Clean.div>
-    </Clean.button>
-  </Button>
-</OutlineButton>
-`;
+exports[`<OutlineButton /> primary renders correctly 1`] = `undefined`;
 
 exports[`<OutlineButton /> renders correctly 1`] = `
-.c1 {
+.c0 {
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.5rem;
@@ -198,26 +30,32 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   appearance: none;
   color: white;
   background-color: #323232;
+  background-color: transparent;
+  border-color: #323232;
+  -webkit-transition: none;
+  transition: none;
 }
 
-.c1:hover:not(:disabled) {
+.c0:hover:not(:disabled) {
   background-color: #181818;
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: 0 0 2px 2px #999999;
 }
 
-.c1:disabled {
-  background-color: #DADADA;
-  color: #999999;
+.c0:disabled {
+  opacity: 0.7;
   cursor: not-allowed;
 }
 
-.c0 {
-  background-color: transparent;
-  -webkit-transition: none;
-  transition: none;
+.c0:not(:hover) {
+  color: #323232;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: #323232;
+  border-color: #323232;
 }
 
 .c0:disabled {
@@ -225,11 +63,255 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   border-color: #999999;
 }
 
-<OutlineButton>
-  <Button
+<OutlineButton
+  blacklist={
+    Array [
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "color",
+      "bg",
+      "boxShadow",
+      "rounded",
+      "block",
+    ]
+  }
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+      "borders": Array [
+        0,
+        "1px solid",
+        "2px solid",
+        "3px solid",
+      ],
+      "breakpoints": Array [
+        "40rem",
+        "52rem",
+        "64rem",
+      ],
+      "buttons": Object {
+        "default": Object {
+          "backgroundColor": "#323232",
+          "color": "white",
+        },
+        "primary": Object {
+          "backgroundColor": "#E40000",
+          "color": "white",
+        },
+      },
+      "colors": Object {
+        "blue": "#8DE2E0",
+        "brand": Object {
+          "primary": "#E40000",
+          "quaternary": "#F9F3E9",
+          "secondary": "#8DE2E0",
+          "tertiary": "#D20000",
+        },
+        "brightSun": "#FBCB3B",
+        "green": "#35A509",
+        "greys": Object {
+          "alto": "#DADADA",
+          "charcoal": "#323232",
+          "dusty": "#999999",
+          "mineShaft": "#222222",
+          "porcelain": "#F4F5F6",
+          "steel": "#666666",
+        },
+        "lightBlue": "#E7F7F7",
+        "lightGreen": "#DEF2DE",
+        "lightOrange": "#FCEBCD",
+        "maroon": "#870000",
+        "orange": "#ED710B",
+        "red": "#E00E00",
+        "ui": Object {
+          "error": "#ED710B",
+          "errorBackground": "#FCEBCD",
+          "info": "#8DE2E0",
+          "infoBackground": "#E7F7F7",
+          "link": "#E00E00",
+          "linkHover": "#870000",
+          "success": "#35A509",
+          "successBackground": "#DEF2DE",
+        },
+        "white": "#FFFFFF",
+      },
+      "fontFamily": "Ciutadella, sans-serif",
+      "fontSizes": Object {
+        "2xl": "1.625rem",
+        "3xl": "2.25rem",
+        "4xl": "2.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "sm": "0.9375rem",
+        "xl": "1.375rem",
+        "xs": "0.8125rem",
+      },
+      "fontWeights": Object {
+        "bold": 600,
+        "normal": 500,
+      },
+      "gutters": Object {
+        "default": 3,
+      },
+      "letterSpacings": Object {
+        "normal": "0",
+        "wide": "0.125em",
+      },
+      "lineHeights": Object {
+        "loose": 1.5,
+        "normal": 1.35,
+        "tight": 1,
+      },
+      "maxWidths": Object {
+        "default": "80rem",
+      },
+      "mediaQueries": Array [
+        "@media screen and (min-width: 40rem)",
+        "@media screen and (min-width: 52rem)",
+        "@media screen and (min-width: 64rem)",
+      ],
+      "opacity": Object {
+        "disabled": 0.7,
+      },
+      "radii": Object {
+        "default": "4px",
+        "none": 0,
+        "rounded": "1000px",
+      },
+      "shadows": Object {
+        "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+        "focus": "0 0 2px 2px #999999;",
+        "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+        "none": 0,
+      },
+      "space": Array [
+        "0rem",
+        "0.25rem",
+        "0.5rem",
+        "0.75rem",
+        "1rem",
+        "1.25rem",
+        "1.5rem",
+        "1.75rem",
+        "2rem",
+        "2.25rem",
+        "2.5rem",
+        "2.75rem",
+        "3rem",
+        "3.25rem",
+        "3.5rem",
+        "3.75rem",
+        "4rem",
+        "4.25rem",
+        "4.5rem",
+        "4.75rem",
+        "5rem",
+        "5.25rem",
+        "5.5rem",
+        "5.75rem",
+        "6rem",
+        "6.25rem",
+        "6.5rem",
+        "6.75rem",
+        "7rem",
+        "7.25rem",
+        "7.5rem",
+        "7.75rem",
+        "8rem",
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "fontWeight": 600,
+          "textTransform": "uppercase",
+        },
+        "h1": Object {
+          "fontSize": "2.25rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h2": Object {
+          "fontSize": "1.625rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h3": Object {
+          "fontSize": "1.375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h4": Object {
+          "fontSize": "1.125rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h5": Object {
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h6": Object {
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "label": Object {
+          "color": "#323232",
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+        },
+        "text": Object {
+          "fontSize": "1rem",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+        },
+      },
+      "transitions": Object {
+        "default": "200ms ease-in",
+      },
+    }
+  }
+  variant="default"
+>
+  <StyledComponent
     blacklist={
       Array [
-        "buttonStyle",
         "m",
         "mt",
         "mr",
@@ -247,47 +329,72 @@ exports[`<OutlineButton /> renders correctly 1`] = `
         "color",
         "bg",
         "boxShadow",
-        "primary",
         "rounded",
         "block",
       ]
     }
-    buttonStyle="default"
-    className="c0"
-  >
-    <Clean.button
-      blacklist={
-        Array [
-          "buttonStyle",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-          "color",
-          "bg",
-          "boxShadow",
-          "primary",
-          "rounded",
-          "block",
-        ]
-      }
-      buttonStyle="default"
-      className="c0 c1"
-    >
-      <Clean.div
-        blacklist={
-          Array [
-            "buttonStyle",
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "OutlineButton-gfxcf6-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "display:inline-block;margin:0;padding:",
+            [Function],
+            " ",
+            [Function],
+            ";font-size:",
+            [Function],
+            ";font-weight:",
+            [Function],
+            ";letter-spacing:",
+            [Function],
+            ";line-height:",
+            [Function],
+            ";text-align:center;text-decoration:none;text-transform:uppercase;border:",
+            [Function],
+            ";border-color:transparent;border-radius:",
+            [Function],
+            ";outline:0;transition:background-color ",
+            [Function],
+            ";cursor:pointer;appearance:none;",
+            [Function],
+            " ",
+            [Function],
+            " ",
+            [Function],
+            " ",
+            [Function],
+            " &:hover:not(:disabled){background-color:",
+            [Function],
+            ";}&:focus{box-shadow:",
+            [Function],
+            ";}&:disabled{opacity:",
+            [Function],
+            ";cursor:not-allowed;}",
+            [Function],
+            " ",
+            [Function],
+            "background-color:transparent;border-color:",
+            [Function],
+            ";transition:none;&:not(:hover){color:",
+            [Function],
+            ";}&:hover:not(:disabled){background-color:",
+            [Function],
+            ";border-color:",
+            [Function],
+            ";}&:disabled{color:",
+            [Function],
+            ";border-color:",
+            [Function],
+            ";}",
+          ],
+        },
+        "defaultProps": Object {
+          "blacklist": Array [
             "m",
             "mt",
             "mr",
@@ -305,183 +412,996 @@ exports[`<OutlineButton /> renders correctly 1`] = `
             "color",
             "bg",
             "boxShadow",
-            "primary",
+            "rounded",
+            "block",
+          ],
+          "variant": "default",
+        },
+        "displayName": "OutlineButton",
+        "foldedComponentIds": Array [
+          "Button-v2eyqx-0",
+        ],
+        "propTypes": Object {
+          "bg": [Function],
+          "block": [Function],
+          "boxShadow": [Function],
+          "color": [Function],
+          "m": [Function],
+          "mb": [Function],
+          "ml": [Function],
+          "mr": [Function],
+          "mt": [Function],
+          "mx": [Function],
+          "my": [Function],
+          "p": [Function],
+          "pb": [Function],
+          "pl": [Function],
+          "pr": [Function],
+          "pt": [Function],
+          "px": [Function],
+          "py": [Function],
+          "rounded": [Function],
+        },
+        "render": [Function],
+        "styledComponentId": "OutlineButton-gfxcf6-0",
+        "target": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Clean.button",
+          "render": [Function],
+        },
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "alertStyles": Object {
+          "default": Object {
+            "bg": "greys.porcelain",
+          },
+          "error": Object {
+            "bg": "ui.errorBackground",
+            "icon": Object {
+              "color": "ui.error",
+              "name": "warning",
+            },
+          },
+          "info": Object {
+            "bg": "ui.infoBackground",
+            "icon": Object {
+              "color": "greys.charcoal",
+              "name": "info",
+            },
+          },
+          "success": Object {
+            "bg": "ui.successBackground",
+            "icon": Object {
+              "color": "ui.success",
+              "name": "checkCircle",
+            },
+          },
+        },
+        "borders": Array [
+          0,
+          "1px solid",
+          "2px solid",
+          "3px solid",
+        ],
+        "breakpoints": Array [
+          "40rem",
+          "52rem",
+          "64rem",
+        ],
+        "buttons": Object {
+          "default": Object {
+            "backgroundColor": "#323232",
+            "color": "white",
+          },
+          "primary": Object {
+            "backgroundColor": "#E40000",
+            "color": "white",
+          },
+        },
+        "colors": Object {
+          "blue": "#8DE2E0",
+          "brand": Object {
+            "primary": "#E40000",
+            "quaternary": "#F9F3E9",
+            "secondary": "#8DE2E0",
+            "tertiary": "#D20000",
+          },
+          "brightSun": "#FBCB3B",
+          "green": "#35A509",
+          "greys": Object {
+            "alto": "#DADADA",
+            "charcoal": "#323232",
+            "dusty": "#999999",
+            "mineShaft": "#222222",
+            "porcelain": "#F4F5F6",
+            "steel": "#666666",
+          },
+          "lightBlue": "#E7F7F7",
+          "lightGreen": "#DEF2DE",
+          "lightOrange": "#FCEBCD",
+          "maroon": "#870000",
+          "orange": "#ED710B",
+          "red": "#E00E00",
+          "ui": Object {
+            "error": "#ED710B",
+            "errorBackground": "#FCEBCD",
+            "info": "#8DE2E0",
+            "infoBackground": "#E7F7F7",
+            "link": "#E00E00",
+            "linkHover": "#870000",
+            "success": "#35A509",
+            "successBackground": "#DEF2DE",
+          },
+          "white": "#FFFFFF",
+        },
+        "fontFamily": "Ciutadella, sans-serif",
+        "fontSizes": Object {
+          "2xl": "1.625rem",
+          "3xl": "2.25rem",
+          "4xl": "2.875rem",
+          "base": "1rem",
+          "lg": "1.125rem",
+          "sm": "0.9375rem",
+          "xl": "1.375rem",
+          "xs": "0.8125rem",
+        },
+        "fontWeights": Object {
+          "bold": 600,
+          "normal": 500,
+        },
+        "gutters": Object {
+          "default": 3,
+        },
+        "letterSpacings": Object {
+          "normal": "0",
+          "wide": "0.125em",
+        },
+        "lineHeights": Object {
+          "loose": 1.5,
+          "normal": 1.35,
+          "tight": 1,
+        },
+        "maxWidths": Object {
+          "default": "80rem",
+        },
+        "mediaQueries": Array [
+          "@media screen and (min-width: 40rem)",
+          "@media screen and (min-width: 52rem)",
+          "@media screen and (min-width: 64rem)",
+        ],
+        "opacity": Object {
+          "disabled": 0.7,
+        },
+        "radii": Object {
+          "default": "4px",
+          "none": 0,
+          "rounded": "1000px",
+        },
+        "shadows": Object {
+          "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+          "focus": "0 0 2px 2px #999999;",
+          "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+          "none": 0,
+        },
+        "space": Array [
+          "0rem",
+          "0.25rem",
+          "0.5rem",
+          "0.75rem",
+          "1rem",
+          "1.25rem",
+          "1.5rem",
+          "1.75rem",
+          "2rem",
+          "2.25rem",
+          "2.5rem",
+          "2.75rem",
+          "3rem",
+          "3.25rem",
+          "3.5rem",
+          "3.75rem",
+          "4rem",
+          "4.25rem",
+          "4.5rem",
+          "4.75rem",
+          "5rem",
+          "5.25rem",
+          "5.5rem",
+          "5.75rem",
+          "6rem",
+          "6.25rem",
+          "6.5rem",
+          "6.75rem",
+          "7rem",
+          "7.25rem",
+          "7.5rem",
+          "7.75rem",
+          "8rem",
+        ],
+        "textStyles": Object {
+          "caps": Object {
+            "fontWeight": 600,
+            "textTransform": "uppercase",
+          },
+          "h1": Object {
+            "fontSize": "2.25rem",
+            "fontWeight": 600,
+            "lineHeight": 1.35,
+          },
+          "h2": Object {
+            "fontSize": "1.625rem",
+            "fontWeight": 600,
+            "lineHeight": 1.35,
+          },
+          "h3": Object {
+            "fontSize": "1.375rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "h4": Object {
+            "fontSize": "1.125rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "h5": Object {
+            "fontSize": "1rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "h6": Object {
+            "fontSize": "0.9375rem",
+            "fontWeight": 600,
+            "lineHeight": 1.5,
+          },
+          "label": Object {
+            "color": "#323232",
+            "fontSize": "0.9375rem",
+            "fontWeight": 600,
+          },
+          "text": Object {
+            "fontSize": "1rem",
+            "fontWeight": 500,
+            "lineHeight": 1.5,
+          },
+        },
+        "transitions": Object {
+          "default": "200ms ease-in",
+        },
+      }
+    }
+    variant="default"
+  >
+    <Clean.button
+      blacklist={
+        Array [
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "color",
+          "bg",
+          "boxShadow",
+          "rounded",
+          "block",
+        ]
+      }
+      className="c0"
+      theme={
+        Object {
+          "alertStyles": Object {
+            "default": Object {
+              "bg": "greys.porcelain",
+            },
+            "error": Object {
+              "bg": "ui.errorBackground",
+              "icon": Object {
+                "color": "ui.error",
+                "name": "warning",
+              },
+            },
+            "info": Object {
+              "bg": "ui.infoBackground",
+              "icon": Object {
+                "color": "greys.charcoal",
+                "name": "info",
+              },
+            },
+            "success": Object {
+              "bg": "ui.successBackground",
+              "icon": Object {
+                "color": "ui.success",
+                "name": "checkCircle",
+              },
+            },
+          },
+          "borders": Array [
+            0,
+            "1px solid",
+            "2px solid",
+            "3px solid",
+          ],
+          "breakpoints": Array [
+            "40rem",
+            "52rem",
+            "64rem",
+          ],
+          "buttons": Object {
+            "default": Object {
+              "backgroundColor": "#323232",
+              "color": "white",
+            },
+            "primary": Object {
+              "backgroundColor": "#E40000",
+              "color": "white",
+            },
+          },
+          "colors": Object {
+            "blue": "#8DE2E0",
+            "brand": Object {
+              "primary": "#E40000",
+              "quaternary": "#F9F3E9",
+              "secondary": "#8DE2E0",
+              "tertiary": "#D20000",
+            },
+            "brightSun": "#FBCB3B",
+            "green": "#35A509",
+            "greys": Object {
+              "alto": "#DADADA",
+              "charcoal": "#323232",
+              "dusty": "#999999",
+              "mineShaft": "#222222",
+              "porcelain": "#F4F5F6",
+              "steel": "#666666",
+            },
+            "lightBlue": "#E7F7F7",
+            "lightGreen": "#DEF2DE",
+            "lightOrange": "#FCEBCD",
+            "maroon": "#870000",
+            "orange": "#ED710B",
+            "red": "#E00E00",
+            "ui": Object {
+              "error": "#ED710B",
+              "errorBackground": "#FCEBCD",
+              "info": "#8DE2E0",
+              "infoBackground": "#E7F7F7",
+              "link": "#E00E00",
+              "linkHover": "#870000",
+              "success": "#35A509",
+              "successBackground": "#DEF2DE",
+            },
+            "white": "#FFFFFF",
+          },
+          "fontFamily": "Ciutadella, sans-serif",
+          "fontSizes": Object {
+            "2xl": "1.625rem",
+            "3xl": "2.25rem",
+            "4xl": "2.875rem",
+            "base": "1rem",
+            "lg": "1.125rem",
+            "sm": "0.9375rem",
+            "xl": "1.375rem",
+            "xs": "0.8125rem",
+          },
+          "fontWeights": Object {
+            "bold": 600,
+            "normal": 500,
+          },
+          "gutters": Object {
+            "default": 3,
+          },
+          "letterSpacings": Object {
+            "normal": "0",
+            "wide": "0.125em",
+          },
+          "lineHeights": Object {
+            "loose": 1.5,
+            "normal": 1.35,
+            "tight": 1,
+          },
+          "maxWidths": Object {
+            "default": "80rem",
+          },
+          "mediaQueries": Array [
+            "@media screen and (min-width: 40rem)",
+            "@media screen and (min-width: 52rem)",
+            "@media screen and (min-width: 64rem)",
+          ],
+          "opacity": Object {
+            "disabled": 0.7,
+          },
+          "radii": Object {
+            "default": "4px",
+            "none": 0,
+            "rounded": "1000px",
+          },
+          "shadows": Object {
+            "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+            "focus": "0 0 2px 2px #999999;",
+            "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+            "none": 0,
+          },
+          "space": Array [
+            "0rem",
+            "0.25rem",
+            "0.5rem",
+            "0.75rem",
+            "1rem",
+            "1.25rem",
+            "1.5rem",
+            "1.75rem",
+            "2rem",
+            "2.25rem",
+            "2.5rem",
+            "2.75rem",
+            "3rem",
+            "3.25rem",
+            "3.5rem",
+            "3.75rem",
+            "4rem",
+            "4.25rem",
+            "4.5rem",
+            "4.75rem",
+            "5rem",
+            "5.25rem",
+            "5.5rem",
+            "5.75rem",
+            "6rem",
+            "6.25rem",
+            "6.5rem",
+            "6.75rem",
+            "7rem",
+            "7.25rem",
+            "7.5rem",
+            "7.75rem",
+            "8rem",
+          ],
+          "textStyles": Object {
+            "caps": Object {
+              "fontWeight": 600,
+              "textTransform": "uppercase",
+            },
+            "h1": Object {
+              "fontSize": "2.25rem",
+              "fontWeight": 600,
+              "lineHeight": 1.35,
+            },
+            "h2": Object {
+              "fontSize": "1.625rem",
+              "fontWeight": 600,
+              "lineHeight": 1.35,
+            },
+            "h3": Object {
+              "fontSize": "1.375rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "h4": Object {
+              "fontSize": "1.125rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "h5": Object {
+              "fontSize": "1rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "h6": Object {
+              "fontSize": "0.9375rem",
+              "fontWeight": 600,
+              "lineHeight": 1.5,
+            },
+            "label": Object {
+              "color": "#323232",
+              "fontSize": "0.9375rem",
+              "fontWeight": 600,
+            },
+            "text": Object {
+              "fontSize": "1rem",
+              "fontWeight": 500,
+              "lineHeight": 1.5,
+            },
+          },
+          "transitions": Object {
+            "default": "200ms ease-in",
+          },
+        }
+      }
+      variant="default"
+    >
+      <Clean.div
+        blacklist={
+          Array [
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "color",
+            "bg",
+            "boxShadow",
             "rounded",
             "block",
           ]
         }
-        buttonStyle="default"
-        className="c0 c1"
+        className="c0"
         is="button"
+        theme={
+          Object {
+            "alertStyles": Object {
+              "default": Object {
+                "bg": "greys.porcelain",
+              },
+              "error": Object {
+                "bg": "ui.errorBackground",
+                "icon": Object {
+                  "color": "ui.error",
+                  "name": "warning",
+                },
+              },
+              "info": Object {
+                "bg": "ui.infoBackground",
+                "icon": Object {
+                  "color": "greys.charcoal",
+                  "name": "info",
+                },
+              },
+              "success": Object {
+                "bg": "ui.successBackground",
+                "icon": Object {
+                  "color": "ui.success",
+                  "name": "checkCircle",
+                },
+              },
+            },
+            "borders": Array [
+              0,
+              "1px solid",
+              "2px solid",
+              "3px solid",
+            ],
+            "breakpoints": Array [
+              "40rem",
+              "52rem",
+              "64rem",
+            ],
+            "buttons": Object {
+              "default": Object {
+                "backgroundColor": "#323232",
+                "color": "white",
+              },
+              "primary": Object {
+                "backgroundColor": "#E40000",
+                "color": "white",
+              },
+            },
+            "colors": Object {
+              "blue": "#8DE2E0",
+              "brand": Object {
+                "primary": "#E40000",
+                "quaternary": "#F9F3E9",
+                "secondary": "#8DE2E0",
+                "tertiary": "#D20000",
+              },
+              "brightSun": "#FBCB3B",
+              "green": "#35A509",
+              "greys": Object {
+                "alto": "#DADADA",
+                "charcoal": "#323232",
+                "dusty": "#999999",
+                "mineShaft": "#222222",
+                "porcelain": "#F4F5F6",
+                "steel": "#666666",
+              },
+              "lightBlue": "#E7F7F7",
+              "lightGreen": "#DEF2DE",
+              "lightOrange": "#FCEBCD",
+              "maroon": "#870000",
+              "orange": "#ED710B",
+              "red": "#E00E00",
+              "ui": Object {
+                "error": "#ED710B",
+                "errorBackground": "#FCEBCD",
+                "info": "#8DE2E0",
+                "infoBackground": "#E7F7F7",
+                "link": "#E00E00",
+                "linkHover": "#870000",
+                "success": "#35A509",
+                "successBackground": "#DEF2DE",
+              },
+              "white": "#FFFFFF",
+            },
+            "fontFamily": "Ciutadella, sans-serif",
+            "fontSizes": Object {
+              "2xl": "1.625rem",
+              "3xl": "2.25rem",
+              "4xl": "2.875rem",
+              "base": "1rem",
+              "lg": "1.125rem",
+              "sm": "0.9375rem",
+              "xl": "1.375rem",
+              "xs": "0.8125rem",
+            },
+            "fontWeights": Object {
+              "bold": 600,
+              "normal": 500,
+            },
+            "gutters": Object {
+              "default": 3,
+            },
+            "letterSpacings": Object {
+              "normal": "0",
+              "wide": "0.125em",
+            },
+            "lineHeights": Object {
+              "loose": 1.5,
+              "normal": 1.35,
+              "tight": 1,
+            },
+            "maxWidths": Object {
+              "default": "80rem",
+            },
+            "mediaQueries": Array [
+              "@media screen and (min-width: 40rem)",
+              "@media screen and (min-width: 52rem)",
+              "@media screen and (min-width: 64rem)",
+            ],
+            "opacity": Object {
+              "disabled": 0.7,
+            },
+            "radii": Object {
+              "default": "4px",
+              "none": 0,
+              "rounded": "1000px",
+            },
+            "shadows": Object {
+              "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+              "focus": "0 0 2px 2px #999999;",
+              "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+              "none": 0,
+            },
+            "space": Array [
+              "0rem",
+              "0.25rem",
+              "0.5rem",
+              "0.75rem",
+              "1rem",
+              "1.25rem",
+              "1.5rem",
+              "1.75rem",
+              "2rem",
+              "2.25rem",
+              "2.5rem",
+              "2.75rem",
+              "3rem",
+              "3.25rem",
+              "3.5rem",
+              "3.75rem",
+              "4rem",
+              "4.25rem",
+              "4.5rem",
+              "4.75rem",
+              "5rem",
+              "5.25rem",
+              "5.5rem",
+              "5.75rem",
+              "6rem",
+              "6.25rem",
+              "6.5rem",
+              "6.75rem",
+              "7rem",
+              "7.25rem",
+              "7.5rem",
+              "7.75rem",
+              "8rem",
+            ],
+            "textStyles": Object {
+              "caps": Object {
+                "fontWeight": 600,
+                "textTransform": "uppercase",
+              },
+              "h1": Object {
+                "fontSize": "2.25rem",
+                "fontWeight": 600,
+                "lineHeight": 1.35,
+              },
+              "h2": Object {
+                "fontSize": "1.625rem",
+                "fontWeight": 600,
+                "lineHeight": 1.35,
+              },
+              "h3": Object {
+                "fontSize": "1.375rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "h4": Object {
+                "fontSize": "1.125rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "h5": Object {
+                "fontSize": "1rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "h6": Object {
+                "fontSize": "0.9375rem",
+                "fontWeight": 600,
+                "lineHeight": 1.5,
+              },
+              "label": Object {
+                "color": "#323232",
+                "fontSize": "0.9375rem",
+                "fontWeight": 600,
+              },
+              "text": Object {
+                "fontSize": "1rem",
+                "fontWeight": 500,
+                "lineHeight": 1.5,
+              },
+            },
+            "transitions": Object {
+              "default": "200ms ease-in",
+            },
+          }
+        }
+        variant="default"
       >
         <button
-          className="c0 c1"
+          className="c0"
+          theme={
+            Object {
+              "alertStyles": Object {
+                "default": Object {
+                  "bg": "greys.porcelain",
+                },
+                "error": Object {
+                  "bg": "ui.errorBackground",
+                  "icon": Object {
+                    "color": "ui.error",
+                    "name": "warning",
+                  },
+                },
+                "info": Object {
+                  "bg": "ui.infoBackground",
+                  "icon": Object {
+                    "color": "greys.charcoal",
+                    "name": "info",
+                  },
+                },
+                "success": Object {
+                  "bg": "ui.successBackground",
+                  "icon": Object {
+                    "color": "ui.success",
+                    "name": "checkCircle",
+                  },
+                },
+              },
+              "borders": Array [
+                0,
+                "1px solid",
+                "2px solid",
+                "3px solid",
+              ],
+              "breakpoints": Array [
+                "40rem",
+                "52rem",
+                "64rem",
+              ],
+              "buttons": Object {
+                "default": Object {
+                  "backgroundColor": "#323232",
+                  "color": "white",
+                },
+                "primary": Object {
+                  "backgroundColor": "#E40000",
+                  "color": "white",
+                },
+              },
+              "colors": Object {
+                "blue": "#8DE2E0",
+                "brand": Object {
+                  "primary": "#E40000",
+                  "quaternary": "#F9F3E9",
+                  "secondary": "#8DE2E0",
+                  "tertiary": "#D20000",
+                },
+                "brightSun": "#FBCB3B",
+                "green": "#35A509",
+                "greys": Object {
+                  "alto": "#DADADA",
+                  "charcoal": "#323232",
+                  "dusty": "#999999",
+                  "mineShaft": "#222222",
+                  "porcelain": "#F4F5F6",
+                  "steel": "#666666",
+                },
+                "lightBlue": "#E7F7F7",
+                "lightGreen": "#DEF2DE",
+                "lightOrange": "#FCEBCD",
+                "maroon": "#870000",
+                "orange": "#ED710B",
+                "red": "#E00E00",
+                "ui": Object {
+                  "error": "#ED710B",
+                  "errorBackground": "#FCEBCD",
+                  "info": "#8DE2E0",
+                  "infoBackground": "#E7F7F7",
+                  "link": "#E00E00",
+                  "linkHover": "#870000",
+                  "success": "#35A509",
+                  "successBackground": "#DEF2DE",
+                },
+                "white": "#FFFFFF",
+              },
+              "fontFamily": "Ciutadella, sans-serif",
+              "fontSizes": Object {
+                "2xl": "1.625rem",
+                "3xl": "2.25rem",
+                "4xl": "2.875rem",
+                "base": "1rem",
+                "lg": "1.125rem",
+                "sm": "0.9375rem",
+                "xl": "1.375rem",
+                "xs": "0.8125rem",
+              },
+              "fontWeights": Object {
+                "bold": 600,
+                "normal": 500,
+              },
+              "gutters": Object {
+                "default": 3,
+              },
+              "letterSpacings": Object {
+                "normal": "0",
+                "wide": "0.125em",
+              },
+              "lineHeights": Object {
+                "loose": 1.5,
+                "normal": 1.35,
+                "tight": 1,
+              },
+              "maxWidths": Object {
+                "default": "80rem",
+              },
+              "mediaQueries": Array [
+                "@media screen and (min-width: 40rem)",
+                "@media screen and (min-width: 52rem)",
+                "@media screen and (min-width: 64rem)",
+              ],
+              "opacity": Object {
+                "disabled": 0.7,
+              },
+              "radii": Object {
+                "default": "4px",
+                "none": 0,
+                "rounded": "1000px",
+              },
+              "shadows": Object {
+                "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                "focus": "0 0 2px 2px #999999;",
+                "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                "none": 0,
+              },
+              "space": Array [
+                "0rem",
+                "0.25rem",
+                "0.5rem",
+                "0.75rem",
+                "1rem",
+                "1.25rem",
+                "1.5rem",
+                "1.75rem",
+                "2rem",
+                "2.25rem",
+                "2.5rem",
+                "2.75rem",
+                "3rem",
+                "3.25rem",
+                "3.5rem",
+                "3.75rem",
+                "4rem",
+                "4.25rem",
+                "4.5rem",
+                "4.75rem",
+                "5rem",
+                "5.25rem",
+                "5.5rem",
+                "5.75rem",
+                "6rem",
+                "6.25rem",
+                "6.5rem",
+                "6.75rem",
+                "7rem",
+                "7.25rem",
+                "7.5rem",
+                "7.75rem",
+                "8rem",
+              ],
+              "textStyles": Object {
+                "caps": Object {
+                  "fontWeight": 600,
+                  "textTransform": "uppercase",
+                },
+                "h1": Object {
+                  "fontSize": "2.25rem",
+                  "fontWeight": 600,
+                  "lineHeight": 1.35,
+                },
+                "h2": Object {
+                  "fontSize": "1.625rem",
+                  "fontWeight": 600,
+                  "lineHeight": 1.35,
+                },
+                "h3": Object {
+                  "fontSize": "1.375rem",
+                  "fontWeight": 600,
+                  "lineHeight": 1.5,
+                },
+                "h4": Object {
+                  "fontSize": "1.125rem",
+                  "fontWeight": 600,
+                  "lineHeight": 1.5,
+                },
+                "h5": Object {
+                  "fontSize": "1rem",
+                  "fontWeight": 600,
+                  "lineHeight": 1.5,
+                },
+                "h6": Object {
+                  "fontSize": "0.9375rem",
+                  "fontWeight": 600,
+                  "lineHeight": 1.5,
+                },
+                "label": Object {
+                  "color": "#323232",
+                  "fontSize": "0.9375rem",
+                  "fontWeight": 600,
+                },
+                "text": Object {
+                  "fontSize": "1rem",
+                  "fontWeight": 500,
+                  "lineHeight": 1.5,
+                },
+              },
+              "transitions": Object {
+                "default": "200ms ease-in",
+              },
+            }
+          }
+          variant="default"
         >
           Click here
         </button>
       </Clean.div>
     </Clean.button>
-  </Button>
+  </StyledComponent>
 </OutlineButton>
 `;
 
-exports[`<OutlineButton /> rounded renders correctly 1`] = `
-.c1 {
-  display: inline-block;
-  margin: 0;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0.125em;
-  -moz-letter-spacing: 0.125em;
-  -ms-letter-spacing: 0.125em;
-  letter-spacing: 0.125em;
-  line-height: 1.35;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 2px solid;
-  border-color: transparent;
-  border-radius: 4px;
-  outline: 0;
-  -webkit-transition: background-color 200ms ease-in;
-  transition: background-color 200ms ease-in;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: white;
-  background-color: #323232;
-  border-radius: 1000px;
-}
-
-.c1:hover:not(:disabled) {
-  background-color: #181818;
-}
-
-.c1:focus {
-  box-shadow: 0 0 2px 2px #999999;
-}
-
-.c1:disabled {
-  background-color: #DADADA;
-  color: #999999;
-  cursor: not-allowed;
-}
-
-.c0 {
-  background-color: transparent;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:disabled {
-  color: #999999;
-  border-color: #999999;
-}
-
-<OutlineButton
-  rounded={true}
->
-  <Button
-    blacklist={
-      Array [
-        "buttonStyle",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "color",
-        "bg",
-        "boxShadow",
-        "primary",
-        "rounded",
-        "block",
-      ]
-    }
-    buttonStyle="default"
-    className="c0"
-    rounded={true}
-  >
-    <Clean.button
-      blacklist={
-        Array [
-          "buttonStyle",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-          "color",
-          "bg",
-          "boxShadow",
-          "primary",
-          "rounded",
-          "block",
-        ]
-      }
-      buttonStyle="default"
-      className="c0 c1"
-      rounded={true}
-    >
-      <Clean.div
-        blacklist={
-          Array [
-            "buttonStyle",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "color",
-            "bg",
-            "boxShadow",
-            "primary",
-            "rounded",
-            "block",
-          ]
-        }
-        buttonStyle="default"
-        className="c0 c1"
-        is="button"
-        rounded={true}
-      >
-        <button
-          className="c0 c1"
-        >
-          Hello world
-        </button>
-      </Clean.div>
-    </Clean.button>
-  </Button>
-</OutlineButton>
-`;
+exports[`<OutlineButton /> rounded renders correctly 1`] = `undefined`;

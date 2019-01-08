@@ -1,13 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> renders correctly 1`] = `
-.c4 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c0 {
   display: inline-block;
   position: relative;
@@ -27,33 +20,17 @@ exports[`<Checkbox /> renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0.125rem;
-  margin-right: 0.5rem;
   height: 1.25rem;
   width: 1.25rem;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
-  border-radius: 4px;
-}
-
-input:checked + .c2,
-input:focus + .c2,
-input:hover + .c2 {
-  border-color: #8DE2E0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
-}
-
-input:disabled + .c2 {
-  background-color: #DADADA;
-  border-color: #DADADA;
 }
 
 .c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   position: absolute;
   display: none;
-  color: #323232;
-  padding: 0.25rem;
   top: 0;
   left: -0.125rem;
 }
@@ -62,276 +39,1084 @@ input:checked ~ .c3 {
   display: block;
 }
 
-<Checkbox>
+<Checkbox
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+      "borders": Array [
+        0,
+        "1px solid",
+        "2px solid",
+        "3px solid",
+      ],
+      "breakpoints": Array [
+        "40rem",
+        "52rem",
+        "64rem",
+      ],
+      "buttons": Object {
+        "default": Object {
+          "backgroundColor": "#323232",
+          "color": "white",
+        },
+        "primary": Object {
+          "backgroundColor": "#E40000",
+          "color": "white",
+        },
+      },
+      "colors": Object {
+        "blue": "#8DE2E0",
+        "brand": Object {
+          "primary": "#E40000",
+          "quaternary": "#F9F3E9",
+          "secondary": "#8DE2E0",
+          "tertiary": "#D20000",
+        },
+        "brightSun": "#FBCB3B",
+        "green": "#35A509",
+        "greys": Object {
+          "alto": "#DADADA",
+          "charcoal": "#323232",
+          "dusty": "#999999",
+          "mineShaft": "#222222",
+          "porcelain": "#F4F5F6",
+          "steel": "#666666",
+        },
+        "lightBlue": "#E7F7F7",
+        "lightGreen": "#DEF2DE",
+        "lightOrange": "#FCEBCD",
+        "maroon": "#870000",
+        "orange": "#ED710B",
+        "red": "#E00E00",
+        "ui": Object {
+          "error": "#ED710B",
+          "errorBackground": "#FCEBCD",
+          "info": "#8DE2E0",
+          "infoBackground": "#E7F7F7",
+          "link": "#E00E00",
+          "linkHover": "#870000",
+          "success": "#35A509",
+          "successBackground": "#DEF2DE",
+        },
+        "white": "#FFFFFF",
+      },
+      "fontFamily": "Ciutadella, sans-serif",
+      "fontSizes": Object {
+        "2xl": "1.625rem",
+        "3xl": "2.25rem",
+        "4xl": "2.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "sm": "0.9375rem",
+        "xl": "1.375rem",
+        "xs": "0.8125rem",
+      },
+      "fontWeights": Object {
+        "bold": 600,
+        "normal": 500,
+      },
+      "gutters": Object {
+        "default": 3,
+      },
+      "letterSpacings": Object {
+        "normal": "0",
+        "wide": "0.125em",
+      },
+      "lineHeights": Object {
+        "loose": 1.5,
+        "normal": 1.35,
+        "tight": 1,
+      },
+      "maxWidths": Object {
+        "default": "80rem",
+      },
+      "mediaQueries": Array [
+        "@media screen and (min-width: 40rem)",
+        "@media screen and (min-width: 52rem)",
+        "@media screen and (min-width: 64rem)",
+      ],
+      "opacity": Object {
+        "disabled": 0.7,
+      },
+      "radii": Object {
+        "default": "4px",
+        "none": 0,
+        "rounded": "1000px",
+      },
+      "shadows": Object {
+        "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+        "focus": "0 0 2px 2px #999999;",
+        "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+        "none": 0,
+      },
+      "space": Array [
+        "0rem",
+        "0.25rem",
+        "0.5rem",
+        "0.75rem",
+        "1rem",
+        "1.25rem",
+        "1.5rem",
+        "1.75rem",
+        "2rem",
+        "2.25rem",
+        "2.5rem",
+        "2.75rem",
+        "3rem",
+        "3.25rem",
+        "3.5rem",
+        "3.75rem",
+        "4rem",
+        "4.25rem",
+        "4.5rem",
+        "4.75rem",
+        "5rem",
+        "5.25rem",
+        "5.5rem",
+        "5.75rem",
+        "6rem",
+        "6.25rem",
+        "6.5rem",
+        "6.75rem",
+        "7rem",
+        "7.25rem",
+        "7.5rem",
+        "7.75rem",
+        "8rem",
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "fontWeight": 600,
+          "textTransform": "uppercase",
+        },
+        "h1": Object {
+          "fontSize": "2.25rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h2": Object {
+          "fontSize": "1.625rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h3": Object {
+          "fontSize": "1.375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h4": Object {
+          "fontSize": "1.125rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h5": Object {
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h6": Object {
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "label": Object {
+          "color": "#323232",
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+        },
+        "text": Object {
+          "fontSize": "1rem",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+        },
+      },
+      "transitions": Object {
+        "default": "200ms ease-in",
+      },
+    }
+  }
+>
   <Checkbox__CheckboxWrapper>
-    <Clean.div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Checkbox__CheckboxWrapper-tnrpd9-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Checkbox__CheckboxWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Checkbox__CheckboxWrapper-tnrpd9-0",
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Clean.div",
+            "render": [Function],
+          },
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
       <Clean.div
-        blacklist={
-          Array [
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "width",
-            "w",
-            "fontSize",
-            "f",
-            "color",
-            "bg",
-            "fontFamily",
-            "font",
-            "textAlign",
-            "align",
-            "lineHeight",
-            "fontWeight",
-            "letterSpacing",
-            "display",
-            "maxWidth",
-            "minWidth",
-            "height",
-            "maxHeight",
-            "minHeight",
-            "size",
-            "ratio",
-            "alignItems",
-            "alignContent",
-            "justifyContent",
-            "justify",
-            "flexWrap",
-            "wrap",
-            "flexBasis",
-            "flexDirection",
-            "flex",
-            "justifySelf",
-            "alignSelf",
-            "order",
-            "gridGap",
-            "gridColumnGap",
-            "gridRowGap",
-            "gridColumn",
-            "gridRow",
-            "gridAutoFlow",
-            "gridAutoColumns",
-            "gridAutoRows",
-            "gridTemplateColumns",
-            "gridTemplateRows",
-            "border",
-            "borderTop",
-            "borderRight",
-            "borderBottom",
-            "borderLeft",
-            "borderColor",
-            "borderRadius",
-            "boxShadow",
-            "background",
-            "backgroundImage",
-            "bgImage",
-            "backgroundSize",
-            "bgSize",
-            "backgroundPosition",
-            "bgPosition",
-            "backgroundRepeat",
-            "bgRepeat",
-            "position",
-            "zIndex",
-            "top",
-            "right",
-            "bottom",
-            "left",
-            "hover",
-            "focus",
-            "active",
-            "disabledStyle",
-            "textStyle",
-            "colors",
-            "buttonStyle",
-            "borderWidth",
-          ]
-        }
         className="c0"
-        is="div"
       >
-        <div
+        <Clean.div
+          blacklist={
+            Array [
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "width",
+              "fontSize",
+              "color",
+              "bg",
+              "fontFamily",
+              "textAlign",
+              "lineHeight",
+              "fontWeight",
+              "fontStyle",
+              "letterSpacing",
+              "display",
+              "maxWidth",
+              "minWidth",
+              "height",
+              "maxHeight",
+              "minHeight",
+              "size",
+              "ratio",
+              "verticalAlign",
+              "alignItems",
+              "alignContent",
+              "justifyItems",
+              "justifyContent",
+              "flexWrap",
+              "flexBasis",
+              "flexDirection",
+              "flex",
+              "justifySelf",
+              "alignSelf",
+              "order",
+              "gridGap",
+              "gridColumnGap",
+              "gridRowGap",
+              "gridColumn",
+              "gridRow",
+              "gridAutoFlow",
+              "gridAutoColumns",
+              "gridAutoRows",
+              "gridTemplateColumns",
+              "gridTemplateRows",
+              "gridTemplateAreas",
+              "gridArea",
+              "border",
+              "borderTop",
+              "borderRight",
+              "borderBottom",
+              "borderLeft",
+              "borderColor",
+              "borderRadius",
+              "boxShadow",
+              "opacity",
+              "overflow",
+              "background",
+              "backgroundImage",
+              "backgroundPosition",
+              "backgroundRepeat",
+              "backgroundSize",
+              "position",
+              "zIndex",
+              "top",
+              "right",
+              "bottom",
+              "left",
+              "textStyle",
+              "colors",
+              "variant",
+              "theme",
+            ]
+          }
           className="c0"
+          is="div"
         >
-          <Checkbox__CheckboxInput
-            type="checkbox"
+          <div
+            className="c0"
           >
-            <input
-              className="c1"
-              type="checkbox"
-            />
-          </Checkbox__CheckboxInput>
-          <Checkbox__CheckboxBorder>
-            <Clean.div
-              className="c2"
-            >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
+            <Checkbox__CheckboxInput
+              theme={
+                Object {
+                  "alertStyles": Object {
+                    "default": Object {
+                      "bg": "greys.porcelain",
+                    },
+                    "error": Object {
+                      "bg": "ui.errorBackground",
+                      "icon": Object {
+                        "color": "ui.error",
+                        "name": "warning",
+                      },
+                    },
+                    "info": Object {
+                      "bg": "ui.infoBackground",
+                      "icon": Object {
+                        "color": "greys.charcoal",
+                        "name": "info",
+                      },
+                    },
+                    "success": Object {
+                      "bg": "ui.successBackground",
+                      "icon": Object {
+                        "color": "ui.success",
+                        "name": "checkCircle",
+                      },
+                    },
+                  },
+                  "borders": Array [
+                    0,
+                    "1px solid",
+                    "2px solid",
+                    "3px solid",
+                  ],
+                  "breakpoints": Array [
+                    "40rem",
+                    "52rem",
+                    "64rem",
+                  ],
+                  "buttons": Object {
+                    "default": Object {
+                      "backgroundColor": "#323232",
+                      "color": "white",
+                    },
+                    "primary": Object {
+                      "backgroundColor": "#E40000",
+                      "color": "white",
+                    },
+                  },
+                  "colors": Object {
+                    "blue": "#8DE2E0",
+                    "brand": Object {
+                      "primary": "#E40000",
+                      "quaternary": "#F9F3E9",
+                      "secondary": "#8DE2E0",
+                      "tertiary": "#D20000",
+                    },
+                    "brightSun": "#FBCB3B",
+                    "green": "#35A509",
+                    "greys": Object {
+                      "alto": "#DADADA",
+                      "charcoal": "#323232",
+                      "dusty": "#999999",
+                      "mineShaft": "#222222",
+                      "porcelain": "#F4F5F6",
+                      "steel": "#666666",
+                    },
+                    "lightBlue": "#E7F7F7",
+                    "lightGreen": "#DEF2DE",
+                    "lightOrange": "#FCEBCD",
+                    "maroon": "#870000",
+                    "orange": "#ED710B",
+                    "red": "#E00E00",
+                    "ui": Object {
+                      "error": "#ED710B",
+                      "errorBackground": "#FCEBCD",
+                      "info": "#8DE2E0",
+                      "infoBackground": "#E7F7F7",
+                      "link": "#E00E00",
+                      "linkHover": "#870000",
+                      "success": "#35A509",
+                      "successBackground": "#DEF2DE",
+                    },
+                    "white": "#FFFFFF",
+                  },
+                  "fontFamily": "Ciutadella, sans-serif",
+                  "fontSizes": Object {
+                    "2xl": "1.625rem",
+                    "3xl": "2.25rem",
+                    "4xl": "2.875rem",
+                    "base": "1rem",
+                    "lg": "1.125rem",
+                    "sm": "0.9375rem",
+                    "xl": "1.375rem",
+                    "xs": "0.8125rem",
+                  },
+                  "fontWeights": Object {
+                    "bold": 600,
+                    "normal": 500,
+                  },
+                  "gutters": Object {
+                    "default": 3,
+                  },
+                  "letterSpacings": Object {
+                    "normal": "0",
+                    "wide": "0.125em",
+                  },
+                  "lineHeights": Object {
+                    "loose": 1.5,
+                    "normal": 1.35,
+                    "tight": 1,
+                  },
+                  "maxWidths": Object {
+                    "default": "80rem",
+                  },
+                  "mediaQueries": Array [
+                    "@media screen and (min-width: 40rem)",
+                    "@media screen and (min-width: 52rem)",
+                    "@media screen and (min-width: 64rem)",
+                  ],
+                  "opacity": Object {
+                    "disabled": 0.7,
+                  },
+                  "radii": Object {
+                    "default": "4px",
+                    "none": 0,
+                    "rounded": "1000px",
+                  },
+                  "shadows": Object {
+                    "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                    "focus": "0 0 2px 2px #999999;",
+                    "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                    "none": 0,
+                  },
+                  "space": Array [
+                    "0rem",
+                    "0.25rem",
+                    "0.5rem",
+                    "0.75rem",
+                    "1rem",
+                    "1.25rem",
+                    "1.5rem",
+                    "1.75rem",
+                    "2rem",
+                    "2.25rem",
+                    "2.5rem",
+                    "2.75rem",
+                    "3rem",
+                    "3.25rem",
+                    "3.5rem",
+                    "3.75rem",
+                    "4rem",
+                    "4.25rem",
+                    "4.5rem",
+                    "4.75rem",
+                    "5rem",
+                    "5.25rem",
+                    "5.5rem",
+                    "5.75rem",
+                    "6rem",
+                    "6.25rem",
+                    "6.5rem",
+                    "6.75rem",
+                    "7rem",
+                    "7.25rem",
+                    "7.5rem",
+                    "7.75rem",
+                    "8rem",
+                  ],
+                  "textStyles": Object {
+                    "caps": Object {
+                      "fontWeight": 600,
+                      "textTransform": "uppercase",
+                    },
+                    "h1": Object {
+                      "fontSize": "2.25rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.35,
+                    },
+                    "h2": Object {
+                      "fontSize": "1.625rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.35,
+                    },
+                    "h3": Object {
+                      "fontSize": "1.375rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h4": Object {
+                      "fontSize": "1.125rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h5": Object {
+                      "fontSize": "1rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h6": Object {
+                      "fontSize": "0.9375rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "label": Object {
+                      "color": "#323232",
+                      "fontSize": "0.9375rem",
+                      "fontWeight": 600,
+                    },
+                    "text": Object {
+                      "fontSize": "1rem",
+                      "fontWeight": 500,
+                      "lineHeight": 1.5,
+                    },
+                  },
+                  "transitions": Object {
+                    "default": "200ms ease-in",
+                  },
                 }
-                className="c2"
-                is="div"
+              }
+              type="checkbox"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxInput-tnrpd9-1",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "opacity:0;position:absolute;z-index:0;&:focus{box-shadow:none;}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxInput",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxInput-tnrpd9-1",
+                    "target": "input",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                theme={
+                  Object {
+                    "alertStyles": Object {
+                      "default": Object {
+                        "bg": "greys.porcelain",
+                      },
+                      "error": Object {
+                        "bg": "ui.errorBackground",
+                        "icon": Object {
+                          "color": "ui.error",
+                          "name": "warning",
+                        },
+                      },
+                      "info": Object {
+                        "bg": "ui.infoBackground",
+                        "icon": Object {
+                          "color": "greys.charcoal",
+                          "name": "info",
+                        },
+                      },
+                      "success": Object {
+                        "bg": "ui.successBackground",
+                        "icon": Object {
+                          "color": "ui.success",
+                          "name": "checkCircle",
+                        },
+                      },
+                    },
+                    "borders": Array [
+                      0,
+                      "1px solid",
+                      "2px solid",
+                      "3px solid",
+                    ],
+                    "breakpoints": Array [
+                      "40rem",
+                      "52rem",
+                      "64rem",
+                    ],
+                    "buttons": Object {
+                      "default": Object {
+                        "backgroundColor": "#323232",
+                        "color": "white",
+                      },
+                      "primary": Object {
+                        "backgroundColor": "#E40000",
+                        "color": "white",
+                      },
+                    },
+                    "colors": Object {
+                      "blue": "#8DE2E0",
+                      "brand": Object {
+                        "primary": "#E40000",
+                        "quaternary": "#F9F3E9",
+                        "secondary": "#8DE2E0",
+                        "tertiary": "#D20000",
+                      },
+                      "brightSun": "#FBCB3B",
+                      "green": "#35A509",
+                      "greys": Object {
+                        "alto": "#DADADA",
+                        "charcoal": "#323232",
+                        "dusty": "#999999",
+                        "mineShaft": "#222222",
+                        "porcelain": "#F4F5F6",
+                        "steel": "#666666",
+                      },
+                      "lightBlue": "#E7F7F7",
+                      "lightGreen": "#DEF2DE",
+                      "lightOrange": "#FCEBCD",
+                      "maroon": "#870000",
+                      "orange": "#ED710B",
+                      "red": "#E00E00",
+                      "ui": Object {
+                        "error": "#ED710B",
+                        "errorBackground": "#FCEBCD",
+                        "info": "#8DE2E0",
+                        "infoBackground": "#E7F7F7",
+                        "link": "#E00E00",
+                        "linkHover": "#870000",
+                        "success": "#35A509",
+                        "successBackground": "#DEF2DE",
+                      },
+                      "white": "#FFFFFF",
+                    },
+                    "fontFamily": "Ciutadella, sans-serif",
+                    "fontSizes": Object {
+                      "2xl": "1.625rem",
+                      "3xl": "2.25rem",
+                      "4xl": "2.875rem",
+                      "base": "1rem",
+                      "lg": "1.125rem",
+                      "sm": "0.9375rem",
+                      "xl": "1.375rem",
+                      "xs": "0.8125rem",
+                    },
+                    "fontWeights": Object {
+                      "bold": 600,
+                      "normal": 500,
+                    },
+                    "gutters": Object {
+                      "default": 3,
+                    },
+                    "letterSpacings": Object {
+                      "normal": "0",
+                      "wide": "0.125em",
+                    },
+                    "lineHeights": Object {
+                      "loose": 1.5,
+                      "normal": 1.35,
+                      "tight": 1,
+                    },
+                    "maxWidths": Object {
+                      "default": "80rem",
+                    },
+                    "mediaQueries": Array [
+                      "@media screen and (min-width: 40rem)",
+                      "@media screen and (min-width: 52rem)",
+                      "@media screen and (min-width: 64rem)",
+                    ],
+                    "opacity": Object {
+                      "disabled": 0.7,
+                    },
+                    "radii": Object {
+                      "default": "4px",
+                      "none": 0,
+                      "rounded": "1000px",
+                    },
+                    "shadows": Object {
+                      "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                      "focus": "0 0 2px 2px #999999;",
+                      "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                      "none": 0,
+                    },
+                    "space": Array [
+                      "0rem",
+                      "0.25rem",
+                      "0.5rem",
+                      "0.75rem",
+                      "1rem",
+                      "1.25rem",
+                      "1.5rem",
+                      "1.75rem",
+                      "2rem",
+                      "2.25rem",
+                      "2.5rem",
+                      "2.75rem",
+                      "3rem",
+                      "3.25rem",
+                      "3.5rem",
+                      "3.75rem",
+                      "4rem",
+                      "4.25rem",
+                      "4.5rem",
+                      "4.75rem",
+                      "5rem",
+                      "5.25rem",
+                      "5.5rem",
+                      "5.75rem",
+                      "6rem",
+                      "6.25rem",
+                      "6.5rem",
+                      "6.75rem",
+                      "7rem",
+                      "7.25rem",
+                      "7.5rem",
+                      "7.75rem",
+                      "8rem",
+                    ],
+                    "textStyles": Object {
+                      "caps": Object {
+                        "fontWeight": 600,
+                        "textTransform": "uppercase",
+                      },
+                      "h1": Object {
+                        "fontSize": "2.25rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.35,
+                      },
+                      "h2": Object {
+                        "fontSize": "1.625rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.35,
+                      },
+                      "h3": Object {
+                        "fontSize": "1.375rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h4": Object {
+                        "fontSize": "1.125rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h5": Object {
+                        "fontSize": "1rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h6": Object {
+                        "fontSize": "0.9375rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "label": Object {
+                        "color": "#323232",
+                        "fontSize": "0.9375rem",
+                        "fontWeight": 600,
+                      },
+                      "text": Object {
+                        "fontSize": "1rem",
+                        "fontWeight": 500,
+                        "lineHeight": 1.5,
+                      },
+                    },
+                    "transitions": Object {
+                      "default": "200ms ease-in",
+                    },
+                  }
+                }
+                type="checkbox"
               >
-                <div
-                  className="c2"
+                <input
+                  className="c1"
+                  type="checkbox"
                 />
-              </Clean.div>
-            </Clean.div>
-          </Checkbox__CheckboxBorder>
-          <Checkbox__CheckboxIcon
-            name="done"
-          >
-            <Icon
-              className="c3"
+              </StyledComponent>
+            </Checkbox__CheckboxInput>
+            <Checkbox__CheckboxBorder>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxBorder-tnrpd9-2",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "display:inline-block;vertical-align:middle;margin-bottom:",
+                        "0.125rem",
+                        ";margin-right:",
+                        [Function],
+                        ";height:",
+                        "1.25rem",
+                        ";width:",
+                        "1.25rem",
+                        ";background-color:",
+                        [Function],
+                        ";border:",
+                        [Function],
+                        ";border-color:",
+                        [Function],
+                        ";border-radius:",
+                        [Function],
+                        ";input:checked + &,input:focus + &,input:hover + &{border-color:",
+                        [Function],
+                        ";transition:",
+                        [Function],
+                        ";}input:disabled + &{background-color:",
+                        [Function],
+                        ";border-color:",
+                        [Function],
+                        ";}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxBorder",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxBorder-tnrpd9-2",
+                    "target": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "displayName": "Clean.div",
+                      "render": [Function],
+                    },
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <Clean.div
+                  className="c2"
+                >
+                  <Clean.div
+                    blacklist={
+                      Array [
+                        "m",
+                        "mt",
+                        "mr",
+                        "mb",
+                        "ml",
+                        "mx",
+                        "my",
+                        "p",
+                        "pt",
+                        "pr",
+                        "pb",
+                        "pl",
+                        "px",
+                        "py",
+                        "width",
+                        "fontSize",
+                        "color",
+                        "bg",
+                        "fontFamily",
+                        "textAlign",
+                        "lineHeight",
+                        "fontWeight",
+                        "fontStyle",
+                        "letterSpacing",
+                        "display",
+                        "maxWidth",
+                        "minWidth",
+                        "height",
+                        "maxHeight",
+                        "minHeight",
+                        "size",
+                        "ratio",
+                        "verticalAlign",
+                        "alignItems",
+                        "alignContent",
+                        "justifyItems",
+                        "justifyContent",
+                        "flexWrap",
+                        "flexBasis",
+                        "flexDirection",
+                        "flex",
+                        "justifySelf",
+                        "alignSelf",
+                        "order",
+                        "gridGap",
+                        "gridColumnGap",
+                        "gridRowGap",
+                        "gridColumn",
+                        "gridRow",
+                        "gridAutoFlow",
+                        "gridAutoColumns",
+                        "gridAutoRows",
+                        "gridTemplateColumns",
+                        "gridTemplateRows",
+                        "gridTemplateAreas",
+                        "gridArea",
+                        "border",
+                        "borderTop",
+                        "borderRight",
+                        "borderBottom",
+                        "borderLeft",
+                        "borderColor",
+                        "borderRadius",
+                        "boxShadow",
+                        "opacity",
+                        "overflow",
+                        "background",
+                        "backgroundImage",
+                        "backgroundPosition",
+                        "backgroundRepeat",
+                        "backgroundSize",
+                        "position",
+                        "zIndex",
+                        "top",
+                        "right",
+                        "bottom",
+                        "left",
+                        "textStyle",
+                        "colors",
+                        "variant",
+                        "theme",
+                      ]
+                    }
+                    className="c2"
+                    is="div"
+                  >
+                    <div
+                      className="c2"
+                    />
+                  </Clean.div>
+                </Clean.div>
+              </StyledComponent>
+            </Checkbox__CheckboxBorder>
+            <Checkbox__CheckboxIcon
               name="done"
             >
-              <Base
-                className="c3 c4"
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxIcon-tnrpd9-3",
+                      "isStatic": false,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "vertical-align:middle;flex:none;",
+                        [Function],
+                        " ",
+                        [Function],
+                        ";",
+                        "position:absolute;display:none;color:",
+                        [Function],
+                        ";padding:",
+                        [Function],
+                        ";top:0;left:-",
+                        "0.125rem",
+                        ";input:checked ~ &{display:block;}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxIcon",
+                    "foldedComponentIds": Array [
+                      "Icon-sc-1t9j3ip-0",
+                    ],
+                    "propTypes": Object {
+                      "bg": [Function],
+                      "color": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "name": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "size": [Function],
+                      "title": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxIcon-tnrpd9-3",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  }
+                }
+                forwardedRef={null}
                 name="done"
-                size={24}
-                title={null}
               >
-                <Cleaned
-                  className="c3 c4"
-                  fill="currentcolor"
-                  height={24}
-                  title="done"
-                  viewBox="0 0 24 24"
-                  width={24}
+                <Base
+                  className="c3"
+                  name="done"
+                  size={24}
+                  title={null}
                 >
-                  <svg
-                    className="c3 c4"
+                  <Cleaned
+                    className="c3"
                     fill="currentcolor"
                     height={24}
                     title="done"
                     viewBox="0 0 24 24"
                     width={24}
                   >
-                    <path
-                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                    />
-                  </svg>
-                </Cleaned>
-              </Base>
-            </Icon>
-          </Checkbox__CheckboxIcon>
-        </div>
+                    <svg
+                      className="c3"
+                      fill="currentcolor"
+                      height={24}
+                      title="done"
+                      viewBox="0 0 24 24"
+                      width={24}
+                    >
+                      <path
+                        d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                      />
+                    </svg>
+                  </Cleaned>
+                </Base>
+              </StyledComponent>
+            </Checkbox__CheckboxIcon>
+          </div>
+        </Clean.div>
       </Clean.div>
-    </Clean.div>
+    </StyledComponent>
   </Checkbox__CheckboxWrapper>
 </Checkbox>
 `;
 
 exports[`<Checkbox /> when checked renders correctly 1`] = `
-.c4 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c0 {
   display: inline-block;
   position: relative;
@@ -351,33 +1136,17 @@ exports[`<Checkbox /> when checked renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0.125rem;
-  margin-right: 0.5rem;
   height: 1.25rem;
   width: 1.25rem;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
-  border-radius: 4px;
-}
-
-input:checked + .c2,
-input:focus + .c2,
-input:hover + .c2 {
-  border-color: #8DE2E0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
-}
-
-input:disabled + .c2 {
-  background-color: #DADADA;
-  border-color: #DADADA;
 }
 
 .c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   position: absolute;
   display: none;
-  color: #323232;
-  padding: 0.25rem;
   top: 0;
   left: -0.125rem;
 }
@@ -388,278 +1157,1086 @@ input:checked ~ .c3 {
 
 <Checkbox
   defaultChecked={true}
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+      "borders": Array [
+        0,
+        "1px solid",
+        "2px solid",
+        "3px solid",
+      ],
+      "breakpoints": Array [
+        "40rem",
+        "52rem",
+        "64rem",
+      ],
+      "buttons": Object {
+        "default": Object {
+          "backgroundColor": "#323232",
+          "color": "white",
+        },
+        "primary": Object {
+          "backgroundColor": "#E40000",
+          "color": "white",
+        },
+      },
+      "colors": Object {
+        "blue": "#8DE2E0",
+        "brand": Object {
+          "primary": "#E40000",
+          "quaternary": "#F9F3E9",
+          "secondary": "#8DE2E0",
+          "tertiary": "#D20000",
+        },
+        "brightSun": "#FBCB3B",
+        "green": "#35A509",
+        "greys": Object {
+          "alto": "#DADADA",
+          "charcoal": "#323232",
+          "dusty": "#999999",
+          "mineShaft": "#222222",
+          "porcelain": "#F4F5F6",
+          "steel": "#666666",
+        },
+        "lightBlue": "#E7F7F7",
+        "lightGreen": "#DEF2DE",
+        "lightOrange": "#FCEBCD",
+        "maroon": "#870000",
+        "orange": "#ED710B",
+        "red": "#E00E00",
+        "ui": Object {
+          "error": "#ED710B",
+          "errorBackground": "#FCEBCD",
+          "info": "#8DE2E0",
+          "infoBackground": "#E7F7F7",
+          "link": "#E00E00",
+          "linkHover": "#870000",
+          "success": "#35A509",
+          "successBackground": "#DEF2DE",
+        },
+        "white": "#FFFFFF",
+      },
+      "fontFamily": "Ciutadella, sans-serif",
+      "fontSizes": Object {
+        "2xl": "1.625rem",
+        "3xl": "2.25rem",
+        "4xl": "2.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "sm": "0.9375rem",
+        "xl": "1.375rem",
+        "xs": "0.8125rem",
+      },
+      "fontWeights": Object {
+        "bold": 600,
+        "normal": 500,
+      },
+      "gutters": Object {
+        "default": 3,
+      },
+      "letterSpacings": Object {
+        "normal": "0",
+        "wide": "0.125em",
+      },
+      "lineHeights": Object {
+        "loose": 1.5,
+        "normal": 1.35,
+        "tight": 1,
+      },
+      "maxWidths": Object {
+        "default": "80rem",
+      },
+      "mediaQueries": Array [
+        "@media screen and (min-width: 40rem)",
+        "@media screen and (min-width: 52rem)",
+        "@media screen and (min-width: 64rem)",
+      ],
+      "opacity": Object {
+        "disabled": 0.7,
+      },
+      "radii": Object {
+        "default": "4px",
+        "none": 0,
+        "rounded": "1000px",
+      },
+      "shadows": Object {
+        "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+        "focus": "0 0 2px 2px #999999;",
+        "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+        "none": 0,
+      },
+      "space": Array [
+        "0rem",
+        "0.25rem",
+        "0.5rem",
+        "0.75rem",
+        "1rem",
+        "1.25rem",
+        "1.5rem",
+        "1.75rem",
+        "2rem",
+        "2.25rem",
+        "2.5rem",
+        "2.75rem",
+        "3rem",
+        "3.25rem",
+        "3.5rem",
+        "3.75rem",
+        "4rem",
+        "4.25rem",
+        "4.5rem",
+        "4.75rem",
+        "5rem",
+        "5.25rem",
+        "5.5rem",
+        "5.75rem",
+        "6rem",
+        "6.25rem",
+        "6.5rem",
+        "6.75rem",
+        "7rem",
+        "7.25rem",
+        "7.5rem",
+        "7.75rem",
+        "8rem",
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "fontWeight": 600,
+          "textTransform": "uppercase",
+        },
+        "h1": Object {
+          "fontSize": "2.25rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h2": Object {
+          "fontSize": "1.625rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h3": Object {
+          "fontSize": "1.375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h4": Object {
+          "fontSize": "1.125rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h5": Object {
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h6": Object {
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "label": Object {
+          "color": "#323232",
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+        },
+        "text": Object {
+          "fontSize": "1rem",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+        },
+      },
+      "transitions": Object {
+        "default": "200ms ease-in",
+      },
+    }
+  }
 >
   <Checkbox__CheckboxWrapper>
-    <Clean.div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Checkbox__CheckboxWrapper-tnrpd9-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Checkbox__CheckboxWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Checkbox__CheckboxWrapper-tnrpd9-0",
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Clean.div",
+            "render": [Function],
+          },
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
       <Clean.div
-        blacklist={
-          Array [
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "width",
-            "w",
-            "fontSize",
-            "f",
-            "color",
-            "bg",
-            "fontFamily",
-            "font",
-            "textAlign",
-            "align",
-            "lineHeight",
-            "fontWeight",
-            "letterSpacing",
-            "display",
-            "maxWidth",
-            "minWidth",
-            "height",
-            "maxHeight",
-            "minHeight",
-            "size",
-            "ratio",
-            "alignItems",
-            "alignContent",
-            "justifyContent",
-            "justify",
-            "flexWrap",
-            "wrap",
-            "flexBasis",
-            "flexDirection",
-            "flex",
-            "justifySelf",
-            "alignSelf",
-            "order",
-            "gridGap",
-            "gridColumnGap",
-            "gridRowGap",
-            "gridColumn",
-            "gridRow",
-            "gridAutoFlow",
-            "gridAutoColumns",
-            "gridAutoRows",
-            "gridTemplateColumns",
-            "gridTemplateRows",
-            "border",
-            "borderTop",
-            "borderRight",
-            "borderBottom",
-            "borderLeft",
-            "borderColor",
-            "borderRadius",
-            "boxShadow",
-            "background",
-            "backgroundImage",
-            "bgImage",
-            "backgroundSize",
-            "bgSize",
-            "backgroundPosition",
-            "bgPosition",
-            "backgroundRepeat",
-            "bgRepeat",
-            "position",
-            "zIndex",
-            "top",
-            "right",
-            "bottom",
-            "left",
-            "hover",
-            "focus",
-            "active",
-            "disabledStyle",
-            "textStyle",
-            "colors",
-            "buttonStyle",
-            "borderWidth",
-          ]
-        }
         className="c0"
-        is="div"
       >
-        <div
+        <Clean.div
+          blacklist={
+            Array [
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "width",
+              "fontSize",
+              "color",
+              "bg",
+              "fontFamily",
+              "textAlign",
+              "lineHeight",
+              "fontWeight",
+              "fontStyle",
+              "letterSpacing",
+              "display",
+              "maxWidth",
+              "minWidth",
+              "height",
+              "maxHeight",
+              "minHeight",
+              "size",
+              "ratio",
+              "verticalAlign",
+              "alignItems",
+              "alignContent",
+              "justifyItems",
+              "justifyContent",
+              "flexWrap",
+              "flexBasis",
+              "flexDirection",
+              "flex",
+              "justifySelf",
+              "alignSelf",
+              "order",
+              "gridGap",
+              "gridColumnGap",
+              "gridRowGap",
+              "gridColumn",
+              "gridRow",
+              "gridAutoFlow",
+              "gridAutoColumns",
+              "gridAutoRows",
+              "gridTemplateColumns",
+              "gridTemplateRows",
+              "gridTemplateAreas",
+              "gridArea",
+              "border",
+              "borderTop",
+              "borderRight",
+              "borderBottom",
+              "borderLeft",
+              "borderColor",
+              "borderRadius",
+              "boxShadow",
+              "opacity",
+              "overflow",
+              "background",
+              "backgroundImage",
+              "backgroundPosition",
+              "backgroundRepeat",
+              "backgroundSize",
+              "position",
+              "zIndex",
+              "top",
+              "right",
+              "bottom",
+              "left",
+              "textStyle",
+              "colors",
+              "variant",
+              "theme",
+            ]
+          }
           className="c0"
+          is="div"
         >
-          <Checkbox__CheckboxInput
-            defaultChecked={true}
-            type="checkbox"
+          <div
+            className="c0"
           >
-            <input
-              className="c1"
+            <Checkbox__CheckboxInput
               defaultChecked={true}
-              type="checkbox"
-            />
-          </Checkbox__CheckboxInput>
-          <Checkbox__CheckboxBorder>
-            <Clean.div
-              className="c2"
-            >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
+              theme={
+                Object {
+                  "alertStyles": Object {
+                    "default": Object {
+                      "bg": "greys.porcelain",
+                    },
+                    "error": Object {
+                      "bg": "ui.errorBackground",
+                      "icon": Object {
+                        "color": "ui.error",
+                        "name": "warning",
+                      },
+                    },
+                    "info": Object {
+                      "bg": "ui.infoBackground",
+                      "icon": Object {
+                        "color": "greys.charcoal",
+                        "name": "info",
+                      },
+                    },
+                    "success": Object {
+                      "bg": "ui.successBackground",
+                      "icon": Object {
+                        "color": "ui.success",
+                        "name": "checkCircle",
+                      },
+                    },
+                  },
+                  "borders": Array [
+                    0,
+                    "1px solid",
+                    "2px solid",
+                    "3px solid",
+                  ],
+                  "breakpoints": Array [
+                    "40rem",
+                    "52rem",
+                    "64rem",
+                  ],
+                  "buttons": Object {
+                    "default": Object {
+                      "backgroundColor": "#323232",
+                      "color": "white",
+                    },
+                    "primary": Object {
+                      "backgroundColor": "#E40000",
+                      "color": "white",
+                    },
+                  },
+                  "colors": Object {
+                    "blue": "#8DE2E0",
+                    "brand": Object {
+                      "primary": "#E40000",
+                      "quaternary": "#F9F3E9",
+                      "secondary": "#8DE2E0",
+                      "tertiary": "#D20000",
+                    },
+                    "brightSun": "#FBCB3B",
+                    "green": "#35A509",
+                    "greys": Object {
+                      "alto": "#DADADA",
+                      "charcoal": "#323232",
+                      "dusty": "#999999",
+                      "mineShaft": "#222222",
+                      "porcelain": "#F4F5F6",
+                      "steel": "#666666",
+                    },
+                    "lightBlue": "#E7F7F7",
+                    "lightGreen": "#DEF2DE",
+                    "lightOrange": "#FCEBCD",
+                    "maroon": "#870000",
+                    "orange": "#ED710B",
+                    "red": "#E00E00",
+                    "ui": Object {
+                      "error": "#ED710B",
+                      "errorBackground": "#FCEBCD",
+                      "info": "#8DE2E0",
+                      "infoBackground": "#E7F7F7",
+                      "link": "#E00E00",
+                      "linkHover": "#870000",
+                      "success": "#35A509",
+                      "successBackground": "#DEF2DE",
+                    },
+                    "white": "#FFFFFF",
+                  },
+                  "fontFamily": "Ciutadella, sans-serif",
+                  "fontSizes": Object {
+                    "2xl": "1.625rem",
+                    "3xl": "2.25rem",
+                    "4xl": "2.875rem",
+                    "base": "1rem",
+                    "lg": "1.125rem",
+                    "sm": "0.9375rem",
+                    "xl": "1.375rem",
+                    "xs": "0.8125rem",
+                  },
+                  "fontWeights": Object {
+                    "bold": 600,
+                    "normal": 500,
+                  },
+                  "gutters": Object {
+                    "default": 3,
+                  },
+                  "letterSpacings": Object {
+                    "normal": "0",
+                    "wide": "0.125em",
+                  },
+                  "lineHeights": Object {
+                    "loose": 1.5,
+                    "normal": 1.35,
+                    "tight": 1,
+                  },
+                  "maxWidths": Object {
+                    "default": "80rem",
+                  },
+                  "mediaQueries": Array [
+                    "@media screen and (min-width: 40rem)",
+                    "@media screen and (min-width: 52rem)",
+                    "@media screen and (min-width: 64rem)",
+                  ],
+                  "opacity": Object {
+                    "disabled": 0.7,
+                  },
+                  "radii": Object {
+                    "default": "4px",
+                    "none": 0,
+                    "rounded": "1000px",
+                  },
+                  "shadows": Object {
+                    "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                    "focus": "0 0 2px 2px #999999;",
+                    "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                    "none": 0,
+                  },
+                  "space": Array [
+                    "0rem",
+                    "0.25rem",
+                    "0.5rem",
+                    "0.75rem",
+                    "1rem",
+                    "1.25rem",
+                    "1.5rem",
+                    "1.75rem",
+                    "2rem",
+                    "2.25rem",
+                    "2.5rem",
+                    "2.75rem",
+                    "3rem",
+                    "3.25rem",
+                    "3.5rem",
+                    "3.75rem",
+                    "4rem",
+                    "4.25rem",
+                    "4.5rem",
+                    "4.75rem",
+                    "5rem",
+                    "5.25rem",
+                    "5.5rem",
+                    "5.75rem",
+                    "6rem",
+                    "6.25rem",
+                    "6.5rem",
+                    "6.75rem",
+                    "7rem",
+                    "7.25rem",
+                    "7.5rem",
+                    "7.75rem",
+                    "8rem",
+                  ],
+                  "textStyles": Object {
+                    "caps": Object {
+                      "fontWeight": 600,
+                      "textTransform": "uppercase",
+                    },
+                    "h1": Object {
+                      "fontSize": "2.25rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.35,
+                    },
+                    "h2": Object {
+                      "fontSize": "1.625rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.35,
+                    },
+                    "h3": Object {
+                      "fontSize": "1.375rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h4": Object {
+                      "fontSize": "1.125rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h5": Object {
+                      "fontSize": "1rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h6": Object {
+                      "fontSize": "0.9375rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "label": Object {
+                      "color": "#323232",
+                      "fontSize": "0.9375rem",
+                      "fontWeight": 600,
+                    },
+                    "text": Object {
+                      "fontSize": "1rem",
+                      "fontWeight": 500,
+                      "lineHeight": 1.5,
+                    },
+                  },
+                  "transitions": Object {
+                    "default": "200ms ease-in",
+                  },
                 }
-                className="c2"
-                is="div"
+              }
+              type="checkbox"
+            >
+              <StyledComponent
+                defaultChecked={true}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxInput-tnrpd9-1",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "opacity:0;position:absolute;z-index:0;&:focus{box-shadow:none;}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxInput",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxInput-tnrpd9-1",
+                    "target": "input",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                theme={
+                  Object {
+                    "alertStyles": Object {
+                      "default": Object {
+                        "bg": "greys.porcelain",
+                      },
+                      "error": Object {
+                        "bg": "ui.errorBackground",
+                        "icon": Object {
+                          "color": "ui.error",
+                          "name": "warning",
+                        },
+                      },
+                      "info": Object {
+                        "bg": "ui.infoBackground",
+                        "icon": Object {
+                          "color": "greys.charcoal",
+                          "name": "info",
+                        },
+                      },
+                      "success": Object {
+                        "bg": "ui.successBackground",
+                        "icon": Object {
+                          "color": "ui.success",
+                          "name": "checkCircle",
+                        },
+                      },
+                    },
+                    "borders": Array [
+                      0,
+                      "1px solid",
+                      "2px solid",
+                      "3px solid",
+                    ],
+                    "breakpoints": Array [
+                      "40rem",
+                      "52rem",
+                      "64rem",
+                    ],
+                    "buttons": Object {
+                      "default": Object {
+                        "backgroundColor": "#323232",
+                        "color": "white",
+                      },
+                      "primary": Object {
+                        "backgroundColor": "#E40000",
+                        "color": "white",
+                      },
+                    },
+                    "colors": Object {
+                      "blue": "#8DE2E0",
+                      "brand": Object {
+                        "primary": "#E40000",
+                        "quaternary": "#F9F3E9",
+                        "secondary": "#8DE2E0",
+                        "tertiary": "#D20000",
+                      },
+                      "brightSun": "#FBCB3B",
+                      "green": "#35A509",
+                      "greys": Object {
+                        "alto": "#DADADA",
+                        "charcoal": "#323232",
+                        "dusty": "#999999",
+                        "mineShaft": "#222222",
+                        "porcelain": "#F4F5F6",
+                        "steel": "#666666",
+                      },
+                      "lightBlue": "#E7F7F7",
+                      "lightGreen": "#DEF2DE",
+                      "lightOrange": "#FCEBCD",
+                      "maroon": "#870000",
+                      "orange": "#ED710B",
+                      "red": "#E00E00",
+                      "ui": Object {
+                        "error": "#ED710B",
+                        "errorBackground": "#FCEBCD",
+                        "info": "#8DE2E0",
+                        "infoBackground": "#E7F7F7",
+                        "link": "#E00E00",
+                        "linkHover": "#870000",
+                        "success": "#35A509",
+                        "successBackground": "#DEF2DE",
+                      },
+                      "white": "#FFFFFF",
+                    },
+                    "fontFamily": "Ciutadella, sans-serif",
+                    "fontSizes": Object {
+                      "2xl": "1.625rem",
+                      "3xl": "2.25rem",
+                      "4xl": "2.875rem",
+                      "base": "1rem",
+                      "lg": "1.125rem",
+                      "sm": "0.9375rem",
+                      "xl": "1.375rem",
+                      "xs": "0.8125rem",
+                    },
+                    "fontWeights": Object {
+                      "bold": 600,
+                      "normal": 500,
+                    },
+                    "gutters": Object {
+                      "default": 3,
+                    },
+                    "letterSpacings": Object {
+                      "normal": "0",
+                      "wide": "0.125em",
+                    },
+                    "lineHeights": Object {
+                      "loose": 1.5,
+                      "normal": 1.35,
+                      "tight": 1,
+                    },
+                    "maxWidths": Object {
+                      "default": "80rem",
+                    },
+                    "mediaQueries": Array [
+                      "@media screen and (min-width: 40rem)",
+                      "@media screen and (min-width: 52rem)",
+                      "@media screen and (min-width: 64rem)",
+                    ],
+                    "opacity": Object {
+                      "disabled": 0.7,
+                    },
+                    "radii": Object {
+                      "default": "4px",
+                      "none": 0,
+                      "rounded": "1000px",
+                    },
+                    "shadows": Object {
+                      "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                      "focus": "0 0 2px 2px #999999;",
+                      "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                      "none": 0,
+                    },
+                    "space": Array [
+                      "0rem",
+                      "0.25rem",
+                      "0.5rem",
+                      "0.75rem",
+                      "1rem",
+                      "1.25rem",
+                      "1.5rem",
+                      "1.75rem",
+                      "2rem",
+                      "2.25rem",
+                      "2.5rem",
+                      "2.75rem",
+                      "3rem",
+                      "3.25rem",
+                      "3.5rem",
+                      "3.75rem",
+                      "4rem",
+                      "4.25rem",
+                      "4.5rem",
+                      "4.75rem",
+                      "5rem",
+                      "5.25rem",
+                      "5.5rem",
+                      "5.75rem",
+                      "6rem",
+                      "6.25rem",
+                      "6.5rem",
+                      "6.75rem",
+                      "7rem",
+                      "7.25rem",
+                      "7.5rem",
+                      "7.75rem",
+                      "8rem",
+                    ],
+                    "textStyles": Object {
+                      "caps": Object {
+                        "fontWeight": 600,
+                        "textTransform": "uppercase",
+                      },
+                      "h1": Object {
+                        "fontSize": "2.25rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.35,
+                      },
+                      "h2": Object {
+                        "fontSize": "1.625rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.35,
+                      },
+                      "h3": Object {
+                        "fontSize": "1.375rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h4": Object {
+                        "fontSize": "1.125rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h5": Object {
+                        "fontSize": "1rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h6": Object {
+                        "fontSize": "0.9375rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "label": Object {
+                        "color": "#323232",
+                        "fontSize": "0.9375rem",
+                        "fontWeight": 600,
+                      },
+                      "text": Object {
+                        "fontSize": "1rem",
+                        "fontWeight": 500,
+                        "lineHeight": 1.5,
+                      },
+                    },
+                    "transitions": Object {
+                      "default": "200ms ease-in",
+                    },
+                  }
+                }
+                type="checkbox"
               >
-                <div
-                  className="c2"
+                <input
+                  className="c1"
+                  defaultChecked={true}
+                  type="checkbox"
                 />
-              </Clean.div>
-            </Clean.div>
-          </Checkbox__CheckboxBorder>
-          <Checkbox__CheckboxIcon
-            name="done"
-          >
-            <Icon
-              className="c3"
+              </StyledComponent>
+            </Checkbox__CheckboxInput>
+            <Checkbox__CheckboxBorder>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxBorder-tnrpd9-2",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "display:inline-block;vertical-align:middle;margin-bottom:",
+                        "0.125rem",
+                        ";margin-right:",
+                        [Function],
+                        ";height:",
+                        "1.25rem",
+                        ";width:",
+                        "1.25rem",
+                        ";background-color:",
+                        [Function],
+                        ";border:",
+                        [Function],
+                        ";border-color:",
+                        [Function],
+                        ";border-radius:",
+                        [Function],
+                        ";input:checked + &,input:focus + &,input:hover + &{border-color:",
+                        [Function],
+                        ";transition:",
+                        [Function],
+                        ";}input:disabled + &{background-color:",
+                        [Function],
+                        ";border-color:",
+                        [Function],
+                        ";}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxBorder",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxBorder-tnrpd9-2",
+                    "target": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "displayName": "Clean.div",
+                      "render": [Function],
+                    },
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <Clean.div
+                  className="c2"
+                >
+                  <Clean.div
+                    blacklist={
+                      Array [
+                        "m",
+                        "mt",
+                        "mr",
+                        "mb",
+                        "ml",
+                        "mx",
+                        "my",
+                        "p",
+                        "pt",
+                        "pr",
+                        "pb",
+                        "pl",
+                        "px",
+                        "py",
+                        "width",
+                        "fontSize",
+                        "color",
+                        "bg",
+                        "fontFamily",
+                        "textAlign",
+                        "lineHeight",
+                        "fontWeight",
+                        "fontStyle",
+                        "letterSpacing",
+                        "display",
+                        "maxWidth",
+                        "minWidth",
+                        "height",
+                        "maxHeight",
+                        "minHeight",
+                        "size",
+                        "ratio",
+                        "verticalAlign",
+                        "alignItems",
+                        "alignContent",
+                        "justifyItems",
+                        "justifyContent",
+                        "flexWrap",
+                        "flexBasis",
+                        "flexDirection",
+                        "flex",
+                        "justifySelf",
+                        "alignSelf",
+                        "order",
+                        "gridGap",
+                        "gridColumnGap",
+                        "gridRowGap",
+                        "gridColumn",
+                        "gridRow",
+                        "gridAutoFlow",
+                        "gridAutoColumns",
+                        "gridAutoRows",
+                        "gridTemplateColumns",
+                        "gridTemplateRows",
+                        "gridTemplateAreas",
+                        "gridArea",
+                        "border",
+                        "borderTop",
+                        "borderRight",
+                        "borderBottom",
+                        "borderLeft",
+                        "borderColor",
+                        "borderRadius",
+                        "boxShadow",
+                        "opacity",
+                        "overflow",
+                        "background",
+                        "backgroundImage",
+                        "backgroundPosition",
+                        "backgroundRepeat",
+                        "backgroundSize",
+                        "position",
+                        "zIndex",
+                        "top",
+                        "right",
+                        "bottom",
+                        "left",
+                        "textStyle",
+                        "colors",
+                        "variant",
+                        "theme",
+                      ]
+                    }
+                    className="c2"
+                    is="div"
+                  >
+                    <div
+                      className="c2"
+                    />
+                  </Clean.div>
+                </Clean.div>
+              </StyledComponent>
+            </Checkbox__CheckboxBorder>
+            <Checkbox__CheckboxIcon
               name="done"
             >
-              <Base
-                className="c3 c4"
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxIcon-tnrpd9-3",
+                      "isStatic": false,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "vertical-align:middle;flex:none;",
+                        [Function],
+                        " ",
+                        [Function],
+                        ";",
+                        "position:absolute;display:none;color:",
+                        [Function],
+                        ";padding:",
+                        [Function],
+                        ";top:0;left:-",
+                        "0.125rem",
+                        ";input:checked ~ &{display:block;}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxIcon",
+                    "foldedComponentIds": Array [
+                      "Icon-sc-1t9j3ip-0",
+                    ],
+                    "propTypes": Object {
+                      "bg": [Function],
+                      "color": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "name": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "size": [Function],
+                      "title": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxIcon-tnrpd9-3",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  }
+                }
+                forwardedRef={null}
                 name="done"
-                size={24}
-                title={null}
               >
-                <Cleaned
-                  className="c3 c4"
-                  fill="currentcolor"
-                  height={24}
-                  title="done"
-                  viewBox="0 0 24 24"
-                  width={24}
+                <Base
+                  className="c3"
+                  name="done"
+                  size={24}
+                  title={null}
                 >
-                  <svg
-                    className="c3 c4"
+                  <Cleaned
+                    className="c3"
                     fill="currentcolor"
                     height={24}
                     title="done"
                     viewBox="0 0 24 24"
                     width={24}
                   >
-                    <path
-                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                    />
-                  </svg>
-                </Cleaned>
-              </Base>
-            </Icon>
-          </Checkbox__CheckboxIcon>
-        </div>
+                    <svg
+                      className="c3"
+                      fill="currentcolor"
+                      height={24}
+                      title="done"
+                      viewBox="0 0 24 24"
+                      width={24}
+                    >
+                      <path
+                        d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                      />
+                    </svg>
+                  </Cleaned>
+                </Base>
+              </StyledComponent>
+            </Checkbox__CheckboxIcon>
+          </div>
+        </Clean.div>
       </Clean.div>
-    </Clean.div>
+    </StyledComponent>
   </Checkbox__CheckboxWrapper>
 </Checkbox>
 `;
 
 exports[`<Checkbox /> when disabled renders correctly 1`] = `
-.c4 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 .c0 {
   display: inline-block;
   position: relative;
@@ -679,33 +2256,17 @@ exports[`<Checkbox /> when disabled renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0.125rem;
-  margin-right: 0.5rem;
   height: 1.25rem;
   width: 1.25rem;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
-  border-radius: 4px;
-}
-
-input:checked + .c2,
-input:focus + .c2,
-input:hover + .c2 {
-  border-color: #8DE2E0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
-}
-
-input:disabled + .c2 {
-  background-color: #DADADA;
-  border-color: #DADADA;
 }
 
 .c3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   position: absolute;
   display: none;
-  color: #323232;
-  padding: 0.25rem;
   top: 0;
   left: -0.125rem;
 }
@@ -716,266 +2277,1081 @@ input:checked ~ .c3 {
 
 <Checkbox
   disabled={true}
+  theme={
+    Object {
+      "alertStyles": Object {
+        "default": Object {
+          "bg": "greys.porcelain",
+        },
+        "error": Object {
+          "bg": "ui.errorBackground",
+          "icon": Object {
+            "color": "ui.error",
+            "name": "warning",
+          },
+        },
+        "info": Object {
+          "bg": "ui.infoBackground",
+          "icon": Object {
+            "color": "greys.charcoal",
+            "name": "info",
+          },
+        },
+        "success": Object {
+          "bg": "ui.successBackground",
+          "icon": Object {
+            "color": "ui.success",
+            "name": "checkCircle",
+          },
+        },
+      },
+      "borders": Array [
+        0,
+        "1px solid",
+        "2px solid",
+        "3px solid",
+      ],
+      "breakpoints": Array [
+        "40rem",
+        "52rem",
+        "64rem",
+      ],
+      "buttons": Object {
+        "default": Object {
+          "backgroundColor": "#323232",
+          "color": "white",
+        },
+        "primary": Object {
+          "backgroundColor": "#E40000",
+          "color": "white",
+        },
+      },
+      "colors": Object {
+        "blue": "#8DE2E0",
+        "brand": Object {
+          "primary": "#E40000",
+          "quaternary": "#F9F3E9",
+          "secondary": "#8DE2E0",
+          "tertiary": "#D20000",
+        },
+        "brightSun": "#FBCB3B",
+        "green": "#35A509",
+        "greys": Object {
+          "alto": "#DADADA",
+          "charcoal": "#323232",
+          "dusty": "#999999",
+          "mineShaft": "#222222",
+          "porcelain": "#F4F5F6",
+          "steel": "#666666",
+        },
+        "lightBlue": "#E7F7F7",
+        "lightGreen": "#DEF2DE",
+        "lightOrange": "#FCEBCD",
+        "maroon": "#870000",
+        "orange": "#ED710B",
+        "red": "#E00E00",
+        "ui": Object {
+          "error": "#ED710B",
+          "errorBackground": "#FCEBCD",
+          "info": "#8DE2E0",
+          "infoBackground": "#E7F7F7",
+          "link": "#E00E00",
+          "linkHover": "#870000",
+          "success": "#35A509",
+          "successBackground": "#DEF2DE",
+        },
+        "white": "#FFFFFF",
+      },
+      "fontFamily": "Ciutadella, sans-serif",
+      "fontSizes": Object {
+        "2xl": "1.625rem",
+        "3xl": "2.25rem",
+        "4xl": "2.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "sm": "0.9375rem",
+        "xl": "1.375rem",
+        "xs": "0.8125rem",
+      },
+      "fontWeights": Object {
+        "bold": 600,
+        "normal": 500,
+      },
+      "gutters": Object {
+        "default": 3,
+      },
+      "letterSpacings": Object {
+        "normal": "0",
+        "wide": "0.125em",
+      },
+      "lineHeights": Object {
+        "loose": 1.5,
+        "normal": 1.35,
+        "tight": 1,
+      },
+      "maxWidths": Object {
+        "default": "80rem",
+      },
+      "mediaQueries": Array [
+        "@media screen and (min-width: 40rem)",
+        "@media screen and (min-width: 52rem)",
+        "@media screen and (min-width: 64rem)",
+      ],
+      "opacity": Object {
+        "disabled": 0.7,
+      },
+      "radii": Object {
+        "default": "4px",
+        "none": 0,
+        "rounded": "1000px",
+      },
+      "shadows": Object {
+        "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+        "focus": "0 0 2px 2px #999999;",
+        "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+        "none": 0,
+      },
+      "space": Array [
+        "0rem",
+        "0.25rem",
+        "0.5rem",
+        "0.75rem",
+        "1rem",
+        "1.25rem",
+        "1.5rem",
+        "1.75rem",
+        "2rem",
+        "2.25rem",
+        "2.5rem",
+        "2.75rem",
+        "3rem",
+        "3.25rem",
+        "3.5rem",
+        "3.75rem",
+        "4rem",
+        "4.25rem",
+        "4.5rem",
+        "4.75rem",
+        "5rem",
+        "5.25rem",
+        "5.5rem",
+        "5.75rem",
+        "6rem",
+        "6.25rem",
+        "6.5rem",
+        "6.75rem",
+        "7rem",
+        "7.25rem",
+        "7.5rem",
+        "7.75rem",
+        "8rem",
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "fontWeight": 600,
+          "textTransform": "uppercase",
+        },
+        "h1": Object {
+          "fontSize": "2.25rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h2": Object {
+          "fontSize": "1.625rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+        },
+        "h3": Object {
+          "fontSize": "1.375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h4": Object {
+          "fontSize": "1.125rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h5": Object {
+          "fontSize": "1rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "h6": Object {
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+          "lineHeight": 1.5,
+        },
+        "label": Object {
+          "color": "#323232",
+          "fontSize": "0.9375rem",
+          "fontWeight": 600,
+        },
+        "text": Object {
+          "fontSize": "1rem",
+          "fontWeight": 500,
+          "lineHeight": 1.5,
+        },
+      },
+      "transitions": Object {
+        "default": "200ms ease-in",
+      },
+    }
+  }
 >
   <Checkbox__CheckboxWrapper>
-    <Clean.div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Checkbox__CheckboxWrapper-tnrpd9-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "display:inline-block;position:relative;",
+            ],
+          },
+          "displayName": "Checkbox__CheckboxWrapper",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Checkbox__CheckboxWrapper-tnrpd9-0",
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Clean.div",
+            "render": [Function],
+          },
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
       <Clean.div
-        blacklist={
-          Array [
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "width",
-            "w",
-            "fontSize",
-            "f",
-            "color",
-            "bg",
-            "fontFamily",
-            "font",
-            "textAlign",
-            "align",
-            "lineHeight",
-            "fontWeight",
-            "letterSpacing",
-            "display",
-            "maxWidth",
-            "minWidth",
-            "height",
-            "maxHeight",
-            "minHeight",
-            "size",
-            "ratio",
-            "alignItems",
-            "alignContent",
-            "justifyContent",
-            "justify",
-            "flexWrap",
-            "wrap",
-            "flexBasis",
-            "flexDirection",
-            "flex",
-            "justifySelf",
-            "alignSelf",
-            "order",
-            "gridGap",
-            "gridColumnGap",
-            "gridRowGap",
-            "gridColumn",
-            "gridRow",
-            "gridAutoFlow",
-            "gridAutoColumns",
-            "gridAutoRows",
-            "gridTemplateColumns",
-            "gridTemplateRows",
-            "border",
-            "borderTop",
-            "borderRight",
-            "borderBottom",
-            "borderLeft",
-            "borderColor",
-            "borderRadius",
-            "boxShadow",
-            "background",
-            "backgroundImage",
-            "bgImage",
-            "backgroundSize",
-            "bgSize",
-            "backgroundPosition",
-            "bgPosition",
-            "backgroundRepeat",
-            "bgRepeat",
-            "position",
-            "zIndex",
-            "top",
-            "right",
-            "bottom",
-            "left",
-            "hover",
-            "focus",
-            "active",
-            "disabledStyle",
-            "textStyle",
-            "colors",
-            "buttonStyle",
-            "borderWidth",
-          ]
-        }
         className="c0"
-        is="div"
       >
-        <div
+        <Clean.div
+          blacklist={
+            Array [
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "width",
+              "fontSize",
+              "color",
+              "bg",
+              "fontFamily",
+              "textAlign",
+              "lineHeight",
+              "fontWeight",
+              "fontStyle",
+              "letterSpacing",
+              "display",
+              "maxWidth",
+              "minWidth",
+              "height",
+              "maxHeight",
+              "minHeight",
+              "size",
+              "ratio",
+              "verticalAlign",
+              "alignItems",
+              "alignContent",
+              "justifyItems",
+              "justifyContent",
+              "flexWrap",
+              "flexBasis",
+              "flexDirection",
+              "flex",
+              "justifySelf",
+              "alignSelf",
+              "order",
+              "gridGap",
+              "gridColumnGap",
+              "gridRowGap",
+              "gridColumn",
+              "gridRow",
+              "gridAutoFlow",
+              "gridAutoColumns",
+              "gridAutoRows",
+              "gridTemplateColumns",
+              "gridTemplateRows",
+              "gridTemplateAreas",
+              "gridArea",
+              "border",
+              "borderTop",
+              "borderRight",
+              "borderBottom",
+              "borderLeft",
+              "borderColor",
+              "borderRadius",
+              "boxShadow",
+              "opacity",
+              "overflow",
+              "background",
+              "backgroundImage",
+              "backgroundPosition",
+              "backgroundRepeat",
+              "backgroundSize",
+              "position",
+              "zIndex",
+              "top",
+              "right",
+              "bottom",
+              "left",
+              "textStyle",
+              "colors",
+              "variant",
+              "theme",
+            ]
+          }
           className="c0"
+          is="div"
         >
-          <Checkbox__CheckboxInput
-            disabled={true}
-            type="checkbox"
+          <div
+            className="c0"
           >
-            <input
-              className="c1"
+            <Checkbox__CheckboxInput
               disabled={true}
-              type="checkbox"
-            />
-          </Checkbox__CheckboxInput>
-          <Checkbox__CheckboxBorder>
-            <Clean.div
-              className="c2"
-            >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
+              theme={
+                Object {
+                  "alertStyles": Object {
+                    "default": Object {
+                      "bg": "greys.porcelain",
+                    },
+                    "error": Object {
+                      "bg": "ui.errorBackground",
+                      "icon": Object {
+                        "color": "ui.error",
+                        "name": "warning",
+                      },
+                    },
+                    "info": Object {
+                      "bg": "ui.infoBackground",
+                      "icon": Object {
+                        "color": "greys.charcoal",
+                        "name": "info",
+                      },
+                    },
+                    "success": Object {
+                      "bg": "ui.successBackground",
+                      "icon": Object {
+                        "color": "ui.success",
+                        "name": "checkCircle",
+                      },
+                    },
+                  },
+                  "borders": Array [
+                    0,
+                    "1px solid",
+                    "2px solid",
+                    "3px solid",
+                  ],
+                  "breakpoints": Array [
+                    "40rem",
+                    "52rem",
+                    "64rem",
+                  ],
+                  "buttons": Object {
+                    "default": Object {
+                      "backgroundColor": "#323232",
+                      "color": "white",
+                    },
+                    "primary": Object {
+                      "backgroundColor": "#E40000",
+                      "color": "white",
+                    },
+                  },
+                  "colors": Object {
+                    "blue": "#8DE2E0",
+                    "brand": Object {
+                      "primary": "#E40000",
+                      "quaternary": "#F9F3E9",
+                      "secondary": "#8DE2E0",
+                      "tertiary": "#D20000",
+                    },
+                    "brightSun": "#FBCB3B",
+                    "green": "#35A509",
+                    "greys": Object {
+                      "alto": "#DADADA",
+                      "charcoal": "#323232",
+                      "dusty": "#999999",
+                      "mineShaft": "#222222",
+                      "porcelain": "#F4F5F6",
+                      "steel": "#666666",
+                    },
+                    "lightBlue": "#E7F7F7",
+                    "lightGreen": "#DEF2DE",
+                    "lightOrange": "#FCEBCD",
+                    "maroon": "#870000",
+                    "orange": "#ED710B",
+                    "red": "#E00E00",
+                    "ui": Object {
+                      "error": "#ED710B",
+                      "errorBackground": "#FCEBCD",
+                      "info": "#8DE2E0",
+                      "infoBackground": "#E7F7F7",
+                      "link": "#E00E00",
+                      "linkHover": "#870000",
+                      "success": "#35A509",
+                      "successBackground": "#DEF2DE",
+                    },
+                    "white": "#FFFFFF",
+                  },
+                  "fontFamily": "Ciutadella, sans-serif",
+                  "fontSizes": Object {
+                    "2xl": "1.625rem",
+                    "3xl": "2.25rem",
+                    "4xl": "2.875rem",
+                    "base": "1rem",
+                    "lg": "1.125rem",
+                    "sm": "0.9375rem",
+                    "xl": "1.375rem",
+                    "xs": "0.8125rem",
+                  },
+                  "fontWeights": Object {
+                    "bold": 600,
+                    "normal": 500,
+                  },
+                  "gutters": Object {
+                    "default": 3,
+                  },
+                  "letterSpacings": Object {
+                    "normal": "0",
+                    "wide": "0.125em",
+                  },
+                  "lineHeights": Object {
+                    "loose": 1.5,
+                    "normal": 1.35,
+                    "tight": 1,
+                  },
+                  "maxWidths": Object {
+                    "default": "80rem",
+                  },
+                  "mediaQueries": Array [
+                    "@media screen and (min-width: 40rem)",
+                    "@media screen and (min-width: 52rem)",
+                    "@media screen and (min-width: 64rem)",
+                  ],
+                  "opacity": Object {
+                    "disabled": 0.7,
+                  },
+                  "radii": Object {
+                    "default": "4px",
+                    "none": 0,
+                    "rounded": "1000px",
+                  },
+                  "shadows": Object {
+                    "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                    "focus": "0 0 2px 2px #999999;",
+                    "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                    "none": 0,
+                  },
+                  "space": Array [
+                    "0rem",
+                    "0.25rem",
+                    "0.5rem",
+                    "0.75rem",
+                    "1rem",
+                    "1.25rem",
+                    "1.5rem",
+                    "1.75rem",
+                    "2rem",
+                    "2.25rem",
+                    "2.5rem",
+                    "2.75rem",
+                    "3rem",
+                    "3.25rem",
+                    "3.5rem",
+                    "3.75rem",
+                    "4rem",
+                    "4.25rem",
+                    "4.5rem",
+                    "4.75rem",
+                    "5rem",
+                    "5.25rem",
+                    "5.5rem",
+                    "5.75rem",
+                    "6rem",
+                    "6.25rem",
+                    "6.5rem",
+                    "6.75rem",
+                    "7rem",
+                    "7.25rem",
+                    "7.5rem",
+                    "7.75rem",
+                    "8rem",
+                  ],
+                  "textStyles": Object {
+                    "caps": Object {
+                      "fontWeight": 600,
+                      "textTransform": "uppercase",
+                    },
+                    "h1": Object {
+                      "fontSize": "2.25rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.35,
+                    },
+                    "h2": Object {
+                      "fontSize": "1.625rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.35,
+                    },
+                    "h3": Object {
+                      "fontSize": "1.375rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h4": Object {
+                      "fontSize": "1.125rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h5": Object {
+                      "fontSize": "1rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "h6": Object {
+                      "fontSize": "0.9375rem",
+                      "fontWeight": 600,
+                      "lineHeight": 1.5,
+                    },
+                    "label": Object {
+                      "color": "#323232",
+                      "fontSize": "0.9375rem",
+                      "fontWeight": 600,
+                    },
+                    "text": Object {
+                      "fontSize": "1rem",
+                      "fontWeight": 500,
+                      "lineHeight": 1.5,
+                    },
+                  },
+                  "transitions": Object {
+                    "default": "200ms ease-in",
+                  },
                 }
-                className="c2"
-                is="div"
+              }
+              type="checkbox"
+            >
+              <StyledComponent
+                disabled={true}
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxInput-tnrpd9-1",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "opacity:0;position:absolute;z-index:0;&:focus{box-shadow:none;}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxInput",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxInput-tnrpd9-1",
+                    "target": "input",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                theme={
+                  Object {
+                    "alertStyles": Object {
+                      "default": Object {
+                        "bg": "greys.porcelain",
+                      },
+                      "error": Object {
+                        "bg": "ui.errorBackground",
+                        "icon": Object {
+                          "color": "ui.error",
+                          "name": "warning",
+                        },
+                      },
+                      "info": Object {
+                        "bg": "ui.infoBackground",
+                        "icon": Object {
+                          "color": "greys.charcoal",
+                          "name": "info",
+                        },
+                      },
+                      "success": Object {
+                        "bg": "ui.successBackground",
+                        "icon": Object {
+                          "color": "ui.success",
+                          "name": "checkCircle",
+                        },
+                      },
+                    },
+                    "borders": Array [
+                      0,
+                      "1px solid",
+                      "2px solid",
+                      "3px solid",
+                    ],
+                    "breakpoints": Array [
+                      "40rem",
+                      "52rem",
+                      "64rem",
+                    ],
+                    "buttons": Object {
+                      "default": Object {
+                        "backgroundColor": "#323232",
+                        "color": "white",
+                      },
+                      "primary": Object {
+                        "backgroundColor": "#E40000",
+                        "color": "white",
+                      },
+                    },
+                    "colors": Object {
+                      "blue": "#8DE2E0",
+                      "brand": Object {
+                        "primary": "#E40000",
+                        "quaternary": "#F9F3E9",
+                        "secondary": "#8DE2E0",
+                        "tertiary": "#D20000",
+                      },
+                      "brightSun": "#FBCB3B",
+                      "green": "#35A509",
+                      "greys": Object {
+                        "alto": "#DADADA",
+                        "charcoal": "#323232",
+                        "dusty": "#999999",
+                        "mineShaft": "#222222",
+                        "porcelain": "#F4F5F6",
+                        "steel": "#666666",
+                      },
+                      "lightBlue": "#E7F7F7",
+                      "lightGreen": "#DEF2DE",
+                      "lightOrange": "#FCEBCD",
+                      "maroon": "#870000",
+                      "orange": "#ED710B",
+                      "red": "#E00E00",
+                      "ui": Object {
+                        "error": "#ED710B",
+                        "errorBackground": "#FCEBCD",
+                        "info": "#8DE2E0",
+                        "infoBackground": "#E7F7F7",
+                        "link": "#E00E00",
+                        "linkHover": "#870000",
+                        "success": "#35A509",
+                        "successBackground": "#DEF2DE",
+                      },
+                      "white": "#FFFFFF",
+                    },
+                    "fontFamily": "Ciutadella, sans-serif",
+                    "fontSizes": Object {
+                      "2xl": "1.625rem",
+                      "3xl": "2.25rem",
+                      "4xl": "2.875rem",
+                      "base": "1rem",
+                      "lg": "1.125rem",
+                      "sm": "0.9375rem",
+                      "xl": "1.375rem",
+                      "xs": "0.8125rem",
+                    },
+                    "fontWeights": Object {
+                      "bold": 600,
+                      "normal": 500,
+                    },
+                    "gutters": Object {
+                      "default": 3,
+                    },
+                    "letterSpacings": Object {
+                      "normal": "0",
+                      "wide": "0.125em",
+                    },
+                    "lineHeights": Object {
+                      "loose": 1.5,
+                      "normal": 1.35,
+                      "tight": 1,
+                    },
+                    "maxWidths": Object {
+                      "default": "80rem",
+                    },
+                    "mediaQueries": Array [
+                      "@media screen and (min-width: 40rem)",
+                      "@media screen and (min-width: 52rem)",
+                      "@media screen and (min-width: 64rem)",
+                    ],
+                    "opacity": Object {
+                      "disabled": 0.7,
+                    },
+                    "radii": Object {
+                      "default": "4px",
+                      "none": 0,
+                      "rounded": "1000px",
+                    },
+                    "shadows": Object {
+                      "default": "0 1px 1px 0 rgba(0, 0, 0, 0.1)",
+                      "focus": "0 0 2px 2px #999999;",
+                      "heavy": "0 2px 2px 0 rgba(0, 0, 0, 0.1)",
+                      "none": 0,
+                    },
+                    "space": Array [
+                      "0rem",
+                      "0.25rem",
+                      "0.5rem",
+                      "0.75rem",
+                      "1rem",
+                      "1.25rem",
+                      "1.5rem",
+                      "1.75rem",
+                      "2rem",
+                      "2.25rem",
+                      "2.5rem",
+                      "2.75rem",
+                      "3rem",
+                      "3.25rem",
+                      "3.5rem",
+                      "3.75rem",
+                      "4rem",
+                      "4.25rem",
+                      "4.5rem",
+                      "4.75rem",
+                      "5rem",
+                      "5.25rem",
+                      "5.5rem",
+                      "5.75rem",
+                      "6rem",
+                      "6.25rem",
+                      "6.5rem",
+                      "6.75rem",
+                      "7rem",
+                      "7.25rem",
+                      "7.5rem",
+                      "7.75rem",
+                      "8rem",
+                    ],
+                    "textStyles": Object {
+                      "caps": Object {
+                        "fontWeight": 600,
+                        "textTransform": "uppercase",
+                      },
+                      "h1": Object {
+                        "fontSize": "2.25rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.35,
+                      },
+                      "h2": Object {
+                        "fontSize": "1.625rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.35,
+                      },
+                      "h3": Object {
+                        "fontSize": "1.375rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h4": Object {
+                        "fontSize": "1.125rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h5": Object {
+                        "fontSize": "1rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "h6": Object {
+                        "fontSize": "0.9375rem",
+                        "fontWeight": 600,
+                        "lineHeight": 1.5,
+                      },
+                      "label": Object {
+                        "color": "#323232",
+                        "fontSize": "0.9375rem",
+                        "fontWeight": 600,
+                      },
+                      "text": Object {
+                        "fontSize": "1rem",
+                        "fontWeight": 500,
+                        "lineHeight": 1.5,
+                      },
+                    },
+                    "transitions": Object {
+                      "default": "200ms ease-in",
+                    },
+                  }
+                }
+                type="checkbox"
               >
-                <div
-                  className="c2"
+                <input
+                  className="c1"
+                  disabled={true}
+                  type="checkbox"
                 />
-              </Clean.div>
-            </Clean.div>
-          </Checkbox__CheckboxBorder>
-          <Checkbox__CheckboxIcon
-            name="done"
-          >
-            <Icon
-              className="c3"
+              </StyledComponent>
+            </Checkbox__CheckboxInput>
+            <Checkbox__CheckboxBorder>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxBorder-tnrpd9-2",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "display:inline-block;vertical-align:middle;margin-bottom:",
+                        "0.125rem",
+                        ";margin-right:",
+                        [Function],
+                        ";height:",
+                        "1.25rem",
+                        ";width:",
+                        "1.25rem",
+                        ";background-color:",
+                        [Function],
+                        ";border:",
+                        [Function],
+                        ";border-color:",
+                        [Function],
+                        ";border-radius:",
+                        [Function],
+                        ";input:checked + &,input:focus + &,input:hover + &{border-color:",
+                        [Function],
+                        ";transition:",
+                        [Function],
+                        ";}input:disabled + &{background-color:",
+                        [Function],
+                        ";border-color:",
+                        [Function],
+                        ";}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxBorder",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxBorder-tnrpd9-2",
+                    "target": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "displayName": "Clean.div",
+                      "render": [Function],
+                    },
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <Clean.div
+                  className="c2"
+                >
+                  <Clean.div
+                    blacklist={
+                      Array [
+                        "m",
+                        "mt",
+                        "mr",
+                        "mb",
+                        "ml",
+                        "mx",
+                        "my",
+                        "p",
+                        "pt",
+                        "pr",
+                        "pb",
+                        "pl",
+                        "px",
+                        "py",
+                        "width",
+                        "fontSize",
+                        "color",
+                        "bg",
+                        "fontFamily",
+                        "textAlign",
+                        "lineHeight",
+                        "fontWeight",
+                        "fontStyle",
+                        "letterSpacing",
+                        "display",
+                        "maxWidth",
+                        "minWidth",
+                        "height",
+                        "maxHeight",
+                        "minHeight",
+                        "size",
+                        "ratio",
+                        "verticalAlign",
+                        "alignItems",
+                        "alignContent",
+                        "justifyItems",
+                        "justifyContent",
+                        "flexWrap",
+                        "flexBasis",
+                        "flexDirection",
+                        "flex",
+                        "justifySelf",
+                        "alignSelf",
+                        "order",
+                        "gridGap",
+                        "gridColumnGap",
+                        "gridRowGap",
+                        "gridColumn",
+                        "gridRow",
+                        "gridAutoFlow",
+                        "gridAutoColumns",
+                        "gridAutoRows",
+                        "gridTemplateColumns",
+                        "gridTemplateRows",
+                        "gridTemplateAreas",
+                        "gridArea",
+                        "border",
+                        "borderTop",
+                        "borderRight",
+                        "borderBottom",
+                        "borderLeft",
+                        "borderColor",
+                        "borderRadius",
+                        "boxShadow",
+                        "opacity",
+                        "overflow",
+                        "background",
+                        "backgroundImage",
+                        "backgroundPosition",
+                        "backgroundRepeat",
+                        "backgroundSize",
+                        "position",
+                        "zIndex",
+                        "top",
+                        "right",
+                        "bottom",
+                        "left",
+                        "textStyle",
+                        "colors",
+                        "variant",
+                        "theme",
+                      ]
+                    }
+                    className="c2"
+                    is="div"
+                  >
+                    <div
+                      className="c2"
+                    />
+                  </Clean.div>
+                </Clean.div>
+              </StyledComponent>
+            </Checkbox__CheckboxBorder>
+            <Checkbox__CheckboxIcon
               name="done"
             >
-              <Base
-                className="c3 c4"
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Checkbox__CheckboxIcon-tnrpd9-3",
+                      "isStatic": false,
+                      "lastClassName": "c3",
+                      "rules": Array [
+                        "vertical-align:middle;flex:none;",
+                        [Function],
+                        " ",
+                        [Function],
+                        ";",
+                        "position:absolute;display:none;color:",
+                        [Function],
+                        ";padding:",
+                        [Function],
+                        ";top:0;left:-",
+                        "0.125rem",
+                        ";input:checked ~ &{display:block;}",
+                      ],
+                    },
+                    "displayName": "Checkbox__CheckboxIcon",
+                    "foldedComponentIds": Array [
+                      "Icon-sc-1t9j3ip-0",
+                    ],
+                    "propTypes": Object {
+                      "bg": [Function],
+                      "color": [Function],
+                      "m": [Function],
+                      "mb": [Function],
+                      "ml": [Function],
+                      "mr": [Function],
+                      "mt": [Function],
+                      "mx": [Function],
+                      "my": [Function],
+                      "name": [Function],
+                      "p": [Function],
+                      "pb": [Function],
+                      "pl": [Function],
+                      "pr": [Function],
+                      "pt": [Function],
+                      "px": [Function],
+                      "py": [Function],
+                      "size": [Function],
+                      "title": [Function],
+                    },
+                    "render": [Function],
+                    "styledComponentId": "Checkbox__CheckboxIcon-tnrpd9-3",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                    Symbol(Symbol.hasInstance): [Function],
+                  }
+                }
+                forwardedRef={null}
                 name="done"
-                size={24}
-                title={null}
               >
-                <Cleaned
-                  className="c3 c4"
-                  fill="currentcolor"
-                  height={24}
-                  title="done"
-                  viewBox="0 0 24 24"
-                  width={24}
+                <Base
+                  className="c3"
+                  name="done"
+                  size={24}
+                  title={null}
                 >
-                  <svg
-                    className="c3 c4"
+                  <Cleaned
+                    className="c3"
                     fill="currentcolor"
                     height={24}
                     title="done"
                     viewBox="0 0 24 24"
                     width={24}
                   >
-                    <path
-                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                    />
-                  </svg>
-                </Cleaned>
-              </Base>
-            </Icon>
-          </Checkbox__CheckboxIcon>
-        </div>
+                    <svg
+                      className="c3"
+                      fill="currentcolor"
+                      height={24}
+                      title="done"
+                      viewBox="0 0 24 24"
+                      width={24}
+                    >
+                      <path
+                        d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                      />
+                    </svg>
+                  </Cleaned>
+                </Base>
+              </StyledComponent>
+            </Checkbox__CheckboxIcon>
+          </div>
+        </Clean.div>
       </Clean.div>
-    </Clean.div>
+    </StyledComponent>
   </Checkbox__CheckboxWrapper>
 </Checkbox>
 `;
