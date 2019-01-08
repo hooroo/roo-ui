@@ -16,16 +16,14 @@ const GlobalStyle = createGlobalStyle`
     }
   `;
 
-const ThemeProvider = ({ theme, children, ...otherProps }) => {
-  return (
-    <Provider theme={theme} {...otherProps}>
-      <Fragment>
-        <GlobalStyle />
-        {children}
-      </Fragment>
-    </Provider>
-  );
-};
+const ThemeProvider = ({ theme, children, ...otherProps }) => (
+  <Provider theme={theme} {...otherProps}>
+    <Fragment>
+      <GlobalStyle />
+      {children}
+    </Fragment>
+  </Provider>
+);
 
 ThemeProvider.propTypes = {
   ...Provider.propTypes,
