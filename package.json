@@ -5,8 +5,7 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*",
-    ".dev/*"
+    "packages/*"
   ],
   "scripts": {
     "lint": "eslint .",
@@ -48,7 +47,7 @@
     "eslint-plugin-react": "^7.6.1",
     "hygen": "^1.6.2",
     "jest": "^23.3.0",
-    "jest-axe": "^3.0.0",
+    "jest-axe": "^3.1.0",
     "jest-styled-components": "^5.0.1",
     "lerna": "^2.8.0",
     "lodash": "^4.17.4",
@@ -57,9 +56,6 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-onclickoutside": "^6.7.1",
-    "react-popper": "^1.0.0",
-    "react-text-mask": "^5.4.1",
     "storybook-readme": "^3.2.0",
     "styled-components": "^3.3.3",
     "styled-system": "^2.3.6"
