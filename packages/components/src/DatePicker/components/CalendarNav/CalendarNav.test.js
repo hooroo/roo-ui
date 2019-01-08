@@ -21,10 +21,10 @@ describe('<CalendarNav />', () => {
   });
 
   it('passes props.prevProps to first <Button />', () => {
-    expect(wrapper.find('NakedButton').first().props()).toEqual(expect.objectContaining(props.prevProps));
+    expect(wrapper.find('Button').first().props()).toEqual(expect.objectContaining(props.prevProps));
   });
 
   it('passes props.nextProps to second <Button />', () => {
-    expect(wrapper.find('NakedButton').last().props()).toEqual(expect.objectContaining(props.nextProps));
+    expect(wrapper.find('Button').last().props()).toEqual(expect.objectContaining(props.nextProps));
   });
 });
