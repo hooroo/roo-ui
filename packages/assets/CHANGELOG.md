@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.58.0"></a>
+# [0.58.0](https://github.com/hooroo/roo-ui/compare/v0.57.7...v0.58.0) (2018-12-19)
+
+
+### Features
+
+* add pebbleRedBig and pebbleWhite svgs ([#209](https://github.com/hooroo/roo-ui/issues/209)) ([c278d3c](https://github.com/hooroo/roo-ui/commit/c278d3c))
+
+
+
+
+<a name="0.56.0"></a>
+# [0.56.0](https://github.com/hooroo/roo-ui/compare/v0.55.9...v0.56.0) (2018-10-19)
+
+
+### Features
+
+* add trip advisor rating svgs ([#191](https://github.com/hooroo/roo-ui/issues/191)) ([a58d21f](https://github.com/hooroo/roo-ui/commit/a58d21f))
+
+
+
+
 <a name="0.54.2"></a>
 ## [0.54.2](https://github.com/hooroo/roo-ui/compare/v0.54.1...v0.54.2) (2018-09-21)
 

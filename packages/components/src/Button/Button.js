@@ -4,8 +4,7 @@ import { darken } from 'polished';
 import tag from 'clean-tag';
 import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
 
-const getBackground = props =>
-  color(props).backgroundColor || buttonStyle(props).backgroundColor;
+const getBackground = props => (color(props).backgroundColor || buttonStyle(props).backgroundColor);
 
 const Button = styled(tag.button)`
   display: inline-block;
@@ -40,7 +39,8 @@ const Button = styled(tag.button)`
   }
 
   &:disabled {
-    opacity: ${themeGet('opacity.disabled')};
+    background-color: ${themeGet('colors.greys.alto')};
+    color: ${themeGet('colors.greys.dusty')};
     cursor: not-allowed;
   }
 

@@ -2,15 +2,13 @@
 
 exports[`<Truncate /> renders correctly 1`] = `
 .c0 {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
+  display: block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-<Clean.span
+<Text
   blacklist={
     Array [
       "textStyle",
@@ -38,6 +36,7 @@ exports[`<Truncate /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
@@ -46,5 +45,5 @@ exports[`<Truncate /> renders correctly 1`] = `
   textStyle="text"
 >
   Hello world
-</Clean.span>
+</Text>
 `;

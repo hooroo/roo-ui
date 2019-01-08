@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/fonts",
-  "version": "0.39.1",
+  "version": "0.57.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

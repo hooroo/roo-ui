@@ -1,58 +1,385 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarNav /> renders correctly 1`] = `
-<Box>
-  <NakedButton
-    blacklist={
-      Array [
-        "verticalAlign",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-      ]
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c3 {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.c3:focus {
+  outline: 2px solid #8DE2E0;
+}
+
+.c0 {
+  width: 100%;
+  position: absolute;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.c2 {
+  border-radius: 1000px;
+  background: #FFFFFF;
+  color: #666666;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+.c2:hover,
+.c2:focus {
+  outline: none;
+  color: #E40000;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  color: #DADADA;
+}
+
+<CalendarNav
+  nextProps={
+    Object {
+      "onClick": [MockFunction],
     }
-    onClick={[MockFunction]}
-  >
-    <Icon
-      name="chevronLeft"
-    />
-  </NakedButton>
-  <NakedButton
-    blacklist={
-      Array [
-        "verticalAlign",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-      ]
+  }
+  prevProps={
+    Object {
+      "onClick": [MockFunction],
     }
-    onClick={[MockFunction]}
-  >
-    <Icon
-      name="chevronRight"
-    />
-  </NakedButton>
-</Box>
+  }
+>
+  <CalendarNav__Wrapper>
+    <Flex
+      className="c0"
+    >
+      <Box
+        className="c0 c1"
+      >
+        <Clean.div
+          blacklist={
+            Array [
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "width",
+              "w",
+              "fontSize",
+              "f",
+              "color",
+              "bg",
+              "fontFamily",
+              "font",
+              "textAlign",
+              "align",
+              "lineHeight",
+              "fontWeight",
+              "letterSpacing",
+              "display",
+              "maxWidth",
+              "minWidth",
+              "height",
+              "maxHeight",
+              "minHeight",
+              "size",
+              "ratio",
+              "alignItems",
+              "alignContent",
+              "justifyContent",
+              "justify",
+              "flexWrap",
+              "wrap",
+              "flexBasis",
+              "flexDirection",
+              "flex",
+              "justifySelf",
+              "alignSelf",
+              "order",
+              "gridGap",
+              "gridColumnGap",
+              "gridRowGap",
+              "gridColumn",
+              "gridRow",
+              "gridAutoFlow",
+              "gridAutoColumns",
+              "gridAutoRows",
+              "gridTemplateColumns",
+              "gridTemplateRows",
+              "border",
+              "borderTop",
+              "borderRight",
+              "borderBottom",
+              "borderLeft",
+              "borderColor",
+              "borderRadius",
+              "boxShadow",
+              "background",
+              "backgroundImage",
+              "bgImage",
+              "backgroundSize",
+              "bgSize",
+              "backgroundPosition",
+              "bgPosition",
+              "backgroundRepeat",
+              "bgRepeat",
+              "position",
+              "zIndex",
+              "top",
+              "right",
+              "bottom",
+              "left",
+              "hover",
+              "focus",
+              "active",
+              "disabledStyle",
+              "textStyle",
+              "colors",
+              "buttonStyle",
+              "borderWidth",
+            ]
+          }
+          className="c0 c1 "
+          is="div"
+        >
+          <div
+            className="c0 c1 "
+          >
+            <CalendarNav__Button
+              onClick={[MockFunction]}
+            >
+              <NakedButton
+                blacklist={
+                  Array [
+                    "verticalAlign",
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "color",
+                    "bg",
+                  ]
+                }
+                className="c2"
+                is="button"
+                onClick={[MockFunction]}
+              >
+                <Clean.div
+                  blacklist={
+                    Array [
+                      "verticalAlign",
+                      "m",
+                      "mt",
+                      "mr",
+                      "mb",
+                      "ml",
+                      "mx",
+                      "my",
+                      "p",
+                      "pt",
+                      "pr",
+                      "pb",
+                      "pl",
+                      "px",
+                      "py",
+                      "color",
+                      "bg",
+                    ]
+                  }
+                  className="c2 c3"
+                  is="button"
+                  onClick={[MockFunction]}
+                  type="button"
+                >
+                  <button
+                    className="c2 c3"
+                    onClick={[MockFunction]}
+                    type="button"
+                  >
+                    <Icon
+                      name="chevronLeft"
+                    >
+                      <Base
+                        className="c4"
+                        name="chevronLeft"
+                        size={24}
+                        title={null}
+                      >
+                        <Cleaned
+                          className="c4"
+                          fill="currentcolor"
+                          height={24}
+                          title="chevronLeft"
+                          viewBox="0 0 24 24"
+                          width={24}
+                        >
+                          <svg
+                            className="c4"
+                            fill="currentcolor"
+                            height={24}
+                            title="chevronLeft"
+                            viewBox="0 0 24 24"
+                            width={24}
+                          >
+                            <path
+                              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                            />
+                          </svg>
+                        </Cleaned>
+                      </Base>
+                    </Icon>
+                  </button>
+                </Clean.div>
+              </NakedButton>
+            </CalendarNav__Button>
+            <CalendarNav__Button
+              onClick={[MockFunction]}
+            >
+              <NakedButton
+                blacklist={
+                  Array [
+                    "verticalAlign",
+                    "m",
+                    "mt",
+                    "mr",
+                    "mb",
+                    "ml",
+                    "mx",
+                    "my",
+                    "p",
+                    "pt",
+                    "pr",
+                    "pb",
+                    "pl",
+                    "px",
+                    "py",
+                    "color",
+                    "bg",
+                  ]
+                }
+                className="c2"
+                is="button"
+                onClick={[MockFunction]}
+              >
+                <Clean.div
+                  blacklist={
+                    Array [
+                      "verticalAlign",
+                      "m",
+                      "mt",
+                      "mr",
+                      "mb",
+                      "ml",
+                      "mx",
+                      "my",
+                      "p",
+                      "pt",
+                      "pr",
+                      "pb",
+                      "pl",
+                      "px",
+                      "py",
+                      "color",
+                      "bg",
+                    ]
+                  }
+                  className="c2 c3"
+                  is="button"
+                  onClick={[MockFunction]}
+                  type="button"
+                >
+                  <button
+                    className="c2 c3"
+                    onClick={[MockFunction]}
+                    type="button"
+                  >
+                    <Icon
+                      name="chevronRight"
+                    >
+                      <Base
+                        className="c4"
+                        name="chevronRight"
+                        size={24}
+                        title={null}
+                      >
+                        <Cleaned
+                          className="c4"
+                          fill="currentcolor"
+                          height={24}
+                          title="chevronRight"
+                          viewBox="0 0 24 24"
+                          width={24}
+                        >
+                          <svg
+                            className="c4"
+                            fill="currentcolor"
+                            height={24}
+                            title="chevronRight"
+                            viewBox="0 0 24 24"
+                            width={24}
+                          >
+                            <path
+                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                            />
+                          </svg>
+                        </Cleaned>
+                      </Base>
+                    </Icon>
+                  </button>
+                </Clean.div>
+              </NakedButton>
+            </CalendarNav__Button>
+          </div>
+        </Clean.div>
+      </Box>
+    </Flex>
+  </CalendarNav__Wrapper>
+</CalendarNav>
 `;

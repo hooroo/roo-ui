@@ -8,7 +8,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
   font-size: 0.9375rem;
 }
 
-<Cleaned
+<CharacterCount
   blacklist={
     Array [
       "textStyle",
@@ -36,14 +36,169 @@ exports[`<CharacterCount /> renders correctly 1`] = `
       "textAlign",
       "align",
       "textDecoration",
+      "display",
       "hidden",
     ]
   }
-  className="c0"
   fontSize="sm"
   hidden={false}
+  limit={64}
   textStyle="text"
+  value="Hello world"
 >
-  53
-</Cleaned>
+  <Text
+    blacklist={
+      Array [
+        "textStyle",
+        "color",
+        "bg",
+        "fontSize",
+        "f",
+        "fontWeight",
+        "letterSpacing",
+        "lineHeight",
+        "m",
+        "mt",
+        "mr",
+        "mb",
+        "ml",
+        "mx",
+        "my",
+        "p",
+        "pt",
+        "pr",
+        "pb",
+        "pl",
+        "px",
+        "py",
+        "textAlign",
+        "align",
+        "textDecoration",
+        "display",
+        "hidden",
+      ]
+    }
+    className=""
+    fontSize="sm"
+    hidden={false}
+    limit={64}
+    textStyle="text"
+    value="Hello world"
+  >
+    <Base
+      blacklist={
+        Array [
+          "textStyle",
+          "color",
+          "bg",
+          "fontSize",
+          "f",
+          "fontWeight",
+          "letterSpacing",
+          "lineHeight",
+          "m",
+          "mt",
+          "mr",
+          "mb",
+          "ml",
+          "mx",
+          "my",
+          "p",
+          "pt",
+          "pr",
+          "pb",
+          "pl",
+          "px",
+          "py",
+          "textAlign",
+          "align",
+          "textDecoration",
+          "display",
+          "hidden",
+        ]
+      }
+      className="c0"
+      fontSize="sm"
+      hidden={false}
+      limit={64}
+      textStyle="text"
+      value="Hello world"
+    >
+      <Cleaned
+        blacklist={
+          Array [
+            "textStyle",
+            "color",
+            "bg",
+            "fontSize",
+            "f",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight",
+            "m",
+            "mt",
+            "mr",
+            "mb",
+            "ml",
+            "mx",
+            "my",
+            "p",
+            "pt",
+            "pr",
+            "pb",
+            "pl",
+            "px",
+            "py",
+            "textAlign",
+            "align",
+            "textDecoration",
+            "display",
+            "hidden",
+          ]
+        }
+        className="c0"
+        fontSize="sm"
+        hidden={false}
+        textStyle="text"
+      >
+        <span
+          blacklist={
+            Array [
+              "textStyle",
+              "color",
+              "bg",
+              "fontSize",
+              "f",
+              "fontWeight",
+              "letterSpacing",
+              "lineHeight",
+              "m",
+              "mt",
+              "mr",
+              "mb",
+              "ml",
+              "mx",
+              "my",
+              "p",
+              "pt",
+              "pr",
+              "pb",
+              "pl",
+              "px",
+              "py",
+              "textAlign",
+              "align",
+              "textDecoration",
+              "display",
+              "hidden",
+            ]
+          }
+          className="c0"
+        >
+          53
+        </span>
+      </Cleaned>
+    </Base>
+  </Text>
+</CharacterCount>
 `;

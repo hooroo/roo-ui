@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import tag from 'clean-tag';
 import {
+  display,
   space,
   width,
   minWidth,
@@ -21,6 +22,7 @@ import {
 } from 'styled-system';
 
 const Box = styled(tag)`
+  ${display}
   ${space}
   ${width}
   ${minWidth}
@@ -41,6 +43,7 @@ const Box = styled(tag)`
 `;
 
 Box.propTypes = {
+  ...display.propTypes,
   ...space.propTypes,
   ...width.propTypes,
   ...minWidth.propTypes,

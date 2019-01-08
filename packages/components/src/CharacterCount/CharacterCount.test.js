@@ -1,6 +1,6 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import { mountWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 
 import CharacterCount from '.';
@@ -9,7 +9,7 @@ describe('<CharacterCount />', () => {
   let wrapper;
   let props;
 
-  const render = () => shallowWithTheme(<CharacterCount {...props} />, theme).dive();
+  const render = () => mountWithTheme(<CharacterCount {...props} />, theme);
 
   beforeEach(() => {
     props = {
@@ -29,7 +29,7 @@ describe('<CharacterCount />', () => {
 
   describe('when value length is less than limit', () => {
     it('render remaining count', () => {
-      expect(wrapper.prop('children')).toBe(53);
+      expect(wrapper.text()).toBe('53');
     });
   });
 
@@ -43,7 +43,7 @@ describe('<CharacterCount />', () => {
     });
 
     it('render a negative count', () => {
-      expect(wrapper.prop('children')).toBe(-3);
+      expect(wrapper.text()).toBe('-3');
     });
   });
 
@@ -57,7 +57,7 @@ describe('<CharacterCount />', () => {
     });
 
     it('render zero', () => {
-      expect(wrapper.prop('children')).toBe(0);
+      expect(wrapper.text()).toBe('0');
     });
   });
 });

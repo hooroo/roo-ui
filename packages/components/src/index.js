@@ -32,8 +32,6 @@ export { default as Modal } from './Modal';
 export { default as Textarea } from './Textarea';
 export { default as Radio } from './Radio';
 export { default as Select } from './Select';
-export { default as Autocomplete } from './Autocomplete';
-export { default as Dropdown } from './Dropdown';
 export { default as Popover } from './Popover';
 export { DatePicker } from './DatePicker';
 export { DateRangePicker } from './DatePicker';

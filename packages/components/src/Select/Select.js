@@ -40,7 +40,7 @@ const Base = props => (
 
 Base.propTypes = Input.propTypes;
 
-const Select = Input.extend`
+const Select = styled(Input)`
   border-radius: 0;
   padding-right: ${themeGet('space.8')};
 `;

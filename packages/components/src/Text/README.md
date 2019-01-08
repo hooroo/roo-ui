@@ -27,7 +27,7 @@ export default (
 
 ## Customization
 
-This component can be customized with [styled-system](https://github.com/jxnblk/styled-system) by passing props for
+This component can be customized with [styled-system](https://jxnblk.com/styled-system) by passing props for
 `textStyle`,
 `color`,
 `fontSize`,
@@ -35,5 +35,6 @@ This component can be customized with [styled-system](https://github.com/jxnblk/
 `letterSpacing`,
 `lineHeight`,
 `space`,
-`textDecoration`&
-`textAlign` [functions](https://github.com/jxnblk/styled-system/blob/v2.2.5/README.md#table-of-style-props)
+`textDecoration`,
+`display` &
+`textAlign` [functions](http://jxnblk.com/styled-system/table)

@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import { Link } from '..';
 
-const BlockLink = Link.extend`
+const BlockLink = styled(Link)`
   display: block;
   color: inherit;
   text-decoration: none;

@@ -2,23 +2,10 @@
 
 exports[`<ExternalLink /> renders correctly 1`] = `
 .c0 {
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  color: #E00E00;
   color: #323232;
 }
 
-.c0:hover {
-  color: #870000;
-}
-
-.c0:focus {
-  outline: 2px solid #8DE2E0;
-}
-
-<Clean.a
+<Link
   blacklist={
     Array [
       "color",
@@ -40,16 +27,16 @@ exports[`<ExternalLink /> renders correctly 1`] = `
       "px",
       "py",
       "hidden",
-      "inline",
+      "underline",
     ]
   }
   className="c0"
   hidden={false}
-  inline={false}
   rel="noopener noreferrer"
   target="_blank"
   title="Link opens in new window"
+  underline={false}
 >
   Hello world
-</Clean.a>
+</Link>
 `;

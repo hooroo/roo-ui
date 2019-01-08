@@ -1,11 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 
 import { Flex } from '../../../';
 import CalendarWeekday from '../CalendarWeekday';
 
-const CalendarWeekdaysWrapper = Flex.extend`
+const CalendarWeekdaysWrapper = styled(Flex)`
   padding-bottom: ${themeGet('space.2')};
   margin-top: ${themeGet('space.5')};
   margin-bottom: ${themeGet('space.3')};

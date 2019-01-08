@@ -3,6 +3,205 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.58.3"></a>
+## [0.58.3](https://github.com/hooroo/roo-ui/compare/v0.58.2...v0.58.3) (2018-12-26)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.58.2"></a>
+## [0.58.2](https://github.com/hooroo/roo-ui/compare/v0.58.1...v0.58.2) (2018-12-20)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.58.1"></a>
+## [0.58.1](https://github.com/hooroo/roo-ui/compare/v0.58.0...v0.58.1) (2018-12-20)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.58.0"></a>
+# [0.58.0](https://github.com/hooroo/roo-ui/compare/v0.57.7...v0.58.0) (2018-12-19)
+
+
+### Features
+
+* add pebbleRedBig and pebbleWhite svgs ([#209](https://github.com/hooroo/roo-ui/issues/209)) ([c278d3c](https://github.com/hooroo/roo-ui/commit/c278d3c))
+
+
+
+
+<a name="0.57.7"></a>
+## [0.57.7](https://github.com/hooroo/roo-ui/compare/v0.57.6...v0.57.7) (2018-12-03)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.57.6"></a>
+## [0.57.6](https://github.com/hooroo/roo-ui/compare/v0.57.5...v0.57.6) (2018-11-29)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.57.5"></a>
+## [0.57.5](https://github.com/hooroo/roo-ui/compare/v0.57.4...v0.57.5) (2018-11-23)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.57.4"></a>
+## [0.57.4](https://github.com/hooroo/roo-ui/compare/v0.57.3...v0.57.4) (2018-11-21)
+
+
+### Bug Fixes
+
+* rename link inline prop ([#202](https://github.com/hooroo/roo-ui/issues/202)) ([45b75f9](https://github.com/hooroo/roo-ui/commit/45b75f9))
+
+
+
+
+<a name="0.57.3"></a>
+## [0.57.3](https://github.com/hooroo/roo-ui/compare/v0.57.2...v0.57.3) (2018-11-20)
+
+
+### Bug Fixes
+
+* omit node modules from linting ([#205](https://github.com/hooroo/roo-ui/issues/205)) ([76074f0](https://github.com/hooroo/roo-ui/commit/76074f0))
+* truncate component properly truncates ([#201](https://github.com/hooroo/roo-ui/issues/201)) ([e393ea5](https://github.com/hooroo/roo-ui/commit/e393ea5))
+
+
+
+
+<a name="0.57.2"></a>
+## [0.57.2](https://github.com/hooroo/roo-ui/compare/v0.57.1...v0.57.2) (2018-11-02)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.57.1"></a>
+## [0.57.1](https://github.com/hooroo/roo-ui/compare/v0.57.0...v0.57.1) (2018-11-02)
+
+
+### Bug Fixes
+
+* add viewBox to QantasBusinessReward and TripAdvisorOwl logos svgs ([#200](https://github.com/hooroo/roo-ui/issues/200)) ([cdc2c8e](https://github.com/hooroo/roo-ui/commit/cdc2c8e))
+
+
+
+
+<a name="0.57.0"></a>
+# [0.57.0](https://github.com/hooroo/roo-ui/compare/v0.56.0...v0.57.0) (2018-10-25)
+
+
+### Features
+
+* **icon:** add Qantas filter icon ([#192](https://github.com/hooroo/roo-ui/issues/192)) ([2ba0eba](https://github.com/hooroo/roo-ui/commit/2ba0eba))
+
+
+
+
+<a name="0.56.0"></a>
+# [0.56.0](https://github.com/hooroo/roo-ui/compare/v0.55.9...v0.56.0) (2018-10-19)
+
+
+### Features
+
+* add trip advisor rating svgs ([#191](https://github.com/hooroo/roo-ui/issues/191)) ([a58d21f](https://github.com/hooroo/roo-ui/commit/a58d21f))
+
+
+
+
+<a name="0.55.9"></a>
+## [0.55.9](https://github.com/hooroo/roo-ui/compare/v0.55.8...v0.55.9) (2018-10-19)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.55.8"></a>
+## [0.55.8](https://github.com/hooroo/roo-ui/compare/v0.55.7...v0.55.8) (2018-10-17)
+
+
+### Bug Fixes
+
+* overlapping breakpoints in hide ([#186](https://github.com/hooroo/roo-ui/issues/186)) ([368962e](https://github.com/hooroo/roo-ui/commit/368962e))
+
+
+
+
+<a name="0.55.7"></a>
+## [0.55.7](https://github.com/hooroo/roo-ui/compare/v0.55.6...v0.55.7) (2018-10-16)
+
+
+### Performance Improvements
+
+* **NakedButton:** add color prop ([#185](https://github.com/hooroo/roo-ui/issues/185)) ([165b825](https://github.com/hooroo/roo-ui/commit/165b825))
+
+
+
+
+<a name="0.55.6"></a>
+## [0.55.6](https://github.com/hooroo/roo-ui/compare/v0.55.5...v0.55.6) (2018-10-16)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.55.5"></a>
+## [0.55.5](https://github.com/hooroo/roo-ui/compare/v0.55.4...v0.55.5) (2018-10-15)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.55.4"></a>
+## [0.55.4](https://github.com/hooroo/roo-ui/compare/v0.55.3...v0.55.4) (2018-10-11)
+
+
+
+
+**Note:** Version bump only for package roo-ui
+
+<a name="0.55.3"></a>
+## [0.55.3](https://github.com/hooroo/roo-ui/compare/v0.55.2...v0.55.3) (2018-10-09)
+
+
+### Bug Fixes
+
+* removes lib/svg-classlist-polyfill ([3f58187](https://github.com/hooroo/roo-ui/commit/3f58187))
+
+
+
+
+<a name="0.55.2"></a>
+## [0.55.2](https://github.com/hooroo/roo-ui/compare/v0.55.1...v0.55.2) (2018-10-09)
+
+
+### Bug Fixes
+
+* Adds check for window before running svg-classlist-polyfill ([e5d37a2](https://github.com/hooroo/roo-ui/commit/e5d37a2))
+
+
+
+
 <a name="0.55.1"></a>
 ## [0.55.1](https://github.com/hooroo/roo-ui/compare/v0.55.0...v0.55.1) (2018-10-03)
 

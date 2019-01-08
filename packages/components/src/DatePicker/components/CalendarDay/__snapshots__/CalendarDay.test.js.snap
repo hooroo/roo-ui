@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarDay /> renders correctly 1`] = `
-<Box
+<CalendarDay__DayWrapper
   blacklist={
     Array [
+      "display",
       "m",
       "mt",
       "mr",
@@ -47,7 +48,7 @@ exports[`<CalendarDay /> renders correctly 1`] = `
   }
   selected={true}
 >
-  <NakedButton
+  <CalendarDay__Button
     blacklist={
       Array [
         "verticalAlign",
@@ -65,41 +66,75 @@ exports[`<CalendarDay /> renders correctly 1`] = `
         "pl",
         "px",
         "py",
+        "color",
+        "bg",
         "selectable",
         "highlighted",
       ]
     }
     disabled={false}
     highlighted={false}
+    is="button"
     selectable={true}
     selected={true}
   >
     21
-  </NakedButton>
-</Box>
+  </CalendarDay__Button>
+</CalendarDay__DayWrapper>
 `;
 
 exports[`<CalendarEmptyDay /> renders correctly 1`] = `
 .c0 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  width: calc(100% / 7);
-  margin: 0 -1px -1px 0;
-  position: relative;
-  border: 1px solid transparent;
   border-color: transparent;
 }
 
-.c0:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-
-<div
+<CalendarDay__DayWrapper
+  blacklist={
+    Array [
+      "display",
+      "m",
+      "mt",
+      "mr",
+      "mb",
+      "ml",
+      "mx",
+      "my",
+      "p",
+      "pt",
+      "pr",
+      "pb",
+      "pl",
+      "px",
+      "py",
+      "width",
+      "w",
+      "minWidth",
+      "maxWidth",
+      "height",
+      "minHeight",
+      "maxHeight",
+      "color",
+      "bg",
+      "textAlign",
+      "align",
+      "boxShadow",
+      "borderRadius",
+      "border",
+      "borderTop",
+      "borderRight",
+      "borderBottom",
+      "borderLeft",
+      "borderColor",
+      "flexBasis",
+      "flex",
+      "position",
+      "zIndex",
+      "selected",
+      "selectable",
+    ]
+  }
   className="c0"
 >
   15
-</div>
+</CalendarDay__DayWrapper>
 `;

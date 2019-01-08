@@ -1,17 +1,19 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import { mountWithTheme } from '@roo-ui/test-utils';
 
 import CalendarNav from '.';
 
 describe('<CalendarNav />', () => {
   let wrapper;
+
   const props = {
     prevProps: { onClick: jest.fn() },
     nextProps: { onClick: jest.fn() },
   };
+
   beforeEach(() => {
-    wrapper = shallowWithTheme(<CalendarNav {...props} />, theme);
+    wrapper = mountWithTheme(<CalendarNav {...props} />, theme);
   });
 
   it('renders correctly', () => {
@@ -26,4 +28,3 @@ describe('<CalendarNav />', () => {
     expect(wrapper.find('NakedButton').last().props()).toEqual(expect.objectContaining(props.nextProps));
   });
 });
-
