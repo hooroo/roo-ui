@@ -11,9 +11,9 @@ const columns = style({
   getter: n => `${100 / n}%`,
 });
 
-const List = styled(tag).attrs({
-  is: props => (props.ordered ? 'ol' : 'ul'),
-})`
+const List = styled(tag).attrs(props => ({
+  is: props.ordered ? 'ol' : 'ul',
+}))`
   margin: ${themeGet('space.4')} 0;
   padding-left: ${themeGet('space.8')};
 
