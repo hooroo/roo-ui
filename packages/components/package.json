@@ -18,13 +18,13 @@
     "react-powerplug": "^1.0.0-rc.1"
   },
   "peerDependencies": {
-    "clean-element": "^1.0.0",
-    "clean-tag": "^1.0.4",
+    "clean-element": "^1.0.2",
+    "clean-tag": "^2.0.2",
     "polished": "^2.2.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "styled-components": "^3.1.5",
-    "styled-system": ">= 2.3.6 < 3"
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "styled-components": "^4.1.3",
+    "styled-system": "^3.2.0"
   },
   "dependencies": {
     "date-fns": "^1.29.0",
