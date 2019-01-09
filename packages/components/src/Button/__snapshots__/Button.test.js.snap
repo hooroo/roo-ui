@@ -31,9 +31,9 @@ exports[`<Button /> block renders correctly 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Button-v2eyqx-0",
+        "componentId": "Button-hYXUXp",
         "isStatic": false,
-        "lastClassName": "gdavDi",
+        "lastClassName": "cvQuZd",
         "rules": Array [
           "display:inline-block;margin:0;padding:",
           [Function],
@@ -121,7 +121,7 @@ exports[`<Button /> block renders correctly 1`] = `
         "rounded": [Function],
       },
       "render": [Function],
-      "styledComponentId": "Button-v2eyqx-0",
+      "styledComponentId": "Button-hYXUXp",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Clean.button",
@@ -389,9 +389,9 @@ exports[`<Button /> primary renders correctly 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Button-v2eyqx-0",
+        "componentId": "Button-hYXUXp",
         "isStatic": false,
-        "lastClassName": "gdavDi",
+        "lastClassName": "cvQuZd",
         "rules": Array [
           "display:inline-block;margin:0;padding:",
           [Function],
@@ -479,7 +479,7 @@ exports[`<Button /> primary renders correctly 1`] = `
         "rounded": [Function],
       },
       "render": [Function],
-      "styledComponentId": "Button-v2eyqx-0",
+      "styledComponentId": "Button-hYXUXp",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Clean.button",
@@ -747,7 +747,7 @@ exports[`<Button /> renders correctly 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Button-v2eyqx-0",
+        "componentId": "Button-hYXUXp",
         "isStatic": false,
         "rules": Array [
           "display:inline-block;margin:0;padding:",
@@ -836,7 +836,7 @@ exports[`<Button /> renders correctly 1`] = `
         "rounded": [Function],
       },
       "render": [Function],
-      "styledComponentId": "Button-v2eyqx-0",
+      "styledComponentId": "Button-hYXUXp",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Clean.button",
@@ -1104,9 +1104,9 @@ exports[`<Button /> rounded renders correctly 1`] = `
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "Button-v2eyqx-0",
+        "componentId": "Button-hYXUXp",
         "isStatic": false,
-        "lastClassName": "gdavDi",
+        "lastClassName": "cvQuZd",
         "rules": Array [
           "display:inline-block;margin:0;padding:",
           [Function],
@@ -1194,7 +1194,7 @@ exports[`<Button /> rounded renders correctly 1`] = `
         "rounded": [Function],
       },
       "render": [Function],
-      "styledComponentId": "Button-v2eyqx-0",
+      "styledComponentId": "Button-hYXUXp",
       "target": Object {
         "$$typeof": Symbol(react.forward_ref),
         "displayName": "Clean.button",
