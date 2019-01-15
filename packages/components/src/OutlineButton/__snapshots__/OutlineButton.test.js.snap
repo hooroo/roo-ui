@@ -419,7 +419,7 @@ exports[`<OutlineButton /> renders correctly 1`] = `
         },
         "displayName": "OutlineButton",
         "foldedComponentIds": Array [
-          "Button-hYXUXp",
+          "Button-v2eyqx-0",
         ],
         "propTypes": Object {
           "bg": [Function],

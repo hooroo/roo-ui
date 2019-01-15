@@ -286,9 +286,7 @@ exports[`<List /> renders correctly 1`] = `
           "render": [Function],
         },
         "attrs": Array [
-          Object {
-            "is": [Function],
-          },
+          [Function],
         ],
         "audio": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -2962,9 +2960,7 @@ exports[`<List /> with columns set renders correctly 1`] = `
           "render": [Function],
         },
         "attrs": Array [
-          Object {
-            "is": [Function],
-          },
+          [Function],
         ],
         "audio": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -5619,9 +5615,7 @@ exports[`<List /> with flush set renders correctly 1`] = `
           "render": [Function],
         },
         "attrs": Array [
-          Object {
-            "is": [Function],
-          },
+          [Function],
         ],
         "audio": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -8274,9 +8268,7 @@ exports[`<List /> with ordered prop renders correctly 1`] = `
           "render": [Function],
         },
         "attrs": Array [
-          Object {
-            "is": [Function],
-          },
+          [Function],
         ],
         "audio": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -10988,9 +10980,7 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
           "render": [Function],
         },
         "attrs": Array [
-          Object {
-            "is": [Function],
-          },
+          [Function],
         ],
         "audio": Object {
           "$$typeof": Symbol(react.forward_ref),
