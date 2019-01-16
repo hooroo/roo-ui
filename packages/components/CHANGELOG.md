@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.58.6"></a>
+## [0.58.6](https://github.com/hooroo/roo-ui/compare/v0.58.5...v0.58.6) (2019-01-16)
+
+
+### Bug Fixes
+
+* export ModalGlobalStyle ([f6091e6](https://github.com/hooroo/roo-ui/commit/f6091e6))
+
+
+
+
 <a name="0.58.5"></a>
 ## [0.58.5](https://github.com/hooroo/roo-ui/compare/v0.58.4...v0.58.5) (2019-01-16)
 
