@@ -2,26 +2,6 @@
 
 exports[`<Textarea /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   forwardedRef={null}
   is="textarea"
   rows={6}

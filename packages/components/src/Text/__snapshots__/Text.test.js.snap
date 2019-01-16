@@ -2,35 +2,6 @@
 
 exports[`<Text /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   textStyle="text"

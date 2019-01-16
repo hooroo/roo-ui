@@ -2,27 +2,6 @@
 
 exports[`<NakedButton /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "verticalAlign",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-    ]
-  }
   forwardedRef={null}
   is="button"
 >

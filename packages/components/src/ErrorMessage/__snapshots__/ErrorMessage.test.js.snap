@@ -4,11 +4,6 @@ exports[`<ErrorMessage /> prop.arrow equals bottom renders correctly 1`] = `
 <StyledComponent
   arrow="bottom"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
   forwardedRef={null}
 >
   An error occurred
@@ -19,11 +14,6 @@ exports[`<ErrorMessage /> prop.arrow equals left renders correctly 1`] = `
 <StyledComponent
   arrow="left"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
   forwardedRef={null}
 >
   An error occurred
@@ -34,11 +24,6 @@ exports[`<ErrorMessage /> prop.arrow equals right renders correctly 1`] = `
 <StyledComponent
   arrow="right"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
   forwardedRef={null}
 >
   An error occurred
@@ -49,11 +34,6 @@ exports[`<ErrorMessage /> prop.arrow equals top renders correctly 1`] = `
 <StyledComponent
   arrow="top"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
   forwardedRef={null}
 >
   An error occurred
@@ -64,11 +44,6 @@ exports[`<ErrorMessage /> renders correctly 1`] = `
 <StyledComponent
   arrow={null}
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
   forwardedRef={null}
 >
   An error occurred

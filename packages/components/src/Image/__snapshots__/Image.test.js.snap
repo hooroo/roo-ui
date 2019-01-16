@@ -3,28 +3,6 @@
 exports[`<Image /> renders correctly 1`] = `
 <StyledComponent
   alt=""
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "size",
-      "height",
-      "width",
-      "inline",
-    ]
-  }
   forwardedRef={null}
   inline={false}
   src="/example.jpg"

@@ -2,26 +2,6 @@
 
 exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   forwardedRef={null}
   is="input"
   keepCharPositions={true}
@@ -43,26 +23,6 @@ exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
 
 exports[`<MaskedInput /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   forwardedRef={null}
   id="postcode"
   is="input"

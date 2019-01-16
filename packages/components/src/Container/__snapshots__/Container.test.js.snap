@@ -2,26 +2,6 @@
 
 exports[`<Container /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "gutter",
-      "maxWidth",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-    ]
-  }
   forwardedRef={null}
   gutter="default"
   maxWidth="default"
@@ -32,26 +12,6 @@ exports[`<Container /> renders correctly 1`] = `
 
 exports[`<Container /> with a responsive gutter renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "gutter",
-      "maxWidth",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-    ]
-  }
   forwardedRef={null}
   gutter={
     Array [

@@ -2,26 +2,6 @@
 
 exports[`<Select /> disabled renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   disabled={true}
   forwardedRef={null}
   is={[Function]}
@@ -32,26 +12,6 @@ exports[`<Select /> disabled renders correctly 1`] = `
 
 exports[`<Select /> readOnly renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   forwardedRef={null}
   is={[Function]}
   readOnly={true}
@@ -62,26 +22,6 @@ exports[`<Select /> readOnly renders correctly 1`] = `
 
 exports[`<Select /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   forwardedRef={null}
   is={[Function]}
 >
@@ -91,26 +31,6 @@ exports[`<Select /> renders correctly 1`] = `
 
 exports[`<Select /> underline renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
   forwardedRef={null}
   is={[Function]}
   underline={true}

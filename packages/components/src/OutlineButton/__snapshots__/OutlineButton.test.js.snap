@@ -64,109 +64,17 @@ exports[`<OutlineButton /> renders correctly 1`] = `
 }
 
 <OutlineButton
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "rounded",
-      "block",
-    ]
-  }
   variant="default"
 >
   <StyledComponent
-    blacklist={
-      Array [
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "color",
-        "bg",
-        "boxShadow",
-        "rounded",
-        "block",
-      ]
-    }
     forwardedRef={null}
     variant="default"
   >
     <Clean.button
-      blacklist={
-        Array [
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-          "color",
-          "bg",
-          "boxShadow",
-          "rounded",
-          "block",
-        ]
-      }
       className="c0"
       variant="default"
     >
       <Clean.div
-        blacklist={
-          Array [
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "color",
-            "bg",
-            "boxShadow",
-            "rounded",
-            "block",
-          ]
-        }
         className="c0"
         is="button"
         variant="default"

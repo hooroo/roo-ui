@@ -2,74 +2,9 @@
 
 exports[`<CalendarDay /> renders correctly 1`] = `
 <CalendarDay__DayWrapper
-  blacklist={
-    Array [
-      "display",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "width",
-      "minWidth",
-      "maxWidth",
-      "height",
-      "minHeight",
-      "maxHeight",
-      "color",
-      "bg",
-      "textAlign",
-      "boxShadow",
-      "borderRadius",
-      "border",
-      "borderTop",
-      "borderRight",
-      "borderBottom",
-      "borderLeft",
-      "borderColor",
-      "flexBasis",
-      "flex",
-      "position",
-      "zIndex",
-      "selected",
-      "selectable",
-    ]
-  }
   selected={true}
 >
   <CalendarDay__Button
-    blacklist={
-      Array [
-        "verticalAlign",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "color",
-        "bg",
-        "selectable",
-        "highlighted",
-      ]
-    }
     disabled={false}
     highlighted={false}
     is="button"

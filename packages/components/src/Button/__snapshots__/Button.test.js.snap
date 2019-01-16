@@ -2,29 +2,6 @@
 
 exports[`<Button /> block renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "rounded",
-      "block",
-    ]
-  }
   block={true}
   forwardedRef={null}
   variant="default"
@@ -35,29 +12,6 @@ exports[`<Button /> block renders correctly 1`] = `
 
 exports[`<Button /> primary renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "rounded",
-      "block",
-    ]
-  }
   forwardedRef={null}
   variant="primary"
 >
@@ -67,29 +21,6 @@ exports[`<Button /> primary renders correctly 1`] = `
 
 exports[`<Button /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "rounded",
-      "block",
-    ]
-  }
   forwardedRef={null}
   variant="default"
 >
@@ -99,29 +30,6 @@ exports[`<Button /> renders correctly 1`] = `
 
 exports[`<Button /> rounded renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-      "boxShadow",
-      "rounded",
-      "block",
-    ]
-  }
   forwardedRef={null}
   rounded={true}
   variant="default"

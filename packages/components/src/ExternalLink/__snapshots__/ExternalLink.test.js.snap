@@ -2,29 +2,6 @@
 
 exports[`<ExternalLink /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "color",
-      "bg",
-      "fontWeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "hidden",
-      "underline",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   rel="noopener noreferrer"

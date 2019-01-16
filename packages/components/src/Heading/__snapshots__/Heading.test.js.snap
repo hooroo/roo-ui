@@ -2,35 +2,6 @@
 
 exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   m={0}
@@ -43,35 +14,6 @@ exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   m={0}
@@ -84,35 +26,6 @@ exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   m={0}
@@ -125,35 +38,6 @@ exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   m={0}
@@ -166,35 +50,6 @@ exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   m={0}
@@ -207,35 +62,6 @@ exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
 
 exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   m={0}
@@ -248,35 +74,6 @@ exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
 
 exports[`<Heading /> renders correctly 1`] = `
 <StyledComponent
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   forwardedRef={null}
   hidden={false}
   m={0}

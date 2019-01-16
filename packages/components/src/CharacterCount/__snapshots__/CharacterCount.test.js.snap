@@ -9,35 +9,6 @@ exports[`<CharacterCount /> renders correctly 1`] = `
 }
 
 <CharacterCount
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   fontSize="sm"
   hidden={false}
   limit={64}
@@ -45,35 +16,6 @@ exports[`<CharacterCount /> renders correctly 1`] = `
   value="Hello world"
 >
   <StyledComponent
-    blacklist={
-      Array [
-        "textStyle",
-        "color",
-        "bg",
-        "fontSize",
-        "fontWeight",
-        "letterSpacing",
-        "lineHeight",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "textAlign",
-        "textDecoration",
-        "display",
-        "hidden",
-      ]
-    }
     fontSize="sm"
     forwardedRef={null}
     hidden={false}
@@ -82,35 +24,6 @@ exports[`<CharacterCount /> renders correctly 1`] = `
     value="Hello world"
   >
     <Base
-      blacklist={
-        Array [
-          "textStyle",
-          "color",
-          "bg",
-          "fontSize",
-          "fontWeight",
-          "letterSpacing",
-          "lineHeight",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-          "textAlign",
-          "textDecoration",
-          "display",
-          "hidden",
-        ]
-      }
       className="-Base c0"
       fontSize="sm"
       hidden={false}
@@ -119,70 +32,12 @@ exports[`<CharacterCount /> renders correctly 1`] = `
       value="Hello world"
     >
       <Cleaned
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
         className="-Base c0"
         fontSize="sm"
         hidden={false}
         textStyle="text"
       >
         <span
-          blacklist={
-            Array [
-              "textStyle",
-              "color",
-              "bg",
-              "fontSize",
-              "fontWeight",
-              "letterSpacing",
-              "lineHeight",
-              "m",
-              "mt",
-              "mr",
-              "mb",
-              "ml",
-              "mx",
-              "my",
-              "p",
-              "pt",
-              "pr",
-              "pb",
-              "pl",
-              "px",
-              "py",
-              "textAlign",
-              "textDecoration",
-              "display",
-              "hidden",
-            ]
-          }
           className="-Base c0"
         >
           53
