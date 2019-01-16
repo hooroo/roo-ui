@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.58.5"></a>
+## [0.58.5](https://github.com/hooroo/roo-ui/compare/v0.58.4...v0.58.5) (2019-01-16)
+
+
+### Bug Fixes
+
+* `link-app` script breaking consumers tests  ([#154](https://github.com/hooroo/roo-ui/issues/154)) ([7bddda2](https://github.com/hooroo/roo-ui/commit/7bddda2))
+
+
+
+
 <a name="0.58.4"></a>
 ## [0.58.4](https://github.com/hooroo/roo-ui/compare/v0.58.3...v0.58.4) (2019-01-08)
 
