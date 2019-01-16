@@ -1,36 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ExternalLink /> renders correctly 1`] = `
-.c0 {
-  color: #323232;
-}
-
-<Link
-  blacklist={
-    Array [
-      "color",
-      "bg",
-      "hover",
-      "fontWeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "hidden",
-      "underline",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   rel="noopener noreferrer"
   target="_blank"
@@ -38,5 +10,5 @@ exports[`<ExternalLink /> renders correctly 1`] = `
   underline={false}
 >
   Hello world
-</Link>
+</StyledComponent>
 `;

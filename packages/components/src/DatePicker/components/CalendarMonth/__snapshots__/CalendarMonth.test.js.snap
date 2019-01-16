@@ -2,85 +2,10 @@
 
 exports[`<CalendarMonth /> renders correctly 1`] = `
 <MonthWrapper
-  blacklist={
-    Array [
-      "display",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "width",
-      "w",
-      "minWidth",
-      "maxWidth",
-      "height",
-      "minHeight",
-      "maxHeight",
-      "color",
-      "bg",
-      "textAlign",
-      "align",
-      "boxShadow",
-      "borderRadius",
-      "border",
-      "borderTop",
-      "borderRight",
-      "borderBottom",
-      "borderLeft",
-      "borderColor",
-      "flexBasis",
-      "flex",
-      "position",
-      "zIndex",
-      "monthsToDisplay",
-      "stacked",
-    ]
-  }
   monthsToDisplay={1}
   stacked={true}
 >
   <Text
-    blacklist={
-      Array [
-        "textStyle",
-        "color",
-        "bg",
-        "fontSize",
-        "f",
-        "fontWeight",
-        "letterSpacing",
-        "lineHeight",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "textAlign",
-        "align",
-        "textDecoration",
-        "display",
-        "hidden",
-      ]
-    }
     hidden={false}
     textStyle="caps"
   >

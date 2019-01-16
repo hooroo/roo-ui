@@ -1,7 +1,7 @@
 import React from 'react';
 import { axe } from 'jest-axe';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import { mountWithTheme } from '@roo-ui/test-utils';
 
 import { List, ListItem } from '..';
 
@@ -20,7 +20,7 @@ describe('<List />', () => {
     </List>
   );
 
-  const render = () => shallowWithTheme(tree(), theme).dive();
+  const render = () => mountWithTheme(tree(), theme);
 
   it('renders correctly', () => {
     expect(render()).toMatchSnapshot();
@@ -31,7 +31,8 @@ describe('<List />', () => {
   });
 
   it('renders an unordered list by default', () => {
-    expect(render().type()).toBe('ul');
+    expect(render().find('ul')).toHaveLength(1);
+    expect(render().find('ol')).toHaveLength(0);
   });
 
   describe('with ordered prop', () => {
@@ -44,7 +45,8 @@ describe('<List />', () => {
     });
 
     it('renders an ordered list', () => {
-      expect(render().type()).toBe('ol');
+      expect(render().find('ol')).toHaveLength(1);
+      expect(render().find('ul')).toHaveLength(0);
     });
   });
 

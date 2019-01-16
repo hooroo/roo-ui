@@ -1,358 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
-.c0 {
-  font-size: 2.25rem;
-  font-weight: 600;
-  line-height: 1.35;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-<Clean.h1
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   m={0}
   mb={2}
   textStyle="h1"
 >
   Hello world
-</Clean.h1>
+</StyledComponent>
 `;
 
 exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
-.c0 {
-  font-size: 1.625rem;
-  font-weight: 600;
-  line-height: 1.35;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-<Clean.h2
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   m={0}
   mb={2}
   textStyle="h2"
 >
   Hello world
-</Clean.h2>
+</StyledComponent>
 `;
 
 exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
-.c0 {
-  font-size: 1.375rem;
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-<Clean.h3
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   m={0}
   mb={2}
   textStyle="h3"
 >
   Hello world
-</Clean.h3>
+</StyledComponent>
 `;
 
 exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
-.c0 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-<Clean.h4
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   m={0}
   mb={2}
   textStyle="h4"
 >
   Hello world
-</Clean.h4>
+</StyledComponent>
 `;
 
 exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
-.c0 {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-<Clean.h5
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   m={0}
   mb={2}
   textStyle="h5"
 >
   Hello world
-</Clean.h5>
+</StyledComponent>
 `;
 
 exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
-.c0 {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-<Clean.h6
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   m={0}
   mb={2}
   textStyle="h6"
 >
   Hello world
-</Clean.h6>
+</StyledComponent>
 `;
 
 exports[`<Heading /> renders correctly 1`] = `
-.c0 {
-  font-size: 1.375rem;
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-<Clean.p
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   m={0}
   mb={2}
   textStyle="h3"
 >
   Hello world
-</Clean.p>
+</StyledComponent>
 `;

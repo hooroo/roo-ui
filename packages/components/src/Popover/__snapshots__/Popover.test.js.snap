@@ -47,118 +47,26 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
           <InnerReference
             getReferenceRef={[Function]}
           >
-            <Box
-              innerRef={[Function]}
-            >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
-                }
-                className=""
-                innerRef={[Function]}
-                is="div"
+            <Box>
+              <StyledComponent
+                forwardedRef={[Function]}
               >
-                <div
+                <Clean.div
                   className=""
                 >
-                  <button
-                    disabled={false}
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                  <div
+                    className=""
                   >
-                    Open popover
-                  </button>
-                </div>
-              </Clean.div>
+                    <button
+                      disabled={false}
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                    >
+                      Open popover
+                    </button>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
             </Box>
           </InnerReference>
         </Reference>
@@ -169,16 +77,19 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
 `;
 
 exports[`<Popover /> when popover is open renders correctly 1`] = `
-.c1 {
+.c0 {
   z-index: 1;
 }
 
-.c0 {
-  background: #F4F5F6;
-  border: 2px solid #DADADA;
+.c2 {
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-width: 0.75rem;
+  position: absolute;
 }
 
-.c2 {
+.c1 {
   height: 0;
   width: 0;
   border: solid transparent;
@@ -232,118 +143,26 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
           <InnerReference
             getReferenceRef={[Function]}
           >
-            <Box
-              innerRef={[Function]}
-            >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
-                }
-                className=""
-                innerRef={[Function]}
-                is="div"
+            <Box>
+              <StyledComponent
+                forwardedRef={[Function]}
               >
-                <div
+                <Clean.div
                   className=""
                 >
-                  <button
-                    disabled={true}
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
+                  <div
+                    className=""
                   >
-                    Open popover
-                  </button>
-                </div>
-              </Clean.div>
+                    <button
+                      disabled={true}
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                    >
+                      Open popover
+                    </button>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
             </Box>
           </InnerReference>
         </Reference>
@@ -382,7 +201,6 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
             <Popover__ContentWrapper
               aria-hidden="true"
               className="ignore-react-onclickoutside"
-              innerRef={[Function]}
               style={
                 Object {
                   "left": 0,
@@ -394,10 +212,10 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
               }
               zIndex={1}
             >
-              <Box
+              <StyledComponent
                 aria-hidden="true"
-                className="ignore-react-onclickoutside c0"
-                innerRef={[Function]}
+                className="ignore-react-onclickoutside"
+                forwardedRef={[Function]}
                 style={
                   Object {
                     "left": 0,
@@ -411,101 +229,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
               >
                 <Clean.div
                   aria-hidden="true"
-                  blacklist={
-                    Array [
-                      "m",
-                      "mt",
-                      "mr",
-                      "mb",
-                      "ml",
-                      "mx",
-                      "my",
-                      "p",
-                      "pt",
-                      "pr",
-                      "pb",
-                      "pl",
-                      "px",
-                      "py",
-                      "width",
-                      "w",
-                      "fontSize",
-                      "f",
-                      "color",
-                      "bg",
-                      "fontFamily",
-                      "font",
-                      "textAlign",
-                      "align",
-                      "lineHeight",
-                      "fontWeight",
-                      "letterSpacing",
-                      "display",
-                      "maxWidth",
-                      "minWidth",
-                      "height",
-                      "maxHeight",
-                      "minHeight",
-                      "size",
-                      "ratio",
-                      "alignItems",
-                      "alignContent",
-                      "justifyContent",
-                      "justify",
-                      "flexWrap",
-                      "wrap",
-                      "flexBasis",
-                      "flexDirection",
-                      "flex",
-                      "justifySelf",
-                      "alignSelf",
-                      "order",
-                      "gridGap",
-                      "gridColumnGap",
-                      "gridRowGap",
-                      "gridColumn",
-                      "gridRow",
-                      "gridAutoFlow",
-                      "gridAutoColumns",
-                      "gridAutoRows",
-                      "gridTemplateColumns",
-                      "gridTemplateRows",
-                      "border",
-                      "borderTop",
-                      "borderRight",
-                      "borderBottom",
-                      "borderLeft",
-                      "borderColor",
-                      "borderRadius",
-                      "boxShadow",
-                      "background",
-                      "backgroundImage",
-                      "bgImage",
-                      "backgroundSize",
-                      "bgSize",
-                      "backgroundPosition",
-                      "bgPosition",
-                      "backgroundRepeat",
-                      "bgRepeat",
-                      "position",
-                      "zIndex",
-                      "top",
-                      "right",
-                      "bottom",
-                      "left",
-                      "hover",
-                      "focus",
-                      "active",
-                      "disabledStyle",
-                      "textStyle",
-                      "colors",
-                      "buttonStyle",
-                      "borderWidth",
-                    ]
-                  }
-                  className="ignore-react-onclickoutside c0 c1"
-                  innerRef={[Function]}
-                  is="div"
+                  className="ignore-react-onclickoutside c0"
                   style={
                     Object {
                       "left": 0,
@@ -519,7 +243,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                 >
                   <div
                     aria-hidden="true"
-                    className="ignore-react-onclickoutside c0 c1"
+                    className="ignore-react-onclickoutside c0"
                     style={
                       Object {
                         "left": 0,
@@ -536,242 +260,44 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                       Popover contents
                     </p>
                     <Popover__TriangleBorder
-                      innerRef={[Function]}
                       style={Object {}}
                     >
-                      <Popover__Triangle
-                        className=""
-                        innerRef={[Function]}
-                        style={Object {}}
-                      >
-                        <Box
-                          className="c2"
-                          innerRef={[Function]}
-                          style={Object {}}
-                        >
-                          <Clean.div
-                            blacklist={
-                              Array [
-                                "m",
-                                "mt",
-                                "mr",
-                                "mb",
-                                "ml",
-                                "mx",
-                                "my",
-                                "p",
-                                "pt",
-                                "pr",
-                                "pb",
-                                "pl",
-                                "px",
-                                "py",
-                                "width",
-                                "w",
-                                "fontSize",
-                                "f",
-                                "color",
-                                "bg",
-                                "fontFamily",
-                                "font",
-                                "textAlign",
-                                "align",
-                                "lineHeight",
-                                "fontWeight",
-                                "letterSpacing",
-                                "display",
-                                "maxWidth",
-                                "minWidth",
-                                "height",
-                                "maxHeight",
-                                "minHeight",
-                                "size",
-                                "ratio",
-                                "alignItems",
-                                "alignContent",
-                                "justifyContent",
-                                "justify",
-                                "flexWrap",
-                                "wrap",
-                                "flexBasis",
-                                "flexDirection",
-                                "flex",
-                                "justifySelf",
-                                "alignSelf",
-                                "order",
-                                "gridGap",
-                                "gridColumnGap",
-                                "gridRowGap",
-                                "gridColumn",
-                                "gridRow",
-                                "gridAutoFlow",
-                                "gridAutoColumns",
-                                "gridAutoRows",
-                                "gridTemplateColumns",
-                                "gridTemplateRows",
-                                "border",
-                                "borderTop",
-                                "borderRight",
-                                "borderBottom",
-                                "borderLeft",
-                                "borderColor",
-                                "borderRadius",
-                                "boxShadow",
-                                "background",
-                                "backgroundImage",
-                                "bgImage",
-                                "backgroundSize",
-                                "bgSize",
-                                "backgroundPosition",
-                                "bgPosition",
-                                "backgroundRepeat",
-                                "bgRepeat",
-                                "position",
-                                "zIndex",
-                                "top",
-                                "right",
-                                "bottom",
-                                "left",
-                                "hover",
-                                "focus",
-                                "active",
-                                "disabledStyle",
-                                "textStyle",
-                                "colors",
-                                "buttonStyle",
-                                "borderWidth",
-                              ]
-                            }
-                            className="c2 "
-                            innerRef={[Function]}
-                            is="div"
-                            style={Object {}}
-                          >
-                            <div
-                              className="c2 "
-                              style={Object {}}
-                            />
-                          </Clean.div>
-                        </Box>
-                      </Popover__Triangle>
-                    </Popover__TriangleBorder>
-                    <Popover__Triangle
-                      innerRef={[Function]}
-                      style={Object {}}
-                    >
-                      <Box
-                        className="c2"
-                        innerRef={[Function]}
+                      <StyledComponent
+                        forwardedRef={[Function]}
                         style={Object {}}
                       >
                         <Clean.div
-                          blacklist={
-                            Array [
-                              "m",
-                              "mt",
-                              "mr",
-                              "mb",
-                              "ml",
-                              "mx",
-                              "my",
-                              "p",
-                              "pt",
-                              "pr",
-                              "pb",
-                              "pl",
-                              "px",
-                              "py",
-                              "width",
-                              "w",
-                              "fontSize",
-                              "f",
-                              "color",
-                              "bg",
-                              "fontFamily",
-                              "font",
-                              "textAlign",
-                              "align",
-                              "lineHeight",
-                              "fontWeight",
-                              "letterSpacing",
-                              "display",
-                              "maxWidth",
-                              "minWidth",
-                              "height",
-                              "maxHeight",
-                              "minHeight",
-                              "size",
-                              "ratio",
-                              "alignItems",
-                              "alignContent",
-                              "justifyContent",
-                              "justify",
-                              "flexWrap",
-                              "wrap",
-                              "flexBasis",
-                              "flexDirection",
-                              "flex",
-                              "justifySelf",
-                              "alignSelf",
-                              "order",
-                              "gridGap",
-                              "gridColumnGap",
-                              "gridRowGap",
-                              "gridColumn",
-                              "gridRow",
-                              "gridAutoFlow",
-                              "gridAutoColumns",
-                              "gridAutoRows",
-                              "gridTemplateColumns",
-                              "gridTemplateRows",
-                              "border",
-                              "borderTop",
-                              "borderRight",
-                              "borderBottom",
-                              "borderLeft",
-                              "borderColor",
-                              "borderRadius",
-                              "boxShadow",
-                              "background",
-                              "backgroundImage",
-                              "bgImage",
-                              "backgroundSize",
-                              "bgSize",
-                              "backgroundPosition",
-                              "bgPosition",
-                              "backgroundRepeat",
-                              "bgRepeat",
-                              "position",
-                              "zIndex",
-                              "top",
-                              "right",
-                              "bottom",
-                              "left",
-                              "hover",
-                              "focus",
-                              "active",
-                              "disabledStyle",
-                              "textStyle",
-                              "colors",
-                              "buttonStyle",
-                              "borderWidth",
-                            ]
-                          }
-                          className="c2 "
-                          innerRef={[Function]}
-                          is="div"
+                          className="c1"
                           style={Object {}}
                         >
                           <div
-                            className="c2 "
+                            className="c1"
                             style={Object {}}
                           />
                         </Clean.div>
-                      </Box>
+                      </StyledComponent>
+                    </Popover__TriangleBorder>
+                    <Popover__Triangle
+                      style={Object {}}
+                    >
+                      <StyledComponent
+                        forwardedRef={[Function]}
+                        style={Object {}}
+                      >
+                        <Clean.div
+                          className="c2"
+                          style={Object {}}
+                        >
+                          <div
+                            className="c2"
+                            style={Object {}}
+                          />
+                        </Clean.div>
+                      </StyledComponent>
                     </Popover__Triangle>
                   </div>
                 </Clean.div>
-              </Box>
+              </StyledComponent>
             </Popover__ContentWrapper>
           </InnerPopper>
         </Popper>

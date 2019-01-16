@@ -1,27 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LoadingIndicator /> matches snapshot 1`] = `
-.c0 {
-  -webkit-animation: gdMPTF 200ms ease-in both;
-  animation: gdMPTF 200ms ease-in both;
-  -webkit-animation-delay: 0ms;
-  animation-delay: 0ms;
-  margin: 0 auto;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  width: 72px;
-}
-
-<Box
-  className="c0"
+<StyledComponent
   delay="0ms"
+  forwardedRef={null}
   width={72}
 >
   <LoadingIndicator__Bouncer
@@ -36,5 +18,5 @@ exports[`<LoadingIndicator /> matches snapshot 1`] = `
     bg="greys.steel"
     size={18}
   />
-</Box>
+</StyledComponent>
 `;

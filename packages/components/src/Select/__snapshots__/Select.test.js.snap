@@ -1,140 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Select /> disabled renders correctly 1`] = `
-.c0 {
-  border-radius: 0;
-  padding-right: 2rem;
-}
-
-<Input
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
-  className="c0"
+<StyledComponent
   disabled={true}
+  forwardedRef={null}
   is={[Function]}
 >
   Options
-</Input>
+</StyledComponent>
 `;
 
 exports[`<Select /> readOnly renders correctly 1`] = `
-.c0 {
-  border-radius: 0;
-  padding-right: 2rem;
-}
-
-<Input
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   is={[Function]}
   readOnly={true}
 >
   Options
-</Input>
+</StyledComponent>
 `;
 
 exports[`<Select /> renders correctly 1`] = `
-.c0 {
-  border-radius: 0;
-  padding-right: 2rem;
-}
-
-<Input
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   is={[Function]}
 >
   Options
-</Input>
+</StyledComponent>
 `;
 
 exports[`<Select /> underline renders correctly 1`] = `
-.c0 {
-  border-radius: 0;
-  padding-right: 2rem;
-}
-
-<Input
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "error",
-      "underline",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   is={[Function]}
   underline={true}
 >
   Options
-</Input>
+</StyledComponent>
 `;

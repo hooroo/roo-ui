@@ -1,38 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Image /> renders correctly 1`] = `
-.c0 {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-<Clean.img
+<StyledComponent
   alt=""
-  blacklist={
-    Array [
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "size",
-      "height",
-      "width",
-      "w",
-      "inline",
-    ]
-  }
-  className="c0"
+  forwardedRef={null}
   inline={false}
   src="/example.jpg"
 />

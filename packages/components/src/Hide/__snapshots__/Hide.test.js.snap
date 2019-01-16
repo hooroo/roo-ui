@@ -1,129 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Hide /> with breakpoints in px lg renders correctly 1`] = `
-@media screen and (min-width:1280px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  lg={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in px md renders correctly 1`] = `
-@media screen and (min-width:1100px) and (max-width:1279px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  md={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in px no props renders correctly 1`] = `
-<div
-  className=""
+<StyledComponent
+  forwardedRef={null}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in px sm renders correctly 1`] = `
-@media screen and (min-width:768px) and (max-width:1099px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  sm={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in px xs renders correctly 1`] = `
-@media screen and (max-width:767px) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  xs={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in rems lg renders correctly 1`] = `
-@media screen and (min-width:64rem) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  lg={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in rems md renders correctly 1`] = `
-@media screen and (min-width:52rem) and (max-width:63.9375rem) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  md={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in rems no props renders correctly 1`] = `
-<div
-  className=""
+<StyledComponent
+  forwardedRef={null}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in rems sm renders correctly 1`] = `
-@media screen and (min-width:40rem) and (max-width:51.9375rem) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  sm={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;
 
 exports[`<Hide /> with breakpoints in rems xs renders correctly 1`] = `
-@media screen and (max-width:39.9375rem) {
-  .c0 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
+  xs={true}
 >
   Hello world
-</div>
+</StyledComponent>
 `;

@@ -1,98 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Container /> renders correctly 1`] = `
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 80rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-<Clean.div
-  blacklist={
-    Array [
-      "gutter",
-      "maxWidth",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   gutter="default"
-  is="div"
   maxWidth="default"
 >
   Hello world
-</Clean.div>
+</StyledComponent>
 `;
 
 exports[`<Container /> with a responsive gutter renders correctly 1`] = `
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 80rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-@media screen and (min-width:40rem) {
-  .c0 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media screen and (min-width:52rem) {
-  .c0 {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-}
-
-@media screen and (min-width:64rem) {
-  .c0 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
-<Clean.div
-  blacklist={
-    Array [
-      "gutter",
-      "maxWidth",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   gutter={
     Array [
       3,
@@ -101,9 +21,8 @@ exports[`<Container /> with a responsive gutter renders correctly 1`] = `
       12,
     ]
   }
-  is="div"
   maxWidth="default"
 >
   Hello world
-</Clean.div>
+</StyledComponent>
 `;

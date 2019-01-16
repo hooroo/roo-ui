@@ -1,52 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NakedButton /> renders correctly 1`] = `
-.c0 {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-}
-
-.c0:focus {
-  outline: 2px solid #8DE2E0;
-}
-
-<Clean.div
-  blacklist={
-    Array [
-      "verticalAlign",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "color",
-      "bg",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   is="button"
-  type="button"
 >
   Hello world
-</Clean.div>
+</StyledComponent>
 `;

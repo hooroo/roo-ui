@@ -1,49 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Truncate /> renders correctly 1`] = `
-.c0 {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-<Text
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   textStyle="text"
 >
   Hello world
-</Text>
+</StyledComponent>
 `;

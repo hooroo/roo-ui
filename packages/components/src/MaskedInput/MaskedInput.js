@@ -12,7 +12,7 @@ MaskedInput.defaultProps = {
   ...Input.defaultProps,
   render: (ref, { defaultValue, ...props }) => (
     <Input
-      innerRef={ref}
+      ref={ref}
       value={defaultValue}
       {...omit(props, Object.keys(Input.propTypes))}
     />

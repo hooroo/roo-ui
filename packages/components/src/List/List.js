@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { themeGet, responsiveStyle } from 'styled-system';
+import { themeGet, style } from 'styled-system';
 import tag from 'clean-tag';
 
 import { ListItem } from '..';
 
-const columns = responsiveStyle({
+const columns = style({
   prop: 'columns',
   cssProperty: 'flexBasis',
   getter: n => `${100 / n}%`,
 });
 
-const List = styled(tag).attrs({
-  is: props => (props.ordered ? 'ol' : 'ul'),
-})`
+const List = styled(tag).attrs(props => ({
+  is: props.ordered ? 'ol' : 'ul',
+}))`
   margin: ${themeGet('space.4')} 0;
   padding-left: ${themeGet('space.8')};
 

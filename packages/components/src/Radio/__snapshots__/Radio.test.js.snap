@@ -21,262 +21,69 @@ exports[`<Radio /> renders correctly 1`] = `
   position: relative;
   vertical-align: middle;
   margin-bottom: 0.125rem;
-  margin-right: 0.5rem;
   height: 1.25rem;
   width: 1.25rem;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
   border-radius: 50%;
   z-index: 1;
-}
-
-input:checked + .c2,
-input:focus + .c2,
-input:hover + .c2 {
-  border-color: #8DE2E0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
 }
 
 input:checked + .c2:after {
   position: absolute;
   display: block;
   content: '';
-  top: 0.25rem;
-  left: 0.25rem;
-  height: 0.5rem;
-  width: 0.5rem;
   border-radius: 50%;
-  background-color: #323232;
-}
-
-input:disabled + .c2 {
-  background-color: #DADADA;
-  border-color: #DADADA;
 }
 
 <Radio>
   <Radio__RadioWrapper>
-    <Clean.div
-      className="c0"
+    <StyledComponent
+      forwardedRef={null}
     >
       <Clean.div
-        blacklist={
-          Array [
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "width",
-            "w",
-            "fontSize",
-            "f",
-            "color",
-            "bg",
-            "fontFamily",
-            "font",
-            "textAlign",
-            "align",
-            "lineHeight",
-            "fontWeight",
-            "letterSpacing",
-            "display",
-            "maxWidth",
-            "minWidth",
-            "height",
-            "maxHeight",
-            "minHeight",
-            "size",
-            "ratio",
-            "alignItems",
-            "alignContent",
-            "justifyContent",
-            "justify",
-            "flexWrap",
-            "wrap",
-            "flexBasis",
-            "flexDirection",
-            "flex",
-            "justifySelf",
-            "alignSelf",
-            "order",
-            "gridGap",
-            "gridColumnGap",
-            "gridRowGap",
-            "gridColumn",
-            "gridRow",
-            "gridAutoFlow",
-            "gridAutoColumns",
-            "gridAutoRows",
-            "gridTemplateColumns",
-            "gridTemplateRows",
-            "border",
-            "borderTop",
-            "borderRight",
-            "borderBottom",
-            "borderLeft",
-            "borderColor",
-            "borderRadius",
-            "boxShadow",
-            "background",
-            "backgroundImage",
-            "bgImage",
-            "backgroundSize",
-            "bgSize",
-            "backgroundPosition",
-            "bgPosition",
-            "backgroundRepeat",
-            "bgRepeat",
-            "position",
-            "zIndex",
-            "top",
-            "right",
-            "bottom",
-            "left",
-            "hover",
-            "focus",
-            "active",
-            "disabledStyle",
-            "textStyle",
-            "colors",
-            "buttonStyle",
-            "borderWidth",
-          ]
-        }
         className="c0"
-        is="div"
       >
-        <div
+        <Clean.div
           className="c0"
+          is="div"
         >
-          <Radio__RadioInput
-            type="radio"
+          <div
+            className="c0"
           >
-            <input
-              className="c1"
+            <Radio__RadioInput
               type="radio"
-            />
-          </Radio__RadioInput>
-          <Radio__RadioIcon>
-            <Clean.div
-              className="c2"
             >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
-                }
-                className="c2"
-                is="div"
+              <StyledComponent
+                forwardedRef={null}
+                type="radio"
               >
-                <div
-                  className="c2"
+                <input
+                  className="c1"
+                  type="radio"
                 />
-              </Clean.div>
-            </Clean.div>
-          </Radio__RadioIcon>
-        </div>
+              </StyledComponent>
+            </Radio__RadioInput>
+            <Radio__RadioIcon>
+              <StyledComponent
+                forwardedRef={null}
+              >
+                <Clean.div
+                  className="c2"
+                >
+                  <Clean.div
+                    className="c2"
+                    is="div"
+                  >
+                    <div
+                      className="c2"
+                    />
+                  </Clean.div>
+                </Clean.div>
+              </StyledComponent>
+            </Radio__RadioIcon>
+          </div>
+        </Clean.div>
       </Clean.div>
-    </Clean.div>
+    </StyledComponent>
   </Radio__RadioWrapper>
 </Radio>
 `;
@@ -302,266 +109,74 @@ exports[`<Radio /> when checked renders correctly 1`] = `
   position: relative;
   vertical-align: middle;
   margin-bottom: 0.125rem;
-  margin-right: 0.5rem;
   height: 1.25rem;
   width: 1.25rem;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
   border-radius: 50%;
   z-index: 1;
-}
-
-input:checked + .c2,
-input:focus + .c2,
-input:hover + .c2 {
-  border-color: #8DE2E0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
 }
 
 input:checked + .c2:after {
   position: absolute;
   display: block;
   content: '';
-  top: 0.25rem;
-  left: 0.25rem;
-  height: 0.5rem;
-  width: 0.5rem;
   border-radius: 50%;
-  background-color: #323232;
-}
-
-input:disabled + .c2 {
-  background-color: #DADADA;
-  border-color: #DADADA;
 }
 
 <Radio
   defaultChecked={true}
 >
   <Radio__RadioWrapper>
-    <Clean.div
-      className="c0"
+    <StyledComponent
+      forwardedRef={null}
     >
       <Clean.div
-        blacklist={
-          Array [
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "width",
-            "w",
-            "fontSize",
-            "f",
-            "color",
-            "bg",
-            "fontFamily",
-            "font",
-            "textAlign",
-            "align",
-            "lineHeight",
-            "fontWeight",
-            "letterSpacing",
-            "display",
-            "maxWidth",
-            "minWidth",
-            "height",
-            "maxHeight",
-            "minHeight",
-            "size",
-            "ratio",
-            "alignItems",
-            "alignContent",
-            "justifyContent",
-            "justify",
-            "flexWrap",
-            "wrap",
-            "flexBasis",
-            "flexDirection",
-            "flex",
-            "justifySelf",
-            "alignSelf",
-            "order",
-            "gridGap",
-            "gridColumnGap",
-            "gridRowGap",
-            "gridColumn",
-            "gridRow",
-            "gridAutoFlow",
-            "gridAutoColumns",
-            "gridAutoRows",
-            "gridTemplateColumns",
-            "gridTemplateRows",
-            "border",
-            "borderTop",
-            "borderRight",
-            "borderBottom",
-            "borderLeft",
-            "borderColor",
-            "borderRadius",
-            "boxShadow",
-            "background",
-            "backgroundImage",
-            "bgImage",
-            "backgroundSize",
-            "bgSize",
-            "backgroundPosition",
-            "bgPosition",
-            "backgroundRepeat",
-            "bgRepeat",
-            "position",
-            "zIndex",
-            "top",
-            "right",
-            "bottom",
-            "left",
-            "hover",
-            "focus",
-            "active",
-            "disabledStyle",
-            "textStyle",
-            "colors",
-            "buttonStyle",
-            "borderWidth",
-          ]
-        }
         className="c0"
-        is="div"
       >
-        <div
+        <Clean.div
           className="c0"
+          is="div"
         >
-          <Radio__RadioInput
-            defaultChecked={true}
-            type="radio"
+          <div
+            className="c0"
           >
-            <input
-              className="c1"
+            <Radio__RadioInput
               defaultChecked={true}
               type="radio"
-            />
-          </Radio__RadioInput>
-          <Radio__RadioIcon>
-            <Clean.div
-              className="c2"
             >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
-                }
-                className="c2"
-                is="div"
+              <StyledComponent
+                defaultChecked={true}
+                forwardedRef={null}
+                type="radio"
               >
-                <div
-                  className="c2"
+                <input
+                  className="c1"
+                  defaultChecked={true}
+                  type="radio"
                 />
-              </Clean.div>
-            </Clean.div>
-          </Radio__RadioIcon>
-        </div>
+              </StyledComponent>
+            </Radio__RadioInput>
+            <Radio__RadioIcon>
+              <StyledComponent
+                forwardedRef={null}
+              >
+                <Clean.div
+                  className="c2"
+                >
+                  <Clean.div
+                    className="c2"
+                    is="div"
+                  >
+                    <div
+                      className="c2"
+                    />
+                  </Clean.div>
+                </Clean.div>
+              </StyledComponent>
+            </Radio__RadioIcon>
+          </div>
+        </Clean.div>
       </Clean.div>
-    </Clean.div>
+    </StyledComponent>
   </Radio__RadioWrapper>
 </Radio>
 `;
@@ -587,266 +202,74 @@ exports[`<Radio /> when disabled renders correctly 1`] = `
   position: relative;
   vertical-align: middle;
   margin-bottom: 0.125rem;
-  margin-right: 0.5rem;
   height: 1.25rem;
   width: 1.25rem;
-  background-color: #FFFFFF;
-  border: 2px solid;
-  border-color: #DADADA;
   border-radius: 50%;
   z-index: 1;
-}
-
-input:checked + .c2,
-input:focus + .c2,
-input:hover + .c2 {
-  border-color: #8DE2E0;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
 }
 
 input:checked + .c2:after {
   position: absolute;
   display: block;
   content: '';
-  top: 0.25rem;
-  left: 0.25rem;
-  height: 0.5rem;
-  width: 0.5rem;
   border-radius: 50%;
-  background-color: #323232;
-}
-
-input:disabled + .c2 {
-  background-color: #DADADA;
-  border-color: #DADADA;
 }
 
 <Radio
   disabled={true}
 >
   <Radio__RadioWrapper>
-    <Clean.div
-      className="c0"
+    <StyledComponent
+      forwardedRef={null}
     >
       <Clean.div
-        blacklist={
-          Array [
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "width",
-            "w",
-            "fontSize",
-            "f",
-            "color",
-            "bg",
-            "fontFamily",
-            "font",
-            "textAlign",
-            "align",
-            "lineHeight",
-            "fontWeight",
-            "letterSpacing",
-            "display",
-            "maxWidth",
-            "minWidth",
-            "height",
-            "maxHeight",
-            "minHeight",
-            "size",
-            "ratio",
-            "alignItems",
-            "alignContent",
-            "justifyContent",
-            "justify",
-            "flexWrap",
-            "wrap",
-            "flexBasis",
-            "flexDirection",
-            "flex",
-            "justifySelf",
-            "alignSelf",
-            "order",
-            "gridGap",
-            "gridColumnGap",
-            "gridRowGap",
-            "gridColumn",
-            "gridRow",
-            "gridAutoFlow",
-            "gridAutoColumns",
-            "gridAutoRows",
-            "gridTemplateColumns",
-            "gridTemplateRows",
-            "border",
-            "borderTop",
-            "borderRight",
-            "borderBottom",
-            "borderLeft",
-            "borderColor",
-            "borderRadius",
-            "boxShadow",
-            "background",
-            "backgroundImage",
-            "bgImage",
-            "backgroundSize",
-            "bgSize",
-            "backgroundPosition",
-            "bgPosition",
-            "backgroundRepeat",
-            "bgRepeat",
-            "position",
-            "zIndex",
-            "top",
-            "right",
-            "bottom",
-            "left",
-            "hover",
-            "focus",
-            "active",
-            "disabledStyle",
-            "textStyle",
-            "colors",
-            "buttonStyle",
-            "borderWidth",
-          ]
-        }
         className="c0"
-        is="div"
       >
-        <div
+        <Clean.div
           className="c0"
+          is="div"
         >
-          <Radio__RadioInput
-            disabled={true}
-            type="radio"
+          <div
+            className="c0"
           >
-            <input
-              className="c1"
+            <Radio__RadioInput
               disabled={true}
               type="radio"
-            />
-          </Radio__RadioInput>
-          <Radio__RadioIcon>
-            <Clean.div
-              className="c2"
             >
-              <Clean.div
-                blacklist={
-                  Array [
-                    "m",
-                    "mt",
-                    "mr",
-                    "mb",
-                    "ml",
-                    "mx",
-                    "my",
-                    "p",
-                    "pt",
-                    "pr",
-                    "pb",
-                    "pl",
-                    "px",
-                    "py",
-                    "width",
-                    "w",
-                    "fontSize",
-                    "f",
-                    "color",
-                    "bg",
-                    "fontFamily",
-                    "font",
-                    "textAlign",
-                    "align",
-                    "lineHeight",
-                    "fontWeight",
-                    "letterSpacing",
-                    "display",
-                    "maxWidth",
-                    "minWidth",
-                    "height",
-                    "maxHeight",
-                    "minHeight",
-                    "size",
-                    "ratio",
-                    "alignItems",
-                    "alignContent",
-                    "justifyContent",
-                    "justify",
-                    "flexWrap",
-                    "wrap",
-                    "flexBasis",
-                    "flexDirection",
-                    "flex",
-                    "justifySelf",
-                    "alignSelf",
-                    "order",
-                    "gridGap",
-                    "gridColumnGap",
-                    "gridRowGap",
-                    "gridColumn",
-                    "gridRow",
-                    "gridAutoFlow",
-                    "gridAutoColumns",
-                    "gridAutoRows",
-                    "gridTemplateColumns",
-                    "gridTemplateRows",
-                    "border",
-                    "borderTop",
-                    "borderRight",
-                    "borderBottom",
-                    "borderLeft",
-                    "borderColor",
-                    "borderRadius",
-                    "boxShadow",
-                    "background",
-                    "backgroundImage",
-                    "bgImage",
-                    "backgroundSize",
-                    "bgSize",
-                    "backgroundPosition",
-                    "bgPosition",
-                    "backgroundRepeat",
-                    "bgRepeat",
-                    "position",
-                    "zIndex",
-                    "top",
-                    "right",
-                    "bottom",
-                    "left",
-                    "hover",
-                    "focus",
-                    "active",
-                    "disabledStyle",
-                    "textStyle",
-                    "colors",
-                    "buttonStyle",
-                    "borderWidth",
-                  ]
-                }
-                className="c2"
-                is="div"
+              <StyledComponent
+                disabled={true}
+                forwardedRef={null}
+                type="radio"
               >
-                <div
-                  className="c2"
+                <input
+                  className="c1"
+                  disabled={true}
+                  type="radio"
                 />
-              </Clean.div>
-            </Clean.div>
-          </Radio__RadioIcon>
-        </div>
+              </StyledComponent>
+            </Radio__RadioInput>
+            <Radio__RadioIcon>
+              <StyledComponent
+                forwardedRef={null}
+              >
+                <Clean.div
+                  className="c2"
+                >
+                  <Clean.div
+                    className="c2"
+                    is="div"
+                  >
+                    <div
+                      className="c2"
+                    />
+                  </Clean.div>
+                </Clean.div>
+              </StyledComponent>
+            </Radio__RadioIcon>
+          </div>
+        </Clean.div>
       </Clean.div>
-    </Clean.div>
+    </StyledComponent>
   </Radio__RadioWrapper>
 </Radio>
 `;

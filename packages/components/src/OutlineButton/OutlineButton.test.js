@@ -15,7 +15,7 @@ describe('<OutlineButton />', () => {
     );
   });
 
-  it('renders correctly', () => {
+  fit('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -26,7 +26,7 @@ describe('<OutlineButton />', () => {
   describe('primary', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(
-        <OutlineButton primary>Hello world</OutlineButton>,
+        <OutlineButton variant="primary">Hello world</OutlineButton>,
         theme,
       );
     });
@@ -39,7 +39,7 @@ describe('<OutlineButton />', () => {
   describe('rounded', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(
-        <OutlineButton rounded>Hello world</OutlineButton>,
+        <OutlineButton variant="rounded">Hello world</OutlineButton>,
         theme,
       );
     });

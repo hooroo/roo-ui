@@ -31,6 +31,8 @@ const Button = styled(NakedButton)`
   }
 `;
 
+Button.displayName = 'Button';
+
 const CalendarNav = ({ prevProps, nextProps }) => (
   <Wrapper>
     <Button {...prevProps}>

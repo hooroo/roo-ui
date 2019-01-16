@@ -1,6 +1,6 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import { mountWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 
 import Icon from '.';
@@ -9,7 +9,7 @@ describe('<Icon />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<Icon name="hotel" />, theme).dive();
+    wrapper = mountWithTheme(<Icon name="hotel" />, theme);
   });
 
   it('renders correctly', () => {

@@ -1,42 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockLink /> renders correctly 1`] = `
-.c0 {
-  display: block;
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<Link
-  blacklist={
-    Array [
-      "color",
-      "bg",
-      "hover",
-      "fontWeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "hidden",
-      "underline",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   underline={false}
 >
   Hello world
-</Link>
+</StyledComponent>
 `;
