@@ -1,48 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Text /> renders correctly 1`] = `
-.c0 {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-<Clean.span
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   textStyle="text"
 >
   Hello world
-</Clean.span>
+</StyledComponent>
 `;

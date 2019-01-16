@@ -1,53 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Label /> hidden renders correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 0.75rem;
-  border: 0;
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #323232;
-}
-
-<Clean.label
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={true}
   textStyle="label"
 >
   Hello world
-</Clean.label>
+</StyledComponent>
 `;
 
 exports[`<Label /> renders correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 0.75rem;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #323232;
-}
-
-<Clean.label
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   hidden={false}
   textStyle="label"
 >
   Hello world
-</Clean.label>
+</StyledComponent>
 `;

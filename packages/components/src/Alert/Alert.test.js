@@ -1,6 +1,6 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import { mountWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 
 import Alert from '.';
@@ -8,7 +8,7 @@ import Alert from '.';
 describe('<Alert />', () => {
   let wrapper;
 
-  const render = tree => shallowWithTheme(tree, theme).dive();
+  const render = tree => mountWithTheme(tree, theme);
 
   beforeEach(() => {
     wrapper = render(<Alert>Hello world</Alert>);

@@ -1,510 +1,1488 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
-<Box
-  bg="ui.errorBackground"
+.c1 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c0 {
+  margin-bottom: 16px;
+  background-color: ui.errorBackground;
+}
+
+.c5 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
+<Alert
   mb={3}
+  variant="error"
 >
-  <Box
-    px={4}
+  <Component
+    mb={3}
+    variant="error"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="ui.errorBackground"
+      mb={3}
     >
-      <Box
-        pr={3}
+      <StyledComponent
+        bg="ui.errorBackground"
+        forwardedRef={null}
+        mb={3}
       >
-        <Icon
-          color="ui.error"
-          name="warning"
-        />
-      </Box>
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
-      >
-        Hello world
-      </Text>
-    </Flex>
-  </Box>
-</Box>
+        <Clean.div
+          bg="ui.errorBackground"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Box
+              px={4}
+            >
+              <StyledComponent
+                forwardedRef={null}
+                px={4}
+              >
+                <Clean.div
+                  className="c1"
+                  px={4}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Box
+                              pr={3}
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                pr={3}
+                              >
+                                <Clean.div
+                                  className="c3"
+                                  pr={3}
+                                >
+                                  <div
+                                    className="c3"
+                                  >
+                                    <Icon
+                                      color="ui.error"
+                                      name="warning"
+                                    >
+                                      <StyledComponent
+                                        color="ui.error"
+                                        forwardedRef={null}
+                                        name="warning"
+                                      >
+                                        <Base
+                                          className="c4"
+                                          color="ui.error"
+                                          name="warning"
+                                          size={24}
+                                          title={null}
+                                        >
+                                          <Cleaned
+                                            className="c4"
+                                            color="ui.error"
+                                            fill="currentcolor"
+                                            height={24}
+                                            title="warning"
+                                            viewBox="0 0 24 24"
+                                            width={24}
+                                          >
+                                            <svg
+                                              className="c4"
+                                              color="ui.error"
+                                              fill="currentcolor"
+                                              height={24}
+                                              title="warning"
+                                              viewBox="0 0 24 24"
+                                              width={24}
+                                            >
+                                              <path
+                                                d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+                                              />
+                                            </svg>
+                                          </Cleaned>
+                                        </Base>
+                                      </StyledComponent>
+                                    </Icon>
+                                  </div>
+                                </Clean.div>
+                              </StyledComponent>
+                            </Box>
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c5"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c5"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c5"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Box>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert>
 `;
 
 exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
-<Box
-  bg="ui.infoBackground"
+.c1 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c0 {
+  margin-bottom: 16px;
+  background-color: ui.infoBackground;
+}
+
+.c5 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
+<Alert
   mb={3}
+  variant="info"
 >
-  <Box
-    px={4}
+  <Component
+    mb={3}
+    variant="info"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="ui.infoBackground"
+      mb={3}
     >
-      <Box
-        pr={3}
+      <StyledComponent
+        bg="ui.infoBackground"
+        forwardedRef={null}
+        mb={3}
       >
-        <Icon
-          color="greys.charcoal"
-          name="info"
-        />
-      </Box>
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
-      >
-        Hello world
-      </Text>
-    </Flex>
-  </Box>
-</Box>
+        <Clean.div
+          bg="ui.infoBackground"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Box
+              px={4}
+            >
+              <StyledComponent
+                forwardedRef={null}
+                px={4}
+              >
+                <Clean.div
+                  className="c1"
+                  px={4}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Box
+                              pr={3}
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                pr={3}
+                              >
+                                <Clean.div
+                                  className="c3"
+                                  pr={3}
+                                >
+                                  <div
+                                    className="c3"
+                                  >
+                                    <Icon
+                                      color="greys.charcoal"
+                                      name="info"
+                                    >
+                                      <StyledComponent
+                                        color="greys.charcoal"
+                                        forwardedRef={null}
+                                        name="info"
+                                      >
+                                        <Base
+                                          className="c4"
+                                          color="greys.charcoal"
+                                          name="info"
+                                          size={24}
+                                          title={null}
+                                        >
+                                          <Cleaned
+                                            className="c4"
+                                            color="greys.charcoal"
+                                            fill="currentcolor"
+                                            height={24}
+                                            title="info"
+                                            viewBox="0 0 24 24"
+                                            width={24}
+                                          >
+                                            <svg
+                                              className="c4"
+                                              color="greys.charcoal"
+                                              fill="currentcolor"
+                                              height={24}
+                                              title="info"
+                                              viewBox="0 0 24 24"
+                                              width={24}
+                                            >
+                                              <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                                              />
+                                            </svg>
+                                          </Cleaned>
+                                        </Base>
+                                      </StyledComponent>
+                                    </Icon>
+                                  </div>
+                                </Clean.div>
+                              </StyledComponent>
+                            </Box>
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c5"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c5"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c5"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Box>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert>
 `;
 
 exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
-<Box
-  bg="ui.successBackground"
+.c1 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.c0 {
+  margin-bottom: 16px;
+  background-color: ui.successBackground;
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c5 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
+<Alert
   mb={3}
+  variant="success"
 >
-  <Box
-    px={4}
+  <Component
+    mb={3}
+    variant="success"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="ui.successBackground"
+      mb={3}
     >
-      <Box
-        pr={3}
+      <StyledComponent
+        bg="ui.successBackground"
+        forwardedRef={null}
+        mb={3}
       >
-        <Icon
-          color="ui.success"
-          name="checkCircle"
-        />
-      </Box>
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
-      >
-        Hello world
-      </Text>
-    </Flex>
-  </Box>
-</Box>
+        <Clean.div
+          bg="ui.successBackground"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Box
+              px={4}
+            >
+              <StyledComponent
+                forwardedRef={null}
+                px={4}
+              >
+                <Clean.div
+                  className="c1"
+                  px={4}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Box
+                              pr={3}
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                pr={3}
+                              >
+                                <Clean.div
+                                  className="c3"
+                                  pr={3}
+                                >
+                                  <div
+                                    className="c3"
+                                  >
+                                    <Icon
+                                      color="ui.success"
+                                      name="checkCircle"
+                                    >
+                                      <StyledComponent
+                                        color="ui.success"
+                                        forwardedRef={null}
+                                        name="checkCircle"
+                                      >
+                                        <Base
+                                          className="c4"
+                                          color="ui.success"
+                                          name="checkCircle"
+                                          size={24}
+                                          title={null}
+                                        >
+                                          <Cleaned
+                                            className="c4"
+                                            color="ui.success"
+                                            fill="currentcolor"
+                                            height={24}
+                                            title="checkCircle"
+                                            viewBox="0 0 24 24"
+                                            width={24}
+                                          >
+                                            <svg
+                                              className="c4"
+                                              color="ui.success"
+                                              fill="currentcolor"
+                                              height={24}
+                                              title="checkCircle"
+                                              viewBox="0 0 24 24"
+                                              width={24}
+                                            >
+                                              <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                                              />
+                                            </svg>
+                                          </Cleaned>
+                                        </Base>
+                                      </StyledComponent>
+                                    </Icon>
+                                  </div>
+                                </Clean.div>
+                              </StyledComponent>
+                            </Box>
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c5"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c5"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c5"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Box>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert>
 `;
 
 exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
-<Box
-  bg="ui.errorBackground"
+.c1 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c0 {
+  margin-bottom: 16px;
+  background-color: ui.errorBackground;
+}
+
+.c5 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
+<Alert.error
   mb={3}
+  variant="error"
 >
-  <Box
-    px={4}
+  <Component
+    mb={3}
+    variant="error"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="ui.errorBackground"
+      mb={3}
     >
-      <Box
-        pr={3}
+      <StyledComponent
+        bg="ui.errorBackground"
+        forwardedRef={null}
+        mb={3}
       >
-        <Icon
-          color="ui.error"
-          name="warning"
-        />
-      </Box>
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
-      >
-        Hello world
-      </Text>
-    </Flex>
-  </Box>
-</Box>
+        <Clean.div
+          bg="ui.errorBackground"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Box
+              px={4}
+            >
+              <StyledComponent
+                forwardedRef={null}
+                px={4}
+              >
+                <Clean.div
+                  className="c1"
+                  px={4}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Box
+                              pr={3}
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                pr={3}
+                              >
+                                <Clean.div
+                                  className="c3"
+                                  pr={3}
+                                >
+                                  <div
+                                    className="c3"
+                                  >
+                                    <Icon
+                                      color="ui.error"
+                                      name="warning"
+                                    >
+                                      <StyledComponent
+                                        color="ui.error"
+                                        forwardedRef={null}
+                                        name="warning"
+                                      >
+                                        <Base
+                                          className="c4"
+                                          color="ui.error"
+                                          name="warning"
+                                          size={24}
+                                          title={null}
+                                        >
+                                          <Cleaned
+                                            className="c4"
+                                            color="ui.error"
+                                            fill="currentcolor"
+                                            height={24}
+                                            title="warning"
+                                            viewBox="0 0 24 24"
+                                            width={24}
+                                          >
+                                            <svg
+                                              className="c4"
+                                              color="ui.error"
+                                              fill="currentcolor"
+                                              height={24}
+                                              title="warning"
+                                              viewBox="0 0 24 24"
+                                              width={24}
+                                            >
+                                              <path
+                                                d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+                                              />
+                                            </svg>
+                                          </Cleaned>
+                                        </Base>
+                                      </StyledComponent>
+                                    </Icon>
+                                  </div>
+                                </Clean.div>
+                              </StyledComponent>
+                            </Box>
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c5"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c5"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c5"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Box>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert.error>
 `;
 
 exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
-<Box
-  bg="ui.infoBackground"
+.c1 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c0 {
+  margin-bottom: 16px;
+  background-color: ui.infoBackground;
+}
+
+.c5 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
+<Alert.info
   mb={3}
+  variant="info"
 >
-  <Box
-    px={4}
+  <Component
+    mb={3}
+    variant="info"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="ui.infoBackground"
+      mb={3}
     >
-      <Box
-        pr={3}
+      <StyledComponent
+        bg="ui.infoBackground"
+        forwardedRef={null}
+        mb={3}
       >
-        <Icon
-          color="greys.charcoal"
-          name="info"
-        />
-      </Box>
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
-      >
-        Hello world
-      </Text>
-    </Flex>
-  </Box>
-</Box>
+        <Clean.div
+          bg="ui.infoBackground"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Box
+              px={4}
+            >
+              <StyledComponent
+                forwardedRef={null}
+                px={4}
+              >
+                <Clean.div
+                  className="c1"
+                  px={4}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Box
+                              pr={3}
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                pr={3}
+                              >
+                                <Clean.div
+                                  className="c3"
+                                  pr={3}
+                                >
+                                  <div
+                                    className="c3"
+                                  >
+                                    <Icon
+                                      color="greys.charcoal"
+                                      name="info"
+                                    >
+                                      <StyledComponent
+                                        color="greys.charcoal"
+                                        forwardedRef={null}
+                                        name="info"
+                                      >
+                                        <Base
+                                          className="c4"
+                                          color="greys.charcoal"
+                                          name="info"
+                                          size={24}
+                                          title={null}
+                                        >
+                                          <Cleaned
+                                            className="c4"
+                                            color="greys.charcoal"
+                                            fill="currentcolor"
+                                            height={24}
+                                            title="info"
+                                            viewBox="0 0 24 24"
+                                            width={24}
+                                          >
+                                            <svg
+                                              className="c4"
+                                              color="greys.charcoal"
+                                              fill="currentcolor"
+                                              height={24}
+                                              title="info"
+                                              viewBox="0 0 24 24"
+                                              width={24}
+                                            >
+                                              <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                                              />
+                                            </svg>
+                                          </Cleaned>
+                                        </Base>
+                                      </StyledComponent>
+                                    </Icon>
+                                  </div>
+                                </Clean.div>
+                              </StyledComponent>
+                            </Box>
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c5"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c5"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c5"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Box>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert.info>
 `;
 
 exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
-<Box
-  bg="ui.successBackground"
+.c1 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.c0 {
+  margin-bottom: 16px;
+  background-color: ui.successBackground;
+}
+
+.c3 {
+  padding-right: 16px;
+}
+
+.c5 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
+<Alert.success
   mb={3}
+  variant="success"
 >
-  <Box
-    px={4}
+  <Component
+    mb={3}
+    variant="success"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="ui.successBackground"
+      mb={3}
     >
-      <Box
-        pr={3}
+      <StyledComponent
+        bg="ui.successBackground"
+        forwardedRef={null}
+        mb={3}
       >
-        <Icon
-          color="ui.success"
-          name="checkCircle"
-        />
-      </Box>
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
-      >
-        Hello world
-      </Text>
-    </Flex>
-  </Box>
-</Box>
+        <Clean.div
+          bg="ui.successBackground"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Box
+              px={4}
+            >
+              <StyledComponent
+                forwardedRef={null}
+                px={4}
+              >
+                <Clean.div
+                  className="c1"
+                  px={4}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Box
+                              pr={3}
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                pr={3}
+                              >
+                                <Clean.div
+                                  className="c3"
+                                  pr={3}
+                                >
+                                  <div
+                                    className="c3"
+                                  >
+                                    <Icon
+                                      color="ui.success"
+                                      name="checkCircle"
+                                    >
+                                      <StyledComponent
+                                        color="ui.success"
+                                        forwardedRef={null}
+                                        name="checkCircle"
+                                      >
+                                        <Base
+                                          className="c4"
+                                          color="ui.success"
+                                          name="checkCircle"
+                                          size={24}
+                                          title={null}
+                                        >
+                                          <Cleaned
+                                            className="c4"
+                                            color="ui.success"
+                                            fill="currentcolor"
+                                            height={24}
+                                            title="checkCircle"
+                                            viewBox="0 0 24 24"
+                                            width={24}
+                                          >
+                                            <svg
+                                              className="c4"
+                                              color="ui.success"
+                                              fill="currentcolor"
+                                              height={24}
+                                              title="checkCircle"
+                                              viewBox="0 0 24 24"
+                                              width={24}
+                                            >
+                                              <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                                              />
+                                            </svg>
+                                          </Cleaned>
+                                        </Base>
+                                      </StyledComponent>
+                                    </Icon>
+                                  </div>
+                                </Clean.div>
+                              </StyledComponent>
+                            </Box>
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c5"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c5"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c5"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Box>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert.success>
 `;
 
 exports[`<Alert /> contained renders correctly 1`] = `
-<Box
-  bg="greys.porcelain"
+.c0 {
+  margin-bottom: 16px;
+  background-color: greys.porcelain;
+}
+
+.c1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: default;
+}
+
+.c3 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<Alert
+  contained={true}
   mb={3}
+  variant="default"
 >
-  <Container
-    blacklist={
-      Array [
-        "gutter",
-        "maxWidth",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-      ]
-    }
-    gutter="default"
-    maxWidth="default"
+  <Component
+    contained={true}
+    mb={3}
+    variant="default"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="greys.porcelain"
+      mb={3}
     >
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
+      <StyledComponent
+        bg="greys.porcelain"
+        forwardedRef={null}
+        mb={3}
       >
-        Hello world
-      </Text>
-    </Flex>
-  </Container>
-</Box>
+        <Clean.div
+          bg="greys.porcelain"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Container
+              gutter="default"
+              maxWidth="default"
+            >
+              <StyledComponent
+                forwardedRef={null}
+                gutter="default"
+                maxWidth="default"
+              >
+                <Clean.div
+                  className="c1"
+                  gutter="default"
+                  maxWidth="default"
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c3"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c3"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c3"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Container>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert>
 `;
 
 exports[`<Alert /> renders correctly 1`] = `
-<Box
-  bg="greys.porcelain"
+.c0 {
+  margin-bottom: 16px;
+  background-color: greys.porcelain;
+}
+
+.c1 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.c3 {
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.c2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<Alert
   mb={3}
+  variant="default"
 >
-  <Box
-    px={4}
+  <Component
+    mb={3}
+    variant="default"
   >
-    <Flex
-      py={4}
+    <Box
+      bg="greys.porcelain"
+      mb={3}
     >
-      <Text
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        hidden={false}
-        mb={0}
-        textAlign="left"
-        textStyle="text"
+      <StyledComponent
+        bg="greys.porcelain"
+        forwardedRef={null}
+        mb={3}
       >
-        Hello world
-      </Text>
-    </Flex>
-  </Box>
-</Box>
+        <Clean.div
+          bg="greys.porcelain"
+          className="c0"
+          mb={3}
+        >
+          <div
+            className="c0"
+          >
+            <Box
+              px={4}
+            >
+              <StyledComponent
+                forwardedRef={null}
+                px={4}
+              >
+                <Clean.div
+                  className="c1"
+                  px={4}
+                >
+                  <div
+                    className="c1"
+                  >
+                    <Flex
+                      py={4}
+                    >
+                      <StyledComponent
+                        forwardedRef={null}
+                        py={4}
+                      >
+                        <Clean.div
+                          className="c2"
+                          py={4}
+                        >
+                          <div
+                            className="c2"
+                          >
+                            <Text
+                              hidden={false}
+                              mb={0}
+                              textAlign="left"
+                              textStyle="text"
+                            >
+                              <StyledComponent
+                                forwardedRef={null}
+                                hidden={false}
+                                mb={0}
+                                textAlign="left"
+                                textStyle="text"
+                              >
+                                <Clean.span
+                                  className="c3"
+                                  hidden={false}
+                                  mb={0}
+                                  textAlign="left"
+                                  textStyle="text"
+                                >
+                                  <Clean.div
+                                    className="c3"
+                                    hidden={false}
+                                    is="span"
+                                    mb={0}
+                                    textAlign="left"
+                                    textStyle="text"
+                                  >
+                                    <span
+                                      className="c3"
+                                    >
+                                      Hello world
+                                    </span>
+                                  </Clean.div>
+                                </Clean.span>
+                              </StyledComponent>
+                            </Text>
+                          </div>
+                        </Clean.div>
+                      </StyledComponent>
+                    </Flex>
+                  </div>
+                </Clean.div>
+              </StyledComponent>
+            </Box>
+          </div>
+        </Clean.div>
+      </StyledComponent>
+    </Box>
+  </Component>
+</Alert>
 `;

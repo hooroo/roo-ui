@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Card /> renders correctly 1`] = `
-<Box
+<StyledComponent
   bg="white"
   borderRadius="default"
   boxShadow="default"
-  className=""
+  forwardedRef={null}
   p={4}
 >
   Hello world
-</Box>
+</StyledComponent>
 `;

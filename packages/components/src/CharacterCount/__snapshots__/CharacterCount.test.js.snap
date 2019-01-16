@@ -9,115 +9,22 @@ exports[`<CharacterCount /> renders correctly 1`] = `
 }
 
 <CharacterCount
-  blacklist={
-    Array [
-      "textStyle",
-      "color",
-      "bg",
-      "fontSize",
-      "f",
-      "fontWeight",
-      "letterSpacing",
-      "lineHeight",
-      "m",
-      "mt",
-      "mr",
-      "mb",
-      "ml",
-      "mx",
-      "my",
-      "p",
-      "pt",
-      "pr",
-      "pb",
-      "pl",
-      "px",
-      "py",
-      "textAlign",
-      "align",
-      "textDecoration",
-      "display",
-      "hidden",
-    ]
-  }
   fontSize="sm"
   hidden={false}
   limit={64}
   textStyle="text"
   value="Hello world"
 >
-  <Text
-    blacklist={
-      Array [
-        "textStyle",
-        "color",
-        "bg",
-        "fontSize",
-        "f",
-        "fontWeight",
-        "letterSpacing",
-        "lineHeight",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "textAlign",
-        "align",
-        "textDecoration",
-        "display",
-        "hidden",
-      ]
-    }
-    className=""
+  <StyledComponent
     fontSize="sm"
+    forwardedRef={null}
     hidden={false}
     limit={64}
     textStyle="text"
     value="Hello world"
   >
     <Base
-      blacklist={
-        Array [
-          "textStyle",
-          "color",
-          "bg",
-          "fontSize",
-          "f",
-          "fontWeight",
-          "letterSpacing",
-          "lineHeight",
-          "m",
-          "mt",
-          "mr",
-          "mb",
-          "ml",
-          "mx",
-          "my",
-          "p",
-          "pt",
-          "pr",
-          "pb",
-          "pl",
-          "px",
-          "py",
-          "textAlign",
-          "align",
-          "textDecoration",
-          "display",
-          "hidden",
-        ]
-      }
-      className="c0"
+      className="-Base c0"
       fontSize="sm"
       hidden={false}
       limit={64}
@@ -125,80 +32,18 @@ exports[`<CharacterCount /> renders correctly 1`] = `
       value="Hello world"
     >
       <Cleaned
-        blacklist={
-          Array [
-            "textStyle",
-            "color",
-            "bg",
-            "fontSize",
-            "f",
-            "fontWeight",
-            "letterSpacing",
-            "lineHeight",
-            "m",
-            "mt",
-            "mr",
-            "mb",
-            "ml",
-            "mx",
-            "my",
-            "p",
-            "pt",
-            "pr",
-            "pb",
-            "pl",
-            "px",
-            "py",
-            "textAlign",
-            "align",
-            "textDecoration",
-            "display",
-            "hidden",
-          ]
-        }
-        className="c0"
+        className="-Base c0"
         fontSize="sm"
         hidden={false}
         textStyle="text"
       >
         <span
-          blacklist={
-            Array [
-              "textStyle",
-              "color",
-              "bg",
-              "fontSize",
-              "f",
-              "fontWeight",
-              "letterSpacing",
-              "lineHeight",
-              "m",
-              "mt",
-              "mr",
-              "mb",
-              "ml",
-              "mx",
-              "my",
-              "p",
-              "pt",
-              "pr",
-              "pb",
-              "pl",
-              "px",
-              "py",
-              "textAlign",
-              "align",
-              "textDecoration",
-              "display",
-              "hidden",
-            ]
-          }
-          className="c0"
+          className="-Base c0"
         >
           53
         </span>
       </Cleaned>
     </Base>
-  </Text>
+  </StyledComponent>
 </CharacterCount>
 `;

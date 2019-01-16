@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListItem /> renders correctly 1`] = `
-.c0 {
-  margin: 0 0 1rem;
-}
-
-<Clean.li
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
 >
   Hello List
-</Clean.li>
+</StyledComponent>
 `;

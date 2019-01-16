@@ -2,9 +2,13 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
 import tag from 'clean-tag';
-import { themeGet, space, color, boxShadow, buttonStyle } from 'styled-system';
+import { themeGet, space, color, bgColor, boxShadow, variant } from 'styled-system';
+import get from 'lodash/get';
 
-const getBackground = props => (color(props).backgroundColor || buttonStyle(props).backgroundColor);
+const buttonStyle = variant({ key: 'buttons' });
+
+const getBackground = props =>
+  get(bgColor(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor');
 
 const Button = styled(tag.button)`
   display: inline-block;
@@ -39,8 +43,7 @@ const Button = styled(tag.button)`
   }
 
   &:disabled {
-    background-color: ${themeGet('colors.greys.alto')};
-    color: ${themeGet('colors.greys.dusty')};
+    opacity: ${themeGet('opacity.disabled')};
     cursor: not-allowed;
   }
 
@@ -54,17 +57,16 @@ const Button = styled(tag.button)`
 `;
 
 Button.propTypes = {
-  ...buttonStyle.propTypes,
+  ...variant.propTypes,
   ...space.propTypes,
   ...color.propTypes,
   ...boxShadow.propTypes,
-  primary: PropTypes.bool,
   rounded: PropTypes.bool,
   block: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  buttonStyle: 'default',
+  variant: 'default',
   blacklist: Object.keys(Button.propTypes),
 };
 

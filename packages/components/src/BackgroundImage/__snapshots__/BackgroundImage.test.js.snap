@@ -1,17 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BackgroundImage /> renders correctly 1`] = `
-.c0 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/example.jpg);
-}
-
-<Clean.div
-  className="c0"
+<StyledComponent
+  forwardedRef={null}
   src="/example.jpg"
 >
   Hello world
-</Clean.div>
+</StyledComponent>
 `;

@@ -1,201 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ErrorMessage /> prop.arrow equals bottom renders correctly 1`] = `
-.c0 {
-  padding: 0.75rem;
-  position: relative;
-  width: 100%;
-  display: block;
-  text-align: left;
-}
-
-.c0:after {
-  content: '';
-  height: 0;
-  width: 0;
-  position: absolute;
-  border: solid transparent;
-  border-width: 0.625rem;
-}
-
-.c0:after {
-  top: 100%;
-  left: 0.75rem;
-  border-top-color: #FCEBCD;
-}
-
-<Text
+<StyledComponent
   arrow="bottom"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
-  className="c0"
-  hidden={false}
-  textStyle="text"
+  forwardedRef={null}
 >
   An error occurred
-</Text>
+</StyledComponent>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals left renders correctly 1`] = `
-.c0 {
-  padding: 0.75rem;
-  position: relative;
-  width: 100%;
-  display: block;
-  text-align: left;
-}
-
-.c0:after {
-  content: '';
-  height: 0;
-  width: 0;
-  position: absolute;
-  border: solid transparent;
-  border-width: 0.625rem;
-}
-
-.c0:after {
-  top: 50%;
-  right: 100%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border-right-color: #FCEBCD;
-}
-
-<Text
+<StyledComponent
   arrow="left"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
-  className="c0"
-  hidden={false}
-  textStyle="text"
+  forwardedRef={null}
 >
   An error occurred
-</Text>
+</StyledComponent>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals right renders correctly 1`] = `
-.c0 {
-  padding: 0.75rem;
-  position: relative;
-  width: 100%;
-  display: block;
-  text-align: left;
-}
-
-.c0:after {
-  content: '';
-  height: 0;
-  width: 0;
-  position: absolute;
-  border: solid transparent;
-  border-width: 0.625rem;
-}
-
-.c0:after {
-  top: 50%;
-  left: 100%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border-left-color: #FCEBCD;
-}
-
-<Text
+<StyledComponent
   arrow="right"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
-  className="c0"
-  hidden={false}
-  textStyle="text"
+  forwardedRef={null}
 >
   An error occurred
-</Text>
+</StyledComponent>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals top renders correctly 1`] = `
-.c0 {
-  padding: 0.75rem;
-  position: relative;
-  width: 100%;
-  display: block;
-  text-align: left;
-}
-
-.c0:after {
-  content: '';
-  height: 0;
-  width: 0;
-  position: absolute;
-  border: solid transparent;
-  border-width: 0.625rem;
-}
-
-.c0:after {
-  bottom: 100%;
-  left: 0.75rem;
-  border-bottom-color: #FCEBCD;
-}
-
-<Text
+<StyledComponent
   arrow="top"
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
-  className="c0"
-  hidden={false}
-  textStyle="text"
+  forwardedRef={null}
 >
   An error occurred
-</Text>
+</StyledComponent>
 `;
 
 exports[`<ErrorMessage /> renders correctly 1`] = `
-.c0 {
-  padding: 0.75rem;
-  position: relative;
-  width: 100%;
-  display: block;
-  text-align: left;
-}
-
-.c0:after {
-  content: '';
-  height: 0;
-  width: 0;
-  position: absolute;
-  border: solid transparent;
-  border-width: 0.625rem;
-}
-
-<Text
+<StyledComponent
   arrow={null}
   bg="ui.errorBackground"
-  blacklist={
-    Array [
-      "arrow",
-    ]
-  }
-  className="c0"
-  hidden={false}
-  textStyle="text"
+  forwardedRef={null}
 >
   An error occurred
-</Text>
+</StyledComponent>
 `;

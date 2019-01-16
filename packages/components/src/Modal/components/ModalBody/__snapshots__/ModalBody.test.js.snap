@@ -8,37 +8,6 @@ exports[`<ModalBody /> renders correctly 1`] = `
   textAlign="center"
 >
   <Text
-    blacklist={
-      Array [
-        "textStyle",
-        "color",
-        "bg",
-        "fontSize",
-        "f",
-        "fontWeight",
-        "letterSpacing",
-        "lineHeight",
-        "m",
-        "mt",
-        "mr",
-        "mb",
-        "ml",
-        "mx",
-        "my",
-        "p",
-        "pt",
-        "pr",
-        "pb",
-        "pl",
-        "px",
-        "py",
-        "textAlign",
-        "align",
-        "textDecoration",
-        "display",
-        "hidden",
-      ]
-    }
     color="text"
     fontSize="xl"
     hidden={false}

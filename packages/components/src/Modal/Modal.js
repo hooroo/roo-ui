@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
-import styled, { injectGlobal } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { themeGet } from 'styled-system';
 import { rem, rgba } from 'polished';
 
@@ -9,7 +9,7 @@ import ModalHeader from './components/ModalHeader';
 import ModalBody from './components/ModalBody';
 import ModalFooter from './components/ModalFooter';
 
-injectGlobal`
+export const ModalGlobalStyle = createGlobalStyle`
   .ReactModal__Body--open { overflow: hidden; }
 `;
 

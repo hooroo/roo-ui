@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { hideVisually } from 'polished';
 import tag from 'clean-tag';
-import { color, hover, fontWeight, themeGet, space } from 'styled-system';
+import { color, fontWeight, themeGet, space } from 'styled-system';
 
 const Link = styled(tag.a)`
   cursor: pointer;
@@ -19,7 +19,6 @@ const Link = styled(tag.a)`
   }
 
   ${color}
-  ${hover}
   ${fontWeight}
   ${space}
 
@@ -37,7 +36,6 @@ const Link = styled(tag.a)`
 
 Link.propTypes = {
   ...color.propTypes,
-  ...hover.propTypes,
   ...fontWeight.propTypes,
   ...space.propTypes,
   hidden: PropTypes.bool,

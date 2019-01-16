@@ -1,6 +1,6 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import { mountWithTheme } from '@roo-ui/test-utils';
 import { axe } from 'jest-axe';
 
 import PasswordInput from '.';
@@ -9,11 +9,11 @@ describe('<PasswordInput />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<PasswordInput />, theme).dive();
+    wrapper = mountWithTheme(<PasswordInput />, theme);
   });
 
   it('has no accessibility errors', async () => {
-    wrapper = shallowWithTheme(
+    wrapper = mountWithTheme(
       <label htmlFor="input">
         Label<PasswordInput id="input" />
       </label>,
@@ -43,7 +43,7 @@ describe('<PasswordInput />', () => {
 
   describe('when visibility is toggled', () => {
     beforeEach(() => {
-      wrapper.setState({ visible: true }).update();
+      wrapper.find('PasswordInput__Toggle').simulate('click');
     });
 
     it('renders correctly', () => {
