@@ -14,6 +14,7 @@ storiesOf('Components|Button', module)
       rounded={boolean('Rounded', false)}
       block={boolean('Block', false)}
       disabled={boolean('Disabled', false)}
+      loading={boolean('Loading', false)}
     >
       Hello world
     </Button>

@@ -13,6 +13,7 @@ storiesOf('Components|OutlineButton', module)
       variant={select('Variant', ['default', 'primary'], 'default')}
       rounded={boolean('Rounded', false)}
       disabled={boolean('Disabled', false)}
+      loading={boolean('Loading', false)}
     >
       Hello world
     </OutlineButton>
