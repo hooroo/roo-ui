@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.58.7"></a>
+## [0.58.7](https://github.com/hooroo/roo-ui/compare/v0.58.6...v0.58.7) (2019-01-22)
+
+
+### Bug Fixes
+
+* **cursors:** Select should have a pointer by default (CH10411) ([#217](https://github.com/hooroo/roo-ui/issues/217)) ([b30a14a](https://github.com/hooroo/roo-ui/commit/b30a14a))
+
+
+
+
 <a name="0.58.6"></a>
 ## [0.58.6](https://github.com/hooroo/roo-ui/compare/v0.58.5...v0.58.6) (2019-01-16)
 
