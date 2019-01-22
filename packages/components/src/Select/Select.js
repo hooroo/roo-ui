@@ -43,6 +43,7 @@ Base.propTypes = Input.propTypes;
 const Select = styled(Input)`
   border-radius: 0;
   padding-right: ${themeGet('space.8')};
+  cursor: pointer;
 `;
 
 Select.defaultProps = {
