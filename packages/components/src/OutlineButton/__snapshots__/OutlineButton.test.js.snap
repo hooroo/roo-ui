@@ -70,28 +70,23 @@ exports[`<OutlineButton /> renders correctly 1`] = `
     forwardedRef={null}
     variant="default"
   >
-    <Component
+    <Clean.button
       className="c0"
       variant="default"
     >
-      <Clean.button
+      <Clean.div
         className="c0"
+        is="button"
         variant="default"
       >
-        <Clean.div
+        <button
           className="c0"
-          is="button"
           variant="default"
         >
-          <button
-            className="c0"
-            variant="default"
-          >
-            Click here
-          </button>
-        </Clean.div>
-      </Clean.button>
-    </Component>
+          Click here
+        </button>
+      </Clean.div>
+    </Clean.button>
   </StyledComponent>
 </OutlineButton>
 `;

@@ -1,21 +1,16 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
 import tag from 'clean-tag';
 import { themeGet, space, color, bgColor, boxShadow, variant } from 'styled-system';
 import get from 'lodash/get';
-import LoadingIndicator from '../LoadingIndicator';
 
 const buttonStyle = variant({ key: 'buttons' });
 
 const getBackground = props =>
   get(bgColor(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor');
 
-const Button = styled(props => (
-  <tag.button {...props} disabled={props.disabled || props.loading}>
-    { props.loading ? <LoadingIndicator size={21} /> : props.children }
-  </tag.button>))`
+const Button = styled(tag.button)`
   display: inline-block;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.6')};
@@ -68,7 +63,6 @@ Button.propTypes = {
   ...boxShadow.propTypes,
   rounded: PropTypes.bool,
   block: PropTypes.bool,
-  loading: PropTypes.bool,
 };
 
 Button.defaultProps = {
