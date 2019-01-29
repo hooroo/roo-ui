@@ -18,6 +18,21 @@ export default (
 );
 ```
 
+## Example with LoadingIndicator
+
+You may wish to conditionally add loading state to a button in some scenarios (i.e. long running tasks initiated via a button click). This can be achieved via composition.  
+For example:
+
+```js
+import { Button, LoadingIndicator } from '@roo-ui/components';
+
+export default (
+  <Button disabled={isLoading}>
+    {isLoading ? <LoadingIndicator color="white" size={21} /> : 'Hello world'}
+  </Button>
+);
+```
+
 ## Properties
 
 | Name       | Description                | Type     | Default  | Required? |
