@@ -1,7 +1,9 @@
 module.exports = (api) => {
-  api.cache(true);
+  const isTest = api.env('test');
 
-  const presets = ['@babel/preset-react', '@babel/preset-env'];
+  const env = isTest ? ['@babel/preset-env', { targets: { node: 'current' } }] : '@babel/preset-env';
+
+  const presets = ['@babel/preset-react', env];
   const plugins = [
     'babel-plugin-styled-components',
     '@babel/plugin-proposal-class-properties',
