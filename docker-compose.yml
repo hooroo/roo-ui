@@ -2,7 +2,7 @@ version: '2'
 
 services:
   app:
-    image: 730011650125.dkr.ecr.ap-southeast-2.amazonaws.com/hooroo-base-node-8.2.1:stable
+    image: 730011650125.dkr.ecr.ap-southeast-2.amazonaws.com/base/node:10.15.0-runtime-20190121
     volumes:
       - .:/application
     working_dir: /application
