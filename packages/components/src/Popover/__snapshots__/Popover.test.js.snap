@@ -45,7 +45,7 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
       <Manager>
         <Reference>
           <InnerReference
-            getReferenceRef={[Function]}
+            setReferenceNode={[Function]}
           >
             <Box>
               <StyledComponent
@@ -141,7 +141,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
       <Manager>
         <Reference>
           <InnerReference
-            getReferenceRef={[Function]}
+            setReferenceNode={[Function]}
           >
             <Box>
               <StyledComponent
