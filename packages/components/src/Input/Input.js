@@ -1,20 +1,31 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { space, themeGet } from 'styled-system';
+import {
+  space,
+  color,
+  fontSize,
+  lineHeight,
+  border,
+  borderColor,
+  themeGet,
+  variant,
+} from 'styled-system';
 import tag from 'clean-tag';
 
+const readonlyVariant = variant({
+  prop: 'readonlyVariant',
+  key: 'readonlyStyles',
+});
+
 const Input = styled(tag)`
+  ${space}
+  ${color}
+  ${fontSize}
+  ${lineHeight}
+  ${border}
+  ${borderColor}
   display: block;
   width: 100%;
-  margin: 0;
-  margin-bottom: ${themeGet('space.3')};
-  padding: ${themeGet('space.3')} ${themeGet('space.4')};
-  font-size: ${themeGet('fontSizes.base')};
-  line-height: ${themeGet('lineHeights.normal')};
-  color: ${themeGet('colors.greys.charcoal')};
-  background-color: ${themeGet('colors.white')};
-  border: ${themeGet('borders.2')};
-  border-color: ${themeGet('colors.greys.alto')};
   outline: 0;
   transition: border-color ${themeGet('transitions.default')};
   appearance: none;
@@ -29,9 +40,7 @@ const Input = styled(tag)`
   }
 
   &[readonly] {
-    border-color: transparent;
-    background: transparent;
-    padding-left: 0;
+    ${readonlyVariant}
   }
 
   ::placeholder {
@@ -51,18 +60,32 @@ const Input = styled(tag)`
   ${props => props.error && css`
     border-color: ${themeGet('colors.ui.error')};
   `}
-
-  ${space};
 `;
 
 Input.propTypes = {
   ...space.propTypes,
+  ...color.propTypes,
+  ...fontSize.propTypes,
+  ...lineHeight.propTypes,
+  ...border.propTypes,
+  ...borderColor.propTypes,
   error: PropTypes.bool,
   underline: PropTypes.bool,
+  readonlyVariant: PropTypes.string,
 };
 
 Input.defaultProps = {
   is: 'input',
+  mb: 3,
+  py: 3,
+  px: 4,
+  bg: 'white',
+  color: 'greys.charcoal',
+  fontSize: 'base',
+  lineHeight: 'normal',
+  border: 2,
+  borderColor: 'greys.alto',
+  readonlyVariant: 'naked',
   blacklist: Object.keys(Input.propTypes),
 };
 

@@ -2,9 +2,15 @@
 
 exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   is="input"
   keepCharPositions={true}
+  lineHeight="normal"
   mask={
     Array [
       /\\[0-2\\]/,
@@ -15,17 +21,27 @@ exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
       " AEST",
     ]
   }
+  mb={3}
   placeholder="00:00 AEST"
   placeholderChar=" "
+  px={4}
+  py={3}
+  readonlyVariant="naked"
   render={[Function]}
 />
 `;
 
 exports[`<MaskedInput /> renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   id="postcode"
   is="input"
+  lineHeight="normal"
   mask={
     Array [
       /\\\\d/,
@@ -34,7 +50,11 @@ exports[`<MaskedInput /> renders correctly 1`] = `
       /\\\\d/,
     ]
   }
+  mb={3}
   placeholder="Enter postcode"
+  px={4}
+  py={3}
+  readonlyVariant="naked"
   render={[Function]}
 />
 `;

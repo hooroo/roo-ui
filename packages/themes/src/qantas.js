@@ -236,6 +236,18 @@ const opacity = {
   disabled: 0.7,
 };
 
+const readonlyStyles = {
+  naked: {
+    borderColor: 'transparent',
+    background: 'transparent',
+    paddingLeft: 0,
+  },
+  dimmed: {
+    background: colors.greys.porcelain,
+    color: colors.greys.steel,
+  },
+};
+
 export default {
   gutters,
   colors,
@@ -256,4 +268,5 @@ export default {
   buttons,
   alertStyles,
   opacity,
+  readonlyStyles,
 };
