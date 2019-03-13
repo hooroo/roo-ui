@@ -4,6 +4,8 @@ exports[`<Label /> hidden renders correctly 1`] = `
 <StyledComponent
   forwardedRef={null}
   hidden={true}
+  m={0}
+  mb={3}
   textStyle="label"
 >
   Hello world
@@ -14,6 +16,8 @@ exports[`<Label /> renders correctly 1`] = `
 <StyledComponent
   forwardedRef={null}
   hidden={false}
+  m={0}
+  mb={3}
   textStyle="label"
 >
   Hello world
