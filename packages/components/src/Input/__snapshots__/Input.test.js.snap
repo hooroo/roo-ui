@@ -13,7 +13,6 @@ exports[`<Input /> renders correctly 1`] = `
   mb={3}
   px={4}
   py={3}
-  readonlyVariant="naked"
 />
 `;
 
@@ -30,7 +29,6 @@ exports[`<Input /> underline renders correctly 1`] = `
   mb={3}
   px={4}
   py={3}
-  readonlyVariant="naked"
   underline={true}
 />
 `;

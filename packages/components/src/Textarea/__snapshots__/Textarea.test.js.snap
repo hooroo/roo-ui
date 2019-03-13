@@ -13,7 +13,6 @@ exports[`<Textarea /> renders correctly 1`] = `
   mb={3}
   px={4}
   py={3}
-  readonlyVariant="naked"
   rows={6}
 >
   Hello World

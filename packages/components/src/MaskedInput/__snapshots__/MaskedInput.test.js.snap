@@ -26,7 +26,6 @@ exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
   placeholderChar=" "
   px={4}
   py={3}
-  readonlyVariant="naked"
   render={[Function]}
 />
 `;
@@ -54,7 +53,6 @@ exports[`<MaskedInput /> renders correctly 1`] = `
   placeholder="Enter postcode"
   px={4}
   py={3}
-  readonlyVariant="naked"
   render={[Function]}
 />
 `;

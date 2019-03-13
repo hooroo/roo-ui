@@ -14,7 +14,6 @@ exports[`<Select /> disabled renders correctly 1`] = `
   mb={3}
   px={4}
   py={3}
-  readonlyVariant="naked"
 >
   Options
 </StyledComponent>
@@ -34,7 +33,6 @@ exports[`<Select /> readOnly renders correctly 1`] = `
   px={4}
   py={3}
   readOnly={true}
-  readonlyVariant="naked"
 >
   Options
 </StyledComponent>
@@ -53,7 +51,6 @@ exports[`<Select /> renders correctly 1`] = `
   mb={3}
   px={4}
   py={3}
-  readonlyVariant="naked"
 >
   Options
 </StyledComponent>
@@ -72,7 +69,6 @@ exports[`<Select /> underline renders correctly 1`] = `
   mb={3}
   px={4}
   py={3}
-  readonlyVariant="naked"
   underline={true}
 >
   Options

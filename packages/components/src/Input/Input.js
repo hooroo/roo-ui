@@ -8,14 +8,8 @@ import {
   border,
   borderColor,
   themeGet,
-  variant,
 } from 'styled-system';
 import tag from 'clean-tag';
-
-const readonlyVariant = variant({
-  prop: 'readonlyVariant',
-  key: 'readonlyStyles',
-});
 
 const Input = styled(tag)`
   ${space}
@@ -37,10 +31,6 @@ const Input = styled(tag)`
   &:disabled {
     opacity: ${themeGet('opacity.disabled')};
     cursor: not-allowed;
-  }
-
-  &[readonly] {
-    ${readonlyVariant}
   }
 
   ::placeholder {
@@ -85,7 +75,6 @@ Input.defaultProps = {
   lineHeight: 'normal',
   border: 2,
   borderColor: 'greys.alto',
-  readonlyVariant: 'naked',
   blacklist: Object.keys(Input.propTypes),
 };
 
