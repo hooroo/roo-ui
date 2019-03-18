@@ -36,8 +36,12 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   transition: none;
 }
 
-.c0:hover:not(:disabled) {
+.c0:hover {
   background-color: #181818;
+}
+
+.c0:hover:disabled {
+  background-color: #323232;
 }
 
 .c0:focus {

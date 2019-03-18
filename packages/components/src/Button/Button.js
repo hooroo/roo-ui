@@ -5,10 +5,12 @@ import tag from 'clean-tag';
 import { themeGet, space, color, bgColor, boxShadow, variant } from 'styled-system';
 import get from 'lodash/get';
 
+const FALLBACK_BG_COLOR = '#000';
+
 const buttonStyle = variant({ key: 'buttons' });
 
 const getBackground = props =>
-  get(bgColor(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor');
+  get(bgColor(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor') || FALLBACK_BG_COLOR;
 
 const Button = styled(tag.button)`
   display: inline-block;
@@ -34,8 +36,12 @@ const Button = styled(tag.button)`
   ${color}
   ${boxShadow}
 
-  &:hover:not(:disabled) {
+  &:hover {
     background-color: ${props => darken(0.1, getBackground(props))};
+  }
+
+  &:hover:disabled {
+    background-color: ${props => getBackground(props)};
   }
 
   &:focus {
