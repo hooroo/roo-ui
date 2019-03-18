@@ -150,7 +150,6 @@ exports[`<Modal /> renders correctly 1`] = `
               class="c0"
             >
               <div
-                aria-modal="true"
                 class="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
               >
                 <div
@@ -211,7 +210,6 @@ exports[`<Modal /> renders correctly 1`] = `
             title="Test Modal"
           >
             <div
-              aria-modal="true"
               className="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
               onClick={[Function]}
               onMouseDown={[Function]}

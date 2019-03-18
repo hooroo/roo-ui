@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { themeGet, style } from 'styled-system';
 import tag from 'clean-tag';
 
-import { ListItem } from '..';
+import ListItem from '../ListItem';
 
 const columns = style({
   prop: 'columns',
