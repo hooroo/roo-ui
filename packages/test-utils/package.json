@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/test-utils",
-  "version": "0.58.5",
+  "version": "0.58.10",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
