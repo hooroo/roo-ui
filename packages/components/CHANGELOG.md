@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.58.12"></a>
+## [0.58.12](https://github.com/hooroo/roo-ui/compare/v0.58.11...v0.58.12) (2019-03-19)
+
+
+
+
+**Note:** Version bump only for package @roo-ui/components
+
 <a name="0.58.11"></a>
 ## [0.58.11](https://github.com/hooroo/roo-ui/compare/v0.58.10...v0.58.11) (2019-03-18)
 
