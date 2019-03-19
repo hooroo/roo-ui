@@ -1,5 +1,5 @@
 import React from 'react';
-import { parse } from 'date-fns';
+import parse from 'date-fns/parse';
 import { qantas as theme } from '@roo-ui/themes';
 import { mountWithTheme } from '@roo-ui/test-utils';
 
