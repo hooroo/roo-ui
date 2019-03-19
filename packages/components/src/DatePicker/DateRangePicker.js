@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Dayzed from 'dayzed';
-import { subDays, differenceInCalendarMonths, startOfDay, endOfDay, isSameDay } from 'date-fns';
+import subDays from 'date-fns/sub_days';
+import differenceInCalendarMonths from 'date-fns/difference_in_calendar_months';
+import startOfDay from 'date-fns/start_of_day';
+import endOfDay from 'date-fns/end_of_day';
+import isSameDay from 'date-fns/is_same_day';
 import throttle from 'lodash/fp/throttle';
 
 import { Flex, Box } from '../';

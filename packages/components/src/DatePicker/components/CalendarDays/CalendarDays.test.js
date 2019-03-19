@@ -1,7 +1,7 @@
 import React from 'react';
 import { qantas as theme } from '@roo-ui/themes';
 import { shallowWithTheme } from '@roo-ui/test-utils';
-import { addDays } from 'date-fns';
+import addDays from 'date-fns/add_days';
 
 import CalendarDays from '.';
 
