@@ -1,4 +1,4 @@
-import { isWithinRange } from 'date-fns';
+import isWithinRange from 'date-fns/is_within_range';
 
 const isDateInRange = ({
   startDate, endDate, isSettingStartDate, hoveredDate, date,

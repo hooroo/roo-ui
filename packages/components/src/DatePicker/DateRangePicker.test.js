@@ -1,5 +1,6 @@
 import React from 'react';
-import { parse, format } from 'date-fns';
+import parse from 'date-fns/parse';
+import format from 'date-fns/format';
 import range from 'lodash/range';
 import { qantas as theme } from '@roo-ui/themes';
 import { mountWithTheme } from '@roo-ui/test-utils';
