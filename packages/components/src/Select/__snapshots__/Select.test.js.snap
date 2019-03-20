@@ -2,9 +2,18 @@
 
 exports[`<Select /> disabled renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
   disabled={true}
+  fontSize="base"
   forwardedRef={null}
   is={[Function]}
+  lineHeight="normal"
+  mb={3}
+  px={4}
+  py={3}
 >
   Options
 </StyledComponent>
@@ -12,8 +21,17 @@ exports[`<Select /> disabled renders correctly 1`] = `
 
 exports[`<Select /> readOnly renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   is={[Function]}
+  lineHeight="normal"
+  mb={3}
+  px={4}
+  py={3}
   readOnly={true}
 >
   Options
@@ -22,8 +40,17 @@ exports[`<Select /> readOnly renders correctly 1`] = `
 
 exports[`<Select /> renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   is={[Function]}
+  lineHeight="normal"
+  mb={3}
+  px={4}
+  py={3}
 >
   Options
 </StyledComponent>
@@ -31,8 +58,17 @@ exports[`<Select /> renders correctly 1`] = `
 
 exports[`<Select /> underline renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   is={[Function]}
+  lineHeight="normal"
+  mb={3}
+  px={4}
+  py={3}
   underline={true}
 >
   Options

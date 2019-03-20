@@ -2,8 +2,17 @@
 
 exports[`<Textarea /> renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   is="textarea"
+  lineHeight="normal"
+  mb={3}
+  px={4}
+  py={3}
   rows={6}
 >
   Hello World
