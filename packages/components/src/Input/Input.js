@@ -61,7 +61,6 @@ Input.propTypes = {
   ...borderColor.propTypes,
   error: PropTypes.bool,
   underline: PropTypes.bool,
-  readonlyVariant: PropTypes.string,
 };
 
 Input.defaultProps = {
