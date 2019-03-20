@@ -6,7 +6,7 @@ import cleanElement from 'clean-element';
 
 import { Input, Icon, NakedButton } from '..';
 
-const CleanInput = cleanElement('input');
+const CleanInput = cleanElement(Input);
 CleanInput.propTypes = Input.propTypes;
 CleanInput.displayName = 'PasswordInput__Input';
 

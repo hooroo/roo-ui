@@ -2,15 +2,33 @@
 
 exports[`<Input /> renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   is="input"
+  lineHeight="normal"
+  mb={3}
+  px={4}
+  py={3}
 />
 `;
 
 exports[`<Input /> underline renders correctly 1`] = `
 <StyledComponent
+  bg="white"
+  border={2}
+  borderColor="greys.alto"
+  color="greys.charcoal"
+  fontSize="base"
   forwardedRef={null}
   is="input"
+  lineHeight="normal"
+  mb={3}
+  px={4}
+  py={3}
   underline={true}
 />
 `;
