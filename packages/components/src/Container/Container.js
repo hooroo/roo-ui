@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import tag from 'clean-tag';
 import { maxWidth, space, themeGet } from 'styled-system';
 
 const gutter = (props) => {
@@ -31,7 +30,7 @@ const gutter = (props) => {
   });
 };
 
-const Container = styled(tag)`
+const Container = styled('div')`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -52,9 +51,10 @@ Container.propTypes = {
 };
 
 Container.defaultProps = {
-  blacklist: Object.keys(Container.propTypes),
   maxWidth: 'default',
   gutter: 'default',
 };
+
+Container.displayName = 'Container';
 
 export default Container;

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import tag from 'clean-tag';
+import { css } from 'styled-components';
 import { hideVisually } from 'polished';
 import {
   textStyle,
@@ -14,13 +13,28 @@ import {
   style,
   display,
 } from 'styled-system';
+import { styledOmitProps } from '../../lib';
 
 const textDecoration = style({
   prop: 'textDecoration',
   cssProperty: 'textDecoration',
 });
 
-const Text = styled(tag.span)`
+const propTypes = {
+  ...textStyle.propTypes,
+  ...color.propTypes,
+  ...fontSize.propTypes,
+  ...fontWeight.propTypes,
+  ...letterSpacing.propTypes,
+  ...lineHeight.propTypes,
+  ...space.propTypes,
+  ...textAlign.propTypes,
+  ...textDecoration.propTypes,
+  ...display.propTypes,
+  hidden: PropTypes.bool,
+};
+
+const Text = styledOmitProps('span', { omit: Object.keys(propTypes) })`
   ${textStyle}
   ${color}
   ${fontSize}
@@ -38,24 +52,13 @@ const Text = styled(tag.span)`
 }
 `;
 
-Text.propTypes = {
-  ...textStyle.propTypes,
-  ...color.propTypes,
-  ...fontSize.propTypes,
-  ...fontWeight.propTypes,
-  ...letterSpacing.propTypes,
-  ...lineHeight.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...textDecoration.propTypes,
-  ...display.propTypes,
-  hidden: PropTypes.bool,
-};
+Text.propTypes = propTypes;
 
 Text.defaultProps = {
   hidden: false,
   textStyle: 'text',
-  blacklist: Object.keys(Text.propTypes),
 };
+
+Text.displayName = 'Text';
 
 export default Text;

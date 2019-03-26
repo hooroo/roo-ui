@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 import { hideVisually } from 'polished';
-import tag from 'clean-tag';
 import { color, fontWeight, themeGet, space } from 'styled-system';
+import { styledOmitProps } from '../../lib';
 
-const Link = styled(tag.a)`
+const Link = styledOmitProps('a', { omit: ['hidden', 'underline'] })`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -43,9 +43,10 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
-  blacklist: Object.keys(Link.propTypes),
   underline: false,
   hidden: false,
 };
+
+Link.displayName = 'Link';
 
 export default Link;

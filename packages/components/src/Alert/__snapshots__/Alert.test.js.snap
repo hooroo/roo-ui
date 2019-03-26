@@ -163,28 +163,19 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <StyledComponent
                                   className="c5"
                                   hidden={false}
                                   mb={0}
                                   textAlign="left"
                                   textStyle="text"
                                 >
-                                  <Clean.div
+                                  <span
                                     className="c5"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
                                   >
-                                    <span
-                                      className="c5"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                    Hello world
+                                  </span>
+                                </StyledComponent>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -366,28 +357,19 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <StyledComponent
                                   className="c5"
                                   hidden={false}
                                   mb={0}
                                   textAlign="left"
                                   textStyle="text"
                                 >
-                                  <Clean.div
+                                  <span
                                     className="c5"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
                                   >
-                                    <span
-                                      className="c5"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                    Hello world
+                                  </span>
+                                </StyledComponent>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -569,28 +551,19 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <StyledComponent
                                   className="c5"
                                   hidden={false}
                                   mb={0}
                                   textAlign="left"
                                   textStyle="text"
                                 >
-                                  <Clean.div
+                                  <span
                                     className="c5"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
                                   >
-                                    <span
-                                      className="c5"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                    Hello world
+                                  </span>
+                                </StyledComponent>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -772,28 +745,19 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <StyledComponent
                                   className="c5"
                                   hidden={false}
                                   mb={0}
                                   textAlign="left"
                                   textStyle="text"
                                 >
-                                  <Clean.div
+                                  <span
                                     className="c5"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
                                   >
-                                    <span
-                                      className="c5"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                    Hello world
+                                  </span>
+                                </StyledComponent>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -975,28 +939,19 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <StyledComponent
                                   className="c5"
                                   hidden={false}
                                   mb={0}
                                   textAlign="left"
                                   textStyle="text"
                                 >
-                                  <Clean.div
+                                  <span
                                     className="c5"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
                                   >
-                                    <span
-                                      className="c5"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                    Hello world
+                                  </span>
+                                </StyledComponent>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -1178,28 +1133,19 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <StyledComponent
                                   className="c5"
                                   hidden={false}
                                   mb={0}
                                   textAlign="left"
                                   textStyle="text"
                                 >
-                                  <Clean.div
+                                  <span
                                     className="c5"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
                                   >
-                                    <span
-                                      className="c5"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                    Hello world
+                                  </span>
+                                </StyledComponent>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -1281,71 +1227,56 @@ exports[`<Alert /> contained renders correctly 1`] = `
                 gutter="default"
                 maxWidth="default"
               >
-                <Clean.div
+                <div
                   className="c1"
-                  gutter="default"
-                  maxWidth="default"
                 >
-                  <div
-                    className="c1"
+                  <Flex
+                    py={4}
                   >
-                    <Flex
+                    <StyledComponent
+                      forwardedRef={null}
                       py={4}
                     >
-                      <StyledComponent
-                        forwardedRef={null}
+                      <Clean.div
+                        className="c2"
                         py={4}
                       >
-                        <Clean.div
+                        <div
                           className="c2"
-                          py={4}
                         >
-                          <div
-                            className="c2"
+                          <Text
+                            hidden={false}
+                            mb={0}
+                            textAlign="left"
+                            textStyle="text"
                           >
-                            <Text
+                            <StyledComponent
+                              forwardedRef={null}
                               hidden={false}
                               mb={0}
                               textAlign="left"
                               textStyle="text"
                             >
                               <StyledComponent
-                                forwardedRef={null}
+                                className="c3"
                                 hidden={false}
                                 mb={0}
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <span
                                   className="c3"
-                                  hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <Clean.div
-                                    className="c3"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
-                                  >
-                                    <span
-                                      className="c3"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                  Hello world
+                                </span>
                               </StyledComponent>
-                            </Text>
-                          </div>
-                        </Clean.div>
-                      </StyledComponent>
-                    </Flex>
-                  </div>
-                </Clean.div>
+                            </StyledComponent>
+                          </Text>
+                        </div>
+                      </Clean.div>
+                    </StyledComponent>
+                  </Flex>
+                </div>
               </StyledComponent>
             </Container>
           </div>
@@ -1447,28 +1378,19 @@ exports[`<Alert /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <Clean.span
+                                <StyledComponent
                                   className="c3"
                                   hidden={false}
                                   mb={0}
                                   textAlign="left"
                                   textStyle="text"
                                 >
-                                  <Clean.div
+                                  <span
                                     className="c3"
-                                    hidden={false}
-                                    is="span"
-                                    mb={0}
-                                    textAlign="left"
-                                    textStyle="text"
                                   >
-                                    <span
-                                      className="c3"
-                                    >
-                                      Hello world
-                                    </span>
-                                  </Clean.div>
-                                </Clean.span>
+                                    Hello world
+                                  </span>
+                                </StyledComponent>
                               </StyledComponent>
                             </Text>
                           </div>

@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
+import { styledOmitProps } from '../../../../lib';
 
 import { NakedButton, Box } from '../../../';
 
-const DayWrapper = styled(Box)`
+const DayWrapper = styledOmitProps(Box, { omit: ['selected', 'selectable'] })`
   flex: 1 1 auto;
   width: calc(100% / 7);
   margin: 0 -1px -1px 0;
@@ -38,10 +39,9 @@ const DayWrapper = styled(Box)`
 
 DayWrapper.defaultProps = {
   ...Box.defaultProps,
-  blacklist: [...Object.keys(Box.propTypes), 'selected', 'selectable'],
 };
 
-const Button = styled(NakedButton)`
+const Button = styledOmitProps(NakedButton, { omit: ['selected', 'selectable', 'highlighted'] })`
   position: absolute;
   left: 0;
   top: 0;
@@ -131,7 +131,6 @@ const Button = styled(NakedButton)`
 Button.defaultProps = {
   ...NakedButton.defaultProps,
   disabled: PropTypes.bool,
-  blacklist: [...Object.keys(NakedButton.propTypes), 'selectable', 'highlighted'],
 };
 
 export const CalendarDay = ({ children, selected, ...rest }) => (

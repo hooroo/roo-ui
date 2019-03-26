@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 import { rem } from 'polished';
-
 import Text from '../Text';
+import { styledOmitProps } from '../../lib';
 
-const ErrorMessage = styled(Text)`
+const ErrorMessage = styledOmitProps(Text, { omit: 'arrow' })`
   padding: ${themeGet('space.3')};
   position: relative;
   width: 100%;
@@ -63,7 +63,6 @@ ErrorMessage.propTypes = {
 ErrorMessage.defaultProps = {
   bg: 'ui.errorBackground',
   arrow: null,
-  blacklist: Object.keys(ErrorMessage.propTypes),
 };
 
 export default ErrorMessage;

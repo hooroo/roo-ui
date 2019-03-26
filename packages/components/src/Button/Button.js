@@ -1,9 +1,9 @@
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
-import tag from 'clean-tag';
 import { themeGet, space, color, bgColor, boxShadow, variant } from 'styled-system';
 import get from 'lodash/get';
+import { styledOmitProps } from '../../lib';
 
 const FALLBACK_BG_COLOR = '#000';
 
@@ -12,7 +12,7 @@ const buttonStyle = variant({ key: 'buttons' });
 const getBackground = props =>
   get(bgColor(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor') || FALLBACK_BG_COLOR;
 
-const Button = styled(tag.button)`
+const Button = styledOmitProps('button', { omit: ['rounded', 'block'] })`
   display: inline-block;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.6')};
@@ -73,7 +73,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   variant: 'default',
-  blacklist: Object.keys(Button.propTypes),
 };
 
 export default Button;

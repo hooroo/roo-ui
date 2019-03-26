@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import styled, { css } from 'styled-components';
-
+import { css } from 'styled-components';
 import { Box, Text } from '../../../';
 import CalendarWeekdays from '../CalendarWeekdays';
 import CalendarDays from '../CalendarDays';
+import { styledOmitProps } from '../../../../lib';
 
-const MonthWrapper = styled(Box)`
+const MonthWrapper = styledOmitProps(Box, { omit: ['monthsToDisplay', 'stacked'] })`
   text-align: center;
   padding: 0 ${themeGet('space.4')};
   width: ${props => `${100 / props.monthsToDisplay}%`};
@@ -50,7 +50,6 @@ const CalendarMonth = ({
 
 MonthWrapper.defaultProps = {
   ...Box.defaultProps,
-  blacklist: [...Object.keys(Box.propTypes), 'monthsToDisplay', 'stacked'],
 };
 
 CalendarMonth.defaultProps = {

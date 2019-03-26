@@ -1,6 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OutlineButton /> primary renders correctly 1`] = `undefined`;
+exports[`<OutlineButton /> primary renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.125em;
+  -moz-letter-spacing: 0.125em;
+  -ms-letter-spacing: 0.125em;
+  letter-spacing: 0.125em;
+  line-height: 1.35;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: white;
+  background-color: #E40000;
+  background-color: transparent;
+  border-color: #E40000;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c0:hover {
+  background-color: #b10000;
+}
+
+.c0:hover:disabled {
+  background-color: #E40000;
+}
+
+.c0:focus {
+  box-shadow: 0 0 2px 2px #999999;
+}
+
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.c0:not(:hover) {
+  color: #E40000;
+}
+
+.c0:hover:not(:disabled) {
+  background-color: #E40000;
+  border-color: #E40000;
+}
+
+.c0:disabled {
+  color: #999999;
+  border-color: #999999;
+}
+
+<OutlineButton
+  variant="primary"
+>
+  <StyledComponent
+    forwardedRef={null}
+    variant="primary"
+  >
+    <StyledComponent
+      className="c0"
+      variant="primary"
+    >
+      <button
+        className="c0"
+        variant="primary"
+      >
+        Hello world
+      </button>
+    </StyledComponent>
+  </StyledComponent>
+</OutlineButton>
+`;
 
 exports[`<OutlineButton /> renders correctly 1`] = `
 .c0 {
@@ -74,25 +159,92 @@ exports[`<OutlineButton /> renders correctly 1`] = `
     forwardedRef={null}
     variant="default"
   >
-    <Clean.button
+    <StyledComponent
       className="c0"
       variant="default"
     >
-      <Clean.div
+      <button
         className="c0"
-        is="button"
         variant="default"
       >
-        <button
-          className="c0"
-          variant="default"
-        >
-          Click here
-        </button>
-      </Clean.div>
-    </Clean.button>
+        Click here
+      </button>
+    </StyledComponent>
   </StyledComponent>
 </OutlineButton>
 `;
 
-exports[`<OutlineButton /> rounded renders correctly 1`] = `undefined`;
+exports[`<OutlineButton /> rounded renders correctly 1`] = `
+.c0 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.125em;
+  -moz-letter-spacing: 0.125em;
+  -ms-letter-spacing: 0.125em;
+  letter-spacing: 0.125em;
+  line-height: 1.35;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c0:hover {
+  background-color: #000;
+}
+
+.c0:hover:disabled {
+  background-color: #000;
+}
+
+.c0:focus {
+  box-shadow: 0 0 2px 2px #999999;
+}
+
+.c0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.c0:disabled {
+  color: #999999;
+  border-color: #999999;
+}
+
+<OutlineButton
+  variant="rounded"
+>
+  <StyledComponent
+    forwardedRef={null}
+    variant="rounded"
+  >
+    <StyledComponent
+      className="c0"
+      variant="rounded"
+    >
+      <button
+        className="c0"
+        variant="rounded"
+      >
+        Hello world
+      </button>
+    </StyledComponent>
+  </StyledComponent>
+</OutlineButton>
+`;
