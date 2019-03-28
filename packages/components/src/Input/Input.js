@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 import {
   space,
   color,
@@ -9,9 +9,9 @@ import {
   borderColor,
   themeGet,
 } from 'styled-system';
-import tag from 'clean-tag';
+import { styledOmitProps } from '../../lib';
 
-const Input = styled(tag)`
+const Input = styledOmitProps('input', { omit: ['mb', 'py', 'px', 'bg', 'color', 'fontSize', 'lineHeight', 'border', 'borderColor'] })`
   ${space}
   ${color}
   ${fontSize}
@@ -64,7 +64,6 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
-  is: 'input',
   mb: 3,
   py: 3,
   px: 4,
@@ -74,7 +73,6 @@ Input.defaultProps = {
   lineHeight: 'normal',
   border: 2,
   borderColor: 'greys.alto',
-  blacklist: Object.keys(Input.propTypes),
 };
 
 export default Input;

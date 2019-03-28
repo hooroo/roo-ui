@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 import { themeGet, style } from 'styled-system';
-import tag from 'clean-tag';
+import { styledOmitProps } from '../../lib';
 
 import ListItem from '../ListItem';
 
@@ -11,8 +11,8 @@ const columns = style({
   getter: n => `${100 / n}%`,
 });
 
-const List = styled(tag).attrs(props => ({
-  is: props.ordered ? 'ol' : 'ul',
+const List = styledOmitProps('div', { omit: ['flush', 'columns', 'ordered'] }).attrs(props => ({
+  as: props.ordered ? 'ol' : 'ul',
 }))`
   margin: ${themeGet('space.4')} 0;
   padding-left: ${themeGet('space.8')};
@@ -46,7 +46,6 @@ List.propTypes = {
 };
 
 List.defaultProps = {
-  blacklist: Object.keys(List.propTypes),
   ordered: false,
   flush: false,
   columns: null,
