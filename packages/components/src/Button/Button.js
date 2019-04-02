@@ -12,7 +12,7 @@ const buttonStyle = variant({ key: 'buttons' });
 const getBackground = props =>
   get(bgColor(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor') || FALLBACK_BG_COLOR;
 
-const Button = styledOmitProps('button', { omit: ['rounded', 'block'] })`
+const Button = styledOmitProps('button', { omit: ['variant', 'rounded', 'block'] })`
   display: inline-block;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.6')};

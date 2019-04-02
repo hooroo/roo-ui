@@ -25,3 +25,15 @@ it('does not render valid html attributes that are filtered', () => {
   expect(wrapper.find('span').prop('color')).toBeUndefined();
   expect(domNode.getAttribute('color')).toEqual(null);
 });
+
+fit('does not render styled-system attributes', () => {
+  const Span = styledOmitProps('span', { omit: ['color'] })``;
+  const wrapper = mount(<Span color="red" mb={12} p={4}>Text</Span>);
+
+  expect(wrapper.find('span').prop('mb')).toBeUndefined();
+  expect(wrapper.find('span').prop('p')).toBeUndefined();
+
+  const domNode = wrapper.find('span').getDOMNode();
+  expect(domNode.getAttribute('mb')).toEqual(null);
+  expect(domNode.getAttribute('p')).toEqual(null);
+});
