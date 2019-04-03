@@ -5,7 +5,7 @@ import { css } from 'styled-components';
 import { Box, Text } from '../../../';
 import CalendarWeekdays from '../CalendarWeekdays';
 import CalendarDays from '../CalendarDays';
-import { styledOmitProps } from '../../../../lib';
+import { styledOmitProps } from '../../../styledOmitProps';
 
 const MonthWrapper = styledOmitProps(Box, { omit: ['monthsToDisplay', 'stacked'] })`
   text-align: center;

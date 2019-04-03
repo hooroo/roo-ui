@@ -35,3 +35,4 @@ export { default as Select } from './Select';
 export { default as Popover } from './Popover';
 export { DatePicker } from './DatePicker';
 export { DateRangePicker } from './DatePicker';
+export { default as styledOmitProps } from './styledOmitProps';

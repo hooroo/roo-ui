@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
-import { styledOmitProps } from '../../../../lib';
+import { styledOmitProps } from '../../../styledOmitProps';
 
 import { NakedButton, Box } from '../../../';
 
-const DayWrapper = styledOmitProps(Box, { omit: ['selected', 'selectable'] })`
+const DayWrapper = styledOmitProps(Box, { omit: ['selected'] })`
   flex: 1 1 auto;
   width: calc(100% / 7);
   margin: 0 -1px -1px 0;
@@ -41,7 +41,7 @@ DayWrapper.defaultProps = {
   ...Box.defaultProps,
 };
 
-const Button = styledOmitProps(NakedButton, { omit: ['selected', 'selectable', 'highlighted'] })`
+const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
   position: absolute;
   left: 0;
   top: 0;

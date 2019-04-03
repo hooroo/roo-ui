@@ -163,19 +163,12 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <StyledComponent
+                                <span
                                   className="c5"
                                   hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <span
-                                    className="c5"
-                                  >
-                                    Hello world
-                                  </span>
-                                </StyledComponent>
+                                  Hello world
+                                </span>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -357,19 +350,12 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <StyledComponent
+                                <span
                                   className="c5"
                                   hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <span
-                                    className="c5"
-                                  >
-                                    Hello world
-                                  </span>
-                                </StyledComponent>
+                                  Hello world
+                                </span>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -551,19 +537,12 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <StyledComponent
+                                <span
                                   className="c5"
                                   hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <span
-                                    className="c5"
-                                  >
-                                    Hello world
-                                  </span>
-                                </StyledComponent>
+                                  Hello world
+                                </span>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -745,19 +724,12 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <StyledComponent
+                                <span
                                   className="c5"
                                   hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <span
-                                    className="c5"
-                                  >
-                                    Hello world
-                                  </span>
-                                </StyledComponent>
+                                  Hello world
+                                </span>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -939,19 +911,12 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <StyledComponent
+                                <span
                                   className="c5"
                                   hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <span
-                                    className="c5"
-                                  >
-                                    Hello world
-                                  </span>
-                                </StyledComponent>
+                                  Hello world
+                                </span>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -1133,19 +1098,12 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <StyledComponent
+                                <span
                                   className="c5"
                                   hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <span
-                                    className="c5"
-                                  >
-                                    Hello world
-                                  </span>
-                                </StyledComponent>
+                                  Hello world
+                                </span>
                               </StyledComponent>
                             </Text>
                           </div>
@@ -1257,19 +1215,12 @@ exports[`<Alert /> contained renders correctly 1`] = `
                               textAlign="left"
                               textStyle="text"
                             >
-                              <StyledComponent
+                              <span
                                 className="c3"
                                 hidden={false}
-                                mb={0}
-                                textAlign="left"
-                                textStyle="text"
                               >
-                                <span
-                                  className="c3"
-                                >
-                                  Hello world
-                                </span>
-                              </StyledComponent>
+                                Hello world
+                              </span>
                             </StyledComponent>
                           </Text>
                         </div>
@@ -1378,19 +1329,12 @@ exports[`<Alert /> renders correctly 1`] = `
                                 textAlign="left"
                                 textStyle="text"
                               >
-                                <StyledComponent
+                                <span
                                   className="c3"
                                   hidden={false}
-                                  mb={0}
-                                  textAlign="left"
-                                  textStyle="text"
                                 >
-                                  <span
-                                    className="c3"
-                                  >
-                                    Hello world
-                                  </span>
-                                </StyledComponent>
+                                  Hello world
+                                </span>
                               </StyledComponent>
                             </Text>
                           </div>

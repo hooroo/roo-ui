@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { space, size, height, width } from 'styled-system';
-import { styledOmitProps } from '../../lib';
 
-const Image = styledOmitProps('img', { omit: 'inline' })`
+const Image = styled('img')`
   display: block;
   max-width: 100%;
   height: auto;

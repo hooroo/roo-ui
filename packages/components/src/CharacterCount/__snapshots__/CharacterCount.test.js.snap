@@ -24,7 +24,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
     value="Hello world"
   >
     <Base
-      className="c0"
+      className="-Base c0"
       fontSize="sm"
       hidden={false}
       limit={64}
@@ -32,13 +32,13 @@ exports[`<CharacterCount /> renders correctly 1`] = `
       value="Hello world"
     >
       <Cleaned
-        className="c0"
+        className="-Base c0"
         fontSize="sm"
         hidden={false}
         textStyle="text"
       >
         <span
-          className="c0"
+          className="-Base c0"
         >
           53
         </span>

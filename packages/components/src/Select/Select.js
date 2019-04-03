@@ -48,7 +48,7 @@ const Select = styled(Input)`
 
 Select.defaultProps = {
   ...Select.defaultProps,
-  is: Base,
+  as: Base,
 };
 
 export default Select;

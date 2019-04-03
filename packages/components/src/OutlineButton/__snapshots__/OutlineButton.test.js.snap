@@ -72,17 +72,11 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
     forwardedRef={null}
     variant="primary"
   >
-    <StyledComponent
+    <button
       className="c0"
-      variant="primary"
     >
-      <button
-        className="c0"
-        variant="primary"
-      >
-        Hello world
-      </button>
-    </StyledComponent>
+      Hello world
+    </button>
   </StyledComponent>
 </OutlineButton>
 `;
@@ -159,17 +153,11 @@ exports[`<OutlineButton /> renders correctly 1`] = `
     forwardedRef={null}
     variant="default"
   >
-    <StyledComponent
+    <button
       className="c0"
-      variant="default"
     >
-      <button
-        className="c0"
-        variant="default"
-      >
-        Click here
-      </button>
-    </StyledComponent>
+      Click here
+    </button>
   </StyledComponent>
 </OutlineButton>
 `;
@@ -234,17 +222,11 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
     forwardedRef={null}
     variant="rounded"
   >
-    <StyledComponent
+    <button
       className="c0"
-      variant="rounded"
     >
-      <button
-        className="c0"
-        variant="rounded"
-      >
-        Hello world
-      </button>
-    </StyledComponent>
+      Hello world
+    </button>
   </StyledComponent>
 </OutlineButton>
 `;

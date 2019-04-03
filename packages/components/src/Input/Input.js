@@ -9,9 +9,9 @@ import {
   borderColor,
   themeGet,
 } from 'styled-system';
-import { styledOmitProps } from '../../lib';
+import { styledOmitProps } from '../styledOmitProps';
 
-const Input = styledOmitProps('input', { omit: ['mb', 'py', 'px', 'bg', 'color', 'fontSize', 'lineHeight', 'border', 'borderColor'] })`
+const Input = styledOmitProps('input', { omit: ['color', 'fontSize'] })`
   ${space}
   ${color}
   ${fontSize}

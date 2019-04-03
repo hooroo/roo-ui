@@ -5,9 +5,9 @@ exports[`<CalendarDay /> renders correctly 1`] = `
   selected={true}
 >
   <Styled(NakedButton)
+    as="button"
     disabled={false}
     highlighted={false}
-    is="button"
     selectable={true}
     selected={true}
   >
