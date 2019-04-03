@@ -82,7 +82,7 @@ input:checked ~ .c3 {
               size={24}
               title={null}
             >
-              <Icon__CleanSvg
+              <Icon__StyledSvg
                 className="c3"
                 fill="currentcolor"
                 height={24}
@@ -112,7 +112,7 @@ input:checked ~ .c3 {
                     />
                   </svg>
                 </StyledComponent>
-              </Icon__CleanSvg>
+              </Icon__StyledSvg>
             </Base>
           </StyledComponent>
         </Checkbox__CheckboxIcon>
@@ -209,7 +209,7 @@ input:checked ~ .c3 {
               size={24}
               title={null}
             >
-              <Icon__CleanSvg
+              <Icon__StyledSvg
                 className="c3"
                 fill="currentcolor"
                 height={24}
@@ -239,7 +239,7 @@ input:checked ~ .c3 {
                     />
                   </svg>
                 </StyledComponent>
-              </Icon__CleanSvg>
+              </Icon__StyledSvg>
             </Base>
           </StyledComponent>
         </Checkbox__CheckboxIcon>
@@ -336,7 +336,7 @@ input:checked ~ .c3 {
               size={24}
               title={null}
             >
-              <Icon__CleanSvg
+              <Icon__StyledSvg
                 className="c3"
                 fill="currentcolor"
                 height={24}
@@ -366,7 +366,7 @@ input:checked ~ .c3 {
                     />
                   </svg>
                 </StyledComponent>
-              </Icon__CleanSvg>
+              </Icon__StyledSvg>
             </Base>
           </StyledComponent>
         </Checkbox__CheckboxIcon>

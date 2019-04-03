@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { hideVisually } from 'polished';
 import { textStyle, space } from 'styled-system';
 
-const Label = styled('label')`
+const Label = styled.label`
   display: block;
   width: 100%;
 

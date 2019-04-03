@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { space, size, height, width } from 'styled-system';
 
-const Image = styled('img')`
+const Image = styled.img`
   display: block;
   max-width: 100%;
   height: auto;

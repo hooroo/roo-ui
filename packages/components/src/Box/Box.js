@@ -20,7 +20,7 @@ import {
   zIndex,
 } from 'styled-system';
 
-const Box = styled('div')`
+const Box = styled.div`
   ${display}
   ${space}
   ${width}

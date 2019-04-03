@@ -10,7 +10,7 @@ const Radio = props => (
   </RadioWrapper>
 );
 
-const RadioWrapper = styled('div')`
+const RadioWrapper = styled.div`
   display: inline-block;
   position: relative;
 `;
@@ -25,7 +25,7 @@ const RadioInput = styled.input`
   }
 `;
 
-const RadioIcon = styled('div')`
+const RadioIcon = styled.div`
   display: inline-block;
   position: relative;
   vertical-align: middle;

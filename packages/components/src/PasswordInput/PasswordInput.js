@@ -4,10 +4,10 @@ import { themeGet } from 'styled-system';
 import { rem } from 'polished';
 import { Input, Icon, NakedButton } from '..';
 
-const CleanInput = styled(Input)``;
+const StyledInput = styled(Input)``;
 
-CleanInput.propTypes = Input.propTypes;
-CleanInput.displayName = 'PasswordInput__Input';
+StyledInput.propTypes = Input.propTypes;
+StyledInput.displayName = 'PasswordInput__Input';
 
 const Wrapper = styled.div`
   position: relative;
@@ -48,7 +48,7 @@ class Base extends Component {
   render() {
     return (
       <Wrapper>
-        <CleanInput {...this.props} type={this.state.visible ? 'text' : 'password'} />
+        <StyledInput {...this.props} type={this.state.visible ? 'text' : 'password'} />
 
         <Toggle onClick={this.toggleVisibility}>
           <Icon name={this.state.visible ? 'visibilityOff' : 'visibility'} size={22} mr={2} />

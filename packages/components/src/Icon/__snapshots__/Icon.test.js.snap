@@ -21,7 +21,7 @@ exports[`<Icon /> renders correctly 1`] = `
       size={24}
       title={null}
     >
-      <Icon__CleanSvg
+      <Icon__StyledSvg
         className="c0"
         fill="currentcolor"
         height={24}
@@ -51,7 +51,7 @@ exports[`<Icon /> renders correctly 1`] = `
             />
           </svg>
         </StyledComponent>
-      </Icon__CleanSvg>
+      </Icon__StyledSvg>
     </Base>
   </StyledComponent>
 </Icon>

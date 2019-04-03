@@ -30,7 +30,7 @@ const gutter = (props) => {
   });
 };
 
-const Container = styled('div')`
+const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 100%;

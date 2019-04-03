@@ -19,7 +19,7 @@ const textDecoration = style({
   cssProperty: 'textDecoration',
 });
 
-const Text = styled('span', { omit: ['hidden'] })`
+const Text = styled.span`
   ${textStyle}
   ${color}
   ${fontSize}

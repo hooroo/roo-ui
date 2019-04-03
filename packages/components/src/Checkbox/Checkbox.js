@@ -12,7 +12,7 @@ const Checkbox = props => (
   </CheckboxWrapper>
 );
 
-const CheckboxWrapper = styled('div')`
+const CheckboxWrapper = styled.div`
   display: inline-block;
   position: relative;
 `;
@@ -27,7 +27,7 @@ const CheckboxInput = styled.input`
   }
 `;
 
-const CheckboxBorder = styled('div')`
+const CheckboxBorder = styled.div`
   display: inline-block;
   vertical-align: middle;
   margin-bottom: ${rem('2px')};

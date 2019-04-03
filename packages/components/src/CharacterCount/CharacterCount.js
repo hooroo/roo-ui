@@ -5,16 +5,16 @@ import styled, { css } from 'styled-components';
 import { Text } from '..';
 import { styledOmitProps } from '../styledOmitProps';
 
-const CleanSpan = styledOmitProps('span', { omit: ['fontSize'] })``;
+const StyledSpan = styledOmitProps('span', { omit: ['fontSize'] })``;
 
-CleanSpan.propTypes = {
+StyledSpan.propTypes = {
   ...Text.propTypes,
 };
 
 const Base = ({ value, limit, ...props }) => (
-  <CleanSpan {...props}>
+  <StyledSpan {...props}>
     {limit - value.length}
-  </CleanSpan>
+  </StyledSpan>
 );
 
 Base.propTypes = {

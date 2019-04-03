@@ -94,7 +94,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                     size={24}
                     title={null}
                   >
-                    <Icon__CleanSvg
+                    <Icon__StyledSvg
                       className="c2"
                       fill="currentcolor"
                       height={24}
@@ -124,7 +124,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                           />
                         </svg>
                       </StyledComponent>
-                    </Icon__CleanSvg>
+                    </Icon__StyledSvg>
                   </Base>
                 </StyledComponent>
               </Icon>
@@ -158,7 +158,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                     size={24}
                     title={null}
                   >
-                    <Icon__CleanSvg
+                    <Icon__StyledSvg
                       className="c2"
                       fill="currentcolor"
                       height={24}
@@ -188,7 +188,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                           />
                         </svg>
                       </StyledComponent>
-                    </Icon__CleanSvg>
+                    </Icon__StyledSvg>
                   </Base>
                 </StyledComponent>
               </Icon>

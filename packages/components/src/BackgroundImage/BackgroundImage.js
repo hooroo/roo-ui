@@ -9,7 +9,7 @@ import {
   backgroundRepeat,
 } from 'styled-system';
 
-const BackgroundImage = styled('div')`
+const BackgroundImage = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

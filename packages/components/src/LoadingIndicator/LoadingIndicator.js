@@ -32,7 +32,7 @@ const Bouncers = styled(Box)`
   ${width}
 `;
 
-const Bouncer = styled('div')`
+const Bouncer = styled.div`
   animation: ${bounce} 1.4s infinite ease-in-out both;
   border-radius: 100%;
   display: inline-block;

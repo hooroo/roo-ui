@@ -103,7 +103,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                                   size={24}
                                   title={null}
                                 >
-                                  <Icon__CleanSvg
+                                  <Icon__StyledSvg
                                     className="c4"
                                     color="ui.error"
                                     fill="currentcolor"
@@ -136,7 +136,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                                         />
                                       </svg>
                                     </StyledComponent>
-                                  </Icon__CleanSvg>
+                                  </Icon__StyledSvg>
                                 </Base>
                               </StyledComponent>
                             </Icon>
@@ -280,7 +280,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                                   size={24}
                                   title={null}
                                 >
-                                  <Icon__CleanSvg
+                                  <Icon__StyledSvg
                                     className="c4"
                                     color="greys.charcoal"
                                     fill="currentcolor"
@@ -313,7 +313,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                                         />
                                       </svg>
                                     </StyledComponent>
-                                  </Icon__CleanSvg>
+                                  </Icon__StyledSvg>
                                 </Base>
                               </StyledComponent>
                             </Icon>
@@ -457,7 +457,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                                   size={24}
                                   title={null}
                                 >
-                                  <Icon__CleanSvg
+                                  <Icon__StyledSvg
                                     className="c4"
                                     color="ui.success"
                                     fill="currentcolor"
@@ -490,7 +490,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                                         />
                                       </svg>
                                     </StyledComponent>
-                                  </Icon__CleanSvg>
+                                  </Icon__StyledSvg>
                                 </Base>
                               </StyledComponent>
                             </Icon>
@@ -634,7 +634,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                                   size={24}
                                   title={null}
                                 >
-                                  <Icon__CleanSvg
+                                  <Icon__StyledSvg
                                     className="c4"
                                     color="ui.error"
                                     fill="currentcolor"
@@ -667,7 +667,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                                         />
                                       </svg>
                                     </StyledComponent>
-                                  </Icon__CleanSvg>
+                                  </Icon__StyledSvg>
                                 </Base>
                               </StyledComponent>
                             </Icon>
@@ -811,7 +811,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                                   size={24}
                                   title={null}
                                 >
-                                  <Icon__CleanSvg
+                                  <Icon__StyledSvg
                                     className="c4"
                                     color="greys.charcoal"
                                     fill="currentcolor"
@@ -844,7 +844,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                                         />
                                       </svg>
                                     </StyledComponent>
-                                  </Icon__CleanSvg>
+                                  </Icon__StyledSvg>
                                 </Base>
                               </StyledComponent>
                             </Icon>
@@ -988,7 +988,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                                   size={24}
                                   title={null}
                                 >
-                                  <Icon__CleanSvg
+                                  <Icon__StyledSvg
                                     className="c4"
                                     color="ui.success"
                                     fill="currentcolor"
@@ -1021,7 +1021,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                                         />
                                       </svg>
                                     </StyledComponent>
-                                  </Icon__CleanSvg>
+                                  </Icon__StyledSvg>
                                 </Base>
                               </StyledComponent>
                             </Icon>
