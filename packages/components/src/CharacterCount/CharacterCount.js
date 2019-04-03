@@ -6,7 +6,6 @@ import { Text } from '..';
 import { styledOmitProps } from '../styledOmitProps';
 
 const CleanSpan = styledOmitProps('span', { omit: ['fontSize'] })``;
-// const CleanSpan = styled('span')``;
 
 CleanSpan.propTypes = {
   ...Text.propTypes,

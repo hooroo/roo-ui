@@ -6,7 +6,6 @@ import { Icon, Input } from '..';
 import { styledOmitProps } from '../styledOmitProps';
 
 const CleanSelect = styledOmitProps('select', { omit: ['color', 'fontSize'] })``;
-// const CleanSelect = styled('select')``;
 
 CleanSelect.propTypes = {
   ...Input.propTypes,
