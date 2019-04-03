@@ -29,7 +29,7 @@
   "dependencies": {
     "date-fns": "^1.29.0",
     "dayzed": "^2.2.0",
-    "react-modal": "^3.5.1",
+    "react-modal": "^3.8.1",
     "react-onclickoutside": "^6.7.1",
     "react-popper": "^1.0.0",
     "react-text-mask": "^5.4.2",
