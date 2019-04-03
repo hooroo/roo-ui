@@ -2,9 +2,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { hideVisually } from 'polished';
 import { textStyle, space } from 'styled-system';
-import tag from 'clean-tag';
 
-const Label = styled(tag.label)`
+const Label = styled('label')`
   display: block;
   width: 100%;
 

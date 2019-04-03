@@ -1,5 +1,4 @@
 import React from 'react';
-import tag from 'clean-tag';
 import PropTypes from 'prop-types';
 import { color, size, width, themeGet } from 'styled-system';
 import styled, { keyframes } from 'styled-components';
@@ -33,7 +32,7 @@ const Bouncers = styled(Box)`
   ${width}
 `;
 
-const Bouncer = styled(tag.div)`
+const Bouncer = styled('div')`
   animation: ${bounce} 1.4s infinite ease-in-out both;
   border-radius: 100%;
   display: inline-block;

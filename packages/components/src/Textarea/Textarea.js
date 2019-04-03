@@ -11,7 +11,7 @@ Textarea.propTypes = {
 
 Textarea.defaultProps = {
   ...Input.defaultProps,
-  is: 'textarea',
+  as: 'textarea',
   rows: 6,
 };
 

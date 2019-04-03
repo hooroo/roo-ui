@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import tag from 'clean-tag';
 import {
   height,
   width,
@@ -10,7 +9,7 @@ import {
   backgroundRepeat,
 } from 'styled-system';
 
-const BackgroundImage = styled(tag.div)`
+const BackgroundImage = styled('div')`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

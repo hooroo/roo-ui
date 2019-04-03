@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 import { rem } from 'polished';
-import tag from 'clean-tag';
-
 import { Icon } from '..';
 
 const Checkbox = props => (
@@ -14,7 +12,7 @@ const Checkbox = props => (
   </CheckboxWrapper>
 );
 
-const CheckboxWrapper = styled(tag.div)`
+const CheckboxWrapper = styled('div')`
   display: inline-block;
   position: relative;
 `;
@@ -29,7 +27,7 @@ const CheckboxInput = styled.input`
   }
 `;
 
-const CheckboxBorder = styled(tag.div)`
+const CheckboxBorder = styled('div')`
   display: inline-block;
   vertical-align: middle;
   margin-bottom: ${rem('2px')};
