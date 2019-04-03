@@ -3349,11 +3349,6 @@ clean-css@4.2.x:
   dependencies:
     source-map "~0.6.0"
 
-clean-element@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/clean-element/-/clean-element-1.0.3.tgz#373e3b677edbe4749ea0b245d47f88555850f00e"
-  integrity sha512-3/lpya6DuWcA2nW2pI3KotwbO2c8YGcwTauCnAJgFhZqIZ5M8JeEJg1U2+Y1PSrP3VNY20Gx1eyy7lGjfDIAKQ==
-
 cli-boxes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"

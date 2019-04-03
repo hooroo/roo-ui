@@ -18,7 +18,6 @@
     "react-powerplug": "^1.0.0-rc.1"
   },
   "peerDependencies": {
-    "clean-element": "^1.0.2",
     "polished": "^2.2.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",

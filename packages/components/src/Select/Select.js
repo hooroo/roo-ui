@@ -1,11 +1,12 @@
 import React from 'react';
-import cleanElement from 'clean-element';
 import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 
 import { Icon, Input } from '..';
+import { styledOmitProps } from '../styledOmitProps';
 
-const CleanSelect = cleanElement('select');
+const CleanSelect = styledOmitProps('select', { omit: ['color', 'fontSize'] })``;
+// const CleanSelect = styled('select')``;
 
 CleanSelect.propTypes = {
   ...Input.propTypes,

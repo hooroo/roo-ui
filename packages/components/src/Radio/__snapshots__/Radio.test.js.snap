@@ -39,50 +39,32 @@ input:checked + .c2:after {
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <Clean.div
-          className="c0"
-          is="div"
+        <Radio__RadioInput
+          type="radio"
         >
-          <div
-            className="c0"
+          <StyledComponent
+            forwardedRef={null}
+            type="radio"
           >
-            <Radio__RadioInput
+            <input
+              className="c1"
               type="radio"
-            >
-              <StyledComponent
-                forwardedRef={null}
-                type="radio"
-              >
-                <input
-                  className="c1"
-                  type="radio"
-                />
-              </StyledComponent>
-            </Radio__RadioInput>
-            <Radio__RadioIcon>
-              <StyledComponent
-                forwardedRef={null}
-              >
-                <Clean.div
-                  className="c2"
-                >
-                  <Clean.div
-                    className="c2"
-                    is="div"
-                  >
-                    <div
-                      className="c2"
-                    />
-                  </Clean.div>
-                </Clean.div>
-              </StyledComponent>
-            </Radio__RadioIcon>
-          </div>
-        </Clean.div>
-      </Clean.div>
+            />
+          </StyledComponent>
+        </Radio__RadioInput>
+        <Radio__RadioIcon>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Radio__RadioIcon>
+      </div>
     </StyledComponent>
   </Radio__RadioWrapper>
 </Radio>
@@ -129,53 +111,35 @@ input:checked + .c2:after {
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <Clean.div
-          className="c0"
-          is="div"
+        <Radio__RadioInput
+          defaultChecked={true}
+          type="radio"
         >
-          <div
-            className="c0"
+          <StyledComponent
+            defaultChecked={true}
+            forwardedRef={null}
+            type="radio"
           >
-            <Radio__RadioInput
+            <input
+              className="c1"
               defaultChecked={true}
               type="radio"
-            >
-              <StyledComponent
-                defaultChecked={true}
-                forwardedRef={null}
-                type="radio"
-              >
-                <input
-                  className="c1"
-                  defaultChecked={true}
-                  type="radio"
-                />
-              </StyledComponent>
-            </Radio__RadioInput>
-            <Radio__RadioIcon>
-              <StyledComponent
-                forwardedRef={null}
-              >
-                <Clean.div
-                  className="c2"
-                >
-                  <Clean.div
-                    className="c2"
-                    is="div"
-                  >
-                    <div
-                      className="c2"
-                    />
-                  </Clean.div>
-                </Clean.div>
-              </StyledComponent>
-            </Radio__RadioIcon>
-          </div>
-        </Clean.div>
-      </Clean.div>
+            />
+          </StyledComponent>
+        </Radio__RadioInput>
+        <Radio__RadioIcon>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Radio__RadioIcon>
+      </div>
     </StyledComponent>
   </Radio__RadioWrapper>
 </Radio>
@@ -222,53 +186,35 @@ input:checked + .c2:after {
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <Clean.div
-          className="c0"
-          is="div"
+        <Radio__RadioInput
+          disabled={true}
+          type="radio"
         >
-          <div
-            className="c0"
+          <StyledComponent
+            disabled={true}
+            forwardedRef={null}
+            type="radio"
           >
-            <Radio__RadioInput
+            <input
+              className="c1"
               disabled={true}
               type="radio"
-            >
-              <StyledComponent
-                disabled={true}
-                forwardedRef={null}
-                type="radio"
-              >
-                <input
-                  className="c1"
-                  disabled={true}
-                  type="radio"
-                />
-              </StyledComponent>
-            </Radio__RadioInput>
-            <Radio__RadioIcon>
-              <StyledComponent
-                forwardedRef={null}
-              >
-                <Clean.div
-                  className="c2"
-                >
-                  <Clean.div
-                    className="c2"
-                    is="div"
-                  >
-                    <div
-                      className="c2"
-                    />
-                  </Clean.div>
-                </Clean.div>
-              </StyledComponent>
-            </Radio__RadioIcon>
-          </div>
-        </Clean.div>
-      </Clean.div>
+            />
+          </StyledComponent>
+        </Radio__RadioInput>
+        <Radio__RadioIcon>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Radio__RadioIcon>
+      </div>
     </StyledComponent>
   </Radio__RadioWrapper>
 </Radio>

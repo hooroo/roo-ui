@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cleanElement from 'clean-element';
 import { themeGet } from 'styled-system';
 import styled, { css } from 'styled-components';
-
 import { Text } from '..';
+import { styledOmitProps } from '../styledOmitProps';
 
-const CleanSpan = cleanElement('span');
+const CleanSpan = styledOmitProps('span', { omit: ['fontSize'] })``;
+// const CleanSpan = styled('span')``;
 
 CleanSpan.propTypes = {
   ...Text.propTypes,

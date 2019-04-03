@@ -28,60 +28,33 @@ exports[`<List /> renders correctly 1`] = `
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 1
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 1
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 2
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 2
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 3
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 3
+          </li>
         </StyledComponent>
       </ListItem>
     </ul>
@@ -138,60 +111,33 @@ exports[`<List /> with columns set renders correctly 1`] = `
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1 c2"
           >
-            <Clean.div
-              className="c1 c2"
-              is="li"
-            >
-              <li
-                className="c1 c2"
-              >
-                Hello Item 1
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 1
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1 c2"
           >
-            <Clean.div
-              className="c1 c2"
-              is="li"
-            >
-              <li
-                className="c1 c2"
-              >
-                Hello Item 2
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 2
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1 c2"
           >
-            <Clean.div
-              className="c1 c2"
-              is="li"
-            >
-              <li
-                className="c1 c2"
-              >
-                Hello Item 3
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 3
+          </li>
         </StyledComponent>
       </ListItem>
     </ul>
@@ -229,60 +175,33 @@ exports[`<List /> with flush set renders correctly 1`] = `
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 1
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 1
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 2
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 2
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 3
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 3
+          </li>
         </StyledComponent>
       </ListItem>
     </ul>
@@ -318,60 +237,33 @@ exports[`<List /> with ordered prop renders correctly 1`] = `
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 1
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 1
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 2
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 2
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1"
           >
-            <Clean.div
-              className="c1"
-              is="li"
-            >
-              <li
-                className="c1"
-              >
-                Hello Item 3
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 3
+          </li>
         </StyledComponent>
       </ListItem>
     </ol>
@@ -466,60 +358,33 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1 c2"
           >
-            <Clean.div
-              className="c1 c2"
-              is="li"
-            >
-              <li
-                className="c1 c2"
-              >
-                Hello Item 1
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 1
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1 c2"
           >
-            <Clean.div
-              className="c1 c2"
-              is="li"
-            >
-              <li
-                className="c1 c2"
-              >
-                Hello Item 2
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 2
+          </li>
         </StyledComponent>
       </ListItem>
       <ListItem>
         <StyledComponent
           forwardedRef={null}
         >
-          <Clean.li
+          <li
             className="c1 c2"
           >
-            <Clean.div
-              className="c1 c2"
-              is="li"
-            >
-              <li
-                className="c1 c2"
-              >
-                Hello Item 3
-              </li>
-            </Clean.div>
-          </Clean.li>
+            Hello Item 3
+          </li>
         </StyledComponent>
       </ListItem>
     </ul>

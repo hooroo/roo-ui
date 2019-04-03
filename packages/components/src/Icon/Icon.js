@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { space, color, propTypes } from 'styled-system';
-import cleanElement from 'clean-element';
 import PropTypes from 'prop-types';
 import paths from '@roo-ui/icons';
 
-const CleanSvg = cleanElement('svg');
+const CleanSvg = styled('svg')``;
 
 CleanSvg.propTypes = {
   ...propTypes.space,

@@ -64,49 +64,55 @@ exports[`<CalendarNav /> renders correctly 1`] = `
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <div
-          className="c0"
+        <Button
+          as="button"
+          onClick={[MockFunction]}
         >
-          <Button
+          <StyledComponent
             as="button"
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <StyledComponent
-              as="button"
-              forwardedRef={null}
+            <button
+              className="c1"
               onClick={[MockFunction]}
+              type="button"
             >
-              <button
-                className="c1"
-                onClick={[MockFunction]}
-                type="button"
+              <Icon
+                name="chevronLeft"
               >
-                <Icon
+                <StyledComponent
+                  forwardedRef={null}
                   name="chevronLeft"
                 >
-                  <StyledComponent
-                    forwardedRef={null}
+                  <Base
+                    className="c2"
                     name="chevronLeft"
+                    size={24}
+                    title={null}
                   >
-                    <Base
+                    <Icon__CleanSvg
                       className="c2"
-                      name="chevronLeft"
-                      size={24}
-                      title={null}
+                      fill="currentcolor"
+                      height={24}
+                      title="chevronLeft"
+                      viewBox="0 0 24 24"
+                      width={24}
                     >
-                      <Cleaned
+                      <StyledComponent
                         className="c2"
                         fill="currentcolor"
+                        forwardedRef={null}
                         height={24}
                         title="chevronLeft"
                         viewBox="0 0 24 24"
                         width={24}
                       >
                         <svg
-                          className="c2"
+                          className="c2 "
                           fill="currentcolor"
                           height={24}
                           title="chevronLeft"
@@ -117,50 +123,60 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                             d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
                           />
                         </svg>
-                      </Cleaned>
-                    </Base>
-                  </StyledComponent>
-                </Icon>
-              </button>
-            </StyledComponent>
-          </Button>
-          <Button
+                      </StyledComponent>
+                    </Icon__CleanSvg>
+                  </Base>
+                </StyledComponent>
+              </Icon>
+            </button>
+          </StyledComponent>
+        </Button>
+        <Button
+          as="button"
+          onClick={[MockFunction]}
+        >
+          <StyledComponent
             as="button"
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <StyledComponent
-              as="button"
-              forwardedRef={null}
+            <button
+              className="c1"
               onClick={[MockFunction]}
+              type="button"
             >
-              <button
-                className="c1"
-                onClick={[MockFunction]}
-                type="button"
+              <Icon
+                name="chevronRight"
               >
-                <Icon
+                <StyledComponent
+                  forwardedRef={null}
                   name="chevronRight"
                 >
-                  <StyledComponent
-                    forwardedRef={null}
+                  <Base
+                    className="c2"
                     name="chevronRight"
+                    size={24}
+                    title={null}
                   >
-                    <Base
+                    <Icon__CleanSvg
                       className="c2"
-                      name="chevronRight"
-                      size={24}
-                      title={null}
+                      fill="currentcolor"
+                      height={24}
+                      title="chevronRight"
+                      viewBox="0 0 24 24"
+                      width={24}
                     >
-                      <Cleaned
+                      <StyledComponent
                         className="c2"
                         fill="currentcolor"
+                        forwardedRef={null}
                         height={24}
                         title="chevronRight"
                         viewBox="0 0 24 24"
                         width={24}
                       >
                         <svg
-                          className="c2"
+                          className="c2 "
                           fill="currentcolor"
                           height={24}
                           title="chevronRight"
@@ -171,15 +187,15 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                             d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                           />
                         </svg>
-                      </Cleaned>
-                    </Base>
-                  </StyledComponent>
-                </Icon>
-              </button>
-            </StyledComponent>
-          </Button>
-        </div>
-      </Clean.div>
+                      </StyledComponent>
+                    </Icon__CleanSvg>
+                  </Base>
+                </StyledComponent>
+              </Icon>
+            </button>
+          </StyledComponent>
+        </Button>
+      </div>
     </StyledComponent>
   </CalendarNav__Wrapper>
 </CalendarNav>

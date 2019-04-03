@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 import { rem } from 'polished';
-import cleanElement from 'clean-element';
-
 import { Input, Icon, NakedButton } from '..';
 
-const CleanInput = cleanElement(Input);
+const CleanInput = styled(Input)``;
+
 CleanInput.propTypes = Input.propTypes;
 CleanInput.displayName = 'PasswordInput__Input';
 
