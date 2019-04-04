@@ -12,6 +12,9 @@
   concurrency: 1
   concurrency_group: roo-ui/publish
 
+env:
+  BUILDKITE_CLEAN_CHECKOUT: true
+
 steps:
   - name: ":docker: Build"
     <<: *defaults
