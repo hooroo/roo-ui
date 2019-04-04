@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import styled, { css } from 'styled-components';
 import { Text } from '..';
-import { styledOmitProps } from '../styledOmitProps';
+import styledOmitProps from '../styledOmitProps';
 
 const StyledSpan = styledOmitProps('span', { omit: ['fontSize'] })``;
 

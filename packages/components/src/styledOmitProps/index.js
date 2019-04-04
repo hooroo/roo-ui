@@ -1,1 +1,1 @@
-export { default as styledOmitProps } from './styledOmitProps';
+export { default } from './styledOmitProps';

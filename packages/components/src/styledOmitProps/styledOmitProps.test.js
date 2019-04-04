@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { styledOmitProps } from './';
+import styledOmitProps from '.';
 
 it('creates an unfiltered component if supplied a single argument', () => {
   const Span = styledOmitProps('span')``;

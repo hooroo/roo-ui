@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
-import { styledOmitProps } from '../../../styledOmitProps';
+import styledOmitProps from '../../../styledOmitProps';
 
 import { NakedButton, Box } from '../../../';
 

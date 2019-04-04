@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 
 import { Icon, Input } from '..';
-import { styledOmitProps } from '../styledOmitProps';
+import styledOmitProps from '../styledOmitProps';
 
 const StyledSelect = styledOmitProps('select', { omit: ['color', 'fontSize'] })``;
 
