@@ -8,7 +8,6 @@ exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
   color="greys.charcoal"
   fontSize="base"
   forwardedRef={null}
-  is="input"
   keepCharPositions={true}
   lineHeight="normal"
   mask={
@@ -39,7 +38,6 @@ exports[`<MaskedInput /> renders correctly 1`] = `
   fontSize="base"
   forwardedRef={null}
   id="postcode"
-  is="input"
   lineHeight="normal"
   mask={
     Array [

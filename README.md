@@ -22,7 +22,7 @@ If you want to jump in and and play around with the project check out [Roo UI pl
 
 Roo UI is built with [Styled Components](https://www.styled-components.com/) which is a CSS-in-JS library. We use [Styled System](https://jxnblk.com/styled-system) which allows us to pass props which style components. These props reference values from the [theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js). Alongside these tools we use [Polished](https://github.com/styled-components/polished) for CSS helper functions.
 
-When using styled-components, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using [`clean-tag`](https://github.com/jxnblk/styled-system/tree/master/packages/clean-tag). Using clean-tag we can define a `blackList` default prop on components which prevents props from making there way to the DOM.
+When using styled-components, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using a function called [`styledOmitProps`](https://github.com/hooroo/roo-ui/tree/master/packages/components/src/styledOmitProps/styledOmitProps.js). Using this, we can supply an `omit` array argument which prevents specified props from making there way to the DOM.
 
 ### Supported devices
 
@@ -107,14 +107,30 @@ If you're using Webpack, you'll need to setup [file loader](https://github.com/w
 
 ## FAQ’s
 
-- [How do I do layout in this new world?](#how-do-i-do-layout-in-this-new-world)
-- [How do I do responsive styles?](#how-do-i-do-layout-in-this-new-world)
-- [How do I change the font size?](#how-do-i-do-layout-in-this-new-world)
-- [How do I add spacing to elements?](#how-do-i-add-spacing-to-elements)
-- [What’s a good example?](#whats-a-good-usage-example)
-- [How do I use the theme?](#how-do-i-use-the-theme)
-- [How can I get help?](#how-can-i-get-help)
-- [Can I contribute?](#can-i-contribute)
+- [Contents](#contents)
+- [About the project](#about-the-project)
+  - [Supported devices](#supported-devices)
+  - [Accessibility](#accessibility)
+- [Installation](#installation)
+  - [Peer dependencies](#peer-dependencies)
+- [Setup](#setup)
+  - [Theme provider](#theme-provider)
+  - [Theming](#theming)
+  - [Fonts](#fonts)
+  - [CSS reset](#css-reset)
+  - [Bundler requirements](#bundler-requirements)
+- [FAQ’s](#faqs)
+    - [How do I do layout in this new world?](#how-do-i-do-layout-in-this-new-world)
+    - [How do I do responsive styles?](#how-do-i-do-responsive-styles)
+    - [How do I change the font size?](#how-do-i-change-the-font-size)
+    - [How do I add spacing to elements?](#how-do-i-add-spacing-to-elements)
+    - [What’s a good usage example?](#whats-a-good-usage-example)
+    - [How do I use the theme?](#how-do-i-use-the-theme)
+    - [How can I get help?](#how-can-i-get-help)
+    - [Can I contribute?](#can-i-contribute)
+- [Helpful resources](#helpful-resources)
+  - [General](#general)
+  - [Accessibility](#accessibility-1)
 
 #### How do I do layout in this new world?
 

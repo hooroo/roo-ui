@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import tag from 'clean-tag';
 import { hideVisually } from 'polished';
 import {
   textStyle,
@@ -20,7 +19,7 @@ const textDecoration = style({
   cssProperty: 'textDecoration',
 });
 
-const Text = styled(tag.span)`
+const Text = styled.span`
   ${textStyle}
   ${color}
   ${fontSize}
@@ -55,7 +54,8 @@ Text.propTypes = {
 Text.defaultProps = {
   hidden: false,
   textStyle: 'text',
-  blacklist: Object.keys(Text.propTypes),
 };
+
+Text.displayName = 'Text';
 
 export default Text;

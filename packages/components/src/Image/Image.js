@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import tag from 'clean-tag';
 import { space, size, height, width } from 'styled-system';
 
-const Image = styled(tag.img)`
+const Image = styled.img`
   display: block;
   max-width: 100%;
   height: auto;
@@ -27,7 +26,6 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
-  blacklist: Object.keys(Image.propTypes),
   inline: false,
   alt: '',
 };

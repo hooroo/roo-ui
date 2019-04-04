@@ -2,8 +2,8 @@
 
 exports[`<NakedButton /> renders correctly 1`] = `
 <StyledComponent
+  as="button"
   forwardedRef={null}
-  is="button"
 >
   Hello world
 </StyledComponent>

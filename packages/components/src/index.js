@@ -1,3 +1,4 @@
+export { default as styledOmitProps } from './styledOmitProps';
 export { default as BackgroundImage } from './BackgroundImage';
 export { default as Box } from './Box';
 export { default as LoadingIndicator } from './LoadingIndicator';
@@ -35,3 +36,4 @@ export { default as Select } from './Select';
 export { default as Popover } from './Popover';
 export { DatePicker } from './DatePicker';
 export { DateRangePicker } from './DatePicker';
+

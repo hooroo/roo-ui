@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import { themeGet, space, borders, borderColor } from 'styled-system';
 
-import tag from 'clean-tag';
-
-const ListItem = styled(tag.li)`
+const ListItem = styled.li`
   margin: 0 0 ${themeGet('space.4')};
   ${space}
   ${borders}

@@ -9,7 +9,7 @@ import README from './README.md';
 storiesOf('Components|Radio', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Box textAlign="left" is="form">
+    <Box textAlign="left" as="form">
       <Label textStyle="text">
         <Radio name="example" /> Uno
       </Label>

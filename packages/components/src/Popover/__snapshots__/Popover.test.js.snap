@@ -51,21 +51,17 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
               <StyledComponent
                 forwardedRef={[Function]}
               >
-                <Clean.div
+                <div
                   className=""
                 >
-                  <div
-                    className=""
+                  <button
+                    disabled={false}
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
                   >
-                    <button
-                      disabled={false}
-                      onClick={[Function]}
-                      onKeyDown={[Function]}
-                    >
-                      Open popover
-                    </button>
-                  </div>
-                </Clean.div>
+                    Open popover
+                  </button>
+                </div>
               </StyledComponent>
             </Box>
           </InnerReference>
@@ -147,21 +143,17 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
               <StyledComponent
                 forwardedRef={[Function]}
               >
-                <Clean.div
+                <div
                   className=""
                 >
-                  <div
-                    className=""
+                  <button
+                    disabled={true}
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
                   >
-                    <button
-                      disabled={true}
-                      onClick={[Function]}
-                      onKeyDown={[Function]}
-                    >
-                      Open popover
-                    </button>
-                  </div>
-                </Clean.div>
+                    Open popover
+                  </button>
+                </div>
               </StyledComponent>
             </Box>
           </InnerReference>
@@ -227,7 +219,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                 }
                 zIndex={1}
               >
-                <Clean.div
+                <div
                   aria-hidden="true"
                   className="ignore-react-onclickoutside c0"
                   style={
@@ -239,64 +231,39 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                       "top": 0,
                     }
                   }
-                  zIndex={1}
                 >
-                  <div
-                    aria-hidden="true"
-                    className="ignore-react-onclickoutside c0"
-                    style={
-                      Object {
-                        "left": 0,
-                        "opacity": 0,
-                        "pointerEvents": "none",
-                        "position": "absolute",
-                        "top": 0,
-                      }
-                    }
+                  <p
+                    key=".1"
                   >
-                    <p
-                      key=".1"
-                    >
-                      Popover contents
-                    </p>
-                    <Popover__TriangleBorder
+                    Popover contents
+                  </p>
+                  <Popover__TriangleBorder
+                    style={Object {}}
+                  >
+                    <StyledComponent
+                      forwardedRef={[Function]}
                       style={Object {}}
                     >
-                      <StyledComponent
-                        forwardedRef={[Function]}
+                      <div
+                        className="c1"
                         style={Object {}}
-                      >
-                        <Clean.div
-                          className="c1"
-                          style={Object {}}
-                        >
-                          <div
-                            className="c1"
-                            style={Object {}}
-                          />
-                        </Clean.div>
-                      </StyledComponent>
-                    </Popover__TriangleBorder>
-                    <Popover__Triangle
+                      />
+                    </StyledComponent>
+                  </Popover__TriangleBorder>
+                  <Popover__Triangle
+                    style={Object {}}
+                  >
+                    <StyledComponent
+                      forwardedRef={[Function]}
                       style={Object {}}
                     >
-                      <StyledComponent
-                        forwardedRef={[Function]}
+                      <div
+                        className="c2"
                         style={Object {}}
-                      >
-                        <Clean.div
-                          className="c2"
-                          style={Object {}}
-                        >
-                          <div
-                            className="c2"
-                            style={Object {}}
-                          />
-                        </Clean.div>
-                      </StyledComponent>
-                    </Popover__Triangle>
-                  </div>
-                </Clean.div>
+                      />
+                    </StyledComponent>
+                  </Popover__Triangle>
+                </div>
               </StyledComponent>
             </Popover__ContentWrapper>
           </InnerPopper>

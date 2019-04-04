@@ -1,13 +1,13 @@
 import React from 'react';
-import cleanElement from 'clean-element';
 import styled, { css } from 'styled-components';
 import { themeGet } from 'styled-system';
 
 import { Icon, Input } from '..';
+import styledOmitProps from '../styledOmitProps';
 
-const CleanSelect = cleanElement('select');
+const StyledSelect = styledOmitProps('select', { omit: ['color', 'fontSize'] })``;
 
-CleanSelect.propTypes = {
+StyledSelect.propTypes = {
   ...Input.propTypes,
 };
 
@@ -28,7 +28,7 @@ const IconWrapper = styled.div`
 
 const Base = props => (
   <Wrapper>
-    <CleanSelect {...props} />
+    <StyledSelect {...props} />
 
     {!props.readOnly && (
       <IconWrapper disabled={props.disabled}>
@@ -48,7 +48,7 @@ const Select = styled(Input)`
 
 Select.defaultProps = {
   ...Select.defaultProps,
-  is: Base,
+  as: Base,
 };
 
 export default Select;

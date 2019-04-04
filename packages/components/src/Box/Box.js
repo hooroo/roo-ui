@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import tag from 'clean-tag';
 import {
   display,
   space,
@@ -21,7 +20,7 @@ import {
   zIndex,
 } from 'styled-system';
 
-const Box = styled(tag)`
+const Box = styled.div`
   ${display}
   ${space}
   ${width}
