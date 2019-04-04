@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import styled, { css } from 'styled-components';
 import { rem } from 'polished';
-
 import Text from '../Text';
 
 const ErrorMessage = styled(Text)`
@@ -63,7 +62,6 @@ ErrorMessage.propTypes = {
 ErrorMessage.defaultProps = {
   bg: 'ui.errorBackground',
   arrow: null,
-  blacklist: Object.keys(ErrorMessage.propTypes),
 };
 
 export default ErrorMessage;

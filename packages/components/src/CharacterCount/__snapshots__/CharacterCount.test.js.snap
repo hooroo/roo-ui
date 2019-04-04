@@ -31,18 +31,34 @@ exports[`<CharacterCount /> renders correctly 1`] = `
       textStyle="text"
       value="Hello world"
     >
-      <Cleaned
+      <Styled(StyledComponent)
         className="-Base c0"
         fontSize="sm"
         hidden={false}
         textStyle="text"
       >
-        <span
+        <StyledComponent
           className="-Base c0"
+          fontSize="sm"
+          forwardedRef={null}
+          hidden={false}
+          textStyle="text"
         >
-          53
-        </span>
-      </Cleaned>
+          <StyledComponent
+            className="-Base c0 "
+            fontSize="sm"
+            hidden={false}
+            textStyle="text"
+          >
+            <span
+              className="-Base c0 "
+              hidden={false}
+            >
+              53
+            </span>
+          </StyledComponent>
+        </StyledComponent>
+      </Styled(StyledComponent)>
     </Base>
   </StyledComponent>
 </CharacterCount>

@@ -1,7 +1,6 @@
-import tag from 'clean-tag';
 import { Text } from '..';
 
-const Paragraph = Text.withComponent(tag.p);
+const Paragraph = Text.withComponent('p');
 
 Paragraph.defaultProps = {
   ...Text.defaultProps,

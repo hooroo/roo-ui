@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { themeGet } from 'styled-system';
 import { rem } from 'polished';
-import tag from 'clean-tag';
 
 const Radio = props => (
   <RadioWrapper>
@@ -11,7 +10,7 @@ const Radio = props => (
   </RadioWrapper>
 );
 
-const RadioWrapper = styled(tag.div)`
+const RadioWrapper = styled.div`
   display: inline-block;
   position: relative;
 `;
@@ -26,7 +25,7 @@ const RadioInput = styled.input`
   }
 `;
 
-const RadioIcon = styled(tag.div)`
+const RadioIcon = styled.div`
   display: inline-block;
   position: relative;
   vertical-align: middle;

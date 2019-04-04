@@ -9,7 +9,7 @@ import README from './README.md';
 storiesOf('Components|Checkbox', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Box textAlign="left" is="form">
+    <Box textAlign="left" as="form">
       <Label textStyle="text">
         <Checkbox name="example" /> Uno
       </Label>

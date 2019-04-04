@@ -44,87 +44,79 @@ input:checked ~ .c3 {
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <Clean.div
-          className="c0"
-          is="div"
+        <Checkbox__CheckboxInput
+          type="checkbox"
         >
-          <div
-            className="c0"
+          <StyledComponent
+            forwardedRef={null}
+            type="checkbox"
           >
-            <Checkbox__CheckboxInput
+            <input
+              className="c1"
               type="checkbox"
-            >
-              <StyledComponent
-                forwardedRef={null}
-                type="checkbox"
-              >
-                <input
-                  className="c1"
-                  type="checkbox"
-                />
-              </StyledComponent>
-            </Checkbox__CheckboxInput>
-            <Checkbox__CheckboxBorder>
-              <StyledComponent
-                forwardedRef={null}
-              >
-                <Clean.div
-                  className="c2"
-                >
-                  <Clean.div
-                    className="c2"
-                    is="div"
-                  >
-                    <div
-                      className="c2"
-                    />
-                  </Clean.div>
-                </Clean.div>
-              </StyledComponent>
-            </Checkbox__CheckboxBorder>
-            <Checkbox__CheckboxIcon
+            />
+          </StyledComponent>
+        </Checkbox__CheckboxInput>
+        <Checkbox__CheckboxBorder>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Checkbox__CheckboxBorder>
+        <Checkbox__CheckboxIcon
+          name="done"
+        >
+          <StyledComponent
+            forwardedRef={null}
+            name="done"
+          >
+            <Base
+              className="c3"
               name="done"
+              size={24}
+              title={null}
             >
-              <StyledComponent
-                forwardedRef={null}
-                name="done"
+              <Icon__StyledSvg
+                className="c3"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
               >
-                <Base
+                <StyledComponent
                   className="c3"
-                  name="done"
-                  size={24}
-                  title={null}
+                  fill="currentcolor"
+                  forwardedRef={null}
+                  height={24}
+                  title="done"
+                  viewBox="0 0 24 24"
+                  width={24}
                 >
-                  <Cleaned
-                    className="c3"
+                  <svg
+                    className="c3 "
                     fill="currentcolor"
                     height={24}
                     title="done"
                     viewBox="0 0 24 24"
                     width={24}
                   >
-                    <svg
-                      className="c3"
-                      fill="currentcolor"
-                      height={24}
-                      title="done"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path
-                        d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                      />
-                    </svg>
-                  </Cleaned>
-                </Base>
-              </StyledComponent>
-            </Checkbox__CheckboxIcon>
-          </div>
-        </Clean.div>
-      </Clean.div>
+                    <path
+                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                    />
+                  </svg>
+                </StyledComponent>
+              </Icon__StyledSvg>
+            </Base>
+          </StyledComponent>
+        </Checkbox__CheckboxIcon>
+      </div>
     </StyledComponent>
   </Checkbox__CheckboxWrapper>
 </Checkbox>
@@ -176,90 +168,82 @@ input:checked ~ .c3 {
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <Clean.div
-          className="c0"
-          is="div"
+        <Checkbox__CheckboxInput
+          defaultChecked={true}
+          type="checkbox"
         >
-          <div
-            className="c0"
+          <StyledComponent
+            defaultChecked={true}
+            forwardedRef={null}
+            type="checkbox"
           >
-            <Checkbox__CheckboxInput
+            <input
+              className="c1"
               defaultChecked={true}
               type="checkbox"
-            >
-              <StyledComponent
-                defaultChecked={true}
-                forwardedRef={null}
-                type="checkbox"
-              >
-                <input
-                  className="c1"
-                  defaultChecked={true}
-                  type="checkbox"
-                />
-              </StyledComponent>
-            </Checkbox__CheckboxInput>
-            <Checkbox__CheckboxBorder>
-              <StyledComponent
-                forwardedRef={null}
-              >
-                <Clean.div
-                  className="c2"
-                >
-                  <Clean.div
-                    className="c2"
-                    is="div"
-                  >
-                    <div
-                      className="c2"
-                    />
-                  </Clean.div>
-                </Clean.div>
-              </StyledComponent>
-            </Checkbox__CheckboxBorder>
-            <Checkbox__CheckboxIcon
+            />
+          </StyledComponent>
+        </Checkbox__CheckboxInput>
+        <Checkbox__CheckboxBorder>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Checkbox__CheckboxBorder>
+        <Checkbox__CheckboxIcon
+          name="done"
+        >
+          <StyledComponent
+            forwardedRef={null}
+            name="done"
+          >
+            <Base
+              className="c3"
               name="done"
+              size={24}
+              title={null}
             >
-              <StyledComponent
-                forwardedRef={null}
-                name="done"
+              <Icon__StyledSvg
+                className="c3"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
               >
-                <Base
+                <StyledComponent
                   className="c3"
-                  name="done"
-                  size={24}
-                  title={null}
+                  fill="currentcolor"
+                  forwardedRef={null}
+                  height={24}
+                  title="done"
+                  viewBox="0 0 24 24"
+                  width={24}
                 >
-                  <Cleaned
-                    className="c3"
+                  <svg
+                    className="c3 "
                     fill="currentcolor"
                     height={24}
                     title="done"
                     viewBox="0 0 24 24"
                     width={24}
                   >
-                    <svg
-                      className="c3"
-                      fill="currentcolor"
-                      height={24}
-                      title="done"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path
-                        d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                      />
-                    </svg>
-                  </Cleaned>
-                </Base>
-              </StyledComponent>
-            </Checkbox__CheckboxIcon>
-          </div>
-        </Clean.div>
-      </Clean.div>
+                    <path
+                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                    />
+                  </svg>
+                </StyledComponent>
+              </Icon__StyledSvg>
+            </Base>
+          </StyledComponent>
+        </Checkbox__CheckboxIcon>
+      </div>
     </StyledComponent>
   </Checkbox__CheckboxWrapper>
 </Checkbox>
@@ -311,90 +295,82 @@ input:checked ~ .c3 {
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <Clean.div
-          className="c0"
-          is="div"
+        <Checkbox__CheckboxInput
+          disabled={true}
+          type="checkbox"
         >
-          <div
-            className="c0"
+          <StyledComponent
+            disabled={true}
+            forwardedRef={null}
+            type="checkbox"
           >
-            <Checkbox__CheckboxInput
+            <input
+              className="c1"
               disabled={true}
               type="checkbox"
-            >
-              <StyledComponent
-                disabled={true}
-                forwardedRef={null}
-                type="checkbox"
-              >
-                <input
-                  className="c1"
-                  disabled={true}
-                  type="checkbox"
-                />
-              </StyledComponent>
-            </Checkbox__CheckboxInput>
-            <Checkbox__CheckboxBorder>
-              <StyledComponent
-                forwardedRef={null}
-              >
-                <Clean.div
-                  className="c2"
-                >
-                  <Clean.div
-                    className="c2"
-                    is="div"
-                  >
-                    <div
-                      className="c2"
-                    />
-                  </Clean.div>
-                </Clean.div>
-              </StyledComponent>
-            </Checkbox__CheckboxBorder>
-            <Checkbox__CheckboxIcon
+            />
+          </StyledComponent>
+        </Checkbox__CheckboxInput>
+        <Checkbox__CheckboxBorder>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </Checkbox__CheckboxBorder>
+        <Checkbox__CheckboxIcon
+          name="done"
+        >
+          <StyledComponent
+            forwardedRef={null}
+            name="done"
+          >
+            <Base
+              className="c3"
               name="done"
+              size={24}
+              title={null}
             >
-              <StyledComponent
-                forwardedRef={null}
-                name="done"
+              <Icon__StyledSvg
+                className="c3"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
               >
-                <Base
+                <StyledComponent
                   className="c3"
-                  name="done"
-                  size={24}
-                  title={null}
+                  fill="currentcolor"
+                  forwardedRef={null}
+                  height={24}
+                  title="done"
+                  viewBox="0 0 24 24"
+                  width={24}
                 >
-                  <Cleaned
-                    className="c3"
+                  <svg
+                    className="c3 "
                     fill="currentcolor"
                     height={24}
                     title="done"
                     viewBox="0 0 24 24"
                     width={24}
                   >
-                    <svg
-                      className="c3"
-                      fill="currentcolor"
-                      height={24}
-                      title="done"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <path
-                        d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                      />
-                    </svg>
-                  </Cleaned>
-                </Base>
-              </StyledComponent>
-            </Checkbox__CheckboxIcon>
-          </div>
-        </Clean.div>
-      </Clean.div>
+                    <path
+                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+                    />
+                  </svg>
+                </StyledComponent>
+              </Icon__StyledSvg>
+            </Base>
+          </StyledComponent>
+        </Checkbox__CheckboxIcon>
+      </div>
     </StyledComponent>
   </Checkbox__CheckboxWrapper>
 </Checkbox>

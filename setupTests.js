@@ -11,7 +11,6 @@ expect.addSnapshotSerializer(createSerializer({
     omit(node, [
       'props.forwardedComponent',
       'props.theme',
-      'props.blacklist',
     ]),
 }));
 

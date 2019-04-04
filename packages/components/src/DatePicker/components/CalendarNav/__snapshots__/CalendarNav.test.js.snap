@@ -64,136 +64,138 @@ exports[`<CalendarNav /> renders correctly 1`] = `
     <StyledComponent
       forwardedRef={null}
     >
-      <Clean.div
+      <div
         className="c0"
       >
-        <div
-          className="c0"
+        <Button
+          as="button"
+          onClick={[MockFunction]}
         >
-          <Button
-            is="button"
+          <StyledComponent
+            as="button"
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <StyledComponent
-              forwardedRef={null}
-              is="button"
+            <button
+              className="c1"
               onClick={[MockFunction]}
+              type="button"
             >
-              <Clean.div
-                className="c1"
-                is="button"
-                onClick={[MockFunction]}
-                type="button"
+              <Icon
+                name="chevronLeft"
               >
-                <button
-                  className="c1"
-                  onClick={[MockFunction]}
-                  type="button"
+                <StyledComponent
+                  forwardedRef={null}
+                  name="chevronLeft"
                 >
-                  <Icon
+                  <Base
+                    className="c2"
                     name="chevronLeft"
+                    size={24}
+                    title={null}
                   >
-                    <StyledComponent
-                      forwardedRef={null}
-                      name="chevronLeft"
+                    <Icon__StyledSvg
+                      className="c2"
+                      fill="currentcolor"
+                      height={24}
+                      title="chevronLeft"
+                      viewBox="0 0 24 24"
+                      width={24}
                     >
-                      <Base
+                      <StyledComponent
                         className="c2"
-                        name="chevronLeft"
-                        size={24}
-                        title={null}
+                        fill="currentcolor"
+                        forwardedRef={null}
+                        height={24}
+                        title="chevronLeft"
+                        viewBox="0 0 24 24"
+                        width={24}
                       >
-                        <Cleaned
-                          className="c2"
+                        <svg
+                          className="c2 "
                           fill="currentcolor"
                           height={24}
                           title="chevronLeft"
                           viewBox="0 0 24 24"
                           width={24}
                         >
-                          <svg
-                            className="c2"
-                            fill="currentcolor"
-                            height={24}
-                            title="chevronLeft"
-                            viewBox="0 0 24 24"
-                            width={24}
-                          >
-                            <path
-                              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-                            />
-                          </svg>
-                        </Cleaned>
-                      </Base>
-                    </StyledComponent>
-                  </Icon>
-                </button>
-              </Clean.div>
-            </StyledComponent>
-          </Button>
-          <Button
-            is="button"
+                          <path
+                            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                          />
+                        </svg>
+                      </StyledComponent>
+                    </Icon__StyledSvg>
+                  </Base>
+                </StyledComponent>
+              </Icon>
+            </button>
+          </StyledComponent>
+        </Button>
+        <Button
+          as="button"
+          onClick={[MockFunction]}
+        >
+          <StyledComponent
+            as="button"
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <StyledComponent
-              forwardedRef={null}
-              is="button"
+            <button
+              className="c1"
               onClick={[MockFunction]}
+              type="button"
             >
-              <Clean.div
-                className="c1"
-                is="button"
-                onClick={[MockFunction]}
-                type="button"
+              <Icon
+                name="chevronRight"
               >
-                <button
-                  className="c1"
-                  onClick={[MockFunction]}
-                  type="button"
+                <StyledComponent
+                  forwardedRef={null}
+                  name="chevronRight"
                 >
-                  <Icon
+                  <Base
+                    className="c2"
                     name="chevronRight"
+                    size={24}
+                    title={null}
                   >
-                    <StyledComponent
-                      forwardedRef={null}
-                      name="chevronRight"
+                    <Icon__StyledSvg
+                      className="c2"
+                      fill="currentcolor"
+                      height={24}
+                      title="chevronRight"
+                      viewBox="0 0 24 24"
+                      width={24}
                     >
-                      <Base
+                      <StyledComponent
                         className="c2"
-                        name="chevronRight"
-                        size={24}
-                        title={null}
+                        fill="currentcolor"
+                        forwardedRef={null}
+                        height={24}
+                        title="chevronRight"
+                        viewBox="0 0 24 24"
+                        width={24}
                       >
-                        <Cleaned
-                          className="c2"
+                        <svg
+                          className="c2 "
                           fill="currentcolor"
                           height={24}
                           title="chevronRight"
                           viewBox="0 0 24 24"
                           width={24}
                         >
-                          <svg
-                            className="c2"
-                            fill="currentcolor"
-                            height={24}
-                            title="chevronRight"
-                            viewBox="0 0 24 24"
-                            width={24}
-                          >
-                            <path
-                              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                            />
-                          </svg>
-                        </Cleaned>
-                      </Base>
-                    </StyledComponent>
-                  </Icon>
-                </button>
-              </Clean.div>
-            </StyledComponent>
-          </Button>
-        </div>
-      </Clean.div>
+                          <path
+                            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                          />
+                        </svg>
+                      </StyledComponent>
+                    </Icon__StyledSvg>
+                  </Base>
+                </StyledComponent>
+              </Icon>
+            </button>
+          </StyledComponent>
+        </Button>
+      </div>
     </StyledComponent>
   </CalendarNav__Wrapper>
 </CalendarNav>
