@@ -13,6 +13,8 @@ services:
       APPLICATION: "roo-ui"
       CI: "true"
       TZ: "Australia/Sydney"
+      BUILDKITE_BUILD_CREATOR_EMAIL:
+      BUILDKITE_BUILD_CREATOR:
       BUILDKITE_BUILD_NUMBER:
       BUILDKITE_COMMIT:
       NPM_TOKEN:
