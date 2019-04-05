@@ -1,32 +1,47 @@
+.defaults: &defaults
+  agents:
+    ci-env: production
+  plugins:
+    docker-compose#v2.5.1:
+      run: app
+      config: .buildkite/docker-compose.yml
+
+.deploy_defaults: &deploy_defaults
+  <<: *defaults
+  branches: master
+  concurrency: 1
+  concurrency_group: roo-ui/publish
+
+env:
+  BUILDKITE_CLEAN_CHECKOUT: true
+
 steps:
-  - label: ':eslint: Lint'
-    command: ./hooroo-ci/scripts/lint
-    env:
-      BUILDKITE_FIG_CONTAINER: app
-    agents:
-      ci-env: production
-  - label: ':jest: Test'
-    command: ./hooroo-ci/scripts/test
-    env:
-      BUILDKITE_FIG_CONTAINER: app
-    agents:
-      ci-env: production
+  - name: ":docker: Build"
+    <<: *defaults
+    plugins:
+      ecr#v1.1.4:
+        login: true
+        no-include-email: true
+      docker-compose#v2.5.1:
+        build: app
+        config: .buildkite/docker-compose.yml
+
   - wait
-  - label: ':npm: Publish'
-    command: ./hooroo-ci/scripts/publish
-    branches: 'master'
-    concurrency: 1
-    concurrency_group: 'roo-ui/publish'
-    env:
-      BUILDKITE_FIG_CONTAINER: app
-    agents:
-      ci-env: production
-  - label: ':storybook: Deploy'
-    command: ./hooroo-ci/scripts/storybook
-    branches: 'master'
-    concurrency: 1
-    concurrency_group: 'roo-ui/deploy'
-    env:
-      BUILDKITE_FIG_CONTAINER: app
-    agents:
-      ci-env: production
+
+  - name: ":eslint: Lint"
+    <<: *defaults
+    command: yarn lerna run lint
+
+  - name: ":jest: Test"
+    <<: *defaults
+    command: yarn lerna run test
+
+  - wait
+
+  - name: ":npm: Publish"
+    <<: *deploy_defaults
+    command: scripts/publish
+
+  - name: ":storybook: Deploy"
+    <<: *deploy_defaults
+    command: yarn deploy-storybook
