@@ -14,7 +14,7 @@
 
 ## Setup
 
-1. Install the version of [Node.js](https://nodejs.org/en/) specified in `.nvmrc`.
+1. Install the version of [Node.js](https://nodejs.org/en/) specified in `.node-version`.
 
 2. Install [Yarn](https://yarnpkg.com/en/docs/install).
 
