@@ -15,7 +15,7 @@
     "build": "yarn lerna run build",
     "build:watch": "yarn lerna run build:watch --parallel --prefix --stream",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-storybook": "yarn build && storybook-to-ghpages",
     "link-app": "tasks/link-app.sh",
     "unlink-app": "tasks/unlink-app.sh",
     "new:component": "hygen component new --component-path"
