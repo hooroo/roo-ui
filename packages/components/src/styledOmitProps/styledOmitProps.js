@@ -2,8 +2,9 @@ import React from 'react';
 import isPropValid from '@emotion/is-prop-valid';
 import { pickBy, omit } from 'lodash';
 import styled from 'styled-components';
+import { VALID_STYLED_SYSTEM_PROPS } from './constants';
 
-const styledOmitProps = (component, options) => {
+const styledOmitProps = (component, options = { omit: VALID_STYLED_SYSTEM_PROPS }) => {
   if (options === undefined || options.omit === undefined || options.omit.constructor !== Array) {
     return styled(component);
   }
