@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.59.0"></a>
+# [0.59.0](https://github.com/hooroo/roo-ui/compare/v0.58.16...v0.59.0) (2019-04-09)
+
+
+### Features
+
+* Omit styled-system props that are also valid html attributes ([#228](https://github.com/hooroo/roo-ui/issues/228)) ([7930973](https://github.com/hooroo/roo-ui/commit/7930973))
+
+
+
+
 <a name="0.58.16"></a>
 ## [0.58.16](https://github.com/hooroo/roo-ui/compare/v0.58.15...v0.58.16) (2019-04-05)
 
