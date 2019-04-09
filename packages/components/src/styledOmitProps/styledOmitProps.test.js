@@ -28,6 +28,14 @@ it('does not render valid html attributes that are filtered', () => {
   expect(domNode.getAttribute('color')).toEqual(null);
 });
 
+it('does not render styled-system props that are also valid html props', () => {
+  const Span = styledOmitProps('span')``;
+  const wrapper = mount(<Span fontSize="30">Text</Span>);
+  const domNode = wrapper.find('span').getDOMNode();
+  expect(wrapper.find('span').prop('fontSize')).toBeUndefined();
+  expect(domNode.getAttribute('font-size')).toEqual(null);
+});
+
 describe('invalid html props', () => {
   describe('when no options provided', () => {
     let wrapper;
