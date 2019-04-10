@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { css } from 'styled-components';
+import { css } from '@emotion/core';
 import { hideVisually } from 'polished';
 import { color, fontWeight, themeGet, space } from 'styled-system';
 import styledOmitProps from '../styledOmitProps';

@@ -1,5 +1,7 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { themeGet, style } from 'styled-system';
 
 import ListItem from '../ListItem';
@@ -10,9 +12,7 @@ const columns = style({
   getter: n => `${100 / n}%`,
 });
 
-const List = styled('div').attrs(props => ({
-  as: props.ordered ? 'ol' : 'ul',
-}))`
+const ListBase = styled('div')`
   margin: ${themeGet('space.4')} 0;
   padding-left: ${themeGet('space.8')};
 
@@ -35,6 +35,8 @@ const List = styled('div').attrs(props => ({
     }
   `};
 `;
+
+const List = props => <ListBase {...props} as={props.ordered ? 'ol' : 'ul'} />;
 
 List.displayName = 'List';
 

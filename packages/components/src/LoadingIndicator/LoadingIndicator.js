@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { color, size, width, themeGet } from 'styled-system';
-import styled, { keyframes } from 'styled-components';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/core';
+
 import Box from '../Box';
 
 const fadeIn = keyframes`

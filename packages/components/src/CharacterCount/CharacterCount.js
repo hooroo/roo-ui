@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { Text } from '..';
 import styledOmitProps from '../styledOmitProps';
 

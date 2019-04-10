@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import { css } from 'styled-components';
+import { css } from '@emotion/core';
 import { Box, Text } from '../../../';
 import CalendarWeekdays from '../CalendarWeekdays';
 import CalendarDays from '../CalendarDays';

@@ -1,7 +1,7 @@
 import React from 'react';
 import isPropValid from '@emotion/is-prop-valid';
 import { pickBy, omit } from 'lodash';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { VALID_STYLED_SYSTEM_PROPS } from './constants';
 
 const styledOmitProps = (component, {

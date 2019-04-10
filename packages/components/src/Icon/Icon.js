@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { space, color, propTypes } from 'styled-system';
 import PropTypes from 'prop-types';
 import paths from '@roo-ui/icons';
