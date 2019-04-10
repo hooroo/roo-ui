@@ -30,11 +30,11 @@ steps:
 
   - name: ":eslint: Lint"
     <<: *defaults
-    command: yarn lerna run lint
+    command: yarn run lint
 
   - name: ":jest: Test"
     <<: *defaults
-    command: yarn lerna run test
+    command: yarn run test
 
   - wait
 
