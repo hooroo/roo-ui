@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 import { hideVisually } from 'polished';
 import {
   textStyle,
@@ -13,13 +13,14 @@ import {
   style,
   display,
 } from 'styled-system';
+import styled from '../styledOmitProps';
 
 const textDecoration = style({
   prop: 'textDecoration',
   cssProperty: 'textDecoration',
 });
 
-const Text = styled.span`
+const Text = styled('span')`
   ${textStyle}
   ${color}
   ${fontSize}

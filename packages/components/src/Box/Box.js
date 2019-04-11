@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import {
   display,
   space,
@@ -19,8 +18,9 @@ import {
   position,
   zIndex,
 } from 'styled-system';
+import styled from '../styledOmitProps';
 
-const Box = styled.div`
+const Box = styled('div')`
   ${display}
   ${space}
   ${width}

@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { hideVisually } from 'polished';
 import { textStyle, space } from 'styled-system';
+import styled from '../styledOmitProps';
 
-const Label = styled.label`
+const Label = styled('label', { omit: ['hidden'] })`
   display: block;
   width: 100%;
 
