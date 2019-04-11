@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import { css } from 'styled-components';
 import { hideVisually } from 'polished';
 import { color, fontWeight, themeGet, space } from 'styled-system';
-import styledOmitProps, { VALID_STYLED_SYSTEM_PROPS } from '../styledOmitProps';
+import styledOmitProps from '../styledOmitProps';
 
-const Link = styledOmitProps('a', { omit: [...VALID_STYLED_SYSTEM_PROPS, 'hidden'] })`
+const Link = styledOmitProps('a', { omit: ['hidden'] })`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
