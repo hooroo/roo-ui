@@ -1,29 +1,27 @@
-import React from 'react';
 import isPropValid from '@emotion/is-prop-valid';
-import { pickBy, omit } from 'lodash';
 import styled from '@emotion/styled';
 import { VALID_STYLED_SYSTEM_PROPS } from './constants';
 
+const toTrueHash = arrayOfStrings => arrayOfStrings.reduce(
+  (acc, key) =>
+    ({ ...acc, [key]: true })
+  , {},
+);
+
+const styledSystemProps = toTrueHash(VALID_STYLED_SYSTEM_PROPS);
+
 const styledOmitProps = (component, {
-  omit: customPropsToOmit = [],
+  omit: customPropsList = [],
   omitStyledSystemProps = true,
 } = {}) => {
-  const propsToOmit = omitStyledSystemProps
-    ? [...customPropsToOmit, ...VALID_STYLED_SYSTEM_PROPS]
-    : customPropsToOmit;
+  const customProps = toTrueHash(customPropsList);
 
-  if (propsToOmit.length === 0) {
-    return styled(component);
-  }
-
-  const omittedPropsComponent = React.forwardRef((props, ref) => {
-    const validProps = pickBy(props, (_, prop) => isPropValid(prop));
-    const filteredProps = omit(validProps, propsToOmit);
-    return React.createElement(component, { ...filteredProps, ref });
+  return styled(component, {
+    shouldForwardProp: prop =>
+      isPropValid(prop)
+      && !customProps[prop]
+      && !(omitStyledSystemProps && styledSystemProps[prop]),
   });
-
-  omittedPropsComponent.displayName = component.displayName || 'StyledComponent';
-  return styled(omittedPropsComponent);
 };
 
 Object.keys(styled).forEach((key) => { styledOmitProps[key] = styled[key]; });

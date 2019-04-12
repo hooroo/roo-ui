@@ -24,28 +24,28 @@ const Triangle = styled(Box)`
   ${props =>
     props.placement === 'top' &&
     css`
-      border-top-color: ${themeGet('colors.greys.porcelain')};
+      border-top-color: ${themeGet('colors.greys.porcelain')(props)};
       top: 100%;
     `};
 
   ${props =>
     props.placement === 'right' &&
     css`
-      border-right-color: ${themeGet('colors.greys.porcelain')};
+      border-right-color: ${themeGet('colors.greys.porcelain')(props)};
       right: 100%;
     `};
 
   ${props =>
     props.placement === 'bottom' &&
     css`
-      border-bottom-color: ${themeGet('colors.greys.porcelain')};
+      border-bottom-color: ${themeGet('colors.greys.porcelain')(props)};
       bottom: 100%;
     `};
 
   ${props =>
     props.placement === 'left' &&
     css`
-      border-left-color: ${themeGet('colors.greys.porcelain')};
+      border-left-color: ${themeGet('colors.greys.porcelain')(props)};
       left: 100%;
     `};
 `;
@@ -54,28 +54,28 @@ const TriangleBorder = styled(Triangle)`
   ${props =>
     props.placement === 'top' &&
     css`
-      border-top-color: ${themeGet('colors.greys.alto')};
+      border-top-color: ${themeGet('colors.greys.alto')(props)};
       margin-top: ${rem('2px')};
     `};
 
   ${props =>
     props.placement === 'right' &&
     css`
-      border-right-color: ${themeGet('colors.greys.alto')};
+      border-right-color: ${themeGet('colors.greys.alto')(props)};
       margin-right: ${rem('2px')};
     `};
 
   ${props =>
     props.placement === 'bottom' &&
     css`
-      border-bottom-color: ${themeGet('colors.greys.alto')};
+      border-bottom-color: ${themeGet('colors.greys.alto')(props)};
       margin-bottom: ${rem('2px')};
     `};
 
   ${props =>
     props.placement === 'left' &&
     css`
-      border-left-color: ${themeGet('colors.greys.alto')};
+      border-left-color: ${themeGet('colors.greys.alto')(props)};
       margin-left: ${rem('2px')};
     `};
 `;

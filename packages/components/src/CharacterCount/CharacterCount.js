@@ -25,7 +25,7 @@ Base.propTypes = {
 
 const CharacterCount = styled(Text.withComponent(Base))`
   ${props => props.value.length > props.limit && css`
-    color: ${themeGet('colors.ui.error')};
+    color: ${themeGet('colors.ui.error')(props)};
   `};
 `;
 

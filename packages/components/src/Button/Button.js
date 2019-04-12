@@ -54,7 +54,7 @@ const Button = styled.button`
   }
 
   ${props => props.rounded && css`
-    border-radius: ${themeGet('radii.rounded')};
+    border-radius: ${themeGet('radii.rounded')(props)};
   `}
 
   ${props => props.block && css`
