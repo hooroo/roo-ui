@@ -49,7 +49,7 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
           >
             <Styled(div)>
               <div
-                className="css-xt9xmq e1dqxh4r0"
+                className="css-xt9xmq emotion-0"
               >
                 <button
                   disabled={false}
@@ -69,6 +69,26 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
 `;
 
 exports[`<Popover /> when popover is open renders correctly 1`] = `
+.emotion-6 {
+  z-index: 1;
+}
+
+.emotion-2 {
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-width: 0.75rem;
+  position: absolute;
+}
+
+.emotion-4 {
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-width: 0.75rem;
+  position: absolute;
+}
+
 <div>
   <OnClickOutside(Base)
     eventTypes={
@@ -117,7 +137,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
           >
             <Styled(div)>
               <div
-                className="css-xt9xmq e1dqxh4r0"
+                className="emotion-0 emotion-1"
               >
                 <button
                   disabled={true}
@@ -152,7 +172,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
             positionFixed={false}
             referenceElement={
               <div
-                class="css-xt9xmq e1dqxh4r0"
+                class="emotion-0 emotion-1"
               >
                 <button
                   disabled=""
@@ -178,7 +198,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
             >
               <div
                 aria-hidden="true"
-                className="ignore-react-onclickoutside css-1cvlz36-ContentWrapper e19q0tfi0"
+                className="ignore-react-onclickoutside emotion-6 emotion-7"
                 style={
                   Object {
                     "left": 0,
@@ -198,7 +218,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                   style={Object {}}
                 >
                   <div
-                    className="css-shr945-Triangle-TriangleBorder e19q0tfi2"
+                    className="emotion-2 emotion-3"
                     style={Object {}}
                   />
                 </TriangleBorder>
@@ -206,7 +226,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                   style={Object {}}
                 >
                   <div
-                    className="css-11t0ney-Triangle e19q0tfi1"
+                    className="emotion-4 emotion-5"
                     style={Object {}}
                   />
                 </Triangle>

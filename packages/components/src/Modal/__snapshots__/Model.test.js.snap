@@ -1,6 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Modal /> renders correctly 1`] = `
+.emotion-0 .ModalOverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(34,34,34,0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .ModalContent {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: none;
+  background: #FFFFFF;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 90%;
+  width: calc(100% - 1.25rem);
+}
+
+@media (min-width:40rem) {
+  .emotion-0 .ModalContent {
+    -webkit-flex: 0 1 41.25rem;
+    -ms-flex: 0 1 41.25rem;
+    flex: 0 1 41.25rem;
+  }
+}
+
 <Modal
   ariaHideApp={true}
   isOpen={true}
@@ -10,7 +62,7 @@ exports[`<Modal /> renders correctly 1`] = `
 >
   <Component
     ariaHideApp={true}
-    className="css-os23es-Modal e1qv8dvq0"
+    className="emotion-0 emotion-1"
     isOpen={true}
     role="dialog"
     title="Test Modal"
@@ -24,7 +76,7 @@ exports[`<Modal /> renders correctly 1`] = `
       isOpen={true}
       overlayClassName="ModalOverlay"
       parentSelector={[Function]}
-      portalClassName="css-os23es-Modal e1qv8dvq0"
+      portalClassName="emotion-0 emotion-1"
       role="dialog"
       shouldCloseOnEsc={true}
       shouldCloseOnOverlayClick={true}
@@ -34,8 +86,60 @@ exports[`<Modal /> renders correctly 1`] = `
     >
       <Portal
         containerInfo={
-          <div
-            class="css-os23es-Modal e1qv8dvq0"
+          .emotion-0 .ModalOverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(34,34,34,0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .ModalContent {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: none;
+  background: #FFFFFF;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 90%;
+  width: calc(100% - 1.25rem);
+}
+
+@media (min-width:40rem) {
+  .emotion-0 .ModalContent {
+    -webkit-flex: 0 1 41.25rem;
+    -ms-flex: 0 1 41.25rem;
+    flex: 0 1 41.25rem;
+  }
+}
+
+<div
+            class="emotion-0 emotion-1"
           >
             <div
               class="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
@@ -83,7 +187,7 @@ exports[`<Modal /> renders correctly 1`] = `
           isOpen={true}
           overlayClassName="ModalOverlay"
           parentSelector={[Function]}
-          portalClassName="css-os23es-Modal e1qv8dvq0"
+          portalClassName="emotion-0 emotion-1"
           role="dialog"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}

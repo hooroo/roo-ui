@@ -1,6 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
+.emotion-13 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-11 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.errorBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
 <Alert
   mb={3}
   variant="error"
@@ -14,25 +58,25 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-88wsva e1dqxh4r0"
+        className="emotion-15 emotion-8"
       >
         <Styled(div)
           px={4}
         >
           <div
-            className="css-8bw0e3 e1dqxh4r0"
+            className="emotion-13 emotion-8"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-11 emotion-12"
               >
                 <Styled(div)
                   pr={3}
                 >
                   <div
-                    className="css-1kdfv5j e1dqxh4r0"
+                    className="emotion-7 emotion-8"
                   >
                     <Icon
                       color="ui.error"
@@ -41,14 +85,14 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                       title={null}
                     >
                       <Base
-                        className="css-ytk37b-Icon e1pa9kzm1"
+                        className="emotion-3 emotion-0"
                         color="ui.error"
                         name="warning"
                         size={24}
                         title={null}
                       >
                         <StyledSvg
-                          className="css-ytk37b-Icon e1pa9kzm1"
+                          className="emotion-3 emotion-0"
                           color="ui.error"
                           fill="currentcolor"
                           height={24}
@@ -57,7 +101,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                           width={24}
                         >
                           <svg
-                            className="e1pa9kzm1 css-1wizixd-StyledSvg-Icon e1pa9kzm0"
+                            className="emotion-0 emotion-1 emotion-2"
                             color="ui.error"
                             fill="currentcolor"
                             height={24}
@@ -81,7 +125,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-9 emotion-8"
                     hidden={false}
                   >
                     Hello world
@@ -98,6 +142,50 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
+.emotion-13 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-11 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.infoBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
 <Alert
   mb={3}
   variant="info"
@@ -111,25 +199,25 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-1ocau4u e1dqxh4r0"
+        className="emotion-15 emotion-8"
       >
         <Styled(div)
           px={4}
         >
           <div
-            className="css-8bw0e3 e1dqxh4r0"
+            className="emotion-13 emotion-8"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-11 emotion-12"
               >
                 <Styled(div)
                   pr={3}
                 >
                   <div
-                    className="css-1kdfv5j e1dqxh4r0"
+                    className="emotion-7 emotion-8"
                   >
                     <Icon
                       color="greys.charcoal"
@@ -138,14 +226,14 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                       title={null}
                     >
                       <Base
-                        className="css-vo8vz7-Icon e1pa9kzm1"
+                        className="emotion-3 emotion-0"
                         color="greys.charcoal"
                         name="info"
                         size={24}
                         title={null}
                       >
                         <StyledSvg
-                          className="css-vo8vz7-Icon e1pa9kzm1"
+                          className="emotion-3 emotion-0"
                           color="greys.charcoal"
                           fill="currentcolor"
                           height={24}
@@ -154,7 +242,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                           width={24}
                         >
                           <svg
-                            className="e1pa9kzm1 css-g2o246-StyledSvg-Icon e1pa9kzm0"
+                            className="emotion-0 emotion-1 emotion-2"
                             color="greys.charcoal"
                             fill="currentcolor"
                             height={24}
@@ -178,7 +266,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-9 emotion-8"
                     hidden={false}
                   >
                     Hello world
@@ -195,6 +283,50 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
+.emotion-13 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-11 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.successBackground;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
 <Alert
   mb={3}
   variant="success"
@@ -208,25 +340,25 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-1ju020a e1dqxh4r0"
+        className="emotion-15 emotion-8"
       >
         <Styled(div)
           px={4}
         >
           <div
-            className="css-8bw0e3 e1dqxh4r0"
+            className="emotion-13 emotion-8"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-11 emotion-12"
               >
                 <Styled(div)
                   pr={3}
                 >
                   <div
-                    className="css-1kdfv5j e1dqxh4r0"
+                    className="emotion-7 emotion-8"
                   >
                     <Icon
                       color="ui.success"
@@ -235,14 +367,14 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                       title={null}
                     >
                       <Base
-                        className="css-510x8p-Icon e1pa9kzm1"
+                        className="emotion-3 emotion-0"
                         color="ui.success"
                         name="checkCircle"
                         size={24}
                         title={null}
                       >
                         <StyledSvg
-                          className="css-510x8p-Icon e1pa9kzm1"
+                          className="emotion-3 emotion-0"
                           color="ui.success"
                           fill="currentcolor"
                           height={24}
@@ -251,7 +383,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                           width={24}
                         >
                           <svg
-                            className="e1pa9kzm1 css-1pn7qtu-StyledSvg-Icon e1pa9kzm0"
+                            className="emotion-0 emotion-1 emotion-2"
                             color="ui.success"
                             fill="currentcolor"
                             height={24}
@@ -275,7 +407,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-9 emotion-8"
                     hidden={false}
                   >
                     Hello world
@@ -292,6 +424,50 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
+.emotion-13 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-11 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.errorBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
 <Alert.error
   mb={3}
   variant="error"
@@ -305,25 +481,25 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-88wsva e1dqxh4r0"
+        className="emotion-15 emotion-8"
       >
         <Styled(div)
           px={4}
         >
           <div
-            className="css-8bw0e3 e1dqxh4r0"
+            className="emotion-13 emotion-8"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-11 emotion-12"
               >
                 <Styled(div)
                   pr={3}
                 >
                   <div
-                    className="css-1kdfv5j e1dqxh4r0"
+                    className="emotion-7 emotion-8"
                   >
                     <Icon
                       color="ui.error"
@@ -332,14 +508,14 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                       title={null}
                     >
                       <Base
-                        className="css-ytk37b-Icon e1pa9kzm1"
+                        className="emotion-3 emotion-0"
                         color="ui.error"
                         name="warning"
                         size={24}
                         title={null}
                       >
                         <StyledSvg
-                          className="css-ytk37b-Icon e1pa9kzm1"
+                          className="emotion-3 emotion-0"
                           color="ui.error"
                           fill="currentcolor"
                           height={24}
@@ -348,7 +524,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                           width={24}
                         >
                           <svg
-                            className="e1pa9kzm1 css-1wizixd-StyledSvg-Icon e1pa9kzm0"
+                            className="emotion-0 emotion-1 emotion-2"
                             color="ui.error"
                             fill="currentcolor"
                             height={24}
@@ -372,7 +548,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-9 emotion-8"
                     hidden={false}
                   >
                     Hello world
@@ -389,6 +565,50 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
+.emotion-13 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-11 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.infoBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
 <Alert.info
   mb={3}
   variant="info"
@@ -402,25 +622,25 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-1ocau4u e1dqxh4r0"
+        className="emotion-15 emotion-8"
       >
         <Styled(div)
           px={4}
         >
           <div
-            className="css-8bw0e3 e1dqxh4r0"
+            className="emotion-13 emotion-8"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-11 emotion-12"
               >
                 <Styled(div)
                   pr={3}
                 >
                   <div
-                    className="css-1kdfv5j e1dqxh4r0"
+                    className="emotion-7 emotion-8"
                   >
                     <Icon
                       color="greys.charcoal"
@@ -429,14 +649,14 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                       title={null}
                     >
                       <Base
-                        className="css-vo8vz7-Icon e1pa9kzm1"
+                        className="emotion-3 emotion-0"
                         color="greys.charcoal"
                         name="info"
                         size={24}
                         title={null}
                       >
                         <StyledSvg
-                          className="css-vo8vz7-Icon e1pa9kzm1"
+                          className="emotion-3 emotion-0"
                           color="greys.charcoal"
                           fill="currentcolor"
                           height={24}
@@ -445,7 +665,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                           width={24}
                         >
                           <svg
-                            className="e1pa9kzm1 css-g2o246-StyledSvg-Icon e1pa9kzm0"
+                            className="emotion-0 emotion-1 emotion-2"
                             color="greys.charcoal"
                             fill="currentcolor"
                             height={24}
@@ -469,7 +689,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-9 emotion-8"
                     hidden={false}
                   >
                     Hello world
@@ -486,6 +706,50 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
+.emotion-13 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-11 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.successBackground;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
 <Alert.success
   mb={3}
   variant="success"
@@ -499,25 +763,25 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-1ju020a e1dqxh4r0"
+        className="emotion-15 emotion-8"
       >
         <Styled(div)
           px={4}
         >
           <div
-            className="css-8bw0e3 e1dqxh4r0"
+            className="emotion-13 emotion-8"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-11 emotion-12"
               >
                 <Styled(div)
                   pr={3}
                 >
                   <div
-                    className="css-1kdfv5j e1dqxh4r0"
+                    className="emotion-7 emotion-8"
                   >
                     <Icon
                       color="ui.success"
@@ -526,14 +790,14 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                       title={null}
                     >
                       <Base
-                        className="css-510x8p-Icon e1pa9kzm1"
+                        className="emotion-3 emotion-0"
                         color="ui.success"
                         name="checkCircle"
                         size={24}
                         title={null}
                       >
                         <StyledSvg
-                          className="css-510x8p-Icon e1pa9kzm1"
+                          className="emotion-3 emotion-0"
                           color="ui.success"
                           fill="currentcolor"
                           height={24}
@@ -542,7 +806,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                           width={24}
                         >
                           <svg
-                            className="e1pa9kzm1 css-1pn7qtu-StyledSvg-Icon e1pa9kzm0"
+                            className="emotion-0 emotion-1 emotion-2"
                             color="ui.success"
                             fill="currentcolor"
                             height={24}
@@ -566,7 +830,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-9 emotion-8"
                     hidden={false}
                   >
                     Hello world
@@ -583,6 +847,32 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> contained renders correctly 1`] = `
+.emotion-6 {
+  margin-bottom: 16px;
+  background-color: greys.porcelain;
+}
+
+.emotion-2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-0 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: default;
+}
+
 <Alert
   contained={true}
   mb={3}
@@ -598,20 +888,20 @@ exports[`<Alert /> contained renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-1cuafi0 e1dqxh4r0"
+        className="emotion-6 emotion-1"
       >
         <Container
           gutter="default"
           maxWidth="default"
         >
           <div
-            className="css-1l14fni-Container e188lj6g0"
+            className="emotion-4 emotion-5"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-2 emotion-3"
               >
                 <Text
                   hidden={false}
@@ -620,7 +910,7 @@ exports[`<Alert /> contained renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-0 emotion-1"
                     hidden={false}
                   >
                     Hello world
@@ -637,6 +927,30 @@ exports[`<Alert /> contained renders correctly 1`] = `
 `;
 
 exports[`<Alert /> renders correctly 1`] = `
+.emotion-6 {
+  margin-bottom: 16px;
+  background-color: greys.porcelain;
+}
+
+.emotion-4 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.emotion-2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-0 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
 <Alert
   mb={3}
   variant="default"
@@ -650,19 +964,19 @@ exports[`<Alert /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="css-1cuafi0 e1dqxh4r0"
+        className="emotion-6 emotion-1"
       >
         <Styled(div)
           px={4}
         >
           <div
-            className="css-8bw0e3 e1dqxh4r0"
+            className="emotion-4 emotion-1"
           >
             <Flex
               py={4}
             >
               <div
-                className="css-1kfzkx5-Flex e18o73gf0"
+                className="emotion-2 emotion-3"
               >
                 <Text
                   hidden={false}
@@ -671,7 +985,7 @@ exports[`<Alert /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="css-51vlo9 e1dqxh4r0"
+                    className="emotion-0 emotion-1"
                     hidden={false}
                   >
                     Hello world

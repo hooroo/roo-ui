@@ -1,6 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarNav /> renders correctly 1`] = `
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.emotion-7 {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.emotion-7:hover,
+.emotion-7:focus {
+  outline: none;
+}
+
+.emotion-7:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <CalendarNav
   nextProps={
     Object {
@@ -15,7 +69,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
 >
   <Wrapper>
     <div
-      className="css-126bju7-Flex-Wrapper e51kc0a0"
+      className="emotion-18 emotion-19"
     >
       <Button
         as="button"
@@ -23,7 +77,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
         type="button"
       >
         <button
-          className="css-1pfeqh7-NakedButton-Button e51kc0a1"
+          className="emotion-7 emotion-8"
           onClick={[MockFunction]}
           type="button"
         >
@@ -33,13 +87,13 @@ exports[`<CalendarNav /> renders correctly 1`] = `
             title={null}
           >
             <Base
-              className="css-ra297d-Icon e1pa9kzm1"
+              className="emotion-3 emotion-0"
               name="chevronLeft"
               size={24}
               title={null}
             >
               <StyledSvg
-                className="css-ra297d-Icon e1pa9kzm1"
+                className="emotion-3 emotion-0"
                 fill="currentcolor"
                 height={24}
                 title="chevronLeft"
@@ -47,7 +101,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                 width={24}
               >
                 <svg
-                  className="e1pa9kzm1 css-5r0ke4-StyledSvg-Icon e1pa9kzm0"
+                  className="emotion-0 emotion-1 emotion-2"
                   fill="currentcolor"
                   height={24}
                   title="chevronLeft"
@@ -69,7 +123,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
         type="button"
       >
         <button
-          className="css-1pfeqh7-NakedButton-Button e51kc0a1"
+          className="emotion-7 emotion-8"
           onClick={[MockFunction]}
           type="button"
         >
@@ -79,13 +133,13 @@ exports[`<CalendarNav /> renders correctly 1`] = `
             title={null}
           >
             <Base
-              className="css-ra297d-Icon e1pa9kzm1"
+              className="emotion-3 emotion-0"
               name="chevronRight"
               size={24}
               title={null}
             >
               <StyledSvg
-                className="css-ra297d-Icon e1pa9kzm1"
+                className="emotion-3 emotion-0"
                 fill="currentcolor"
                 height={24}
                 title="chevronRight"
@@ -93,7 +147,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                 width={24}
               >
                 <svg
-                  className="e1pa9kzm1 css-5r0ke4-StyledSvg-Icon e1pa9kzm0"
+                  className="emotion-0 emotion-1 emotion-2"
                   fill="currentcolor"
                   height={24}
                   title="chevronRight"

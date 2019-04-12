@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CharacterCount /> renders correctly 1`] = `
+.emotion-0 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
 <CharacterCount
   fontSize="sm"
   hidden={false}
@@ -16,7 +23,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
     value="Hello world"
   >
     <span
-      className="css-mrmr0j e1dqxh4r0"
+      className="emotion-0 emotion-1"
       hidden={false}
       value="Hello world"
     >

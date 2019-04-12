@@ -1,11 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<OutlineButton /> primary renders correctly 1`] = `
+.emotion-0 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.125em;
+  -moz-letter-spacing: 0.125em;
+  -ms-letter-spacing: 0.125em;
+  letter-spacing: 0.125em;
+  line-height: 1.35;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: white;
+  background-color: #E40000;
+  background-color: transparent;
+  border-color: #E40000;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.emotion-0:hover {
+  background-color: #b10000;
+}
+
+.emotion-0:hover:disabled {
+  background-color: #E40000;
+}
+
+.emotion-0:focus {
+  box-shadow: 0 0 2px 2px #999999;
+}
+
+.emotion-0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emotion-0:not(:hover) {
+  color: #E40000;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #E40000;
+  border-color: #E40000;
+}
+
+.emotion-0:disabled {
+  color: #999999;
+  border-color: #999999;
+}
+
 <OutlineButton
   variant="primary"
 >
   <button
-    className="css-1jclakd-Button-OutlineButton emz9cav0"
+    className="emotion-0 emotion-1"
   >
     Hello world
   </button>
@@ -13,11 +77,75 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
 `;
 
 exports[`<OutlineButton /> renders correctly 1`] = `
+.emotion-0 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.125em;
+  -moz-letter-spacing: 0.125em;
+  -ms-letter-spacing: 0.125em;
+  letter-spacing: 0.125em;
+  line-height: 1.35;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: white;
+  background-color: #323232;
+  background-color: transparent;
+  border-color: #323232;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.emotion-0:hover {
+  background-color: #181818;
+}
+
+.emotion-0:hover:disabled {
+  background-color: #323232;
+}
+
+.emotion-0:focus {
+  box-shadow: 0 0 2px 2px #999999;
+}
+
+.emotion-0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emotion-0:not(:hover) {
+  color: #323232;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #323232;
+  border-color: #323232;
+}
+
+.emotion-0:disabled {
+  color: #999999;
+  border-color: #999999;
+}
+
 <OutlineButton
   variant="default"
 >
   <button
-    className="css-1hslae3-Button-OutlineButton emz9cav0"
+    className="emotion-0 emotion-1"
   >
     Click here
   </button>
@@ -25,11 +153,63 @@ exports[`<OutlineButton /> renders correctly 1`] = `
 `;
 
 exports[`<OutlineButton /> rounded renders correctly 1`] = `
+.emotion-0 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.125em;
+  -moz-letter-spacing: 0.125em;
+  -ms-letter-spacing: 0.125em;
+  letter-spacing: 0.125em;
+  line-height: 1.35;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.emotion-0:hover {
+  background-color: #000;
+}
+
+.emotion-0:hover:disabled {
+  background-color: #000;
+}
+
+.emotion-0:focus {
+  box-shadow: 0 0 2px 2px #999999;
+}
+
+.emotion-0:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emotion-0:disabled {
+  color: #999999;
+  border-color: #999999;
+}
+
 <OutlineButton
   variant="rounded"
 >
   <button
-    className="css-1da4l8q-Button-OutlineButton emz9cav0"
+    className="emotion-0 emotion-1"
   >
     Hello world
   </button>
