@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ModalBody /> renders correctly 1`] = `
-<Box
+<Styled(div)
   pb={10}
   pt={7}
   px={11}
@@ -15,5 +15,5 @@ exports[`<ModalBody /> renders correctly 1`] = `
   >
     Lorem ipsum dolor sit amet
   </Text>
-</Box>
+</Styled(div)>
 `;

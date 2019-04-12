@@ -1,28 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Container /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  gutter="default"
-  maxWidth="default"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Container /> with a responsive gutter renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  gutter={
-    Array [
-      3,
-      6,
-      9,
-      12,
-    ]
-  }
-  maxWidth="default"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

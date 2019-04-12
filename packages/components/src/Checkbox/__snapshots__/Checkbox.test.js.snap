@@ -1,377 +1,183 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> renders correctly 1`] = `
-.c0 {
-  display: inline-block;
-  position: relative;
-}
-
-.c1 {
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0.125rem;
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
-.c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  position: absolute;
-  display: none;
-  top: 0;
-  left: -0.125rem;
-}
-
-input:checked ~ .c3 {
-  display: block;
-}
-
 <Checkbox>
-  <Checkbox__CheckboxWrapper>
-    <StyledComponent
-      forwardedRef={null}
+  <CheckboxWrapper>
+    <div
+      className="css-1uy26qj-CheckboxWrapper e1cvbq3x0"
     >
-      <div
-        className="c0"
+      <CheckboxInput
+        type="checkbox"
       >
-        <Checkbox__CheckboxInput
+        <input
+          className="css-wpqlyv-CheckboxInput e1cvbq3x1"
           type="checkbox"
-        >
-          <StyledComponent
-            forwardedRef={null}
-            type="checkbox"
-          >
-            <input
-              className="c1"
-              type="checkbox"
-            />
-          </StyledComponent>
-        </Checkbox__CheckboxInput>
-        <Checkbox__CheckboxBorder>
-          <StyledComponent
-            forwardedRef={null}
-          >
-            <div
-              className="c2"
-            />
-          </StyledComponent>
-        </Checkbox__CheckboxBorder>
-        <Checkbox__CheckboxIcon
+        />
+      </CheckboxInput>
+      <CheckboxBorder>
+        <div
+          className="css-o957np-CheckboxBorder e1cvbq3x2"
+        />
+      </CheckboxBorder>
+      <CheckboxIcon
+        name="done"
+        size={24}
+        title={null}
+      >
+        <Base
+          className="css-1sa9cqu-Icon-CheckboxIcon e1cvbq3x3"
           name="done"
+          size={24}
+          title={null}
         >
-          <StyledComponent
-            forwardedRef={null}
-            name="done"
+          <StyledSvg
+            className="css-1sa9cqu-Icon-CheckboxIcon e1cvbq3x3"
+            fill="currentcolor"
+            height={24}
+            title="done"
+            viewBox="0 0 24 24"
+            width={24}
           >
-            <Base
-              className="c3"
-              name="done"
-              size={24}
-              title={null}
+            <svg
+              className="e1cvbq3x3 css-l79hfo-StyledSvg-Icon-CheckboxIcon e1pa9kzm0"
+              fill="currentcolor"
+              height={24}
+              title="done"
+              viewBox="0 0 24 24"
+              width={24}
             >
-              <Icon__StyledSvg
-                className="c3"
-                fill="currentcolor"
-                height={24}
-                title="done"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <StyledComponent
-                  className="c3"
-                  fill="currentcolor"
-                  forwardedRef={null}
-                  height={24}
-                  title="done"
-                  viewBox="0 0 24 24"
-                  width={24}
-                >
-                  <svg
-                    className="c3 "
-                    fill="currentcolor"
-                    height={24}
-                    title="done"
-                    viewBox="0 0 24 24"
-                    width={24}
-                  >
-                    <path
-                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                    />
-                  </svg>
-                </StyledComponent>
-              </Icon__StyledSvg>
-            </Base>
-          </StyledComponent>
-        </Checkbox__CheckboxIcon>
-      </div>
-    </StyledComponent>
-  </Checkbox__CheckboxWrapper>
+              <path
+                d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+              />
+            </svg>
+          </StyledSvg>
+        </Base>
+      </CheckboxIcon>
+    </div>
+  </CheckboxWrapper>
 </Checkbox>
 `;
 
 exports[`<Checkbox /> when checked renders correctly 1`] = `
-.c0 {
-  display: inline-block;
-  position: relative;
-}
-
-.c1 {
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0.125rem;
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
-.c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  position: absolute;
-  display: none;
-  top: 0;
-  left: -0.125rem;
-}
-
-input:checked ~ .c3 {
-  display: block;
-}
-
 <Checkbox
   defaultChecked={true}
 >
-  <Checkbox__CheckboxWrapper>
-    <StyledComponent
-      forwardedRef={null}
+  <CheckboxWrapper>
+    <div
+      className="css-1uy26qj-CheckboxWrapper e1cvbq3x0"
     >
-      <div
-        className="c0"
+      <CheckboxInput
+        defaultChecked={true}
+        type="checkbox"
       >
-        <Checkbox__CheckboxInput
+        <input
+          className="css-wpqlyv-CheckboxInput e1cvbq3x1"
           defaultChecked={true}
           type="checkbox"
-        >
-          <StyledComponent
-            defaultChecked={true}
-            forwardedRef={null}
-            type="checkbox"
-          >
-            <input
-              className="c1"
-              defaultChecked={true}
-              type="checkbox"
-            />
-          </StyledComponent>
-        </Checkbox__CheckboxInput>
-        <Checkbox__CheckboxBorder>
-          <StyledComponent
-            forwardedRef={null}
-          >
-            <div
-              className="c2"
-            />
-          </StyledComponent>
-        </Checkbox__CheckboxBorder>
-        <Checkbox__CheckboxIcon
+        />
+      </CheckboxInput>
+      <CheckboxBorder>
+        <div
+          className="css-o957np-CheckboxBorder e1cvbq3x2"
+        />
+      </CheckboxBorder>
+      <CheckboxIcon
+        name="done"
+        size={24}
+        title={null}
+      >
+        <Base
+          className="css-1sa9cqu-Icon-CheckboxIcon e1cvbq3x3"
           name="done"
+          size={24}
+          title={null}
         >
-          <StyledComponent
-            forwardedRef={null}
-            name="done"
+          <StyledSvg
+            className="css-1sa9cqu-Icon-CheckboxIcon e1cvbq3x3"
+            fill="currentcolor"
+            height={24}
+            title="done"
+            viewBox="0 0 24 24"
+            width={24}
           >
-            <Base
-              className="c3"
-              name="done"
-              size={24}
-              title={null}
+            <svg
+              className="e1cvbq3x3 css-l79hfo-StyledSvg-Icon-CheckboxIcon e1pa9kzm0"
+              fill="currentcolor"
+              height={24}
+              title="done"
+              viewBox="0 0 24 24"
+              width={24}
             >
-              <Icon__StyledSvg
-                className="c3"
-                fill="currentcolor"
-                height={24}
-                title="done"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <StyledComponent
-                  className="c3"
-                  fill="currentcolor"
-                  forwardedRef={null}
-                  height={24}
-                  title="done"
-                  viewBox="0 0 24 24"
-                  width={24}
-                >
-                  <svg
-                    className="c3 "
-                    fill="currentcolor"
-                    height={24}
-                    title="done"
-                    viewBox="0 0 24 24"
-                    width={24}
-                  >
-                    <path
-                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                    />
-                  </svg>
-                </StyledComponent>
-              </Icon__StyledSvg>
-            </Base>
-          </StyledComponent>
-        </Checkbox__CheckboxIcon>
-      </div>
-    </StyledComponent>
-  </Checkbox__CheckboxWrapper>
+              <path
+                d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+              />
+            </svg>
+          </StyledSvg>
+        </Base>
+      </CheckboxIcon>
+    </div>
+  </CheckboxWrapper>
 </Checkbox>
 `;
 
 exports[`<Checkbox /> when disabled renders correctly 1`] = `
-.c0 {
-  display: inline-block;
-  position: relative;
-}
-
-.c1 {
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0.125rem;
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
-.c3 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  position: absolute;
-  display: none;
-  top: 0;
-  left: -0.125rem;
-}
-
-input:checked ~ .c3 {
-  display: block;
-}
-
 <Checkbox
   disabled={true}
 >
-  <Checkbox__CheckboxWrapper>
-    <StyledComponent
-      forwardedRef={null}
+  <CheckboxWrapper>
+    <div
+      className="css-1uy26qj-CheckboxWrapper e1cvbq3x0"
     >
-      <div
-        className="c0"
+      <CheckboxInput
+        disabled={true}
+        type="checkbox"
       >
-        <Checkbox__CheckboxInput
+        <input
+          className="css-wpqlyv-CheckboxInput e1cvbq3x1"
           disabled={true}
           type="checkbox"
-        >
-          <StyledComponent
-            disabled={true}
-            forwardedRef={null}
-            type="checkbox"
-          >
-            <input
-              className="c1"
-              disabled={true}
-              type="checkbox"
-            />
-          </StyledComponent>
-        </Checkbox__CheckboxInput>
-        <Checkbox__CheckboxBorder>
-          <StyledComponent
-            forwardedRef={null}
-          >
-            <div
-              className="c2"
-            />
-          </StyledComponent>
-        </Checkbox__CheckboxBorder>
-        <Checkbox__CheckboxIcon
+        />
+      </CheckboxInput>
+      <CheckboxBorder>
+        <div
+          className="css-o957np-CheckboxBorder e1cvbq3x2"
+        />
+      </CheckboxBorder>
+      <CheckboxIcon
+        name="done"
+        size={24}
+        title={null}
+      >
+        <Base
+          className="css-1sa9cqu-Icon-CheckboxIcon e1cvbq3x3"
           name="done"
+          size={24}
+          title={null}
         >
-          <StyledComponent
-            forwardedRef={null}
-            name="done"
+          <StyledSvg
+            className="css-1sa9cqu-Icon-CheckboxIcon e1cvbq3x3"
+            fill="currentcolor"
+            height={24}
+            title="done"
+            viewBox="0 0 24 24"
+            width={24}
           >
-            <Base
-              className="c3"
-              name="done"
-              size={24}
-              title={null}
+            <svg
+              className="e1cvbq3x3 css-l79hfo-StyledSvg-Icon-CheckboxIcon e1pa9kzm0"
+              fill="currentcolor"
+              height={24}
+              title="done"
+              viewBox="0 0 24 24"
+              width={24}
             >
-              <Icon__StyledSvg
-                className="c3"
-                fill="currentcolor"
-                height={24}
-                title="done"
-                viewBox="0 0 24 24"
-                width={24}
-              >
-                <StyledComponent
-                  className="c3"
-                  fill="currentcolor"
-                  forwardedRef={null}
-                  height={24}
-                  title="done"
-                  viewBox="0 0 24 24"
-                  width={24}
-                >
-                  <svg
-                    className="c3 "
-                    fill="currentcolor"
-                    height={24}
-                    title="done"
-                    viewBox="0 0 24 24"
-                    width={24}
-                  >
-                    <path
-                      d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-                    />
-                  </svg>
-                </StyledComponent>
-              </Icon__StyledSvg>
-            </Base>
-          </StyledComponent>
-        </Checkbox__CheckboxIcon>
-      </div>
-    </StyledComponent>
-  </Checkbox__CheckboxWrapper>
+              <path
+                d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+              />
+            </svg>
+          </StyledSvg>
+        </Base>
+      </CheckboxIcon>
+    </div>
+  </CheckboxWrapper>
 </Checkbox>
 `;

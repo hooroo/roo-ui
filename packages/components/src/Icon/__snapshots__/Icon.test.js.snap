@@ -1,58 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Icon /> renders correctly 1`] = `
-.c0 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
 <Icon
   name="hotel"
+  size={24}
+  title={null}
 >
-  <StyledComponent
-    forwardedRef={null}
+  <Base
+    className="css-ra297d-Icon e1pa9kzm1"
     name="hotel"
+    size={24}
+    title={null}
   >
-    <Base
-      className="c0"
-      name="hotel"
-      size={24}
-      title={null}
+    <StyledSvg
+      className="css-ra297d-Icon e1pa9kzm1"
+      fill="currentcolor"
+      height={24}
+      title="hotel"
+      viewBox="0 0 24 24"
+      width={24}
     >
-      <Icon__StyledSvg
-        className="c0"
+      <svg
+        className="e1pa9kzm1 css-5r0ke4-StyledSvg-Icon e1pa9kzm0"
         fill="currentcolor"
         height={24}
         title="hotel"
         viewBox="0 0 24 24"
         width={24}
       >
-        <StyledComponent
-          className="c0"
-          fill="currentcolor"
-          forwardedRef={null}
-          height={24}
-          title="hotel"
-          viewBox="0 0 24 24"
-          width={24}
-        >
-          <svg
-            className="c0 "
-            fill="currentcolor"
-            height={24}
-            title="hotel"
-            viewBox="0 0 24 24"
-            width={24}
-          >
-            <path
-              d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"
-            />
-          </svg>
-        </StyledComponent>
-      </Icon__StyledSvg>
-    </Base>
-  </StyledComponent>
+        <path
+          d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"
+        />
+      </svg>
+    </StyledSvg>
+  </Base>
 </Icon>
 `;

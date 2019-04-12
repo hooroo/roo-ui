@@ -1,85 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Heading /> <Heading.h1 /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="h1"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Heading /> <Heading.h2 /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="h2"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Heading /> <Heading.h3 /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="h3"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Heading /> <Heading.h4 /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="h4"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Heading /> <Heading.h5 /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="h5"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Heading /> <Heading.h6 /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="h6"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Heading /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="h3"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
