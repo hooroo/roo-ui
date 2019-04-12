@@ -27,6 +27,7 @@ const Toggle = styled(NakedButton)`
     outline: none;
   }
 `;
+Toggle.displayName = 'PasswordInput__Toggle';
 
 class Base extends Component {
   constructor(props) {

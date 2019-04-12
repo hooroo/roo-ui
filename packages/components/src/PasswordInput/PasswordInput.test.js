@@ -30,11 +30,11 @@ describe('<PasswordInput />', () => {
     describe('on visibility toggle click', () => {
       beforeEach(() => {
         wrapper.find('PasswordInput__Toggle').simulate('click');
+        wrapper.update();
       });
 
       it('sets <input /> type to text', () => {
         expect(wrapper
-          .update()
           .find('PasswordInput__Input')
           .props()).toHaveProperty('type', 'text');
       });
