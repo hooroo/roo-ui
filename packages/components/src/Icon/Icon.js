@@ -1,14 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { space, color, propTypes } from 'styled-system';
+import { space, color } from 'styled-system';
 import PropTypes from 'prop-types';
 import paths from '@roo-ui/icons';
 
 const StyledSvg = styled.svg``;
 
-StyledSvg.propTypes = {
-  ...propTypes.space,
-};
 
 const Base = ({
   name, title, size, ...props

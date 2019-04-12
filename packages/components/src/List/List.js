@@ -9,7 +9,7 @@ import ListItem from '../ListItem';
 const columns = style({
   prop: 'columns',
   cssProperty: 'flexBasis',
-  getter: n => `${100 / n}%`,
+  transformValue: n => `${100 / n}%`,
 });
 
 const ListBase = styled('div')`
@@ -24,14 +24,14 @@ const ListBase = styled('div')`
   ${props => props.columns && css`
     display: flex;
     flex-wrap: wrap;
-    margin-left: -${themeGet('space.2')};
-    margin-right: -${themeGet('space.2')};
+    margin-left: -${themeGet('space.2')(props)};
+    margin-right: -${themeGet('space.2')(props)};
 
     ${ListItem} {
       flex: 1 1;
-      padding: 0 ${themeGet('space.2')};
+      padding: 0 ${themeGet('space.2')(props)};
 
-      ${columns};
+      ${columns(props)};
     }
   `};
 `;

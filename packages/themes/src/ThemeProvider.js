@@ -8,16 +8,16 @@ const ThemeProvider = ({ theme, children, ...otherProps }) => (
     <Fragment>
       <Global styles={css`
         body {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-family: ${get(theme, 'fontFamily')};
-      font-size: ${get(theme, 'fontSizes.base')};
-      line-height: ${get(theme, 'lineHeights.normal')};
-      color: ${get(theme, 'colors.greys.charcoal')};
-    }
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-family: ${get(theme, 'fontFamily')};
+          font-size: ${get(theme, 'fontSizes.base')};
+          line-height: ${get(theme, 'lineHeights.normal')};
+          color: ${get(theme, 'colors.greys.charcoal')};
+        }
+        *, *:before, *:after {
+          box-sizing: border-box;
+        }
       `}
       />
       {children}
