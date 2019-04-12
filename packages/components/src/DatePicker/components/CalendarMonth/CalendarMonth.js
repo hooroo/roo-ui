@@ -15,7 +15,7 @@ const MonthWrapper = styledOmitProps(Box, { omit: ['monthsToDisplay', 'stacked']
   ${props => props.stacked &&
     css`
       width: 100%;
-      margin-top: ${themeGet('space.8')};
+      margin-top: ${themeGet('space.8')(props)};
 
       &:first-of-type {
         margin-top: 0;

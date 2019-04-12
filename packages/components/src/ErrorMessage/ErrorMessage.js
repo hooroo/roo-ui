@@ -24,8 +24,8 @@ const ErrorMessage = styled(Text)`
   ${props => props.arrow === 'top' && css`
     &:after {
       bottom: 100%;
-      left: ${themeGet('space.3')};
-      border-bottom-color: ${themeGet('colors.ui.errorBackground')};
+      left: ${themeGet('space.3')(props)};
+      border-bottom-color: ${themeGet('colors.ui.errorBackground')(props)};
     }
   `}
 
@@ -34,7 +34,7 @@ const ErrorMessage = styled(Text)`
       top: 50%;
       right: 100%;
       transform: translateY(-50%);
-      border-right-color: ${themeGet('colors.ui.errorBackground')};
+      border-right-color: ${themeGet('colors.ui.errorBackground')(props)};
     }
   `}
 
@@ -43,7 +43,7 @@ const ErrorMessage = styled(Text)`
       top: 50%;
       left: 100%;
       transform: translateY(-50%);
-      border-left-color: ${themeGet('colors.ui.errorBackground')};
+      border-left-color: ${themeGet('colors.ui.errorBackground')(props)};
     }
   `}
 
@@ -51,7 +51,7 @@ const ErrorMessage = styled(Text)`
     &:after {
       top: 100%;
       left: ${themeGet('space.3')};
-      border-top-color: ${themeGet('colors.ui.errorBackground')};
+      border-top-color: ${themeGet('colors.ui.errorBackground')(props)};
     }
   `}
 `;

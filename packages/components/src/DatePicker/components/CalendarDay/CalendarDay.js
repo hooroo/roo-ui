@@ -25,7 +25,7 @@ const DayWrapper = styledOmitProps(Box, { omit: ['selected'] })`
     props.selectable &&
     css`
       &:hover {
-        border-color: ${themeGet('colors.brand.secondary')};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
         z-index: 1;
       }
     `};
@@ -34,7 +34,7 @@ const DayWrapper = styledOmitProps(Box, { omit: ['selected'] })`
     props.selected &&
     css`
       z-index: 1;
-      border-color: ${themeGet('colors.brand.secondary')};
+      border-color: ${themeGet('colors.brand.secondary')(props)};
     `};
 `;
 
@@ -64,19 +64,19 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
   ${props =>
     props.selectable &&
     css`
-      background-color: ${themeGet('colors.white')};
+      background-color: ${themeGet('colors.white')(props)};
     `};
 
   ${props =>
     props.selected &&
     !props.highlighted &&
     css`
-      background-color: ${themeGet('colors.lightBlue')};
+      background-color: ${themeGet('colors.lightBlue')(props)};
 
       &:hover,
       &:focus {
-        border-color: ${themeGet('colors.brand.secondary')};
-        background-color: ${themeGet('colors.white')};;
+        border-color: ${themeGet('colors.brand.secondary')(props)};
+        background-color: ${themeGet('colors.white')(props)};
       }
     `};
 
@@ -84,12 +84,12 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     props.highlighted &&
     !props.selected &&
     css`
-      background-color: ${themeGet('colors.lightBlue')};
+      background-color: ${themeGet('colors.lightBlue')(props)};
 
       &:hover,
       &:focus {
         background-color: transparent;
-        border-color: ${themeGet('colors.brand.secondary')};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
       }
     `};
 
@@ -97,11 +97,11 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     props.highlighted &&
     props.selected &&
     css`
-      background-color: ${themeGet('colors.brand.secondary')};
+      background-color: ${themeGet('colors.brand.secondary')(props)};
 
       &:hover {
         background-color: transparent;
-        border-color: ${themeGet('colors.brand.secondary')};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
       }
     `};
 
@@ -111,8 +111,8 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     css`
       &:hover,
       &:focus {
-        background-color: ${themeGet('colors.white')};
-        border-color: ${themeGet('colors.brand.secondary')};
+        background-color: ${themeGet('colors.white')(props)};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
       }
       `};
 
@@ -120,7 +120,7 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     !props.selectable &&
     !props.disabled &&
     css`
-      background-color: ${themeGet('colors.greys.alto')};
+      background-color: ${themeGet('colors.greys.alto')(props)};
 
       &:hover,
       &:focus {
