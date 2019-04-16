@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 import { Text } from '..';
-import styled from '../styledOmitProps';
+import omitProps from '../omitProps';
 
-const CharacterCountText = styled(Text)`
+const CharacterCountText = styled(Text, omitProps())`
   ${props => props.value.length > props.limit && css`
     color: ${themeGet('colors.ui.error')(props)};
   `};

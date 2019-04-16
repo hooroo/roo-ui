@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import {
   space,
@@ -9,9 +10,10 @@ import {
   borderColor,
   themeGet,
 } from 'styled-system';
-import styledOmitProps from '../styledOmitProps';
 
-const Input = styledOmitProps('input', { omit: ['color', 'fontSize'] })`
+import omitProps from '../omitProps';
+
+const Input = styled('input', omitProps(['color', 'fontSize']))`
   ${space}
   ${color}
   ${fontSize}

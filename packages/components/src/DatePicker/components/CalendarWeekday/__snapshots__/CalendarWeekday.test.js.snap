@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarWeekday /> renders correctly 1`] = `
-<Styled(div)
+<Box
   width={0.14285714285714285}
 >
   <Text
@@ -10,5 +10,5 @@ exports[`<CalendarWeekday /> renders correctly 1`] = `
   >
     Tuesday
   </Text>
-</Styled(div)>
+</Box>
 `;

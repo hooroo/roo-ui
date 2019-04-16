@@ -53,14 +53,14 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
     mb={3}
     variant="error"
   >
-    <Styled(div)
+    <Box
       bg="ui.errorBackground"
       mb={3}
     >
       <div
         className="emotion-15 emotion-8"
       >
-        <Styled(div)
+        <Box
           px={4}
         >
           <div
@@ -72,7 +72,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
               <div
                 className="emotion-11 emotion-12"
               >
-                <Styled(div)
+                <Box
                   pr={3}
                 >
                   <div
@@ -117,7 +117,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                       </Base>
                     </Icon>
                   </div>
-                </Styled(div)>
+                </Box>
                 <Text
                   hidden={false}
                   mb={0}
@@ -125,7 +125,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-8"
+                    className="emotion-9 emotion-10"
                     hidden={false}
                   >
                     Hello world
@@ -134,9 +134,9 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
               </div>
             </Flex>
           </div>
-        </Styled(div)>
+        </Box>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert>
 `;
@@ -194,14 +194,14 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
     mb={3}
     variant="info"
   >
-    <Styled(div)
+    <Box
       bg="ui.infoBackground"
       mb={3}
     >
       <div
         className="emotion-15 emotion-8"
       >
-        <Styled(div)
+        <Box
           px={4}
         >
           <div
@@ -213,7 +213,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
               <div
                 className="emotion-11 emotion-12"
               >
-                <Styled(div)
+                <Box
                   pr={3}
                 >
                   <div
@@ -258,7 +258,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                       </Base>
                     </Icon>
                   </div>
-                </Styled(div)>
+                </Box>
                 <Text
                   hidden={false}
                   mb={0}
@@ -266,7 +266,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-8"
+                    className="emotion-9 emotion-10"
                     hidden={false}
                   >
                     Hello world
@@ -275,9 +275,9 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
               </div>
             </Flex>
           </div>
-        </Styled(div)>
+        </Box>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert>
 `;
@@ -335,14 +335,14 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
     mb={3}
     variant="success"
   >
-    <Styled(div)
+    <Box
       bg="ui.successBackground"
       mb={3}
     >
       <div
         className="emotion-15 emotion-8"
       >
-        <Styled(div)
+        <Box
           px={4}
         >
           <div
@@ -354,7 +354,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
               <div
                 className="emotion-11 emotion-12"
               >
-                <Styled(div)
+                <Box
                   pr={3}
                 >
                   <div
@@ -399,7 +399,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                       </Base>
                     </Icon>
                   </div>
-                </Styled(div)>
+                </Box>
                 <Text
                   hidden={false}
                   mb={0}
@@ -407,7 +407,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-8"
+                    className="emotion-9 emotion-10"
                     hidden={false}
                   >
                     Hello world
@@ -416,9 +416,9 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
               </div>
             </Flex>
           </div>
-        </Styled(div)>
+        </Box>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert>
 `;
@@ -476,14 +476,14 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
     mb={3}
     variant="error"
   >
-    <Styled(div)
+    <Box
       bg="ui.errorBackground"
       mb={3}
     >
       <div
         className="emotion-15 emotion-8"
       >
-        <Styled(div)
+        <Box
           px={4}
         >
           <div
@@ -495,7 +495,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
               <div
                 className="emotion-11 emotion-12"
               >
-                <Styled(div)
+                <Box
                   pr={3}
                 >
                   <div
@@ -540,7 +540,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                       </Base>
                     </Icon>
                   </div>
-                </Styled(div)>
+                </Box>
                 <Text
                   hidden={false}
                   mb={0}
@@ -548,7 +548,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-8"
+                    className="emotion-9 emotion-10"
                     hidden={false}
                   >
                     Hello world
@@ -557,9 +557,9 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
               </div>
             </Flex>
           </div>
-        </Styled(div)>
+        </Box>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert.error>
 `;
@@ -617,14 +617,14 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
     mb={3}
     variant="info"
   >
-    <Styled(div)
+    <Box
       bg="ui.infoBackground"
       mb={3}
     >
       <div
         className="emotion-15 emotion-8"
       >
-        <Styled(div)
+        <Box
           px={4}
         >
           <div
@@ -636,7 +636,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
               <div
                 className="emotion-11 emotion-12"
               >
-                <Styled(div)
+                <Box
                   pr={3}
                 >
                   <div
@@ -681,7 +681,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                       </Base>
                     </Icon>
                   </div>
-                </Styled(div)>
+                </Box>
                 <Text
                   hidden={false}
                   mb={0}
@@ -689,7 +689,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-8"
+                    className="emotion-9 emotion-10"
                     hidden={false}
                   >
                     Hello world
@@ -698,9 +698,9 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
               </div>
             </Flex>
           </div>
-        </Styled(div)>
+        </Box>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert.info>
 `;
@@ -758,14 +758,14 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
     mb={3}
     variant="success"
   >
-    <Styled(div)
+    <Box
       bg="ui.successBackground"
       mb={3}
     >
       <div
         className="emotion-15 emotion-8"
       >
-        <Styled(div)
+        <Box
           px={4}
         >
           <div
@@ -777,7 +777,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
               <div
                 className="emotion-11 emotion-12"
               >
-                <Styled(div)
+                <Box
                   pr={3}
                 >
                   <div
@@ -822,7 +822,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                       </Base>
                     </Icon>
                   </div>
-                </Styled(div)>
+                </Box>
                 <Text
                   hidden={false}
                   mb={0}
@@ -830,7 +830,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-8"
+                    className="emotion-9 emotion-10"
                     hidden={false}
                   >
                     Hello world
@@ -839,9 +839,9 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
               </div>
             </Flex>
           </div>
-        </Styled(div)>
+        </Box>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert.success>
 `;
@@ -883,12 +883,12 @@ exports[`<Alert /> contained renders correctly 1`] = `
     mb={3}
     variant="default"
   >
-    <Styled(div)
+    <Box
       bg="greys.porcelain"
       mb={3}
     >
       <div
-        className="emotion-6 emotion-1"
+        className="emotion-6 emotion-7"
       >
         <Container
           gutter="default"
@@ -921,7 +921,7 @@ exports[`<Alert /> contained renders correctly 1`] = `
           </div>
         </Container>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert>
 `;
@@ -959,18 +959,18 @@ exports[`<Alert /> renders correctly 1`] = `
     mb={3}
     variant="default"
   >
-    <Styled(div)
+    <Box
       bg="greys.porcelain"
       mb={3}
     >
       <div
-        className="emotion-6 emotion-1"
+        className="emotion-6 emotion-5"
       >
-        <Styled(div)
+        <Box
           px={4}
         >
           <div
-            className="emotion-4 emotion-1"
+            className="emotion-4 emotion-5"
           >
             <Flex
               py={4}
@@ -994,9 +994,9 @@ exports[`<Alert /> renders correctly 1`] = `
               </div>
             </Flex>
           </div>
-        </Styled(div)>
+        </Box>
       </div>
-    </Styled(div)>
+    </Box>
   </Component>
 </Alert>
 `;

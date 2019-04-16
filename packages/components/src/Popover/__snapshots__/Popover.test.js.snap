@@ -47,9 +47,9 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
           <InnerReference
             setReferenceNode={[Function]}
           >
-            <Styled(div)>
+            <Box>
               <div
-                className="css-xt9xmq emotion-0"
+                className="css-1rd3di6-Box emotion-0"
               >
                 <button
                   disabled={false}
@@ -59,7 +59,7 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
                   Open popover
                 </button>
               </div>
-            </Styled(div)>
+            </Box>
           </InnerReference>
         </Reference>
       </Manager>
@@ -135,7 +135,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
           <InnerReference
             setReferenceNode={[Function]}
           >
-            <Styled(div)>
+            <Box>
               <div
                 className="emotion-0 emotion-1"
               >
@@ -147,7 +147,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                   Open popover
                 </button>
               </div>
-            </Styled(div)>
+            </Box>
           </InnerReference>
         </Reference>
         <Popper

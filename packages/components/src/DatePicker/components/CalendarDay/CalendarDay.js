@@ -4,11 +4,11 @@ import { themeGet } from 'styled-system';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { darken } from 'polished';
-import styledOmitProps from '../../../styledOmitProps';
 
 import { NakedButton, Box } from '../../../';
+import omitProps from '../../../omitProps';
 
-const DayWrapper = styledOmitProps(Box, { omit: ['selected'] })`
+const DayWrapper = styled(Box, omitProps(['selected']))`
   flex: 1 1 auto;
   width: calc(100% / 7);
   margin: 0 -1px -1px 0;
@@ -42,7 +42,7 @@ DayWrapper.defaultProps = {
   ...Box.defaultProps,
 };
 
-const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
+const Button = styled(NakedButton, omitProps(['selected']))`
   position: absolute;
   left: 0;
   top: 0;

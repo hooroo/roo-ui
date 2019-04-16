@@ -1,4 +1,4 @@
-export { default as styledOmitProps, VALID_STYLED_SYSTEM_PROPS } from './styledOmitProps';
+export { default as omitProps, VALID_STYLED_SYSTEM_PROPS } from './omitProps';
 export { default as BackgroundImage } from './BackgroundImage';
 export { default as Box } from './Box';
 export { default as LoadingIndicator } from './LoadingIndicator';

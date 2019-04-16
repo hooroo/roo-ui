@@ -15,7 +15,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
   textStyle="text"
   value="Hello world"
 >
-  <Styled(span)
+  <CharacterCountText
     fontSize="sm"
     hidden={false}
     limit={64}
@@ -29,6 +29,6 @@ exports[`<CharacterCount /> renders correctly 1`] = `
     >
       53
     </span>
-  </Styled(span)>
+  </CharacterCountText>
 </CharacterCount>
 `;

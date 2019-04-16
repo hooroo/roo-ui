@@ -4,9 +4,9 @@ import { css } from '@emotion/core';
 import { themeGet } from 'styled-system';
 
 import { Icon, Input } from '..';
-import styledOmitProps from '../styledOmitProps';
+import omitProps from '../omitProps';
 
-const StyledSelect = styledOmitProps('select', { omit: ['color', 'fontSize'] })``;
+const StyledSelect = styled('select', omitProps(['color', 'fontSize']))``;
 
 StyledSelect.propTypes = {
   ...Input.propTypes,

@@ -1,19 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Icon /> renders correctly 1`] = `
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <Icon
   name="hotel"
   size={24}
   title={null}
 >
   <Base
-    className="css-ra297d-Icon e1pa9kzm1"
+    className="emotion-3 emotion-0"
     name="hotel"
     size={24}
     title={null}
   >
     <StyledSvg
-      className="css-ra297d-Icon e1pa9kzm1"
+      className="emotion-3 emotion-0"
       fill="currentcolor"
       height={24}
       title="hotel"
@@ -21,7 +35,7 @@ exports[`<Icon /> renders correctly 1`] = `
       width={24}
     >
       <svg
-        className="e1pa9kzm1 css-5r0ke4-StyledSvg-Icon e1pa9kzm0"
+        className="emotion-0 emotion-1 emotion-2"
         fill="currentcolor"
         height={24}
         title="hotel"
