@@ -5,5 +5,6 @@ USER hooroo
 COPY --chown=hooroo . .
 
 RUN yarn
+RUN yarn run build
 
 CMD ["yarn", "storybook"]
