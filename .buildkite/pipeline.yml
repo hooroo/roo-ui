@@ -30,7 +30,7 @@ steps:
 
   - name: ":eslint: Lint"
     <<: *defaults
-    command: yarn run lint
+    command: yarn run build && yarn run lint
 
   - name: ":jest: Test"
     <<: *defaults
