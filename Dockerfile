@@ -6,6 +6,5 @@ COPY --chown=hooroo . .
 
 RUN yarn
 RUN yarn lerna bootstrap
-RUN yarn run build
 
 CMD ["yarn", "storybook"]
