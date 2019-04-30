@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { themeGet } from 'styled-system';
 import { rem } from 'polished';
 import { Input, Icon, NakedButton } from '..';
@@ -27,6 +27,7 @@ const Toggle = styled(NakedButton)`
     outline: none;
   }
 `;
+Toggle.displayName = 'PasswordInput__Toggle';
 
 class Base extends Component {
   constructor(props) {

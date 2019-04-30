@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Text from '../Text';
 
 const Truncate = styled(Text)`

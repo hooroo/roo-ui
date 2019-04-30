@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<List /> renders correctly 1`] = `
-.c1 {
-  margin: 0 0;
-}
-
-.c0 {
+.emotion-6 {
   margin: 1rem 0;
   padding-left: 2rem;
+}
+
+.emotion-0 {
+  margin: 0 0;
 }
 
 <List
@@ -15,59 +15,47 @@ exports[`<List /> renders correctly 1`] = `
   flush={false}
   ordered={false}
 >
-  <StyledComponent
+  <ListBase
+    as="ul"
     columns={null}
     flush={false}
-    forwardedRef={null}
     ordered={false}
   >
     <ul
-      className="c0"
+      className="emotion-6 emotion-7"
     >
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 1
-          </li>
-        </StyledComponent>
+          Hello Item 1
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 2
-          </li>
-        </StyledComponent>
+          Hello Item 2
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 3
-          </li>
-        </StyledComponent>
+          Hello Item 3
+        </li>
       </ListItem>
     </ul>
-  </StyledComponent>
+  </ListBase>
 </List>
 `;
 
 exports[`<List /> with columns set renders correctly 1`] = `
-.c2 {
+.emotion-0 {
   margin: 0 0;
 }
 
-.c0 {
+.emotion-6 {
   margin: 1rem 0;
   padding-left: 2rem;
   list-style-position: inside;
@@ -83,7 +71,7 @@ exports[`<List /> with columns set renders correctly 1`] = `
   margin-right: -0.5rem;
 }
 
-.c0 .c1 {
+.emotion-6 .emotion-1 {
   -webkit-flex: 1 1;
   -ms-flex: 1 1;
   flex: 1 1;
@@ -98,59 +86,47 @@ exports[`<List /> with columns set renders correctly 1`] = `
   flush={false}
   ordered={false}
 >
-  <StyledComponent
+  <ListBase
+    as="ul"
     columns={3}
     flush={false}
-    forwardedRef={null}
     ordered={false}
   >
     <ul
-      className="c0"
+      className="emotion-6 emotion-7"
     >
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1 c2"
-          >
-            Hello Item 1
-          </li>
-        </StyledComponent>
+          Hello Item 1
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1 c2"
-          >
-            Hello Item 2
-          </li>
-        </StyledComponent>
+          Hello Item 2
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1 c2"
-          >
-            Hello Item 3
-          </li>
-        </StyledComponent>
+          Hello Item 3
+        </li>
       </ListItem>
     </ul>
-  </StyledComponent>
+  </ListBase>
 </List>
 `;
 
 exports[`<List /> with flush set renders correctly 1`] = `
-.c1 {
+.emotion-0 {
   margin: 0 0;
 }
 
-.c0 {
+.emotion-6 {
   margin: 1rem 0;
   padding-left: 2rem;
   list-style-position: inside;
@@ -162,61 +138,49 @@ exports[`<List /> with flush set renders correctly 1`] = `
   flush={true}
   ordered={false}
 >
-  <StyledComponent
+  <ListBase
+    as="ul"
     columns={null}
     flush={true}
-    forwardedRef={null}
     ordered={false}
   >
     <ul
-      className="c0"
+      className="emotion-6 emotion-7"
     >
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 1
-          </li>
-        </StyledComponent>
+          Hello Item 1
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 2
-          </li>
-        </StyledComponent>
+          Hello Item 2
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 3
-          </li>
-        </StyledComponent>
+          Hello Item 3
+        </li>
       </ListItem>
     </ul>
-  </StyledComponent>
+  </ListBase>
 </List>
 `;
 
 exports[`<List /> with ordered prop renders correctly 1`] = `
-.c1 {
-  margin: 0 0;
-}
-
-.c0 {
+.emotion-6 {
   margin: 1rem 0;
   padding-left: 2rem;
+}
+
+.emotion-0 {
+  margin: 0 0;
 }
 
 <List
@@ -224,69 +188,47 @@ exports[`<List /> with ordered prop renders correctly 1`] = `
   flush={false}
   ordered={true}
 >
-  <StyledComponent
+  <ListBase
+    as="ol"
     columns={null}
     flush={false}
-    forwardedRef={null}
     ordered={true}
   >
     <ol
-      className="c0"
+      className="emotion-6 emotion-7"
     >
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 1
-          </li>
-        </StyledComponent>
+          Hello Item 1
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 2
-          </li>
-        </StyledComponent>
+          Hello Item 2
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1"
-          >
-            Hello Item 3
-          </li>
-        </StyledComponent>
+          Hello Item 3
+        </li>
       </ListItem>
     </ol>
-  </StyledComponent>
+  </ListBase>
 </List>
 `;
 
 exports[`<List /> with responsive columns set renders correctly 1`] = `
-.c2 {
+.emotion-0 {
   margin: 0 0;
 }
 
-.c3 .c1 {
-  -webkit-flex: 1 1;
-  -ms-flex: 1 1;
-  flex: 1 1;
-  padding: 0 0.5rem;
-  -webkit-flex-basis: 33.333333333333336%;
-  -ms-flex-preferred-size: 33.333333333333336%;
-  flex-basis: 33.333333333333336%;
-}
-
-.c0 {
+.emotion-6 {
   margin: 1rem 0;
   padding-left: 2rem;
   list-style-position: inside;
@@ -302,7 +244,7 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
   margin-right: -0.5rem;
 }
 
-.c0 .c1 {
+.emotion-6 .emotion-1 {
   -webkit-flex: 1 1;
   -ms-flex: 1 1;
   flex: 1 1;
@@ -313,7 +255,7 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
 }
 
 @media screen and (min-width:40rem) {
-  .c0 .c1 {
+  .emotion-6 .emotion-1 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -321,7 +263,7 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
 }
 
 @media screen and (min-width:52rem) {
-  .c0 .c1 {
+  .emotion-6 .emotion-1 {
     -webkit-flex-basis: 33.333333333333336%;
     -ms-flex-preferred-size: 33.333333333333336%;
     flex-basis: 33.333333333333336%;
@@ -339,7 +281,8 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
   flush={false}
   ordered={false}
 >
-  <StyledComponent
+  <ListBase
+    as="ul"
     columns={
       Array [
         1,
@@ -348,46 +291,33 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
       ]
     }
     flush={false}
-    forwardedRef={null}
     ordered={false}
   >
     <ul
-      className="c0"
+      className="emotion-6 emotion-7"
     >
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1 c2"
-          >
-            Hello Item 1
-          </li>
-        </StyledComponent>
+          Hello Item 1
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1 c2"
-          >
-            Hello Item 2
-          </li>
-        </StyledComponent>
+          Hello Item 2
+        </li>
       </ListItem>
       <ListItem>
-        <StyledComponent
-          forwardedRef={null}
+        <li
+          className="emotion-0 emotion-1"
         >
-          <li
-            className="c1 c2"
-          >
-            Hello Item 3
-          </li>
-        </StyledComponent>
+          Hello Item 3
+        </li>
       </ListItem>
     </ul>
-  </StyledComponent>
+  </ListBase>
 </List>
 `;

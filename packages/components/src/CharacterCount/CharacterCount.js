@@ -1,38 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import styled, { css } from 'styled-components';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 import { Text } from '..';
-import styledOmitProps from '../styledOmitProps';
+import omitProps from '../omitProps';
 
-const StyledSpan = styledOmitProps('span', { omit: ['fontSize'] })``;
+const CharacterCountText = styled(Text, omitProps())`
+  ${props => props.value.length > props.limit && css`
+    color: ${themeGet('colors.ui.error')(props)};
+  `};
+`;
 
-StyledSpan.propTypes = {
-  ...Text.propTypes,
-};
-
-const Base = ({ value, limit, ...props }) => (
-  <StyledSpan {...props}>
-    {limit - value.length}
-  </StyledSpan>
+const CharacterCount = props => (
+  <CharacterCountText {...props}>
+    {props.limit - props.value.length}
+  </CharacterCountText>
 );
 
-Base.propTypes = {
+CharacterCount.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   limit: PropTypes.number.isRequired,
 };
-
-const CharacterCount = styled(Text.withComponent(Base))`
-  ${props => props.value.length > props.limit && css`
-    color: ${themeGet('colors.ui.error')};
-  `};
-`;
 
 CharacterCount.defaultProps = {
   ...Text.defaultProps,
   fontSize: 'sm',
 };
-
-CharacterCount.displayName = 'CharacterCount';
 
 export default CharacterCount;

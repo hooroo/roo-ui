@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from '@emotion/styled';
+import { Global, css } from '@emotion/core';
 import { themeGet } from 'styled-system';
 import { rem, rgba } from 'polished';
 
@@ -9,9 +10,7 @@ import ModalHeader from './components/ModalHeader';
 import ModalBody from './components/ModalBody';
 import ModalFooter from './components/ModalFooter';
 
-export const ModalGlobalStyle = createGlobalStyle`
-  .ReactModal__Body--open { overflow: hidden; }
-`;
+export const ModalGlobalStyle = () => <Global styles={css` .ReactModal__Body--open { overflow: hidden; } `} />;
 
 const Modal = styled(({ className, width, ...props }) => (
   <ReactModal

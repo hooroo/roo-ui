@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { color, size, width, themeGet } from 'styled-system';
-import styled, { keyframes } from 'styled-components';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/core';
+
 import Box from '../Box';
 
 const fadeIn = keyframes`
@@ -37,9 +39,9 @@ const Bouncer = styled.div`
   border-radius: 100%;
   display: inline-block;
 
-  &:nth-child(1) { animation-delay: -0.32s; }
-  &:nth-child(2) { animation-delay: -0.16s; }
-  &:nth-child(3) { animation-delay: 0; }
+  &:nth-of-type(1) { animation-delay: -0.32s; }
+  &:nth-of-type(2) { animation-delay: -0.16s; }
+  &:nth-of-type(3) { animation-delay: 0; }
 
   ${color}
   ${size}

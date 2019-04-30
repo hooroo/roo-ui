@@ -1,6 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import styledOmitProps from '.';
+import styled from '@emotion/styled';
+import omitProps from '.';
 
 const itRendersValidHtmlAttrubutes = (TestComponent) => {
   it('renders valid html attrubutes', () => {
@@ -27,7 +28,7 @@ const itRendersValidHtmlAttributesThatAreAlsoStyledSystemProps = (TestComponent)
 };
 
 describe('without options', () => {
-  const Component = styledOmitProps('span')``;
+  const Component = styled('span', omitProps())``;
 
   itRendersValidHtmlAttrubutes(Component);
 
@@ -37,7 +38,7 @@ describe('without options', () => {
 });
 
 describe('with omitStyledSystemProps = false', () => {
-  const Component = styledOmitProps('span', { omitStyledSystemProps: false })``;
+  const Component = styled('span', omitProps([], { omitStyledSystemProps: false }))``;
 
   itRendersValidHtmlAttrubutes(Component);
 
@@ -47,7 +48,7 @@ describe('with omitStyledSystemProps = false', () => {
 });
 
 describe('with "data-testid" in omit list', () => {
-  const Component = styledOmitProps('span', { omit: ['data-testid'] })``;
+  const Component = styled('span', omitProps(['data-testid']))``;
 
   itRendersValidHtmlAttrubutes(Component);
 

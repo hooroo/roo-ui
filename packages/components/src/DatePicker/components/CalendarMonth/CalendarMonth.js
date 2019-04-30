@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { Box, Text } from '../../../';
 import CalendarWeekdays from '../CalendarWeekdays';
 import CalendarDays from '../CalendarDays';
-import styledOmitProps from '../../../styledOmitProps';
+import omitProps from '../../../omitProps';
 
-const MonthWrapper = styledOmitProps(Box, { omit: ['monthsToDisplay', 'stacked'] })`
+const MonthWrapper = styled(Box, omitProps(['monthsToDisplay', 'stacked']))`
   text-align: center;
   padding: 0 ${themeGet('space.4')};
   width: ${props => `${100 / props.monthsToDisplay}%`};
@@ -15,7 +16,7 @@ const MonthWrapper = styledOmitProps(Box, { omit: ['monthsToDisplay', 'stacked']
   ${props => props.stacked &&
     css`
       width: 100%;
-      margin-top: ${themeGet('space.8')};
+      margin-top: ${themeGet('space.8')(props)};
 
       &:first-of-type {
         margin-top: 0;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { themeGet, space, borders, borderColor } from 'styled-system';
 
 const ListItem = styled.li`

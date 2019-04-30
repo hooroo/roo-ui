@@ -1,76 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Select /> disabled renders correctly 1`] = `
-<StyledComponent
-  as={[Function]}
-  bg="white"
-  border={2}
-  borderColor="greys.alto"
-  color="greys.charcoal"
-  disabled={true}
-  fontSize="base"
-  forwardedRef={null}
-  lineHeight="normal"
-  mb={3}
-  px={4}
-  py={3}
->
-  Options
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Select /> readOnly renders correctly 1`] = `
-<StyledComponent
-  as={[Function]}
-  bg="white"
-  border={2}
-  borderColor="greys.alto"
-  color="greys.charcoal"
-  fontSize="base"
-  forwardedRef={null}
-  lineHeight="normal"
-  mb={3}
-  px={4}
-  py={3}
-  readOnly={true}
->
-  Options
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Select /> renders correctly 1`] = `
-<StyledComponent
-  as={[Function]}
-  bg="white"
-  border={2}
-  borderColor="greys.alto"
-  color="greys.charcoal"
-  fontSize="base"
-  forwardedRef={null}
-  lineHeight="normal"
-  mb={3}
-  px={4}
-  py={3}
->
-  Options
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Select /> underline renders correctly 1`] = `
-<StyledComponent
-  as={[Function]}
-  bg="white"
-  border={2}
-  borderColor="greys.alto"
-  color="greys.charcoal"
-  fontSize="base"
-  forwardedRef={null}
-  lineHeight="normal"
-  mb={3}
-  px={4}
-  py={3}
-  underline={true}
->
-  Options
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

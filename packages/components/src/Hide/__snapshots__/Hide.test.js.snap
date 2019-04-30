@@ -1,89 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Hide /> with breakpoints in px lg renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  lg={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in px md renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  md={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in px no props renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in px sm renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  sm={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in px xs renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  xs={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in rems lg renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  lg={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in rems md renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  md={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in rems no props renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in rems sm renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  sm={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Hide /> with breakpoints in rems xs renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  xs={true}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { hideVisually } from 'polished';
 import {
   textStyle,
@@ -13,14 +14,14 @@ import {
   style,
   display,
 } from 'styled-system';
-import styled from '../styledOmitProps';
+import omitProps from '../omitProps';
 
 const textDecoration = style({
   prop: 'textDecoration',
   cssProperty: 'textDecoration',
 });
 
-const Text = styled('span')`
+const Text = styled('span', omitProps())`
   ${textStyle}
   ${color}
   ${fontSize}

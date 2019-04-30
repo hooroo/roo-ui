@@ -11,30 +11,35 @@ exports[`<StarRating /> renders correctly 1`] = `
     key="0"
     name="circle"
     size="16"
+    title={null}
   />
   <Icon
     color="brightSun"
     key="1"
     name="circleBorder"
     size="16"
+    title={null}
   />
   <Icon
     color="brightSun"
     key="2"
     name="circleBorder"
     size="16"
+    title={null}
   />
   <Icon
     color="brightSun"
     key="3"
     name="circleBorder"
     size="16"
+    title={null}
   />
   <Icon
     color="brightSun"
     key="4"
     name="circleBorder"
     size="16"
+    title={null}
   />
 </Flex>
 `;

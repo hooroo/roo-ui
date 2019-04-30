@@ -1,14 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarNav /> renders correctly 1`] = `
-.c2 {
-  vertical-align: middle;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c0 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,7 +15,7 @@ exports[`<CalendarNav /> renders correctly 1`] = `
   padding: 0;
 }
 
-.c1 {
+.emotion-7 {
   border: none;
   margin: 0;
   padding: 0;
@@ -38,14 +31,28 @@ exports[`<CalendarNav /> renders correctly 1`] = `
   cursor: pointer;
 }
 
-.c1:hover,
-.c1:focus {
+.emotion-7:hover,
+.emotion-7:focus {
   outline: none;
 }
 
-.c1:disabled {
+.emotion-7:disabled {
   cursor: not-allowed;
   box-shadow: none;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.emotion-1 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 <CalendarNav
@@ -60,143 +67,103 @@ exports[`<CalendarNav /> renders correctly 1`] = `
     }
   }
 >
-  <CalendarNav__Wrapper>
-    <StyledComponent
-      forwardedRef={null}
+  <Wrapper>
+    <div
+      className="emotion-18 emotion-19"
     >
-      <div
-        className="c0"
+      <Button
+        as="button"
+        onClick={[MockFunction]}
+        type="button"
       >
-        <Button
-          as="button"
+        <button
+          className="emotion-7 emotion-8"
           onClick={[MockFunction]}
+          type="button"
         >
-          <StyledComponent
-            as="button"
-            forwardedRef={null}
-            onClick={[MockFunction]}
+          <Icon
+            name="chevronLeft"
+            size={24}
+            title={null}
           >
-            <button
-              className="c1"
-              onClick={[MockFunction]}
-              type="button"
+            <Base
+              className="emotion-3 emotion-0"
+              name="chevronLeft"
+              size={24}
+              title={null}
             >
-              <Icon
-                name="chevronLeft"
+              <StyledSvg
+                className="emotion-3 emotion-0"
+                fill="currentcolor"
+                height={24}
+                title="chevronLeft"
+                viewBox="0 0 24 24"
+                width={24}
               >
-                <StyledComponent
-                  forwardedRef={null}
-                  name="chevronLeft"
+                <svg
+                  className="emotion-0 emotion-1 emotion-2"
+                  fill="currentcolor"
+                  height={24}
+                  title="chevronLeft"
+                  viewBox="0 0 24 24"
+                  width={24}
                 >
-                  <Base
-                    className="c2"
-                    name="chevronLeft"
-                    size={24}
-                    title={null}
-                  >
-                    <Icon__StyledSvg
-                      className="c2"
-                      fill="currentcolor"
-                      height={24}
-                      title="chevronLeft"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <StyledComponent
-                        className="c2"
-                        fill="currentcolor"
-                        forwardedRef={null}
-                        height={24}
-                        title="chevronLeft"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <svg
-                          className="c2 "
-                          fill="currentcolor"
-                          height={24}
-                          title="chevronLeft"
-                          viewBox="0 0 24 24"
-                          width={24}
-                        >
-                          <path
-                            d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-                          />
-                        </svg>
-                      </StyledComponent>
-                    </Icon__StyledSvg>
-                  </Base>
-                </StyledComponent>
-              </Icon>
-            </button>
-          </StyledComponent>
-        </Button>
-        <Button
-          as="button"
+                  <path
+                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                  />
+                </svg>
+              </StyledSvg>
+            </Base>
+          </Icon>
+        </button>
+      </Button>
+      <Button
+        as="button"
+        onClick={[MockFunction]}
+        type="button"
+      >
+        <button
+          className="emotion-7 emotion-8"
           onClick={[MockFunction]}
+          type="button"
         >
-          <StyledComponent
-            as="button"
-            forwardedRef={null}
-            onClick={[MockFunction]}
+          <Icon
+            name="chevronRight"
+            size={24}
+            title={null}
           >
-            <button
-              className="c1"
-              onClick={[MockFunction]}
-              type="button"
+            <Base
+              className="emotion-3 emotion-0"
+              name="chevronRight"
+              size={24}
+              title={null}
             >
-              <Icon
-                name="chevronRight"
+              <StyledSvg
+                className="emotion-3 emotion-0"
+                fill="currentcolor"
+                height={24}
+                title="chevronRight"
+                viewBox="0 0 24 24"
+                width={24}
               >
-                <StyledComponent
-                  forwardedRef={null}
-                  name="chevronRight"
+                <svg
+                  className="emotion-0 emotion-1 emotion-2"
+                  fill="currentcolor"
+                  height={24}
+                  title="chevronRight"
+                  viewBox="0 0 24 24"
+                  width={24}
                 >
-                  <Base
-                    className="c2"
-                    name="chevronRight"
-                    size={24}
-                    title={null}
-                  >
-                    <Icon__StyledSvg
-                      className="c2"
-                      fill="currentcolor"
-                      height={24}
-                      title="chevronRight"
-                      viewBox="0 0 24 24"
-                      width={24}
-                    >
-                      <StyledComponent
-                        className="c2"
-                        fill="currentcolor"
-                        forwardedRef={null}
-                        height={24}
-                        title="chevronRight"
-                        viewBox="0 0 24 24"
-                        width={24}
-                      >
-                        <svg
-                          className="c2 "
-                          fill="currentcolor"
-                          height={24}
-                          title="chevronRight"
-                          viewBox="0 0 24 24"
-                          width={24}
-                        >
-                          <path
-                            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                          />
-                        </svg>
-                      </StyledComponent>
-                    </Icon__StyledSvg>
-                  </Base>
-                </StyledComponent>
-              </Icon>
-            </button>
-          </StyledComponent>
-        </Button>
-      </div>
-    </StyledComponent>
-  </CalendarNav__Wrapper>
+                  <path
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  />
+                </svg>
+              </StyledSvg>
+            </Base>
+          </Icon>
+        </button>
+      </Button>
+    </div>
+  </Wrapper>
 </CalendarNav>
 `;

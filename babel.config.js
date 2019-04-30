@@ -5,7 +5,7 @@ module.exports = (api) => {
 
   const presets = ['@babel/preset-react', env];
   const plugins = [
-    'babel-plugin-styled-components',
+    'babel-plugin-emotion',
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-proposal-object-rest-spread',
   ];

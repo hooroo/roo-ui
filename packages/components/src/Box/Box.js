@@ -18,9 +18,11 @@ import {
   position,
   zIndex,
 } from 'styled-system';
-import styled from '../styledOmitProps';
+import styled from '@emotion/styled';
+import omitProps from '../omitProps';
 
-const Box = styled('div')`
+
+const Box = styled('div', omitProps())`
   ${display}
   ${space}
   ${width}

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CharacterCount /> renders correctly 1`] = `
-.c0 {
+.emotion-0 {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
@@ -15,51 +15,20 @@ exports[`<CharacterCount /> renders correctly 1`] = `
   textStyle="text"
   value="Hello world"
 >
-  <StyledComponent
+  <CharacterCountText
     fontSize="sm"
-    forwardedRef={null}
     hidden={false}
     limit={64}
     textStyle="text"
     value="Hello world"
   >
-    <Base
-      className="-Base c0"
-      fontSize="sm"
+    <span
+      className="emotion-0 emotion-1"
       hidden={false}
-      limit={64}
-      textStyle="text"
       value="Hello world"
     >
-      <Styled(StyledComponent)
-        className="-Base c0"
-        fontSize="sm"
-        hidden={false}
-        textStyle="text"
-      >
-        <StyledComponent
-          className="-Base c0"
-          fontSize="sm"
-          forwardedRef={null}
-          hidden={false}
-          textStyle="text"
-        >
-          <StyledComponent
-            className="-Base c0 "
-            fontSize="sm"
-            hidden={false}
-            textStyle="text"
-          >
-            <span
-              className="-Base c0 "
-              hidden={false}
-            >
-              53
-            </span>
-          </StyledComponent>
-        </StyledComponent>
-      </Styled(StyledComponent)>
-    </Base>
-  </StyledComponent>
+      53
+    </span>
+  </CharacterCountText>
 </CharacterCount>
 `;

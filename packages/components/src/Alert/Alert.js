@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from 'styled-components';
+import { withTheme } from 'emotion-theming';
 import { themeGet } from 'styled-system';
 
 import { Container, NakedButton, Text, Flex, Box, Icon } from '..';

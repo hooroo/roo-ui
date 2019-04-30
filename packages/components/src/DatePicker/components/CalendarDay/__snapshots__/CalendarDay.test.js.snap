@@ -1,25 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarDay /> renders correctly 1`] = `
-<Styled(Box)
+<DayWrapper
   selected={true}
 >
-  <Styled(NakedButton)
+  <Button
     as="button"
     disabled={false}
     highlighted={false}
     selectable={true}
     selected={true}
+    type="button"
   >
     21
-  </Styled(NakedButton)>
-</Styled(Box)>
+  </Button>
+</DayWrapper>
 `;
 
 exports[`<CalendarEmptyDay /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
->
-  15
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

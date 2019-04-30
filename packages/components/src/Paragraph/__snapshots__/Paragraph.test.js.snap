@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Paragraph /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  hidden={false}
-  m={0}
-  mb={2}
-  textStyle="text"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
