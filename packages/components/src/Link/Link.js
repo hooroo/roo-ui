@@ -4,7 +4,7 @@ import { hideVisually } from 'polished';
 import { color, fontWeight, themeGet, space } from 'styled-system';
 import styledOmitProps from '../styledOmitProps';
 
-const Link = styledOmitProps('a', { omit: ['hidden'] })`
+const Link = styledOmitProps('a', { omit: ['hidden', 'underline'] })`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
