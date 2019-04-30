@@ -1,26 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
-.c1 {
+.emotion-13 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c3 {
-  padding-right: 16px;
-}
-
-.c0 {
-  margin-bottom: 16px;
-  background-color: ui.errorBackground;
-}
-
-.c5 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-11 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -29,7 +15,29 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
   display: flex;
 }
 
-.c4 {
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.errorBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
+.emotion-1 {
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -49,155 +57,97 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
       bg="ui.errorBackground"
       mb={3}
     >
-      <StyledComponent
-        bg="ui.errorBackground"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-15 emotion-8"
       >
-        <div
-          className="c0"
+        <Box
+          px={4}
         >
-          <Box
-            px={4}
+          <div
+            className="emotion-13 emotion-8"
           >
-            <StyledComponent
-              forwardedRef={null}
-              px={4}
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-11 emotion-12"
               >
-                <Flex
-                  py={4}
+                <Box
+                  pr={3}
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <div
+                    className="emotion-7 emotion-8"
                   >
-                    <div
-                      className="c2"
+                    <Icon
+                      color="ui.error"
+                      name="warning"
+                      size={24}
+                      title={null}
                     >
-                      <Box
-                        pr={3}
+                      <Base
+                        className="emotion-3 emotion-0"
+                        color="ui.error"
+                        name="warning"
+                        size={24}
+                        title={null}
                       >
-                        <StyledComponent
-                          forwardedRef={null}
-                          pr={3}
+                        <StyledSvg
+                          className="emotion-3 emotion-0"
+                          color="ui.error"
+                          fill="currentcolor"
+                          height={24}
+                          title="warning"
+                          viewBox="0 0 24 24"
+                          width={24}
                         >
-                          <div
-                            className="c3"
+                          <svg
+                            className="emotion-0 emotion-1 emotion-2"
+                            color="ui.error"
+                            fill="currentcolor"
+                            height={24}
+                            title="warning"
+                            viewBox="0 0 24 24"
+                            width={24}
                           >
-                            <Icon
-                              color="ui.error"
-                              name="warning"
-                            >
-                              <StyledComponent
-                                color="ui.error"
-                                forwardedRef={null}
-                                name="warning"
-                              >
-                                <Base
-                                  className="c4"
-                                  color="ui.error"
-                                  name="warning"
-                                  size={24}
-                                  title={null}
-                                >
-                                  <Icon__StyledSvg
-                                    className="c4"
-                                    color="ui.error"
-                                    fill="currentcolor"
-                                    height={24}
-                                    title="warning"
-                                    viewBox="0 0 24 24"
-                                    width={24}
-                                  >
-                                    <StyledComponent
-                                      className="c4"
-                                      color="ui.error"
-                                      fill="currentcolor"
-                                      forwardedRef={null}
-                                      height={24}
-                                      title="warning"
-                                      viewBox="0 0 24 24"
-                                      width={24}
-                                    >
-                                      <svg
-                                        className="c4 "
-                                        color="ui.error"
-                                        fill="currentcolor"
-                                        height={24}
-                                        title="warning"
-                                        viewBox="0 0 24 24"
-                                        width={24}
-                                      >
-                                        <path
-                                          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-                                        />
-                                      </svg>
-                                    </StyledComponent>
-                                  </Icon__StyledSvg>
-                                </Base>
-                              </StyledComponent>
-                            </Icon>
-                          </div>
-                        </StyledComponent>
-                      </Box>
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c5"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                            <path
+                              d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+                            />
+                          </svg>
+                        </StyledSvg>
+                      </Base>
+                    </Icon>
+                  </div>
+                </Box>
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
+                >
+                  <span
+                    className="emotion-9 emotion-10"
+                    hidden={false}
+                  >
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Box>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Box>
+      </div>
     </Box>
   </Component>
 </Alert>
 `;
 
 exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
-.c1 {
+.emotion-13 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c3 {
-  padding-right: 16px;
-}
-
-.c0 {
-  margin-bottom: 16px;
-  background-color: ui.infoBackground;
-}
-
-.c5 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-11 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -206,7 +156,29 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
   display: flex;
 }
 
-.c4 {
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.infoBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
+.emotion-1 {
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -226,155 +198,97 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
       bg="ui.infoBackground"
       mb={3}
     >
-      <StyledComponent
-        bg="ui.infoBackground"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-15 emotion-8"
       >
-        <div
-          className="c0"
+        <Box
+          px={4}
         >
-          <Box
-            px={4}
+          <div
+            className="emotion-13 emotion-8"
           >
-            <StyledComponent
-              forwardedRef={null}
-              px={4}
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-11 emotion-12"
               >
-                <Flex
-                  py={4}
+                <Box
+                  pr={3}
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <div
+                    className="emotion-7 emotion-8"
                   >
-                    <div
-                      className="c2"
+                    <Icon
+                      color="greys.charcoal"
+                      name="info"
+                      size={24}
+                      title={null}
                     >
-                      <Box
-                        pr={3}
+                      <Base
+                        className="emotion-3 emotion-0"
+                        color="greys.charcoal"
+                        name="info"
+                        size={24}
+                        title={null}
                       >
-                        <StyledComponent
-                          forwardedRef={null}
-                          pr={3}
+                        <StyledSvg
+                          className="emotion-3 emotion-0"
+                          color="greys.charcoal"
+                          fill="currentcolor"
+                          height={24}
+                          title="info"
+                          viewBox="0 0 24 24"
+                          width={24}
                         >
-                          <div
-                            className="c3"
+                          <svg
+                            className="emotion-0 emotion-1 emotion-2"
+                            color="greys.charcoal"
+                            fill="currentcolor"
+                            height={24}
+                            title="info"
+                            viewBox="0 0 24 24"
+                            width={24}
                           >
-                            <Icon
-                              color="greys.charcoal"
-                              name="info"
-                            >
-                              <StyledComponent
-                                color="greys.charcoal"
-                                forwardedRef={null}
-                                name="info"
-                              >
-                                <Base
-                                  className="c4"
-                                  color="greys.charcoal"
-                                  name="info"
-                                  size={24}
-                                  title={null}
-                                >
-                                  <Icon__StyledSvg
-                                    className="c4"
-                                    color="greys.charcoal"
-                                    fill="currentcolor"
-                                    height={24}
-                                    title="info"
-                                    viewBox="0 0 24 24"
-                                    width={24}
-                                  >
-                                    <StyledComponent
-                                      className="c4"
-                                      color="greys.charcoal"
-                                      fill="currentcolor"
-                                      forwardedRef={null}
-                                      height={24}
-                                      title="info"
-                                      viewBox="0 0 24 24"
-                                      width={24}
-                                    >
-                                      <svg
-                                        className="c4 "
-                                        color="greys.charcoal"
-                                        fill="currentcolor"
-                                        height={24}
-                                        title="info"
-                                        viewBox="0 0 24 24"
-                                        width={24}
-                                      >
-                                        <path
-                                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-                                        />
-                                      </svg>
-                                    </StyledComponent>
-                                  </Icon__StyledSvg>
-                                </Base>
-                              </StyledComponent>
-                            </Icon>
-                          </div>
-                        </StyledComponent>
-                      </Box>
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c5"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                            />
+                          </svg>
+                        </StyledSvg>
+                      </Base>
+                    </Icon>
+                  </div>
+                </Box>
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
+                >
+                  <span
+                    className="emotion-9 emotion-10"
+                    hidden={false}
+                  >
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Box>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Box>
+      </div>
     </Box>
   </Component>
 </Alert>
 `;
 
 exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
-.c1 {
+.emotion-13 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c0 {
-  margin-bottom: 16px;
-  background-color: ui.successBackground;
-}
-
-.c3 {
-  padding-right: 16px;
-}
-
-.c5 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-11 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -383,7 +297,29 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
   display: flex;
 }
 
-.c4 {
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.successBackground;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
+.emotion-1 {
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -403,155 +339,97 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
       bg="ui.successBackground"
       mb={3}
     >
-      <StyledComponent
-        bg="ui.successBackground"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-15 emotion-8"
       >
-        <div
-          className="c0"
+        <Box
+          px={4}
         >
-          <Box
-            px={4}
+          <div
+            className="emotion-13 emotion-8"
           >
-            <StyledComponent
-              forwardedRef={null}
-              px={4}
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-11 emotion-12"
               >
-                <Flex
-                  py={4}
+                <Box
+                  pr={3}
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <div
+                    className="emotion-7 emotion-8"
                   >
-                    <div
-                      className="c2"
+                    <Icon
+                      color="ui.success"
+                      name="checkCircle"
+                      size={24}
+                      title={null}
                     >
-                      <Box
-                        pr={3}
+                      <Base
+                        className="emotion-3 emotion-0"
+                        color="ui.success"
+                        name="checkCircle"
+                        size={24}
+                        title={null}
                       >
-                        <StyledComponent
-                          forwardedRef={null}
-                          pr={3}
+                        <StyledSvg
+                          className="emotion-3 emotion-0"
+                          color="ui.success"
+                          fill="currentcolor"
+                          height={24}
+                          title="checkCircle"
+                          viewBox="0 0 24 24"
+                          width={24}
                         >
-                          <div
-                            className="c3"
+                          <svg
+                            className="emotion-0 emotion-1 emotion-2"
+                            color="ui.success"
+                            fill="currentcolor"
+                            height={24}
+                            title="checkCircle"
+                            viewBox="0 0 24 24"
+                            width={24}
                           >
-                            <Icon
-                              color="ui.success"
-                              name="checkCircle"
-                            >
-                              <StyledComponent
-                                color="ui.success"
-                                forwardedRef={null}
-                                name="checkCircle"
-                              >
-                                <Base
-                                  className="c4"
-                                  color="ui.success"
-                                  name="checkCircle"
-                                  size={24}
-                                  title={null}
-                                >
-                                  <Icon__StyledSvg
-                                    className="c4"
-                                    color="ui.success"
-                                    fill="currentcolor"
-                                    height={24}
-                                    title="checkCircle"
-                                    viewBox="0 0 24 24"
-                                    width={24}
-                                  >
-                                    <StyledComponent
-                                      className="c4"
-                                      color="ui.success"
-                                      fill="currentcolor"
-                                      forwardedRef={null}
-                                      height={24}
-                                      title="checkCircle"
-                                      viewBox="0 0 24 24"
-                                      width={24}
-                                    >
-                                      <svg
-                                        className="c4 "
-                                        color="ui.success"
-                                        fill="currentcolor"
-                                        height={24}
-                                        title="checkCircle"
-                                        viewBox="0 0 24 24"
-                                        width={24}
-                                      >
-                                        <path
-                                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                                        />
-                                      </svg>
-                                    </StyledComponent>
-                                  </Icon__StyledSvg>
-                                </Base>
-                              </StyledComponent>
-                            </Icon>
-                          </div>
-                        </StyledComponent>
-                      </Box>
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c5"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                            />
+                          </svg>
+                        </StyledSvg>
+                      </Base>
+                    </Icon>
+                  </div>
+                </Box>
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
+                >
+                  <span
+                    className="emotion-9 emotion-10"
+                    hidden={false}
+                  >
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Box>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Box>
+      </div>
     </Box>
   </Component>
 </Alert>
 `;
 
 exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
-.c1 {
+.emotion-13 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c3 {
-  padding-right: 16px;
-}
-
-.c0 {
-  margin-bottom: 16px;
-  background-color: ui.errorBackground;
-}
-
-.c5 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-11 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -560,7 +438,29 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
   display: flex;
 }
 
-.c4 {
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.errorBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.error;
+}
+
+.emotion-1 {
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -580,155 +480,97 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
       bg="ui.errorBackground"
       mb={3}
     >
-      <StyledComponent
-        bg="ui.errorBackground"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-15 emotion-8"
       >
-        <div
-          className="c0"
+        <Box
+          px={4}
         >
-          <Box
-            px={4}
+          <div
+            className="emotion-13 emotion-8"
           >
-            <StyledComponent
-              forwardedRef={null}
-              px={4}
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-11 emotion-12"
               >
-                <Flex
-                  py={4}
+                <Box
+                  pr={3}
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <div
+                    className="emotion-7 emotion-8"
                   >
-                    <div
-                      className="c2"
+                    <Icon
+                      color="ui.error"
+                      name="warning"
+                      size={24}
+                      title={null}
                     >
-                      <Box
-                        pr={3}
+                      <Base
+                        className="emotion-3 emotion-0"
+                        color="ui.error"
+                        name="warning"
+                        size={24}
+                        title={null}
                       >
-                        <StyledComponent
-                          forwardedRef={null}
-                          pr={3}
+                        <StyledSvg
+                          className="emotion-3 emotion-0"
+                          color="ui.error"
+                          fill="currentcolor"
+                          height={24}
+                          title="warning"
+                          viewBox="0 0 24 24"
+                          width={24}
                         >
-                          <div
-                            className="c3"
+                          <svg
+                            className="emotion-0 emotion-1 emotion-2"
+                            color="ui.error"
+                            fill="currentcolor"
+                            height={24}
+                            title="warning"
+                            viewBox="0 0 24 24"
+                            width={24}
                           >
-                            <Icon
-                              color="ui.error"
-                              name="warning"
-                            >
-                              <StyledComponent
-                                color="ui.error"
-                                forwardedRef={null}
-                                name="warning"
-                              >
-                                <Base
-                                  className="c4"
-                                  color="ui.error"
-                                  name="warning"
-                                  size={24}
-                                  title={null}
-                                >
-                                  <Icon__StyledSvg
-                                    className="c4"
-                                    color="ui.error"
-                                    fill="currentcolor"
-                                    height={24}
-                                    title="warning"
-                                    viewBox="0 0 24 24"
-                                    width={24}
-                                  >
-                                    <StyledComponent
-                                      className="c4"
-                                      color="ui.error"
-                                      fill="currentcolor"
-                                      forwardedRef={null}
-                                      height={24}
-                                      title="warning"
-                                      viewBox="0 0 24 24"
-                                      width={24}
-                                    >
-                                      <svg
-                                        className="c4 "
-                                        color="ui.error"
-                                        fill="currentcolor"
-                                        height={24}
-                                        title="warning"
-                                        viewBox="0 0 24 24"
-                                        width={24}
-                                      >
-                                        <path
-                                          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-                                        />
-                                      </svg>
-                                    </StyledComponent>
-                                  </Icon__StyledSvg>
-                                </Base>
-                              </StyledComponent>
-                            </Icon>
-                          </div>
-                        </StyledComponent>
-                      </Box>
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c5"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                            <path
+                              d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
+                            />
+                          </svg>
+                        </StyledSvg>
+                      </Base>
+                    </Icon>
+                  </div>
+                </Box>
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
+                >
+                  <span
+                    className="emotion-9 emotion-10"
+                    hidden={false}
+                  >
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Box>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Box>
+      </div>
     </Box>
   </Component>
 </Alert.error>
 `;
 
 exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
-.c1 {
+.emotion-13 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c3 {
-  padding-right: 16px;
-}
-
-.c0 {
-  margin-bottom: 16px;
-  background-color: ui.infoBackground;
-}
-
-.c5 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-11 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -737,7 +579,29 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
   display: flex;
 }
 
-.c4 {
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.infoBackground;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: greys.charcoal;
+}
+
+.emotion-1 {
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -757,155 +621,97 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
       bg="ui.infoBackground"
       mb={3}
     >
-      <StyledComponent
-        bg="ui.infoBackground"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-15 emotion-8"
       >
-        <div
-          className="c0"
+        <Box
+          px={4}
         >
-          <Box
-            px={4}
+          <div
+            className="emotion-13 emotion-8"
           >
-            <StyledComponent
-              forwardedRef={null}
-              px={4}
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-11 emotion-12"
               >
-                <Flex
-                  py={4}
+                <Box
+                  pr={3}
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <div
+                    className="emotion-7 emotion-8"
                   >
-                    <div
-                      className="c2"
+                    <Icon
+                      color="greys.charcoal"
+                      name="info"
+                      size={24}
+                      title={null}
                     >
-                      <Box
-                        pr={3}
+                      <Base
+                        className="emotion-3 emotion-0"
+                        color="greys.charcoal"
+                        name="info"
+                        size={24}
+                        title={null}
                       >
-                        <StyledComponent
-                          forwardedRef={null}
-                          pr={3}
+                        <StyledSvg
+                          className="emotion-3 emotion-0"
+                          color="greys.charcoal"
+                          fill="currentcolor"
+                          height={24}
+                          title="info"
+                          viewBox="0 0 24 24"
+                          width={24}
                         >
-                          <div
-                            className="c3"
+                          <svg
+                            className="emotion-0 emotion-1 emotion-2"
+                            color="greys.charcoal"
+                            fill="currentcolor"
+                            height={24}
+                            title="info"
+                            viewBox="0 0 24 24"
+                            width={24}
                           >
-                            <Icon
-                              color="greys.charcoal"
-                              name="info"
-                            >
-                              <StyledComponent
-                                color="greys.charcoal"
-                                forwardedRef={null}
-                                name="info"
-                              >
-                                <Base
-                                  className="c4"
-                                  color="greys.charcoal"
-                                  name="info"
-                                  size={24}
-                                  title={null}
-                                >
-                                  <Icon__StyledSvg
-                                    className="c4"
-                                    color="greys.charcoal"
-                                    fill="currentcolor"
-                                    height={24}
-                                    title="info"
-                                    viewBox="0 0 24 24"
-                                    width={24}
-                                  >
-                                    <StyledComponent
-                                      className="c4"
-                                      color="greys.charcoal"
-                                      fill="currentcolor"
-                                      forwardedRef={null}
-                                      height={24}
-                                      title="info"
-                                      viewBox="0 0 24 24"
-                                      width={24}
-                                    >
-                                      <svg
-                                        className="c4 "
-                                        color="greys.charcoal"
-                                        fill="currentcolor"
-                                        height={24}
-                                        title="info"
-                                        viewBox="0 0 24 24"
-                                        width={24}
-                                      >
-                                        <path
-                                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-                                        />
-                                      </svg>
-                                    </StyledComponent>
-                                  </Icon__StyledSvg>
-                                </Base>
-                              </StyledComponent>
-                            </Icon>
-                          </div>
-                        </StyledComponent>
-                      </Box>
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c5"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                            />
+                          </svg>
+                        </StyledSvg>
+                      </Base>
+                    </Icon>
+                  </div>
+                </Box>
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
+                >
+                  <span
+                    className="emotion-9 emotion-10"
+                    hidden={false}
+                  >
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Box>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Box>
+      </div>
     </Box>
   </Component>
 </Alert.info>
 `;
 
 exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
-.c1 {
+.emotion-13 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c0 {
-  margin-bottom: 16px;
-  background-color: ui.successBackground;
-}
-
-.c3 {
-  padding-right: 16px;
-}
-
-.c5 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-11 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -914,7 +720,29 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
   display: flex;
 }
 
-.c4 {
+.emotion-9 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-15 {
+  margin-bottom: 16px;
+  background-color: ui.successBackground;
+}
+
+.emotion-7 {
+  padding-right: 16px;
+}
+
+.emotion-3 {
+  vertical-align: middle;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  color: ui.success;
+}
+
+.emotion-1 {
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -934,159 +762,115 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
       bg="ui.successBackground"
       mb={3}
     >
-      <StyledComponent
-        bg="ui.successBackground"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-15 emotion-8"
       >
-        <div
-          className="c0"
+        <Box
+          px={4}
         >
-          <Box
-            px={4}
+          <div
+            className="emotion-13 emotion-8"
           >
-            <StyledComponent
-              forwardedRef={null}
-              px={4}
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-11 emotion-12"
               >
-                <Flex
-                  py={4}
+                <Box
+                  pr={3}
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <div
+                    className="emotion-7 emotion-8"
                   >
-                    <div
-                      className="c2"
+                    <Icon
+                      color="ui.success"
+                      name="checkCircle"
+                      size={24}
+                      title={null}
                     >
-                      <Box
-                        pr={3}
+                      <Base
+                        className="emotion-3 emotion-0"
+                        color="ui.success"
+                        name="checkCircle"
+                        size={24}
+                        title={null}
                       >
-                        <StyledComponent
-                          forwardedRef={null}
-                          pr={3}
+                        <StyledSvg
+                          className="emotion-3 emotion-0"
+                          color="ui.success"
+                          fill="currentcolor"
+                          height={24}
+                          title="checkCircle"
+                          viewBox="0 0 24 24"
+                          width={24}
                         >
-                          <div
-                            className="c3"
+                          <svg
+                            className="emotion-0 emotion-1 emotion-2"
+                            color="ui.success"
+                            fill="currentcolor"
+                            height={24}
+                            title="checkCircle"
+                            viewBox="0 0 24 24"
+                            width={24}
                           >
-                            <Icon
-                              color="ui.success"
-                              name="checkCircle"
-                            >
-                              <StyledComponent
-                                color="ui.success"
-                                forwardedRef={null}
-                                name="checkCircle"
-                              >
-                                <Base
-                                  className="c4"
-                                  color="ui.success"
-                                  name="checkCircle"
-                                  size={24}
-                                  title={null}
-                                >
-                                  <Icon__StyledSvg
-                                    className="c4"
-                                    color="ui.success"
-                                    fill="currentcolor"
-                                    height={24}
-                                    title="checkCircle"
-                                    viewBox="0 0 24 24"
-                                    width={24}
-                                  >
-                                    <StyledComponent
-                                      className="c4"
-                                      color="ui.success"
-                                      fill="currentcolor"
-                                      forwardedRef={null}
-                                      height={24}
-                                      title="checkCircle"
-                                      viewBox="0 0 24 24"
-                                      width={24}
-                                    >
-                                      <svg
-                                        className="c4 "
-                                        color="ui.success"
-                                        fill="currentcolor"
-                                        height={24}
-                                        title="checkCircle"
-                                        viewBox="0 0 24 24"
-                                        width={24}
-                                      >
-                                        <path
-                                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                                        />
-                                      </svg>
-                                    </StyledComponent>
-                                  </Icon__StyledSvg>
-                                </Base>
-                              </StyledComponent>
-                            </Icon>
-                          </div>
-                        </StyledComponent>
-                      </Box>
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c5"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                            />
+                          </svg>
+                        </StyledSvg>
+                      </Base>
+                    </Icon>
+                  </div>
+                </Box>
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
+                >
+                  <span
+                    className="emotion-9 emotion-10"
+                    hidden={false}
+                  >
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Box>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Box>
+      </div>
     </Box>
   </Component>
 </Alert.success>
 `;
 
 exports[`<Alert /> contained renders correctly 1`] = `
-.c0 {
+.emotion-6 {
   margin-bottom: 16px;
   background-color: greys.porcelain;
 }
 
-.c1 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: default;
-}
-
-.c3 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-2 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.emotion-0 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.emotion-4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: default;
 }
 
 <Alert
@@ -1103,93 +887,68 @@ exports[`<Alert /> contained renders correctly 1`] = `
       bg="greys.porcelain"
       mb={3}
     >
-      <StyledComponent
-        bg="greys.porcelain"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-6 emotion-7"
       >
-        <div
-          className="c0"
+        <Container
+          gutter="default"
+          maxWidth="default"
         >
-          <Container
-            gutter="default"
-            maxWidth="default"
+          <div
+            className="emotion-4 emotion-5"
           >
-            <StyledComponent
-              forwardedRef={null}
-              gutter="default"
-              maxWidth="default"
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-2 emotion-3"
               >
-                <Flex
-                  py={4}
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <span
+                    className="emotion-0 emotion-1"
+                    hidden={false}
                   >
-                    <div
-                      className="c2"
-                    >
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c3"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Container>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Container>
+      </div>
     </Box>
   </Component>
 </Alert>
 `;
 
 exports[`<Alert /> renders correctly 1`] = `
-.c0 {
+.emotion-6 {
   margin-bottom: 16px;
   background-color: greys.porcelain;
 }
 
-.c1 {
+.emotion-4 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.c3 {
-  margin-bottom: 0px;
-  text-align: left;
-}
-
-.c2 {
+.emotion-2 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.emotion-0 {
+  margin-bottom: 0;
+  text-align: left;
 }
 
 <Alert
@@ -1204,63 +963,39 @@ exports[`<Alert /> renders correctly 1`] = `
       bg="greys.porcelain"
       mb={3}
     >
-      <StyledComponent
-        bg="greys.porcelain"
-        forwardedRef={null}
-        mb={3}
+      <div
+        className="emotion-6 emotion-5"
       >
-        <div
-          className="c0"
+        <Box
+          px={4}
         >
-          <Box
-            px={4}
+          <div
+            className="emotion-4 emotion-5"
           >
-            <StyledComponent
-              forwardedRef={null}
-              px={4}
+            <Flex
+              py={4}
             >
               <div
-                className="c1"
+                className="emotion-2 emotion-3"
               >
-                <Flex
-                  py={4}
+                <Text
+                  hidden={false}
+                  mb={0}
+                  textAlign="left"
+                  textStyle="text"
                 >
-                  <StyledComponent
-                    forwardedRef={null}
-                    py={4}
+                  <span
+                    className="emotion-0 emotion-1"
+                    hidden={false}
                   >
-                    <div
-                      className="c2"
-                    >
-                      <Text
-                        hidden={false}
-                        mb={0}
-                        textAlign="left"
-                        textStyle="text"
-                      >
-                        <StyledComponent
-                          forwardedRef={null}
-                          hidden={false}
-                          mb={0}
-                          textAlign="left"
-                          textStyle="text"
-                        >
-                          <span
-                            className="c3"
-                            hidden={false}
-                          >
-                            Hello world
-                          </span>
-                        </StyledComponent>
-                      </Text>
-                    </div>
-                  </StyledComponent>
-                </Flex>
+                    Hello world
+                  </span>
+                </Text>
               </div>
-            </StyledComponent>
-          </Box>
-        </div>
-      </StyledComponent>
+            </Flex>
+          </div>
+        </Box>
+      </div>
     </Box>
   </Component>
 </Alert>

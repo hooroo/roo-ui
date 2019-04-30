@@ -1,25 +1,25 @@
 import React, { Fragment } from 'react';
-import { themeGet } from 'styled-system';
-import { ThemeProvider as Provider, createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-    body {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-family: ${themeGet('fontFamily')};
-      font-size: ${themeGet('fontSizes.base')};
-      line-height: ${themeGet('lineHeights.normal')};
-      color: ${themeGet('colors.greys.charcoal')};
-    }
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
-  `;
+import { ThemeProvider as Provider } from 'emotion-theming';
+import { Global, css } from '@emotion/core';
+import get from 'lodash/get';
 
 const ThemeProvider = ({ theme, children, ...otherProps }) => (
   <Provider theme={theme} {...otherProps}>
     <Fragment>
-      <GlobalStyle />
+      <Global styles={css`
+        body {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-family: ${get(theme, 'fontFamily')};
+          font-size: ${get(theme, 'fontSizes.base')};
+          line-height: ${get(theme, 'lineHeights.normal')};
+          color: ${get(theme, 'colors.greys.charcoal')};
+        }
+        *, *:before, *:after {
+          box-sizing: border-box;
+        }
+      `}
+      />
       {children}
     </Fragment>
   </Provider>

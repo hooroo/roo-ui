@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import { css } from 'styled-components';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 import { hideVisually } from 'polished';
 import { color, fontWeight, themeGet, space } from 'styled-system';
-import styledOmitProps from '../styledOmitProps';
+import omitProps from '../omitProps';
 
-const Link = styledOmitProps('a', { omit: ['hidden', 'underline'] })`
+const Link = styled('a', omitProps(['hidden', 'underline']))`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;

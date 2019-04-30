@@ -1,11 +1,12 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { themeGet } from 'styled-system';
 
 import { Icon, Input } from '..';
-import styledOmitProps from '../styledOmitProps';
+import omitProps from '../omitProps';
 
-const StyledSelect = styledOmitProps('select', { omit: ['color', 'fontSize'] })``;
+const StyledSelect = styled('select', omitProps(['color', 'fontSize']))``;
 
 StyledSelect.propTypes = {
   ...Input.propTypes,
@@ -22,7 +23,7 @@ const IconWrapper = styled.div`
   pointer-events: none;
 
   ${props => props.disabled && css`
-    opacity: ${themeGet('opacity.disabled')};
+    opacity: ${themeGet('opacity.disabled')(props)};
   `}
 `;
 

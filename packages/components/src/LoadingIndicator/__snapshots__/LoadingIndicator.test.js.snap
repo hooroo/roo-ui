@@ -1,22 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LoadingIndicator /> matches snapshot 1`] = `
-<StyledComponent
-  delay="0ms"
-  forwardedRef={null}
-  width={72}
->
-  <LoadingIndicator__Bouncer
-    bg="greys.steel"
-    size={18}
-  />
-  <LoadingIndicator__Bouncer
-    bg="greys.steel"
-    size={18}
-  />
-  <LoadingIndicator__Bouncer
-    bg="greys.steel"
-    size={18}
-  />
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

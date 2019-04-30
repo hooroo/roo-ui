@@ -48,21 +48,17 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
             setReferenceNode={[Function]}
           >
             <Box>
-              <StyledComponent
-                forwardedRef={[Function]}
+              <div
+                className="css-1rd3di6-Box emotion-0"
               >
-                <div
-                  className=""
+                <button
+                  disabled={false}
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
                 >
-                  <button
-                    disabled={false}
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
-                  >
-                    Open popover
-                  </button>
-                </div>
-              </StyledComponent>
+                  Open popover
+                </button>
+              </div>
             </Box>
           </InnerReference>
         </Reference>
@@ -73,11 +69,11 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
 `;
 
 exports[`<Popover /> when popover is open renders correctly 1`] = `
-.c0 {
+.emotion-6 {
   z-index: 1;
 }
 
-.c2 {
+.emotion-2 {
   height: 0;
   width: 0;
   border: solid transparent;
@@ -85,7 +81,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
   position: absolute;
 }
 
-.c1 {
+.emotion-4 {
   height: 0;
   width: 0;
   border: solid transparent;
@@ -140,21 +136,17 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
             setReferenceNode={[Function]}
           >
             <Box>
-              <StyledComponent
-                forwardedRef={[Function]}
+              <div
+                className="emotion-0 emotion-1"
               >
-                <div
-                  className=""
+                <button
+                  disabled={true}
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
                 >
-                  <button
-                    disabled={true}
-                    onClick={[Function]}
-                    onKeyDown={[Function]}
-                  >
-                    Open popover
-                  </button>
-                </div>
-              </StyledComponent>
+                  Open popover
+                </button>
+              </div>
             </Box>
           </InnerReference>
         </Reference>
@@ -180,7 +172,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
             positionFixed={false}
             referenceElement={
               <div
-                class=""
+                class="emotion-0 emotion-1"
               >
                 <button
                   disabled=""
@@ -190,7 +182,7 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
               </div>
             }
           >
-            <Popover__ContentWrapper
+            <ContentWrapper
               aria-hidden="true"
               className="ignore-react-onclickoutside"
               style={
@@ -204,10 +196,9 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
               }
               zIndex={1}
             >
-              <StyledComponent
+              <div
                 aria-hidden="true"
-                className="ignore-react-onclickoutside"
-                forwardedRef={[Function]}
+                className="ignore-react-onclickoutside emotion-6 emotion-7"
                 style={
                   Object {
                     "left": 0,
@@ -217,55 +208,30 @@ exports[`<Popover /> when popover is open renders correctly 1`] = `
                     "top": 0,
                   }
                 }
-                zIndex={1}
               >
-                <div
-                  aria-hidden="true"
-                  className="ignore-react-onclickoutside c0"
-                  style={
-                    Object {
-                      "left": 0,
-                      "opacity": 0,
-                      "pointerEvents": "none",
-                      "position": "absolute",
-                      "top": 0,
-                    }
-                  }
+                <p
+                  key=".1"
                 >
-                  <p
-                    key=".1"
-                  >
-                    Popover contents
-                  </p>
-                  <Popover__TriangleBorder
+                  Popover contents
+                </p>
+                <TriangleBorder
+                  style={Object {}}
+                >
+                  <div
+                    className="emotion-2 emotion-3"
                     style={Object {}}
-                  >
-                    <StyledComponent
-                      forwardedRef={[Function]}
-                      style={Object {}}
-                    >
-                      <div
-                        className="c1"
-                        style={Object {}}
-                      />
-                    </StyledComponent>
-                  </Popover__TriangleBorder>
-                  <Popover__Triangle
+                  />
+                </TriangleBorder>
+                <Triangle
+                  style={Object {}}
+                >
+                  <div
+                    className="emotion-4 emotion-5"
                     style={Object {}}
-                  >
-                    <StyledComponent
-                      forwardedRef={[Function]}
-                      style={Object {}}
-                    >
-                      <div
-                        className="c2"
-                        style={Object {}}
-                      />
-                    </StyledComponent>
-                  </Popover__Triangle>
-                </div>
-              </StyledComponent>
-            </Popover__ContentWrapper>
+                  />
+                </Triangle>
+              </div>
+            </ContentWrapper>
           </InnerPopper>
         </Popper>
       </Manager>

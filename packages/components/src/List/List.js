@@ -1,5 +1,7 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { themeGet, style } from 'styled-system';
 
 import ListItem from '../ListItem';
@@ -7,12 +9,10 @@ import ListItem from '../ListItem';
 const columns = style({
   prop: 'columns',
   cssProperty: 'flexBasis',
-  getter: n => `${100 / n}%`,
+  transformValue: n => `${100 / n}%`,
 });
 
-const List = styled('div').attrs(props => ({
-  as: props.ordered ? 'ol' : 'ul',
-}))`
+const ListBase = styled('div')`
   margin: ${themeGet('space.4')} 0;
   padding-left: ${themeGet('space.8')};
 
@@ -24,17 +24,19 @@ const List = styled('div').attrs(props => ({
   ${props => props.columns && css`
     display: flex;
     flex-wrap: wrap;
-    margin-left: -${themeGet('space.2')};
-    margin-right: -${themeGet('space.2')};
+    margin-left: -${themeGet('space.2')(props)};
+    margin-right: -${themeGet('space.2')(props)};
 
     ${ListItem} {
       flex: 1 1;
-      padding: 0 ${themeGet('space.2')};
+      padding: 0 ${themeGet('space.2')(props)};
 
-      ${columns};
+      ${columns(props)};
     }
   `};
 `;
+
+const List = props => <ListBase {...props} as={props.ordered ? 'ol' : 'ul'} />;
 
 List.displayName = 'List';
 

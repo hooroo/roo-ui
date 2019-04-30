@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { darken } from 'polished';
-import styledOmitProps from '../../../styledOmitProps';
 
 import { NakedButton, Box } from '../../../';
+import omitProps from '../../../omitProps';
 
-const DayWrapper = styledOmitProps(Box, { omit: ['selected'] })`
+const DayWrapper = styled(Box, omitProps(['selected']))`
   flex: 1 1 auto;
   width: calc(100% / 7);
   margin: 0 -1px -1px 0;
@@ -24,7 +25,7 @@ const DayWrapper = styledOmitProps(Box, { omit: ['selected'] })`
     props.selectable &&
     css`
       &:hover {
-        border-color: ${themeGet('colors.brand.secondary')};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
         z-index: 1;
       }
     `};
@@ -33,7 +34,7 @@ const DayWrapper = styledOmitProps(Box, { omit: ['selected'] })`
     props.selected &&
     css`
       z-index: 1;
-      border-color: ${themeGet('colors.brand.secondary')};
+      border-color: ${themeGet('colors.brand.secondary')(props)};
     `};
 `;
 
@@ -41,7 +42,7 @@ DayWrapper.defaultProps = {
   ...Box.defaultProps,
 };
 
-const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
+const Button = styled(NakedButton, omitProps(['selected']))`
   position: absolute;
   left: 0;
   top: 0;
@@ -63,19 +64,19 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
   ${props =>
     props.selectable &&
     css`
-      background-color: ${themeGet('colors.white')};
+      background-color: ${themeGet('colors.white')(props)};
     `};
 
   ${props =>
     props.selected &&
     !props.highlighted &&
     css`
-      background-color: ${themeGet('colors.lightBlue')};
+      background-color: ${themeGet('colors.lightBlue')(props)};
 
       &:hover,
       &:focus {
-        border-color: ${themeGet('colors.brand.secondary')};
-        background-color: ${themeGet('colors.white')};;
+        border-color: ${themeGet('colors.brand.secondary')(props)};
+        background-color: ${themeGet('colors.white')(props)};
       }
     `};
 
@@ -83,12 +84,12 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     props.highlighted &&
     !props.selected &&
     css`
-      background-color: ${themeGet('colors.lightBlue')};
+      background-color: ${themeGet('colors.lightBlue')(props)};
 
       &:hover,
       &:focus {
         background-color: transparent;
-        border-color: ${themeGet('colors.brand.secondary')};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
       }
     `};
 
@@ -96,11 +97,11 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     props.highlighted &&
     props.selected &&
     css`
-      background-color: ${themeGet('colors.brand.secondary')};
+      background-color: ${themeGet('colors.brand.secondary')(props)};
 
       &:hover {
         background-color: transparent;
-        border-color: ${themeGet('colors.brand.secondary')};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
       }
     `};
 
@@ -110,8 +111,8 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     css`
       &:hover,
       &:focus {
-        background-color: ${themeGet('colors.white')};
-        border-color: ${themeGet('colors.brand.secondary')};
+        background-color: ${themeGet('colors.white')(props)};
+        border-color: ${themeGet('colors.brand.secondary')(props)};
       }
       `};
 
@@ -119,7 +120,7 @@ const Button = styledOmitProps(NakedButton, { omit: ['selected'] })`
     !props.selectable &&
     !props.disabled &&
     css`
-      background-color: ${themeGet('colors.greys.alto')};
+      background-color: ${themeGet('colors.greys.alto')(props)};
 
       &:hover,
       &:focus {

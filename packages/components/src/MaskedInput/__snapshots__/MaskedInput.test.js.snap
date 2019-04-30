@@ -1,56 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MaskedInput /> <MaskedInput.time /> renders correctly 1`] = `
-<StyledComponent
-  bg="white"
-  border={2}
-  borderColor="greys.alto"
-  color="greys.charcoal"
-  fontSize="base"
-  forwardedRef={null}
-  keepCharPositions={true}
-  lineHeight="normal"
-  mask={
-    Array [
-      /\\[0-2\\]/,
-      /\\[0-9\\]/,
-      ":",
-      /\\[0-6\\]/,
-      /\\[0-9\\]/,
-      " AEST",
-    ]
-  }
-  mb={3}
-  placeholder="00:00 AEST"
-  placeholderChar=" "
-  px={4}
-  py={3}
-  render={[Function]}
-/>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<MaskedInput /> renders correctly 1`] = `
-<StyledComponent
-  bg="white"
-  border={2}
-  borderColor="greys.alto"
-  color="greys.charcoal"
-  fontSize="base"
-  forwardedRef={null}
-  id="postcode"
-  lineHeight="normal"
-  mask={
-    Array [
-      /\\\\d/,
-      /\\\\d/,
-      /\\\\d/,
-      /\\\\d/,
-    ]
-  }
-  mb={3}
-  placeholder="Enter postcode"
-  px={4}
-  py={3}
-  render={[Function]}
-/>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

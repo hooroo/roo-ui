@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Radio /> renders correctly 1`] = `
-.c0 {
+.emotion-4 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.emotion-0 {
   opacity: 0;
   position: absolute;
   z-index: 0;
 }
 
-.c1:focus {
+.emotion-0:focus {
   box-shadow: none;
 }
 
-.c2 {
+.emotion-2 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -27,7 +27,7 @@ exports[`<Radio /> renders correctly 1`] = `
   z-index: 1;
 }
 
-input:checked + .c2:after {
+input:checked + .emotion-2:after {
   position: absolute;
   display: block;
   content: '';
@@ -35,58 +35,45 @@ input:checked + .c2:after {
 }
 
 <Radio>
-  <Radio__RadioWrapper>
-    <StyledComponent
-      forwardedRef={null}
+  <RadioWrapper>
+    <div
+      className="emotion-4 emotion-5"
     >
-      <div
-        className="c0"
+      <RadioInput
+        type="radio"
       >
-        <Radio__RadioInput
+        <input
+          className="emotion-0 emotion-1"
           type="radio"
-        >
-          <StyledComponent
-            forwardedRef={null}
-            type="radio"
-          >
-            <input
-              className="c1"
-              type="radio"
-            />
-          </StyledComponent>
-        </Radio__RadioInput>
-        <Radio__RadioIcon>
-          <StyledComponent
-            forwardedRef={null}
-          >
-            <div
-              className="c2"
-            />
-          </StyledComponent>
-        </Radio__RadioIcon>
-      </div>
-    </StyledComponent>
-  </Radio__RadioWrapper>
+        />
+      </RadioInput>
+      <RadioIcon>
+        <div
+          className="emotion-2 emotion-3"
+        />
+      </RadioIcon>
+    </div>
+  </RadioWrapper>
 </Radio>
 `;
 
 exports[`<Radio /> when checked renders correctly 1`] = `
-.c0 {
+.emotion-4 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.emotion-0 {
   opacity: 0;
   position: absolute;
   z-index: 0;
 }
 
-.c1:focus {
+.emotion-0:focus {
   box-shadow: none;
 }
 
-.c2 {
+.emotion-2 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -97,7 +84,7 @@ exports[`<Radio /> when checked renders correctly 1`] = `
   z-index: 1;
 }
 
-input:checked + .c2:after {
+input:checked + .emotion-2:after {
   position: absolute;
   display: block;
   content: '';
@@ -107,61 +94,47 @@ input:checked + .c2:after {
 <Radio
   defaultChecked={true}
 >
-  <Radio__RadioWrapper>
-    <StyledComponent
-      forwardedRef={null}
+  <RadioWrapper>
+    <div
+      className="emotion-4 emotion-5"
     >
-      <div
-        className="c0"
+      <RadioInput
+        defaultChecked={true}
+        type="radio"
       >
-        <Radio__RadioInput
+        <input
+          className="emotion-0 emotion-1"
           defaultChecked={true}
           type="radio"
-        >
-          <StyledComponent
-            defaultChecked={true}
-            forwardedRef={null}
-            type="radio"
-          >
-            <input
-              className="c1"
-              defaultChecked={true}
-              type="radio"
-            />
-          </StyledComponent>
-        </Radio__RadioInput>
-        <Radio__RadioIcon>
-          <StyledComponent
-            forwardedRef={null}
-          >
-            <div
-              className="c2"
-            />
-          </StyledComponent>
-        </Radio__RadioIcon>
-      </div>
-    </StyledComponent>
-  </Radio__RadioWrapper>
+        />
+      </RadioInput>
+      <RadioIcon>
+        <div
+          className="emotion-2 emotion-3"
+        />
+      </RadioIcon>
+    </div>
+  </RadioWrapper>
 </Radio>
 `;
 
 exports[`<Radio /> when disabled renders correctly 1`] = `
-.c0 {
+.emotion-4 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.emotion-0 {
   opacity: 0;
   position: absolute;
   z-index: 0;
 }
 
-.c1:focus {
+.emotion-0:focus {
   box-shadow: none;
 }
 
-.c2 {
+.emotion-2 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -172,7 +145,7 @@ exports[`<Radio /> when disabled renders correctly 1`] = `
   z-index: 1;
 }
 
-input:checked + .c2:after {
+input:checked + .emotion-2:after {
   position: absolute;
   display: block;
   content: '';
@@ -182,40 +155,26 @@ input:checked + .c2:after {
 <Radio
   disabled={true}
 >
-  <Radio__RadioWrapper>
-    <StyledComponent
-      forwardedRef={null}
+  <RadioWrapper>
+    <div
+      className="emotion-4 emotion-5"
     >
-      <div
-        className="c0"
+      <RadioInput
+        disabled={true}
+        type="radio"
       >
-        <Radio__RadioInput
+        <input
+          className="emotion-0 emotion-1"
           disabled={true}
           type="radio"
-        >
-          <StyledComponent
-            disabled={true}
-            forwardedRef={null}
-            type="radio"
-          >
-            <input
-              className="c1"
-              disabled={true}
-              type="radio"
-            />
-          </StyledComponent>
-        </Radio__RadioInput>
-        <Radio__RadioIcon>
-          <StyledComponent
-            forwardedRef={null}
-          >
-            <div
-              className="c2"
-            />
-          </StyledComponent>
-        </Radio__RadioIcon>
-      </div>
-    </StyledComponent>
-  </Radio__RadioWrapper>
+        />
+      </RadioInput>
+      <RadioIcon>
+        <div
+          className="emotion-2 emotion-3"
+        />
+      </RadioIcon>
+    </div>
+  </RadioWrapper>
 </Radio>
 `;

@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Flex /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

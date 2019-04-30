@@ -1,39 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> block renders correctly 1`] = `
-<StyledComponent
-  block={true}
-  forwardedRef={null}
-  variant="default"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Button /> primary renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  variant="primary"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Button /> renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  variant="default"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<Button /> rounded renders correctly 1`] = `
-<StyledComponent
-  forwardedRef={null}
-  rounded={true}
-  variant="default"
->
-  Hello world
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

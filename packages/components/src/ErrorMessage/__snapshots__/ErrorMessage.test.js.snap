@@ -1,51 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ErrorMessage /> prop.arrow equals bottom renders correctly 1`] = `
-<StyledComponent
-  arrow="bottom"
-  bg="ui.errorBackground"
-  forwardedRef={null}
->
-  An error occurred
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals left renders correctly 1`] = `
-<StyledComponent
-  arrow="left"
-  bg="ui.errorBackground"
-  forwardedRef={null}
->
-  An error occurred
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals right renders correctly 1`] = `
-<StyledComponent
-  arrow="right"
-  bg="ui.errorBackground"
-  forwardedRef={null}
->
-  An error occurred
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<ErrorMessage /> prop.arrow equals top renders correctly 1`] = `
-<StyledComponent
-  arrow="top"
-  bg="ui.errorBackground"
-  forwardedRef={null}
->
-  An error occurred
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;
 
 exports[`<ErrorMessage /> renders correctly 1`] = `
-<StyledComponent
-  arrow={null}
-  bg="ui.errorBackground"
-  forwardedRef={null}
->
-  An error occurred
-</StyledComponent>
+<ContextConsumer>
+  <Component />
+</ContextConsumer>
 `;

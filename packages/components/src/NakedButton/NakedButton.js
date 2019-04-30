@@ -1,9 +1,7 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { space, verticalAlign, themeGet, color } from 'styled-system';
 
-const NakedButton = styled('button').attrs({
-  type: 'button',
-})`
+const NakedButton = styled('button')`
   border: none;
   margin: 0;
   padding: 0;
@@ -33,6 +31,7 @@ NakedButton.propTypes = {
 
 NakedButton.defaultProps = {
   as: 'button',
+  type: 'button',
 };
 
 export default NakedButton;

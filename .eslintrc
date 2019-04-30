@@ -6,7 +6,9 @@
     "import/no-extraneous-dependencies": 0,
     "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
     "react/default-props-match-prop-types": 0,
-    "jsx-a11y/label-has-for": 0
+    "jsx-a11y/label-has-for": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0
   },
   "env": {
     "browser": true,

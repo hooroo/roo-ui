@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { css } from 'styled-components';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import {
   space,
   color,
@@ -9,9 +10,10 @@ import {
   borderColor,
   themeGet,
 } from 'styled-system';
-import styledOmitProps from '../styledOmitProps';
 
-const Input = styledOmitProps('input', { omit: ['color', 'fontSize'] })`
+import omitProps from '../omitProps';
+
+const Input = styled('input', omitProps(['color', 'fontSize']))`
   ${space}
   ${color}
   ${fontSize}
@@ -43,12 +45,12 @@ const Input = styledOmitProps('input', { omit: ['color', 'fontSize'] })`
 
   ${props => props.underline && css`
     border: none;
-    border-bottom: ${themeGet('borders.2')};
-    border-color: ${themeGet('colors.greys.alto')};
+    border-bottom: ${themeGet('borders.2')(props)};
+    border-color: ${themeGet('colors.greys.alto')(props)};
   `}
 
   ${props => props.error && css`
-    border-color: ${themeGet('colors.ui.error')};
+    border-color: ${themeGet('colors.ui.error')(props)};
   `}
 `;
 
