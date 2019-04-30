@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.61.0"></a>
+# [0.61.0](https://github.com/hooroo/roo-ui/compare/v0.60.1...v0.61.0) (2019-04-30)
+
+
+### Features
+
+* Replace styled-components with emotion ([#230](https://github.com/hooroo/roo-ui/issues/230)) ([9b78856](https://github.com/hooroo/roo-ui/commit/9b78856))
+
+
+
+
 <a name="0.58.10"></a>
 ## [0.58.10](https://github.com/hooroo/roo-ui/compare/v0.58.9...v0.58.10) (2019-03-18)
 

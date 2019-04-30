@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.60.1",
+  "version": "0.61.0",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -14,15 +14,15 @@
   "devDependencies": {
     "@roo-ui/icons": "^0.58.10",
     "@roo-ui/test-utils": "^0.58.10",
-    "@roo-ui/themes": "^0.58.10",
+    "@roo-ui/themes": "^0.61.0",
     "react-powerplug": "^1.0.0-rc.1"
   },
   "peerDependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
     "polished": "^2.2.0",
-    "react-dom": "^16.6.0",
     "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "styled-system": "^4.1.0"
   },
   "dependencies": {
