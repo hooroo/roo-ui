@@ -8,6 +8,7 @@ import {
   lineHeight,
   border,
   borderColor,
+  textAlign,
   themeGet,
 } from 'styled-system';
 
@@ -20,6 +21,7 @@ const Input = styled('input', omitProps(['color', 'fontSize']))`
   ${lineHeight}
   ${border}
   ${borderColor}
+  ${textAlign}
   display: block;
   width: 100%;
   outline: 0;
@@ -61,6 +63,7 @@ Input.propTypes = {
   ...lineHeight.propTypes,
   ...border.propTypes,
   ...borderColor.propTypes,
+  ...textAlign.propTypes,
   error: PropTypes.bool,
   underline: PropTypes.bool,
 };
@@ -75,6 +78,7 @@ Input.defaultProps = {
   lineHeight: 'normal',
   border: 2,
   borderColor: 'greys.alto',
+  textAlign: 'left',
 };
 
 export default Input;

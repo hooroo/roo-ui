@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { boolean } from '@storybook/addon-knobs/react';
+import { boolean, text } from '@storybook/addon-knobs/react';
 
 import Input from '.';
 import README from './README.md';
@@ -15,5 +15,6 @@ storiesOf('Components|Input', module)
       error={boolean('Error', false)}
       underline={boolean('Underline', false)}
       readOnly={boolean('Read only', false)}
+      textAlign={text('Text Align', 'left')}
     />
   ));
