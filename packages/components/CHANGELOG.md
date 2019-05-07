@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.61.2"></a>
+## [0.61.2](https://github.com/hooroo/roo-ui/compare/v0.61.1...v0.61.2) (2019-05-07)
+
+
+### Bug Fixes
+
+* add fixed fontsize to checkbox ([#233](https://github.com/hooroo/roo-ui/issues/233)) ([72d7a08](https://github.com/hooroo/roo-ui/commit/72d7a08))
+
+
+
+
 <a name="0.61.1"></a>
 ## [0.61.1](https://github.com/hooroo/roo-ui/compare/v0.61.0...v0.61.1) (2019-05-02)
 
