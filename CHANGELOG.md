@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.61.3"></a>
+## [0.61.3](https://github.com/hooroo/roo-ui/compare/v0.61.2...v0.61.3) (2019-05-07)
+
+
+### Bug Fixes
+
+* fix alignment on Checkbox component ([#234](https://github.com/hooroo/roo-ui/issues/234)) ([b2e1dc6](https://github.com/hooroo/roo-ui/commit/b2e1dc6))
+
+
+
+
 <a name="0.61.2"></a>
 ## [0.61.2](https://github.com/hooroo/roo-ui/compare/v0.61.1...v0.61.2) (2019-05-07)
 
