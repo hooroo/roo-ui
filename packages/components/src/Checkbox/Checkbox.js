@@ -34,6 +34,7 @@ const CheckboxBorder = styled.div`
   margin-right: ${themeGet('space.2')};
   height: ${rem('20px')};
   width: ${rem('20px')};
+  font-size: ${themeGet('fontSizes.base')};
   background-color: ${themeGet('colors.white')};
   border: ${themeGet('borders.2')};
   border-color: ${themeGet('colors.greys.alto')};
