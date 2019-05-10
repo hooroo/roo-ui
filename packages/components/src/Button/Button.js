@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
-import { themeGet, space, color, backgroundColor, boxShadow, variant } from 'styled-system';
+import { themeGet, space, color, backgroundColor, boxShadow, display, variant } from 'styled-system';
 import get from 'lodash/get';
 
 const FALLBACK_BG_COLOR = '#000';
@@ -13,7 +13,6 @@ const getBackground = props =>
   get(backgroundColor(props), 'backgroundColor') || get(buttonStyle(props), 'backgroundColor') || FALLBACK_BG_COLOR;
 
 const Button = styled.button`
-  display: inline-block;
   margin: 0;
   padding: ${themeGet('space.3')} ${themeGet('space.6')};
   font-size: ${themeGet('fontSizes.base')};
@@ -31,6 +30,7 @@ const Button = styled.button`
   cursor: pointer;
   appearance: none;
 
+  ${display}
   ${buttonStyle}
   ${space}
   ${color}
@@ -73,6 +73,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   variant: 'default',
+  display: 'inline-block',
 };
 
 export default Button;
