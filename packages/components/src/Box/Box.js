@@ -17,6 +17,10 @@ import {
   flex,
   position,
   zIndex,
+  top,
+  right,
+  bottom,
+  left,
 } from 'styled-system';
 import styled from '@emotion/styled';
 import omitProps from '../omitProps';
@@ -41,6 +45,10 @@ const Box = styled('div', omitProps())`
   ${flex}
   ${position}
   ${zIndex}
+  ${top}
+  ${right}
+  ${bottom}
+  ${left}
 `;
 
 Box.propTypes = {
@@ -62,6 +70,10 @@ Box.propTypes = {
   ...flex.propTypes,
   ...position.propTypes,
   ...zIndex.propTypes,
+  ...top.propTypes,
+  ...right.propTypes,
+  ...bottom.propTypes,
+  ...left.propTypes,
 };
 
 export default Box;
