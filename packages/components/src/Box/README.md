@@ -37,5 +37,9 @@ This component can be customized with [styled-system](https://jxnblk.com/styled-
 `borderColor`,
 `flexBasis`,
 `flex`,
-`position` &
+`position`,
+`top`,
+`right`,
+`bottom`,
+`left`, &
 `zIndex` [functions](http://jxnblk.com/styled-system/table)
