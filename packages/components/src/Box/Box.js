@@ -45,9 +45,9 @@ const Box = styled('div', omitProps())`
   ${flex}
   ${position}
   ${zIndex}
-  ${top},
-  ${right},
-  ${bottom},
+  ${top}
+  ${right}
+  ${bottom}
   ${left}
 `;
 
