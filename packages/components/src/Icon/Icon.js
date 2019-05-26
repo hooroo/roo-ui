@@ -1,29 +1,28 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { withTheme } from 'emotion-theming';
 import { space, color } from 'styled-system';
 import PropTypes from 'prop-types';
-import paths from '@roo-ui/icons';
 
 const StyledSvg = styled.svg``;
 
-
-const Base = ({
-  name, title, size, ...props
+const Base = withTheme(({
+  name, title, size, theme, ...props
 }) => (
-  <StyledSvg
-    {...props}
-    viewBox="0 0 24 24"
-    width={size}
-    height={size}
-    title={title || name}
-    fill="currentcolor"
-  >
-    <path d={paths[name].path} />
-  </StyledSvg>
-);
+    <StyledSvg
+      {...props}
+      viewBox="0 0 24 24"
+      width={size}
+      height={size}
+      title={title || name}
+      fill="currentcolor"
+    >
+      <path d={theme.icons[name].path} />
+    </StyledSvg>
+  ));
 
 Base.propTypes = {
-  name: PropTypes.oneOf(Object.keys(paths)),
+  name: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   title: PropTypes.string,
 };

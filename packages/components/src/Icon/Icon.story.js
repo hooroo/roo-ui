@@ -1,17 +1,21 @@
 import styled from '@emotion/styled';
+import { ThemeProvider, withTheme } from 'emotion-theming';
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
-import paths from '@roo-ui/icons';
+import { qantas } from '@roo-ui/themes';
+import * as allIcons from '@roo-ui/icons';
 
 import { Box, Paragraph } from '..';
 import Icon from '.';
 import README from './README.md';
 
+const themeWithAllIcons = { ...qantas, icons: allIcons };
+
 const groupedPaths = groupBy(
-  map(paths, ({ category }, name) => ({ category, name })),
+  map(allIcons, ({ category }, name) => ({ category, name })),
   'category',
 );
 
@@ -27,34 +31,47 @@ const Caption = styled(Paragraph)`
   text-overflow: ellipsis;
 `;
 
-const renderIcons = group => () => (
+const IconsInTheme = withTheme(({ theme }) => (
   <Grid>
-    {groupedPaths[group].map(({ name }) => (
+    {map(theme.icons, (_, name) => (
       <Box p={4} key={name}>
         <Icon color="greys.steel" size={48} name={name} />
         <Caption title={name} fontSize="xs" color="greys.steel">{name}</Caption>
       </Box>
     ))}
   </Grid>
+));
+
+const renderIconsInCategory = group => () => (
+  <Grid>
+    <ThemeProvider theme={themeWithAllIcons}>
+      {groupedPaths[group].map(({ name }) => (
+        <Box p={4} key={name}>
+          <Icon color="greys.steel" size={48} name={name} />
+          <Caption title={name} fontSize="xs" color="greys.steel">{name}</Caption>
+        </Box>
+      ))}
+    </ThemeProvider>
+  </Grid>
 );
 
 storiesOf('Components|Icon', module)
   .addDecorator(withDocs(README))
-  .add('action', renderIcons('action'))
-  .add('alert', renderIcons('alert'))
-  .add('av', renderIcons('av'))
-  .add('communication', renderIcons('communication'))
-  .add('content', renderIcons('content'))
-  .add('device', renderIcons('device'))
-  .add('editor', renderIcons('editor'))
-  .add('file', renderIcons('file'))
-  .add('hardware', renderIcons('hardware'))
-  .add('image', renderIcons('image'))
-  .add('maps', renderIcons('maps'))
-  .add('navigation', renderIcons('navigation'))
-  .add('notification', renderIcons('notification'))
-  .add('places', renderIcons('places'))
-  .add('rating', renderIcons('rating'))
-  .add('social', renderIcons('social'))
-  .add('toggle', renderIcons('toggle'))
-  .add('qantas', renderIcons('qantas'));
+  .add('default icons', () => <IconsInTheme />)
+  .add('alert', renderIconsInCategory('alert'))
+  .add('av', renderIconsInCategory('av'))
+  .add('communication', renderIconsInCategory('communication'))
+  .add('content', renderIconsInCategory('content'))
+  .add('device', renderIconsInCategory('device'))
+  .add('editor', renderIconsInCategory('editor'))
+  .add('file', renderIconsInCategory('file'))
+  .add('hardware', renderIconsInCategory('hardware'))
+  .add('image', renderIconsInCategory('image'))
+  .add('maps', renderIconsInCategory('maps'))
+  .add('navigation', renderIconsInCategory('navigation'))
+  .add('notification', renderIconsInCategory('notification'))
+  .add('places', renderIconsInCategory('places'))
+  .add('rating', renderIconsInCategory('rating'))
+  .add('social', renderIconsInCategory('social'))
+  .add('toggle', renderIconsInCategory('toggle'))
+  .add('qantas', renderIconsInCategory('qantas'));
