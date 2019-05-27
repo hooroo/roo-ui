@@ -1,4 +1,7 @@
 export {
+  info,
+  warning,
+  checkCircle,
   hotel,
   close,
   done,
