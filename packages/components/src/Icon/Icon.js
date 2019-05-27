@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const IS_TEST = process.env.NODE_ENV === 'test';
 
-const getSvgPath = (theme, name) => {
+const getSvgPathFromTheme = (theme, name) => {
   if (!theme || !theme.icons) {
     // eslint-disable-next-line no-console
     if (!IS_TEST) console.error('Icon must be rendered under ThemeProvider');
@@ -37,7 +37,7 @@ const Base = withTheme(({
     title={title || name}
     fill="currentcolor"
   >
-    <path d={getSvgPath(theme, name)} />
+    <path d={getSvgPathFromTheme(theme, name)} />
   </StyledSvg>
 ));
 
