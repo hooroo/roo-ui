@@ -9,17 +9,17 @@ const StyledSvg = styled.svg``;
 const Base = withTheme(({
   name, title, size, theme, ...props
 }) => (
-    <StyledSvg
-      {...props}
-      viewBox="0 0 24 24"
-      width={size}
-      height={size}
-      title={title || name}
-      fill="currentcolor"
-    >
-      <path d={theme.icons[name].path} />
-    </StyledSvg>
-  ));
+  <StyledSvg
+    {...props}
+    viewBox="0 0 24 24"
+    width={size}
+    height={size}
+    title={title || name}
+    fill="currentcolor"
+  >
+    <path d={theme.icons[name].path} />
+  </StyledSvg>
+));
 
 Base.propTypes = {
   name: PropTypes.string,

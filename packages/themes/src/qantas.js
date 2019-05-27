@@ -1,6 +1,6 @@
 import { rem } from 'polished';
 import range from 'lodash/range';
-import * as icons from './defaultIcons'
+import * as icons from './defaultIcons';
 
 const brand = {
   primary: '#E40000',
