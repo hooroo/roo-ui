@@ -4,6 +4,18 @@ import { withTheme } from 'emotion-theming';
 import { space, color } from 'styled-system';
 import PropTypes from 'prop-types';
 
+const getSvgPath = (theme, name) => {
+  const icon = theme.icons[name];
+
+  if (icon) {
+    return icon.path;
+  }
+
+  console.error(`Icon "${name}" not found in theme`); // eslint-disable-line no-console
+
+  return null;
+};
+
 const StyledSvg = styled.svg``;
 
 const Base = withTheme(({
@@ -17,7 +29,7 @@ const Base = withTheme(({
     title={title || name}
     fill="currentcolor"
   >
-    <path d={theme.icons[name].path} />
+    <path d={getSvgPath(theme, name)} />
   </StyledSvg>
 ));
 
