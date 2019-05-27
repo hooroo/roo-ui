@@ -54,7 +54,7 @@ const build = () => {
 
   console.log(`Skipping icons with invalid variable names: [${invalidIcons.map(icon => JSON.stringify(icon.key)).join(', ')}]`);
 
-  const moduleContents = prettier.format(validIcons.map(iconToExport).join('\n'));
+  const moduleContents = prettier.format(validIcons.map(iconToExport).join('\n'), { parser: 'babel' });
   fs.writeFileSync(filepath, moduleContents, 'utf8');
 };
 
