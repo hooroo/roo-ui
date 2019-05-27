@@ -3,23 +3,26 @@ import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
 import { space, color } from 'styled-system';
 import PropTypes from 'prop-types';
-import memoize from 'lodash/memoize';
 
-const getSvgPath = memoize((theme, name) => {
+const IS_TEST = process.env.NODE_ENV === 'test';
+
+const getSvgPath = (theme, name) => {
   if (!theme || !theme.icons) {
-    console.error('Icon must be rendered under ThemeProvider'); // eslint-disable-line no-console
+    // eslint-disable-next-line no-console
+    if (!IS_TEST) console.error('Icon must be rendered under ThemeProvider');
     return null;
   }
 
   const icon = theme.icons[name];
 
   if (!icon) {
-    console.error(`Icon "${name}" not found in theme`); // eslint-disable-line no-console
+    // eslint-disable-next-line no-console
+    console.error(`Icon "${name}" not found in theme`);
     return null;
   }
 
   return icon.path;
-});
+};
 
 const StyledSvg = styled.svg``;
 
