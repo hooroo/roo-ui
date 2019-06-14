@@ -91,6 +91,7 @@ const textStyles = {
     fontSize: fontSizes.sm,
     fontWeight: fontWeights.bold,
     color: colors.greys.charcoal,
+    lineHeight: lineHeights.loose,
   },
   h1: {
     fontSize: fontSizes['3xl'],
@@ -126,7 +127,7 @@ const textStyles = {
 
 const breakpoints = ['40rem', '52rem', '64rem'];
 
-const mediaQueries = breakpoints.map(n => `@media screen and (min-width: ${n})`);
+const mediaQueries = breakpoints.map(n => `@media screen and (min-width: ${n})`,);
 
 const maxWidths = {
   default: rem('1280px'),
@@ -168,12 +169,7 @@ const maxWidths = {
 // 32 128px
 const space = range(0, 129, 4).map(i => rem(`${i}px`));
 
-const borders = [
-  0,
-  '1px solid',
-  '2px solid',
-  '3px solid',
-];
+const borders = [0, '1px solid', '2px solid', '3px solid'];
 
 const radii = {
   none: 0,
