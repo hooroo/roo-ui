@@ -85,6 +85,32 @@ Import the appropriate font for your theme:
 import '@roo-ui/fonts/ciutadella.css';
 ```
 
+### Icons
+
+SVG icon paths are accessed from your apps theme (`theme.icons[iconName].path`).
+
+A default set of icons are included in the base [qantas theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js). 
+
+To add more icons, import them from `@roo-ui/icons` and include them in your apps theme.
+
+**Example: Add more icons to your apps theme**
+
+```jsx
+// my-app/icons.js
+export { arrowUpward, arrowForward } from '@roo-ui/icons';
+
+// my-app/theme.js
+import * as icons from './icons';
+
+export default {
+  ...qantas,
+  icons: {
+    ...qantas.icons,
+    ...icons,
+  },
+};
+```
+
 ### CSS reset
 
 We recommend using [`normalize.css`](http://necolas.github.io/normalize.css/).
