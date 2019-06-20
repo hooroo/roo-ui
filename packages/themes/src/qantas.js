@@ -90,6 +90,7 @@ const textStyles = {
   },
   label: {
     fontSize: fontSizes.sm,
+    lineHeight: lineHeights.loose,
     fontWeight: fontWeights.bold,
     color: colors.greys.charcoal,
   },
