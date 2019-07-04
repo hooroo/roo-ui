@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> renders correctly 1`] = `
-.emotion-11 {
+.emotion-13 {
   display: inline-block;
   position: relative;
 }
@@ -57,7 +57,7 @@ input:checked ~ .emotion-5 {
 <Checkbox>
   <CheckboxWrapper>
     <div
-      className="emotion-11 emotion-12"
+      className="emotion-13 emotion-14"
     >
       <CheckboxInput
         type="checkbox"
@@ -77,34 +77,41 @@ input:checked ~ .emotion-5 {
         size={24}
         title={null}
       >
-        <Base
+        <WithTheme(Component)
           className="emotion-7 emotion-4"
           name="done"
           size={24}
           title={null}
         >
-          <StyledSvg
+          <Component
             className="emotion-7 emotion-4"
-            fill="currentcolor"
-            height={24}
-            title="done"
-            viewBox="0 0 24 24"
-            width={24}
+            name="done"
+            size={24}
+            title={null}
           >
-            <svg
-              className="emotion-4 emotion-5 emotion-6"
+            <StyledSvg
+              className="emotion-7 emotion-4"
               fill="currentcolor"
               height={24}
               title="done"
               viewBox="0 0 24 24"
               width={24}
             >
-              <path
-                d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-              />
-            </svg>
-          </StyledSvg>
-        </Base>
+              <svg
+                className="emotion-4 emotion-5 emotion-6"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
+              >
+                <path
+                  d={null}
+                />
+              </svg>
+            </StyledSvg>
+          </Component>
+        </WithTheme(Component)>
       </CheckboxIcon>
     </div>
   </CheckboxWrapper>
@@ -112,7 +119,7 @@ input:checked ~ .emotion-5 {
 `;
 
 exports[`<Checkbox /> when checked renders correctly 1`] = `
-.emotion-11 {
+.emotion-13 {
   display: inline-block;
   position: relative;
 }
@@ -170,7 +177,7 @@ input:checked ~ .emotion-5 {
 >
   <CheckboxWrapper>
     <div
-      className="emotion-11 emotion-12"
+      className="emotion-13 emotion-14"
     >
       <CheckboxInput
         defaultChecked={true}
@@ -192,34 +199,41 @@ input:checked ~ .emotion-5 {
         size={24}
         title={null}
       >
-        <Base
+        <WithTheme(Component)
           className="emotion-7 emotion-4"
           name="done"
           size={24}
           title={null}
         >
-          <StyledSvg
+          <Component
             className="emotion-7 emotion-4"
-            fill="currentcolor"
-            height={24}
-            title="done"
-            viewBox="0 0 24 24"
-            width={24}
+            name="done"
+            size={24}
+            title={null}
           >
-            <svg
-              className="emotion-4 emotion-5 emotion-6"
+            <StyledSvg
+              className="emotion-7 emotion-4"
               fill="currentcolor"
               height={24}
               title="done"
               viewBox="0 0 24 24"
               width={24}
             >
-              <path
-                d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-              />
-            </svg>
-          </StyledSvg>
-        </Base>
+              <svg
+                className="emotion-4 emotion-5 emotion-6"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
+              >
+                <path
+                  d={null}
+                />
+              </svg>
+            </StyledSvg>
+          </Component>
+        </WithTheme(Component)>
       </CheckboxIcon>
     </div>
   </CheckboxWrapper>
@@ -227,7 +241,7 @@ input:checked ~ .emotion-5 {
 `;
 
 exports[`<Checkbox /> when disabled renders correctly 1`] = `
-.emotion-11 {
+.emotion-13 {
   display: inline-block;
   position: relative;
 }
@@ -285,7 +299,7 @@ input:checked ~ .emotion-5 {
 >
   <CheckboxWrapper>
     <div
-      className="emotion-11 emotion-12"
+      className="emotion-13 emotion-14"
     >
       <CheckboxInput
         disabled={true}
@@ -307,34 +321,41 @@ input:checked ~ .emotion-5 {
         size={24}
         title={null}
       >
-        <Base
+        <WithTheme(Component)
           className="emotion-7 emotion-4"
           name="done"
           size={24}
           title={null}
         >
-          <StyledSvg
+          <Component
             className="emotion-7 emotion-4"
-            fill="currentcolor"
-            height={24}
-            title="done"
-            viewBox="0 0 24 24"
-            width={24}
+            name="done"
+            size={24}
+            title={null}
           >
-            <svg
-              className="emotion-4 emotion-5 emotion-6"
+            <StyledSvg
+              className="emotion-7 emotion-4"
               fill="currentcolor"
               height={24}
               title="done"
               viewBox="0 0 24 24"
               width={24}
             >
-              <path
-                d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
-              />
-            </svg>
-          </StyledSvg>
-        </Base>
+              <svg
+                className="emotion-4 emotion-5 emotion-6"
+                fill="currentcolor"
+                height={24}
+                title="done"
+                viewBox="0 0 24 24"
+                width={24}
+              >
+                <path
+                  d={null}
+                />
+              </svg>
+            </StyledSvg>
+          </Component>
+        </WithTheme(Component)>
       </CheckboxIcon>
     </div>
   </CheckboxWrapper>
