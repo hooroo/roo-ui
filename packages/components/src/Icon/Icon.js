@@ -1,14 +1,33 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { withTheme } from 'emotion-theming';
 import { space, color } from 'styled-system';
 import PropTypes from 'prop-types';
-import paths from '@roo-ui/icons';
+
+const IS_TEST = process.env.NODE_ENV === 'test';
+
+const getSvgPathFromTheme = (theme, name) => {
+  if (!theme || !theme.icons) {
+    // eslint-disable-next-line no-console
+    if (!IS_TEST) console.error('Icon must be rendered under ThemeProvider');
+    return null;
+  }
+
+  const icon = theme.icons[name];
+
+  if (!icon) {
+    // eslint-disable-next-line no-console
+    console.error(`Icon "${name}" not found in theme`);
+    return null;
+  }
+
+  return icon.path;
+};
 
 const StyledSvg = styled.svg``;
 
-
-const Base = ({
-  name, title, size, ...props
+const Base = withTheme(({
+  name, title, size, theme, ...props
 }) => (
   <StyledSvg
     {...props}
@@ -18,12 +37,12 @@ const Base = ({
     title={title || name}
     fill="currentcolor"
   >
-    <path d={paths[name].path} />
+    <path d={getSvgPathFromTheme(theme, name)} />
   </StyledSvg>
-);
+));
 
 Base.propTypes = {
-  name: PropTypes.oneOf(Object.keys(paths)),
+  name: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   title: PropTypes.string,
 };

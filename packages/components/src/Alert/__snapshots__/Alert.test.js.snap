@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
-.emotion-13 {
+.emotion-15 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-11 {
+.emotion-13 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -15,16 +15,16 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
   display: flex;
 }
 
-.emotion-9 {
+.emotion-11 {
   margin-bottom: 0;
   text-align: left;
 }
 
-.emotion-7 {
+.emotion-9 {
   padding-right: 16px;
 }
 
-.emotion-15 {
+.emotion-17 {
   margin-bottom: 16px;
   background-color: ui.errorBackground;
 }
@@ -58,25 +58,25 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="emotion-15 emotion-8"
+        className="emotion-17 emotion-10"
       >
         <Box
           px={4}
         >
           <div
-            className="emotion-13 emotion-8"
+            className="emotion-15 emotion-10"
           >
             <Flex
               py={4}
             >
               <div
-                className="emotion-11 emotion-12"
+                className="emotion-13 emotion-14"
               >
                 <Box
                   pr={3}
                 >
                   <div
-                    className="emotion-7 emotion-8"
+                    className="emotion-9 emotion-10"
                   >
                     <Icon
                       color="ui.error"
@@ -84,24 +84,22 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                       size={24}
                       title={null}
                     >
-                      <Base
+                      <WithTheme(Component)
                         className="emotion-3 emotion-0"
                         color="ui.error"
                         name="warning"
                         size={24}
                         title={null}
                       >
-                        <StyledSvg
+                        <Component
                           className="emotion-3 emotion-0"
                           color="ui.error"
-                          fill="currentcolor"
-                          height={24}
-                          title="warning"
-                          viewBox="0 0 24 24"
-                          width={24}
+                          name="warning"
+                          size={24}
+                          title={null}
                         >
-                          <svg
-                            className="emotion-0 emotion-1 emotion-2"
+                          <StyledSvg
+                            className="emotion-3 emotion-0"
                             color="ui.error"
                             fill="currentcolor"
                             height={24}
@@ -109,12 +107,22 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                             viewBox="0 0 24 24"
                             width={24}
                           >
-                            <path
-                              d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-                            />
-                          </svg>
-                        </StyledSvg>
-                      </Base>
+                            <svg
+                              className="emotion-0 emotion-1 emotion-2"
+                              color="ui.error"
+                              fill="currentcolor"
+                              height={24}
+                              title="warning"
+                              viewBox="0 0 24 24"
+                              width={24}
+                            >
+                              <path
+                                d={null}
+                              />
+                            </svg>
+                          </StyledSvg>
+                        </Component>
+                      </WithTheme(Component)>
                     </Icon>
                   </div>
                 </Box>
@@ -125,7 +133,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-10"
+                    className="emotion-11 emotion-12"
                     hidden={false}
                   >
                     Hello world
@@ -142,12 +150,12 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
-.emotion-13 {
+.emotion-15 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-11 {
+.emotion-13 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -156,16 +164,16 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
   display: flex;
 }
 
-.emotion-9 {
+.emotion-11 {
   margin-bottom: 0;
   text-align: left;
 }
 
-.emotion-7 {
+.emotion-9 {
   padding-right: 16px;
 }
 
-.emotion-15 {
+.emotion-17 {
   margin-bottom: 16px;
   background-color: ui.infoBackground;
 }
@@ -199,25 +207,25 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="emotion-15 emotion-8"
+        className="emotion-17 emotion-10"
       >
         <Box
           px={4}
         >
           <div
-            className="emotion-13 emotion-8"
+            className="emotion-15 emotion-10"
           >
             <Flex
               py={4}
             >
               <div
-                className="emotion-11 emotion-12"
+                className="emotion-13 emotion-14"
               >
                 <Box
                   pr={3}
                 >
                   <div
-                    className="emotion-7 emotion-8"
+                    className="emotion-9 emotion-10"
                   >
                     <Icon
                       color="greys.charcoal"
@@ -225,24 +233,22 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                       size={24}
                       title={null}
                     >
-                      <Base
+                      <WithTheme(Component)
                         className="emotion-3 emotion-0"
                         color="greys.charcoal"
                         name="info"
                         size={24}
                         title={null}
                       >
-                        <StyledSvg
+                        <Component
                           className="emotion-3 emotion-0"
                           color="greys.charcoal"
-                          fill="currentcolor"
-                          height={24}
-                          title="info"
-                          viewBox="0 0 24 24"
-                          width={24}
+                          name="info"
+                          size={24}
+                          title={null}
                         >
-                          <svg
-                            className="emotion-0 emotion-1 emotion-2"
+                          <StyledSvg
+                            className="emotion-3 emotion-0"
                             color="greys.charcoal"
                             fill="currentcolor"
                             height={24}
@@ -250,12 +256,22 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                             viewBox="0 0 24 24"
                             width={24}
                           >
-                            <path
-                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-                            />
-                          </svg>
-                        </StyledSvg>
-                      </Base>
+                            <svg
+                              className="emotion-0 emotion-1 emotion-2"
+                              color="greys.charcoal"
+                              fill="currentcolor"
+                              height={24}
+                              title="info"
+                              viewBox="0 0 24 24"
+                              width={24}
+                            >
+                              <path
+                                d={null}
+                              />
+                            </svg>
+                          </StyledSvg>
+                        </Component>
+                      </WithTheme(Component)>
                     </Icon>
                   </div>
                 </Box>
@@ -266,7 +282,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-10"
+                    className="emotion-11 emotion-12"
                     hidden={false}
                   >
                     Hello world
@@ -283,12 +299,12 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
-.emotion-13 {
+.emotion-15 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-11 {
+.emotion-13 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -297,17 +313,17 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
   display: flex;
 }
 
-.emotion-9 {
+.emotion-11 {
   margin-bottom: 0;
   text-align: left;
 }
 
-.emotion-15 {
+.emotion-17 {
   margin-bottom: 16px;
   background-color: ui.successBackground;
 }
 
-.emotion-7 {
+.emotion-9 {
   padding-right: 16px;
 }
 
@@ -340,25 +356,25 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="emotion-15 emotion-8"
+        className="emotion-17 emotion-10"
       >
         <Box
           px={4}
         >
           <div
-            className="emotion-13 emotion-8"
+            className="emotion-15 emotion-10"
           >
             <Flex
               py={4}
             >
               <div
-                className="emotion-11 emotion-12"
+                className="emotion-13 emotion-14"
               >
                 <Box
                   pr={3}
                 >
                   <div
-                    className="emotion-7 emotion-8"
+                    className="emotion-9 emotion-10"
                   >
                     <Icon
                       color="ui.success"
@@ -366,24 +382,22 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                       size={24}
                       title={null}
                     >
-                      <Base
+                      <WithTheme(Component)
                         className="emotion-3 emotion-0"
                         color="ui.success"
                         name="checkCircle"
                         size={24}
                         title={null}
                       >
-                        <StyledSvg
+                        <Component
                           className="emotion-3 emotion-0"
                           color="ui.success"
-                          fill="currentcolor"
-                          height={24}
-                          title="checkCircle"
-                          viewBox="0 0 24 24"
-                          width={24}
+                          name="checkCircle"
+                          size={24}
+                          title={null}
                         >
-                          <svg
-                            className="emotion-0 emotion-1 emotion-2"
+                          <StyledSvg
+                            className="emotion-3 emotion-0"
                             color="ui.success"
                             fill="currentcolor"
                             height={24}
@@ -391,12 +405,22 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                             viewBox="0 0 24 24"
                             width={24}
                           >
-                            <path
-                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                            />
-                          </svg>
-                        </StyledSvg>
-                      </Base>
+                            <svg
+                              className="emotion-0 emotion-1 emotion-2"
+                              color="ui.success"
+                              fill="currentcolor"
+                              height={24}
+                              title="checkCircle"
+                              viewBox="0 0 24 24"
+                              width={24}
+                            >
+                              <path
+                                d={null}
+                              />
+                            </svg>
+                          </StyledSvg>
+                        </Component>
+                      </WithTheme(Component)>
                     </Icon>
                   </div>
                 </Box>
@@ -407,7 +431,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-10"
+                    className="emotion-11 emotion-12"
                     hidden={false}
                   >
                     Hello world
@@ -424,12 +448,12 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
-.emotion-13 {
+.emotion-15 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-11 {
+.emotion-13 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -438,16 +462,16 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
   display: flex;
 }
 
-.emotion-9 {
+.emotion-11 {
   margin-bottom: 0;
   text-align: left;
 }
 
-.emotion-7 {
+.emotion-9 {
   padding-right: 16px;
 }
 
-.emotion-15 {
+.emotion-17 {
   margin-bottom: 16px;
   background-color: ui.errorBackground;
 }
@@ -481,25 +505,25 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="emotion-15 emotion-8"
+        className="emotion-17 emotion-10"
       >
         <Box
           px={4}
         >
           <div
-            className="emotion-13 emotion-8"
+            className="emotion-15 emotion-10"
           >
             <Flex
               py={4}
             >
               <div
-                className="emotion-11 emotion-12"
+                className="emotion-13 emotion-14"
               >
                 <Box
                   pr={3}
                 >
                   <div
-                    className="emotion-7 emotion-8"
+                    className="emotion-9 emotion-10"
                   >
                     <Icon
                       color="ui.error"
@@ -507,24 +531,22 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                       size={24}
                       title={null}
                     >
-                      <Base
+                      <WithTheme(Component)
                         className="emotion-3 emotion-0"
                         color="ui.error"
                         name="warning"
                         size={24}
                         title={null}
                       >
-                        <StyledSvg
+                        <Component
                           className="emotion-3 emotion-0"
                           color="ui.error"
-                          fill="currentcolor"
-                          height={24}
-                          title="warning"
-                          viewBox="0 0 24 24"
-                          width={24}
+                          name="warning"
+                          size={24}
+                          title={null}
                         >
-                          <svg
-                            className="emotion-0 emotion-1 emotion-2"
+                          <StyledSvg
+                            className="emotion-3 emotion-0"
                             color="ui.error"
                             fill="currentcolor"
                             height={24}
@@ -532,12 +554,22 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                             viewBox="0 0 24 24"
                             width={24}
                           >
-                            <path
-                              d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-                            />
-                          </svg>
-                        </StyledSvg>
-                      </Base>
+                            <svg
+                              className="emotion-0 emotion-1 emotion-2"
+                              color="ui.error"
+                              fill="currentcolor"
+                              height={24}
+                              title="warning"
+                              viewBox="0 0 24 24"
+                              width={24}
+                            >
+                              <path
+                                d={null}
+                              />
+                            </svg>
+                          </StyledSvg>
+                        </Component>
+                      </WithTheme(Component)>
                     </Icon>
                   </div>
                 </Box>
@@ -548,7 +580,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-10"
+                    className="emotion-11 emotion-12"
                     hidden={false}
                   >
                     Hello world
@@ -565,12 +597,12 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
-.emotion-13 {
+.emotion-15 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-11 {
+.emotion-13 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -579,16 +611,16 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
   display: flex;
 }
 
-.emotion-9 {
+.emotion-11 {
   margin-bottom: 0;
   text-align: left;
 }
 
-.emotion-7 {
+.emotion-9 {
   padding-right: 16px;
 }
 
-.emotion-15 {
+.emotion-17 {
   margin-bottom: 16px;
   background-color: ui.infoBackground;
 }
@@ -622,25 +654,25 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="emotion-15 emotion-8"
+        className="emotion-17 emotion-10"
       >
         <Box
           px={4}
         >
           <div
-            className="emotion-13 emotion-8"
+            className="emotion-15 emotion-10"
           >
             <Flex
               py={4}
             >
               <div
-                className="emotion-11 emotion-12"
+                className="emotion-13 emotion-14"
               >
                 <Box
                   pr={3}
                 >
                   <div
-                    className="emotion-7 emotion-8"
+                    className="emotion-9 emotion-10"
                   >
                     <Icon
                       color="greys.charcoal"
@@ -648,24 +680,22 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                       size={24}
                       title={null}
                     >
-                      <Base
+                      <WithTheme(Component)
                         className="emotion-3 emotion-0"
                         color="greys.charcoal"
                         name="info"
                         size={24}
                         title={null}
                       >
-                        <StyledSvg
+                        <Component
                           className="emotion-3 emotion-0"
                           color="greys.charcoal"
-                          fill="currentcolor"
-                          height={24}
-                          title="info"
-                          viewBox="0 0 24 24"
-                          width={24}
+                          name="info"
+                          size={24}
+                          title={null}
                         >
-                          <svg
-                            className="emotion-0 emotion-1 emotion-2"
+                          <StyledSvg
+                            className="emotion-3 emotion-0"
                             color="greys.charcoal"
                             fill="currentcolor"
                             height={24}
@@ -673,12 +703,22 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                             viewBox="0 0 24 24"
                             width={24}
                           >
-                            <path
-                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-                            />
-                          </svg>
-                        </StyledSvg>
-                      </Base>
+                            <svg
+                              className="emotion-0 emotion-1 emotion-2"
+                              color="greys.charcoal"
+                              fill="currentcolor"
+                              height={24}
+                              title="info"
+                              viewBox="0 0 24 24"
+                              width={24}
+                            >
+                              <path
+                                d={null}
+                              />
+                            </svg>
+                          </StyledSvg>
+                        </Component>
+                      </WithTheme(Component)>
                     </Icon>
                   </div>
                 </Box>
@@ -689,7 +729,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-10"
+                    className="emotion-11 emotion-12"
                     hidden={false}
                   >
                     Hello world
@@ -706,12 +746,12 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 `;
 
 exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
-.emotion-13 {
+.emotion-15 {
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.emotion-11 {
+.emotion-13 {
   padding-top: 32px;
   padding-bottom: 32px;
   display: -webkit-box;
@@ -720,17 +760,17 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
   display: flex;
 }
 
-.emotion-9 {
+.emotion-11 {
   margin-bottom: 0;
   text-align: left;
 }
 
-.emotion-15 {
+.emotion-17 {
   margin-bottom: 16px;
   background-color: ui.successBackground;
 }
 
-.emotion-7 {
+.emotion-9 {
   padding-right: 16px;
 }
 
@@ -763,25 +803,25 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
       mb={3}
     >
       <div
-        className="emotion-15 emotion-8"
+        className="emotion-17 emotion-10"
       >
         <Box
           px={4}
         >
           <div
-            className="emotion-13 emotion-8"
+            className="emotion-15 emotion-10"
           >
             <Flex
               py={4}
             >
               <div
-                className="emotion-11 emotion-12"
+                className="emotion-13 emotion-14"
               >
                 <Box
                   pr={3}
                 >
                   <div
-                    className="emotion-7 emotion-8"
+                    className="emotion-9 emotion-10"
                   >
                     <Icon
                       color="ui.success"
@@ -789,24 +829,22 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                       size={24}
                       title={null}
                     >
-                      <Base
+                      <WithTheme(Component)
                         className="emotion-3 emotion-0"
                         color="ui.success"
                         name="checkCircle"
                         size={24}
                         title={null}
                       >
-                        <StyledSvg
+                        <Component
                           className="emotion-3 emotion-0"
                           color="ui.success"
-                          fill="currentcolor"
-                          height={24}
-                          title="checkCircle"
-                          viewBox="0 0 24 24"
-                          width={24}
+                          name="checkCircle"
+                          size={24}
+                          title={null}
                         >
-                          <svg
-                            className="emotion-0 emotion-1 emotion-2"
+                          <StyledSvg
+                            className="emotion-3 emotion-0"
                             color="ui.success"
                             fill="currentcolor"
                             height={24}
@@ -814,12 +852,22 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                             viewBox="0 0 24 24"
                             width={24}
                           >
-                            <path
-                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                            />
-                          </svg>
-                        </StyledSvg>
-                      </Base>
+                            <svg
+                              className="emotion-0 emotion-1 emotion-2"
+                              color="ui.success"
+                              fill="currentcolor"
+                              height={24}
+                              title="checkCircle"
+                              viewBox="0 0 24 24"
+                              width={24}
+                            >
+                              <path
+                                d={null}
+                              />
+                            </svg>
+                          </StyledSvg>
+                        </Component>
+                      </WithTheme(Component)>
                     </Icon>
                   </div>
                 </Box>
@@ -830,7 +878,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                   textStyle="text"
                 >
                   <span
-                    className="emotion-9 emotion-10"
+                    className="emotion-11 emotion-12"
                     hidden={false}
                   >
                     Hello world
