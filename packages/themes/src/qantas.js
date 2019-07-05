@@ -1,5 +1,6 @@
 import { rem } from 'polished';
 import range from 'lodash/range';
+import * as icons from './defaultIcons';
 
 const brand = {
   primary: '#E40000',
@@ -89,6 +90,7 @@ const textStyles = {
   },
   label: {
     fontSize: fontSizes.sm,
+    lineHeight: lineHeights.loose,
     fontWeight: fontWeights.bold,
     color: colors.greys.charcoal,
   },
@@ -237,6 +239,7 @@ const opacity = {
 };
 
 export default {
+  icons,
   gutters,
   colors,
   breakpoints,
