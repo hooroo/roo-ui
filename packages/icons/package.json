@@ -10,7 +10,7 @@
   },
   "scripts": {
     "prepublish": "yarn build",
-    "build": "node ./parseIcons.js && babel --root-mode upward dist/esm -d dist/cjs",
+    "build": "node ./generateEcmaScriptModule.js && babel --root-mode upward dist/esm -d dist/cjs",
     "build:watch": "onchange 'src/**/*.svg' -i -v -- yarn run build"
   },
   "devDependencies": {

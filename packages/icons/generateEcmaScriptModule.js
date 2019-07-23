@@ -54,8 +54,8 @@ const build = () => {
   const [validIcons, invalidIcons] = partitionByValidName(allIcons);
 
   console.log(`Skipping icons with invalid variable names: [${invalidIcons
-      .map(icon => JSON.stringify(icon.key))
-      .join(', ')}]`,);
+    .map(icon => JSON.stringify(icon.key))
+    .join(', ')}]`);
 
   const moduleContents = prettier.format(validIcons.map(iconToExport).join('\n'), {
     parser: 'babel',
