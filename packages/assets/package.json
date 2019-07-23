@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/assets",
-  "version": "0.58.10",
+  "version": "0.62.5",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

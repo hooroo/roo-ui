@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/themes",
-  "version": "0.62.2",
+  "version": "0.62.5",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
