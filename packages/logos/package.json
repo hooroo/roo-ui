@@ -2,13 +2,18 @@
   "name": "@roo-ui/logos",
   "version": "0.58.10",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "prepublish": "yarn build",
-    "build": "babel --root-mode upward src -d dist --copy-files",
-    "build:watch": "yarn run build --watch"
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "babel --copy-files --root-mode upward src -d dist/cjs",
+    "build:esm": "ESM_BUILD=1 babel --copy-files --root-mode upward src -d dist/esm",
+    "build:cjs:watch": "yarn run build:cjs --watch",
+    "build:esm:watch": "yarn run build:esm --watch",
+    "build:watch": "concurrently --kill-others yarn:build:cjs:watch yarn:build:esm:watch"
   }
 }
