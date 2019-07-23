@@ -33,8 +33,9 @@ const Input = styled('input', omitProps(['color', 'fontSize']))`
   }
 
   &:disabled {
-    opacity: ${themeGet('opacity.disabled')};
     cursor: not-allowed;
+    color: ${themeGet('colors.greys.steel')};
+    background-color: ${themeGet('colors.greys.porcelain')};
   }
 
   ::placeholder {
@@ -45,15 +46,19 @@ const Input = styled('input', omitProps(['color', 'fontSize']))`
     display: none;
   }
 
-  ${props => props.underline && css`
-    border: none;
-    border-bottom: ${themeGet('borders.2')(props)};
-    border-color: ${themeGet('colors.greys.alto')(props)};
-  `}
+  ${props =>
+    props.underline &&
+    css`
+      border: none;
+      border-bottom: ${themeGet('borders.2')(props)};
+      border-color: ${themeGet('colors.greys.alto')(props)};
+    `}
 
-  ${props => props.error && css`
-    border-color: ${themeGet('colors.ui.error')(props)};
-  `}
+  ${props =>
+    props.error &&
+    css`
+      border-color: ${themeGet('colors.ui.error')(props)};
+    `}
 `;
 
 Input.propTypes = {
