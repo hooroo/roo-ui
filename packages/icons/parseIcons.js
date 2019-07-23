@@ -10,7 +10,7 @@ const glob = require('glob');
 const prettier = require('prettier');
 
 const srcDir = 'src/**/*.svg';
-const filepath = 'dist/index.js';
+const filepath = 'dist/esm/index.js';
 
 const isValidIconName = (name) => {
   if (!isVarName(name)) {
@@ -41,7 +41,8 @@ const readIcons = dir =>
     path: svgToPath(file),
   }));
 
-const iconToExport = ({ key, category, path }) => `export const ${key} = ${JSON.stringify({ category, path })};\n`;
+const iconToExport = ({ key, category, path }) =>
+  `export const ${key} = ${JSON.stringify({ category, path })};\n`;
 
 const uniqueByKey = fp.uniqBy('key');
 
@@ -52,9 +53,13 @@ const build = () => {
   const allIcons = uniqueByKey(readIcons(srcDir));
   const [validIcons, invalidIcons] = partitionByValidName(allIcons);
 
-  console.log(`Skipping icons with invalid variable names: [${invalidIcons.map(icon => JSON.stringify(icon.key)).join(', ')}]`);
+  console.log(`Skipping icons with invalid variable names: [${invalidIcons
+      .map(icon => JSON.stringify(icon.key))
+      .join(', ')}]`,);
 
-  const moduleContents = prettier.format(validIcons.map(iconToExport).join('\n'), { parser: 'babel' });
+  const moduleContents = prettier.format(validIcons.map(iconToExport).join('\n'), {
+    parser: 'babel',
+  });
   fs.writeFileSync(filepath, moduleContents, 'utf8');
 };
 
