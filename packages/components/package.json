@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.62.4",
+  "version": "0.62.5",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -18,9 +18,9 @@
     "build:watch": "concurrently --kill-others yarn:build:cjs:watch yarn:build:esm:watch"
   },
   "devDependencies": {
-    "@roo-ui/icons": "^0.62.2",
-    "@roo-ui/test-utils": "^0.58.10",
-    "@roo-ui/themes": "^0.62.2",
+    "@roo-ui/icons": "^0.62.5",
+    "@roo-ui/test-utils": "^0.62.5",
+    "@roo-ui/themes": "^0.62.5",
     "react-powerplug": "^1.0.0-rc.1"
   },
   "peerDependencies": {
