@@ -6,9 +6,9 @@ import { Icon } from '..';
 
 const Checkbox = props => (
   <CheckboxWrapper>
-    <CheckboxInput type='checkbox' {...props} />
+    <CheckboxInput type="checkbox" {...props} />
     <CheckboxBorder />
-    <CheckboxIcon name='done' />
+    <CheckboxIcon name="done" />
   </CheckboxWrapper>
 );
 
