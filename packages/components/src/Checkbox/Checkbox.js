@@ -48,6 +48,7 @@ const CheckboxBorder = styled.div`
   }
 
   input:disabled + & {
+    cursor: not-allowed;
     background-color: ${themeGet('colors.greys.alto')};
     border-color: ${themeGet('colors.greys.alto')};
   }

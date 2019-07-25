@@ -24,6 +24,10 @@ exports[`<Checkbox /> renders correctly 1`] = `
   width: 1.25rem;
 }
 
+input:disabled + .emotion-2 {
+  cursor: not-allowed;
+}
+
 .emotion-7 {
   vertical-align: middle;
   -webkit-flex: none;
@@ -140,6 +144,10 @@ exports[`<Checkbox /> when checked renders correctly 1`] = `
   margin-bottom: 0.125rem;
   height: 1.25rem;
   width: 1.25rem;
+}
+
+input:disabled + .emotion-2 {
+  cursor: not-allowed;
 }
 
 .emotion-7 {
@@ -262,6 +270,10 @@ exports[`<Checkbox /> when disabled renders correctly 1`] = `
   margin-bottom: 0.125rem;
   height: 1.25rem;
   width: 1.25rem;
+}
+
+input:disabled + .emotion-2 {
+  cursor: not-allowed;
 }
 
 .emotion-7 {
