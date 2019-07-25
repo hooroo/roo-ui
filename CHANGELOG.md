@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.63.0"></a>
+# [0.63.0](https://github.com/hooroo/roo-ui/compare/v0.62.5...v0.63.0) (2019-07-25)
+
+
+### Features
+
+* add disabled cursor styling to Checkbox ([#246](https://github.com/hooroo/roo-ui/issues/246)) ([39a6618](https://github.com/hooroo/roo-ui/commit/39a6618))
+
+
+
+
 <a name="0.62.5"></a>
 ## [0.62.5](https://github.com/hooroo/roo-ui/compare/v0.62.4...v0.62.5) (2019-07-23)
 
