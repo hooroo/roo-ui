@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
-import { themeGet, space, color, backgroundColor, boxShadow, display, variant } from 'styled-system';
+import { themeGet, space, color, backgroundColor, boxShadow, display, variant, width } from 'styled-system';
 import get from 'lodash/get';
 
 const FALLBACK_BG_COLOR = '#000';
@@ -35,6 +35,7 @@ const Button = styled.button`
   ${space}
   ${color}
   ${boxShadow}
+  ${width}
 
   &:hover {
     background-color: ${props => darken(0.1, getBackground(props))};
