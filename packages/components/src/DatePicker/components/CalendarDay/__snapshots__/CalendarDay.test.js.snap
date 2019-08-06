@@ -6,8 +6,12 @@ exports[`<CalendarDay /> renders correctly 1`] = `
 >
   <Button
     as="button"
+    bg="transparent"
+    color="inherit"
     disabled={false}
     highlighted={false}
+    m={0}
+    p={0}
     selectable={true}
     selected={true}
     type="button"
