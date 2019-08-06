@@ -1,14 +1,21 @@
 import styled from '@emotion/styled';
-import { space, verticalAlign, themeGet, color } from 'styled-system';
+import { style, space, verticalAlign, textAlign, themeGet, color, textStyle } from 'styled-system';
+
+const textDecoration = style({
+  prop: 'textDecoration',
+  cssProperty: 'textDecoration',
+});
+
+const hoverColor = style({
+  prop: 'hoverColor',
+  cssProperty: 'color',
+  key: 'colors',
+});
 
 const NakedButton = styled('button')`
   border: none;
-  margin: 0;
-  padding: 0;
   width: auto;
   overflow: visible;
-  background: transparent;
-  color: inherit;
   font: inherit;
   line-height: normal;
   appearance: none;
@@ -18,9 +25,16 @@ const NakedButton = styled('button')`
     outline: ${themeGet('borders.2')} ${themeGet('colors.brand.secondary')};
   }
 
+  &:hover{
+    ${hoverColor}
+  }
+
   ${space}
   ${verticalAlign}
+  ${textAlign}
   ${color}
+  ${textStyle}
+  ${textDecoration}
 `;
 
 NakedButton.propTypes = {
@@ -32,6 +46,10 @@ NakedButton.propTypes = {
 NakedButton.defaultProps = {
   as: 'button',
   type: 'button',
+  bg: 'transparent',
+  color: 'inherit',
+  p: 0,
+  m: 0,
 };
 
 export default NakedButton;
