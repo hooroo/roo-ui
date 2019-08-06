@@ -29,6 +29,15 @@ const NakedButton = styled('button')`
     ${hoverColor}
   }
 
+  &:disabled {
+    opacity: ${themeGet('opacity.disabled')};
+    cursor: not-allowed;
+  }
+
+  &:hover:disabled {
+    ${color}
+  }
+
   ${space}
   ${verticalAlign}
   ${textAlign}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
+import { boolean } from '@storybook/addon-knobs/react';
 
 import NakedButton from '.';
 import Text from '../Text';
@@ -15,13 +16,18 @@ storiesOf('Components|NakedButton', module)
   .add('link style', () => (
     <Text>
       Perhaps you would like to open a{' '}
-      <NakedButton color="ui.link" hoverColor="ui.linkHover" textDecoration="underline">
+      <NakedButton
+        color="ui.link"
+        hoverColor="ui.linkHover"
+        textDecoration="underline"
+        disabled={boolean('Disabled', false)}
+      >
         modal window
       </NakedButton>
     </Text>
   ))
   .add('wrap content', () => (
-    <NakedButton textAlign="left">
+    <NakedButton textAlign="left" disabled={boolean('Disabled', false)}>
       <Heading.h2>Guest Reviews</Heading.h2>
       <Flex alignItems="center" mb="3">
         <Text fontSize="lg">Excellent, 5.0</Text>
@@ -33,6 +39,8 @@ storiesOf('Components|NakedButton', module)
         />
         <Text>1256 Reviews</Text>
       </Flex>
-      <Text color="brand.primary" textDecoration="underline">Read Reviews</Text>
+      <Text color="brand.primary" textDecoration="underline">
+        Read Reviews
+      </Text>
     </NakedButton>
   ));
