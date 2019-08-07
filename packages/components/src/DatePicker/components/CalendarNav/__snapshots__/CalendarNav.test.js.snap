@@ -17,18 +17,27 @@ exports[`<CalendarNav /> renders correctly 1`] = `
 
 .emotion-9 {
   border: none;
-  margin: 0;
-  padding: 0;
   width: auto;
   overflow: visible;
-  background: transparent;
-  color: inherit;
   font: inherit;
   line-height: normal;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+}
+
+.emotion-9:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-9:hover:disabled {
+  color: inherit;
+  background-color: transparent;
 }
 
 .emotion-9:hover,
@@ -73,11 +82,16 @@ exports[`<CalendarNav /> renders correctly 1`] = `
     >
       <Button
         as="button"
+        bg="transparent"
+        color="inherit"
+        m={0}
         onClick={[MockFunction]}
+        p={0}
         type="button"
       >
         <button
           className="emotion-9 emotion-10"
+          color="inherit"
           onClick={[MockFunction]}
           type="button"
         >
@@ -126,11 +140,16 @@ exports[`<CalendarNav /> renders correctly 1`] = `
       </Button>
       <Button
         as="button"
+        bg="transparent"
+        color="inherit"
+        m={0}
         onClick={[MockFunction]}
+        p={0}
         type="button"
       >
         <button
           className="emotion-9 emotion-10"
+          color="inherit"
           onClick={[MockFunction]}
           type="button"
         >
