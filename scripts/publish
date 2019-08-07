@@ -6,5 +6,5 @@ git config --global user.email "$BUILDKITE_BUILD_CREATOR_EMAIL"
 git config --global user.name "$BUILDKITE_BUILD_CREATOR"
 
 git checkout master
-yarn lerna publish --conventional-commits --yes
+# TODO
 git push origin master

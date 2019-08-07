@@ -9,15 +9,9 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "pretest": "yarn build",
     "test": "jest",
-    "postinstall": "yarn build",
-    "build": "yarn lerna run build",
-    "build:watch": "yarn lerna run build:watch --parallel --prefix --stream",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "yarn build && storybook-to-ghpages",
-    "link-app": "tasks/link-app.sh",
-    "unlink-app": "tasks/unlink-app.sh",
     "new:component": "hygen component new --component-path"
   },
   "devDependencies": {
@@ -52,7 +46,6 @@
     "jest": "^24.5.0",
     "jest-axe": "^3.1.0",
     "jest-emotion": "^10.0.10",
-    "lerna": "^2.8.0",
     "lodash": "^4.17.4",
     "normalize.css": "^8.0.0",
     "polished": "^2.2.0",
