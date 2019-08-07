@@ -2,13 +2,13 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "rules": {
-    "react/jsx-filename-extension": 0,
-    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": "off",
+    "import/no-extraneous-dependencies": "off",
     "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
-    "react/default-props-match-prop-types": 0,
-    "jsx-a11y/label-has-for": 0,
-    "import/no-unresolved": 0,
-    "import/extensions": 0
+    "react/default-props-match-prop-types": "off",
+    "jsx-a11y/label-has-for": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off"
   },
   "env": {
     "browser": true,
@@ -19,7 +19,7 @@
       "**/*.story.js"
     ],
     "rules": {
-      "react/prop-types": 0
+      "react/prop-types": "off"
     }
   }]
 }
