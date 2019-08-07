@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.63.3"></a>
+## [0.63.3](https://github.com/hooroo/roo-ui/compare/v0.63.2...v0.63.3) (2019-08-07)
+
+
+### Bug Fixes
+
+* add StyledSystem functions to NakedButton ([#249](https://github.com/hooroo/roo-ui/issues/249)) ([95ba80e](https://github.com/hooroo/roo-ui/commit/95ba80e))
+
+
+
+
 <a name="0.63.2"></a>
 ## [0.63.2](https://github.com/hooroo/roo-ui/compare/v0.63.1...v0.63.2) (2019-08-06)
 

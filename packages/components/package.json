@@ -1,6 +1,6 @@
 {
   "name": "@roo-ui/components",
-  "version": "0.63.2",
+  "version": "0.63.3",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
