@@ -16,7 +16,7 @@ env:
   BUILDKITE_CLEAN_CHECKOUT: true
 
 steps:
-  - name: ":docker: Build"
+  - name: ':docker: Build'
     <<: *defaults
     plugins:
       ecr#v1.1.4:
@@ -28,20 +28,20 @@ steps:
 
   - wait
 
-  - name: ":eslint: Lint"
+  - name: ':eslint: Lint'
     <<: *defaults
     command: yarn run lint
 
-  - name: ":jest: Test"
+  - name: ':jest: Test'
     <<: *defaults
     command: yarn run test
 
   - wait
 
-  - name: ":npm: Publish"
+  - name: ':npm: Publish'
     <<: *deploy_defaults
     command: scripts/publish
 
-  - name: ":storybook: Deploy"
+  - name: ':storybook: Deploy'
     <<: *deploy_defaults
     command: yarn deploy-storybook

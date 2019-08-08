@@ -1,8 +1,8 @@
-version: "3.4"
+version: '3.4'
 
 services:
   app:
-    build: ..
+    build: .
     working_dir: /application
     volumes:
       - ../:/application
@@ -10,9 +10,9 @@ services:
     expose:
       - 3000
     environment:
-      APPLICATION: "roo-ui"
-      CI: "true"
-      TZ: "Australia/Sydney"
+      APPLICATION: 'roo-ui'
+      CI: 'true'
+      TZ: 'Australia/Sydney'
       BUILDKITE_BUILD_CREATOR_EMAIL:
       BUILDKITE_BUILD_CREATOR:
       BUILDKITE_BUILD_NUMBER:
