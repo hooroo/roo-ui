@@ -14,46 +14,102 @@
     "deploy-storybook": "yarn build && storybook-to-ghpages",
     "new:component": "hygen component new --component-path"
   },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint . --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "sonarjs"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:jest/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react/recommended",
+      "plugin:sonarjs/recommended"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist/"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      "emotion"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
+    "@babel/core": "^7.5.5",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "@storybook/addon-knobs": "^5.0.1",
-    "@storybook/addon-options": "^5.0.1",
-    "@storybook/addons": "^5.0.1",
-    "@storybook/react": "^5.0.1",
+    "@storybook/addon-knobs": "^5.1.10",
+    "@storybook/addon-options": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "@storybook/react": "^5.1.10",
     "@storybook/storybook-deployer": "^2.8.1",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.5",
-    "babel-plugin-emotion": "^10.0.9",
-    "concurrently": "^4.1.1",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-emotion": "^10.0.15",
+    "babel-preset-react-app": "^9.0.0",
     "emotion-theming": "^10.0.10",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5",
-    "eslint": "^4.16.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-sonarjs": "^0.4.0",
+    "husky": "^3.0.2",
     "hygen": "^1.6.2",
-    "jest": "^24.5.0",
-    "jest-axe": "^3.1.0",
-    "jest-emotion": "^10.0.10",
+    "jest": "^24.8.0",
+    "jest-axe": "^3.1.1",
+    "jest-emotion": "^10.0.14",
+    "lint-staged": "^9.2.1",
     "lodash": "^4.17.4",
     "normalize.css": "^8.0.0",
     "polished": "^2.2.0",
+    "prettier": "^1.18.2",
     "prop-types": "^15.6.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "source-map-loader": "^0.2.4",
-    "storybook-readme": "^4.0.5",
+    "storybook-readme": "^5.0.6",
     "styled-system": "^4.1.0",
     "svgi": "^1.1.0"
   }
