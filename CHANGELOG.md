@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.63.5"></a>
+## [0.63.5](https://github.com/hooroo/roo-ui/compare/v0.63.4...v0.63.5) (2019-08-09)
+
+
+### Bug Fixes
+
+* add extra function to Container ([#253](https://github.com/hooroo/roo-ui/issues/253)) ([cde7e68](https://github.com/hooroo/roo-ui/commit/cde7e68))
+
+
+
+
 <a name="0.63.4"></a>
 ## [0.63.4](https://github.com/hooroo/roo-ui/compare/v0.63.3...v0.63.4) (2019-08-08)
 
