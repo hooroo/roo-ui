@@ -7,7 +7,7 @@
 
 yarn build
 
-ENTRYPOINTS="asset component icon logos"
+ENTRYPOINTS="assets components icons logos"
 
 for ENTRYPOINT in $ENTRYPOINTS; do
   yarn generate:entrypoint $ENTRYPOINT
