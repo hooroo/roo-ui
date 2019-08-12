@@ -5,18 +5,19 @@ import omit from 'lodash/omit';
 
 import { Input } from '..';
 
+const RenderInput = (ref, { defaultValue, ...props }) => (
+  <Input
+    ref={ref}
+    value={defaultValue}
+    {...omit(props, Object.keys(Input.propTypes))}
+  />
+);
+
 const MaskedInput = Input.withComponent(TextMask);
 MaskedInput.displayName = 'MaskedInput';
-
 MaskedInput.defaultProps = {
   ...Input.defaultProps,
-  render: (ref, { defaultValue, ...props }) => (
-    <Input
-      ref={ref}
-      value={defaultValue}
-      {...omit(props, Object.keys(Input.propTypes))}
-    />
-  ),
+  render: RenderInput,
 };
 
 MaskedInput.time = styled(MaskedInput)``;

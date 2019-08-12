@@ -10,9 +10,17 @@ import ModalHeader from './components/ModalHeader';
 import ModalBody from './components/ModalBody';
 import ModalFooter from './components/ModalFooter';
 
-export const ModalGlobalStyle = () => <Global styles={css` .ReactModal__Body--open { overflow: hidden; } `} />;
+export const ModalGlobalStyle = () => (
+  <Global
+    styles={css`
+      .ReactModal__Body--open {
+        overflow: hidden;
+      }
+    `}
+  />
+);
 
-const Modal = styled(({ className, width, ...props }) => (
+const Modal = styled(({ className, ...props }) => (
   <ReactModal
     {...props}
     className="ModalContent"

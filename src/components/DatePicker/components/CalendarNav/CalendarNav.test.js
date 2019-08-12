@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { mountWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { mountWithTheme } from 'testUtils';
 
 import CalendarNav from '.';
 
@@ -21,10 +21,20 @@ describe('<CalendarNav />', () => {
   });
 
   it('passes props.prevProps to first <Button />', () => {
-    expect(wrapper.find('Button').first().props()).toEqual(expect.objectContaining(props.prevProps));
+    expect(
+      wrapper
+        .find('Button')
+        .first()
+        .props(),
+    ).toEqual(expect.objectContaining(props.prevProps));
   });
 
   it('passes props.nextProps to second <Button />', () => {
-    expect(wrapper.find('Button').last().props()).toEqual(expect.objectContaining(props.nextProps));
+    expect(
+      wrapper
+        .find('Button')
+        .last()
+        .props(),
+    ).toEqual(expect.objectContaining(props.nextProps));
   });
 });

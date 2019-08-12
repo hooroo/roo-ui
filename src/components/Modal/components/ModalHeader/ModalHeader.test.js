@@ -1,11 +1,10 @@
 import React from 'react';
 import { axe } from 'jest-axe';
-import { mountWithTheme, shallowWithTheme } from '@roo-ui/test-utils';
-import { qantas } from '@roo-ui/themes';
+import { mountWithTheme, shallowWithTheme } from 'testUtils';
+import theme from 'theme';
 import ModalHeader from './ModalHeader';
 
 describe('<ModalHeader />', () => {
-  const theme = { alertStyles: qantas.alertStyles };
   let wrapper;
 
   it('has display name', () => {
@@ -15,9 +14,7 @@ describe('<ModalHeader />', () => {
   describe('default', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(
-        <ModalHeader >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
+        <ModalHeader>Lorem ipsum dolor sit amet</ModalHeader>,
         theme,
       );
     });
@@ -31,21 +28,19 @@ describe('<ModalHeader />', () => {
     });
 
     it('renders correctly', () => {
-      expect(shallowWithTheme(
-        <ModalHeader >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
-        theme,
-      )).toMatchSnapshot();
+      expect(
+        shallowWithTheme(
+          <ModalHeader>Lorem ipsum dolor sit amet</ModalHeader>,
+          theme,
+        ),
+      ).toMatchSnapshot();
     });
   });
 
   describe('variant = info', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(
-        <ModalHeader variant="info" >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
+        <ModalHeader variant="info">Lorem ipsum dolor sit amet</ModalHeader>,
         theme,
       );
     });
@@ -59,21 +54,19 @@ describe('<ModalHeader />', () => {
     });
 
     it('renders correctly', () => {
-      expect(shallowWithTheme(
-        <ModalHeader variant="info" >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
-        theme,
-      )).toMatchSnapshot();
+      expect(
+        shallowWithTheme(
+          <ModalHeader variant="info">Lorem ipsum dolor sit amet</ModalHeader>,
+          theme,
+        ),
+      ).toMatchSnapshot();
     });
   });
 
   describe('variant = success', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(
-        <ModalHeader variant="success" >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
+        <ModalHeader variant="success">Lorem ipsum dolor sit amet</ModalHeader>,
         theme,
       );
     });
@@ -87,21 +80,21 @@ describe('<ModalHeader />', () => {
     });
 
     it('renders correctly', () => {
-      expect(shallowWithTheme(
-        <ModalHeader variant="success" >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
-        theme,
-      )).toMatchSnapshot();
+      expect(
+        shallowWithTheme(
+          <ModalHeader variant="success">
+            Lorem ipsum dolor sit amet
+          </ModalHeader>,
+          theme,
+        ),
+      ).toMatchSnapshot();
     });
   });
 
   describe('variant = error', () => {
     beforeEach(() => {
       wrapper = mountWithTheme(
-        <ModalHeader variant="error" >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
+        <ModalHeader variant="error">Lorem ipsum dolor sit amet</ModalHeader>,
         theme,
       );
     });
@@ -115,12 +108,12 @@ describe('<ModalHeader />', () => {
     });
 
     it('renders correctly', () => {
-      expect(shallowWithTheme(
-        <ModalHeader variant="error" >
-          Lorem ipsum dolor sit amet
-        </ModalHeader>,
-        theme,
-      )).toMatchSnapshot();
+      expect(
+        shallowWithTheme(
+          <ModalHeader variant="error">Lorem ipsum dolor sit amet</ModalHeader>,
+          theme,
+        ),
+      ).toMatchSnapshot();
     });
   });
 });

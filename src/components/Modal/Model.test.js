@@ -1,7 +1,7 @@
 import React from 'react';
 import { axe } from 'jest-axe';
-import { mountWithTheme } from '@roo-ui/test-utils';
-import { qantas as theme } from '@roo-ui/themes';
+import { mountWithTheme } from 'testUtils';
+import theme from 'theme';
 import ReactModal from 'react-modal';
 import Modal from './Modal';
 
@@ -13,13 +13,7 @@ describe('<Modal />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mountWithTheme(
-      <Modal
-        title="Test Modal"
-        isOpen
-      />,
-      theme,
-    );
+    wrapper = mountWithTheme(<Modal title="Test Modal" isOpen />, theme);
   });
 
   it('has no accessibility errors', async () => {

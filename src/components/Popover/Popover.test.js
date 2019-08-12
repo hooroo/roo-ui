@@ -1,18 +1,22 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { mountWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { mountWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
 
 import Popover from '.';
 
-jest.mock('popper.js', () => (class {
-  constructor() {
-    return {
-      destroy: () => {},
-      scheduleUpdate: () => {},
-    };
-  }
-}));
+jest.mock(
+  'popper.js',
+  () =>
+    class {
+      constructor() {
+        return {
+          destroy: () => {},
+          scheduleUpdate: () => {},
+        };
+      }
+    },
+);
 
 describe('<Popover />', () => {
   const modifiers = { preventOverflow: { enabled: false } };
@@ -26,7 +30,11 @@ describe('<Popover />', () => {
         <Popover modifiers={modifiers}>
           <Popover.control>
             {({ openPopover, closePopover, isOpen }) => (
-              <button disabled={isOpen} onClick={openPopover} onKeyDown={closePopover}>
+              <button
+                disabled={isOpen}
+                onClick={openPopover}
+                onKeyDown={closePopover}
+              >
                 Open popover
               </button>
             )}
@@ -86,7 +94,11 @@ describe('<Popover />', () => {
     });
 
     it('hides <Popper /> when an outside element is clicked', () => {
-      wrapper.find(Popover).instance().getInstance().handleClickOutside();
+      wrapper
+        .find(Popover)
+        .instance()
+        .getInstance()
+        .handleClickOutside();
       wrapper.update();
       expect(wrapper.find('Popper')).toHaveLength(0);
     });

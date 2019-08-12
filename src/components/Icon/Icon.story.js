@@ -5,14 +5,14 @@ import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
-import { qantas } from '@roo-ui/themes';
-import * as allIcons from '@roo-ui/icons';
+import theme from 'theme';
+import * as allIcons from 'icons';
 
 import { Box, Paragraph } from '..';
 import Icon from '.';
 import README from './README.md';
 
-const themeWithAllIcons = { ...qantas, icons: allIcons };
+const themeWithAllIcons = { ...theme, icons: allIcons };
 
 const groupedPaths = groupBy(
   map(allIcons, ({ category }, name) => ({ category, name })),
@@ -36,19 +36,23 @@ const IconsInTheme = withTheme(({ theme }) => (
     {map(theme.icons, (_, name) => (
       <Box p={4} key={name}>
         <Icon color="greys.steel" size={48} name={name} />
-        <Caption title={name} fontSize="xs" color="greys.steel">{name}</Caption>
+        <Caption title={name} fontSize="xs" color="greys.steel">
+          {name}
+        </Caption>
       </Box>
     ))}
   </Grid>
 ));
 
-const renderIconsInCategory = group => () => (
+const IconCategory = ({ category }) => (
   <Grid>
     <ThemeProvider theme={themeWithAllIcons}>
-      {groupedPaths[group].map(({ name }) => (
+      {groupedPaths[category].map(({ name }) => (
         <Box p={4} key={name}>
           <Icon color="greys.steel" size={48} name={name} />
-          <Caption title={name} fontSize="xs" color="greys.steel">{name}</Caption>
+          <Caption title={name} fontSize="xs" color="greys.steel">
+            {name}
+          </Caption>
         </Box>
       ))}
     </ThemeProvider>
@@ -58,20 +62,20 @@ const renderIconsInCategory = group => () => (
 storiesOf('Components|Icon', module)
   .addDecorator(withDocs(README))
   .add('default icons', () => <IconsInTheme />)
-  .add('alert', renderIconsInCategory('alert'))
-  .add('av', renderIconsInCategory('av'))
-  .add('communication', renderIconsInCategory('communication'))
-  .add('content', renderIconsInCategory('content'))
-  .add('device', renderIconsInCategory('device'))
-  .add('editor', renderIconsInCategory('editor'))
-  .add('file', renderIconsInCategory('file'))
-  .add('hardware', renderIconsInCategory('hardware'))
-  .add('image', renderIconsInCategory('image'))
-  .add('maps', renderIconsInCategory('maps'))
-  .add('navigation', renderIconsInCategory('navigation'))
-  .add('notification', renderIconsInCategory('notification'))
-  .add('places', renderIconsInCategory('places'))
-  .add('rating', renderIconsInCategory('rating'))
-  .add('social', renderIconsInCategory('social'))
-  .add('toggle', renderIconsInCategory('toggle'))
-  .add('qantas', renderIconsInCategory('qantas'));
+  .add('alert', () => <IconCategory category="alert" />)
+  .add('av', () => <IconCategory category="av" />)
+  .add('communication', () => <IconCategory category="communication" />)
+  .add('content', () => <IconCategory category="content" />)
+  .add('device', () => <IconCategory category="device" />)
+  .add('editor', () => <IconCategory category="editor" />)
+  .add('file', () => <IconCategory category="file" />)
+  .add('hardware', () => <IconCategory category="hardware" />)
+  .add('image', () => <IconCategory category="image" />)
+  .add('maps', () => <IconCategory category="maps" />)
+  .add('navigation', () => <IconCategory category="navigation" />)
+  .add('notification', () => <IconCategory category="notification" />)
+  .add('places', () => <IconCategory category="places" />)
+  .add('rating', () => <IconCategory category="rating" />)
+  .add('social', () => <IconCategory category="social" />)
+  .add('toggle', () => <IconCategory category="toggle" />)
+  .add('qantas', () => <IconCategory category="qantas" />);

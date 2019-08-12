@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { mountWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { mountWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
 
 import PasswordInput from '.';
@@ -15,7 +15,8 @@ describe('<PasswordInput />', () => {
   it('has no accessibility errors', async () => {
     wrapper = mountWithTheme(
       <label htmlFor="input">
-        Label<PasswordInput id="input" />
+        Label
+        <PasswordInput id="input" />
       </label>,
       theme,
     );
@@ -34,9 +35,10 @@ describe('<PasswordInput />', () => {
       });
 
       it('sets <input /> type to text', () => {
-        expect(wrapper
-          .find('PasswordInput__Input')
-          .props()).toHaveProperty('type', 'text');
+        expect(wrapper.find('PasswordInput__Input').props()).toHaveProperty(
+          'type',
+          'text',
+        );
       });
     });
   });
@@ -56,10 +58,12 @@ describe('<PasswordInput />', () => {
       });
 
       it('sets <input /> type to password', () => {
-        expect(wrapper
-          .update()
-          .find('PasswordInput__Input')
-          .props()).toHaveProperty('type', 'password');
+        expect(
+          wrapper
+            .update()
+            .find('PasswordInput__Input')
+            .props(),
+        ).toHaveProperty('type', 'password');
       });
     });
   });

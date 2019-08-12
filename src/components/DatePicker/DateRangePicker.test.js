@@ -2,14 +2,15 @@ import React from 'react';
 import parse from 'date-fns/parse';
 import format from 'date-fns/format';
 import range from 'lodash/range';
-import { qantas as theme } from '@roo-ui/themes';
-import { mountWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { mountWithTheme } from 'testUtils';
 
 import DateRangePicker from './DateRangePicker';
 
 const dateToString = date => format(date, 'YYYY-MM-DD');
 const rangeInclusive = (start = 0, end = 0) => range(start, end + 1);
-const getDayOfMonth = (wrapper, dayOfMonth) => wrapper.find('CalendarDay').at(dayOfMonth - 1);
+const getDayOfMonth = (wrapper, dayOfMonth) =>
+  wrapper.find('CalendarDay').at(dayOfMonth - 1);
 
 describe('<DateRangePicker />', () => {
   let wrapper;
@@ -37,7 +38,11 @@ describe('<DateRangePicker />', () => {
 
       it('displays the correct month', () => {
         const MonthWrapper = wrapper.find('MonthWrapper');
-        expect(MonthWrapper.find('Text').first().text()).toEqual('Jul 2018');
+        expect(
+          MonthWrapper.find('Text')
+            .first()
+            .text(),
+        ).toEqual('Jul 2018');
       });
     });
 
@@ -49,7 +54,11 @@ describe('<DateRangePicker />', () => {
 
       it('displays the correct month', () => {
         const MonthWrapper = wrapper.find('MonthWrapper');
-        expect(MonthWrapper.find('Text').first().text()).toEqual('Nov 2018');
+        expect(
+          MonthWrapper.find('Text')
+            .first()
+            .text(),
+        ).toEqual('Nov 2018');
       });
     });
   });
@@ -64,25 +73,33 @@ describe('<DateRangePicker />', () => {
       const date4 = wrapper.find('CalendarDay').at(3);
       const date5 = wrapper.find('CalendarDay').at(4);
 
-      expect(date4.props()).toEqual(expect.objectContaining({
-        selected: false,
-        selectable: false,
-        disabled: true,
-      }));
+      expect(date4.props()).toEqual(
+        expect.objectContaining({
+          selected: false,
+          selectable: false,
+          disabled: true,
+        }),
+      );
 
-      expect(date5.props()).toEqual(expect.objectContaining({
-        selected: false,
-        selectable: false,
-        disabled: true,
-      }));
+      expect(date5.props()).toEqual(
+        expect.objectContaining({
+          selected: false,
+          selectable: false,
+          disabled: true,
+        }),
+      );
     });
 
     it('does not disable other dates', () => {
       const date3 = wrapper.find('CalendarDay').at(2);
       const date6 = wrapper.find('CalendarDay').at(5);
 
-      expect(date3.props()).not.toEqual(expect.objectContaining({ disabled: true }));
-      expect(date6.props()).not.toEqual(expect.objectContaining({ disabled: true }));
+      expect(date3.props()).not.toEqual(
+        expect.objectContaining({ disabled: true }),
+      );
+      expect(date6.props()).not.toEqual(
+        expect.objectContaining({ disabled: true }),
+      );
     });
   });
 
@@ -95,9 +112,11 @@ describe('<DateRangePicker />', () => {
     });
 
     it('highlights dates in range', () => {
-      rangeInclusive(15, 20).forEach((index) => {
+      rangeInclusive(15, 20).forEach(index => {
         const day = getDayOfMonth(wrapper, index);
-        expect(day.props()).toEqual(expect.objectContaining({ highlighted: true }));
+        expect(day.props()).toEqual(
+          expect.objectContaining({ highlighted: true }),
+        );
       });
     });
 
@@ -105,8 +124,12 @@ describe('<DateRangePicker />', () => {
       const day15 = wrapper.find('CalendarDay').at(14);
       const day20 = wrapper.find('CalendarDay').at(19);
 
-      expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
-      expect(day20.props()).toEqual(expect.objectContaining({ selected: true }));
+      expect(day15.props()).toEqual(
+        expect.objectContaining({ selected: true }),
+      );
+      expect(day20.props()).toEqual(
+        expect.objectContaining({ selected: true }),
+      );
     });
   });
 
@@ -118,9 +141,15 @@ describe('<DateRangePicker />', () => {
         callback = jest.fn();
         const initialDisplayDate = parse('2018-07-15');
         setup({ initialDisplayDate, onChangeDates: callback });
-        getDayOfMonth(wrapper, 1).find('button').simulate('click');
-        getDayOfMonth(wrapper, 2).find('button').simulate('click');
-        getDayOfMonth(wrapper, 3).find('button').simulate('click');
+        getDayOfMonth(wrapper, 1)
+          .find('button')
+          .simulate('click');
+        getDayOfMonth(wrapper, 2)
+          .find('button')
+          .simulate('click');
+        getDayOfMonth(wrapper, 3)
+          .find('button')
+          .simulate('click');
         wrapper.update();
       });
 
@@ -129,17 +158,25 @@ describe('<DateRangePicker />', () => {
       });
 
       it('calls the first callback with only the correct start date', () => {
-        expect(dateToString(callback.mock.calls[0][0].startDate)).toEqual('2018-07-01');
+        expect(dateToString(callback.mock.calls[0][0].startDate)).toEqual(
+          '2018-07-01',
+        );
         expect(callback.mock.calls[0][0].endDate).toBeNull();
       });
 
       it('calls the second callback with the correct start and end dates', () => {
-        expect(dateToString(callback.mock.calls[1][0].startDate)).toEqual('2018-07-01');
-        expect(dateToString(callback.mock.calls[1][0].endDate)).toEqual('2018-07-02');
+        expect(dateToString(callback.mock.calls[1][0].startDate)).toEqual(
+          '2018-07-01',
+        );
+        expect(dateToString(callback.mock.calls[1][0].endDate)).toEqual(
+          '2018-07-02',
+        );
       });
 
       it('calls the third callback with the correct start date and resets the end date', () => {
-        expect(dateToString(callback.mock.calls[2][0].startDate)).toEqual('2018-07-03');
+        expect(dateToString(callback.mock.calls[2][0].startDate)).toEqual(
+          '2018-07-03',
+        );
         expect(callback.mock.calls[2][0].endDate).toBeNull();
       });
     });
@@ -157,7 +194,9 @@ describe('<DateRangePicker />', () => {
 
       it('selects start date', () => {
         const day15 = wrapper.find('CalendarDay').at(14);
-        expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+        expect(day15.props()).toEqual(
+          expect.objectContaining({ selected: true }),
+        );
       });
 
       describe('with mouse on a past date', () => {
@@ -171,15 +210,21 @@ describe('<DateRangePicker />', () => {
 
         it('selects start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('does not highlight range', () => {
           const date13 = wrapper.find('CalendarDay').at(12);
           const date14 = wrapper.find('CalendarDay').at(13);
 
-          expect(date13.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date14.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date13.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date14.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
 
@@ -187,18 +232,26 @@ describe('<DateRangePicker />', () => {
         let newClickedDate;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(11).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(11)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           newClickedDate = wrapper.find('CalendarDay').at(11);
         });
 
         it('deselects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(newClickedDate.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
       });
 
@@ -214,15 +267,21 @@ describe('<DateRangePicker />', () => {
 
         it('selects start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('highlights the range', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date16.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date17.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
 
@@ -230,26 +289,38 @@ describe('<DateRangePicker />', () => {
         let date18;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(17).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(17)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           date18 = wrapper.find('CalendarDay').at(17);
         });
 
         it('selects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(date18.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(date18.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('highlights the range', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date16.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date17.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
     });
@@ -263,7 +334,9 @@ describe('<DateRangePicker />', () => {
 
       it('selects start date', () => {
         const day15 = wrapper.find('CalendarDay').at(14);
-        expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+        expect(day15.props()).toEqual(
+          expect.objectContaining({ selected: true }),
+        );
       });
 
       describe('with mouse on a past date', () => {
@@ -277,15 +350,21 @@ describe('<DateRangePicker />', () => {
 
         it('selects start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('does not highlight range', () => {
           const date13 = wrapper.find('CalendarDay').at(12);
           const date14 = wrapper.find('CalendarDay').at(13);
 
-          expect(date13.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date14.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date13.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date14.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
 
@@ -293,18 +372,26 @@ describe('<DateRangePicker />', () => {
         let newClickedDate;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(11).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(11)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           newClickedDate = wrapper.find('CalendarDay').at(11);
         });
 
         it('deselects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(newClickedDate.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
       });
 
@@ -320,15 +407,21 @@ describe('<DateRangePicker />', () => {
 
         it('selects start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('does not highlight the range', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date17.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date16.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date17.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
 
@@ -336,26 +429,38 @@ describe('<DateRangePicker />', () => {
         let date18;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(17).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(17)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           date18 = wrapper.find('CalendarDay').at(17);
         });
 
         it('deselects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(date18.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(date18.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('does not highlight the range', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date17.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date16.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date17.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
     });
@@ -369,7 +474,9 @@ describe('<DateRangePicker />', () => {
 
       it('selects start date', () => {
         const day15 = wrapper.find('CalendarDay').at(14);
-        expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+        expect(day15.props()).toEqual(
+          expect.objectContaining({ selected: true }),
+        );
       });
 
       describe('with mouse on a past date', () => {
@@ -383,15 +490,21 @@ describe('<DateRangePicker />', () => {
 
         it('selects start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('does not highlight range', () => {
           const date13 = wrapper.find('CalendarDay').at(12);
           const date14 = wrapper.find('CalendarDay').at(13);
 
-          expect(date13.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date14.props()).not.toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date13.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date14.props()).not.toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
 
@@ -399,18 +512,26 @@ describe('<DateRangePicker />', () => {
         let newClickedDate;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(11).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(11)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           newClickedDate = wrapper.find('CalendarDay').at(11);
         });
 
         it('deselects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(newClickedDate.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
       });
 
@@ -426,15 +547,21 @@ describe('<DateRangePicker />', () => {
 
         it('selects start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('highlights the range', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date16.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date17.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
 
@@ -442,26 +569,38 @@ describe('<DateRangePicker />', () => {
         let date18;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(17).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(17)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           date18 = wrapper.find('CalendarDay').at(17);
         });
 
         it('selects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(date18.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(date18.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('highlights the range', () => {
           const date16 = wrapper.find('CalendarDay').at(15);
           const date17 = wrapper.find('CalendarDay').at(16);
 
-          expect(date16.props()).toEqual(expect.objectContaining({ highlighted: true }));
-          expect(date17.props()).toEqual(expect.objectContaining({ highlighted: true }));
+          expect(date16.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
+          expect(date17.props()).toEqual(
+            expect.objectContaining({ highlighted: true }),
+          );
         });
       });
     });
@@ -482,23 +621,33 @@ describe('<DateRangePicker />', () => {
         let newClickedDate;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(11).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(11)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           newClickedDate = wrapper.find('CalendarDay').at(11);
         });
 
         it('deselects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(newClickedDate.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('keeps end date selected', () => {
           const day20 = wrapper.find('CalendarDay').at(19);
-          expect(day20.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day20.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
       });
 
@@ -506,23 +655,33 @@ describe('<DateRangePicker />', () => {
         let newClickedDate;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(22).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(22)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           newClickedDate = wrapper.find('CalendarDay').at(22);
         });
 
         it('deselects original start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(newClickedDate.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('deselects end date', () => {
           const day20 = wrapper.find('CalendarDay').at(19);
-          expect(day20.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day20.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
       });
     });
@@ -538,23 +697,33 @@ describe('<DateRangePicker />', () => {
         let newClickedDate;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(17).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(17)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           newClickedDate = wrapper.find('CalendarDay').at(17);
         });
 
         it('keeps start date selected', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new end date', () => {
-          expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(newClickedDate.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('deselects end date', () => {
           const day20 = wrapper.find('CalendarDay').at(19);
-          expect(day20.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day20.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
       });
 
@@ -562,23 +731,33 @@ describe('<DateRangePicker />', () => {
         let newClickedDate;
 
         beforeEach(() => {
-          wrapper.find('CalendarDay').at(11).find('button').simulate('click');
+          wrapper
+            .find('CalendarDay')
+            .at(11)
+            .find('button')
+            .simulate('click');
           wrapper.update();
           newClickedDate = wrapper.find('CalendarDay').at(11);
         });
 
         it('deselects start date', () => {
           const day15 = wrapper.find('CalendarDay').at(14);
-          expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day15.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('selects the new start date', () => {
-          expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+          expect(newClickedDate.props()).toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
 
         it('deselects endDate', () => {
           const day20 = wrapper.find('CalendarDay').at(19);
-          expect(day20.props()).not.toEqual(expect.objectContaining({ selected: true }));
+          expect(day20.props()).not.toEqual(
+            expect.objectContaining({ selected: true }),
+          );
         });
       });
     });
@@ -589,23 +768,33 @@ describe('<DateRangePicker />', () => {
       beforeEach(() => {
         setup({ initialStartDate, initialEndDate });
 
-        wrapper.find('CalendarDay').at(22).find('button').simulate('click');
+        wrapper
+          .find('CalendarDay')
+          .at(22)
+          .find('button')
+          .simulate('click');
         wrapper.update();
         newClickedDate = wrapper.find('CalendarDay').at(22);
       });
 
       it('deselects start date', () => {
         const day15 = wrapper.find('CalendarDay').at(14);
-        expect(day15.props()).not.toEqual(expect.objectContaining({ selected: true }));
+        expect(day15.props()).not.toEqual(
+          expect.objectContaining({ selected: true }),
+        );
       });
 
       it('selects the new start date', () => {
-        expect(newClickedDate.props()).toEqual(expect.objectContaining({ selected: true }));
+        expect(newClickedDate.props()).toEqual(
+          expect.objectContaining({ selected: true }),
+        );
       });
 
       it('deselects endDate', () => {
         const day20 = wrapper.find('CalendarDay').at(19);
-        expect(day20.props()).not.toEqual(expect.objectContaining({ selected: true }));
+        expect(day20.props()).not.toEqual(
+          expect.objectContaining({ selected: true }),
+        );
       });
     });
   });

@@ -1,11 +1,13 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 
 import CalendarWeekday from '.';
 
 describe('<CalendarWeekday />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarWeekday>Tuesday</CalendarWeekday>, theme)).toMatchSnapshot();
+    expect(
+      shallowWithTheme(<CalendarWeekday>Tuesday</CalendarWeekday>, theme),
+    ).toMatchSnapshot();
   });
 });

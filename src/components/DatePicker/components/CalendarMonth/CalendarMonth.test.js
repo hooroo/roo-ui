@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 import addDays from 'date-fns/add_days';
 
 import CalendarMonth from '.';
@@ -34,14 +34,18 @@ describe('<CalendarMonth />', () => {
         { date: addDays(startDate, 11) },
         { date: addDays(startDate, 12) },
         { date: addDays(startDate, 14) },
-      ]],
+      ],
+    ],
     getDateProps: jest.fn,
     isInRange: jest.fn,
     onMouseEnterOfDay: jest.fn,
   };
 
   beforeEach(() => {
-    wrapper = shallowWithTheme(<CalendarMonth {...props}>Days</CalendarMonth>, theme);
+    wrapper = shallowWithTheme(
+      <CalendarMonth {...props}>Days</CalendarMonth>,
+      theme,
+    );
   });
 
   it('renders correctly', () => {
@@ -50,9 +54,13 @@ describe('<CalendarMonth />', () => {
 
   describe('<CalendarWeekdays />', () => {
     it('renders CalendarWeekdays', () => {
-      expect(wrapper.find('CalendarWeekdays').prop('month')).toEqual(props.month);
+      expect(wrapper.find('CalendarWeekdays').prop('month')).toEqual(
+        props.month,
+      );
       expect(wrapper.find('CalendarWeekdays').prop('year')).toEqual(props.year);
-      expect(wrapper.find('CalendarWeekdays').prop('weekdayNames')).toEqual(props.weekdayNames);
+      expect(wrapper.find('CalendarWeekdays').prop('weekdayNames')).toEqual(
+        props.weekdayNames,
+      );
     });
   });
 
@@ -61,8 +69,12 @@ describe('<CalendarMonth />', () => {
       expect(wrapper.find('CalendarDays').prop('month')).toEqual(props.month);
       expect(wrapper.find('CalendarDays').prop('year')).toEqual(props.year);
       expect(wrapper.find('CalendarDays').prop('weeks')).toEqual(props.weeks);
-      expect(wrapper.find('CalendarDays').prop('isInRange')).toEqual(props.isInRange);
-      expect(wrapper.find('CalendarDays').prop('onMouseEnterOfDay')).toEqual(props.onMouseEnterOfDay);
+      expect(wrapper.find('CalendarDays').prop('isInRange')).toEqual(
+        props.isInRange,
+      );
+      expect(wrapper.find('CalendarDays').prop('onMouseEnterOfDay')).toEqual(
+        props.onMouseEnterOfDay,
+      );
     });
   });
 });

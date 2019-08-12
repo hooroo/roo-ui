@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
 
 import Hide from '.';
@@ -8,10 +8,13 @@ import Hide from '.';
 describe('<Hide />', () => {
   let wrapper;
 
-  const testWithBreakpoints = (breakpoints) => {
+  const testWithBreakpoints = breakpoints => {
     describe('no props', () => {
       beforeEach(() => {
-        wrapper = shallowWithTheme(<Hide>Hello world</Hide>, { ...theme, breakpoints });
+        wrapper = shallowWithTheme(<Hide>Hello world</Hide>, {
+          ...theme,
+          breakpoints,
+        });
       });
 
       it('renders correctly', () => {
@@ -23,10 +26,12 @@ describe('<Hide />', () => {
       });
     });
 
-
     describe('xs', () => {
       beforeEach(() => {
-        wrapper = shallowWithTheme(<Hide xs>Hello world</Hide>, { ...theme, breakpoints });
+        wrapper = shallowWithTheme(<Hide xs>Hello world</Hide>, {
+          ...theme,
+          breakpoints,
+        });
       });
 
       it('renders correctly', () => {
@@ -36,7 +41,10 @@ describe('<Hide />', () => {
 
     describe('sm', () => {
       beforeEach(() => {
-        wrapper = shallowWithTheme(<Hide sm>Hello world</Hide>, { ...theme, breakpoints });
+        wrapper = shallowWithTheme(<Hide sm>Hello world</Hide>, {
+          ...theme,
+          breakpoints,
+        });
       });
 
       it('renders correctly', () => {
@@ -46,7 +54,10 @@ describe('<Hide />', () => {
 
     describe('md', () => {
       beforeEach(() => {
-        wrapper = shallowWithTheme(<Hide md>Hello world</Hide>, { ...theme, breakpoints });
+        wrapper = shallowWithTheme(<Hide md>Hello world</Hide>, {
+          ...theme,
+          breakpoints,
+        });
       });
 
       it('renders correctly', () => {
@@ -56,7 +67,10 @@ describe('<Hide />', () => {
 
     describe('lg', () => {
       beforeEach(() => {
-        wrapper = shallowWithTheme(<Hide lg>Hello world</Hide>, { ...theme, breakpoints });
+        wrapper = shallowWithTheme(<Hide lg>Hello world</Hide>, {
+          ...theme,
+          breakpoints,
+        });
       });
 
       it('renders correctly', () => {

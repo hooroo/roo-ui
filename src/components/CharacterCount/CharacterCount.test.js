@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { mountWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { mountWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
 
 import CharacterCount from '.';

@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { mountWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { mountWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
 
 import Checkbox from '.';
@@ -9,10 +9,7 @@ describe('<Checkbox />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mountWithTheme(
-      <Checkbox />,
-      theme,
-    );
+    wrapper = mountWithTheme(<Checkbox />, theme);
   });
 
   it('renders correctly', () => {
@@ -20,16 +17,19 @@ describe('<Checkbox />', () => {
   });
 
   it('has no accessibility errors', async () => {
-    wrapper = mountWithTheme(<label htmlFor="radio">Label<Checkbox /></label>, theme);
+    wrapper = mountWithTheme(
+      <label htmlFor="radio">
+        Label
+        <Checkbox />
+      </label>,
+      theme,
+    );
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
   describe('when checked', () => {
     beforeEach(() => {
-      wrapper = mountWithTheme(
-        <Checkbox defaultChecked />,
-        theme,
-      );
+      wrapper = mountWithTheme(<Checkbox defaultChecked />, theme);
     });
 
     it('renders correctly', () => {
@@ -39,10 +39,7 @@ describe('<Checkbox />', () => {
 
   describe('when disabled', () => {
     beforeEach(() => {
-      wrapper = mountWithTheme(
-        <Checkbox disabled />,
-        theme,
-      );
+      wrapper = mountWithTheme(<Checkbox disabled />, theme);
     });
 
     it('renders correctly', () => {

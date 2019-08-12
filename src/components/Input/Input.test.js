@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
 
 import Input from '.';
@@ -17,7 +17,13 @@ describe('<Input />', () => {
   });
 
   it('has no accessibility errors', async () => {
-    wrapper = shallowWithTheme(<label htmlFor="input">Label<Input /></label>, theme);
+    wrapper = shallowWithTheme(
+      <label htmlFor="input">
+        Label
+        <Input />
+      </label>,
+      theme,
+    );
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 import addDays from 'date-fns/add_days';
 
 import CalendarDays from '.';
@@ -34,7 +34,8 @@ describe('<CalendarDays />', () => {
         { date: addDays(startDate, 11) },
         { date: addDays(startDate, 12) },
         { date: addDays(startDate, 14) },
-      ]],
+      ],
+    ],
     getDateProps: jest.fn,
   };
 
@@ -55,30 +56,62 @@ describe('<CalendarDays />', () => {
           setup({
             isInRange: () => false,
           });
-          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(false);
+          expect(
+            wrapper
+              .find('CalendarDay')
+              .first()
+              .prop('highlighted'),
+          ).toEqual(false);
         });
       });
 
       describe('when isInRange is true', () => {
         it('props.highlighted is true', () => {
           setup({ isInRange: () => true });
-          expect(wrapper.find('CalendarDay').first().prop('highlighted')).toEqual(true);
+          expect(
+            wrapper
+              .find('CalendarDay')
+              .first()
+              .prop('highlighted'),
+          ).toEqual(true);
         });
       });
     });
 
     describe('disabled', () => {
       describe('when disabled dates are provided', () => {
-        beforeEach(() => setup({ disabledDates: [startDate, addDays(startDate, 1)] }));
+        beforeEach(() =>
+          setup({ disabledDates: [startDate, addDays(startDate, 1)] }),
+        );
 
         it('provided dates are disabled', () => {
-          expect(wrapper.find('CalendarDay').at(0).prop('disabled')).toEqual(true);
-          expect(wrapper.find('CalendarDay').at(1).prop('disabled')).toEqual(true);
+          expect(
+            wrapper
+              .find('CalendarDay')
+              .at(0)
+              .prop('disabled'),
+          ).toEqual(true);
+          expect(
+            wrapper
+              .find('CalendarDay')
+              .at(1)
+              .prop('disabled'),
+          ).toEqual(true);
         });
 
         it('other dates are not disabled', () => {
-          expect(wrapper.find('CalendarDay').at(2).prop('disabled')).toEqual(false);
-          expect(wrapper.find('CalendarDay').at(3).prop('disabled')).toEqual(false);
+          expect(
+            wrapper
+              .find('CalendarDay')
+              .at(2)
+              .prop('disabled'),
+          ).toEqual(false);
+          expect(
+            wrapper
+              .find('CalendarDay')
+              .at(3)
+              .prop('disabled'),
+          ).toEqual(false);
         });
       });
     });

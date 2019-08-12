@@ -1,17 +1,21 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 
-import { CalendarDay, CalendarEmptyDay } from '.';
+import { CalendarDay, CalendarEmptyDay } from './CalendarDay';
 
 describe('<CalendarDay />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarDay selected>21</CalendarDay>, theme)).toMatchSnapshot();
+    expect(
+      shallowWithTheme(<CalendarDay selected>21</CalendarDay>, theme),
+    ).toMatchSnapshot();
   });
 });
 
 describe('<CalendarEmptyDay />', () => {
   it('renders correctly', () => {
-    expect(shallowWithTheme(<CalendarEmptyDay>15</CalendarEmptyDay>, theme)).toMatchSnapshot();
+    expect(
+      shallowWithTheme(<CalendarEmptyDay>15</CalendarEmptyDay>, theme),
+    ).toMatchSnapshot();
   });
 });

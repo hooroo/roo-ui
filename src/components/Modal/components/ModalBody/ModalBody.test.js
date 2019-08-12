@@ -1,7 +1,7 @@
 import React from 'react';
 import { axe } from 'jest-axe';
-import { shallowWithTheme } from '@roo-ui/test-utils';
-import { qantas as theme } from '@roo-ui/themes';
+import { shallowWithTheme } from 'testUtils';
+import theme from 'theme';
 import ModalBody from './ModalBody';
 
 describe('<ModalBody />', () => {
@@ -9,9 +9,7 @@ describe('<ModalBody />', () => {
 
   beforeEach(() => {
     wrapper = shallowWithTheme(
-      <ModalBody>
-        Lorem ipsum dolor sit amet
-      </ModalBody>,
+      <ModalBody>Lorem ipsum dolor sit amet</ModalBody>,
       theme,
     );
   });

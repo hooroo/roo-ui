@@ -1,6 +1,6 @@
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
 
 import MaskedInput from '.';
@@ -12,7 +12,6 @@ describe('<MaskedInput />', () => {
     wrapper = shallowWithTheme(
       <label htmlFor="postcode">
         Enter postcode
-
         <MaskedInput
           id="postcode"
           placeholder="Enter postcode"

@@ -121,9 +121,7 @@ class Base extends Component {
 
         {this.state.isOpen && (
           <Popper modifiers={modifiers}>
-            {({
-             ref, style, placement, arrowProps,
-            }) => (
+            {({ ref, style, placement, arrowProps }) => (
               <ContentWrapper
                 aria-hidden="true"
                 ref={ref}

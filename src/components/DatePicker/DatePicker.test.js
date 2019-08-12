@@ -1,7 +1,7 @@
 import React from 'react';
 import parse from 'date-fns/parse';
-import { qantas as theme } from '@roo-ui/themes';
-import { mountWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { mountWithTheme } from 'testUtils';
 
 import DatePicker from './DatePicker';
 
@@ -31,17 +31,21 @@ describe('<DatePicker />', () => {
     });
 
     it('passes down props.monthsToDisplay', () => {
-      expect(wrapper.find('Dayzed').prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+      expect(wrapper.find('Dayzed').prop('monthsToDisplay')).toEqual(
+        props.monthsToDisplay,
+      );
     });
 
     it('assigns the rest of the props', () => {
-      expect(wrapper.props()).toEqual(expect.objectContaining({
-        date: props.date,
-        minDate: props.minDate,
-        maxDate: props.maxDate,
-        selected: props.selected,
-        onDateSelected: props.onDateSelected,
-      }));
+      expect(wrapper.props()).toEqual(
+        expect.objectContaining({
+          date: props.date,
+          minDate: props.minDate,
+          maxDate: props.maxDate,
+          selected: props.selected,
+          onDateSelected: props.onDateSelected,
+        }),
+      );
     });
   });
 
@@ -63,7 +67,9 @@ describe('<DatePicker />', () => {
     });
 
     it('passes down props.monthsToDisplay', () => {
-      expect(calendarMonthWrapper.prop('monthsToDisplay')).toEqual(props.monthsToDisplay);
+      expect(calendarMonthWrapper.prop('monthsToDisplay')).toEqual(
+        props.monthsToDisplay,
+      );
     });
   });
 
@@ -90,35 +96,43 @@ describe('<DatePicker />', () => {
       it('renders days as clickable elements', () => {
         const day = wrapper.find('CalendarDay').first();
 
-        expect(day.props()).toEqual(expect.objectContaining({
-          selectable: true,
-          disabled: false,
-        }));
+        expect(day.props()).toEqual(
+          expect.objectContaining({
+            selectable: true,
+            disabled: false,
+          }),
+        );
       });
 
       it('adds props.selected true when date is in props.selected', () => {
         const day19 = wrapper.find('CalendarDay').at(19);
 
-        expect(day19.props()).toEqual(expect.objectContaining({
-          selected: true,
-        }));
+        expect(day19.props()).toEqual(
+          expect.objectContaining({
+            selected: true,
+          }),
+        );
       });
 
       it('renders a disabled day when date is in props.disabledDates', () => {
         const day3 = wrapper.find('CalendarDay').at(3);
         const day4 = wrapper.find('CalendarDay').at(4);
 
-        expect(day3.props()).toEqual(expect.objectContaining({
-          selected: false,
-          selectable: false,
-          disabled: true,
-        }));
+        expect(day3.props()).toEqual(
+          expect.objectContaining({
+            selected: false,
+            selectable: false,
+            disabled: true,
+          }),
+        );
 
-        expect(day4.props()).toEqual(expect.objectContaining({
-          selected: false,
-          selectable: false,
-          disabled: true,
-        }));
+        expect(day4.props()).toEqual(
+          expect.objectContaining({
+            selected: false,
+            selectable: false,
+            disabled: true,
+          }),
+        );
       });
     });
   });
