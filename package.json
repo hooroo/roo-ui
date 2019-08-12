@@ -1,38 +1,27 @@
 {
+  "private": true,
   "name": "roo-ui",
   "repository": "git@github.com:hooroo/roo-ui.git",
   "author": "Hooroo <support@hooroo.com>",
   "license": "MIT",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "main": "lib/",
+  "module": "esm/",
+  "sideEffects": false,
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "build:cjs": "MODULES=commonjs babel src -d lib --copy-files",
+    "build:esm": "MODULES=false babel src -d esm --copy-files",
+    "build": "run-p build:*",
+    "release": "semantic-release -d",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "yarn build && storybook-to-ghpages",
-    "new:component": "hygen component new --component-path"
+    "deploy-storybook": "storybook-to-ghpages",
+    "generate:component": "hygen component new --path",
+    "generate:entrypoint": "HYGEN_OVERWRITE=1 hygen entrypoint new --name"
   },
   "prettier": {
     "singleQuote": true,
     "trailingComma": "all"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md,yml}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.js": [
-      "eslint . --fix",
-      "git add"
-    ]
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -49,6 +38,22 @@
       "plugin:sonarjs/recommended"
     ]
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"
@@ -57,21 +62,18 @@
       "dist/"
     ]
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ],
-    "plugins": [
-      "emotion"
-    ]
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "@emotion/core": "^10.0.10",
@@ -84,7 +86,6 @@
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.15",
-    "babel-preset-react-app": "^9.0.0",
     "emotion-theming": "^10.0.10",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -103,11 +104,13 @@
     "lint-staged": "^9.2.1",
     "lodash": "^4.17.4",
     "normalize.css": "^8.0.0",
+    "npm-run-all": "^4.1.5",
     "polished": "^2.2.0",
     "prettier": "^1.18.2",
     "prop-types": "^15.6.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "semantic-release": "^15.13.19",
     "source-map-loader": "^0.2.4",
     "storybook-readme": "^5.0.6",
     "styled-system": "^4.1.0",

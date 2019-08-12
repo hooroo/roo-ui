@@ -38,10 +38,10 @@ steps:
 
   - wait
 
-  - name: ':npm: Publish'
+  - name: ':npm: Release'
     <<: *deploy_defaults
-    command: scripts/publish
+    command: scripts/release
 
-  - name: ':storybook: Deploy'
+  - name: ':storybook: Deploy Storybook'
     <<: *deploy_defaults
     command: yarn deploy-storybook

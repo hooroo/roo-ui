@@ -1,5 +1,6 @@
 coverage/
-dist/
+lib/
+esm/
 node_modules/
 
 .DS_Store
