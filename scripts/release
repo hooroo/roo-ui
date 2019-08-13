@@ -7,10 +7,4 @@ git config --global user.name "$BUILDKITE_BUILD_CREATOR"
 
 yarn build
 
-ENTRYPOINTS="assets components icons logos"
-
-for ENTRYPOINT in $ENTRYPOINTS; do
-  yarn generate:entrypoint $ENTRYPOINT
-done
-
 yarn release --dry-run
