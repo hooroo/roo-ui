@@ -6,7 +6,7 @@ import { withDocs } from 'storybook-readme';
 import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
 import theme from 'theme';
-import * as allIcons from 'icons';
+import * as allIcons from 'icons'; // eslint-disable-line import/no-unresolved
 
 import { Box, Paragraph } from '..';
 import Icon from '.';
