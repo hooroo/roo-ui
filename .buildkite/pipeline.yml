@@ -8,7 +8,7 @@
 
 .deploy_defaults: &deploy_defaults
   <<: *defaults
-  branches: master
+  # branches: master
   concurrency: 1
   concurrency_group: roo-ui/publish
 
@@ -32,11 +32,11 @@ steps:
     <<: *defaults
     command: yarn run lint
 
-  - name: ':jest: Test'
-    <<: *defaults
-    command: yarn run test
+  # - name: ':jest: Test'
+  #   <<: *defaults
+  #   command: yarn run test
 
-  - wait
+  # - wait
 
   - name: ':npm: Release'
     <<: *deploy_defaults
