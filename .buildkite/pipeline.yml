@@ -13,6 +13,7 @@
   concurrency_group: roo-ui/publish
 
 env:
+  APPLICATION: roo-ui
   BUILDKITE_CLEAN_CHECKOUT: true
 
 steps:
