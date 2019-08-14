@@ -2,10 +2,10 @@
 to: <%= componentsRoot %>/<%= componentPath %>/<%= componentName %>.test.js
 ---
 import React from 'react';
-import { qantas as theme } from '@roo-ui/themes';
-import { shallowWithTheme } from '@roo-ui/test-utils';
+import theme from 'theme';
+import { shallowWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
-import <%= componentName %> from '.';
+import <%= componentName %> from './';
 
 describe('<<%= componentName %> />', () => {
   let props;

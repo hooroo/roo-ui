@@ -2,9 +2,10 @@ FROM ***REMOVED***.dkr.ecr.ap-southeast-2.amazonaws.com/base/node:10.14.1-builde
 
 USER hooroo
 
-COPY --chown=hooroo . .
+COPY package.json yarn.lock ./
+RUN yarn --ignore-scripts
 
-RUN yarn
-RUN yarn lerna bootstrap
+COPY --chown=hooroo . .
+RUN yarn postinstall
 
 CMD ["yarn", "storybook"]
