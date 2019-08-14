@@ -22,18 +22,18 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "build:icons": "scripts/build-icons",
+    "build-icons": "scripts/build-icons",
     "build:entrypoints": "scripts/build-entrypoints",
     "build:cjs": "MODULES=commonjs babel src -d lib --copy-files",
     "build:esm": "MODULES=false babel src -d esm --copy-files",
-    "build": "npm-run-all build:icons --parallel build:cjs build:esm build:entrypoints",
-    "postinstall": "yarn build:icons",
-    "pretest": "yarn build:icons",
+    "build": "npm-run-all build-icons --parallel build:*",
+    "pretest": "yarn build-icons",
     "release": "semantic-release",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "yarn build-icons && start-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "generate:component": "hygen component new --path",
-    "generate:entrypoint": "HYGEN_OVERWRITE=1 hygen entrypoint new --name"
+    "build-storybook": "yarn build:icons && build-storybook",
+    "generate-component": "hygen component new --path",
+    "generate-entrypoint": "HYGEN_OVERWRITE=1 hygen entrypoint new --name"
   },
   "prettier": {
     "singleQuote": true,
