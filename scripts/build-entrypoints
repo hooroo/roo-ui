@@ -3,6 +3,6 @@
 ENTRYPOINTS="assets components icons logos"
 
 for ENTRYPOINT in $ENTRYPOINTS; do
-  yarn generate:entrypoint $ENTRYPOINT
+  yarn generate-entrypoint $ENTRYPOINT
 done
 
