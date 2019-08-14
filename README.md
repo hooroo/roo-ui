@@ -1,4 +1,4 @@
-![](assets/logo.png)
+![](.github/logo.png)
 
 [![Build status](https://badge.buildkite.com/608d10408e58453caadfdf8baace412e530fefb77614355b37.svg?branch=master)](https://buildkite.com/hooroo/roo-ui?branch=master)
 
@@ -6,7 +6,6 @@ Qantas Hotels' library of accessible React components and assets.
 
 To see what’s available, check out roo-ui's [storybook](https://hooroo.github.io/roo-ui), or [browse packages](https://github.com/hooroo/roo-ui/tree/master/packages).
 If you want to jump in and and play around with the project check out [Roo UI playground](https://github.com/hooroo/roo-ui-playground)—it’s setup so you can start using it straight away.
-
 
 ## Contents
 
@@ -76,7 +75,6 @@ To have consistent styles between our apps we should aim to use the default them
 
 You can override theme values by importing the roo-ui theme and using a function such as Lodash’s [merge](https://lodash.com/docs/4.17.10#merge) to combine it with your own theme object.
 
-
 ### Fonts
 
 Import the appropriate font for your theme:
@@ -89,7 +87,7 @@ import '@roo-ui/fonts/ciutadella.css';
 
 SVG icon paths are accessed from your apps theme (`theme.icons[iconName].path`).
 
-A default set of icons are included in the base [qantas theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js). 
+A default set of icons are included in the base [qantas theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js).
 
 To add more icons, import them from `@roo-ui/icons` and include them in your apps theme.
 
@@ -127,7 +125,7 @@ import 'normalize.css/normalize.css';
 
 ### Bundler requirements
 
-If your project is setup with Create React App you can skip this step. 
+If your project is setup with Create React App you can skip this step.
 
 If you're using Webpack, you'll need to setup [file loader](https://github.com/webpack-contrib/file-loader), [style loader](https://github.com/webpack-contrib/style-loader) and [CSS loader](https://github.com/webpack-contrib/css-loader).
 
@@ -146,14 +144,14 @@ If you're using Webpack, you'll need to setup [file loader](https://github.com/w
   - [CSS reset](#css-reset)
   - [Bundler requirements](#bundler-requirements)
 - [FAQ’s](#faqs)
-    - [How do I do layout in this new world?](#how-do-i-do-layout-in-this-new-world)
-    - [How do I do responsive styles?](#how-do-i-do-responsive-styles)
-    - [How do I change the font size?](#how-do-i-change-the-font-size)
-    - [How do I add spacing to elements?](#how-do-i-add-spacing-to-elements)
-    - [What’s a good usage example?](#whats-a-good-usage-example)
-    - [How do I use the theme?](#how-do-i-use-the-theme)
-    - [How can I get help?](#how-can-i-get-help)
-    - [Can I contribute?](#can-i-contribute)
+  - [How do I do layout in this new world?](#how-do-i-do-layout-in-this-new-world)
+  - [How do I do responsive styles?](#how-do-i-do-responsive-styles)
+  - [How do I change the font size?](#how-do-i-change-the-font-size)
+  - [How do I add spacing to elements?](#how-do-i-add-spacing-to-elements)
+  - [What’s a good usage example?](#whats-a-good-usage-example)
+  - [How do I use the theme?](#how-do-i-use-the-theme)
+  - [How can I get help?](#how-can-i-get-help)
+  - [Can I contribute?](#can-i-contribute)
 - [Helpful resources](#helpful-resources)
   - [General](#general)
   - [Accessibility](#accessibility-1)
@@ -215,4 +213,3 @@ Yes, refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on adding ne
 - [A11Y project](https://a11yproject.com)
 - [MDN accessibility docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 - [Accessible UI components for the web article](https://medium.com/@addyosmani/accessible-ui-components-for-the-web-39e727101a67)
-

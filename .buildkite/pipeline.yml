@@ -8,15 +8,16 @@
 
 .deploy_defaults: &deploy_defaults
   <<: *defaults
-  branches: master
+  # branches: master
   concurrency: 1
   concurrency_group: roo-ui/publish
 
 env:
+  APPLICATION: roo-ui
   BUILDKITE_CLEAN_CHECKOUT: true
 
 steps:
-  - name: ":docker: Build"
+  - name: ':docker: Build'
     <<: *defaults
     plugins:
       ecr#v1.1.4:
@@ -28,20 +29,20 @@ steps:
 
   - wait
 
-  - name: ":eslint: Lint"
+  - name: ':eslint: Lint'
     <<: *defaults
     command: yarn run lint
 
-  - name: ":jest: Test"
+  - name: ':jest: Test'
     <<: *defaults
     command: yarn run test
 
   - wait
 
-  - name: ":npm: Publish"
+  - name: ':npm: Release'
     <<: *deploy_defaults
-    command: scripts/publish
+    command: scripts/release
 
-  - name: ":storybook: Deploy"
+  - name: ':storybook: Deploy Storybook'
     <<: *deploy_defaults
     command: yarn deploy-storybook

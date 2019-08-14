@@ -3,7 +3,7 @@ import { withKnobs } from '@storybook/addon-knobs/react';
 import { setOptions } from '@storybook/addon-options';
 
 import 'normalize.css/normalize.css';
-import '../packages/fonts/ciutadella.css';
+import '../fonts/ciutadella.css';
 import './storybook.css';
 
 import withTheme from './withTheme';
@@ -14,7 +14,7 @@ setOptions({
   hierarchyRootSeparator: /\|/,
 });
 
-const req = require.context('../packages', true, /^((?!dist).)*.story\.js$/);
+const req = require.context('../src', true, /.*story\.js$/);
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
