@@ -14,7 +14,7 @@
     "fonts/",
     "icons/",
     "logos/",
-    "!*/icons/**/",
+    "!*/icons/*/",
     "!*.test.*",
     "!*.story.*"
   ],
