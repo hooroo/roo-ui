@@ -1,13 +1,19 @@
+# dependencies
+/node_modules
+
+# testing
 /coverage
+
+# build
+/storybook-static
 /lib
 /esm
 /assets 
 /components 
 /icons 
 /logos
-/node_modules
-/storybook-static
 
+# misc
 .DS_Store
 .env
 
