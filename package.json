@@ -31,7 +31,7 @@
     "release": "semantic-release",
     "storybook": "yarn build-icons && start-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "build-storybook": "yarn build:icons && build-storybook",
+    "build-storybook": "yarn build-icons && build-storybook",
     "generate-component": "hygen component new --path",
     "generate-entrypoint": "HYGEN_OVERWRITE=1 hygen entrypoint new --name"
   },
