@@ -9,10 +9,7 @@ const Label = styled('label', omitProps(['hidden']))`
   display: block;
   width: 100%;
 
-  ${props => props.hidden && hideVisually()}
-
-  ${textStyle}
-  ${space}
+  ${props => props.hidden && hideVisually()} ${textStyle} ${space};
 `;
 
 Label.propTypes = {

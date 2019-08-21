@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Text } from '../../../';
+
+import { Box, Text } from 'components';
 
 const CalendarWeekday = ({ children, ...rest }) => (
   <Box width={1 / 7} {...rest}>

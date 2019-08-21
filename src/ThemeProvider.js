@@ -5,7 +5,7 @@ import get from 'lodash/get';
 
 const ThemeProvider = ({ theme, children, ...otherProps }) => (
   <Provider theme={theme} {...otherProps}>
-    <>
+    <React.Fragment>
       <Global
         styles={css`
           body {
@@ -26,7 +26,7 @@ const ThemeProvider = ({ theme, children, ...otherProps }) => (
       />
 
       {children}
-    </>
+    </React.Fragment>
   </Provider>
 );
 

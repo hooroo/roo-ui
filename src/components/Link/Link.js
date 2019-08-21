@@ -19,20 +19,19 @@ const Link = styled('a', omitProps(['hidden', 'underline']))`
     outline: ${themeGet('borders.2')} ${themeGet('colors.brand.secondary')};
   }
 
-  ${color}
-  ${fontWeight}
-  ${space}
-
-  ${props => props.underline && css`
-    &, &:hover {
+  ${color} ${fontWeight} ${space} ${props =>
+  props.underline &&
+  css`
+    &,
+    &:hover {
       text-decoration: underline;
       color: inherit;
     }
-  `}
-
-  ${props => props.hidden && css`
-    ${hideVisually()}
-  `}
+  `} ${props =>
+  props.hidden &&
+  css`
+    ${hideVisually()};
+  `};
 `;
 
 Link.propTypes = {

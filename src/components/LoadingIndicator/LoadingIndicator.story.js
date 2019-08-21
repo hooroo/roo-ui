@@ -7,6 +7,4 @@ import README from './README.md';
 
 storiesOf('Components|LoadingIndicator', module)
   .addDecorator(withDocs(README))
-  .add('default', () => (
-    <LoadingIndicator />
-  ));
+  .add('default', () => <LoadingIndicator />);

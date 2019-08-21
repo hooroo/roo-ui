@@ -8,7 +8,7 @@ import memoize from 'lodash/memoize';
 // assuming root font-size is 16px
 const ONE_PX_IN_REM = 0.0625;
 
-const minusOnePx = memoize((value) => {
+const minusOnePx = memoize(value => {
   const [dimension, unit] = getValueAndUnit(value);
   switch (unit) {
     case 'em':
@@ -22,25 +22,30 @@ const minusOnePx = memoize((value) => {
 });
 
 const breakpoints = props => ({
-  xs: `@media screen and (max-width: ${minusOnePx(themeGet('breakpoints.0')(props))})`,
+  xs: `@media screen and (max-width: ${minusOnePx(
+    themeGet('breakpoints.0')(props),
+  )})`,
   sm: `@media screen and (min-width: ${themeGet('breakpoints.0')(props)})
-                     and (max-width: ${minusOnePx(themeGet('breakpoints.1')(props))})`,
+                     and (max-width: ${minusOnePx(
+                       themeGet('breakpoints.1')(props),
+                     )})`,
   md: `@media screen and (min-width: ${themeGet('breakpoints.1')(props)})
-                     and (max-width: ${minusOnePx(themeGet('breakpoints.2')(props))})`,
+                     and (max-width: ${minusOnePx(
+                       themeGet('breakpoints.2')(props),
+                     )})`,
   lg: `@media screen and (min-width: ${themeGet('breakpoints.2')(props)})`,
 });
 
-export const hidden = key => props => props[key] && css`
-  ${breakpoints(props)[key]} {
-    display: none;
-  }
-`;
+export const hidden = key => props =>
+  props[key] &&
+  css`
+    ${breakpoints(props)[key]} {
+      display: none;
+    }
+  `;
 
 const Hide = styled.div`
-  ${hidden('xs')}
-  ${hidden('sm')}
-  ${hidden('md')}
-  ${hidden('lg')}
+  ${hidden('xs')} ${hidden('sm')} ${hidden('md')} ${hidden('lg')};
 `;
 
 Hide.propTypes = {

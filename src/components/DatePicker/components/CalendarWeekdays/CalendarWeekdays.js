@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 
-import { Flex } from '../../../';
+import { Flex } from 'components';
 import CalendarWeekday from '../CalendarWeekday';
 
 const CalendarWeekdaysWrapper = styled(Flex)`
@@ -16,7 +16,9 @@ const CalendarWeekdaysWrapper = styled(Flex)`
 const CalendarWeekdays = ({ weekdayNames, month, year }) => (
   <CalendarWeekdaysWrapper>
     {weekdayNames.map((weekday, index) => (
-      <CalendarWeekday key={`${month}${year}${weekday}${index}`}> { /* eslint-disable-line react/no-array-index-key */ }
+      <CalendarWeekday key={`${month}${year}${weekday}${index}`}>
+        {' '}
+        {/* eslint-disable-line react/no-array-index-key */}
         {weekday}
       </CalendarWeekday>
     ))}

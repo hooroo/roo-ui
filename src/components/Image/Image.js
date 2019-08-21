@@ -8,14 +8,11 @@ const Image = styled.img`
   max-width: 100%;
   height: auto;
 
-  ${space}
-  ${size}
-  ${height}
-  ${width}
-
-  ${props => props.inline && css`
+  ${space} ${size} ${height} ${width} ${props =>
+  props.inline &&
+  css`
     display: inline-block;
-  `}
+  `};
 `;
 
 Image.propTypes = {

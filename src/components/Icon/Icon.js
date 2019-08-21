@@ -26,9 +26,7 @@ const getSvgPathFromTheme = (theme, name) => {
 
 const StyledSvg = styled.svg``;
 
-const Base = withTheme(({
-  name, title, size, theme, ...props
-}) => (
+const Base = withTheme(({ name, title, size, theme, ...props }) => (
   <StyledSvg
     {...props}
     viewBox="0 0 24 24"
@@ -56,8 +54,7 @@ Base.defaultProps = {
 const Icon = styled(Base)`
   vertical-align: middle;
   flex: none;
-  ${space}
-  ${color};
+  ${space} ${color};
 `;
 
 Icon.propTypes = {

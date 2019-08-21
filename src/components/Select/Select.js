@@ -26,7 +26,7 @@ const IconWrapper = styled.div`
     props.disabled &&
     css`
       opacity: ${themeGet('opacity.disabled')(props)};
-    `}
+    `};
 `;
 
 const Base = props => (

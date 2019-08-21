@@ -3,9 +3,7 @@ import { themeGet, space, borders, borderColor } from 'styled-system';
 
 const ListItem = styled.li`
   margin: 0 0 ${themeGet('space.4')};
-  ${space}
-  ${borders}
-  ${borderColor}
+  ${space} ${borders} ${borderColor};
 `;
 
 ListItem.displayName = 'ListItem';

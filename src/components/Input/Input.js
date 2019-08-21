@@ -15,14 +15,7 @@ import {
 import omitProps from '../omitProps';
 
 const Input = styled('input', omitProps(['color', 'fontSize']))`
-  ${space}
-  ${color}
-  ${fontSize}
-  ${lineHeight}
-  ${border}
-  ${borderColor}
-  ${textAlign}
-  display: block;
+  ${space} ${color} ${fontSize} ${lineHeight} ${border} ${borderColor} ${textAlign} display: block;
   width: 100%;
   outline: 0;
   transition: border-color ${themeGet('transitions.default')};
@@ -52,13 +45,11 @@ const Input = styled('input', omitProps(['color', 'fontSize']))`
       border: none;
       border-bottom: ${themeGet('borders.2')(props)};
       border-color: ${themeGet('colors.greys.alto')(props)};
-    `}
-
-  ${props =>
-    props.error &&
-    css`
-      border-color: ${themeGet('colors.ui.error')(props)};
-    `}
+    `} ${props =>
+  props.error &&
+  css`
+    border-color: ${themeGet('colors.ui.error')(props)};
+  `};
 `;
 
 Input.propTypes = {

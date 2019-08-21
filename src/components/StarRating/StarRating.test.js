@@ -11,28 +11,36 @@ describe('<StarRating />', () => {
   it('renders the icons', () => {
     rating = '1';
     ratingType = 'SELF_RATED';
-    const wrapper = shallow(<StarRating rating={rating} ratingType={ratingType} size="16" />);
+    const wrapper = shallow(
+      <StarRating rating={rating} ratingType={ratingType} size="16" />,
+    );
     const stars = wrapper.find('Icon');
     expect(stars.length).toBe(5);
   });
 
   it('renders correctly', () => {
-    const wrapper = shallow(<StarRating rating={rating} ratingType={ratingType} size="16" />);
+    const wrapper = shallow(
+      <StarRating rating={rating} ratingType={ratingType} size="16" />,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
   it('has no accessibility errors', async () => {
-    const wrapper = shallow(<StarRating rating={rating} ratingType={ratingType} size="16" />);
+    const wrapper = shallow(
+      <StarRating rating={rating} ratingType={ratingType} size="16" />,
+    );
     expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 
-  ['AAA', 'SELF_RATED'].forEach((type) => {
+  ['AAA', 'SELF_RATED'].forEach(type => {
     describe(`${type} Rated <StarRating />`, () => {
-      const ratingTypeIcon = (type === 'AAA') ? 'star' : 'circle';
+      const ratingTypeIcon = type === 'AAA' ? 'star' : 'circle';
 
       it('renders the 5 star rating', () => {
         rating = '5';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}`);
@@ -43,7 +51,9 @@ describe('<StarRating />', () => {
 
       it('renders the 4.5 star rating', () => {
         rating = '4.5';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}`);
@@ -54,7 +64,9 @@ describe('<StarRating />', () => {
 
       it('renders the 4 star rating', () => {
         rating = '4';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}`);
@@ -65,7 +77,9 @@ describe('<StarRating />', () => {
 
       it('renders the 3.5 star rating', () => {
         rating = '3.5';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}`);
@@ -76,7 +90,9 @@ describe('<StarRating />', () => {
 
       it('renders the 3 star rating', () => {
         rating = '3';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}`);
@@ -87,7 +103,9 @@ describe('<StarRating />', () => {
 
       it('renders the 2.5 star rating', () => {
         rating = '2.5';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}`);
@@ -98,7 +116,9 @@ describe('<StarRating />', () => {
 
       it('renders the 2 star rating', () => {
         rating = '2';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}`);
@@ -109,7 +129,9 @@ describe('<StarRating />', () => {
 
       it('renders the 1.5 star rating', () => {
         rating = '1.5';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}Half`);
@@ -120,7 +142,9 @@ describe('<StarRating />', () => {
 
       it('renders the 1 star rating', () => {
         rating = '1';
-        const wrapper = shallow(<StarRating rating={rating} ratingType={type} size="16" />);
+        const wrapper = shallow(
+          <StarRating rating={rating} ratingType={type} size="16" />,
+        );
         const stars = wrapper.find('Icon');
         expect(stars.at(0).prop('name')).toEqual(`${ratingTypeIcon}`);
         expect(stars.at(1).prop('name')).toEqual(`${ratingTypeIcon}Border`);

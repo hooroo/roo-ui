@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { maxWidth, space, themeGet } from 'styled-system';
 
-const gutter = (props) => {
+const gutter = props => {
   const gutterValue = themeGet(`gutters.${props.gutter}`, props.gutter)(props);
 
   const gutterStyles = unit => ({
@@ -24,8 +24,7 @@ const gutter = (props) => {
     }
 
     return {
-      [themeGet(`mediaQueries.${index - 1}`)(props)]:
-        gutterStyles(value),
+      [themeGet(`mediaQueries.${index - 1}`)(props)]: gutterStyles(value),
     };
   });
 };
@@ -35,16 +34,16 @@ const Container = styled.div`
   margin-right: auto;
   width: 100%;
 
-  ${maxWidth}
-  ${gutter}
-  ${space}
+  ${maxWidth} ${gutter} ${space};
 `;
 
 Container.propTypes = {
   gutter: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
-    PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])),
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    ),
   ]),
   ...maxWidth.propTypes,
   ...space.propTypes,

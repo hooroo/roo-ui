@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 
-import { Flex, NakedButton, Icon } from '../../../';
+import { Flex, NakedButton, Icon } from 'components';
 
 const Wrapper = styled(Flex)`
   width: 100%;

@@ -5,8 +5,8 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { darken } from 'polished';
 
-import { NakedButton, Box } from '../../../';
-import omitProps from '../../../omitProps';
+import { NakedButton, Box } from 'components';
+import omitProps from 'components/omitProps';
 
 const DayWrapper = styled(Box, omitProps(['selected']))`
   flex: 1 1 auto;
@@ -16,7 +16,7 @@ const DayWrapper = styled(Box, omitProps(['selected']))`
   border: ${themeGet('borders.1')} transparent;
 
   &:after {
-    content: "";
+    content: '';
     display: block;
     padding-bottom: 100%;
   }
@@ -114,7 +114,7 @@ const Button = styled(NakedButton, omitProps(['selected']))`
         background-color: ${themeGet('colors.white')(props)};
         border-color: ${themeGet('colors.brand.secondary')(props)};
       }
-      `};
+    `};
 
   ${props =>
     !props.selectable &&
@@ -136,7 +136,9 @@ Button.defaultProps = {
 
 export const CalendarDay = ({ children, selected, ...rest }) => (
   <DayWrapper selected={selected}>
-    <Button selected={selected} {...rest}>{children}</Button>
+    <Button selected={selected} {...rest}>
+      {children}
+    </Button>
   </DayWrapper>
 );
 

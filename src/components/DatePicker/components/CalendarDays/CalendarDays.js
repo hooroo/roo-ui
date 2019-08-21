@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import isEqual from 'lodash/isEqual';
 
-import { Flex } from '../../../';
+import { Flex } from 'components';
 import { CalendarDay, CalendarEmptyDay } from '../CalendarDay';
 
 const CalendarDaysWrapper = styled(Flex)`
@@ -12,9 +12,15 @@ const CalendarDaysWrapper = styled(Flex)`
   margin-right: 2px;
 `;
 
-const getCustomDateProps = (disabledDates, interactiveDisabledDates, isInRange, day) => {
-  const isDisabled = disabledDates
-    .some(disabledDate => isEqual(String(disabledDate), String(day.date)));
+const getCustomDateProps = (
+  disabledDates,
+  interactiveDisabledDates,
+  isInRange,
+  day,
+) => {
+  const isDisabled = disabledDates.some(disabledDate =>
+    isEqual(String(disabledDate), String(day.date)),
+  );
 
   const props = {
     selected: day.selected || (interactiveDisabledDates && day.selectable),
@@ -32,31 +38,43 @@ const getCustomDateProps = (disabledDates, interactiveDisabledDates, isInRange, 
 };
 
 const CalendarDays = ({
-  weeks, month, year, getDateProps, disabledDates, interactiveDisabledDates,
-  onMouseEnterOfDay, isInRange,
+  weeks,
+  month,
+  year,
+  getDateProps,
+  disabledDates,
+  interactiveDisabledDates,
+  onMouseEnterOfDay,
+  isInRange,
 }) => (
   <CalendarDaysWrapper>
     {weeks.map(week =>
-        week.map((day, index) => {
-          if (!day) {
-            return (
-              <CalendarEmptyDay key={`${year}${month}${index}`} /> // eslint-disable-line react/no-array-index-key
-            );
-          }
-
+      week.map((day, index) => {
+        if (!day) {
           return (
-            <CalendarDay
-              key={`${year}${month}${index}`} // eslint-disable-line react/no-array-index-key
-              {...getDateProps({
-                dateObj: day,
-                onMouseEnter: () => onMouseEnterOfDay(day),
-              })}
-              {...getCustomDateProps(disabledDates, interactiveDisabledDates, isInRange, day)}
-            >
-              {day.date.getDate()}
-            </CalendarDay>
+            <CalendarEmptyDay key={`${year}${month}${index}`} /> // eslint-disable-line react/no-array-index-key
           );
-        }))}
+        }
+
+        return (
+          <CalendarDay
+            key={`${year}${month}${index}`} // eslint-disable-line react/no-array-index-key
+            {...getDateProps({
+              dateObj: day,
+              onMouseEnter: () => onMouseEnterOfDay(day),
+            })}
+            {...getCustomDateProps(
+              disabledDates,
+              interactiveDisabledDates,
+              isInRange,
+              day,
+            )}
+          >
+            {day.date.getDate()}
+          </CalendarDay>
+        );
+      }),
+    )}
   </CalendarDaysWrapper>
 );
 
