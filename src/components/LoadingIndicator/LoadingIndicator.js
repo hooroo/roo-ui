@@ -16,11 +16,11 @@ const bounce = keyframes`
   40% { transform: scale(1.0) }
 `;
 
-const parseDelay = (delay) => {
+const parseDelay = delay => {
   if (typeof delay === 'number') {
-    return (`${delay}ms`);
+    return `${delay}ms`;
   }
-  return (delay);
+  return delay;
 };
 
 const Bouncers = styled(Box)`
@@ -31,7 +31,7 @@ const Bouncers = styled(Box)`
   display: flex;
   justify-content: space-around;
 
-  ${width}
+  ${width};
 `;
 
 const Bouncer = styled.div`
@@ -39,15 +39,20 @@ const Bouncer = styled.div`
   border-radius: 100%;
   display: inline-block;
 
-  &:nth-of-type(1) { animation-delay: -0.32s; }
-  &:nth-of-type(2) { animation-delay: -0.16s; }
-  &:nth-of-type(3) { animation-delay: 0; }
+  &:nth-of-type(1) {
+    animation-delay: -0.32s;
+  }
+  &:nth-of-type(2) {
+    animation-delay: -0.16s;
+  }
+  &:nth-of-type(3) {
+    animation-delay: 0;
+  }
 
-  ${color}
-  ${size}
+  ${color} ${size};
 `;
 
-const LoadingIndicator = (props) => {
+const LoadingIndicator = props => {
   const delay = parseDelay(props.delay);
 
   return (

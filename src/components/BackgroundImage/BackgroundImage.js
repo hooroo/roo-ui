@@ -15,12 +15,7 @@ const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-image: url(${props => props.src});
 
-  ${height}
-  ${width}
-  ${space}
-  ${backgroundSize}
-  ${backgroundPosition}
-  ${backgroundRepeat}
+  ${height} ${width} ${space} ${backgroundSize} ${backgroundPosition} ${backgroundRepeat};
 `;
 
 BackgroundImage.propTypes = {

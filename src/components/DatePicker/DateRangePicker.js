@@ -6,14 +6,7 @@ import startOfDay from 'date-fns/start_of_day';
 import endOfDay from 'date-fns/end_of_day';
 import isSameDay from 'date-fns/is_same_day';
 import throttle from 'lodash/fp/throttle';
-
-let Dayzed;
-
-try {
-  Dayzed = require('dayzed');
-} catch (error) {
-  console.error('`dayzed` is required to use the <DatePicker /> component');
-}
+import Dayzed from 'dayzed';
 
 import { Flex, Box } from '../';
 

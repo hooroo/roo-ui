@@ -1,14 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import subDays from 'date-fns/sub_days';
-
-let Dayzed;
-
-try {
-  Dayzed = require('dayzed');
-} catch (error) {
-  console.error('"dayzed" is required to use the <DatePicker /> component');
-}
+import Dayzed from 'dayzed';
 
 import { Flex, Box } from '../';
 

@@ -16,24 +16,26 @@ const ListBase = styled('div')`
   margin: ${themeGet('space.4')} 0;
   padding-left: ${themeGet('space.8')};
 
-  ${props => (props.flush || props.columns) && css`
-    list-style-position: inside;
-    padding-left: 0;
-  `}
+  ${props =>
+    (props.flush || props.columns) &&
+    css`
+      list-style-position: inside;
+      padding-left: 0;
+    `} ${props =>
+    props.columns &&
+    css`
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -${themeGet('space.2')(props)};
+      margin-right: -${themeGet('space.2')(props)};
 
-  ${props => props.columns && css`
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -${themeGet('space.2')(props)};
-    margin-right: -${themeGet('space.2')(props)};
+      ${ListItem} {
+        flex: 1 1;
+        padding: 0 ${themeGet('space.2')(props)};
 
-    ${ListItem} {
-      flex: 1 1;
-      padding: 0 ${themeGet('space.2')(props)};
-
-      ${columns(props)};
-    }
-  `};
+        ${columns(props)};
+      }
+    `};
 `;
 
 const List = props => <ListBase {...props} as={props.ordered ? 'ol' : 'ul'} />;

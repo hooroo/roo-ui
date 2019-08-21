@@ -25,30 +25,8 @@ import {
 import styled from '@emotion/styled';
 import omitProps from '../omitProps';
 
-
 const Box = styled('div', omitProps())`
-  ${display}
-  ${space}
-  ${width}
-  ${minWidth}
-  ${maxWidth}
-  ${height}
-  ${minHeight}
-  ${maxHeight}
-  ${color}
-  ${textAlign}
-  ${boxShadow}
-  ${borderRadius}
-  ${borders}
-  ${borderColor}
-  ${flexBasis}
-  ${flex}
-  ${position}
-  ${zIndex}
-  ${top}
-  ${right}
-  ${bottom}
-  ${left}
+  ${display} ${space} ${width} ${minWidth} ${maxWidth} ${height} ${minHeight} ${maxHeight} ${color} ${textAlign} ${boxShadow} ${borderRadius} ${borders} ${borderColor} ${flexBasis} ${flex} ${position} ${zIndex} ${top} ${right} ${bottom} ${left};
 `;
 
 Box.propTypes = {

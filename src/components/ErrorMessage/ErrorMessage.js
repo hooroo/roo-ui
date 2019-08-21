@@ -21,39 +21,41 @@ const ErrorMessage = styled(Text)`
     border-width: ${rem('10px')};
   }
 
-  ${props => props.arrow === 'top' && css`
-    &:after {
-      bottom: 100%;
-      left: ${themeGet('space.3')(props)};
-      border-bottom-color: ${themeGet('colors.ui.errorBackground')(props)};
-    }
-  `}
-
-  ${props => props.arrow === 'left' && css`
+  ${props =>
+    props.arrow === 'top' &&
+    css`
+      &:after {
+        bottom: 100%;
+        left: ${themeGet('space.3')(props)};
+        border-bottom-color: ${themeGet('colors.ui.errorBackground')(props)};
+      }
+    `} ${props =>
+  props.arrow === 'left' &&
+  css`
     &:after {
       top: 50%;
       right: 100%;
       transform: translateY(-50%);
       border-right-color: ${themeGet('colors.ui.errorBackground')(props)};
     }
-  `}
-
-  ${props => props.arrow === 'right' && css`
+  `} ${props =>
+  props.arrow === 'right' &&
+  css`
     &:after {
       top: 50%;
       left: 100%;
       transform: translateY(-50%);
       border-left-color: ${themeGet('colors.ui.errorBackground')(props)};
     }
-  `}
-
-  ${props => props.arrow === 'bottom' && css`
+  `} ${props =>
+  props.arrow === 'bottom' &&
+  css`
     &:after {
       top: 100%;
       left: ${themeGet('space.3')};
       border-top-color: ${themeGet('colors.ui.errorBackground')(props)};
     }
-  `}
+  `};
 `;
 
 ErrorMessage.propTypes = {
@@ -66,4 +68,3 @@ ErrorMessage.defaultProps = {
 };
 
 export default ErrorMessage;
-

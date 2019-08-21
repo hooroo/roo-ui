@@ -3,17 +3,19 @@ import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { Box, Text } from '../../../';
+
+import { Box, Text } from 'components';
 import CalendarWeekdays from '../CalendarWeekdays';
 import CalendarDays from '../CalendarDays';
-import omitProps from '../../../omitProps';
+import omitProps from 'components/omitProps';
 
 const MonthWrapper = styled(Box, omitProps(['monthsToDisplay', 'stacked']))`
   text-align: center;
   padding: 0 ${themeGet('space.4')};
   width: ${props => `${100 / props.monthsToDisplay}%`};
 
-  ${props => props.stacked &&
+  ${props =>
+    props.stacked &&
     css`
       width: 100%;
       margin-top: ${themeGet('space.8')(props)};
@@ -27,9 +29,18 @@ const MonthWrapper = styled(Box, omitProps(['monthsToDisplay', 'stacked']))`
 MonthWrapper.displayName = 'MonthWrapper';
 
 const CalendarMonth = ({
-  monthsToDisplay, month, monthName, year, stacked, weekdayNames,
-  weeks, getDateProps, disabledDates, interactiveDisabledDates,
-  onMouseEnterOfDay, isInRange,
+  monthsToDisplay,
+  month,
+  monthName,
+  year,
+  stacked,
+  weekdayNames,
+  weeks,
+  getDateProps,
+  disabledDates,
+  interactiveDisabledDates,
+  onMouseEnterOfDay,
+  isInRange,
 }) => (
   <MonthWrapper monthsToDisplay={monthsToDisplay} stacked={stacked}>
     <Text textStyle="caps">

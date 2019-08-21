@@ -10,44 +10,50 @@ storiesOf('Components|Alert', module)
   .addDecorator(withDocs(README))
   .add('<Alert />', () => (
     <Alert contained={boolean('Contained', false)} icon={{ name: 'hotel' }}>
-      <strong>Hello world</strong><br />
+      <strong>Hello world</strong>
+      <br />
       Lorem ipsum dolor sit amet
     </Alert>
   ))
   .add('<Alert.info />', () => (
     <Alert.info onClose={() => {}}>
-      <strong>Info</strong><br />
+      <strong>Info</strong>
+      <br />
       Lorem ipsum dolor sit amet
     </Alert.info>
   ))
   .add('<Alert.success />', () => (
     <Alert.success onClose={() => {}}>
-      <strong>Success</strong><br />
+      <strong>Success</strong>
+      <br />
       Lorem ipsum dolor sit amet
     </Alert.success>
   ))
   .add('<Alert.error />', () => (
     <Alert.error onClose={() => {}}>
-      <strong>Error</strong><br />
+      <strong>Error</strong>
+      <br />
       Lorem ipsum dolor sit amet
     </Alert.error>
   ))
   .add('<Alert variant="info" />', () => (
     <Alert variant="info" onClose={() => {}}>
-      <strong>Info</strong><br />
+      <strong>Info</strong>
+      <br />
       Lorem ipsum dolor sit amet
     </Alert>
   ))
   .add('<Alert variant="success" />', () => (
     <Alert variant="success" onClose={() => {}}>
-      <strong>Success</strong><br />
+      <strong>Success</strong>
+      <br />
       Lorem ipsum dolor sit amet
     </Alert>
   ))
   .add('<Alert variant="error" />', () => (
     <Alert variant="error" onClose={() => {}}>
-      <strong>Error</strong><br />
+      <strong>Error</strong>
+      <br />
       Lorem ipsum dolor sit amet
     </Alert>
   ));
-

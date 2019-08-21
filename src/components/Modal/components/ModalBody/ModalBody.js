@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Box, Text } from '../../..';
+import { Box, Text } from 'components';
 
 const ModalBody = ({ children, ...props }) => (
   <Box {...props}>

@@ -1,5 +1,13 @@
 import styled from '@emotion/styled';
-import { style, space, verticalAlign, textAlign, themeGet, color, textStyle } from 'styled-system';
+import {
+  style,
+  space,
+  verticalAlign,
+  textAlign,
+  themeGet,
+  color,
+  textStyle,
+} from 'styled-system';
 
 const textDecoration = style({
   prop: 'textDecoration',
@@ -25,8 +33,8 @@ const NakedButton = styled('button')`
     outline: ${themeGet('borders.2')} ${themeGet('colors.brand.secondary')};
   }
 
-  &:hover{
-    ${hoverColor}
+  &:hover {
+    ${hoverColor};
   }
 
   &:disabled {
@@ -35,15 +43,10 @@ const NakedButton = styled('button')`
   }
 
   &:hover:disabled {
-    ${color}
+    ${color};
   }
 
-  ${space}
-  ${verticalAlign}
-  ${textAlign}
-  ${color}
-  ${textStyle}
-  ${textDecoration}
+  ${space} ${verticalAlign} ${textAlign} ${color} ${textStyle} ${textDecoration};
 `;
 
 NakedButton.propTypes = {

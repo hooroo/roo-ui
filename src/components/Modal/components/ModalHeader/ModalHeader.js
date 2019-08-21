@@ -3,14 +3,9 @@ import PropTypes from 'prop-types';
 import { withTheme } from 'emotion-theming';
 import { themeGet } from 'styled-system';
 
-import { Text, Flex, Box, Icon } from '../../..';
+import { Text, Flex, Box, Icon } from 'components';
 
-const ModalHeader = withTheme(({
-  theme,
-  variant,
-  children,
-  ...props
-}) => {
+const ModalHeader = withTheme(({ theme, variant, children, ...props }) => {
   const { icon, bg } = {
     ...themeGet(`alertStyles.${variant}`)({ theme }),
     ...props,

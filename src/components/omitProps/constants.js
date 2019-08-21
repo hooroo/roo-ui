@@ -95,5 +95,6 @@ export const KNOWN_STYLED_SYSTEM_PROPS = [
   'variant',
 ];
 
-export const VALID_STYLED_SYSTEM_PROPS =
-  KNOWN_STYLED_SYSTEM_PROPS.filter(name => isPropValid(name));
+export const VALID_STYLED_SYSTEM_PROPS = KNOWN_STYLED_SYSTEM_PROPS.filter(
+  name => isPropValid(name),
+);

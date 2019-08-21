@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Flex } from '../../..';
+import { Flex } from 'components';
 
 const ModalFooter = ({ children, ...props }) => (
-  <Flex {...props}>
-    {children}
-  </Flex>
+  <Flex {...props}>{children}</Flex>
 );
 
 ModalFooter.displayName = 'Modal.footer';
