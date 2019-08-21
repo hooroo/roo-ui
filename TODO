@@ -6,3 +6,4 @@
 - [ ] Prune dependencies
 - [ ] Clean up random lib code
 - [ ] Peer deps
+- [ ] Check polished is tree shaken
