@@ -6,6 +6,7 @@
 /icons 
 /logos
 /node_modules
+/storybook-static
 
 .DS_Store
 .env
