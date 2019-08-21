@@ -1,12 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Dayzed from 'dayzed';
 import subDays from 'date-fns/sub_days';
 import differenceInCalendarMonths from 'date-fns/difference_in_calendar_months';
 import startOfDay from 'date-fns/start_of_day';
 import endOfDay from 'date-fns/end_of_day';
 import isSameDay from 'date-fns/is_same_day';
 import throttle from 'lodash/fp/throttle';
+
+let Dayzed;
+
+try {
+  Dayzed = require('dayzed');
+} catch (error) {
+  console.error('`dayzed` is required to use the <DatePicker /> component');
+}
 
 import { Flex, Box } from '../';
 
@@ -51,17 +58,20 @@ class DateRangePicker extends React.Component {
 
   onMouseLeaveOfCalendar = () => this.setState({ hoveredDate: null });
 
-  onMouseEnterOfDay = throttled((hoveredDate) => {
+  onMouseEnterOfDay = throttled(hoveredDate => {
     if (this.state.startDate && !this.state.endDate) {
       this.setState({ hoveredDate: hoveredDate.date });
     }
-  })
+  });
 
   onDateSelected = ({ selectable, date }) => {
     if (!selectable) return;
 
     const {
-      startDate, endDate, isSettingStartDate, isSettingEndDate,
+      startDate,
+      endDate,
+      isSettingStartDate,
+      isSettingEndDate,
     } = this.state;
 
     if (!startDate || isSettingStartDate) {
@@ -82,9 +92,9 @@ class DateRangePicker extends React.Component {
     if (startDate && endDate && onRangeSelected) {
       onRangeSelected({ startDate, endDate });
     }
-  }
+  };
 
-  selectStartDate = (startDate) => {
+  selectStartDate = startDate => {
     const endDate = startDate <= this.state.endDate ? this.state.endDate : null;
     const endDateRequiresSelection = endDate === null;
 
@@ -97,7 +107,7 @@ class DateRangePicker extends React.Component {
     });
   };
 
-  selectEndDate = (date) => {
+  selectEndDate = date => {
     if (date <= this.state.startDate) {
       this.resetWithStartDate(date);
     } else {
@@ -109,7 +119,7 @@ class DateRangePicker extends React.Component {
     }
   };
 
-  resetWithStartDate = (startDate) => {
+  resetWithStartDate = startDate => {
     this.setState({
       startDate,
       endDate: null,
@@ -119,14 +129,16 @@ class DateRangePicker extends React.Component {
     });
   };
 
-  isInRange = (date) => {
-    const {
-      startDate, endDate, isSettingStartDate, hoveredDate,
-    } = this.state;
+  isInRange = date => {
+    const { startDate, endDate, isSettingStartDate, hoveredDate } = this.state;
     return isDateInRange({
-      startDate, endDate, isSettingStartDate, hoveredDate, date,
+      startDate,
+      endDate,
+      isSettingStartDate,
+      hoveredDate,
+      date,
     });
-  }
+  };
 
   render() {
     const {
@@ -152,42 +164,42 @@ class DateRangePicker extends React.Component {
         onDateSelected={this.onDateSelected}
         onOffsetChanged={this.onOffsetChanged}
         render={({
-            calendars,
-            getBackProps,
-            getForwardProps,
-            getDateProps,
-          }) => {
-            if (!calendars.length) return null;
+          calendars,
+          getBackProps,
+          getForwardProps,
+          getDateProps,
+        }) => {
+          if (!calendars.length) return null;
 
-            return (
-              <Box onMouseLeave={this.onMouseLeaveOfCalendar} position="relative">
-                <CalendarNav
-                  prevProps={getBackProps({ calendars })}
-                  nextProps={getForwardProps({ calendars })}
-                />
+          return (
+            <Box onMouseLeave={this.onMouseLeaveOfCalendar} position="relative">
+              <CalendarNav
+                prevProps={getBackProps({ calendars })}
+                nextProps={getForwardProps({ calendars })}
+              />
 
-                <Flex flexWrap="wrap">
-                  {calendars.map(calendar => (
-                    <CalendarMonth
-                      key={`${calendar.month}${calendar.year}`}
-                      monthsToDisplay={monthsToDisplay}
-                      monthName={monthNames[calendar.month]}
-                      month={calendar.month}
-                      year={calendar.year}
-                      stacked={stacked}
-                      weekdayNames={weekdayNames}
-                      weeks={calendar.weeks}
-                      getDateProps={getDateProps}
-                      disabledDates={disabledDates}
-                      interactiveDisabledDates={interactiveDisabledDates}
-                      onMouseEnterOfDay={this.onMouseEnterOfDay}
-                      isInRange={this.isInRange}
-                    />
-                  ))}
-                </Flex>
-              </Box>
-            );
-          }}
+              <Flex flexWrap="wrap">
+                {calendars.map(calendar => (
+                  <CalendarMonth
+                    key={`${calendar.month}${calendar.year}`}
+                    monthsToDisplay={monthsToDisplay}
+                    monthName={monthNames[calendar.month]}
+                    month={calendar.month}
+                    year={calendar.year}
+                    stacked={stacked}
+                    weekdayNames={weekdayNames}
+                    weeks={calendar.weeks}
+                    getDateProps={getDateProps}
+                    disabledDates={disabledDates}
+                    interactiveDisabledDates={interactiveDisabledDates}
+                    onMouseEnterOfDay={this.onMouseEnterOfDay}
+                    isInRange={this.isInRange}
+                  />
+                ))}
+              </Flex>
+            </Box>
+          );
+        }}
       />
     );
   }
@@ -199,7 +211,20 @@ DateRangePicker.defaultProps = {
   stacked: false,
   minDate: subDays(new Date(), 1),
   disabledDates: [],
-  monthNames: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  monthNames: [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ],
   weekdayNames: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
   interactiveDisabledDates: false,
   initialStartDate: null,
