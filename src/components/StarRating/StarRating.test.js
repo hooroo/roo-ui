@@ -15,7 +15,7 @@ describe('<StarRating />', () => {
       <StarRating rating={rating} ratingType={ratingType} size="16" />,
     );
     const stars = wrapper.find('Icon');
-    expect(stars.length).toBe(5);
+    expect(stars).toHaveLength(5);
   });
 
   it('renders correctly', () => {
