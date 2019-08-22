@@ -4,7 +4,7 @@
 
 Qantas Hotels' library of accessible React components and assets.
 
-To see what’s available, check out roo-ui's [storybook](https://hooroo.github.io/roo-ui), or [browse packages](https://github.com/hooroo/roo-ui/tree/master/packages).
+To see what’s available, check out roo-ui's [storybook](https://hooroo.github.io/roo-ui).
 If you want to jump in and and play around with the project check out [Roo UI playground](https://github.com/hooroo/roo-ui-playground)—it’s setup so you can start using it straight away.
 
 ## Contents
@@ -19,9 +19,9 @@ If you want to jump in and and play around with the project check out [Roo UI pl
 
 ## About the project
 
-Roo UI is built with [Styled Components](https://www.styled-components.com/) which is a CSS-in-JS library. We use [Styled System](https://jxnblk.com/styled-system) which allows us to pass props which style components. These props reference values from the [theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js). Alongside these tools we use [Polished](https://github.com/styled-components/polished) for CSS helper functions.
+Roo UI is built with [Styled Components](https://www.styled-components.com/) which is a CSS-in-JS library. We use [Styled System](https://jxnblk.com/styled-system) which allows us to pass props which style components. These props reference values from the [theme](https://github.com/hooroo/roo-ui/blob/master/src/theme.js). Alongside these tools we use [Polished](https://github.com/styled-components/polished) for CSS helper functions.
 
-When using styled-components, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using a function called [`styledOmitProps`](https://github.com/hooroo/roo-ui/tree/master/packages/components/src/styledOmitProps/styledOmitProps.js). Using this, we can supply an `omit` array argument which prevents specified props from making there way to the DOM.
+When using styled-components, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using a function called [`styledOmitProps`](https://github.com/hooroo/roo-ui/tree/master/src/components/styledOmitProps/styledOmitProps.js). Using this, we can supply an `omit` array argument which prevents specified props from making there way to the DOM.
 
 ### Supported devices
 
@@ -33,13 +33,11 @@ Being under the Qantas umbrella we are required to meet AA compliance.
 
 ## Installation
 
-Each package and component in roo-ui is available as a package on npm, and can be installed with Yarn or npm:
+Roo UI is available as a package on npm, and can be installed with Yarn or npm:
 
 ```sh
 $ yarn add roo-ui
 ```
-
-To see what packages are available, check out [Roo UI's storybook](http://hooroo.github.io/roo-ui/), or browse [packages](./packages).
 
 ### Peer dependencies
 
@@ -87,7 +85,7 @@ import 'roo-ui/fonts/ciutadella.css';
 
 SVG icon paths are accessed from your apps theme (`theme.icons[iconName].path`).
 
-A default set of icons are included in the base [qantas theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js).
+A default set of icons are included in the [base theme](https://github.com/hooroo/roo-ui/blob/master/src/theme.js).
 
 To add more icons, import them from `roo-ui/icons` and include them in your apps theme.
 
@@ -166,7 +164,7 @@ You’ll most likely need to use these three components: `Container`, `Box` and 
 
 In your app you can use media queries as you would have in the past.
 
-We also provide a [Hide](https://github.com/hooroo/roo-ui/blob/master/packages/components/src/Hide/Hide.js) component which you can wrap around components you would like to hide. It accepts props to hide its children at different screen sizes.
+We also provide a [Hide](https://github.com/hooroo/roo-ui/blob/master/src/components/Hide/Hide.js) component which you can wrap around components you would like to hide. It accepts props to hide its children at different screen sizes.
 
 #### How do I change the font size?
 
@@ -180,7 +178,7 @@ The theme is setup to use a 4px grid under the `space` key. Where `space.0` is `
 
 #### What’s a good usage example?
 
-[`StarRating`](https://github.com/hooroo/roo-ui/blob/master/packages/components/src/StarRating/StarRating.js), [`Modal`](https://github.com/hooroo/roo-ui/tree/master/packages/components/src/Modal) and [`DatePicker`](https://github.com/hooroo/roo-ui/tree/master/packages/components/src/DatePicker) are good examples of composing components together.
+[`StarRating`](https://github.com/hooroo/roo-ui/blob/master/src/components/StarRating/StarRating.js), [`Modal`](https://github.com/hooroo/roo-ui/tree/master/src/components/Modal) and [`DatePicker`](https://github.com/hooroo/roo-ui/tree/master/src/components/DatePicker) are good examples of composing components together.
 
 #### How do I use the theme?
 
@@ -198,14 +196,14 @@ There's a few different ways. Chat to any of the contributors, pop a question in
 
 #### Can I contribute?
 
-Yes, refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on adding new packages, or improving existing packages. Browse the issues and pick one up or send a pull request for a new package or asset.
+Yes, refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions. Browse the issues and pick one up or send a pull request for a new component or asset.
 
 ## Helpful resources
 
 ### General
 
 - [Styled System API table reference](http://jxnblk.com/styled-system/table)
-- [Qantas theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js)
+- [Theme](https://github.com/hooroo/roo-ui/blob/master/src/theme.js)
 
 ### Accessibility
 
