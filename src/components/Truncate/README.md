@@ -5,17 +5,15 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Truncate } from '@roo-ui/components';
+import { Truncate } from 'roo-ui/components';
 
-export default (
-  <Truncate>Hello world</Truncate>
-);
+export default <Truncate>Hello world</Truncate>;
 ```
 
 ## Customization

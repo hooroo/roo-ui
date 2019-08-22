@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { StarRating } from '@roo-ui/components';
+import { StarRating } from 'roo-ui/components';
 
 export default <StarRating />;
 ```

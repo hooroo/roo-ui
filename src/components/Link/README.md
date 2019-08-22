@@ -5,34 +5,30 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Link } from '@roo-ui/components';
+import { Link } from 'roo-ui/components';
 
-export default (
-  <Link>Hello world</Link>
-);
+export default <Link>Hello world</Link>;
 ```
 
 ### With [React Router](https://reacttraining.com/react-router/)
 
 ```js
 import { Link as RouterLink } from 'react-router-dom';
-import { Link } from '@roo-ui/components';
+import { Link } from 'roo-ui/components';
 
-export default (
-  <Link is={RouterLink}>Hello world</Link>
-);
+export default <Link is={RouterLink}>Hello world</Link>;
 ```
 
 ## Properties
 
 | Name     | Description        | Type   | Default | Required? |
-|:---------|:-------------------|:-------|:--------|:----------|
+| :------- | :----------------- | :----- | :------ | :-------- |
 | `hidden` | visually hidden    | `bool` | false   | -         |
 | `inline` | inherit font color | `bool` | false   | -         |
 

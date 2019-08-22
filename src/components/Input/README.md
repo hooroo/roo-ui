@@ -5,23 +5,21 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Input } from '@roo-ui/components';
+import { Input } from 'roo-ui/components';
 
-export default (
-  <Input placeholder="Hello world" />
-);
+export default <Input placeholder="Hello world" />;
 ```
 
 ## Properties
 
 | Name    | Description        | Type   | Default | Required? |
-|:--------|:-------------------|:-------|:--------|:----------|
+| :------ | :----------------- | :----- | :------ | :-------- |
 | `error` | render error style | `bool` | false   | -         |
 
 ## Customization

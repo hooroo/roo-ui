@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Box, Label, Checkbox } from '@roo-ui/components';
+import { Box, Label, Checkbox } from 'roo-ui/components';
 
 export default (
   <Box textAlign="left" is="form">
@@ -36,9 +36,9 @@ export default (
 
 ## Properties
 
-| Name       | Description           | Type   | Default | Required? |
-|:-----------|:----------------------|:-------|:--------|:----------|
-| `checked`  | sets checked state    | `bool` | false   | -         |
-| `disabled` | disables checkbox     | `bool` | false   | -         |
+| Name       | Description        | Type   | Default | Required? |
+| :--------- | :----------------- | :----- | :------ | :-------- |
+| `checked`  | sets checked state | `bool` | false   | -         |
+| `disabled` | disables checkbox  | `bool` | false   | -         |
 
 Standard [checkbox attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/checkbox) will be passed down to the `<input />`.

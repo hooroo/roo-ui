@@ -5,26 +5,24 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { OutlineButton } from '@roo-ui/components';
+import { OutlineButton } from 'roo-ui/components';
 
-export default (
-  <OutlineButton>Hello world</OutlineButton>
-);
+export default <OutlineButton>Hello world</OutlineButton>;
 ```
 
 ## Properties
 
-| Name       | Description                | Type     | Default  | Required? |
-|:-----------|:---------------------------|:-------  |:-------- |:----------|
-| `variant`  | use a theme variant        | `string` | 'default | -         |
-| `rounded`  | use a rounded border       | `bool`   | false    | -         |
-| `disabled` | disable the button         | `bool`   | false    | -         |
+| Name       | Description          | Type     | Default  | Required? |
+| :--------- | :------------------- | :------- | :------- | :-------- |
+| `variant`  | use a theme variant  | `string` | 'default | -         |
+| `rounded`  | use a rounded border | `bool`   | false    | -         |
+| `disabled` | disable the button   | `bool`   | false    | -         |
 
 ## Customization
 

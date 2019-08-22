@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { List, ListItem } from '@roo-ui/components';
+import { List, ListItem } from 'roo-ui/components';
 
 export default (
   <List>
@@ -24,7 +24,7 @@ export default (
 ## Properties
 
 | Name      | Description                 | Type                   | Default | Required? |
-|:----------|:----------------------------|:-----------------------|:--------|:----------|
+| :-------- | :-------------------------- | :--------------------- | :------ | :-------- |
 | `ordered` | set list type to `<ol>`     | `bool`                 | false   | -         |
 | `columns` | number of columns           | `number` or `number[]` | null    | -         |
 | `flush`   | render list flush with text | `bool`                 | false   | -         |

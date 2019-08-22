@@ -9,13 +9,13 @@ to: <%= componentsRoot %>/<%= componentPath %>/README.md
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { <%= componentName %> } from '@roo-ui/components';
+import { <%= componentName %> } from 'roo-ui/components';
 
 export default (
   <<%= componentName %>>

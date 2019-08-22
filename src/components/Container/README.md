@@ -5,17 +5,15 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Container } from '@roo-ui/components';
+import { Container } from 'roo-ui/components';
 
-export default (
-  <Container>Hello world</Container>
-);
+export default <Container>Hello world</Container>;
 ```
 
 ## Customization

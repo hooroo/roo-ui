@@ -5,25 +5,23 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { CharacterCount } from '@roo-ui/components';
+import { CharacterCount } from 'roo-ui/components';
 
-export default (
-  <CharacterCount value="Hello world" limit={64} />
-);
+export default <CharacterCount value="Hello world" limit={64} />;
 ```
 
 ## Properties
 
 | Name    | Description        | Type                 | Default | Required? |
-|:--------|:-------------------|:---------------------|:--------|:----------|
-| `value` | value to be tested | `string` or `number` | -       | ✔︎         |
-| `limit` | maximum length     | `string`             | -       | ✔︎         |
+| :------ | :----------------- | :------------------- | :------ | :-------- |
+| `value` | value to be tested | `string` or `number` | -       | ✔︎        |
+| `limit` | maximum length     | `string`             | -       | ✔︎        |
 
 ## Customization
 

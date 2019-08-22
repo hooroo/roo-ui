@@ -5,23 +5,21 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Textarea } from '@roo-ui/components';
+import { Textarea } from 'roo-ui/components';
 
-export default (
-  <Textarea placeholder="Hello world" />
-);
+export default <Textarea placeholder="Hello world" />;
 ```
 
 ## Properties
 
 | Name    | Description        | Type   | Default | Required? |
-|:--------|:-------------------|:-------|:--------|:----------|
+| :------ | :----------------- | :----- | :------ | :-------- |
 | `error` | render error style | `bool` | false   | -         |
 
 ## Customization
