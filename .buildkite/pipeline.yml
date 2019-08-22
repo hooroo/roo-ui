@@ -6,12 +6,6 @@
       run: app
       config: .buildkite/docker-compose.yml
 
-.deploy_defaults: &deploy_defaults
-  <<: *defaults
-  # branches: master
-  concurrency: 1
-  concurrency_group: roo-ui/publish
-
 env:
   APPLICATION: roo-ui
   BUILDKITE_CLEAN_CHECKOUT: true
@@ -40,9 +34,7 @@ steps:
   - wait
 
   - name: ':npm: Release'
-    <<: *deploy_defaults
+    <<: *defaults
     command: scripts/release
-
-  - name: ':storybook: Deploy Storybook'
-    <<: *deploy_defaults
-    command: yarn deploy-storybook
+    concurrency: 1
+    concurrency_group: roo-ui/release
