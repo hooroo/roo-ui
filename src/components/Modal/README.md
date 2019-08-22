@@ -54,12 +54,12 @@ This component support same props as [react-modal](https://github.com/reactjs/re
 | `icon`    | render an icon                                                          | `shape`  | -         | -         |
 | `variant` | `alertStyle` from theme. One of `default`, `info`, `success` or `error` | `string` | 'default' | -         |
 
-This component support same props as [Box](https://github.com/hooroo/roo-ui/tree/master/packages/components/src/Box/README.md).
+This component support same props as [Box](https://github.com/hooroo/roo-ui/tree/master/src/components/Box/README.md).
 
 ### Modal.body
 
-This component support same props as [Box](https://github.com/hooroo/roo-ui/tree/master/packages/components/src/Box/README.md).
+This component support same props as [Box](https://github.com/hooroo/roo-ui/tree/master/src/components/Box/README.md).
 
 ### Modal.footer
 
-This component support same props as [Flex](https://github.com/hooroo/roo-ui/tree/master/packages/components/src/Flex/README.md).
+This component support same props as [Flex](https://github.com/hooroo/roo-ui/tree/master/src/components/Flex/README.md).
