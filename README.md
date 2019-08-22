@@ -4,7 +4,7 @@
 
 Qantas Hotels' library of accessible React components and assets.
 
-To see what’s available, check out roo-ui's [storybook](https://hooroo.github.io/roo-ui).
+To see what’s available, check out roo-ui's [storybook](https://roo-ui.netlify.com/).
 If you want to jump in and and play around with the project check out [Roo UI playground](https://github.com/hooroo/roo-ui-playground)—it’s setup so you can start using it straight away.
 
 ## Contents
