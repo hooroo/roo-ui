@@ -14,7 +14,7 @@ describe('<<%= componentName %> />', () => {
 
   beforeEach(() => {
     props = {
-      children: '🔥 🔥 🔥',
+      children: 'Hello world!',
     };
   });
 
