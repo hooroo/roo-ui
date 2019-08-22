@@ -135,12 +135,12 @@
     "react-text-mask": "^5.4.3"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.0.16",
-    "@emotion/styled": "^10.0.15",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "styled-system": "^4.1.0",
-    "enzyme": "^3.10.0"
+    "@emotion/core": "^10.0.0",
+    "@emotion/styled": "^10.0.0",
+    "prop-types": "^15.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "styled-system": "^4.0.0",
+    "enzyme": "^3.0.0"
   }
 }
