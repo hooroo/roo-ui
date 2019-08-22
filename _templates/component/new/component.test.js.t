@@ -9,6 +9,7 @@ import <%= componentName %> from './';
 
 describe('<<%= componentName %> />', () => {
   let props;
+  let wrapper;
 
   const render = () => shallowWithTheme(<<%= componentName %> {...props} />, theme);
 
@@ -16,13 +17,15 @@ describe('<<%= componentName %> />', () => {
     props = {
       children: 'Hello world!',
     };
+
+    wrapper = render();
   });
 
   it('renders correctly', () => {
-    expect(render()).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('has no accessibility errors', async () => {
-    expect(await axe(render().html())).toHaveNoViolations();
+    expect(await axe(wrapper.html())).toHaveNoViolations();
   });
 });
