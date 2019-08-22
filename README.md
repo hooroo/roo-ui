@@ -43,12 +43,10 @@ $ yarn add roo-ui
 
 While we aim to keep the library unopinionated there are a few peer dependencies which are required.
 
-Most of Roo UI's components require `react`, `react-dom`, `prop-types`, `styled-components`, `styled-system`, and `polished`.
-
 Install peer dependencies with Yarn or npm:
 
 ```sh
-$ yarn add react react-dom prop-types styled-components styled-system polished
+$ yarn add react react-dom prop-types enzyme @emotion/core @emotion/styled styled-system@^4.1.0
 ```
 
 ## Setup
