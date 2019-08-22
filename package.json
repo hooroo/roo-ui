@@ -30,7 +30,6 @@
     "pretest": "yarn build-icons",
     "release": "semantic-release",
     "storybook": "yarn build-icons && start-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
     "build-storybook": "yarn build-icons && build-storybook",
     "generate-component": "hygen component new --path",
     "generate-entrypoint": "HYGEN_OVERWRITE=1 hygen entrypoint new --name"
@@ -85,7 +84,6 @@
     "@storybook/addon-options": "^5.1.10",
     "@storybook/addons": "^5.1.10",
     "@storybook/react": "^5.1.10",
-    "@storybook/storybook-deployer": "^2.8.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.15",
