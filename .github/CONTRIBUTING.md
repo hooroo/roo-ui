@@ -1,6 +1,7 @@
 # Contributing to roo-ui
 
 ## Contents
+
 - [Setup](#setup)
 - [Tools](#tools)
 - [Commands](#commands)
@@ -20,20 +21,20 @@
 
 3. After cloning the project, install the dependencies:
 
-    ```sh
-    $ yarn
-    ```
+   ```sh
+   $ yarn
+   ```
 
 4. Bootstrap packages, installing their dependencies and linking cross-dependencies:
 
-    ```sh
-    $ yarn lerna bootstrap
-    ```
+   ```sh
+   $ yarn lerna bootstrap
+   ```
 
 ## Tools
- - Lerna
- - Netlify.
 
+- Lerna
+- Netlify.
 
 ## Commands
 
@@ -41,18 +42,21 @@
 
 **Storybook**
 Start the development environment.
+
 ```
 $ yarn storybook
 ```
 
 **Tests**
 Launch the Jest test suite.
+
 ```
 $ yarn test
 ```
 
 **Linting**
 Run ESLint.
+
 ```
 $ yarn lint
 ```
@@ -60,16 +64,19 @@ $ yarn lint
 ### Lerna
 
 **Build all packages**
+
 ```
 $ lerna run build
 ```
 
 **Remove all node_modules**
+
 ```
 $ lerna exec -- rm -rf ./node_modules
 ```
 
 ### Scaffold a new component
+
 New components can be auto generated using the `new:component` script.
 
 ✓ Generate index, component, test, story and README
@@ -81,10 +88,11 @@ $ yarn run new:component MyNewComponent
 ```
 
 ### Previewing changes in your local app
+
 Before publishing a new version of `roo-ui` you may want to preview it in your application.
 Both linking and unlinking need to be run in the root directory of `roo-ui`.
 
-*Note*: `styled-components` only supports having one instance of it. We are using a *hack* to get around this issue by linking it.
+_Note_: `styled-components` only supports having one instance of it. We are using a _hack_ to get around this issue by linking it.
 
 **Linking**
 
@@ -109,8 +117,6 @@ This will watch for changes in `roo-ui` and rebuild the files.
 ```
 yarn run build:watch
 ```
-
-
 
 ## Adding packages
 
@@ -145,7 +151,7 @@ Every package should contain the following:
   ## Installation
 
   ```
-  $ yarn add @roo-ui/example
+  $ yarn add roo-ui
   ```
 
   ## Example
@@ -180,6 +186,7 @@ Every package should contain the following:
   ```
 
 ## Adding components
+
 Component packages export one or more React components from a single entry point.
 
 Component packages should define a script to compile the Javascript source with [Babel](http://babeljs.io), a `main` property pointing at the compiled entry point, and should define `react` and `react-dom` as peer dependencies:

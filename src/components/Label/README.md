@@ -5,23 +5,21 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Label } from '@roo-ui/components';
+import { Label } from 'roo-ui/components';
 
-export default (
-  <Label>Hello world</Label>
-);
+export default <Label>Hello world</Label>;
 ```
 
 ## Properties
 
 | Name     | Description             | Type   | Default | Required? |
-|:---------|:------------------------|:-------|:--------|:----------|
+| :------- | :---------------------- | :----- | :------ | :-------- |
 | `hidden` | visually hide the label | `bool` | false   | -         |
 
 ## Customization

@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/assets
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { roo } from '@roo-ui/assets';
+import { roo } from 'roo-ui/assets';
 
 export default <img alt="Roo" src={roo} />;
 ```

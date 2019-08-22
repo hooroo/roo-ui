@@ -5,17 +5,15 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Button } from '@roo-ui/components';
+import { Button } from 'roo-ui/components';
 
-export default (
-  <Button>Hello world</Button>
-);
+export default <Button>Hello world</Button>;
 ```
 
 ## Example with LoadingIndicator
@@ -24,7 +22,7 @@ You may wish to conditionally add loading state to a button in some scenarios (i
 For example:
 
 ```js
-import { Button, LoadingIndicator } from '@roo-ui/components';
+import { Button, LoadingIndicator } from 'roo-ui/components';
 
 export default (
   <Button disabled={isLoading}>
@@ -36,7 +34,7 @@ export default (
 ## Properties
 
 | Name       | Description                | Type     | Default  | Required? |
-|:-----------|:---------------------------|:-------  |:-------- |:----------|
+| :--------- | :------------------------- | :------- | :------- | :-------- |
 | `variant`  | use a theme variant        | `string` | 'default | -         |
 | `rounded`  | use a rounded border       | `bool`   | false    | -         |
 | `block`    | render a full width button | `bool`   | false    | -         |

@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add react-text-mask @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { MaskedInput } from '@roo-ui/components';
+import { MaskedInput } from 'roo-ui/components';
 
 export default (
   <Fragment>

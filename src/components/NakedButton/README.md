@@ -5,17 +5,15 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { NakedButton } from '@roo-ui/components';
+import { NakedButton } from 'roo-ui/components';
 
-export default (
-  <NakedButton>Hello world</NakedButton>
-);
+export default <NakedButton>Hello world</NakedButton>;
 ```
 
 ## Customization

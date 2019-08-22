@@ -5,28 +5,24 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { BlockLink } from '@roo-ui/components';
+import { BlockLink } from 'roo-ui/components';
 
-export default (
-  <BlockLink>Hello world</BlockLink>
-);
+export default <BlockLink>Hello world</BlockLink>;
 ```
 
 ### With [React Router](https://reacttraining.com/react-router/)
 
 ```js
 import { Link } from 'react-router-dom';
-import { BlockLink as StyledBlockLink } from '@roo-ui/components';
+import { BlockLink as StyledBlockLink } from 'roo-ui/components';
 
 const BlockLink = StyledBlockLink.withComponent(Link);
 
-export default (
-  <BlockLink>Hello world</BlockLink>
-);
+export default <BlockLink>Hello world</BlockLink>;
 ```

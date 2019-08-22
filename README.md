@@ -36,7 +36,7 @@ Being under the Qantas umbrella we are required to meet AA compliance.
 Each package and component in roo-ui is available as a package on npm, and can be installed with Yarn or npm:
 
 ```sh
-$ yarn add @roo-ui/<package-name>
+$ yarn add roo-ui
 ```
 
 To see what packages are available, check out [Roo UI's storybook](http://hooroo.github.io/roo-ui/), or browse [packages](./packages).
@@ -60,10 +60,10 @@ $ yarn add react react-dom prop-types styled-components styled-system polished
 In the root of your app, render a `<ThemeProvider />`, and pass it a theme:
 
 ```js
-import { ThemeProvider, qantas } from '@roo-ui/themes';
+import { ThemeProvider, theme } from 'roo-ui';
 
 export default (
-  <ThemeProvider theme={qantas}>
+  <ThemeProvider theme={theme}>
     <App />
   </ThemeProvider>
 );
@@ -80,7 +80,7 @@ You can override theme values by importing the roo-ui theme and using a function
 Import the appropriate font for your theme:
 
 ```js
-import '@roo-ui/fonts/ciutadella.css';
+import 'roo-ui/fonts/ciutadella.css';
 ```
 
 ### Icons
@@ -89,13 +89,13 @@ SVG icon paths are accessed from your apps theme (`theme.icons[iconName].path`).
 
 A default set of icons are included in the base [qantas theme](https://github.com/hooroo/roo-ui/blob/master/packages/themes/src/qantas.js).
 
-To add more icons, import them from `@roo-ui/icons` and include them in your apps theme.
+To add more icons, import them from `roo-ui/icons` and include them in your apps theme.
 
 **Example: Add more icons to your apps theme**
 
 ```jsx
 // my-app/icons.js
-export { arrowUpward, arrowForward } from '@roo-ui/icons';
+export { arrowUpward, arrowForward } from 'roo-ui/icons';
 
 // my-app/theme.js
 import * as icons from './icons';

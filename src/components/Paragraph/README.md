@@ -5,17 +5,15 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Paragraph } from '@roo-ui/components';
+import { Paragraph } from 'roo-ui/components';
 
-export default (
-  <Paragraph>Generic Paragraph</Paragraph>
-);
+export default <Paragraph>Generic Paragraph</Paragraph>;
 ```
 
 ## Customization

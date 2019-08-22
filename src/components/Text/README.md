@@ -5,25 +5,22 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Text } from '@roo-ui/components';
+import { Text } from 'roo-ui/components';
 
-export default (
-  <Text>Generic Text</Text>
-);
+export default <Text>Generic Text</Text>;
 ```
 
 ## Properties
 
 | Name     | Description   | Type      | Default | Required? |
-|:---------|:--------------|:----------|:--------|:----------|
+| :------- | :------------ | :-------- | :------ | :-------- |
 | `hidden` | visually hide | `boolean` | false   | -         |
-
 
 ## Customization
 

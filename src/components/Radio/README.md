@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Box, Label, Radio } from '@roo-ui/components';
+import { Box, Label, Radio } from 'roo-ui/components';
 
 export default (
   <Box textAlign="left" is="form">
@@ -37,7 +37,7 @@ export default (
 ## Properties
 
 | Name       | Description           | Type   | Default | Required? |
-|:-----------|:----------------------|:-------|:--------|:----------|
+| :--------- | :-------------------- | :----- | :------ | :-------- |
 | `checked`  | sets checked state    | `bool` | false   | -         |
 | `disabled` | disables radio button | `bool` | false   | -         |
 

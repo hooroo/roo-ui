@@ -5,24 +5,22 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Image } from '@roo-ui/components';
+import { Image } from 'roo-ui/components';
 
-export default (
-  <Image src="/example.jpg" />
-);
+export default <Image src="/example.jpg" />;
 ```
 
 ## Properties
 
 | Name     | Description    | Type     | Default | Required? |
-|:---------|:---------------|:---------|:--------|:----------|
-| `src`    | image url      | `string` | -       | ✔︎         |
+| :------- | :------------- | :------- | :------ | :-------- |
+| `src`    | image url      | `string` | -       | ✔︎        |
 | `inline` | display inline | `bool`   | false   | -         |
 
 ## Customization

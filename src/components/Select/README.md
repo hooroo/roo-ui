@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Select } from '@roo-ui/components';
+import { Select } from 'roo-ui/components';
 
 export default (
   <Select>
@@ -25,7 +25,7 @@ export default (
 ## Properties
 
 | Name    | Description        | Type   | Default | Required? |
-|:--------|:-------------------|:-------|:--------|:----------|
+| :------ | :----------------- | :----- | :------ | :-------- |
 | `error` | render error style | `bool` | false   | -         |
 
 ## Customization

@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { Hide } from '@roo-ui/components';
+import { Hide } from 'roo-ui/components';
 
 export default (
   <Fragment>
@@ -26,7 +26,7 @@ export default (
 ## Properties
 
 | Name | Description | Type   | Default | Required? |
-|:-----|:------------|:-------|:--------|:----------|
+| :--- | :---------- | :----- | :------ | :-------- |
 | `xs` | hide on xs  | `bool` | false   | -         |
 | `sm` | hide on sm  | `bool` | false   | -         |
 | `md` | hide on md  | `bool` | false   | -         |

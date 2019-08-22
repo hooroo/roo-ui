@@ -5,24 +5,22 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import { ErrorMessage } from '@roo-ui/components';
+import { ErrorMessage } from 'roo-ui/components';
 
-export default (
-  <ErrorMessage arrow="top">An error occurred</ErrorMessage>
-);
+export default <ErrorMessage arrow="top">An error occurred</ErrorMessage>;
 ```
 
 ## Properties
 
-| Name          | Description                | Type     | Default | Required? |
-|:--------------|:---------------------------|:---------|:--------|:----------|
-| `arrow`       | arrow position             | `string` | null    | -         |
+| Name    | Description    | Type     | Default | Required? |
+| :------ | :------------- | :------- | :------ | :-------- |
+| `arrow` | arrow position | `string` | null    | -         |
 
 ## Customization
 

@@ -5,13 +5,13 @@
 ## Installation
 
 ```shell
-$ yarn add @roo-ui/components
+$ yarn add roo-ui
 ```
 
 ## Example
 
 ```js
-import Popover from '@roo-ui/components';
+import Popover from 'roo-ui/components';
 
 export default (
   <Popover>
@@ -29,7 +29,6 @@ export default (
 ## Properties
 
 | Name       | Description                           | Type     | Default | Required? |
-|------------|---------------------------------------|----------|---------|-----------|
-| `children` | Content and Popover.control to render | `node`   | -       | ✔︎         |
+| ---------- | ------------------------------------- | -------- | ------- | --------- |
+| `children` | Content and Popover.control to render | `node`   | -       | ✔︎        |
 | `zIndex`   | Content zIndex                        | `number` | 1       | -         |
-
