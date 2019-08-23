@@ -1,0 +1,8 @@
+#!/bin/bash -eu
+
+ENTRYPOINTS="assets components icons logos"
+
+for ENTRYPOINT in $ENTRYPOINTS; do
+  yarn generate-entrypoint $ENTRYPOINT
+done
+
