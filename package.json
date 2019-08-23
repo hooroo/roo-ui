@@ -3,66 +3,144 @@
   "repository": "git@github.com:hooroo/roo-ui.git",
   "author": "Hooroo <support@hooroo.com>",
   "license": "MIT",
-  "private": true,
-  "workspaces": [
-    "packages/*"
+  "main": "lib/",
+  "module": "esm/",
+  "files": [
+    "!**/icons/**/",
+    "lib/",
+    "esm/",
+    "assets/",
+    "components/",
+    "fonts/",
+    "icons/",
+    "logos/",
+    "!*/icons/*/",
+    "!*.test.*",
+    "!*.story.*"
   ],
+  "sideEffects": false,
   "scripts": {
     "lint": "eslint .",
-    "pretest": "yarn build",
     "test": "jest",
-    "postinstall": "yarn build",
-    "build": "yarn lerna run build",
-    "build:watch": "yarn lerna run build:watch --parallel --prefix --stream",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "yarn build && storybook-to-ghpages",
-    "link-app": "tasks/link-app.sh",
-    "unlink-app": "tasks/unlink-app.sh",
-    "new:component": "hygen component new --component-path"
+    "build-icons": "scripts/build-icons",
+    "build:entrypoints": "scripts/build-entrypoints",
+    "build:cjs": "MODULES=commonjs babel src -d lib --copy-files",
+    "build:esm": "MODULES=false babel src -d esm --copy-files",
+    "build": "npm-run-all build-icons --parallel build:*",
+    "pretest": "yarn build-icons",
+    "release": "semantic-release",
+    "storybook": "yarn build-icons && start-storybook",
+    "build-storybook": "yarn build-icons && build-storybook",
+    "generate-component": "hygen component new --path",
+    "generate-entrypoint": "HYGEN_OVERWRITE=1 hygen entrypoint new --name"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "lib/",
+      "esm/"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
-    "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.10",
-    "@storybook/addon-knobs": "^5.0.1",
-    "@storybook/addon-options": "^5.0.1",
-    "@storybook/addons": "^5.0.1",
-    "@storybook/react": "^5.0.1",
-    "@storybook/storybook-deployer": "^2.8.1",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.5",
-    "babel-plugin-emotion": "^10.0.9",
-    "concurrently": "^4.1.1",
-    "emotion-theming": "^10.0.10",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5",
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb": "^16.1.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@emotion/core": "^10.0.16",
+    "@emotion/styled": "^10.0.15",
+    "@storybook/addon-knobs": "^5.1.10",
+    "@storybook/addon-options": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "@storybook/react": "^5.1.10",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-emotion": "^10.0.15",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "dayzed": "^2.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "eslint": "^6.1.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.14.1",
+    "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "hygen": "^1.6.2",
-    "jest": "^24.5.0",
-    "jest-axe": "^3.1.0",
-    "jest-emotion": "^10.0.10",
-    "lerna": "^2.8.0",
-    "lodash": "^4.17.4",
-    "normalize.css": "^8.0.0",
-    "polished": "^2.2.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "source-map-loader": "^0.2.4",
-    "storybook-readme": "^4.0.5",
+    "eslint-plugin-sonarjs": "^0.4.0",
+    "husky": "^3.0.2",
+    "hygen": "^4.0.8",
+    "is-var-name": "^2.0.0",
+    "jest": "^24.8.0",
+    "jest-axe": "^3.1.1",
+    "jest-emotion": "^10.0.14",
+    "lint-staged": "^9.2.1",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-modal": "^3.9.1",
+    "react-onclickoutside": "^6.8.0",
+    "react-popper": "^1.3.3",
+    "react-powerplug": "^1.0.0",
+    "react-text-mask": "^5.4.3",
+    "semantic-release": "16.0.0-beta.22",
+    "storybook-readme": "^5.0.6",
     "styled-system": "^4.1.0",
     "svgi": "^1.1.0"
+  },
+  "dependencies": {
+    "@emotion/is-prop-valid": "^0.8.2",
+    "date-fns": "^1.30.1",
+    "dayzed": "^2.2.0",
+    "emotion-theming": "^10.0.0",
+    "lodash": "^4.17.4",
+    "polished": "^3.4.1",
+    "react-modal": "^3.9.1",
+    "react-onclickoutside": "^6.8.0",
+    "react-popper": "^1.3.3",
+    "react-text-mask": "^5.4.3"
+  },
+  "peerDependencies": {
+    "@emotion/core": "^10.0.0",
+    "@emotion/styled": "^10.0.0",
+    "prop-types": "^15.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "styled-system": "^4.0.0",
+    "enzyme": "^3.0.0"
   }
 }

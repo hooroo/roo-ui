@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Ciutadella';
+  src: url('./ciutadella/CiutadellaRegular.woff2') format('woff2'),
+    url('./ciutadella/CiutadellaRegular.woff') format('woff'),
+    url('./ciutadella/CiutadellaRegular.ttf') format('truetype'),
+    url('./ciutadella/CiutadellaRegular.svg#font') format('svg');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Ciutadella';
+  src: url('./ciutadella/CiutadellaMedium.woff2') format('woff2'),
+    url('./ciutadella/CiutadellaMedium.woff') format('woff'),
+    url('./ciutadella/CiutadellaMedium.ttf') format('truetype'),
+    url('./ciutadella/CiutadellaMedium.svg#font') format('svg');
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
