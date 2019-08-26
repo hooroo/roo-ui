@@ -8,3 +8,5 @@ export { default as qantasQff } from './qantas-qff.svg';
 export {
   default as qantasBusinessRewards,
 } from './qantas-business-rewards.svg';
+export { default as tripAdvisor } from './trip-advisor.svg';
+export { default as tripAdvisorOwl } from './trip-advisor-owl.svg';
