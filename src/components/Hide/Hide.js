@@ -2,11 +2,13 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { themeGet } from 'styled-system';
-import { getValueAndUnit } from 'polished';
+import { stripUnit } from 'polished';
 import memoize from 'lodash/memoize';
 
 // assuming root font-size is 16px
 const ONE_PX_IN_REM = 0.0625;
+
+const getValueAndUnit = value => stripUnit(value, true);
 
 const minusOnePx = memoize(value => {
   const [dimension, unit] = getValueAndUnit(value);
