@@ -19,7 +19,9 @@
     "!*.test.*",
     "!*.story.*"
   ],
-  "sideEffects": false,
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
