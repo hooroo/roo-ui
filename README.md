@@ -19,9 +19,9 @@ If you want to jump in and and play around with the project check out [Roo UI pl
 
 ## About the project
 
-Roo UI is built with [Styled Components](https://www.styled-components.com/) which is a CSS-in-JS library. We use [Styled System](https://jxnblk.com/styled-system) which allows us to pass props which style components. These props reference values from the [theme](https://github.com/hooroo/roo-ui/blob/master/src/theme.js). Alongside these tools we use [Polished](https://github.com/styled-components/polished) for CSS helper functions.
+Roo UI is built with [Emotion](https://emotion.sh) which is a CSS-in-JS library. We use [Styled System](https://styled-system.com/) which allows us to pass props which style components. These props reference values from the [theme](https://github.com/hooroo/roo-ui/blob/master/src/theme.js). Alongside these tools we use [Polished](https://polished.js.org/) for CSS helper functions.
 
-When using styled-components, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using a function called [`styledOmitProps`](https://github.com/hooroo/roo-ui/tree/master/src/components/styledOmitProps/styledOmitProps.js). Using this, we can supply an `omit` array argument which prevents specified props from making there way to the DOM.
+When using emotion, sometimes unwanted props make their way through to the DOM. React will throw a warning asking if you meant to add this attribute. To get around this we are using a function called [`omitProps`](https://github.com/hooroo/roo-ui/blob/master/src/components/omitProps/omitProps.js). Using this, we can supply an `omit` array argument which prevents specified props from making there way to the DOM.
 
 ### Supported devices
 
@@ -137,6 +137,7 @@ If you're using Webpack, you'll need to setup [file loader](https://github.com/w
   - [Theme provider](#theme-provider)
   - [Theming](#theming)
   - [Fonts](#fonts)
+  - [Icons](#icons)
   - [CSS reset](#css-reset)
   - [Bundler requirements](#bundler-requirements)
 - [FAQ’s](#faqs)
