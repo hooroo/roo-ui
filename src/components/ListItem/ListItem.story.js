@@ -9,7 +9,7 @@ storiesOf('Components|ListItem', module)
   .add('default', () => (
     <Box textAlign="left">
       <List>
-        <ListItem>Styled Components</ListItem>
+        <ListItem>Emotion</ListItem>
         <ListItem>Styled System</ListItem>
       </List>
     </Box>
