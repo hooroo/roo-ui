@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Wrapper /> renders correctly 1`] = `
+<Box
+  bg="greys.porcelain"
+  p={3}
+>
+  Hello world
+</Box>
+`;
