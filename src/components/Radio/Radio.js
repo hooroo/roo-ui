@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import { rem } from 'polished';
 
 const Radio = React.forwardRef((props, ref) => (

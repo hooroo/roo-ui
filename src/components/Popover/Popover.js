@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import { rem } from 'polished';
 import { Manager, Reference, Popper } from 'react-popper';
 import onClickOutside from 'react-onclickoutside';

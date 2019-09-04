@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { maxWidth, space, display, themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
+import { maxWidth, space, display } from 'styled-system';
 
 const gutter = props => {
   const gutterValue = themeGet(`gutters.${props.gutter}`, props.gutter)(props);

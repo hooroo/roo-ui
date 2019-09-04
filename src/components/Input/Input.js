@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
+import { themeGet } from '@styled-system/theme-get';
 import {
   space,
   color,
@@ -9,7 +10,6 @@ import {
   border,
   borderColor,
   textAlign,
-  themeGet,
 } from 'styled-system';
 
 import omitProps from '../omitProps';

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { rem } from 'polished';
