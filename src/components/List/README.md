@@ -15,7 +15,7 @@ import { List, ListItem } from 'roo-ui/components';
 
 export default (
   <List>
-    <ListItem>Styled Components</ListItem>
+    <ListItem>Emotion</ListItem>
     <ListItem>Styled System</ListItem>
   </List>
 );
