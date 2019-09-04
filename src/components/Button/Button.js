@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
+import { themeGet } from '@styled-system/theme-get';
 import {
-  themeGet,
   space,
   color,
   backgroundColor,

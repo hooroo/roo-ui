@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
+import { themeGet } from '@styled-system/theme-get';
 import {
   style,
   space,
   verticalAlign,
   textAlign,
-  themeGet,
   color,
   textStyle,
 } from 'styled-system';

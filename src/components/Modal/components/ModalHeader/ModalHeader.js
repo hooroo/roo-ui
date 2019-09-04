@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withTheme } from 'emotion-theming';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 
 import { Text, Flex, Box, Icon } from 'components';
 

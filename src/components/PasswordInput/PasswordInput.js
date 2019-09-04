@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import { rem } from 'polished';
 import { Input, Icon, NakedButton } from '../';
 
