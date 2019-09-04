@@ -34,5 +34,6 @@ export { default as Textarea } from './Textarea';
 export { default as Radio } from './Radio';
 export { default as Select } from './Select';
 export { default as Popover } from './Popover';
+export { default as Wrapper } from './Wrapper';
 export { DatePicker } from './DatePicker';
 export { DateRangePicker } from './DatePicker';
