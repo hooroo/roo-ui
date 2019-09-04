@@ -1875,6 +1875,110 @@
     telejson "^2.2.1"
     util-deprecate "^1.0.2"
 
+"@styled-system/background@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/background/-/background-5.1.1.tgz#4cf128df4f7c1c3f9ac4efdc53869536bd2d70d9"
+  integrity sha512-AtcDYXVO3Rfui2jZGNBuFinqx25FQ54d6d8JKRPd4g/5wlyw24hgps6VvB3fqNgsA6JKwulIuZf9mfUX4RnPFg==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/border@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/border/-/border-5.1.1.tgz#7774e30bf59bb7e21f59660c3db0f34ca5e62b65"
+  integrity sha512-N4jSiyq18zfY2xg1G2+adGCQ3s+geRYZPJ4R/PT/rZM7kbzCRr8xqHNg+OWkDiDTqgZ0eU7OSsRQD/byQpziZg==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/color@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/color/-/color-5.1.1.tgz#598bb5f945190d04dc793600c778766b2f7923fa"
+  integrity sha512-LHG5HQPZQdMNouXq9/cs/ovadNnnvPFkb6SkTqT9uxTUzTT416erGBaXZPGFqdwPpcDw4Y1MsmrAd1taeJEzvQ==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/core@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/core/-/core-5.1.1.tgz#7dcd7faf576a18f15a947241d260f170d6f783bf"
+  integrity sha512-8doP1Uptn1nlNrG44O/DfiRtLvoh9OkPqxEv9Gp1YAKAD2RgRTTQou/wYw/4y4pqmV3Hjb3NA/5Nbp/Uo5eGUQ==
+  dependencies:
+    object-assign "^4.1.1"
+
+"@styled-system/css@^5.0.23":
+  version "5.0.23"
+  resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.0.23.tgz#35ad4f34fe0fec9b011a5468ac0821f12f5e4b1a"
+  integrity sha512-yC3S0Iox8OTPAyrP1t5yY9nURUICcUdhVYOkwffftuxa5+txxI4qkT2e9JNCc2aaem+DG8mlXTdnYefjqge5wg==
+
+"@styled-system/flexbox@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/flexbox/-/flexbox-5.1.1.tgz#1ec78352c8df1d5f06d7e3755a99cc7f27a48ea5"
+  integrity sha512-r9kBiCpXJee4zUQJnBom/c8d2CfUXEqrnZ5sdH62RsisoAByJ6vF5a3jI3zQXc8diEHjvNaunZL+K3gQjwJQGg==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/grid@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/grid/-/grid-5.1.1.tgz#181cb3bbcf2180a726ff5a69d9b18ce8cd2a7997"
+  integrity sha512-vzBNBg62syA62jEpxS21QEIwgndtxFgpCWWpitytApAybEll0mZctB06eOFhFgSNgarzOyox+1NdETB5h9KGnw==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/layout@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/layout/-/layout-5.1.1.tgz#eabd3026f683f47026943d7b93d19622caeb17d0"
+  integrity sha512-a0YnXNlORdpfcxejQEwMGd1k+pamRj+VjnAIafRdFBxBXsw55T8eG0iqWEs8U/d3i0+isKcfIyw/9OrElsksBg==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/position@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/position/-/position-5.1.1.tgz#d5cb8efa8b0abe4eaad710d4b47e06372ca6f61f"
+  integrity sha512-75+EvQA5Juh+Zbq1Hkcm0QHx5GwEGoG7BABpG/n/K0Uz2aBGKVKJ4Y3NmPRvSS7fl1Ktl7azIGAPW9XOZ9TdHA==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/prop-types@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/prop-types/-/prop-types-5.1.1.tgz#0a69437f4a4a35ac1a6a0e89752cb7dbc52c3312"
+  integrity sha512-ZjyiLzBPMFhvVDn3hcyE+DvOZU470NuzCCqqFsuFxgi2easbNG2Xmctk5QYTRYaV1+/Cs+McvmgUo+gZKlJLkQ==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@styled-system/shadow@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/shadow/-/shadow-5.1.1.tgz#2e38de0f8c8818c5aa72d60119aa2001c8fdb007"
+  integrity sha512-axdgRJ0gU8Rbw/DS24G4AAQIxYjo/fMmqxiegWja2XZDpeljqjyiYfGc7Dad3fgc+DUMn3Jjc1fHcTziTGWA4g==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/space@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/space/-/space-5.1.1.tgz#42203ebd8c857fb52268bb62d2d0d0044caecf49"
+  integrity sha512-hwF938Zx83YRZmk30HtBE2EPWT8Z8H3+Rvpkdg13Q6P93DpSNH8wIlIObFKSgcmbOcqXzvFlAYcQ3l6F6Hu3IA==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/theme-get@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/theme-get/-/theme-get-5.1.1.tgz#aab28c127dda06ca9f32b0a838e48e5d0fe19b62"
+  integrity sha512-NqEcnF0hj+Zyj2AJEcr4/GJvp9yKZnYdgJ8Fxw86eQOuI6s486PNBtI5B4sOoko25N8wfQ7Ndl/wcTNPcTFRZw==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/typography@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/typography/-/typography-5.1.1.tgz#3fd54a317e1fcb51c16e981f23ba3f03de2cd515"
+  integrity sha512-zqrA9+nboPl5h/VhSKdlsUDUciHKb+Ly9YSCsvYb0Di1vI0lnYAtHzbBmI1xsfQW5us1BNflUpirCAQJshJMSQ==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+
+"@styled-system/variant@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@styled-system/variant/-/variant-5.1.1.tgz#16bcc872c22674031c0900e3ef53e494444f5d85"
+  integrity sha512-Gh3iBqksx+cTx5drqazu56KL5cJrGEdxMFQ/6Yo4ravrZd0dRmzBhsUh0+UWtSvfWfN0M0ziE3m/Zu4ZKMHMaQ==
+  dependencies:
+    "@styled-system/core" "^5.1.1"
+    "@styled-system/css" "^5.0.23"
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.2.0.tgz#dadcb6218503532d6884b210e7f3c502caaa44b1"
@@ -12638,13 +12742,24 @@ style-loader@^0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
-styled-system@^4.1.0:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-4.2.4.tgz#8909f91396c30b92295b4eddec5f7b89f8c8d767"
-  integrity sha512-44X7n09gDvwx7yjquEXsjiNALK0dxGgAJdpO5cb/PdL+D4mhSLKWig4/EhH4vHJLbwu/kumURHyvKxygaBfg0A==
+styled-system@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-5.1.1.tgz#81f949ff318ef95303bf40f3a8cbad37a2398654"
+  integrity sha512-jTFstSW5valWSkCsJhgh0fqUFLi1hL+S7Zj6Q6Dj1VTkR77l8B3/mgtSROjjiIwRG9SLW1BsJWjLn8mTNiwqgg==
   dependencies:
-    "@babel/runtime" "^7.4.2"
-    prop-types "^15.7.2"
+    "@styled-system/background" "^5.1.1"
+    "@styled-system/border" "^5.1.1"
+    "@styled-system/color" "^5.1.1"
+    "@styled-system/core" "^5.1.1"
+    "@styled-system/flexbox" "^5.1.1"
+    "@styled-system/grid" "^5.1.1"
+    "@styled-system/layout" "^5.1.1"
+    "@styled-system/position" "^5.1.1"
+    "@styled-system/shadow" "^5.1.1"
+    "@styled-system/space" "^5.1.1"
+    "@styled-system/typography" "^5.1.1"
+    "@styled-system/variant" "^5.1.1"
+    object-assign "^4.1.1"
 
 stylis-rule-sheet@^0.0.10:
   version "0.0.10"
