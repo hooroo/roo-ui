@@ -3,6 +3,7 @@
 exports[`<StarRating /> renders correctly 1`] = `
 <Flex
   aria-label="1 out of 5 rating"
+  display="flex"
   itemType="http://schema.org/AggregateRating"
   title="1 out of 5 rating"
 >

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { color, size, width, themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
+import { propType } from '@styled-system/prop-types';
+import { color, layout, compose } from 'styled-system';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
-
-import Box from '../Box';
 
 const fadeIn = keyframes`
   0% { opacity: 0 }
@@ -23,18 +23,17 @@ const parseDelay = delay => {
   return delay;
 };
 
-const Bouncers = styled(Box)`
+const Bouncers = styled('div')`
   animation: ${fadeIn} ${themeGet('transitions.default')} both;
   animation-delay: ${props => props.delay};
   margin: 0 auto;
   text-align: center;
   display: flex;
   justify-content: space-around;
-
-  ${width};
+  ${layout};
 `;
 
-const Bouncer = styled.div`
+const Bouncer = styled('div')`
   animation: ${bounce} 1.4s infinite ease-in-out both;
   border-radius: 100%;
   display: inline-block;
@@ -49,7 +48,10 @@ const Bouncer = styled.div`
     animation-delay: 0;
   }
 
-  ${color} ${size};
+  ${compose(
+    color,
+    layout,
+  )}
 `;
 
 const LoadingIndicator = props => {
@@ -65,8 +67,8 @@ const LoadingIndicator = props => {
 };
 
 LoadingIndicator.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  color: propType,
+  size: propType,
   delay: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 

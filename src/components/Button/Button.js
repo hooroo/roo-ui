@@ -1,27 +1,25 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import PropTypes from 'prop-types';
+import get from 'lodash/get';
 import { darken } from 'polished';
-import {
-  themeGet,
+import PropTypes from 'prop-types';
+import { themeGet } from '@styled-system/theme-get';
+import { space, color, layout, shadow, variant, compose } from 'styled-system';
+
+const variations = variant({
+  scale: 'buttons',
+  variants: { default: {} }, // v5 API needs at least 1 variant or it reverts to v4 behaviour
+});
+
+const styledProps = compose(
+  variations,
   space,
   color,
-  backgroundColor,
-  boxShadow,
-  display,
-  variant,
-  width,
-} from 'styled-system';
-import get from 'lodash/get';
+  layout,
+  shadow,
+);
 
-const FALLBACK_BG_COLOR = '#000';
-
-const buttonStyle = variant({ key: 'buttons' });
-
-const getBackground = props =>
-  get(backgroundColor(props), 'backgroundColor') ||
-  get(buttonStyle(props), 'backgroundColor') ||
-  FALLBACK_BG_COLOR;
+const getBackground = props => get(color(props), 'backgroundColor', '#000');
 
 const Button = styled.button`
   margin: 0;
@@ -41,12 +39,20 @@ const Button = styled.button`
   cursor: pointer;
   appearance: none;
 
-  ${display} ${buttonStyle} ${space} ${color} ${boxShadow} ${width} &:hover {
-    background-color: ${props => darken(0.1, getBackground(props))};
-  }
+  ${props =>
+    props.rounded &&
+    css`
+      border-radius: ${themeGet('radii.rounded')(props)};
+    `}
 
-  &:hover:disabled {
-    background-color: ${props => getBackground(props)};
+  ${props =>
+    props.block &&
+    css`
+      width: 100%;
+    `};
+
+  &:hover:not(:disabled) {
+    background-color: ${props => darken(0.1, getBackground(props))};
   }
 
   &:focus {
@@ -58,22 +64,13 @@ const Button = styled.button`
     cursor: not-allowed;
   }
 
-  ${props =>
-    props.rounded &&
-    css`
-      border-radius: ${themeGet('radii.rounded')(props)};
-    `} ${props =>
-  props.block &&
-  css`
-    width: 100%;
-  `};
+  ${styledProps}
 `;
 
 Button.propTypes = {
   ...variant.propTypes,
   ...space.propTypes,
   ...color.propTypes,
-  ...boxShadow.propTypes,
   rounded: PropTypes.bool,
   block: PropTypes.bool,
 };
@@ -81,6 +78,8 @@ Button.propTypes = {
 Button.defaultProps = {
   variant: 'default',
   display: 'inline-block',
+  color: 'white',
+  backgroundColor: 'brand.primary',
 };
 
 export default Button;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
 import { space, color } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 import PropTypes from 'prop-types';
 
 const IS_TEST = process.env.NODE_ENV === 'test';
@@ -59,8 +60,8 @@ const Icon = styled(Base)`
 
 Icon.propTypes = {
   ...Base.propTypes,
-  ...color.propTypes,
-  ...space.propTypes,
+  ...propTypes.color,
+  ...propTypes.space,
 };
 
 export default Icon;

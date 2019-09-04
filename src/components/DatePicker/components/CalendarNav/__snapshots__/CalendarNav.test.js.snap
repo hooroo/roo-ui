@@ -25,10 +25,10 @@ exports[`<CalendarNav /> renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 .emotion-9:disabled {
@@ -36,8 +36,8 @@ exports[`<CalendarNav /> renders correctly 1`] = `
 }
 
 .emotion-9:hover:disabled {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
 }
 
 .emotion-9:hover,
@@ -76,7 +76,9 @@ exports[`<CalendarNav /> renders correctly 1`] = `
     }
   }
 >
-  <Wrapper>
+  <Wrapper
+    display="flex"
+  >
     <div
       className="emotion-22 emotion-23"
     >

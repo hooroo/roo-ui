@@ -1,62 +1,40 @@
 import {
-  display,
   space,
-  width,
-  minWidth,
-  maxWidth,
-  height,
-  minHeight,
-  maxHeight,
-  color,
-  textAlign,
-  boxShadow,
-  borderRadius,
-  borders,
-  borderColor,
-  flexBasis,
-  flexDirection,
-  flexWrap,
-  flex,
+  layout,
   position,
-  zIndex,
-  top,
-  right,
-  bottom,
-  left,
-  overflow,
+  color,
+  typography,
+  shadow,
+  border,
+  flexbox,
+  compose,
 } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 import styled from '@emotion/styled';
 import omitProps from '../omitProps';
 
-const Box = styled('div', omitProps())`
-  ${display} ${space} ${width} ${minWidth} ${maxWidth} ${height} ${minHeight} ${maxHeight} ${color} ${textAlign} ${boxShadow} ${borderRadius} ${borders} ${borderColor} ${flexBasis} ${flexDirection} ${flexWrap} ${flex} ${position} ${zIndex} ${top} ${right} ${bottom} ${left} ${overflow};
-`;
+const styleProps = compose(
+  space,
+  layout,
+  position,
+  color,
+  typography,
+  shadow,
+  border,
+  flexbox,
+);
+
+const Box = styled('div', omitProps())(styleProps);
 
 Box.propTypes = {
-  ...display.propTypes,
-  ...space.propTypes,
-  ...width.propTypes,
-  ...minWidth.propTypes,
-  ...maxWidth.propTypes,
-  ...height.propTypes,
-  ...minHeight.propTypes,
-  ...maxHeight.propTypes,
-  ...color.propTypes,
-  ...textAlign.propTypes,
-  ...boxShadow.propTypes,
-  ...borderRadius.propTypes,
-  ...borders.propTypes,
-  ...borderColor.propTypes,
-  ...flexBasis.propTypes,
-  ...flexDirection.propTypes,
-  ...flexWrap.propTypes,
-  ...flex.propTypes,
-  ...position.propTypes,
-  ...zIndex.propTypes,
-  ...top.propTypes,
-  ...right.propTypes,
-  ...bottom.propTypes,
-  ...left.propTypes,
+  ...propTypes.space,
+  ...propTypes.layout,
+  ...propTypes.position,
+  ...propTypes.color,
+  ...propTypes.typography,
+  ...propTypes.shadow,
+  ...propTypes.border,
+  ...propTypes.flexbox,
 };
 
 export default Box;
