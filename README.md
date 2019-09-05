@@ -13,7 +13,7 @@ If you want to jump in and and play around with the project check out [Roo UI pl
 - [Installation](#installation)
 - [FAQs](#faqs)
 - [Helpful resources](#helpful-resources)
-- [Contributing](https://github.com/hooroo/roo-ui/blob/master/CONTRIBUTING.md)
+- [Contributing](https://github.com/hooroo/roo-ui/blob/master/.github/CONTRIBUTING.md)
 
 ---
 
@@ -195,7 +195,7 @@ There's a few different ways. Chat to any of the contributors, pop a question in
 
 #### Can I contribute?
 
-Yes, refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions. Browse the issues and pick one up or send a pull request for a new component or asset.
+Yes, refer to [CONTRIBUTING.md](https://github.com/hooroo/roo-ui/blob/master/.github/CONTRIBUTING.md) for instructions. Browse the issues and pick one up or send a pull request for a new component or asset.
 
 ## Helpful resources
 
