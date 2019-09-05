@@ -2,7 +2,7 @@ FROM ***REMOVED***.dkr.ecr.ap-southeast-2.amazonaws.com/base/node:10.14.1-builde
 
 USER hooroo
 
-COPY package.json yarn.lock ./
+COPY --chown=hooroo package.json yarn.lock ./
 RUN yarn
 
 COPY --chown=hooroo . .
