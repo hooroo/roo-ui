@@ -88,6 +88,7 @@
     "@storybook/addons": "^5.1.10",
     "@storybook/react": "^5.1.10",
     "@types/react": "^16.9.2",
+    "@types/styled-system": "^5.1.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-plugin-emotion": "^10.0.17",
