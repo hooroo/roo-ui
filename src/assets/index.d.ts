@@ -1,3 +1,5 @@
+import react from 'react';
+
 declare module 'roo-ui/assets' {
   export const roo: string;
   export const rooRed: string;
