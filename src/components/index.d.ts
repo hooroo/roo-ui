@@ -1,4 +1,3 @@
-// tslint:disable no-empty-interface interface-name max-union-size
 import * as SC from '@emotion/styled/macro';
 import * as CSS from 'csstype';
 import * as Dayzed from 'dayzed';
