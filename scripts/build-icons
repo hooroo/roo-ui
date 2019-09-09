@@ -11,13 +11,20 @@ const prettier = require('prettier');
 
 const srcDir = 'src/icons/**/*.svg';
 const filepath = 'src/icons/index.js';
+const typeDefsFilePath = 'src/icons/index.d.ts';
 
-const isValidIconName = name => {
-  if (!isVarName(name)) {
-    return false;
+const iconToType = ({ key }) => `  export const ${key}: Icon;`;
+
+const typeDefsTemplate = content => `
+declare module 'roo-ui/icons' {
+  interface Icon {
+    category: string;
+    path: string;
   }
-  return isVarName(name) && !['public'].includes(name);
-};
+
+${content}
+}
+`;
 
 const flattenChildren = (a, b) => {
   const children = b.children.reduce(flattenChildren, []);
@@ -46,6 +53,13 @@ const iconToExport = ({ key, category, path }) =>
 
 const uniqueByKey = fp.uniqBy('key');
 
+const isValidIconName = name => {
+  if (!isVarName(name)) {
+    return false;
+  }
+  return isVarName(name) && !['public'].includes(name);
+};
+
 const partitionByValidName = fp.partition(icon => isValidIconName(icon.key));
 
 const build = () => {
@@ -68,6 +82,13 @@ const build = () => {
     },
   );
   fs.writeFileSync(filepath, moduleContents, 'utf8');
+
+  const typeDefsContents = prettier.format(
+    typeDefsTemplate(validIcons.map(iconToType).join('\n')),
+    { parser: 'typescript' },
+  );
+  
+  fs.writeFileSync(typeDefsFilePath, typeDefsContents, 'utf8');
 };
 
 build();
