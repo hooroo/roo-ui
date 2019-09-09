@@ -1,5 +1,3 @@
-import react from 'react';
-
 declare module '@roo-ui/logos' {
   export const qantas: string;
   export const qantasGroup: string;

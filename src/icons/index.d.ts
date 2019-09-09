@@ -1,11 +1,9 @@
-import react from 'react';
-
-interface Icon {
-  category: string;
-  path: string;
-}
-
 declare module 'roo-ui/icons' {
+  interface Icon {
+    category: string;
+    path: string;
+  }
+
   export const accessibility: Icon;
   export const accessible: Icon;
   export const accountBalanceWallet: Icon;
