@@ -120,6 +120,9 @@ declare module 'roo-ui/components' {
     interactiveDisabledDates?: boolean;
     monthNames?: string[];
     weekdayNames?: string[];
+    monthsToDisplay: number;
+    firstDayOfWeek: number;
+    minDate?: Date;
   }
   export const DatePicker: React.FunctionComponent<
     Omit<DatePickerProps, 'children'>
@@ -245,7 +248,7 @@ declare module 'roo-ui/components' {
       Omit<React.HTMLProps<HTMLUListElement>, keyof ListKnownProps> {}
   export const List: SC.StyledComponent<ListProps, ListProps, any>;
 
-  interface ListItemKnownProps extends BaseProps {}
+  interface ListItemKnownProps extends BaseProps, SS.SpaceProps, SS.BorderProps {}
   export interface ListItemProps
     extends ListItemKnownProps,
       Omit<React.HTMLProps<HTMLLIElement>, keyof ListItemKnownProps> {}
@@ -340,7 +343,7 @@ declare module 'roo-ui/components' {
     underline?: boolean;
     smooth?: boolean;
     exact?: boolean;
-    to?: H.LocationDescriptor;
+    href?: H.LocationDescriptor;
   }
   export interface LinkProps
     extends LinkKnownProps,
@@ -458,4 +461,12 @@ declare module 'roo-ui/components' {
   export const Select: SC.StyledComponent<SelectProps, SelectProps, any>;
 
   export const ModalGlobalStyle: SC.StyledComponent<any, any, any>;
+
+  interface WrapperKnownProps extends BaseProps {
+    children: React.ReactNode;
+  }
+  export interface WrapperProps
+  extends WrapperKnownProps,
+    Omit<React.HTMLProps<HTMLDivElement>, keyof WrapperKnownProps> {}
+  export const Wrapper: SC.StyledComponent<WrapperProps, WrapperProps, any>;
 }
