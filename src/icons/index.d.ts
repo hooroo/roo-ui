@@ -1,4 +1,4 @@
-declare module 'roo-ui/icons' {
+declare module "roo-ui/icons" {
   interface Icon {
     category: string;
     path: string;
