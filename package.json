@@ -5,6 +5,7 @@
   "author": "Hooroo <support@hooroo.com>",
   "license": "MIT",
   "main": "lib/",
+  "types": "lib/index.d.ts",
   "module": "esm/",
   "files": [
     "!**/icons/**/",
@@ -15,6 +16,7 @@
     "fonts/",
     "icons/",
     "logos/",
+    "*.d.ts",
     "!*/icons/*/",
     "!*.test.*",
     "!*.story.*"
