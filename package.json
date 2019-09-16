@@ -15,6 +15,7 @@
     "fonts/",
     "icons/",
     "logos/",
+    "*.d.ts",
     "!*/icons/*/",
     "!*.test.*",
     "!*.story.*"
