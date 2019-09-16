@@ -24,4 +24,4 @@
 
 - [ ] You've requested a review from at least ONE person. Preferably a roo-ui maintainer (@angusfretwell, @talbet, @philipwindeyer)
 - [ ] Your final merge commit message is in the format `<type>(<scope>): <description>` as per [the contributing guide](https://github.com/hooroo/roo-ui/blob/master/.github/CONTRIBUTING.md#commit-naming)
-  - Example: `fix(dependencies): minor verison bump to resolve security vulnerability in set-value`
+  - Example: `fix(dependencies): minor version bump to resolve security vulnerability in set-value`
