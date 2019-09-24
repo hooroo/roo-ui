@@ -2,6 +2,7 @@ import React from 'react';
 import theme from 'theme';
 import { mountWithTheme } from 'testUtils';
 import { axe } from 'jest-axe';
+import { renderIntoDocument, isDOMComponent } from 'react-dom/test-utils';
 
 import Checkbox from './';
 
@@ -25,6 +26,13 @@ describe('<Checkbox />', () => {
       theme,
     );
     expect(await axe(wrapper.html())).toHaveNoViolations();
+  });
+
+  it('can handle a ref and pass it into a DOM component', () => {
+    const ref = React.createRef();
+
+    renderIntoDocument(<Checkbox ref={ref} />);
+    expect(isDOMComponent(ref.current)).toEqual(true);
   });
 
   describe('when checked', () => {

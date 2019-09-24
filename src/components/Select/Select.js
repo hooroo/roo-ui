@@ -29,9 +29,9 @@ const IconWrapper = styled.div`
     `};
 `;
 
-const Base = props => (
+const Base = React.forwardRef((props, ref) => (
   <Wrapper>
-    <StyledSelect {...props} />
+    <StyledSelect ref={ref} {...props} />
 
     {!props.readOnly && (
       <IconWrapper disabled={props.disabled}>
@@ -39,7 +39,9 @@ const Base = props => (
       </IconWrapper>
     )}
   </Wrapper>
-);
+));
+
+Base.displayName = 'Base';
 
 Base.propTypes = Input.propTypes;
 
