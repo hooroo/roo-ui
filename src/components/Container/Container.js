@@ -1,61 +1,35 @@
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
-import { themeGet } from '@styled-system/theme-get';
-import { maxWidth, space, display } from 'styled-system';
+import propTypes, { propType } from '@styled-system/prop-types';
+import { layout, space, compose, system } from 'styled-system';
 
-const gutter = props => {
-  const gutterValue = themeGet(`gutters.${props.gutter}`, props.gutter)(props);
-
-  const gutterStyles = unit => ({
-    paddingLeft: themeGet(`space.${unit}`)(props),
-    paddingRight: themeGet(`space.${unit}`)(props),
-  });
-
-  if (!gutterValue) {
-    return null;
-  }
-
-  if (!Array.isArray(gutterValue)) {
-    return gutterStyles(gutterValue);
-  }
-
-  return gutterValue.map((value, index) => {
-    if (index === 0) {
-      return gutterStyles(value);
-    }
-
-    return {
-      [themeGet(`mediaQueries.${index - 1}`)(props)]: gutterStyles(value),
-    };
-  });
-};
+const systemProps = system({
+  gutter: {
+    properties: ['paddingLeft', 'paddingRight'],
+    scale: 'space',
+  },
+});
 
 const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 
-  ${maxWidth}
-  ${gutter}
-  ${space}
-  ${display}
+  ${compose(
+    layout,
+    space,
+    systemProps,
+  )}
 `;
 
 Container.propTypes = {
-  gutter: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-    PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    ),
-  ]),
-  ...maxWidth.propTypes,
-  ...space.propTypes,
+  gutter: propType,
+  ...propTypes.layout,
+  ...propTypes.space,
 };
 
 Container.defaultProps = {
-  maxWidth: 'default',
-  gutter: 'default',
+  maxWidth: '80rem',
+  gutter: 3,
 };
 
 Container.displayName = 'Container';

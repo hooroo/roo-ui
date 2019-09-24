@@ -1,27 +1,21 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
-import { darken } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
-import {
+import { space, color, layout, shadow, variant, compose } from 'styled-system';
+
+const variations = variant({
+  scale: 'buttons',
+  variants: { default: {} }, // v5 API needs at least 1 variant or it reverts to v4 behaviour
+});
+
+const styledProps = compose(
   space,
   color,
-  backgroundColor,
-  boxShadow,
-  display,
-  variant,
-  width,
-} from 'styled-system';
-import get from 'lodash/get';
-
-const FALLBACK_BG_COLOR = '#000';
-
-const buttonStyle = variant({ key: 'buttons' });
-
-const getBackground = props =>
-  get(backgroundColor(props), 'backgroundColor') ||
-  get(buttonStyle(props), 'backgroundColor') ||
-  FALLBACK_BG_COLOR;
+  layout,
+  shadow,
+  variations,
+);
 
 const Button = styled.button`
   margin: 0;
@@ -41,12 +35,10 @@ const Button = styled.button`
   cursor: pointer;
   appearance: none;
 
-  ${display} ${buttonStyle} ${space} ${color} ${boxShadow} ${width} &:hover {
-    background-color: ${props => darken(0.1, getBackground(props))};
-  }
+  ${styledProps}
 
-  &:hover:disabled {
-    background-color: ${props => getBackground(props)};
+  &:hover:not(:disabled) {
+    filter: brightness(85%);
   }
 
   &:focus {
@@ -62,18 +54,19 @@ const Button = styled.button`
     props.rounded &&
     css`
       border-radius: ${themeGet('radii.rounded')(props)};
-    `} ${props =>
-  props.block &&
-  css`
-    width: 100%;
-  `};
+    `}
+
+  ${props =>
+    props.block &&
+    css`
+      width: 100%;
+    `};
 `;
 
 Button.propTypes = {
   ...variant.propTypes,
   ...space.propTypes,
   ...color.propTypes,
-  ...boxShadow.propTypes,
   rounded: PropTypes.bool,
   block: PropTypes.bool,
 };

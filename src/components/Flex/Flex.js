@@ -1,32 +1,20 @@
 import styled from '@emotion/styled';
-import {
-  alignItems,
-  alignContent,
-  justifyContent,
-  flexWrap,
-  flexDirection,
-  style,
-} from 'styled-system';
+import { system } from 'styled-system';
+import { propType } from '@styled-system/prop-types';
 import Box from '../Box';
 
-const flexFlow = style({
-  prop: 'flexFlow',
-  cssProperty: 'flexFlow',
+const customProps = system({
+  flexFlow: true,
 });
 
-const Flex = styled(Box)`
-  display: flex;
-  ${alignItems} ${alignContent} ${justifyContent} ${flexWrap} ${flexDirection} ${flexFlow};
-`;
+const Flex = styled(Box)(customProps);
 
 Flex.propTypes = {
-  ...Box.propTypes,
-  ...alignItems.propTypes,
-  ...alignContent.propTypes,
-  ...justifyContent.propTypes,
-  ...flexWrap.propTypes,
-  ...flexDirection.propTypes,
-  ...flexFlow.propTypes,
+  flexFlow: propType,
+};
+
+Flex.defaultProps = {
+  display: 'flex',
 };
 
 export default Flex;

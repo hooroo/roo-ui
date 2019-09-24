@@ -3,14 +3,16 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { themeGet } from '@styled-system/theme-get';
-import { style } from 'styled-system';
+import { propType } from '@styled-system/prop-types';
+import { system } from 'styled-system';
 
 import ListItem from '../ListItem';
 
-const columns = style({
-  prop: 'columns',
-  cssProperty: 'flexBasis',
-  transformValue: n => `${100 / n}%`,
+const listItemSystemProps = system({
+  columns: {
+    property: 'flexBasis',
+    transform: n => `${100 / n}%`,
+  },
 });
 
 const ListBase = styled('div')`
@@ -22,7 +24,9 @@ const ListBase = styled('div')`
     css`
       list-style-position: inside;
       padding-left: 0;
-    `} ${props =>
+    `}
+
+  ${props =>
     props.columns &&
     css`
       display: flex;
@@ -33,8 +37,7 @@ const ListBase = styled('div')`
       ${ListItem} {
         flex: 1 1;
         padding: 0 ${themeGet('space.2')(props)};
-
-        ${columns(props)};
+        ${listItemSystemProps(props)};
       }
     `};
 `;
@@ -44,7 +47,7 @@ const List = props => <ListBase {...props} as={props.ordered ? 'ol' : 'ul'} />;
 List.displayName = 'List';
 
 List.propTypes = {
-  ...columns.propTypes,
+  columns: propType,
   flush: PropTypes.bool,
   ordered: PropTypes.bool,
 };

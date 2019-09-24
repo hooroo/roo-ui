@@ -9,7 +9,7 @@ import README from './README.md';
 storiesOf('Components|Container', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
-    <Container>
+    <Container maxWidth="40rem" gutter={[0, 3]}>
       <Box p={3} bg="greys.porcelain">
         Hello world
       </Box>

@@ -82,11 +82,11 @@ const breakpoints = ['40rem', '52rem', '64rem'];
 const buttons = {
   default: {
     color: 'white',
-    backgroundColor: colors.greys.charcoal,
+    backgroundColor: 'greys.charcoal',
   },
   primary: {
     color: 'white',
-    backgroundColor: colors.brand.primary,
+    backgroundColor: 'brand.primary',
   },
 };
 
@@ -106,10 +106,6 @@ const fontSizes = {
 const fontWeights = {
   normal: 500,
   bold: 600,
-};
-
-const gutters = {
-  default: 3,
 };
 
 const letterSpacings = {
@@ -212,7 +208,6 @@ export default {
   fontFamily,
   fontSizes,
   fontWeights,
-  gutters,
   icons,
   letterSpacings,
   lineHeights,

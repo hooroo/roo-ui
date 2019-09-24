@@ -1,24 +1,35 @@
 import styled from '@emotion/styled';
 import { themeGet } from '@styled-system/theme-get';
+import propTypes from '@styled-system/prop-types';
 import {
-  style,
   space,
-  verticalAlign,
-  textAlign,
+  layout,
+  typography,
   color,
   textStyle,
+  system,
+  compose,
 } from 'styled-system';
 
-const textDecoration = style({
-  prop: 'textDecoration',
-  cssProperty: 'textDecoration',
+const customProps = system({
+  textDecoration: true,
 });
 
-const hoverColor = style({
-  prop: 'hoverColor',
-  cssProperty: 'color',
-  key: 'colors',
+const customHoverProps = system({
+  hoverColor: {
+    property: 'color',
+    scale: 'colors',
+  },
 });
+
+const systemProps = compose(
+  space,
+  layout,
+  typography,
+  color,
+  textStyle,
+  customProps,
+);
 
 const NakedButton = styled('button')`
   border: none;
@@ -29,12 +40,14 @@ const NakedButton = styled('button')`
   appearance: none;
   cursor: pointer;
 
+  ${systemProps};
+
   &:focus {
     outline: ${themeGet('borders.2')} ${themeGet('colors.brand.secondary')};
   }
 
   &:hover {
-    ${hoverColor};
+    ${customHoverProps};
   }
 
   &:disabled {
@@ -45,14 +58,13 @@ const NakedButton = styled('button')`
   &:hover:disabled {
     ${color};
   }
-
-  ${space} ${verticalAlign} ${textAlign} ${color} ${textStyle} ${textDecoration};
 `;
 
 NakedButton.propTypes = {
-  ...verticalAlign.propTypes,
-  ...space.propTypes,
-  ...color.propTypes,
+  ...propTypes.space,
+  ...propTypes.layout,
+  ...propTypes.typography,
+  ...propTypes.color,
 };
 
 NakedButton.defaultProps = {
