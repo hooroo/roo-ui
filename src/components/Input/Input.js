@@ -2,24 +2,22 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { themeGet } from '@styled-system/theme-get';
-import {
-  space,
-  color,
-  fontSize,
-  lineHeight,
-  border,
-  borderColor,
-  textAlign,
-} from 'styled-system';
+import { space, color, typography, border, compose } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 
 import omitProps from '../omitProps';
 
 const Input = styled('input', omitProps(['color', 'fontSize']))`
-  ${space} ${color} ${fontSize} ${lineHeight} ${border} ${borderColor} ${textAlign} display: block;
-  width: 100%;
   outline: 0;
-  transition: border-color ${themeGet('transitions.default')};
   appearance: none;
+  transition: border-color ${themeGet('transitions.default')};
+
+  ${compose(
+    space,
+    color,
+    typography,
+    border,
+  )}
 
   &:focus {
     border-color: ${themeGet('colors.brand.secondary')};
@@ -45,21 +43,20 @@ const Input = styled('input', omitProps(['color', 'fontSize']))`
       border: none;
       border-bottom: ${themeGet('borders.2')(props)};
       border-color: ${themeGet('colors.greys.alto')(props)};
-    `} ${props =>
-  props.error &&
-  css`
-    border-color: ${themeGet('colors.ui.error')(props)};
-  `};
+    `}
+
+  ${props =>
+    props.error &&
+    css`
+      border-color: ${themeGet('colors.ui.error')(props)};
+    `};
 `;
 
 Input.propTypes = {
-  ...space.propTypes,
-  ...color.propTypes,
-  ...fontSize.propTypes,
-  ...lineHeight.propTypes,
-  ...border.propTypes,
-  ...borderColor.propTypes,
-  ...textAlign.propTypes,
+  ...propTypes.space,
+  ...propTypes.color,
+  ...propTypes.typography,
+  ...propTypes.border,
   error: PropTypes.bool,
   underline: PropTypes.bool,
 };
@@ -69,6 +66,8 @@ Input.defaultProps = {
   py: 3,
   px: 4,
   bg: 'white',
+  display: 'block',
+  width: '100%',
   color: 'greys.charcoal',
   fontSize: 'base',
   lineHeight: 'normal',
