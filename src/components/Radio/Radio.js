@@ -3,12 +3,14 @@ import styled from '@emotion/styled';
 import { themeGet } from 'styled-system';
 import { rem } from 'polished';
 
-const Radio = props => (
+const Radio = React.forwardRef((props, ref) => (
   <RadioWrapper>
-    <RadioInput type="radio" {...props} />
+    <RadioInput type="radio" ref={ref} {...props} />
     <RadioIcon />
   </RadioWrapper>
-);
+));
+
+Radio.displayName = 'Radio';
 
 const RadioWrapper = styled.div`
   display: inline-block;

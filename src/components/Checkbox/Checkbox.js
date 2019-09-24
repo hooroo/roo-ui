@@ -4,13 +4,15 @@ import { themeGet } from 'styled-system';
 import { rem } from 'polished';
 import { Icon } from '../';
 
-const Checkbox = props => (
+const Checkbox = React.forwardRef((props, ref) => (
   <CheckboxWrapper>
-    <CheckboxInput type="checkbox" {...props} />
+    <CheckboxInput type="checkbox" ref={ref} {...props} />
     <CheckboxBorder />
     <CheckboxIcon name="done" />
   </CheckboxWrapper>
-);
+));
+
+Checkbox.displayName = 'Checkbox';
 
 const CheckboxWrapper = styled.div`
   display: inline-block;
