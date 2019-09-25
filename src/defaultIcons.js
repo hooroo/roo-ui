@@ -18,4 +18,3 @@ export {
   circleHalf,
   circleBorder,
 } from './icons';
-// TODO
