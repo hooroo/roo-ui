@@ -62,6 +62,7 @@ const IconCategory = ({ category }) => (
 storiesOf('Components|Icon', module)
   .addDecorator(withDocs(README))
   .add('default icons', () => <IconsInTheme />)
+  .add('action', () => <IconCategory category="action" />)
   .add('alert', () => <IconCategory category="alert" />)
   .add('av', () => <IconCategory category="av" />)
   .add('communication', () => <IconCategory category="communication" />)
@@ -75,7 +76,7 @@ storiesOf('Components|Icon', module)
   .add('navigation', () => <IconCategory category="navigation" />)
   .add('notification', () => <IconCategory category="notification" />)
   .add('places', () => <IconCategory category="places" />)
+  .add('qantas', () => <IconCategory category="qantas" />)
   .add('rating', () => <IconCategory category="rating" />)
   .add('social', () => <IconCategory category="social" />)
-  .add('toggle', () => <IconCategory category="toggle" />)
-  .add('qantas', () => <IconCategory category="qantas" />);
+  .add('toggle', () => <IconCategory category="toggle" />);
