@@ -21,8 +21,11 @@ const CheckboxWrapper = styled.div`
 `;
 
 const CheckboxInput = styled.input`
+  height: ${themeGet('space.5')};
+  margin-top: ${rem('2px')};
   opacity: 0;
   position: absolute;
+  width: ${themeGet('space.5')};
   z-index: 0;
 
   &:focus {
