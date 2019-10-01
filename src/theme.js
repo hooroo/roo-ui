@@ -79,17 +79,6 @@ const borders = [0, '1px solid', '2px solid', '3px solid'];
 
 const breakpoints = ['40rem', '52rem', '64rem'];
 
-const buttons = {
-  default: {
-    color: 'white',
-    backgroundColor: 'greys.charcoal',
-  },
-  primary: {
-    color: 'white',
-    backgroundColor: 'brand.primary',
-  },
-};
-
 const fontFamily = 'Ciutadella, sans-serif';
 
 const fontSizes = {
@@ -203,7 +192,6 @@ export default {
   alertStyles,
   borders,
   breakpoints,
-  buttons,
   colors,
   fontFamily,
   fontSizes,
