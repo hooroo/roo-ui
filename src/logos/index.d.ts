@@ -1,4 +1,4 @@
-declare module '@roo-ui/logos' {
+declare module 'roo-ui/logos' {
   export const qantas: string;
   export const qantasGroup: string;
   export const qantasHotels: string;
