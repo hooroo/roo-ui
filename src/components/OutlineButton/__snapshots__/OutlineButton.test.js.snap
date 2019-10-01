@@ -26,7 +26,7 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   display: inline-block;
-  color: white;
+  color: #FFFFFF;
   background-color: #E40000;
   background-color: transparent;
   border-color: #E40000;
@@ -34,12 +34,8 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
   transition: none;
 }
 
-.emotion-0:hover {
+.emotion-0:hover:not(:disabled) {
   background-color: #b10000;
-}
-
-.emotion-0:hover:disabled {
-  background-color: #E40000;
 }
 
 .emotion-0:focus {
@@ -66,11 +62,14 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
 }
 
 <OutlineButton
+  backgroundColor="brand.primary"
+  color="white"
   display="inline-block"
   variant="primary"
 >
   <button
     className="emotion-0 emotion-1"
+    color="white"
     display="inline-block"
   >
     Hello world
@@ -104,20 +103,16 @@ exports[`<OutlineButton /> renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   display: inline-block;
-  color: white;
-  background-color: #323232;
+  color: #FFFFFF;
+  background-color: #E40000;
   background-color: transparent;
-  border-color: #323232;
+  border-color: #E40000;
   -webkit-transition: none;
   transition: none;
 }
 
-.emotion-0:hover {
-  background-color: #181818;
-}
-
-.emotion-0:hover:disabled {
-  background-color: #323232;
+.emotion-0:hover:not(:disabled) {
+  background-color: #b10000;
 }
 
 .emotion-0:focus {
@@ -130,12 +125,12 @@ exports[`<OutlineButton /> renders correctly 1`] = `
 }
 
 .emotion-0:not(:hover) {
-  color: #323232;
+  color: #E40000;
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #323232;
-  border-color: #323232;
+  background-color: #E40000;
+  border-color: #E40000;
 }
 
 .emotion-0:disabled {
@@ -144,11 +139,14 @@ exports[`<OutlineButton /> renders correctly 1`] = `
 }
 
 <OutlineButton
+  backgroundColor="brand.primary"
+  color="white"
   display="inline-block"
   variant="default"
 >
   <button
     className="emotion-0 emotion-1"
+    color="white"
     display="inline-block"
   >
     Click here
@@ -182,17 +180,16 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
   -moz-appearance: none;
   appearance: none;
   display: inline-block;
+  color: #FFFFFF;
+  background-color: #E40000;
   background-color: transparent;
+  border-color: #E40000;
   -webkit-transition: none;
   transition: none;
 }
 
-.emotion-0:hover {
-  background-color: #000;
-}
-
-.emotion-0:hover:disabled {
-  background-color: #000;
+.emotion-0:hover:not(:disabled) {
+  background-color: #b10000;
 }
 
 .emotion-0:focus {
@@ -204,17 +201,29 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
   cursor: not-allowed;
 }
 
+.emotion-0:not(:hover) {
+  color: #E40000;
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #E40000;
+  border-color: #E40000;
+}
+
 .emotion-0:disabled {
   color: #999999;
   border-color: #999999;
 }
 
 <OutlineButton
+  backgroundColor="brand.primary"
+  color="white"
   display="inline-block"
   variant="rounded"
 >
   <button
     className="emotion-0 emotion-1"
+    color="white"
     display="inline-block"
   >
     Hello world

@@ -67,6 +67,7 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div
@@ -216,6 +217,7 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div
@@ -365,6 +367,7 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div
@@ -514,6 +517,7 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div
@@ -663,6 +667,7 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div
@@ -812,6 +817,7 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div
@@ -918,7 +924,9 @@ exports[`<Alert /> contained renders correctly 1`] = `
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: default;
+  padding-left: 3px;
+  padding-right: 3px;
+  max-width: 80rem;
 }
 
 <Alert
@@ -939,13 +947,14 @@ exports[`<Alert /> contained renders correctly 1`] = `
         className="emotion-6 emotion-7"
       >
         <Container
-          gutter="default"
-          maxWidth="default"
+          gutter={3}
+          maxWidth="80rem"
         >
           <div
             className="emotion-4 emotion-5"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div
@@ -1021,6 +1030,7 @@ exports[`<Alert /> renders correctly 1`] = `
             className="emotion-4 emotion-5"
           >
             <Flex
+              display="flex"
               py={4}
             >
               <div

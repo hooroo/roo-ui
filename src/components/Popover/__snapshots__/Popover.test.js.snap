@@ -49,7 +49,7 @@ exports[`<Popover /> when popover is closed renders correctly 1`] = `
           >
             <Box>
               <div
-                className="css-ki38jf-Box emotion-0"
+                className="css-1efsrtw-Box emotion-0"
               >
                 <button
                   disabled={false}
