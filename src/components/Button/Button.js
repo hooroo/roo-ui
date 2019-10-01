@@ -1,5 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
+import get from 'lodash/get';
+import { darken } from 'polished';
 import PropTypes from 'prop-types';
 import { themeGet } from '@styled-system/theme-get';
 import { space, color, layout, shadow, variant, compose } from 'styled-system';
@@ -10,12 +12,14 @@ const variations = variant({
 });
 
 const styledProps = compose(
+  variations,
   space,
   color,
   layout,
   shadow,
-  variations,
 );
+
+const getBackground = props => get(color(props), 'backgroundColor', '#000');
 
 const Button = styled.button`
   margin: 0;
@@ -35,21 +39,6 @@ const Button = styled.button`
   cursor: pointer;
   appearance: none;
 
-  ${styledProps}
-
-  &:hover:not(:disabled) {
-    filter: brightness(85%);
-  }
-
-  &:focus {
-    box-shadow: ${themeGet('shadows.focus')};
-  }
-
-  &:disabled {
-    opacity: ${themeGet('opacity.disabled')};
-    cursor: not-allowed;
-  }
-
   ${props =>
     props.rounded &&
     css`
@@ -61,6 +50,21 @@ const Button = styled.button`
     css`
       width: 100%;
     `};
+
+  &:hover:not(:disabled) {
+    background-color: ${props => darken(0.1, getBackground(props))};
+  }
+
+  &:focus {
+    box-shadow: ${themeGet('shadows.focus')};
+  }
+
+  &:disabled {
+    opacity: ${themeGet('opacity.disabled')};
+    cursor: not-allowed;
+  }
+
+  ${styledProps}
 `;
 
 Button.propTypes = {
@@ -74,6 +78,8 @@ Button.propTypes = {
 Button.defaultProps = {
   variant: 'default',
   display: 'inline-block',
+  color: 'white',
+  backgroundColor: 'brand.primary',
 };
 
 export default Button;
