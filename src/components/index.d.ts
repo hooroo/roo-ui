@@ -74,9 +74,10 @@ declare module 'roo-ui/components' {
       SS.ColorProps,
       SS.TextAlignProps,
       SS.BoxShadowProps,
-      SS.BorderRadiusProps,
-      SS.BordersProps,
       SS.BorderColorProps,
+      SS.BorderRadiusProps,
+      SS.BorderProps,
+      SS.BordersProps,
       SS.FlexBasisProps,
       SS.FlexDirectionProps,
       SS.FlexWrapProps,
@@ -89,7 +90,7 @@ declare module 'roo-ui/components' {
       SS.LeftProps,
       SS.OverflowProps,
       SS.WidthProps,
-      SS.HeightProps, {}
+      SS.HeightProps {}
   export interface BoxProps
     extends BoxKnownProps,
       Omit<React.HTMLProps<HTMLDivElement>, keyof BoxKnownProps> {}
@@ -120,8 +121,8 @@ declare module 'roo-ui/components' {
     interactiveDisabledDates?: boolean;
     monthNames?: string[];
     weekdayNames?: string[];
-    monthsToDisplay: number;
-    firstDayOfWeek: number;
+    monthsToDisplay?: number;
+    firstDayOfWeek?: number;
     minDate?: Date;
   }
   export const DatePicker: React.FunctionComponent<
@@ -248,7 +249,10 @@ declare module 'roo-ui/components' {
       Omit<React.HTMLProps<HTMLUListElement>, keyof ListKnownProps> {}
   export const List: SC.StyledComponent<ListProps, ListProps, any>;
 
-  interface ListItemKnownProps extends BaseProps, SS.SpaceProps, SS.BorderProps {}
+  interface ListItemKnownProps
+    extends BaseProps,
+      SS.SpaceProps,
+      SS.BorderProps {}
   export interface ListItemProps
     extends ListItemKnownProps,
       Omit<React.HTMLProps<HTMLLIElement>, keyof ListItemKnownProps> {}
@@ -344,6 +348,7 @@ declare module 'roo-ui/components' {
     smooth?: boolean;
     exact?: boolean;
     href?: H.LocationDescriptor;
+    to?: H.LocationDescriptor;
   }
   export interface LinkProps
     extends LinkKnownProps,
@@ -466,7 +471,7 @@ declare module 'roo-ui/components' {
     children: React.ReactNode;
   }
   export interface WrapperProps
-  extends WrapperKnownProps,
-    Omit<React.HTMLProps<HTMLDivElement>, keyof WrapperKnownProps> {}
+    extends WrapperKnownProps,
+      Omit<React.HTMLProps<HTMLDivElement>, keyof WrapperKnownProps> {}
   export const Wrapper: SC.StyledComponent<WrapperProps, WrapperProps, any>;
 }
