@@ -7,7 +7,7 @@ exports[`<List /> renders correctly 1`] = `
 }
 
 .emotion-0 {
-  margin: 0 0;
+  margin-bottom: 32px;
 }
 
 <List
@@ -24,21 +24,27 @@ exports[`<List /> renders correctly 1`] = `
     <ul
       className="emotion-6 emotion-7"
     >
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 1
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 2
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
@@ -52,7 +58,7 @@ exports[`<List /> renders correctly 1`] = `
 
 exports[`<List /> with columns set renders correctly 1`] = `
 .emotion-0 {
-  margin: 0 0;
+  margin-bottom: 32px;
 }
 
 .emotion-6 {
@@ -95,21 +101,27 @@ exports[`<List /> with columns set renders correctly 1`] = `
     <ul
       className="emotion-6 emotion-7"
     >
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 1
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 2
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
@@ -123,7 +135,7 @@ exports[`<List /> with columns set renders correctly 1`] = `
 
 exports[`<List /> with flush set renders correctly 1`] = `
 .emotion-0 {
-  margin: 0 0;
+  margin-bottom: 32px;
 }
 
 .emotion-6 {
@@ -147,21 +159,27 @@ exports[`<List /> with flush set renders correctly 1`] = `
     <ul
       className="emotion-6 emotion-7"
     >
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 1
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 2
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
@@ -180,7 +198,7 @@ exports[`<List /> with ordered prop renders correctly 1`] = `
 }
 
 .emotion-0 {
-  margin: 0 0;
+  margin-bottom: 32px;
 }
 
 <List
@@ -197,21 +215,27 @@ exports[`<List /> with ordered prop renders correctly 1`] = `
     <ol
       className="emotion-6 emotion-7"
     >
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 1
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 2
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
@@ -225,7 +249,7 @@ exports[`<List /> with ordered prop renders correctly 1`] = `
 
 exports[`<List /> with responsive columns set renders correctly 1`] = `
 .emotion-0 {
-  margin: 0 0;
+  margin-bottom: 32px;
 }
 
 .emotion-6 {
@@ -296,21 +320,27 @@ exports[`<List /> with responsive columns set renders correctly 1`] = `
     <ul
       className="emotion-6 emotion-7"
     >
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 1
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >
           Hello Item 2
         </li>
       </ListItem>
-      <ListItem>
+      <ListItem
+        mb={4}
+      >
         <li
           className="emotion-0 emotion-1"
         >

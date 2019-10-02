@@ -1,11 +1,10 @@
 import styled from '@emotion/styled';
-import { color, buttonStyle, themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
+import { color } from 'styled-system';
 import get from 'lodash/get';
 import { Button } from '../';
 
-const getBackground = props =>
-  get(color(props), 'backgroundColor') ||
-  get(buttonStyle(props), 'backgroundColor');
+const getBackground = props => get(color(props), 'backgroundColor');
 
 const OutlineButton = styled(Button)`
   background-color: transparent;

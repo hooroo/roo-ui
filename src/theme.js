@@ -79,17 +79,6 @@ const borders = [0, '1px solid', '2px solid', '3px solid'];
 
 const breakpoints = ['40rem', '52rem', '64rem'];
 
-const buttons = {
-  default: {
-    color: 'white',
-    backgroundColor: colors.greys.charcoal,
-  },
-  primary: {
-    color: 'white',
-    backgroundColor: colors.brand.primary,
-  },
-};
-
 const fontFamily = 'Ciutadella, sans-serif';
 
 const fontSizes = {
@@ -106,10 +95,6 @@ const fontSizes = {
 const fontWeights = {
   normal: 500,
   bold: 600,
-};
-
-const gutters = {
-  default: 3,
 };
 
 const letterSpacings = {
@@ -207,12 +192,10 @@ export default {
   alertStyles,
   borders,
   breakpoints,
-  buttons,
   colors,
   fontFamily,
   fontSizes,
   fontWeights,
-  gutters,
   icons,
   letterSpacings,
   lineHeights,

@@ -1,17 +1,23 @@
 import styled from '@emotion/styled';
-import { themeGet, space, borders, borderColor } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
+import { space, borders, compose } from 'styled-system';
 
-const ListItem = styled.li`
-  margin: 0 0 ${themeGet('space.4')};
-  ${space} ${borders} ${borderColor};
-`;
+const styleProps = compose(
+  space,
+  borders,
+);
+
+const ListItem = styled('li')(styleProps);
 
 ListItem.displayName = 'ListItem';
 
 ListItem.propTypes = {
-  ...space.propTypes,
-  ...borders.propTypes,
-  ...borderColor.propTypes,
+  ...propTypes.space,
+  ...propTypes.borders,
+};
+
+ListItem.defaultProps = {
+  mb: 4,
 };
 
 export default ListItem;

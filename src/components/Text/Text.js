@@ -1,45 +1,48 @@
 import PropTypes from 'prop-types';
+import propTypes, { propType } from '@styled-system/prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { hideVisually } from 'polished';
 import {
   textStyle,
   color,
-  fontSize,
-  fontWeight,
-  letterSpacing,
-  lineHeight,
+  typography,
   space,
-  textAlign,
-  style,
-  display,
+  layout,
+  system,
+  compose,
 } from 'styled-system';
 import omitProps from '../omitProps';
 
-const textDecoration = style({
-  prop: 'textDecoration',
-  cssProperty: 'textDecoration',
+const customProps = system({
+  textDecoration: true,
 });
 
+const styleProps = compose(
+  color,
+  typography,
+  space,
+  layout,
+  customProps,
+);
+
 const Text = styled('span', omitProps())`
-  ${textStyle} ${color} ${fontSize} ${fontWeight} ${letterSpacing} ${lineHeight} ${space} ${textAlign} ${textDecoration} ${display} ${props =>
-  props.hidden &&
-  css`
-    ${hideVisually()};
-  `};
+  ${textStyle}
+  ${styleProps}
+
+  ${props =>
+    props.hidden &&
+    css`
+      ${hideVisually()};
+    `};
 `;
 
 Text.propTypes = {
-  ...textStyle.propTypes,
-  ...color.propTypes,
-  ...fontSize.propTypes,
-  ...fontWeight.propTypes,
-  ...letterSpacing.propTypes,
-  ...lineHeight.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...textDecoration.propTypes,
-  ...display.propTypes,
+  ...propTypes.color,
+  ...propTypes.typography,
+  ...propTypes.space,
+  ...propTypes.layout,
+  textDecoration: propType,
   hidden: PropTypes.bool,
 };
 

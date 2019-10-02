@@ -7,12 +7,12 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -156,12 +156,12 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -305,12 +305,12 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -454,12 +454,12 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -603,12 +603,12 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -752,12 +752,12 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -901,12 +901,12 @@ exports[`<Alert /> contained renders correctly 1`] = `
 }
 
 .emotion-2 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-0 {
@@ -918,7 +918,9 @@ exports[`<Alert /> contained renders correctly 1`] = `
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: default;
+  padding-left: 3px;
+  padding-right: 3px;
+  max-width: 80rem;
 }
 
 <Alert
@@ -939,8 +941,8 @@ exports[`<Alert /> contained renders correctly 1`] = `
         className="emotion-6 emotion-7"
       >
         <Container
-          gutter="default"
-          maxWidth="default"
+          gutter={3}
+          maxWidth="80rem"
         >
           <div
             className="emotion-4 emotion-5"
@@ -986,12 +988,12 @@ exports[`<Alert /> renders correctly 1`] = `
 }
 
 .emotion-2 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-0 {

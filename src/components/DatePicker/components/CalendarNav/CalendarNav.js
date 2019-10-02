@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 
 import { Flex, NakedButton, Icon } from 'components';
 

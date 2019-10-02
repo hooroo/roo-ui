@@ -1,25 +1,29 @@
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { space, size, height, width } from 'styled-system';
+import { space, layout, compose } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 
 const Image = styled.img`
   display: block;
   max-width: 100%;
   height: auto;
 
-  ${space} ${size} ${height} ${width} ${props =>
-  props.inline &&
-  css`
-    display: inline-block;
-  `};
+  ${compose(
+    space,
+    layout,
+  )}
+
+  ${props =>
+    props.inline &&
+    css`
+      display: inline-block;
+    `};
 `;
 
 Image.propTypes = {
-  ...space.propTypes,
-  ...size.propTypes,
-  ...height.propTypes,
-  ...width.propTypes,
+  ...propTypes.layout,
+  ...propTypes.space,
   inline: PropTypes.bool,
 };
 
