@@ -27,8 +27,8 @@ const styleProps = compose(
 );
 
 const Text = styled('span', omitProps())`
-  ${styleProps}
   ${textStyle}
+  ${styleProps}
 
   ${props =>
     props.hidden &&

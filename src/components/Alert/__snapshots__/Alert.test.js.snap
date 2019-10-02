@@ -7,12 +7,12 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -67,7 +67,6 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
@@ -157,12 +156,12 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -217,7 +216,6 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
@@ -307,12 +305,12 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -367,7 +365,6 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
@@ -457,12 +454,12 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -517,7 +514,6 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
@@ -607,12 +603,12 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -667,7 +663,6 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
@@ -757,12 +752,12 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 }
 
 .emotion-13 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-11 {
@@ -817,7 +812,6 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
             className="emotion-15 emotion-10"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
@@ -907,12 +901,12 @@ exports[`<Alert /> contained renders correctly 1`] = `
 }
 
 .emotion-2 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-0 {
@@ -954,7 +948,6 @@ exports[`<Alert /> contained renders correctly 1`] = `
             className="emotion-4 emotion-5"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
@@ -995,12 +988,12 @@ exports[`<Alert /> renders correctly 1`] = `
 }
 
 .emotion-2 {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .emotion-0 {
@@ -1030,7 +1023,6 @@ exports[`<Alert /> renders correctly 1`] = `
             className="emotion-4 emotion-5"
           >
             <Flex
-              display="flex"
               py={4}
             >
               <div
