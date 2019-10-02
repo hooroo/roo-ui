@@ -18,28 +18,22 @@ declare module 'roo-ui' {
   export const theme: Theme;
 
   export interface Theme {
-    gutters: KeyValue<number>;
-    colors: KeyValue<string> & {
-      greys: KeyValue<string>;
-      ui: KeyValue<string>;
-    };
-    breakpoints: string[];
-    mediaQueries: string[];
-    space: string[];
-    maxWidths: KeyValue<string>;
     borders: string[];
-    radii: KeyValue<string>;
-    shadows: KeyValue<string>;
-    transitions: KeyValue<string>;
+    breakpoints: string[];
     fontFamily: string;
     fontSizes: KeyValue<string>;
-    lineHeights: KeyValue<number>;
     fontWeights: KeyValue<number>;
+    gutters: KeyValue<number>;
     letterSpacings: KeyValue<string>;
-    buttons: KeyValue<{
-      color: string;
-      backgroundColor: string;
-    }>;
+    lineHeights: KeyValue<number>;
+    maxWidths: KeyValue<string>;
+    mediaQueries: string[];
+    opacity: KeyValue<number>;
+    radii: KeyValue<string>;
+    shadows: KeyValue<string>;
+    space: string[];
+    transitions: KeyValue<string>;
+    icons: KeyValue<{ category: string; path: string }>;
     alertStyles: KeyValue<{
       bg: string;
       icon?: {
@@ -47,6 +41,13 @@ declare module 'roo-ui' {
         color: string;
       };
     }>;
-    opacity: KeyValue<number>;
+    buttons: KeyValue<{
+      color: string;
+      backgroundColor: string;
+    }>;
+    colors: KeyValue<string> & {
+      greys: KeyValue<string>;
+      ui: KeyValue<string>;
+    };
   }
 }
