@@ -3,7 +3,6 @@
 exports[`<ModalFooter /> renders correctly 1`] = `
 <Flex
   alignItems="center"
-  display="flex"
   justifyContent="center"
   pb={11}
   px={11}

@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarDays /> renders correctly 1`] = `
-<CalendarDaysWrapper
-  display="flex"
->
+<CalendarDaysWrapper>
   <CalendarDay
     _isMockFunction={true}
     disabled={false}

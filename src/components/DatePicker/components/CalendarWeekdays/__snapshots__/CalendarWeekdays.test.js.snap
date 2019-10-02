@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CalendarWeekdays /> renders correctly 1`] = `
-<CalendarWeekdaysWrapper
-  display="flex"
->
+<CalendarWeekdaysWrapper>
   <CalendarWeekday
     key="72018S0"
   >
