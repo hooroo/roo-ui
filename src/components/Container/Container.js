@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { maxWidth, space, display, themeGet } from 'styled-system';
+import omitProps from '../omitProps';
 
 const gutter = props => {
   const gutterValue = themeGet(`gutters.${props.gutter}`, props.gutter)(props);
@@ -29,7 +30,7 @@ const gutter = props => {
   });
 };
 
-const Container = styled.div`
+const Container = styled('div', omitProps(['gutter']))`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
