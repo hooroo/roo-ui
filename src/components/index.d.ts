@@ -445,12 +445,13 @@ declare module 'roo-ui/components' {
     zIndex?: number;
     modifiers?: PopperJS.Modifiers;
   }
+  export interface PopoverControlRenderProps {
+    isOpen: boolean;
+    openPopover: () => void;
+    closePopover: () => void;
+  }
   interface PopoverControlKnownProps extends BaseProps {
-    children: (args: {
-      isOpen: boolean;
-      openPopover: () => void;
-      closePopover: () => void;
-    }) => React.ReactNode;
+    children: (args: PopoverControlRenderProps) => React.ReactNode;
   }
   export interface PopoverControlProps
     extends PopoverControlKnownProps,
