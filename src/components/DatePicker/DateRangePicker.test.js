@@ -1,5 +1,5 @@
 import React from 'react';
-import parse from 'date-fns/parse';
+import parseISO from 'date-fns/parseISO';
 import format from 'date-fns/format';
 import range from 'lodash/range';
 import theme from 'theme';
@@ -7,7 +7,7 @@ import { mountWithTheme } from 'testUtils';
 
 import DateRangePicker from './DateRangePicker';
 
-const dateToString = date => format(date, 'YYYY-MM-DD');
+const dateToString = date => format(date, 'yyyy-MM-dd');
 const rangeInclusive = (start = 0, end = 0) => range(start, end + 1);
 const getDayOfMonth = (wrapper, dayOfMonth) =>
   wrapper.find('CalendarDay').at(dayOfMonth - 1);
@@ -16,12 +16,12 @@ describe('<DateRangePicker />', () => {
   let wrapper;
 
   const defaultProps = {
-    minDate: parse('2018-07-01'),
+    minDate: parseISO('2018-07-01'),
     onRangeSelected: jest.fn,
     monthsToDisplay: 1,
     stacked: true,
     weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-    disabledDates: [parse('2018-07-04'), parse('2018-07-05')],
+    disabledDates: [parseISO('2018-07-04'), parseISO('2018-07-05')],
   };
 
   const setup = (args = {}) => {
@@ -104,8 +104,8 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('preselected range', () => {
-    const initialStartDate = parse('2018-07-15');
-    const initialEndDate = parse('2018-07-20');
+    const initialStartDate = parseISO('2018-07-15');
+    const initialEndDate = parseISO('2018-07-20');
 
     beforeEach(() => {
       setup({ initialStartDate, initialEndDate });
@@ -139,7 +139,7 @@ describe('<DateRangePicker />', () => {
     describe('when selecting three sequential days', () => {
       beforeEach(() => {
         callback = jest.fn();
-        const initialDisplayDate = parse('2018-07-15');
+        const initialDisplayDate = parseISO('2018-07-15');
         setup({ initialDisplayDate, onChangeDates: callback });
         getDayOfMonth(wrapper, 1)
           .find('button')
@@ -183,7 +183,7 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('when only start date is set', () => {
-    const initialStartDate = parse('2018-07-15');
+    const initialStartDate = parseISO('2018-07-15');
 
     describe('with isSettingStartDate is false', () => {
       const isSettingStartDate = false;
@@ -607,8 +607,8 @@ describe('<DateRangePicker />', () => {
   });
 
   describe('when start date & end date are set', () => {
-    const initialStartDate = parse('2018-07-15');
-    const initialEndDate = parse('2018-07-20');
+    const initialStartDate = parseISO('2018-07-15');
+    const initialEndDate = parseISO('2018-07-20');
 
     describe('with isSettingStartDate is true', () => {
       const isSettingStartDate = true;

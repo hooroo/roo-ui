@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import subDays from 'date-fns/sub_days';
-import differenceInCalendarMonths from 'date-fns/difference_in_calendar_months';
-import startOfDay from 'date-fns/start_of_day';
-import endOfDay from 'date-fns/end_of_day';
-import isSameDay from 'date-fns/is_same_day';
+import subDays from 'date-fns/subDays';
+import differenceInCalendarMonths from 'date-fns/differenceInCalendarMonths';
+import startOfDay from 'date-fns/startOfDay';
+import endOfDay from 'date-fns/endOfDay';
+import isSameDay from 'date-fns/isSameDay';
 import throttle from 'lodash/fp/throttle';
 import Dayzed from 'dayzed';
 

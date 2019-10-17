@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { number, boolean } from '@storybook/addon-knobs';
 import { withDocs } from 'storybook-readme';
-import addDays from 'date-fns/add_days';
+import addDays from 'date-fns/addDays';
 
 import DateRangePicker from './DateRangePicker';
 import README from './DateRangePicker.README.md';

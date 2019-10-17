@@ -1,4 +1,4 @@
-import isWithinRange from 'date-fns/is_within_range';
+import isWithinInterval from 'date-fns/isWithinInterval';
 
 const isDateInRange = ({
   startDate,
@@ -11,14 +11,14 @@ const isDateInRange = ({
 
   const IsRangeSelected = !!endDate;
   if (IsRangeSelected) {
-    return isWithinRange(date, startDate, endDate);
+    return isWithinInterval(date, { start: startDate, end: endDate });
   }
 
   const isHoverdDate = !!hoveredDate;
   const isValidHoverdDate = hoveredDate > startDate;
 
   if (isHoverdDate && isValidHoverdDate && !isSettingStartDate) {
-    return isWithinRange(date, startDate, hoveredDate);
+    return isWithinInterval(date, { start: startDate, end: hoveredDate });
   }
 
   return false;
