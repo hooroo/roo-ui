@@ -4,11 +4,6 @@ services:
   app:
     build: ..
     working_dir: /application
-    volumes:
-      - ../:/application
-      - node_modules:/application/node_modules
-    expose:
-      - 3000
     environment:
       CI: 'true'
       TZ: 'Australia/Sydney'
@@ -19,6 +14,3 @@ services:
       BUILDKITE_COMMIT:
       GITHUB_TOKEN:
       NPM_TOKEN:
-
-volumes:
-  node_modules:
