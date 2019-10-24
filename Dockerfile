@@ -1,10 +1,8 @@
 FROM node:10.14
 
-USER hooroo
-
-COPY --chown=hooroo package.json yarn.lock ./
+COPY package.json yarn.lock ./
 RUN yarn
 
-COPY --chown=hooroo . .
+COPY . .
 
 CMD ["yarn", "storybook"]
