@@ -1,4 +1,4 @@
-FROM 730011650125.dkr.ecr.ap-southeast-2.amazonaws.com/base/node:10.14.1-builder-20181212
+FROM node:10.14
 
 USER hooroo
 
