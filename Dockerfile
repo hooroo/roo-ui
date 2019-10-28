@@ -1,10 +1,10 @@
-FROM ***REMOVED***.dkr.ecr.ap-southeast-2.amazonaws.com/base/node:10.14.1-builder-20181212
+FROM node:10.14
 
-USER hooroo
+WORKDIR /application
 
-COPY --chown=hooroo package.json yarn.lock ./
+COPY package.json yarn.lock ./
 RUN yarn
 
-COPY --chown=hooroo . .
+COPY . .
 
 CMD ["yarn", "storybook"]
