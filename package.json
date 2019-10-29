@@ -131,7 +131,7 @@
   "dependencies": {
     "@emotion/is-prop-valid": "^0.8.2",
     "date-fns": "^2.5.0",
-    "dayzed": "3.0.0",
+    "dayzed": "^3.0.0",
     "emotion-theming": "^10.0.17",
     "lodash": "^4.17.15",
     "polished": "^3.4.1",
