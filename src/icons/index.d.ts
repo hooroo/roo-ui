@@ -41,6 +41,7 @@ declare module "roo-ui/icons" {
   export const changeHistory: Icon;
   export const checkCircle: Icon;
   export const chromeReaderMode: Icon;
+  export const classIcon: Icon;
   export const code: Icon;
   export const compareArrows: Icon;
   export const copyright: Icon;
@@ -48,6 +49,7 @@ declare module "roo-ui/icons" {
   export const dashboard: Icon;
   export const dateRange: Icon;
   export const deleteForever: Icon;
+  export const deleteIcon: Icon;
   export const description: Icon;
   export const dns: Icon;
   export const doneAll: Icon;
@@ -181,6 +183,7 @@ declare module "roo-ui/icons" {
   export const tabUnselected: Icon;
   export const tab: Icon;
   export const theaters: Icon;
+  export const threeDimensionalRotation: Icon;
   export const thumbDown: Icon;
   export const thumbUp: Icon;
   export const thumbsUpDown: Icon;
@@ -928,6 +931,7 @@ declare module "roo-ui/icons" {
   export const person: Icon;
   export const plusOne: Icon;
   export const poll: Icon;
+  export const publicIcon: Icon;
   export const school: Icon;
   export const sentimentDissatisfied: Icon;
   export const sentimentNeutral: Icon;
