@@ -1,5 +1,5 @@
 import React from 'react';
-import parse from 'date-fns/parse';
+import parseISO from 'date-fns/parseISO';
 import theme from 'theme';
 import { mountWithTheme } from 'testUtils';
 
@@ -9,15 +9,15 @@ describe('<DatePicker />', () => {
   let wrapper;
 
   const props = {
-    date: parse('2018-07-03'),
-    minDate: parse('2018-06-01'),
-    maxDate: parse('2018-08-20'),
-    selected: parse('2018-07-20'),
+    date: parseISO('2018-07-03'),
+    minDate: parseISO('2018-06-01'),
+    maxDate: parseISO('2018-08-20'),
+    selected: parseISO('2018-07-20'),
     onDateSelected: jest.fn(),
     monthsToDisplay: 1,
     stacked: true,
     weekdayNames: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-    disabledDates: [parse('2018-07-04'), parse('2018-07-05')],
+    disabledDates: [parseISO('2018-07-04'), parseISO('2018-07-05')],
   };
 
   const setup = (args = {}) => {

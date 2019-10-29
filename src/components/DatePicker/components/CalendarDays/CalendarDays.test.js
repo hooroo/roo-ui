@@ -1,7 +1,7 @@
 import React from 'react';
 import theme from 'theme';
 import { shallowWithTheme } from 'testUtils';
-import addDays from 'date-fns/add_days';
+import addDays from 'date-fns/addDays';
 
 import CalendarDays from './';
 
