@@ -475,4 +475,12 @@ declare module 'roo-ui/components' {
     extends WrapperKnownProps,
       Omit<React.HTMLProps<HTMLDivElement>, keyof WrapperKnownProps> {}
   export const Wrapper: SC.StyledComponent<WrapperProps, WrapperProps, any>;
+
+  interface OmitPropsOptions {
+    omitStyledSystemProps?: boolean;
+  }
+  export const omitProps: (
+    customPropsList?: string[],
+    options?: OmitPropsOptions,
+  ) => SC.StyledOptions;
 }
