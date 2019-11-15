@@ -117,6 +117,16 @@ Commit _types_ other than `fix:` and `feat:` are allowed:
 
 Get someone from another team to review the pull request. This gets other teams across the new changes and helps with knowledge sharing.
 
+Typically, a roo-ui maintainer should be asked for a review initially. These people include;
+
+- [Angus](https://github.com/angusfretwell) from Team SupX
+- [Philip](https://github.com/philipwindeyer) from Team Relationship
+- [Eric](https://github.com/eneo5541) from The Bellhops
+- [Mike](https://github.com/memcc) from The Bellhops
+- [Long](https://github.com/KieraDOG) from Team Packages
+
+If you've requested a review from the maintainers listed above, but haven't received one within **two days**, please extend your review request to other [team members of Qantas Hotels](https://github.com/orgs/hooroo/people).
+
 ## Deploying
 
 Once a pull request is merged into master a Buildkite pipeline is triggered. It will deploy the new version of the package to NPM and deploy the latest storybook.
