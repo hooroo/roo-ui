@@ -4,9 +4,6 @@ services:
   app:
     build: ..
     working_dir: /application
-    volumes:
-      - ../:/application
-      - /application/node_modules
     environment:
       CI: 'true'
       TZ: 'Australia/Sydney'
