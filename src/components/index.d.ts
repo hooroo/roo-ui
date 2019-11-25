@@ -130,7 +130,7 @@ declare module 'roo-ui/components' {
   >;
 
   export interface StarRatingProps extends SS.SizeProps {
-    rating: number;
+    rating: number | string;
     ratingType: 'AAA' | 'SELF_RATED';
   }
   export const StarRating: React.FunctionComponent<
