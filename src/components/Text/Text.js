@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { hideVisually } from 'polished';
-import { style } from 'styled-system';
+import { system } from 'styled-system';
 import { textStyle } from '@styled-system/variant';
 import { color } from '@styled-system/color';
 import { space } from '@styled-system/space';
@@ -11,17 +11,14 @@ import { layout } from '@styled-system/layout';
 import propTypes from '@styled-system/prop-types';
 import omitProps from '../omitProps';
 
-const textDecoration = style({
-  prop: 'textDecoration',
-  cssProperty: 'textDecoration',
-});
-
 const Text = styled('span', omitProps())`
-  ${textStyle} ${color} ${typography} ${space} ${layout} ${textDecoration} ${props =>
-  props.hidden &&
-  css`
-    ${hideVisually()};
-  `};
+  ${textStyle} ${color} ${typography} ${space} ${layout};
+  ${system({ textDecoration: true })};
+  ${props =>
+    props.hidden &&
+    css`
+      ${hideVisually()};
+    `};
 `;
 
 Text.propTypes = {

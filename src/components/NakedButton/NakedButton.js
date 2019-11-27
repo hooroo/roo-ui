@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { style } from 'styled-system';
+import { system } from 'styled-system';
 import { textStyle } from '@styled-system/variant';
 import { themeGet } from '@styled-system/theme-get';
 import { space } from '@styled-system/space';
@@ -7,17 +7,6 @@ import { layout } from '@styled-system/layout';
 import { typography } from '@styled-system/typography';
 import { color } from '@styled-system/color';
 import propTypes from '@styled-system/prop-types';
-
-const textDecoration = style({
-  prop: 'textDecoration',
-  cssProperty: 'textDecoration',
-});
-
-const hoverColor = style({
-  prop: 'hoverColor',
-  cssProperty: 'color',
-  key: 'colors',
-});
 
 const NakedButton = styled('button')`
   border: none;
@@ -33,7 +22,12 @@ const NakedButton = styled('button')`
   }
 
   &:hover {
-    ${hoverColor};
+    ${system({
+      hoverColor: {
+        property: 'color',
+        scale: 'colors',
+      },
+    })};
   }
 
   &:disabled {
@@ -45,7 +39,8 @@ const NakedButton = styled('button')`
     ${color};
   }
 
-  ${space} ${layout} ${typography} ${color} ${textStyle} ${textDecoration};
+  ${space} ${layout} ${typography} ${color} ${textStyle};
+  ${system({ textDecoration: true })};
 `;
 
 NakedButton.propTypes = {

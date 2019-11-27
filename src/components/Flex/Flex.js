@@ -1,17 +1,13 @@
 import styled from '@emotion/styled';
-import { style } from 'styled-system';
+import { system } from 'styled-system';
 import { flexbox } from '@styled-system/flexbox';
 import propTypes from '@styled-system/prop-types';
 import Box from '../Box';
 
-const flexFlow = style({
-  prop: 'flexFlow',
-  cssProperty: 'flexFlow',
-});
-
 const Flex = styled(Box)`
   display: flex;
-  ${flexbox} ${flexFlow};
+  ${flexbox};
+  ${system({ flexFlow: true })};
 `;
 
 Flex.propTypes = {

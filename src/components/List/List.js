@@ -2,16 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { style } from 'styled-system';
+import { system } from 'styled-system';
 import { themeGet } from '@styled-system/theme-get';
-
+import propTypes from '@styled-system/prop-types';
 import ListItem from '../ListItem';
-
-const columns = style({
-  prop: 'columns',
-  cssProperty: 'flexBasis',
-  transformValue: n => `${100 / n}%`,
-});
 
 const ListBase = styled('div')`
   margin: ${themeGet('space.4')} 0;
@@ -34,7 +28,12 @@ const ListBase = styled('div')`
         flex: 1 1;
         padding: 0 ${themeGet('space.2')(props)};
 
-        ${columns(props)};
+        ${system({
+          columns: {
+            property: 'flexBasis',
+            transform: n => `${100 / n}%`,
+          },
+        })};
       }
     `};
 `;
@@ -44,7 +43,7 @@ const List = props => <ListBase {...props} as={props.ordered ? 'ol' : 'ul'} />;
 List.displayName = 'List';
 
 List.propTypes = {
-  ...columns.propTypes,
+  ...propTypes.columns,
   flush: PropTypes.bool,
   ordered: PropTypes.bool,
 };
