@@ -897,6 +897,7 @@ declare module "roo-ui/icons" {
   export const smokingRooms: Icon;
   export const spa: Icon;
   export const calendar: Icon;
+  export const confirmation: Icon;
   export const dial: Icon;
   export const feeFreePayment: Icon;
   export const pointsPay: Icon;

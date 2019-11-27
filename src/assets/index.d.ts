@@ -6,4 +6,5 @@ declare module 'roo-ui/assets' {
   export const pebbleRedNarrow: string;
   export const pebbleWhite: string;
   export const alertIllustration: string;
+  export const luggage: string;
 }

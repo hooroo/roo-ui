@@ -5,3 +5,4 @@ export { default as pebbleRed } from './pebble-red.svg';
 export { default as pebbleRedNarrow } from './pebble-red-narrow.svg';
 export { default as pebbleWhite } from './pebble-white.svg';
 export { default as alertIllustration } from './alert-illustration.svg';
+export { default as luggage } from './luggage.svg';
