@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import { hideVisually } from 'polished';
-import { color, fontWeight, themeGet, space } from 'styled-system';
+import { color, fontWeight, space } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import omitProps from '../omitProps';
 
 const Link = styled('a', omitProps(['hidden', 'underline']))`

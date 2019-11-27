@@ -89,6 +89,8 @@
     "@storybook/addon-options": "^5.1.11",
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
+    "@styled-system/color": "^5.1.2",
+    "@styled-system/theme-get": "^5.1.2",
     "@types/react": "^16.9.2",
     "@types/styled-system": "^5.1.1",
     "babel-eslint": "^10.0.3",
@@ -123,9 +125,9 @@
     "react-popper": "^1.3.4",
     "react-powerplug": "^1.0.0",
     "react-text-mask": "^5.4.3",
-    "semantic-release": "16.0.0-beta.22",
+    "semantic-release": "15.13.31",
     "storybook-readme": "^5.0.8",
-    "styled-system": "^4.1.0",
+    "styled-system": "^5.1.2",
     "svgi": "^1.1.0"
   },
   "dependencies": {

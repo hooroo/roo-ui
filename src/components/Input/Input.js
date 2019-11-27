@@ -9,8 +9,8 @@ import {
   border,
   borderColor,
   textAlign,
-  themeGet,
 } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 
 import omitProps from '../omitProps';
 

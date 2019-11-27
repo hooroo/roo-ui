@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
 import styled from '@emotion/styled';
 import { Global, css } from '@emotion/core';
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import { rem, rgba } from 'polished';
 import omit from 'lodash/omit';
 

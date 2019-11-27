@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { themeGet, style } from 'styled-system';
+import { style } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 
 import ListItem from '../ListItem';
 

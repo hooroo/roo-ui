@@ -4,10 +4,10 @@ import {
   space,
   verticalAlign,
   textAlign,
-  themeGet,
   color,
   textStyle,
 } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 
 const textDecoration = style({
   prop: 'textDecoration',

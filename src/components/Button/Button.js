@@ -3,15 +3,14 @@ import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
 import {
-  themeGet,
   space,
   color,
-  backgroundColor,
   boxShadow,
   display,
   variant,
   width,
 } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import get from 'lodash/get';
 
 const FALLBACK_BG_COLOR = '#000';
@@ -19,7 +18,7 @@ const FALLBACK_BG_COLOR = '#000';
 const buttonStyle = variant({ key: 'buttons' });
 
 const getBackground = props =>
-  get(backgroundColor(props), 'backgroundColor') ||
+  get(color(props), 'backgroundColor') ||
   get(buttonStyle(props), 'backgroundColor') ||
   FALLBACK_BG_COLOR;
 
