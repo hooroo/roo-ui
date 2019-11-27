@@ -901,6 +901,7 @@ declare module "roo-ui/icons" {
   export const feeFreePayment: Icon;
   export const pointsPay: Icon;
   export const pricePromise: Icon;
+  export const qffCheckCircle: Icon;
   export const qffPoints: Icon;
   export const ribbon: Icon;
   export const support: Icon;
