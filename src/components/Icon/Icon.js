@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
-import { space, color } from 'styled-system';
+import { space } from '@styled-system/space';
+import { color } from '@styled-system/color';
 import PropTypes from 'prop-types';
 
 const IS_TEST = process.env.NODE_ENV === 'test';

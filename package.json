@@ -89,7 +89,7 @@
     "@storybook/addon-options": "^5.1.11",
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
-    "@styled-system/color": "^5.1.2",
+    "@styled-system/prop-types": "^5.1.2",
     "@styled-system/theme-get": "^5.1.2",
     "@types/react": "^16.9.2",
     "@types/styled-system": "^5.1.1",
@@ -145,6 +145,8 @@
   "peerDependencies": {
     "@emotion/core": "^10.0.0",
     "@emotion/styled": "^10.0.0",
+    "@styled-system/prop-types": "^5.1.2",
+    "@styled-system/theme-get": "^5.1.2",
     "enzyme": "^3.0.0",
     "prop-types": "^15.0.0",
     "react": "^16.0.0",

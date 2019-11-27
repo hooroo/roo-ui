@@ -2,15 +2,13 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { darken } from 'polished';
-import {
-  space,
-  color,
-  boxShadow,
-  display,
-  variant,
-  width,
-} from 'styled-system';
+import { variant } from '@styled-system/variant';
+import { space } from '@styled-system/space';
+import { color } from '@styled-system/color';
+import { layout } from '@styled-system/layout';
+import { shadow } from '@styled-system/shadow';
 import { themeGet } from '@styled-system/theme-get';
+import propTypes from '@styled-system/prop-types';
 import get from 'lodash/get';
 
 const FALLBACK_BG_COLOR = '#000';
@@ -40,7 +38,7 @@ const Button = styled.button`
   cursor: pointer;
   appearance: none;
 
-  ${display} ${buttonStyle} ${space} ${color} ${boxShadow} ${width} &:hover {
+  ${layout} ${buttonStyle} ${space} ${color} ${shadow} &:hover {
     background-color: ${props => darken(0.1, getBackground(props))};
   }
 
@@ -69,10 +67,10 @@ const Button = styled.button`
 `;
 
 Button.propTypes = {
-  ...variant.propTypes,
-  ...space.propTypes,
-  ...color.propTypes,
-  ...boxShadow.propTypes,
+  ...propTypes.variant,
+  ...propTypes.space,
+  ...propTypes.color,
+  ...propTypes.shadow,
   rounded: PropTypes.bool,
   block: PropTypes.bool,
 };

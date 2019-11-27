@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
-import { textStyle, space } from 'styled-system';
+import { textStyle } from '@styled-system/variant';
+import { space } from '@styled-system/space';
+import propTypes from '@styled-system/prop-types';
 import styled from '@emotion/styled';
 
 import omitProps from '../omitProps';
@@ -13,8 +15,8 @@ const Label = styled('label', omitProps(['hidden']))`
 `;
 
 Label.propTypes = {
-  ...textStyle.propTypes,
-  ...space.propTypes,
+  ...propTypes.textStyle,
+  ...propTypes.space,
   hidden: PropTypes.bool,
 };
 

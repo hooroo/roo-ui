@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
-import { color, buttonStyle } from 'styled-system';
 import { themeGet } from '@styled-system/theme-get';
+import { buttonStyle } from '@styled-system/variant';
+import { color } from '@styled-system/color';
 import get from 'lodash/get';
 import { Button } from '../';
 

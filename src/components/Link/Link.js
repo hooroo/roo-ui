@@ -2,8 +2,11 @@ import PropTypes from 'prop-types';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import { hideVisually } from 'polished';
-import { color, fontWeight, space } from 'styled-system';
 import { themeGet } from '@styled-system/theme-get';
+import { color } from '@styled-system/color';
+import { typography } from '@styled-system/typography';
+import { space } from '@styled-system/space';
+import propTypes from '@styled-system/prop-types';
 import omitProps from '../omitProps';
 
 const Link = styled('a', omitProps(['hidden', 'underline']))`
@@ -20,7 +23,7 @@ const Link = styled('a', omitProps(['hidden', 'underline']))`
     outline: ${themeGet('borders.2')} ${themeGet('colors.brand.secondary')};
   }
 
-  ${color} ${fontWeight} ${space} ${props =>
+  ${color} ${typography} ${space} ${props =>
   props.underline &&
   css`
     &,
@@ -36,9 +39,9 @@ const Link = styled('a', omitProps(['hidden', 'underline']))`
 `;
 
 Link.propTypes = {
-  ...color.propTypes,
-  ...fontWeight.propTypes,
-  ...space.propTypes,
+  ...propTypes.color,
+  ...propTypes.fontWeight,
+  ...propTypes.space,
   hidden: PropTypes.bool,
   underline: PropTypes.bool,
 };

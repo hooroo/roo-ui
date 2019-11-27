@@ -1,12 +1,7 @@
 import styled from '@emotion/styled';
-import {
-  alignItems,
-  alignContent,
-  justifyContent,
-  flexWrap,
-  flexDirection,
-  style,
-} from 'styled-system';
+import { style } from 'styled-system';
+import { flexbox } from '@styled-system/flexbox';
+import propTypes from '@styled-system/prop-types';
 import Box from '../Box';
 
 const flexFlow = style({
@@ -16,17 +11,17 @@ const flexFlow = style({
 
 const Flex = styled(Box)`
   display: flex;
-  ${alignItems} ${alignContent} ${justifyContent} ${flexWrap} ${flexDirection} ${flexFlow};
+  ${flexbox} ${flexFlow};
 `;
 
 Flex.propTypes = {
   ...Box.propTypes,
-  ...alignItems.propTypes,
-  ...alignContent.propTypes,
-  ...justifyContent.propTypes,
-  ...flexWrap.propTypes,
-  ...flexDirection.propTypes,
-  ...flexFlow.propTypes,
+  ...propTypes.alignItems,
+  ...propTypes.alignContent,
+  ...propTypes.justifyContent,
+  ...propTypes.flexWrap,
+  ...propTypes.flexDirection,
+  ...propTypes.flexFlow,
 };
 
 export default Flex;

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { color, size, width } from 'styled-system';
 import { themeGet } from '@styled-system/theme-get';
+import { color } from '@styled-system/color';
+import { layout } from '@styled-system/layout';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/core';
 
@@ -32,7 +33,7 @@ const Bouncers = styled(Box)`
   display: flex;
   justify-content: space-around;
 
-  ${width};
+  ${layout};
 `;
 
 const Bouncer = styled.div`
@@ -50,7 +51,7 @@ const Bouncer = styled.div`
     animation-delay: 0;
   }
 
-  ${color} ${size};
+  ${color} ${layout};
 `;
 
 const LoadingIndicator = props => {

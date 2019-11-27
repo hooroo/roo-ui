@@ -1,21 +1,16 @@
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import {
-  space,
-  color,
-  fontSize,
-  lineHeight,
-  border,
-  borderColor,
-  textAlign,
-} from 'styled-system';
 import { themeGet } from '@styled-system/theme-get';
+import { space } from '@styled-system/space';
+import { color } from '@styled-system/color';
+import { typography } from '@styled-system/typography';
+import { border } from '@styled-system/border';
+import propTypes from '@styled-system/prop-types';
 
 import omitProps from '../omitProps';
-
 const Input = styled('input', omitProps(['color', 'fontSize']))`
-  ${space} ${color} ${fontSize} ${lineHeight} ${border} ${borderColor} ${textAlign} display: block;
+  ${space} ${color} ${typography} ${border} display: block;
   width: 100%;
   outline: 0;
   transition: border-color ${themeGet('transitions.default')};
@@ -53,13 +48,13 @@ const Input = styled('input', omitProps(['color', 'fontSize']))`
 `;
 
 Input.propTypes = {
-  ...space.propTypes,
-  ...color.propTypes,
-  ...fontSize.propTypes,
-  ...lineHeight.propTypes,
-  ...border.propTypes,
-  ...borderColor.propTypes,
-  ...textAlign.propTypes,
+  ...propTypes.space,
+  ...propTypes.color,
+  ...propTypes.fontSize,
+  ...propTypes.lineHeight,
+  ...propTypes.border,
+  ...propTypes.borderColor,
+  ...propTypes.textAlign,
   error: PropTypes.bool,
   underline: PropTypes.bool,
 };

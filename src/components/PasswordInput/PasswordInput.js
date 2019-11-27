@@ -47,6 +47,7 @@ class Base extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <Wrapper>
         <StyledInput

@@ -1,13 +1,12 @@
 import styled from '@emotion/styled';
-import {
-  style,
-  space,
-  verticalAlign,
-  textAlign,
-  color,
-  textStyle,
-} from 'styled-system';
+import { style } from 'styled-system';
+import { textStyle } from '@styled-system/variant';
 import { themeGet } from '@styled-system/theme-get';
+import { space } from '@styled-system/space';
+import { layout } from '@styled-system/layout';
+import { typography } from '@styled-system/typography';
+import { color } from '@styled-system/color';
+import propTypes from '@styled-system/prop-types';
 
 const textDecoration = style({
   prop: 'textDecoration',
@@ -46,13 +45,13 @@ const NakedButton = styled('button')`
     ${color};
   }
 
-  ${space} ${verticalAlign} ${textAlign} ${color} ${textStyle} ${textDecoration};
+  ${space} ${layout} ${typography} ${color} ${textStyle} ${textDecoration};
 `;
 
 NakedButton.propTypes = {
-  ...verticalAlign.propTypes,
-  ...space.propTypes,
-  ...color.propTypes,
+  ...propTypes.verticalAlign,
+  ...propTypes.space,
+  ...propTypes.color,
 };
 
 NakedButton.defaultProps = {

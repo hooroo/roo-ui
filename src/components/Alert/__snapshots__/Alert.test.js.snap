@@ -16,8 +16,8 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
 }
 
 .emotion-11 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .emotion-9 {
@@ -165,8 +165,8 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
 }
 
 .emotion-11 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .emotion-9 {
@@ -314,8 +314,8 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
 }
 
 .emotion-11 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .emotion-17 {
@@ -463,8 +463,8 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 }
 
 .emotion-11 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .emotion-9 {
@@ -612,8 +612,8 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 }
 
 .emotion-11 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .emotion-9 {
@@ -761,8 +761,8 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 }
 
 .emotion-11 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .emotion-17 {
@@ -910,8 +910,8 @@ exports[`<Alert /> contained renders correctly 1`] = `
 }
 
 .emotion-0 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 .emotion-4 {
@@ -995,8 +995,8 @@ exports[`<Alert /> renders correctly 1`] = `
 }
 
 .emotion-0 {
-  margin-bottom: 0;
   text-align: left;
+  margin-bottom: 0;
 }
 
 <Alert

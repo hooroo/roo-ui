@@ -1,13 +1,9 @@
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import {
-  height,
-  width,
-  space,
-  backgroundSize,
-  backgroundPosition,
-  backgroundRepeat,
-} from 'styled-system';
+import { space } from '@styled-system/space';
+import { layout } from '@styled-system/layout';
+import { background } from '@styled-system/background';
+import propTypes from '@styled-system/prop-types';
 
 const BackgroundImage = styled.div`
   background-position: center;
@@ -15,17 +11,17 @@ const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-image: url(${props => props.src});
 
-  ${height} ${width} ${space} ${backgroundSize} ${backgroundPosition} ${backgroundRepeat};
+  ${layout} ${space} ${background};
 `;
 
 BackgroundImage.propTypes = {
   src: PropTypes.string.isRequired,
-  ...height.propTypes,
-  ...width.propTypes,
-  ...space.propTypes,
-  ...backgroundSize.propTypes,
-  ...backgroundPosition.propTypes,
-  ...backgroundRepeat.propTypes,
+  ...propTypes.height,
+  ...propTypes.width,
+  ...propTypes.space,
+  ...propTypes.backgroundSize,
+  ...propTypes.backgroundPosition,
+  ...propTypes.backgroundRepeat,
 };
 
 export default BackgroundImage;

@@ -1,7 +1,9 @@
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { maxWidth, space, display } from 'styled-system';
 import { themeGet } from '@styled-system/theme-get';
+import { layout } from '@styled-system/layout';
+import { space } from '@styled-system/space';
+import propTypes from '@styled-system/prop-types';
 import omitProps from '../omitProps';
 
 const gutter = props => {
@@ -36,10 +38,9 @@ const Container = styled('div', omitProps(['gutter']))`
   margin-right: auto;
   width: 100%;
 
-  ${maxWidth}
+  ${layout}
   ${gutter}
   ${space}
-  ${display}
 `;
 
 Container.propTypes = {
@@ -50,8 +51,8 @@ Container.propTypes = {
       PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     ),
   ]),
-  ...maxWidth.propTypes,
-  ...space.propTypes,
+  ...propTypes.maxWidth,
+  ...propTypes.space,
 };
 
 Container.defaultProps = {
