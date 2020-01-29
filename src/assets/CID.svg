@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="70px" viewBox="0 0 111 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>CID</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="108.8" height="68" rx="1.81333333"></rect>
+        <filter x="-1.4%" y="-2.2%" width="102.8%" height="104.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="PAYMENT-OPTIONS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Payment-options_mobile---what's-CVV" transform="translate(-15.000000, -419.000000)">
+            <g id="CID" transform="translate(16.000000, 420.000000)">
+                <g id="Card">
+                    <g id="Drop-shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <rect fill="#DADADA" fill-rule="evenodd" x="0" y="0" width="108.8" height="68" rx="1.81333333"></rect>
+                </g>
+                <text id="1234" font-family="ArialMT, Arial" font-size="5.44" font-weight="normal" line-spacing="5.44" letter-spacing="0.453333333" fill="#323232">
+                    <tspan x="84.7733333" y="26.76">1234</tspan>
+                </text>
+                <text id="0123-456789-987654" font-family="Ciutadella-Md, Ciutadella" font-size="8.16" font-weight="400" line-spacing="8.16" letter-spacing="0.453333333" fill="#323232">
+                    <tspan x="14.9" y="38.92">0123 456789 987654</tspan>
+                </text>
+                <text id="YOUR-NAME" font-family="Ciutadella-Rg, Ciutadella" font-size="6.8" font-weight="normal" line-spacing="6.8" fill="#323232">
+                    <tspan x="5.44" y="61.76">YOUR NAME</tspan>
+                </text>
+                <circle id="Oval" stroke="#E40000" stroke-width="0.906666667" cx="91.5733333" cy="24.0266667" r="8.61333333"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
