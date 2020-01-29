@@ -6,3 +6,6 @@ export { default as pebbleRedNarrow } from './pebble-red-narrow.svg';
 export { default as pebbleWhite } from './pebble-white.svg';
 export { default as alertIllustration } from './alert-illustration.svg';
 export { default as luggage } from './luggage.svg';
+export { default as ribbon } from './ribbon.svg';
+export { default as creditCardCID } from './credit-card-CID.svg';
+export { default as creditCardCVV } from './credit-card-CVV.svg';
