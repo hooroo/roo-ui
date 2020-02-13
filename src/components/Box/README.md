@@ -39,5 +39,7 @@ This component can be customized with [styled-system](https://jxnblk.com/styled-
 `top`,
 `right`,
 `bottom`,
-`left`, &
+`left`,
+`fontWeight`,
+`fontSize`, &
 `zIndex` [functions](http://jxnblk.com/styled-system/table)
