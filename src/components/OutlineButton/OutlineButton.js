@@ -21,6 +21,10 @@ const OutlineButton = styled(Button)`
     border-color: ${getBackground};
   }
 
+  &:hover:disabled {
+    background-color: transparent;
+  }
+
   &:disabled {
     color: ${themeGet('colors.greys.dusty')};
     border-color: ${themeGet('colors.greys.dusty')};

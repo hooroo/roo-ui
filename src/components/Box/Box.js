@@ -24,12 +24,14 @@ import {
   bottom,
   left,
   overflow,
+  fontWeight,
+  fontSize,
 } from 'styled-system';
 import styled from '@emotion/styled';
 import omitProps from '../omitProps';
 
 const Box = styled('div', omitProps())`
-  ${display} ${space} ${width} ${minWidth} ${maxWidth} ${height} ${minHeight} ${maxHeight} ${color} ${textAlign} ${boxShadow} ${borderRadius} ${borders} ${borderColor} ${flexBasis} ${flexDirection} ${flexWrap} ${flex} ${position} ${zIndex} ${top} ${right} ${bottom} ${left} ${overflow};
+  ${display} ${space} ${width} ${minWidth} ${maxWidth} ${height} ${minHeight} ${maxHeight} ${color} ${textAlign} ${boxShadow} ${borderRadius} ${borders} ${borderColor} ${flexBasis} ${flexDirection} ${flexWrap} ${flex} ${position} ${zIndex} ${top} ${right} ${bottom} ${left} ${overflow} ${fontWeight} ${fontSize};
 `;
 
 Box.propTypes = {
@@ -57,6 +59,8 @@ Box.propTypes = {
   ...right.propTypes,
   ...bottom.propTypes,
   ...left.propTypes,
+  ...fontWeight.propTypes,
+  ...fontSize.propTypes,
 };
 
 export default Box;

@@ -12,6 +12,7 @@ declare module 'roo-ui/components' {
 
   export interface BaseProps extends React.Props<any> {
     as?: React.ReactType;
+    ref?: React.Ref<any>;
   }
 
   interface ColumnsProps {
@@ -125,25 +126,28 @@ declare module 'roo-ui/components' {
     firstDayOfWeek?: number;
     minDate?: Date;
   }
-  export const DatePicker: React.FunctionComponent<
-    Omit<DatePickerProps, 'children'>
-  >;
+  export const DatePicker: React.FunctionComponent<Omit<
+    DatePickerProps,
+    'children'
+  >>;
 
   export interface StarRatingProps extends SS.SizeProps {
     rating: number | string;
     ratingType: 'AAA' | 'SELF_RATED';
   }
-  export const StarRating: React.FunctionComponent<
-    Omit<StarRatingProps, 'children'>
-  >;
+  export const StarRating: React.FunctionComponent<Omit<
+    StarRatingProps,
+    'children'
+  >>;
 
   export interface LoadingIndicatorProps extends SS.SizeProps {
     color: SS.ResponsiveValue<CSS.ColorProperty>;
     delay?: number;
   }
-  export const LoadingIndicator: React.FunctionComponent<
-    Omit<LoadingIndicatorProps, 'children'>
-  >;
+  export const LoadingIndicator: React.FunctionComponent<Omit<
+    LoadingIndicatorProps,
+    'children'
+  >>;
 
   interface FlexKnownProps
     extends BoxProps,
