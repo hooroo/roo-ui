@@ -305,7 +305,8 @@ declare module 'roo-ui/components' {
       SS.LineHeightProps,
       SS.SpaceProps,
       SS.TextAlignProps,
-      SS.TextStyleProps {
+      SS.TextStyleProps,
+      SS.VerticalAlignProps {
     hidden?: boolean;
   }
   export interface TextProps
