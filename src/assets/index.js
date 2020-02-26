@@ -9,3 +9,4 @@ export { default as luggage } from './luggage.svg';
 export { default as ribbon } from './ribbon.svg';
 export { default as creditCardCID } from './credit-card-CID.svg';
 export { default as creditCardCVV } from './credit-card-CVV.svg';
+export { default as lightbulb } from './lightbulb.svg';
