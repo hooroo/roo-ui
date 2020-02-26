@@ -8,7 +8,7 @@ import { Container, NakedButton, Text, Flex, Box, Icon } from '../';
 const alertFactory = defaultVariant => {
   const BaseAlert = withTheme(
     ({ children, onClose, contained, theme, variant, ...props }) => {
-      const { icon, bg } = {
+      const { icon, ...boxProps } = {
         ...themeGet(`alertStyles.${variant}`)({ theme }),
         ...props,
       };
@@ -16,7 +16,7 @@ const alertFactory = defaultVariant => {
       const Wrapper = contained ? Container : Box;
 
       return (
-        <Box {...props} bg={bg}>
+        <Box {...props} {...boxProps}>
           <Wrapper px={contained ? undefined : 4}>
             <Flex py={4}>
               {icon && (
