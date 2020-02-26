@@ -13,6 +13,7 @@ import {
   textAlign,
   style,
   display,
+  verticalAlign,
 } from 'styled-system';
 import omitProps from '../omitProps';
 
@@ -22,11 +23,22 @@ const textDecoration = style({
 });
 
 const Text = styled('span', omitProps())`
-  ${textStyle} ${color} ${fontSize} ${fontWeight} ${letterSpacing} ${lineHeight} ${space} ${textAlign} ${textDecoration} ${display} ${props =>
-  props.hidden &&
-  css`
-    ${hideVisually()};
-  `};
+  ${textStyle}
+  ${color}
+  ${fontSize}
+  ${fontWeight}
+  ${letterSpacing}
+  ${lineHeight}
+  ${space}
+  ${textAlign}
+  ${textDecoration}
+  ${display}
+  ${verticalAlign}
+  ${props =>
+    props.hidden &&
+    css`
+      ${hideVisually()};
+    `};
 `;
 
 Text.propTypes = {
@@ -40,6 +52,7 @@ Text.propTypes = {
   ...textAlign.propTypes,
   ...textDecoration.propTypes,
   ...display.propTypes,
+  ...verticalAlign.propTypes,
   hidden: PropTypes.bool,
 };
 

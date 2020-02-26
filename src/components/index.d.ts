@@ -191,7 +191,8 @@ declare module 'roo-ui/components' {
       SS.HeightProps,
       SS.SizeProps,
       SS.SpaceProps,
-      SS.WidthProps {
+      SS.WidthProps,
+      SS.VerticalAlignProps {
     inline?: boolean;
   }
   export interface ImageProps
@@ -305,7 +306,8 @@ declare module 'roo-ui/components' {
       SS.LineHeightProps,
       SS.SpaceProps,
       SS.TextAlignProps,
-      SS.TextStyleProps {
+      SS.TextStyleProps,
+      SS.VerticalAlignProps {
     hidden?: boolean;
   }
   export interface TextProps
