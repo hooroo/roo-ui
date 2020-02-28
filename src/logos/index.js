@@ -10,3 +10,5 @@ export {
 } from './qantas-business-rewards.svg';
 export { default as tripAdvisor } from './trip-advisor.svg';
 export { default as tripAdvisorOwl } from './trip-advisor-owl.svg';
+export { default as pointsClub } from './points-club.svg';
+export { default as pointsClubPlus } from './points-club-plus.svg';
