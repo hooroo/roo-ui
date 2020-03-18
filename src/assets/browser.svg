@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon-web</title>
+    <desc>Created with Sketch.</desc>
+    <g id="---Detailed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Communication-" transform="translate(-816.000000, -48.000000)">
+            <g id="web" transform="translate(816.000000, 48.000000)">
+                <g id="Icons-/-02-Detailed-/-Default-/-Web">
+                    <rect id="Bounds" fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="48" height="48"></rect>
+                    <rect id="Shape" fill="#8DE2E0" fill-rule="evenodd" x="2" y="37" width="44" height="4"></rect>
+                    <path d="M46,5 C46.5522847,5 47,5.44771525 47,6 L47,41 C47,41.5522847 46.5522847,42 46,42 L2,42 C1.44771525,42 1,41.5522847 1,41 L1,6 C1,5.44771525 1.44771525,5 2,5 L46,5 Z M45,16 L3,16 L3,40 L45,40 L45,16 Z M45,7 L3,7 L3,14 L45,14 L45,7 Z M11.5,9 C12.3284271,9 13,9.67157288 13,10.5 C13,11.3284271 12.3284271,12 11.5,12 C10.6715729,12 10,11.3284271 10,10.5 C10,9.67157288 10.6715729,9 11.5,9 Z M16.5,9 C17.3284271,9 18,9.67157288 18,10.5 C18,11.3284271 17.3284271,12 16.5,12 C15.6715729,12 15,11.3284271 15,10.5 C15,9.67157288 15.6715729,9 16.5,9 Z" id="Shape" fill="#323232" fill-rule="nonzero"></path>
+                    <circle id="Shape" fill="#E40000" fill-rule="evenodd" cx="6.5" cy="10.5" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -8,4 +8,12 @@ declare module 'roo-ui/assets' {
   export const alertIllustration: string;
   export const luggage: string;
   export const lightbulb: string;
+  export const ribbon: string;
+  export const creditCardCID: string;
+  export const creditCardCVV: string;
+  export const baggage: string;
+  export const mail: string;
+  export const laptop: string;
+  export const browser: string;
+  export const headset: string;
 }
