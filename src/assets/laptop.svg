@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon-laptop</title>
+    <desc>Created with Sketch.</desc>
+    <g id="---Detailed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Communication-/-Default" transform="translate(-528.000000, -48.000000)">
+            <g id="Icon-/-02-Detailed-/-Communication-/-laptop" transform="translate(528.000000, 48.000000)">
+                <rect id="Bounds" fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" x="0" y="0" width="48" height="48"></rect>
+                <rect id="Shape" fill="#8DE2E0" fill-rule="evenodd" x="5" y="29" width="38" height="4"></rect>
+                <path d="M43.0033223,7 C43.5537722,7 44,7.44882346 44,8.00247525 L44,32.608 L46.8320503,36.927465 C46.9196596,37.0611046 46.9745818,37.2134494 46.9930464,37.3718352 L47,37.4915593 L47,38.9830646 C47,39.5447025 46.5522847,40 46,40 L46,40 L2,40 C1.44771525,40 1,39.5447025 1,38.9830646 L1,38.9830646 L1,37.4915593 C1,37.2907909 1.05843803,37.0945145 1.16794971,36.927465 L1.16794971,36.927465 L4,32.606 L4,8.00247525 C4,7.44882346 4.44622782,7 4.99667774,7 L43.0033223,7 Z M42.509,34 L5.49,34 L3,37.7994626 L3,38 L45,38 L45,37.7994626 L42.509,34 Z M42.0066445,9.0049505 L5.99335548,9.0049505 L5.99335548,31.9950495 L42.0066445,31.9950495 L42.0066445,9.0049505 Z" id="Shape" fill="#323232" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -10,3 +10,8 @@ export { default as ribbon } from './ribbon.svg';
 export { default as creditCardCID } from './credit-card-CID.svg';
 export { default as creditCardCVV } from './credit-card-CVV.svg';
 export { default as lightbulb } from './lightbulb.svg';
+export { default as baggage } from './baggage.svg';
+export { default as mail } from './mail.svg';
+export { default as laptop } from './laptop.svg';
+export { default as browser } from './browser.svg';
+export { default as headset } from './headset.svg';
