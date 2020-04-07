@@ -47,6 +47,8 @@ input:checked ~ .emotion-7 {
 }
 
 .emotion-5 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -172,6 +174,8 @@ input:checked ~ .emotion-7 {
 }
 
 .emotion-5 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -301,6 +305,8 @@ input:checked ~ .emotion-7 {
 }
 
 .emotion-5 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;

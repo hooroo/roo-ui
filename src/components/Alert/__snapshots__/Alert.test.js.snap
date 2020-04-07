@@ -38,6 +38,8 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
 }
 
 .emotion-1 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -187,6 +189,8 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
 }
 
 .emotion-1 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -336,6 +340,8 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
 }
 
 .emotion-1 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -485,6 +491,8 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
 }
 
 .emotion-1 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -634,6 +642,8 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
 }
 
 .emotion-1 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
@@ -783,6 +793,8 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
 }
 
 .emotion-1 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;

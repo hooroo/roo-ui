@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
-import { space, color } from 'styled-system';
+import { space, width, height, color } from 'styled-system';
 import PropTypes from 'prop-types';
 
 const IS_TEST = process.env.NODE_ENV === 'test';
@@ -24,7 +24,10 @@ const getSvgPathFromTheme = (theme, name) => {
   return icon.path;
 };
 
-const StyledSvg = styled.svg``;
+const StyledSvg = styled.svg`
+  ${width}
+  ${height}
+`;
 
 const Base = withTheme(({ name, title, size, theme, ...props }) => (
   <StyledSvg
@@ -54,7 +57,8 @@ Base.defaultProps = {
 const Icon = styled(Base)`
   vertical-align: middle;
   flex: none;
-  ${space} ${color};
+  ${space}
+  ${color}
 `;
 
 Icon.propTypes = {
