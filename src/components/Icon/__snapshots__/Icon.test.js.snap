@@ -9,6 +9,8 @@ exports[`<Icon /> when passed icon name in theme renders correctly 1`] = `
 }
 
 .emotion-1 {
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   -webkit-flex: none;
   -ms-flex: none;
