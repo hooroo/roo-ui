@@ -38,13 +38,18 @@ const Base = withTheme(({ name, title, size, theme, ...props }) => (
     title={title || name}
     fill="currentcolor"
   >
+    <title>{title || name}</title>
     <path d={getSvgPathFromTheme(theme, name)} />
   </StyledSvg>
 ));
 
 Base.propTypes = {
   name: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  size: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.array,
+  ]),
   title: PropTypes.string,
 };
 
