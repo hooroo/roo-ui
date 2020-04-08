@@ -114,6 +114,9 @@ input:checked ~ .emotion-5 {
                 viewBox="0 0 24 24"
                 width={24}
               >
+                <title>
+                  done
+                </title>
                 <path
                   d={null}
                 />
@@ -245,6 +248,9 @@ input:checked ~ .emotion-5 {
                 viewBox="0 0 24 24"
                 width={24}
               >
+                <title>
+                  done
+                </title>
                 <path
                   d={null}
                 />
@@ -376,6 +382,9 @@ input:checked ~ .emotion-5 {
                 viewBox="0 0 24 24"
                 width={24}
               >
+                <title>
+                  done
+                </title>
                 <path
                   d={null}
                 />

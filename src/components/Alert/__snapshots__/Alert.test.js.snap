@@ -118,6 +118,9 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                               viewBox="0 0 24 24"
                               width={24}
                             >
+                              <title>
+                                warning
+                              </title>
                               <path
                                 d={null}
                               />
@@ -269,6 +272,9 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                               viewBox="0 0 24 24"
                               width={24}
                             >
+                              <title>
+                                info
+                              </title>
                               <path
                                 d={null}
                               />
@@ -420,6 +426,9 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                               viewBox="0 0 24 24"
                               width={24}
                             >
+                              <title>
+                                checkCircle
+                              </title>
                               <path
                                 d={null}
                               />
@@ -571,6 +580,9 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                               viewBox="0 0 24 24"
                               width={24}
                             >
+                              <title>
+                                warning
+                              </title>
                               <path
                                 d={null}
                               />
@@ -722,6 +734,9 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                               viewBox="0 0 24 24"
                               width={24}
                             >
+                              <title>
+                                info
+                              </title>
                               <path
                                 d={null}
                               />
@@ -873,6 +888,9 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                               viewBox="0 0 24 24"
                               width={24}
                             >
+                              <title>
+                                checkCircle
+                              </title>
                               <path
                                 d={null}
                               />
