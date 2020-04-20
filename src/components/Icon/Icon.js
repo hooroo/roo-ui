@@ -38,7 +38,7 @@ const Base = withTheme(({ name, title, size, theme, ...props }) => (
     title={title || name}
     fill="currentcolor"
   >
-    <title>{title || name}</title>
+    {title && <title>{title}</title>}
     <path d={getSvgPathFromTheme(theme, name)} />
   </StyledSvg>
 ));
