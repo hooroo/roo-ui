@@ -7,7 +7,7 @@ import omitProps from '../omitProps';
 
 const Label = styled('label', omitProps(['hidden']))`
   ${props => props.hidden && hideVisually()}
-  ${display}:
+  ${display}
   ${width}
   ${textStyle}
   ${space}
