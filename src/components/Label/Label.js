@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
-import { textStyle, space } from 'styled-system';
+import { textStyle, space, display, width } from 'styled-system';
 import styled from '@emotion/styled';
 
 import omitProps from '../omitProps';
 
 const Label = styled('label', omitProps(['hidden']))`
-  display: block;
-  width: 100%;
-
-  ${props => props.hidden && hideVisually()} ${textStyle} ${space};
+  ${props => props.hidden && hideVisually()}
+  ${display}:
+  ${width}
+  ${textStyle}
+  ${space}
 `;
 
 Label.propTypes = {
@@ -20,6 +21,8 @@ Label.propTypes = {
 
 Label.defaultProps = {
   textStyle: 'label',
+  display: 'block',
+  width: '100%',
   m: 0,
   mb: 3,
   hidden: false,
