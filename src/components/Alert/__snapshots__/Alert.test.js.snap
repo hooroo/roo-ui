@@ -111,12 +111,9 @@ exports[`<Alert /> <Alert variant="error" /> renders correctly 1`] = `
                           >
                             <svg
                               className="emotion-0 emotion-1 emotion-2"
-                              color="ui.error"
                               fill="currentcolor"
-                              height={24}
                               title="warning"
                               viewBox="0 0 24 24"
-                              width={24}
                             >
                               <path
                                 d={null}
@@ -262,12 +259,9 @@ exports[`<Alert /> <Alert variant="info" /> renders correctly 1`] = `
                           >
                             <svg
                               className="emotion-0 emotion-1 emotion-2"
-                              color="greys.charcoal"
                               fill="currentcolor"
-                              height={24}
                               title="info"
                               viewBox="0 0 24 24"
-                              width={24}
                             >
                               <path
                                 d={null}
@@ -413,12 +407,9 @@ exports[`<Alert /> <Alert variant="success" /> renders correctly 1`] = `
                           >
                             <svg
                               className="emotion-0 emotion-1 emotion-2"
-                              color="ui.success"
                               fill="currentcolor"
-                              height={24}
                               title="checkCircle"
                               viewBox="0 0 24 24"
-                              width={24}
                             >
                               <path
                                 d={null}
@@ -564,12 +555,9 @@ exports[`<Alert /> <Alert.error /> renders correctly 1`] = `
                           >
                             <svg
                               className="emotion-0 emotion-1 emotion-2"
-                              color="ui.error"
                               fill="currentcolor"
-                              height={24}
                               title="warning"
                               viewBox="0 0 24 24"
-                              width={24}
                             >
                               <path
                                 d={null}
@@ -715,12 +703,9 @@ exports[`<Alert /> <Alert.info /> renders correctly 1`] = `
                           >
                             <svg
                               className="emotion-0 emotion-1 emotion-2"
-                              color="greys.charcoal"
                               fill="currentcolor"
-                              height={24}
                               title="info"
                               viewBox="0 0 24 24"
-                              width={24}
                             >
                               <path
                                 d={null}
@@ -866,12 +851,9 @@ exports[`<Alert /> <Alert.success /> renders correctly 1`] = `
                           >
                             <svg
                               className="emotion-0 emotion-1 emotion-2"
-                              color="ui.success"
                               fill="currentcolor"
-                              height={24}
                               title="checkCircle"
                               viewBox="0 0 24 24"
-                              width={24}
                             >
                               <path
                                 d={null}
