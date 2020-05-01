@@ -125,10 +125,8 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                   <svg
                     className="emotion-0 emotion-1 emotion-2"
                     fill="currentcolor"
-                    height={24}
                     title="chevronLeft"
                     viewBox="0 0 24 24"
-                    width={24}
                   >
                     <path
                       d={null}
@@ -183,10 +181,8 @@ exports[`<CalendarNav /> renders correctly 1`] = `
                   <svg
                     className="emotion-0 emotion-1 emotion-2"
                     fill="currentcolor"
-                    height={24}
                     title="chevronRight"
                     viewBox="0 0 24 24"
-                    width={24}
                   >
                     <path
                       d={null}

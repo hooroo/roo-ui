@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { withTheme } from 'emotion-theming';
 import { space, width, height, color } from 'styled-system';
 import PropTypes from 'prop-types';
+import omitProps from '../omitProps';
 
 const IS_TEST = process.env.NODE_ENV === 'test';
 
@@ -24,7 +25,7 @@ const getSvgPathFromTheme = (theme, name) => {
   return icon.path;
 };
 
-const StyledSvg = styled.svg`
+const StyledSvg = styled('svg', omitProps(['width', 'height']))`
   ${width}
   ${height}
 `;

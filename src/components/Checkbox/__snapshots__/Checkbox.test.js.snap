@@ -109,10 +109,8 @@ input:checked ~ .emotion-5 {
               <svg
                 className="emotion-4 emotion-5 emotion-6"
                 fill="currentcolor"
-                height={24}
                 title="done"
                 viewBox="0 0 24 24"
-                width={24}
               >
                 <path
                   d={null}
@@ -240,10 +238,8 @@ input:checked ~ .emotion-5 {
               <svg
                 className="emotion-4 emotion-5 emotion-6"
                 fill="currentcolor"
-                height={24}
                 title="done"
                 viewBox="0 0 24 24"
-                width={24}
               >
                 <path
                   d={null}
@@ -371,10 +367,8 @@ input:checked ~ .emotion-5 {
               <svg
                 className="emotion-4 emotion-5 emotion-6"
                 fill="currentcolor"
-                height={24}
                 title="done"
                 viewBox="0 0 24 24"
-                width={24}
               >
                 <path
                   d={null}
