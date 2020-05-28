@@ -7,8 +7,6 @@ declare module 'roo-ui/logos' {
   export const oneworld: string;
   export const qantasQff: string;
   export const qantasBusinessRewards: string;
-  export const tripAdvisor: string;
-  export const tripAdvisorOwl: string;
   export const pointsClub: string;
   export const pointsClubPlus: string;
 }
