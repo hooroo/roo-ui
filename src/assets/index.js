@@ -15,3 +15,7 @@ export { default as mail } from './mail.svg';
 export { default as laptop } from './laptop.svg';
 export { default as browser } from './browser.svg';
 export { default as headset } from './headset.svg';
+export { default as find } from './find.svg';
+export { default as pointsPlusPay } from './points-plus-pay.svg';
+export { default as points } from './points.svg';
+export { default as shield } from './shield.svg';
