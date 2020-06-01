@@ -16,4 +16,8 @@ declare module 'roo-ui/assets' {
   export const laptop: string;
   export const browser: string;
   export const headset: string;
+  export const find: string;
+  export const pointsPlusPay: string;
+  export const points: string;
+  export const shield: string;
 }
