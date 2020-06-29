@@ -19,3 +19,6 @@ export { default as find } from './find.svg';
 export { default as pointsPlusPay } from './points-plus-pay.svg';
 export { default as points } from './points.svg';
 export { default as shield } from './shield.svg';
+export { default as visa } from './visa.svg';
+export { default as mastercard } from './mastercard.svg';
+export { default as amex } from './amex.svg';

@@ -20,4 +20,7 @@ declare module 'roo-ui/assets' {
   export const pointsPlusPay: string;
   export const points: string;
   export const shield: string;
+  export const mastercard: string;
+  export const visa: string;
+  export const amex: string;
 }
