@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon-tick</title>
+    <desc>Created with Sketch.</desc>
+    <g id="---Detailed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Action-/-Live" transform="translate(-1296.000000, -48.000000)">
+            <g id="tick" transform="translate(1296.000000, 48.000000)">
+                <rect id="Bounds" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="48" height="48"></rect>
+                <circle id="Shape" stroke="#000000" stroke-width="2" cx="24" cy="24" r="21"></circle>
+                <polygon id="Shape" fill="#E40000" points="30.6309695 16 20.7626969 26.6660147 16.9688782 22.5662592 14.5 25.2342298 20.7608869 32 33.0980377 18.6660147"></polygon>
+                <path d="M36.1174316,14.6252441 C39.5539551,18.6315918 40.0411978,25.7336896 41.1254883,27.0979004 C42.1354444,28.3646676 43.456543,19.1656614 37.4550781,11.894043 C33.4112892,7.48190786 28.243039,6 25.5640288,6 C24.0049896,6 23.4271639,6.42163109 24.7037326,6.88823616 C25.9138959,7.32954337 33.0012207,10.4279785 36.1174316,14.6252441 Z" id="Clip-10" fill="#8DE2E0"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -22,3 +22,4 @@ export { default as shield } from './shield.svg';
 export { default as visa } from './visa.svg';
 export { default as mastercard } from './mastercard.svg';
 export { default as amex } from './amex.svg';
+export { default as tick } from './tick.svg';

@@ -23,4 +23,5 @@ declare module 'roo-ui/assets' {
   export const mastercard: string;
   export const visa: string;
   export const amex: string;
+  export const tick: string;
 }
