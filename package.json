@@ -134,7 +134,7 @@
     "dayzed": "^3.0.0",
     "emotion-theming": "^10.0.17",
     "lodash": "^4.17.15",
-    "polished": "^3.4.1",
+    "polished": "^3.6.5",
     "react-modal": "^3.10.1",
     "react-onclickoutside": "^6.9.0",
     "react-popper": "^1.3.4",
