@@ -91,7 +91,9 @@ declare module 'roo-ui/components' {
       SS.LeftProps,
       SS.OverflowProps,
       SS.WidthProps,
-      SS.HeightProps {}
+      SS.HeightProps,
+      SS.FontSizeProps,
+      SS.FontWeightProps {}
   export interface BoxProps
     extends BoxKnownProps,
       Omit<React.HTMLProps<HTMLDivElement>, keyof BoxKnownProps> {}
