@@ -40,22 +40,22 @@ declare module 'roo-ui/components' {
   }
   export interface AlertProps
     extends AlertKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof AlertKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof AlertKnownProps> { }
   export const Alert: SC.StyledComponent<AlertProps, AlertProps, any>;
 
   interface BackgroundImageKnownProps
     extends BaseProps,
-      SS.HeightProps,
-      SS.WidthProps,
-      SS.SpaceProps,
-      SS.BackgroundSizeProps,
-      SS.BackgroundPositionProps,
-      SS.BackgroundRepeatProps {
+    SS.HeightProps,
+    SS.WidthProps,
+    SS.SpaceProps,
+    SS.BackgroundSizeProps,
+    SS.BackgroundPositionProps,
+    SS.BackgroundRepeatProps {
     src: string;
   }
   export interface BackgroundImageProps
     extends BackgroundImageKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof BackgroundImageKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof BackgroundImageKnownProps> { }
   export const BackgroundImage: SC.StyledComponent<
     BackgroundImageProps,
     BackgroundImageProps,
@@ -64,45 +64,45 @@ declare module 'roo-ui/components' {
 
   interface BoxKnownProps
     extends BaseProps,
-      SS.DisplayProps,
-      SS.SpaceProps,
-      SS.WidthProps,
-      SS.MinWidthProps,
-      SS.MaxWidthProps,
-      SS.HeightProps,
-      SS.MinHeightProps,
-      SS.MaxHeightProps,
-      SS.ColorProps,
-      SS.TextAlignProps,
-      SS.BoxShadowProps,
-      SS.BorderColorProps,
-      SS.BorderRadiusProps,
-      SS.BorderProps,
-      SS.BordersProps,
-      SS.FlexBasisProps,
-      SS.FlexDirectionProps,
-      SS.FlexWrapProps,
-      SS.FlexProps,
-      SS.PositionProps,
-      SS.ZIndexProps,
-      SS.TopProps,
-      SS.RightProps,
-      SS.BottomProps,
-      SS.LeftProps,
-      SS.OverflowProps,
-      SS.WidthProps,
-      SS.HeightProps,
-      SS.FontSizeProps,
-      SS.FontWeightProps {}
+    SS.DisplayProps,
+    SS.SpaceProps,
+    SS.WidthProps,
+    SS.MinWidthProps,
+    SS.MaxWidthProps,
+    SS.HeightProps,
+    SS.MinHeightProps,
+    SS.MaxHeightProps,
+    SS.ColorProps,
+    SS.TextAlignProps,
+    SS.BoxShadowProps,
+    SS.BorderColorProps,
+    SS.BorderRadiusProps,
+    SS.BorderProps,
+    SS.BordersProps,
+    SS.FlexBasisProps,
+    SS.FlexDirectionProps,
+    SS.FlexWrapProps,
+    SS.FlexProps,
+    SS.PositionProps,
+    SS.ZIndexProps,
+    SS.TopProps,
+    SS.RightProps,
+    SS.BottomProps,
+    SS.LeftProps,
+    SS.OverflowProps,
+    SS.WidthProps,
+    SS.HeightProps,
+    SS.FontSizeProps,
+    SS.FontWeightProps { }
   export interface BoxProps
     extends BoxKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof BoxKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof BoxKnownProps> { }
   export const Box: SC.StyledComponent<BoxProps, BoxProps, any>;
 
-  interface CardKnownProps extends BoxProps {}
+  interface CardKnownProps extends BoxProps { }
   export interface CardProps
     extends CardKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof CardKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof CardKnownProps> { }
   export const Card: SC.StyledComponent<CardProps, CardProps, any>;
 
   interface CharacterCountKnownProps extends TextProps {
@@ -111,7 +111,7 @@ declare module 'roo-ui/components' {
   }
   export interface CharacterCountProps
     extends CharacterCountKnownProps,
-      Omit<React.HTMLProps<HTMLSpanElement>, keyof CharacterCountKnownProps> {}
+    Omit<React.HTMLProps<HTMLSpanElement>, keyof CharacterCountKnownProps> { }
   export const CharacterCount: SC.StyledComponent<
     CharacterCountProps,
     CharacterCountProps,
@@ -153,25 +153,25 @@ declare module 'roo-ui/components' {
 
   interface FlexKnownProps
     extends BoxProps,
-      FlexFlowProps,
-      SS.AlignItemsProps,
-      SS.AlignContentProps,
-      SS.JustifyContentProps,
-      SS.FlexDirectionProps,
-      SS.FlexWrapProps {}
+    FlexFlowProps,
+    SS.AlignItemsProps,
+    SS.AlignContentProps,
+    SS.JustifyContentProps,
+    SS.FlexDirectionProps,
+    SS.FlexWrapProps { }
   export interface FlexProps
     extends FlexKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof FlexKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof FlexKnownProps> { }
   export const Flex: SC.StyledComponent<FlexProps, FlexProps, any>;
 
   interface ContainerKnownProps
     extends BaseProps,
-      GutterProps,
-      SS.MaxWidthProps,
-      SS.SpaceProps {}
+    GutterProps,
+    SS.MaxWidthProps,
+    SS.SpaceProps { }
   export interface ContainerProps
     extends ContainerKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof ContainerKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof ContainerKnownProps> { }
   export const Container: SC.StyledComponent<
     ContainerProps,
     ContainerProps,
@@ -185,21 +185,21 @@ declare module 'roo-ui/components' {
   }
   export interface IconProps
     extends IconKnownProps,
-      Omit<React.HTMLProps<SVGElement>, keyof IconKnownProps> {}
+    Omit<React.HTMLProps<SVGElement>, keyof IconKnownProps> { }
   export const Icon: SC.StyledComponent<IconProps, IconProps, any>;
 
   interface ImageKnownProps
     extends BaseProps,
-      SS.HeightProps,
-      SS.SizeProps,
-      SS.SpaceProps,
-      SS.WidthProps,
-      SS.VerticalAlignProps {
+    SS.HeightProps,
+    SS.SizeProps,
+    SS.SpaceProps,
+    SS.WidthProps,
+    SS.VerticalAlignProps {
     inline?: boolean;
   }
   export interface ImageProps
     extends ImageKnownProps,
-      Omit<React.HTMLProps<HTMLImageElement>, keyof ImageKnownProps> {}
+    Omit<React.HTMLProps<HTMLImageElement>, keyof ImageKnownProps> { }
   export const Image: SC.StyledComponent<ImageProps, ImageProps, any>;
 
   interface InputKnownProps extends BaseProps, SS.SpaceProps {
@@ -208,13 +208,13 @@ declare module 'roo-ui/components' {
   }
   export interface InputProps
     extends InputKnownProps,
-      Omit<React.HTMLProps<HTMLInputElement>, keyof InputKnownProps> {}
+    Omit<React.HTMLProps<HTMLInputElement>, keyof InputKnownProps> { }
   export const Input: SC.StyledComponent<InputProps, InputProps, any>;
 
-  interface TruncateKnownProps extends InputProps {}
+  interface TruncateKnownProps extends InputProps { }
   export interface TruncateProps
     extends TruncateKnownProps,
-      Omit<React.HTMLProps<HTMLInputElement>, keyof TruncateKnownProps> {}
+    Omit<React.HTMLProps<HTMLInputElement>, keyof TruncateKnownProps> { }
   export const Truncate: SC.StyledComponent<TruncateProps, TruncateProps, any>;
 
   interface TextareaKnownProps extends BaseProps, SS.SpaceProps {
@@ -223,13 +223,13 @@ declare module 'roo-ui/components' {
   }
   export interface TextareaProps
     extends TextareaKnownProps,
-      Omit<React.HTMLProps<HTMLTextAreaElement>, keyof TextareaKnownProps> {}
+    Omit<React.HTMLProps<HTMLTextAreaElement>, keyof TextareaKnownProps> { }
   export const Textarea: SC.StyledComponent<TextareaProps, TextareaProps, any>;
 
-  interface PasswordInputKnownProps extends InputProps {}
+  interface PasswordInputKnownProps extends InputProps { }
   export interface PasswordInputProps
     extends PasswordInputKnownProps,
-      Omit<React.HTMLProps<HTMLInputElement>, keyof PasswordInputKnownProps> {}
+    Omit<React.HTMLProps<HTMLInputElement>, keyof PasswordInputKnownProps> { }
   export const PasswordInput: SC.StyledComponent<
     PasswordInputProps,
     PasswordInputProps,
@@ -238,13 +238,13 @@ declare module 'roo-ui/components' {
 
   interface LabelKnownProps
     extends BaseProps,
-      SS.SpaceProps,
-      SS.TextStyleProps {
+    SS.SpaceProps,
+    SS.TextStyleProps {
     hidden?: boolean;
   }
   export interface LabelProps
     extends LabelKnownProps,
-      Omit<React.HTMLProps<HTMLLabelElement>, keyof LabelKnownProps> {}
+    Omit<React.HTMLProps<HTMLLabelElement>, keyof LabelKnownProps> { }
   export const Label: SC.StyledComponent<LabelProps, LabelProps, any>;
 
   interface ListKnownProps extends BaseProps, ColumnsProps {
@@ -253,16 +253,16 @@ declare module 'roo-ui/components' {
   }
   export interface ListProps
     extends ListKnownProps,
-      Omit<React.HTMLProps<HTMLUListElement>, keyof ListKnownProps> {}
+    Omit<React.HTMLProps<HTMLUListElement>, keyof ListKnownProps> { }
   export const List: SC.StyledComponent<ListProps, ListProps, any>;
 
   interface ListItemKnownProps
     extends BaseProps,
-      SS.SpaceProps,
-      SS.BorderProps {}
+    SS.SpaceProps,
+    SS.BorderProps { }
   export interface ListItemProps
     extends ListItemKnownProps,
-      Omit<React.HTMLProps<HTMLLIElement>, keyof ListItemKnownProps> {}
+    Omit<React.HTMLProps<HTMLLIElement>, keyof ListItemKnownProps> { }
   export const ListItem: SC.StyledComponent<ListItemProps, ListItemProps, any>;
 
   type MaskArray = Array<string | RegExp>;
@@ -274,7 +274,7 @@ declare module 'roo-ui/components' {
   }
   export interface MaskedInputProps
     extends MaskedInputKnownProps,
-      Omit<React.HTMLProps<HTMLInputElement>, keyof MaskedInputKnownProps> {}
+    Omit<React.HTMLProps<HTMLInputElement>, keyof MaskedInputKnownProps> { }
   type MaskedInputType = SC.StyledComponent<
     MaskedInputProps,
     MaskedInputProps,
@@ -299,36 +299,37 @@ declare module 'roo-ui/components' {
 
   interface TextKnownProps
     extends BaseProps,
-      TextDecorationProps,
-      SS.ColorProps,
-      SS.DisplayProps,
-      SS.FontSizeProps,
-      SS.FontWeightProps,
-      SS.LetterSpacingProps,
-      SS.LineHeightProps,
-      SS.SpaceProps,
-      SS.TextAlignProps,
-      SS.TextStyleProps,
-      SS.VerticalAlignProps {
+    TextDecorationProps,
+    SS.ColorProps,
+    SS.DisplayProps,
+    SS.FontSizeProps,
+    SS.FontWeightProps,
+    SS.LetterSpacingProps,
+    SS.LineHeightProps,
+    SS.SpaceProps,
+    SS.TextAlignProps,
+    SS.TextStyleProps,
+    SS.VerticalAlignProps,
+    SS.FontFamilyProps {
     hidden?: boolean;
   }
   export interface TextProps
     extends TextKnownProps,
-      Omit<React.HTMLProps<HTMLSpanElement>, keyof TextKnownProps> {}
+    Omit<React.HTMLProps<HTMLSpanElement>, keyof TextKnownProps> { }
   export const Text: SC.StyledComponent<TextProps, TextProps, any>;
 
-  interface HeadingKnownProps extends TextProps {}
+  interface HeadingKnownProps extends TextProps { }
   export interface HeadingProps
     extends HeadingKnownProps,
-      Omit<React.HTMLProps<HTMLHeadingElement>, keyof HeadingKnownProps> {}
+    Omit<React.HTMLProps<HTMLHeadingElement>, keyof HeadingKnownProps> { }
   type HeadingLevels = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   type HeadingType = SC.StyledComponent<HeadingProps, HeadingProps, any>;
   export const Heading: HeadingType & { [H in HeadingLevels]: HeadingType };
 
-  interface ParagraphKnownProps extends TextProps {}
+  interface ParagraphKnownProps extends TextProps { }
   export interface ParagraphProps
     extends ParagraphKnownProps,
-      Omit<React.HTMLProps<HTMLParagraphElement>, keyof ParagraphKnownProps> {}
+    Omit<React.HTMLProps<HTMLParagraphElement>, keyof ParagraphKnownProps> { }
   export const Paragraph: SC.StyledComponent<
     ParagraphProps,
     ParagraphProps,
@@ -343,14 +344,14 @@ declare module 'roo-ui/components' {
   }
   export interface HideProps
     extends HideKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof HideKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof HideKnownProps> { }
   export const Hide: SC.StyledComponent<HideProps, HideProps, any>;
 
   interface LinkKnownProps
     extends BaseProps,
-      SS.ColorProps,
-      SS.FontWeightProps,
-      SS.SpaceProps {
+    SS.ColorProps,
+    SS.FontWeightProps,
+    SS.SpaceProps {
     hidden?: boolean;
     underline?: boolean;
     smooth?: boolean;
@@ -360,23 +361,23 @@ declare module 'roo-ui/components' {
   }
   export interface LinkProps
     extends LinkKnownProps,
-      Omit<React.HTMLProps<HTMLAnchorElement>, keyof LinkKnownProps> {}
+    Omit<React.HTMLProps<HTMLAnchorElement>, keyof LinkKnownProps> { }
   export const Link: SC.StyledComponent<LinkProps, LinkProps, any>;
 
-  interface ExternalLinkKnownProps extends LinkProps {}
+  interface ExternalLinkKnownProps extends LinkProps { }
   export interface ExternalLinkProps
     extends ExternalLinkKnownProps,
-      Omit<React.HTMLProps<HTMLAnchorElement>, keyof ExternalLinkKnownProps> {}
+    Omit<React.HTMLProps<HTMLAnchorElement>, keyof ExternalLinkKnownProps> { }
   export const ExternalLink: SC.StyledComponent<
     ExternalLinkProps,
     ExternalLinkProps,
     any
   >;
 
-  interface BlockLinkKnownProps extends LinkProps {}
+  interface BlockLinkKnownProps extends LinkProps { }
   export interface BlockLinkProps
     extends BlockLinkKnownProps,
-      Omit<React.HTMLProps<HTMLAnchorElement>, keyof BlockLinkKnownProps> {}
+    Omit<React.HTMLProps<HTMLAnchorElement>, keyof BlockLinkKnownProps> { }
   export const BlockLink: SC.StyledComponent<
     BlockLinkProps,
     BlockLinkProps,
@@ -385,9 +386,9 @@ declare module 'roo-ui/components' {
 
   interface ButtonKnownProps
     extends BaseProps,
-      SS.SpaceProps,
-      SS.ColorProps,
-      SS.BoxShadowProps {
+    SS.SpaceProps,
+    SS.ColorProps,
+    SS.BoxShadowProps {
     block?: boolean;
     rounded?: boolean;
     to?: H.LocationDescriptor;
@@ -395,13 +396,13 @@ declare module 'roo-ui/components' {
   }
   export interface ButtonProps
     extends ButtonKnownProps,
-      Omit<React.HTMLProps<HTMLButtonElement>, keyof ButtonKnownProps> {}
+    Omit<React.HTMLProps<HTMLButtonElement>, keyof ButtonKnownProps> { }
   export const Button: SC.StyledComponent<ButtonProps, ButtonProps, any>;
 
-  interface OutlineButtonKnownProps extends ButtonProps {}
+  interface OutlineButtonKnownProps extends ButtonProps { }
   export interface OutlineButtonProps
     extends OutlineButtonKnownProps,
-      Omit<React.HTMLProps<HTMLButtonElement>, keyof OutlineButtonKnownProps> {}
+    Omit<React.HTMLProps<HTMLButtonElement>, keyof OutlineButtonKnownProps> { }
   export const OutlineButton: SC.StyledComponent<
     OutlineButtonProps,
     OutlineButtonProps,
@@ -410,30 +411,30 @@ declare module 'roo-ui/components' {
 
   interface NakedButtonKnownProps
     extends BaseProps,
-      SS.SpaceProps,
-      SS.VerticalAlignProps,
-      SS.ColorProps {
+    SS.SpaceProps,
+    SS.VerticalAlignProps,
+    SS.ColorProps {
     to?: H.LocationDescriptor;
   }
   export interface NakedButtonProps
     extends NakedButtonKnownProps,
-      Omit<React.HTMLProps<HTMLButtonElement>, keyof NakedButtonKnownProps> {}
+    Omit<React.HTMLProps<HTMLButtonElement>, keyof NakedButtonKnownProps> { }
   export const NakedButton: SC.StyledComponent<
     NakedButtonProps,
     NakedButtonProps,
     any
   >;
 
-  interface CheckboxKnownProps extends BaseProps {}
+  interface CheckboxKnownProps extends BaseProps { }
   export interface CheckboxProps
     extends CheckboxKnownProps,
-      Omit<React.HTMLProps<HTMLInputElement>, keyof CheckboxKnownProps> {}
+    Omit<React.HTMLProps<HTMLInputElement>, keyof CheckboxKnownProps> { }
   export const Checkbox: SC.StyledComponent<CheckboxProps, CheckboxProps, any>;
 
-  interface RadioKnownProps extends BaseProps {}
+  interface RadioKnownProps extends BaseProps { }
   export interface RadioProps
     extends RadioKnownProps,
-      Omit<React.HTMLProps<HTMLInputElement>, keyof RadioKnownProps> {}
+    Omit<React.HTMLProps<HTMLInputElement>, keyof RadioKnownProps> { }
   export const Radio: SC.StyledComponent<RadioProps, RadioProps, any>;
 
   interface ErrorMessageKnownProps extends TextProps {
@@ -441,7 +442,7 @@ declare module 'roo-ui/components' {
   }
   export interface ErrorMessageProps
     extends ErrorMessageKnownProps,
-      Omit<React.HTMLProps<HTMLSpanElement>, keyof ErrorMessageKnownProps> {}
+    Omit<React.HTMLProps<HTMLSpanElement>, keyof ErrorMessageKnownProps> { }
   export const ErrorMessage: SC.StyledComponent<
     ErrorMessageProps,
     ErrorMessageProps,
@@ -463,15 +464,15 @@ declare module 'roo-ui/components' {
   }
   export interface PopoverControlProps
     extends PopoverControlKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof PopoverControlKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof PopoverControlKnownProps> { }
   export const Popover: React.FunctionComponent<PopoverProps> & {
     control: SC.StyledComponent<PopoverControlProps, PopoverControlProps, any>;
   };
 
-  interface SelectKnownProps extends InputProps {}
+  interface SelectKnownProps extends InputProps { }
   export interface SelectProps
     extends SelectKnownProps,
-      Omit<React.HTMLProps<HTMLSelectElement>, keyof SelectKnownProps> {}
+    Omit<React.HTMLProps<HTMLSelectElement>, keyof SelectKnownProps> { }
   export const Select: SC.StyledComponent<SelectProps, SelectProps, any>;
 
   export const ModalGlobalStyle: SC.StyledComponent<any, any, any>;
@@ -481,7 +482,7 @@ declare module 'roo-ui/components' {
   }
   export interface WrapperProps
     extends WrapperKnownProps,
-      Omit<React.HTMLProps<HTMLDivElement>, keyof WrapperKnownProps> {}
+    Omit<React.HTMLProps<HTMLDivElement>, keyof WrapperKnownProps> { }
   export const Wrapper: SC.StyledComponent<WrapperProps, WrapperProps, any>;
 
   interface OmitPropsOptions {

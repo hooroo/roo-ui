@@ -14,6 +14,7 @@ import {
   style,
   display,
   verticalAlign,
+  fontFamily,
 } from 'styled-system';
 import omitProps from '../omitProps';
 
@@ -34,6 +35,7 @@ const Text = styled('span', omitProps())`
   ${textDecoration}
   ${display}
   ${verticalAlign}
+  ${fontFamily}
   ${props =>
     props.hidden &&
     css`
@@ -53,6 +55,7 @@ Text.propTypes = {
   ...textDecoration.propTypes,
   ...display.propTypes,
   ...verticalAlign.propTypes,
+  ...fontFamily.propTypes,
   hidden: PropTypes.bool,
 };
 

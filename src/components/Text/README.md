@@ -28,6 +28,7 @@ This component can be customized with [styled-system](https://jxnblk.com/styled-
 `textStyle`,
 `color`,
 `fontSize`,
+`fontFamily`,
 `fontWeight`,
 `letterSpacing`,
 `lineHeight`,
