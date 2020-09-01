@@ -730,6 +730,7 @@ declare module "roo-ui/icons" {
   export const wbSunny: Icon;
   export const addLocation: Icon;
   export const beenhere: Icon;
+  export const bottleOfWine: Icon;
   export const directionsBike: Icon;
   export const directionsBoat: Icon;
   export const directionsBus: Icon;
@@ -740,6 +741,7 @@ declare module "roo-ui/icons" {
   export const directionsTransit: Icon;
   export const directionsWalk: Icon;
   export const directions: Icon;
+  export const earlyCheckin: Icon;
   export const editLocation: Icon;
   export const evStation: Icon;
   export const flightRight: Icon;
@@ -777,6 +779,7 @@ declare module "roo-ui/icons" {
   export const localShipping: Icon;
   export const localTaxi: Icon;
   export const map: Icon;
+  export const minibar: Icon;
   export const myLocation: Icon;
   export const navigation: Icon;
   export const nearMe: Icon;
@@ -796,6 +799,7 @@ declare module "roo-ui/icons" {
   export const train: Icon;
   export const tram: Icon;
   export const transferWithinAStation: Icon;
+  export const welcomeGift: Icon;
   export const zoomOutMap: Icon;
   export const apps: Icon;
   export const arrowBack: Icon;
