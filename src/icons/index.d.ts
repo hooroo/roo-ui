@@ -779,7 +779,7 @@ declare module "roo-ui/icons" {
   export const localShipping: Icon;
   export const localTaxi: Icon;
   export const map: Icon;
-  export const miniBar: Icon;
+  export const minibar: Icon;
   export const myLocation: Icon;
   export const navigation: Icon;
   export const nearMe: Icon;
