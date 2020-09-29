@@ -1,4 +1,4 @@
-declare module "roo-ui/icons" {
+declare module 'roo-ui/icons' {
   interface Icon {
     category: string;
     path: string;
@@ -64,8 +64,9 @@ declare module "roo-ui/icons" {
   export const explore: Icon;
   export const extension: Icon;
   export const face: Icon;
-  export const favoriteBorder: Icon;
   export const favorite: Icon;
+  export const favoriteBorder: Icon;
+  export const favoriteStrike: Icon;
   export const feedback: Icon;
   export const findInPage: Icon;
   export const findReplace: Icon;
