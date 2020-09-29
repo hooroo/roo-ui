@@ -80,6 +80,7 @@ declare module "roo-ui/icons" {
   export const gif: Icon;
   export const grade: Icon;
   export const groupWork: Icon;
+  export const heartStrike: Icon;
   export const helpOutline: Icon;
   export const help: Icon;
   export const highlightOff: Icon;
