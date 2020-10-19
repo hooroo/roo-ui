@@ -903,8 +903,10 @@ declare module 'roo-ui/icons' {
   export const spa: Icon;
   export const calendar: Icon;
   export const confirmation: Icon;
+  export const depositPay: Icon;
   export const dial: Icon;
   export const feeFreePayment: Icon;
+  export const freeCancellation: Icon;
   export const pointsPay: Icon;
   export const pricePromise: Icon;
   export const qffPoints: Icon;
