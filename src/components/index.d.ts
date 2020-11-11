@@ -422,6 +422,26 @@ declare module 'roo-ui/components' {
     any
   >;
 
+  interface ButtonGroupOption {
+    label: string;
+    value: string;
+  }
+  interface ButtonGroupKnownProps extends FlexProps {
+    name: string;
+    value: string;
+    options: ButtonGroupOption[];
+    onChange: () => void;
+    disabled?: boolean;
+  }
+  export interface ButtonGroupProps
+    extends ButtonGroupKnownProps,
+      Omit<React.HTMLProps<HTMLDivElement>, keyof ButtonGroupKnownProps> {}
+  export const ButtonGroup: SC.StyledComponent<
+    ButtonGroupProps,
+    ButtonGroupProps,
+    any
+  >;
+
   interface CheckboxKnownProps extends BaseProps {}
   export interface CheckboxProps
     extends CheckboxKnownProps,
