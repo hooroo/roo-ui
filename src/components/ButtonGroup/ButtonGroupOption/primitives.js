@@ -38,20 +38,17 @@ export const ButtonLabel = styled.label`
   color: ${steel};
   font-weight: ${bold};
   transition: font-size 200ms ease-in-out;
-
-  border-left: 1px solid ${alto};
-  border-right: 1px solid ${alto};
-  border-top: 2px solid ${alto};
-  border-bottom: 2px solid ${alto};
+  border: 2px solid ${alto};
+  margin-left: -2px;
+  z-index: 1;
 
   &:first-of-type {
-    border-left: 2px solid ${alto};
+    margin-left: 0;
     border-top-left-radius: ${borderRadius};
     border-bottom-left-radius: ${borderRadius};
   }
 
   &:last-of-type {
-    border-right: 2px solid ${alto};
     border-top-right-radius: ${borderRadius};
     border-bottom-right-radius: ${borderRadius};
   }
@@ -61,6 +58,7 @@ export const ButtonLabel = styled.label`
     border-color: ${blue};
     background-color: ${white};
     cursor: unset;
+    z-index: 2;
   }
 
   ${HiddenInput}:focus + & {

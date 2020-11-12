@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ButtonGroup /> renders correctly 1`] = `
-<Flex
+<ButtonGroupWrapper
   aria-label="testButtonGroup"
   role="radiogroup"
 >
@@ -29,5 +29,5 @@ exports[`<ButtonGroup /> renders correctly 1`] = `
     totalOptions={2}
     value="two"
   />
-</Flex>
+</ButtonGroupWrapper>
 `;

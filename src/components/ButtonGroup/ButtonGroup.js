@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Flex } from '../';
+import styled from '@emotion/styled';
+import Flex from '../Flex';
 import ButtonGroupOption from './ButtonGroupOption';
+
+// Setting a transform here creates a stacking context, so the we can use z-index
+// in ButtonGroupOption without worrying about z-index conflicts with other components
+const ButtonGroupWrapper = styled(Flex)`
+  transform: scale(1);
+`;
 
 const ButtonGroup = ({
   name,
@@ -20,7 +27,7 @@ const ButtonGroup = ({
   };
 
   return (
-    <Flex role="radiogroup" aria-label={name} {...rest}>
+    <ButtonGroupWrapper role="radiogroup" aria-label={name} {...rest}>
       {options.map((option, index) => (
         <ButtonGroupOption
           key={index}
@@ -35,7 +42,7 @@ const ButtonGroup = ({
           onChange={handleChange}
         />
       ))}
-    </Flex>
+    </ButtonGroupWrapper>
   );
 };
 
