@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonGroup /> renders correctly 1`] = `
+<ButtonGroupWrapper
+  aria-label="testButtonGroup"
+  role="radiogroup"
+>
+  <ButtonGroupOption
+    checked={true}
+    disabled={false}
+    id="buttonGroup_testButtonGroup_0"
+    key="0"
+    label="One"
+    name="testButtonGroup"
+    onChange={[Function]}
+    size="sm"
+    totalOptions={2}
+    value="one"
+  />
+  <ButtonGroupOption
+    checked={false}
+    disabled={false}
+    id="buttonGroup_testButtonGroup_1"
+    key="1"
+    label="Two"
+    name="testButtonGroup"
+    onChange={[Function]}
+    size="sm"
+    totalOptions={2}
+    value="two"
+  />
+</ButtonGroupWrapper>
+`;

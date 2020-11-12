@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonGroupOption /> renders correctly 1`] = `
+.emotion-0 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  position: relative;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 33.333333333333336%;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: null null;
+  cursor: pointer;
+  -webkit-transition: font-size 200ms ease-in-out;
+  transition: font-size 200ms ease-in-out;
+  border: 2px solid;
+  margin-left: -2px;
+  z-index: 1;
+}
+
+.emotion-2:first-of-type {
+  margin-left: 0;
+}
+
+.emotion-1:checked + .emotion-2 {
+  cursor: unset;
+  z-index: 2;
+}
+
+.emotion-1:disabled + .emotion-2 {
+  cursor: unset;
+}
+
+<ButtonGroupOption
+  checked={false}
+  disabled={false}
+  id="radio_one"
+  label="Click Me"
+  name="radio_one"
+  onChange={[MockFunction]}
+  size="sm"
+  totalOptions={3}
+  value="radio_one_value"
+>
+  <HiddenInput
+    checked={false}
+    disabled={false}
+    id="radio_one"
+    name="radio_one"
+    onChange={[Function]}
+    onFocus={[Function]}
+    type="radio"
+    value="radio_one_value"
+  >
+    <input
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio_one"
+      name="radio_one"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="radio"
+      value="radio_one_value"
+    />
+  </HiddenInput>
+  <ButtonLabel
+    htmlFor="radio_one"
+    onClick={[Function]}
+    size="sm"
+    totalOptions={3}
+  >
+    <label
+      className="emotion-2 emotion-3"
+      htmlFor="radio_one"
+      onClick={[Function]}
+      size="sm"
+    >
+      Click Me
+    </label>
+  </ButtonLabel>
+</ButtonGroupOption>
+`;
