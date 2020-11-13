@@ -426,16 +426,20 @@ declare module 'roo-ui/components' {
     label: string;
     value: string;
   }
-  interface ButtonGroupKnownProps extends FlexProps {
+
+  interface ButtonGroupKnownProps extends Omit<FlexProps, 'size' | 'onChange'> {
     name: string;
     value: string;
     options: ButtonGroupOption[];
-    onChange: () => void;
     disabled?: boolean;
+    size?: string;
+    onChange: (value: string) => void;
   }
+
   export interface ButtonGroupProps
     extends ButtonGroupKnownProps,
       Omit<React.HTMLProps<HTMLDivElement>, keyof ButtonGroupKnownProps> {}
+
   export const ButtonGroup: SC.StyledComponent<
     ButtonGroupProps,
     ButtonGroupProps,
