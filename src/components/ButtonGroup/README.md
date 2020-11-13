@@ -19,7 +19,7 @@ const options = [
   { label: 'Three', value: 'three' },
 ];
 
-const onChange = () => {
+const onChange = (value) => {
   ...
 };
 
