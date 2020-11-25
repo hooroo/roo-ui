@@ -83,6 +83,7 @@ declare module 'roo-ui/components' {
       SS.FlexDirectionProps,
       SS.FlexWrapProps,
       SS.FlexProps,
+      SS.AlignSelfProps,
       SS.PositionProps,
       SS.ZIndexProps,
       SS.TopProps,
