@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import Flex from '../Flex';
@@ -19,13 +19,6 @@ const ButtonGroup = ({
   onChange,
   ...rest
 }) => {
-  const [checked, setChecked] = useState(value);
-
-  const handleChange = value => {
-    setChecked(value);
-    onChange(value);
-  };
-
   return (
     <ButtonGroupWrapper role="radiogroup" aria-label={name} {...rest}>
       {options.map((option, index) => (
@@ -35,11 +28,11 @@ const ButtonGroup = ({
           name={name}
           label={option.label}
           value={option.value}
-          checked={option.value === checked}
+          checked={option.value === value}
           disabled={disabled}
           size={size}
           totalOptions={options.length}
-          onChange={handleChange}
+          onChange={onChange}
         />
       ))}
     </ButtonGroupWrapper>
