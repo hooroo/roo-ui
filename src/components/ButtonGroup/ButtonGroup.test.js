@@ -90,11 +90,21 @@ describe('<ButtonGroup />', () => {
     });
 
     it('passes a handleChange prop to each ButtonGroupOption', () => {
-      expect(values).toEqual([expect.any(Function), expect.any(Function)]);
+      expect(values).toEqual([props.onChange, props.onChange]);
     });
 
     it('invokes the onChange fn passed to ButtonGroup when called', () => {
       expect(props.onChange).toHaveBeenCalledTimes(2);
+    });
+
+    describe('on value prop change', () => {
+      it('updates the checked ButtonGroupOption', () => {
+        wrapper.setProps({ value: 'two' });
+
+        expect(
+          wrapper.find('ButtonGroupOption[value="two"]').prop('checked'),
+        ).toEqual(true);
+      });
     });
   });
 });
