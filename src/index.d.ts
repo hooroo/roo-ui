@@ -53,6 +53,6 @@ declare module 'roo-ui' {
       greys: KeyValue<string>;
       ui: KeyValue<string>;
     };
-    textStyles: NestedKeyValue<string>;
+    textStyles: KeyValue<NestedKeyValue<string>>;
   }
 }
