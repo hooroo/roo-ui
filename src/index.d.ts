@@ -13,6 +13,10 @@ declare module 'roo-ui' {
     [key: string]: Value;
   }
 
+  export interface NestedKeyValue<Value> {
+    [key: string]: Value | NestedKeyValue<Value>;
+  }
+
   export const ThemeProvider: SC.ThemeProviderComponent<any>;
 
   export const theme: Theme;
@@ -49,5 +53,6 @@ declare module 'roo-ui' {
       greys: KeyValue<string>;
       ui: KeyValue<string>;
     };
+    textStyles: KeyValue<NestedKeyValue<string>>;
   }
 }
