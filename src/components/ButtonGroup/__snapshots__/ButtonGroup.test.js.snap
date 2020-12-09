@@ -3,6 +3,7 @@
 exports[`<ButtonGroup /> renders correctly 1`] = `
 <ButtonGroupWrapper
   aria-label="testButtonGroup"
+  display="flex"
   role="radiogroup"
 >
   <ButtonGroupOption
