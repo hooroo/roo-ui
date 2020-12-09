@@ -15,7 +15,6 @@ const flexFlow = style({
 });
 
 const Flex = styled(Box)`
-  display: flex;
   ${alignItems} ${alignContent} ${justifyContent} ${flexWrap} ${flexDirection} ${flexFlow};
 `;
 
@@ -27,6 +26,10 @@ Flex.propTypes = {
   ...flexWrap.propTypes,
   ...flexDirection.propTypes,
   ...flexFlow.propTypes,
+};
+
+Flex.defaultProps = {
+  display: 'flex',
 };
 
 export default Flex;

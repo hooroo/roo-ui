@@ -78,7 +78,9 @@ exports[`<CalendarNav /> renders correctly 1`] = `
     }
   }
 >
-  <Wrapper>
+  <Wrapper
+    display="flex"
+  >
     <div
       className="emotion-22 emotion-23"
     >
