@@ -860,6 +860,7 @@ declare module "roo-ui/icons" {
   export const ondemandVideo: Icon;
   export const personalVideo: Icon;
   export const phoneBluetoothSpeaker: Icon;
+  export const phoneCallback: Icon;
   export const phoneForwarded: Icon;
   export const phoneInTalk: Icon;
   export const phoneLocked: Icon;
@@ -911,6 +912,7 @@ declare module "roo-ui/icons" {
   export const pricePromise: Icon;
   export const qffPoints: Icon;
   export const ribbon: Icon;
+  export const roo: Icon;
   export const support: Icon;
   export const circleBorder: Icon;
   export const circleHalf: Icon;
@@ -941,6 +943,7 @@ declare module "roo-ui/icons" {
   export const poll: Icon;
   export const publicIcon: Icon;
   export const school: Icon;
+  export const selfImprovement: Icon;
   export const sentimentDissatisfied: Icon;
   export const sentimentNeutral: Icon;
   export const sentimentSatisfied: Icon;
