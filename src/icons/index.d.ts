@@ -201,6 +201,7 @@ declare module "roo-ui/icons" {
   export const turnedInNot: Icon;
   export const turnedIn: Icon;
   export const update: Icon;
+  export const upgrade: Icon;
   export const verifiedUser: Icon;
   export const viewAgenda: Icon;
   export const viewArray: Icon;
@@ -791,6 +792,7 @@ declare module "roo-ui/icons" {
   export const rateReview: Icon;
   export const restaurantMenu: Icon;
   export const restaurant: Icon;
+  export const sailing: Icon;
   export const satellite: Icon;
   export const storeMallDirectory: Icon;
   export const streetview: Icon;
@@ -801,6 +803,7 @@ declare module "roo-ui/icons" {
   export const tram: Icon;
   export const transferWithinAStation: Icon;
   export const welcomeGift: Icon;
+  export const wineBar: Icon;
   export const zoomOutMap: Icon;
   export const apps: Icon;
   export const arrowBack: Icon;
@@ -924,6 +927,7 @@ declare module "roo-ui/icons" {
   export const domain: Icon;
   export const groupAdd: Icon;
   export const group: Icon;
+  export const hiking: Icon;
   export const locationCity: Icon;
   export const moodBad: Icon;
   export const mood: Icon;
