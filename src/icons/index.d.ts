@@ -193,6 +193,7 @@ declare module "roo-ui/icons" {
   export const today: Icon;
   export const toll: Icon;
   export const touchApp: Icon;
+  export const tour: Icon;
   export const trackChanges: Icon;
   export const translate: Icon;
   export const trendingDown: Icon;
@@ -925,9 +926,11 @@ declare module "roo-ui/icons" {
   export const star: Icon;
   export const cake: Icon;
   export const domain: Icon;
+  export const emojiTransportation: Icon;
   export const groupAdd: Icon;
   export const group: Icon;
   export const hiking: Icon;
+  export const kayaking: Icon;
   export const locationCity: Icon;
   export const moodBad: Icon;
   export const mood: Icon;
