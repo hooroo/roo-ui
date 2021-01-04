@@ -50,7 +50,7 @@ const Button = styled.button`
   }
 
   &:focus {
-    box-shadow: ${themeGet('shadows.focus')};
+    box-shadow: 0 0 0 2px ${themeGet('colors.brand.secondary')};
   }
 
   &:disabled {

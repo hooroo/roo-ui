@@ -43,7 +43,7 @@ exports[`<OutlineButton /> primary renders correctly 1`] = `
 }
 
 .emotion-0:focus {
-  box-shadow: 0 0 2px 2px #999999;
+  box-shadow: 0 0 0 2px #8DE2E0;
 }
 
 .emotion-0:disabled {
@@ -125,7 +125,7 @@ exports[`<OutlineButton /> renders correctly 1`] = `
 }
 
 .emotion-0:focus {
-  box-shadow: 0 0 2px 2px #999999;
+  box-shadow: 0 0 0 2px #8DE2E0;
 }
 
 .emotion-0:disabled {
@@ -204,7 +204,7 @@ exports[`<OutlineButton /> rounded renders correctly 1`] = `
 }
 
 .emotion-0:focus {
-  box-shadow: 0 0 2px 2px #999999;
+  box-shadow: 0 0 0 2px #8DE2E0;
 }
 
 .emotion-0:disabled {
