@@ -71,6 +71,12 @@ $ yarn run generate-component MyNewComponent
 Right now we don't have any automation setup for optimising assets.
 Run svgs through a tool like [SVGO](https://jakearchibald.github.io/svgomg/). It will remove attributes and comments from the file which are not needed.
 
+### Icons
+
+Bespoke icons should be added to `src/icons/qantas`.
+
+Icons taken from [Material Design](https://material.io/resources/icons/?style=baseline) should be added to the same category (`src/icons/<category>`) as they appear there.
+
 ## Merging and deployment process
 
 ### Commit naming
