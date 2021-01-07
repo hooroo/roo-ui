@@ -133,7 +133,7 @@
     "date-fns": "^2.5.0",
     "dayzed": "^3.0.0",
     "emotion-theming": "^10.0.17",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "polished": "^3.6.5",
     "react-modal": "^3.10.1",
     "react-onclickoutside": "^6.9.0",
