@@ -44,6 +44,8 @@ declare module "roo-ui/icons" {
   export const classIcon: Icon;
   export const code: Icon;
   export const compareArrows: Icon;
+  export const contactPage: Icon;
+  export const contactSupport: Icon;
   export const copyright: Icon;
   export const creditCard: Icon;
   export const dashboard: Icon;
