@@ -919,6 +919,7 @@ declare module "roo-ui/icons" {
   export const ribbon: Icon;
   export const roo: Icon;
   export const support: Icon;
+  export const valetParking: Icon;
   export const welcomeGift: Icon;
   export const circleBorder: Icon;
   export const circleHalf: Icon;
