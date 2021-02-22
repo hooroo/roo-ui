@@ -142,6 +142,7 @@ declare module "roo-ui/icons" {
   export const recordVoiceOver: Icon;
   export const redeem: Icon;
   export const removeShoppingCart: Icon;
+  export const renovations: Icon;
   export const reorder: Icon;
   export const reportProblem: Icon;
   export const restorePage: Icon;
