@@ -41,6 +41,7 @@ const ui = {
   linkHover: namedColors.maroon,
   success: namedColors.green,
   successBackground: namedColors.lightGreen,
+  focusColor: '#0E62C9',
 };
 
 const colors = {

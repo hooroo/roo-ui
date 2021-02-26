@@ -62,7 +62,8 @@ export const ButtonLabel = styled.label`
   }
 
   ${HiddenInput}:focus + & {
-    border-color: ${dusty};
+    border-color: ${themeGet('colors.ui.focusColor')};
+    z-index: 2;
   }
 
   ${HiddenInput}:disabled + & {
