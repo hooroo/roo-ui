@@ -201,7 +201,15 @@ declare module 'roo-ui/components' {
       Omit<React.HTMLProps<HTMLImageElement>, keyof ImageKnownProps> {}
   export const Image: SC.StyledComponent<ImageProps, ImageProps, any>;
 
-  interface InputKnownProps extends BaseProps, SS.SpaceProps {
+  interface InputKnownProps
+    extends BaseProps,
+      SS.SpaceProps,
+      SS.ColorProps,
+      SS.FontSizeProps,
+      SS.LineHeightProps,
+      SS.BorderProps,
+      SS.BorderColorProps,
+      SS.TextAlignProps {
     error?: boolean;
     underline?: boolean;
   }
