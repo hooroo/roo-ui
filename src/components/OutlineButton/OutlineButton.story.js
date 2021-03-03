@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { boolean, select } from '@storybook/addon-knobs/react';
+import { boolean, select } from '@storybook/addon-knobs';
 
 import OutlineButton from './OutlineButton';
 import README from './README.md';
 
-storiesOf('Components|OutlineButton', module)
+storiesOf('Components/OutlineButton', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <OutlineButton

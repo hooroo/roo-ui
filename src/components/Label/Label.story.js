@@ -7,7 +7,7 @@ import { Input, Box } from '../';
 import Label from './';
 import README from './README.md';
 
-storiesOf('Components|Label', module)
+storiesOf('Components/Label', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Box textAlign="left">

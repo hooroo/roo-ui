@@ -6,7 +6,7 @@ import { Box } from '../';
 import Card from './Card';
 import README from './README.md';
 
-storiesOf('Components|Card', module)
+storiesOf('Components/Card', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Box p={6} bg="greys.porcelain">

@@ -4,7 +4,7 @@ import { withDocs } from 'storybook-readme';
 import { Box, List, ListItem } from '../';
 import README from './README.md';
 
-storiesOf('Components|ListItem', module)
+storiesOf('Components/ListItem', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Box textAlign="left">

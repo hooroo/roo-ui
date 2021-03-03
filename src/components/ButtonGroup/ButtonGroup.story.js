@@ -12,7 +12,7 @@ const DEFAULT_OPTIONS = [
   { label: 'Cancelled', value: 'cancelled' },
 ];
 
-storiesOf('Components|ButtonGroup', module)
+storiesOf('Components/ButtonGroup', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <ButtonGroup

@@ -5,7 +5,7 @@ import { Box, Flex, Heading } from '../';
 import StarRating from './';
 import README from './README.md';
 
-storiesOf('Components|StarRating', module)
+storiesOf('Components/StarRating', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Flex justifyContent="space-around">

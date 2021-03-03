@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import Paragraph from './';
 import README from './README.md';
 
-storiesOf('Components|Paragraph', module)
+storiesOf('Components/Paragraph', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Paragraph>

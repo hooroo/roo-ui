@@ -6,7 +6,7 @@ import { Box } from '../';
 import Container from './Container';
 import README from './README.md';
 
-storiesOf('Components|Container', module)
+storiesOf('Components/Container', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Container>

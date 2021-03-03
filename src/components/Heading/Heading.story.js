@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import Heading from './';
 import README from './README.md';
 
-storiesOf('Components|Heading', module)
+storiesOf('Components/Heading', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Fragment>

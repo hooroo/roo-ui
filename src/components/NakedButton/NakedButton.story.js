@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { boolean } from '@storybook/addon-knobs/react';
+import { boolean } from '@storybook/addon-knobs';
 
 import NakedButton from './';
 import Text from '../Text';
@@ -10,7 +10,7 @@ import Heading from '../Heading';
 import Flex from '../Flex';
 import README from './README.md';
 
-storiesOf('Components|NakedButton', module)
+storiesOf('Components/NakedButton', module)
   .addDecorator(withDocs(README))
   .add('default', () => <NakedButton mt={3}>Hello world</NakedButton>)
   .add('link style', () => (

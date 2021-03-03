@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { boolean, select } from '@storybook/addon-knobs/react';
+import { boolean, select } from '@storybook/addon-knobs';
 
 import Button from './';
 import README from './README.md';
 import LoadingIndicator from '../LoadingIndicator';
 
-storiesOf('Components|Button', module)
+storiesOf('Components/Button', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Button

@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { select } from '@storybook/addon-knobs/react';
+import { select } from '@storybook/addon-knobs';
 
 import ErrorMessage from './';
 import README from './README.md';
 
-storiesOf('Components|ErrorMessage', module)
+storiesOf('Components/ErrorMessage', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <ErrorMessage

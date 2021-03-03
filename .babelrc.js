@@ -9,7 +9,7 @@ module.exports = {
     ],
     'emotion',
     '@babel/transform-runtime',
-    '@babel/proposal-class-properties',
+    ['@babel/proposal-class-properties', { loose: true }],
     '@babel/proposal-object-rest-spread',
   ],
 };

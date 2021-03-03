@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import Truncate from './';
 import README from './README.md';
 
-storiesOf('Components|Truncate', module)
+storiesOf('Components/Truncate', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Truncate>

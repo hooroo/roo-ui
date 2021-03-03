@@ -6,7 +6,7 @@ import { Box } from '../';
 import BlockLink from './';
 import README from './README.md';
 
-storiesOf('Components|BlockLink', module)
+storiesOf('Components/BlockLink', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <BlockLink href="https://www.qantas.com" target="_blank">

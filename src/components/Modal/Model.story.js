@@ -46,7 +46,7 @@ const ModalWrapper = ({ initial = true, variant }) => (
   </Toggle>
 );
 
-storiesOf('Components|Modal', module)
+storiesOf('Components/Modal', module)
   .addDecorator(withDocs(README))
   .add('<Modal />', () => <ModalWrapper initial={false} />)
   .add('<Modal.header variant="info" />', () => <ModalWrapper variant="info" />)

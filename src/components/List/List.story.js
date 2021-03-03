@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { boolean, array } from '@storybook/addon-knobs/react';
+import { boolean, array } from '@storybook/addon-knobs';
 
 import { Box, List, ListItem } from '../';
 import README from './README.md';
@@ -23,7 +23,7 @@ const flatList = props => (
   </Box>
 );
 
-storiesOf('Components|List', module)
+storiesOf('Components/List', module)
   .addDecorator(withDocs(README))
   .add('default', () =>
     flatList({

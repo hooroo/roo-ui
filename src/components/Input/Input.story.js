@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { boolean, text } from '@storybook/addon-knobs/react';
+import { boolean, text } from '@storybook/addon-knobs';
 
 import Input from './';
 import README from './README.md';
 
-storiesOf('Components|Input', module)
+storiesOf('Components/Input', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Input

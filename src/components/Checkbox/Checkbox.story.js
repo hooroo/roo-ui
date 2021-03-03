@@ -6,7 +6,7 @@ import Checkbox from './';
 import { Box, Label } from '../';
 import README from './README.md';
 
-storiesOf('Components|Checkbox', module)
+storiesOf('Components/Checkbox', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Box textAlign="left" as="form">
