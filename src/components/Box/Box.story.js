@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import Box from './Box';
 import README from './README.md';
 
-storiesOf('Components|Box', module)
+storiesOf('Components/Box', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Box p={3} bg="greys.porcelain">

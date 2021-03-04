@@ -59,7 +59,7 @@ const IconCategory = ({ category }) => (
   </Grid>
 );
 
-storiesOf('Components|Icon', module)
+storiesOf('Components/Icon', module)
   .addDecorator(withDocs(README))
   .add('default icons', () => <IconsInTheme />)
   .add('action', () => <IconCategory category="action" />)

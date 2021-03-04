@@ -8,7 +8,7 @@ import subDays from 'date-fns/subDays';
 import DatePicker from './DatePicker';
 import README from './README.md';
 
-storiesOf('Components|DatePicker', module)
+storiesOf('Components/DatePicker', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <DatePicker

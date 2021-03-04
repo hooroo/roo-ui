@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
-import { boolean, number } from '@storybook/addon-knobs/react';
+import { boolean, number } from '@storybook/addon-knobs';
 
 import Textarea from './';
 import README from './README.md';
 
-storiesOf('Components|Textarea', module)
+storiesOf('Components/Textarea', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Textarea

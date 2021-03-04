@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, select } from '@storybook/addon-knobs/react';
+import { boolean, select } from '@storybook/addon-knobs';
 import { withDocs } from 'storybook-readme';
 import README from './README.md';
 import {
@@ -39,7 +39,7 @@ const getColors = () => ({
   ...getColorsByGroup('greys'),
 });
 
-storiesOf('Foundations|Typography', module)
+storiesOf('Foundations/Typography', module)
   .addDecorator(withDocs(README))
   .add('default', () => {
     const textKnobProps = {

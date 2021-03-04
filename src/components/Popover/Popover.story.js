@@ -7,7 +7,7 @@ import README from './README.md';
 
 import { Button } from '../';
 
-storiesOf('Components|Popover', module)
+storiesOf('Components/Popover', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Popover zIndex={20}>

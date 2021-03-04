@@ -5,6 +5,6 @@ import { withDocs } from 'storybook-readme';
 import LoadingIndicator from './LoadingIndicator';
 import README from './README.md';
 
-storiesOf('Components|LoadingIndicator', module)
+storiesOf('Components/LoadingIndicator', module)
   .addDecorator(withDocs(README))
   .add('default', () => <LoadingIndicator />);

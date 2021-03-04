@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import Wrapper from './';
 import README from './README.md';
 
-storiesOf('Components|Wrapper', module)
+storiesOf('Components/Wrapper', module)
   .addDecorator(withDocs(README))
   .add('with props', () => (
     <Wrapper p={3} bg="greys.porcelain">

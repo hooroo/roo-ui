@@ -6,7 +6,7 @@ import Flex from './Flex';
 import { Box } from '../';
 import README from './README.md';
 
-storiesOf('Components|Flex', module)
+storiesOf('Components/Flex', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <Flex>

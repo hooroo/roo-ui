@@ -5,7 +5,7 @@ import { withDocs } from 'storybook-readme';
 import Hide from './';
 import README from './README.md';
 
-storiesOf('Components|Hide', module)
+storiesOf('Components/Hide', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <table>

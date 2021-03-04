@@ -13,7 +13,7 @@ const date = new Date(
   new Date().getDate(),
 );
 
-storiesOf('Components|DateRangePicker', module)
+storiesOf('Components/DateRangePicker', module)
   .addDecorator(withDocs(README))
   .add('default', () => (
     <DateRangePicker
