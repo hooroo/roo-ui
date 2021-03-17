@@ -357,6 +357,7 @@ declare module 'roo-ui/components' {
     extends BaseProps,
       SS.ColorProps,
       SS.FontWeightProps,
+      SS.FontSizeProps,
       SS.SpaceProps {
     hidden?: boolean;
     underline?: boolean;
