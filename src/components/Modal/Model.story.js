@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { Toggle } from 'react-powerplug';
 
@@ -46,13 +45,33 @@ const ModalWrapper = ({ initial = true, variant }) => (
   </Toggle>
 );
 
-storiesOf('Components/Modal', module)
-  .addDecorator(withDocs(README))
-  .add('<Modal />', () => <ModalWrapper initial={false} />)
-  .add('<Modal.header variant="info" />', () => <ModalWrapper variant="info" />)
-  .add('<Modal.header variant="success" />', () => (
-    <ModalWrapper variant="success" />
-  ))
-  .add('<Modal.header variant="error" />', () => (
-    <ModalWrapper variant="error" />
-  ));
+export default {
+  title: 'Components/Modal',
+  decorators: [withDocs(README)],
+};
+
+export const _Modal = () => <ModalWrapper initial={false} />;
+
+_Modal.story = {
+  name: '<Modal />',
+};
+
+export const ModalHeaderVariantInfo = () => <ModalWrapper variant="info" />;
+
+ModalHeaderVariantInfo.story = {
+  name: '<Modal.header variant="info" />',
+};
+
+export const ModalHeaderVariantSuccess = () => (
+  <ModalWrapper variant="success" />
+);
+
+ModalHeaderVariantSuccess.story = {
+  name: '<Modal.header variant="success" />',
+};
+
+export const ModalHeaderVariantError = () => <ModalWrapper variant="error" />;
+
+ModalHeaderVariantError.story = {
+  name: '<Modal.header variant="error" />',
+};

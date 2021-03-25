@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { ThemeProvider, withTheme } from 'emotion-theming';
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
@@ -59,24 +58,121 @@ const IconCategory = ({ category }) => (
   </Grid>
 );
 
-storiesOf('Components/Icon', module)
-  .addDecorator(withDocs(README))
-  .add('default icons', () => <IconsInTheme />)
-  .add('action', () => <IconCategory category="action" />)
-  .add('alert', () => <IconCategory category="alert" />)
-  .add('av', () => <IconCategory category="av" />)
-  .add('communication', () => <IconCategory category="communication" />)
-  .add('content', () => <IconCategory category="content" />)
-  .add('device', () => <IconCategory category="device" />)
-  .add('editor', () => <IconCategory category="editor" />)
-  .add('file', () => <IconCategory category="file" />)
-  .add('hardware', () => <IconCategory category="hardware" />)
-  .add('image', () => <IconCategory category="image" />)
-  .add('maps', () => <IconCategory category="maps" />)
-  .add('navigation', () => <IconCategory category="navigation" />)
-  .add('notification', () => <IconCategory category="notification" />)
-  .add('places', () => <IconCategory category="places" />)
-  .add('qantas', () => <IconCategory category="qantas" />)
-  .add('rating', () => <IconCategory category="rating" />)
-  .add('social', () => <IconCategory category="social" />)
-  .add('toggle', () => <IconCategory category="toggle" />);
+export default {
+  title: 'Components/Icon',
+  decorators: [withDocs(README)],
+};
+
+export const DefaultIcons = () => <IconsInTheme />;
+
+DefaultIcons.story = {
+  name: 'default icons',
+};
+
+export const Action = () => <IconCategory category="action" />;
+
+Action.story = {
+  name: 'action',
+};
+
+export const Alert = () => <IconCategory category="alert" />;
+
+Alert.story = {
+  name: 'alert',
+};
+
+export const Av = () => <IconCategory category="av" />;
+
+Av.story = {
+  name: 'av',
+};
+
+export const Communication = () => <IconCategory category="communication" />;
+
+Communication.story = {
+  name: 'communication',
+};
+
+export const Content = () => <IconCategory category="content" />;
+
+Content.story = {
+  name: 'content',
+};
+
+export const Device = () => <IconCategory category="device" />;
+
+Device.story = {
+  name: 'device',
+};
+
+export const Editor = () => <IconCategory category="editor" />;
+
+Editor.story = {
+  name: 'editor',
+};
+
+export const File = () => <IconCategory category="file" />;
+
+File.story = {
+  name: 'file',
+};
+
+export const Hardware = () => <IconCategory category="hardware" />;
+
+Hardware.story = {
+  name: 'hardware',
+};
+
+export const Image = () => <IconCategory category="image" />;
+
+Image.story = {
+  name: 'image',
+};
+
+export const Maps = () => <IconCategory category="maps" />;
+
+Maps.story = {
+  name: 'maps',
+};
+
+export const Navigation = () => <IconCategory category="navigation" />;
+
+Navigation.story = {
+  name: 'navigation',
+};
+
+export const Notification = () => <IconCategory category="notification" />;
+
+Notification.story = {
+  name: 'notification',
+};
+
+export const Places = () => <IconCategory category="places" />;
+
+Places.story = {
+  name: 'places',
+};
+
+export const Qantas = () => <IconCategory category="qantas" />;
+
+Qantas.story = {
+  name: 'qantas',
+};
+
+export const Rating = () => <IconCategory category="rating" />;
+
+Rating.story = {
+  name: 'rating',
+};
+
+export const Social = () => <IconCategory category="social" />;
+
+Social.story = {
+  name: 'social',
+};
+
+export const Toggle = () => <IconCategory category="toggle" />;
+
+Toggle.story = {
+  name: 'toggle',
+};

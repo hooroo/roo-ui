@@ -1,13 +1,24 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 
 import MaskedInput from './';
 import README from './README.md';
 
-storiesOf('Components/MaskedInput', module)
-  .addDecorator(withDocs(README))
-  .add('default', () => (
-    <MaskedInput placeholder="Enter postcode" mask={[/\d/, /\d/, /\d/, /\d/]} />
-  ))
-  .add('time', () => <MaskedInput.time />);
+export default {
+  title: 'Components/MaskedInput',
+  decorators: [withDocs(README)],
+};
+
+export const Default = () => (
+  <MaskedInput placeholder="Enter postcode" mask={[/\d/, /\d/, /\d/, /\d/]} />
+);
+
+Default.story = {
+  name: 'default',
+};
+
+export const Time = () => <MaskedInput.time />;
+
+Time.story = {
+  name: 'time',
+};

@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { number, boolean } from '@storybook/addon-knobs';
 import { withDocs } from 'storybook-readme';
 import addDays from 'date-fns/addDays';
@@ -13,16 +12,23 @@ const date = new Date(
   new Date().getDate(),
 );
 
-storiesOf('Components/DateRangePicker', module)
-  .addDecorator(withDocs(README))
-  .add('default', () => (
-    <DateRangePicker
-      monthsToDisplay={number('Months to display', 2)}
-      stacked={boolean('Stacked', false)}
-      minDate={date}
-      initialStartDate={addDays(date, 3)}
-      initialEndDate={addDays(date, 7)}
-      isSettingStartDate={false}
-      isSettingEndDate={false}
-    />
-  ));
+export default {
+  title: 'Components/DateRangePicker',
+  decorators: [withDocs(README)],
+};
+
+export const Default = () => (
+  <DateRangePicker
+    monthsToDisplay={number('Months to display', 2)}
+    stacked={boolean('Stacked', false)}
+    minDate={date}
+    initialStartDate={addDays(date, 3)}
+    initialEndDate={addDays(date, 7)}
+    isSettingStartDate={false}
+    isSettingEndDate={false}
+  />
+);
+
+Default.story = {
+  name: 'default',
+};

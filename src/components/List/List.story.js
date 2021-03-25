@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withDocs } from 'storybook-readme';
 import { boolean, array } from '@storybook/addon-knobs';
 
@@ -23,32 +22,47 @@ const flatList = props => (
   </Box>
 );
 
-storiesOf('Components/List', module)
-  .addDecorator(withDocs(README))
-  .add('default', () =>
-    flatList({
-      ordered: boolean('Ordered', false),
-      flush: boolean('Flush', false),
-    }),
-  )
-  .add('columns', () =>
-    flatList({
-      ordered: boolean('Ordered', false),
-      columns: array('Columns', [1, 2, 3]),
-    }),
-  )
-  .add('nested', () => (
-    <Box textAlign="left">
-      <List>
-        <ListItem>Coffee</ListItem>
-        <ListItem>
-          Tea
-          <List>
-            <ListItem>Black tea</ListItem>
-            <ListItem>Green tea</ListItem>
-          </List>
-        </ListItem>
-        <ListItem>Milk</ListItem>
-      </List>
-    </Box>
-  ));
+export default {
+  title: 'Components/List',
+  decorators: [withDocs(README)],
+};
+
+export const Default = () =>
+  flatList({
+    ordered: boolean('Ordered', false),
+    flush: boolean('Flush', false),
+  });
+
+Default.story = {
+  name: 'default',
+};
+
+export const Columns = () =>
+  flatList({
+    ordered: boolean('Ordered', false),
+    columns: array('Columns', [1, 2, 3]),
+  });
+
+Columns.story = {
+  name: 'columns',
+};
+
+export const Nested = () => (
+  <Box textAlign="left">
+    <List>
+      <ListItem>Coffee</ListItem>
+      <ListItem>
+        Tea
+        <List>
+          <ListItem>Black tea</ListItem>
+          <ListItem>Green tea</ListItem>
+        </List>
+      </ListItem>
+      <ListItem>Milk</ListItem>
+    </List>
+  </Box>
+);
+
+Nested.story = {
+  name: 'nested',
+};
