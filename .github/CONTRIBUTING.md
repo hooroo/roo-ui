@@ -129,7 +129,8 @@ Typically, a roo-ui maintainer should be asked for a review initially. These peo
 - [Philip](https://github.com/philipwindeyer) from Team Relationship
 - [Eric](https://github.com/eneo5541) from The Bellhops
 - [Mike](https://github.com/memcc) from The Bellhops
-- [Long](https://github.com/KieraDOG) from Team Packages
+- [Marcel](https://github.com/Anthropic) from Team Packages
+- [Sam](https://github.com/SamuSan) from Team Bookings
 
 If you've requested a review from the maintainers listed above, but haven't received one within **two days**, please extend your review request to other [team members of Qantas Hotels](https://github.com/orgs/hooroo/people).
 
