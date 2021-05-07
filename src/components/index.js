@@ -30,7 +30,6 @@ export { default as Truncate } from './Truncate';
 export { default as CharacterCount } from './CharacterCount';
 export { default as Checkbox } from './Checkbox';
 export { default as MaskedInput } from './MaskedInput';
-export { default as Modal, ModalGlobalStyle } from './Modal';
 export { default as Textarea } from './Textarea';
 export { default as Radio } from './Radio';
 export { default as Select } from './Select';
@@ -38,3 +37,11 @@ export { default as Popover } from './Popover';
 export { default as Wrapper } from './Wrapper';
 export { DatePicker } from './DatePicker';
 export { DateRangePicker } from './DatePicker';
+
+export {
+  default as Modal,
+  ModalGlobalStyle,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from './Modal';
