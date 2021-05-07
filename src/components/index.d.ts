@@ -292,6 +292,7 @@ declare module 'roo-ui/components' {
   };
 
   export interface ModalProps extends ReactModal.Props {
+    isOpen: boolean;
     width?: number | string;
   }
   interface ModalHeaderProps extends BoxProps {
