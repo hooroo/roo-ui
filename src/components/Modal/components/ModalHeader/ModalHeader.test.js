@@ -1,6 +1,5 @@
 import React from 'react';
-import { axe } from 'jest-axe';
-import { mountWithTheme, shallowWithTheme } from 'testUtils';
+import { axe, mountWithTheme, shallowWithTheme } from 'testUtils';
 import theme from 'theme';
 import ModalHeader from './ModalHeader';
 

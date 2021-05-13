@@ -1,7 +1,6 @@
 import React from 'react';
 import theme from 'theme';
-import { mountWithTheme } from 'testUtils';
-import { axe } from 'jest-axe';
+import { axe, mountWithTheme } from 'testUtils';
 
 import Popover from './';
 

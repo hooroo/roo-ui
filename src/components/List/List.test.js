@@ -1,7 +1,6 @@
 import React from 'react';
-import { axe } from 'jest-axe';
 import theme from 'theme';
-import { mountWithTheme } from 'testUtils';
+import { axe, mountWithTheme } from 'testUtils';
 
 import { List, ListItem } from '../';
 

@@ -89,7 +89,7 @@ describe('<DatePicker />', () => {
         setup();
       });
 
-      it('it renders a day for each day in the month', () => {
+      it('renders a day for each day in the month', () => {
         expect(wrapper.find('CalendarDay')).toHaveLength(31);
       });
 
