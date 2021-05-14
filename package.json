@@ -1,7 +1,10 @@
 {
   "name": "roo-ui",
   "description": "Qantas Hotels' library of accessible React components and assets",
-  "repository": "git@github.com:hooroo/roo-ui.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hooroo/roo-ui.git"
+  },
   "author": "Hooroo <support@hooroo.com>",
   "license": "MIT",
   "main": "lib/",
