@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import theme from 'theme';
 import ThemeProvider from 'ThemeProvider';
-import { axe } from 'jest-axe';
+import { axe } from 'testUtils';
 
 import Icon from './';
 

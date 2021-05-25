@@ -54,6 +54,11 @@ exports[`<Modal /> renders correctly 1`] = `
 }
 
 <Modal
+  aria={
+    Object {
+      "label": "Test Aria",
+    }
+  }
   ariaHideApp={true}
   isOpen={true}
   role="dialog"
@@ -61,6 +66,11 @@ exports[`<Modal /> renders correctly 1`] = `
   width="41.25rem"
 >
   <Component
+    aria={
+      Object {
+        "label": "Test Aria",
+      }
+    }
     ariaHideApp={true}
     className="emotion-0 emotion-1"
     isOpen={true}
@@ -69,14 +79,22 @@ exports[`<Modal /> renders correctly 1`] = `
     width="41.25rem"
   >
     <Modal
+      aria={
+        Object {
+          "label": "Test Aria",
+        }
+      }
       ariaHideApp={true}
       bodyOpenClassName="ReactModal__Body--open"
       className="ModalContent"
       closeTimeoutMS={0}
+      contentElement={[Function]}
       isOpen={true}
       overlayClassName="ModalOverlay"
+      overlayElement={[Function]}
       parentSelector={[Function]}
       portalClassName="emotion-0 emotion-1"
+      preventScroll={false}
       role="dialog"
       shouldCloseOnEsc={true}
       shouldCloseOnOverlayClick={true}
@@ -145,6 +163,8 @@ exports[`<Modal /> renders correctly 1`] = `
               class="ReactModal__Overlay ReactModal__Overlay--after-open ModalOverlay"
             >
               <div
+                aria-label="Test Aria"
+                aria-modal="true"
                 class="ReactModal__Content ReactModal__Content--after-open ModalContent"
                 role="dialog"
                 tabindex="-1"
@@ -154,10 +174,16 @@ exports[`<Modal /> renders correctly 1`] = `
         }
       >
         <ModalPortal
+          aria={
+            Object {
+              "label": "Test Aria",
+            }
+          }
           ariaHideApp={true}
           bodyOpenClassName="ReactModal__Body--open"
           className="ModalContent"
           closeTimeoutMS={0}
+          contentElement={[Function]}
           defaultStyles={
             Object {
               "content": Object {
@@ -186,8 +212,10 @@ exports[`<Modal /> renders correctly 1`] = `
           }
           isOpen={true}
           overlayClassName="ModalOverlay"
+          overlayElement={[Function]}
           parentSelector={[Function]}
           portalClassName="emotion-0 emotion-1"
+          preventScroll={false}
           role="dialog"
           shouldCloseOnEsc={true}
           shouldCloseOnOverlayClick={true}
@@ -208,6 +236,8 @@ exports[`<Modal /> renders correctly 1`] = `
             style={Object {}}
           >
             <div
+              aria-label="Test Aria"
+              aria-modal={true}
               className="ReactModal__Content ReactModal__Content--after-open ModalContent"
               onClick={[Function]}
               onKeyDown={[Function]}

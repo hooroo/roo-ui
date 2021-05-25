@@ -1,6 +1,5 @@
 import React from 'react';
-import { axe } from 'jest-axe';
-import { shallowWithTheme } from 'testUtils';
+import { axe, shallowWithTheme } from 'testUtils';
 import theme from 'theme';
 import ModalBody from './ModalBody';
 

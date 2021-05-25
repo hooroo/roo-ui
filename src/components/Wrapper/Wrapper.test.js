@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { axe } from 'jest-axe';
+import { axe } from 'testUtils';
 
 import Wrapper from './';
 

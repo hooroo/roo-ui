@@ -1,6 +1,5 @@
 import React from 'react';
-import { axe } from 'jest-axe';
-import { mountWithTheme } from 'testUtils';
+import { axe, mountWithTheme } from 'testUtils';
 import theme from 'theme';
 import ReactModal from 'react-modal';
 import Modal from './Modal';
@@ -13,7 +12,16 @@ describe('<Modal />', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mountWithTheme(<Modal title="Test Modal" isOpen />, theme);
+    wrapper = mountWithTheme(
+      <Modal
+        title="Test Modal"
+        aria={{
+          label: 'Test Aria',
+        }}
+        isOpen
+      />,
+      theme,
+    );
   });
 
   it('has no accessibility errors', async () => {

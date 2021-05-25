@@ -1,8 +1,8 @@
 /* eslint-env jest */
 import React from 'react';
 import { shallow } from 'enzyme';
-import { axe } from 'jest-axe';
 import StarRating from './StarRating';
+import { axe } from 'testUtils';
 
 let ratingType;
 let rating;
