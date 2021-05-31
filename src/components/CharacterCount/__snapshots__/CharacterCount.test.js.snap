@@ -4,7 +4,7 @@ exports[`<CharacterCount /> renders correctly 1`] = `
 .emotion-0 {
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.9375rem;
 }
 
