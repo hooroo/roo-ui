@@ -34,7 +34,7 @@
     "build:entrypoints": "scripts/build-entrypoints",
     "build:cjs": "MODULES=commonjs babel src -d lib --copy-files",
     "build:esm": "MODULES=false babel src -d esm --copy-files",
-    "build": "npm-run-all build-icons --parallel build:*",
+    "build": "yarn build-icons && npm-run-all --parallel build:*",
     "pretest": "yarn build-icons",
     "release": "semantic-release",
     "storybook": "yarn build-icons && start-storybook",
