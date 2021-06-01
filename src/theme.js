@@ -105,7 +105,7 @@ const fontSizes = {
 };
 
 const fontWeights = {
-  normal: 500,
+  normal: 400,
   bold: 600,
 };
 
