@@ -18,14 +18,10 @@ jobs:
           node-version: '14'
 
       - name: Install 🔧
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
+        run: npm install -g yarn && yarn install
 
       - name: Build 🔨
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build-storybook
+        run: yarn build-storybook
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
