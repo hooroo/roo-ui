@@ -38,3 +38,10 @@ steps:
     command: scripts/release
     concurrency: 1
     concurrency_group: roo-ui/release
+
+  - name: ':storybook: Deploy'
+    <<: *defaults
+    branches: master
+    command: scripts/deploy-storybook
+    concurrency: 1
+    concurrency_group: roo-ui/deploy-storybook

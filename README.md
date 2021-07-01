@@ -4,7 +4,7 @@
 
 Qantas Hotels' library of accessible React components and assets.
 
-To see what’s available, check out roo-ui's [storybook](https://roo-ui.netlify.com/).
+To see what’s available, check out roo-ui's [storybook](https://hooroo.github.io/roo-ui).
 If you want to jump in and and play around with the project check out [Roo UI playground](https://github.com/hooroo/roo-ui-playground) - it’s setup so you can start using it straight away.
 
 ## Contents
@@ -141,14 +141,14 @@ If you're using Webpack, you'll need to setup [file loader](https://github.com/w
   - [CSS reset](#css-reset)
   - [Bundler requirements](#bundler-requirements)
 - [FAQ’s](#faqs)
-  - [How do I do layout in this new world?](#how-do-i-do-layout-in-this-new-world)
-  - [How do I do responsive styles?](#how-do-i-do-responsive-styles)
-  - [How do I change the font size?](#how-do-i-change-the-font-size)
-  - [How do I add spacing to elements?](#how-do-i-add-spacing-to-elements)
-  - [What’s a good usage example?](#whats-a-good-usage-example)
-  - [How do I use the theme?](#how-do-i-use-the-theme)
-  - [How can I get help?](#how-can-i-get-help)
-  - [Can I contribute?](#can-i-contribute)
+    - [How do I do layout in this new world?](#how-do-i-do-layout-in-this-new-world)
+    - [How do I do responsive styles?](#how-do-i-do-responsive-styles)
+    - [How do I change the font size?](#how-do-i-change-the-font-size)
+    - [How do I add spacing to elements?](#how-do-i-add-spacing-to-elements)
+    - [What’s a good usage example?](#whats-a-good-usage-example)
+    - [How do I use the theme?](#how-do-i-use-the-theme)
+    - [How can I get help?](#how-can-i-get-help)
+    - [Can I contribute?](#can-i-contribute)
 - [Helpful resources](#helpful-resources)
   - [General](#general)
   - [Accessibility](#accessibility-1)
