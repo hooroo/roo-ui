@@ -1,3 +1,5 @@
+import { fakeServer } from 'cypress/types/sinon';
+
 export { default as roo } from './roo.svg';
 export { default as rooRed } from './roo-red.svg';
 export { default as pebble } from './pebble.svg';
@@ -18,6 +20,7 @@ export { default as headset } from './headset.svg';
 export { default as find } from './find.svg';
 export { default as pointsPlusPay } from './points-plus-pay.svg';
 export { default as points } from './points.svg';
+export { default as icNoFees } from './ic_no-fees.svg';
 export { default as shield } from './shield.svg';
 export { default as visa } from './visa.svg';
 export { default as mastercard } from './mastercard.svg';
